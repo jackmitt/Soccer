@@ -3,33 +3,28 @@ import numpy as np
 
 curElo = {}
 curTeams = []
-df = pd.read_csv('./EPLHistoricOdds.csv', encoding = "ISO-8859-1")
+df = pd.read_csv('./SerieA_Csvs/combinedOdds.csv', encoding = "ISO-8859-1")
 for index, row in df.iterrows():
     if (row["Date"].split('-')[1] == "Aug" and row["Date"].split('-')[2] == "09"):
         break
     if (row["Home"] not in curElo):
         curElo[row["Home"]] = {"Elo":1500,"G":0}
         curTeams.append(row["Home"])
-
 incEloHome = []
 incEloAway = []
 resEloHome = []
 resEloAway = []
-newSeason = False
 newTeams = []
 
 
 for index, row in df.iterrows():
-    if (row["Date"].split('-')[1] == "Aug" and newSeason):
+    if (index != 0 and row["Date"].split('-')[1] != "May" and df.at[index-1,"Date"].split("-")[1] == "May"):
         elos = []
         for key in curElo:
             curElo[key]["G"] = 0
             elos.append(curElo[key]["Elo"])
         for key in curElo:
             curElo[key]["Elo"] = ((curElo[key]["Elo"] - np.average(elos)) / np.std(elos)) * (np.std(elos)/2) + 1500
-        newSeason = False
-    if (row["Date"].split('-')[1] == "Sep"):
-        newSeason = True
     incEloHome.append(curElo[row["Home"]]["Elo"])
     incEloAway.append(curElo[row["Away"]]["Elo"])
     # 0.05 to compensate for home field advantage
@@ -51,7 +46,7 @@ for index, row in df.iterrows():
     resEloHome.append(curElo[row["Home"]]["Elo"])
     resEloAway.append(curElo[row["Away"]]["Elo"])
     #for promoted/relegated teams
-    if (index < len(df.index) - 1 and row["Date"].split("-")[1] != "Aug" and df.iat[index+1, 0].split("-")[1] == "Aug"):
+    if (index < len(df.index) - 1 and row["Date"].split("-")[1] == "May" and df.iat[index+1, 0].split("-")[1] != "May"):
         for index1, row1, in df.iterrows():
             if (index1 > index):
                 if (len(newTeams) == 20):
@@ -73,4 +68,4 @@ df["Home Pre Elo"] = incEloHome
 df["Away Pre Elo"] = incEloAway
 df["Home Post Elo"] = resEloHome
 df["Away Post Elo"] = resEloAway
-df.to_csv('./EPLHistoricOddsWithElo.csv')
+df.to_csv('./SerieA_Csvs/HistoricOddsWithElo.csv')

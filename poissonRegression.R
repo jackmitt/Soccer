@@ -3,18 +3,22 @@ library(sandwich)
 library(msm)
 library(glmnet)
 
-data = read.csv("C:/Users/JackMitt/Documents/EPLBettingModel/poissonFormattedData.csv")
+data = read.csv("C:/Users/JackMitt/Documents/EPLBettingModel/SerieA_Csvs/poissonFormattedDataNoTE.csv")
+numData = data[-c(1,2,3,4)]
+dataScaled = as.data.frame(scale(numData))
+dataScaled["Home Field"] = data["Home.Field"]
+dataScaled["Score"] = data["Score"]
 predictions = c()
-for (i in 1:nrow(data)){
+for (i in 1:nrow(dataScaled)){
   print (i)
-  tempTest = data[FALSE,]
+  tempTest = dataScaled[FALSE,]
   vals = c()
-  for (j in c(1:98)){
-    vals = c(vals, data[i, j])
+  for (j in c(1:58)){
+    vals = c(vals, dataScaled[i, j])
   }
   tempTest[1,] = vals
-  tempTrain = data[-c(i),]
-  model = glm(Score ~ . - Date - Team - Score, family = poisson, data = tempTrain)
+  tempTrain = dataScaled[-c(i),]
+  model = glm(Score ~ ., family = poisson, data = tempTrain)
   predictions = c(predictions, predict(model, newdata = tempTest, type = "response"))
 }
 
@@ -55,5 +59,5 @@ data["8 Goal Prob"] = prob_8_goal
 data["9 Goal Prob"] = prob_9_goal
 data["10 Goal Prob"] = prob_10_goal
 
-write.csv(data, "C:/Users/JackMitt/Documents/EPLBettingModel/poissonPredictionMeans.csv")
+write.csv(data, "C:/Users/JackMitt/Documents/EPLBettingModel/SerieA_Csvs/poissonPredictionMeans.csv")
 

@@ -12,7 +12,7 @@ def last5scale(a, b):
         d += b[i]*(1.5**(4-i))
     return ((c+d)/(2*totalT))
 
-data = pd.read_csv('./allRawData.csv', encoding = "ISO-8859-1")
+data = pd.read_csv('./SerieA_Csvs/allRawData.csv', encoding = "ISO-8859-1")
 dict = {}
 #X indicates opponent's stat, T adjusts for recent performance, E adjusts for quality of opponent
 sides = ["", "X_"]
@@ -56,13 +56,11 @@ for index, row in data.iterrows():
     #     print (col, row[col])
     print (index)
     gc.collect()
-    if (int(row["Date"].split("/")[0]) == 9):
-        beenSeptember = True
     #initialization
-    if (int(row["Date"].split("/")[0]) == 8 and beenSeptember):
+    if (index == 0 or (row["Date"].split("-")[1] != "May" and data.at[index-1, "Date"].split("-")[1] == "May")):
         seasonDict = {}
         curIndex = index
-        while (curIndex < len(data.index) and (int(data.iat[curIndex, 0].split("/")[0]) != 8 or int(data.iat[curIndex, 0].split("/")[2]) != int(row["Date"].split("/")[2]) + 1)):
+        while (curIndex < len(data.index) and int(data.iat[curIndex, 0].split("-")[2]) != int(row["Date"].split("-")[2]) + 1):
             if (data.iat[curIndex, 1] not in seasonDict):
                 seasonDict[data.iat[curIndex, 1]] = {}
                 for side in sides:
@@ -95,7 +93,6 @@ for index, row in data.iterrows():
                     seasonDict[data.iat[curIndex, 1]]["E_" + side + "xG"] = []
                     seasonDict[data.iat[curIndex, 1]]["E_" + side + "xPts"] = []
             curIndex += 1
-        beenSeptember = False
     #pre-match average calculations
     if (len(seasonDict[row["Home"]]["ball_winning"]) == 0 or len(seasonDict[row["Away"]]["ball_winning"]) == 0):
         for side in haSide:
@@ -676,4 +673,4 @@ for index, row in data.iterrows():
     #print (seasonDict)
 for key in dict:
     data[key] = dict[key]
-data.to_csv("bigboy.csv")
+data.to_csv("./SerieA_Csvs/bigboy.csv")

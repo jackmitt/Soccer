@@ -20,7 +20,7 @@ def babyAlpha(x,j,c,alphaDict):
     else:
         newDict = {j:alfHelp(x,j,c)}
         alphaDict[x] = newDict
-        
+
         return alphaDict[x][j]
 
 def alfHelp(x,j,c):
@@ -30,5 +30,3 @@ def alfHelp(x,j,c):
         alf += alpha(x-1,m,c)*math.gamma(c*j-c*m+1)/math.gamma(j-m+1)
 
     return alf
-
-print (alpha(2,4,.85))

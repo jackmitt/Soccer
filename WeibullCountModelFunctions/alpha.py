@@ -1,7 +1,7 @@
 import math
 
-def alpha(x,j,c):
-    alphaDict = {}
+def alpha(x,j,c,alphaDict = {}):
+    
     return babyAlpha(x,j,c,alphaDict)
 
 # x is always less than j by at least one

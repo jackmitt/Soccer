@@ -1,7 +1,7 @@
 import math
 
 def alpha(x,j,c,alphaDict = {}):
-    
+
     return babyAlpha(x,j,c,alphaDict)
 
 # x is always less than j by at least one
@@ -30,3 +30,5 @@ def alfHelp(x,j,c):
         alf += alpha(x-1,m,c)*math.gamma(c*j-c*m+1)/math.gamma(j-m+1)
 
     return alf
+
+print (alpha(2,2,1))

@@ -26,9 +26,7 @@ def babyAlpha(x,j,c,alphaDict):
 def alfHelp(x,j,c):
     alf = 0
         # summation from x to j-1
-    for m in range(x,j):
+    for m in range(x-1,j):
         alf += alpha(x-1,m,c)*math.gamma(c*j-c*m+1)/math.gamma(j-m+1)
 
     return alf
-
-print (alpha(2,2,1))

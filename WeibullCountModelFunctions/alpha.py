@@ -9,8 +9,8 @@ def babyAlpha(x,j,c,alphaDict):
     # x is supercript, j is subscript
     if (x==0):
         return math.gamma(c*j+1)/math.gamma(j+1)
-    elif (alphaDict.has_key(x)):
-        if (alphaDict[x].has_key(j)):
+    elif (x in alphaDict):
+        if (j in alphaDict[x]):
             return alphaDict[x][j]
         else:
             oldDict = alphaDict[x]

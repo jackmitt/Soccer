@@ -3,7 +3,7 @@ library(sandwich)
 library(msm)
 library(glmnet)
 
-data = read.csv("C:/Users/JackMitt/Documents/EPLBettingModel/SerieA_Csvs/poissonFormattedDataNoTE.csv")
+data = read.csv("C:/Users/JackMitt/Documents/EPLBettingModel/SerieA_Csvs/poissonFormattedData.csv")
 numData = data[-c(1,2,3,4)]
 dataScaled = as.data.frame(scale(numData))
 dataScaled["Home Field"] = data["Home.Field"]
@@ -13,7 +13,7 @@ for (i in 1:nrow(dataScaled)){
   print (i)
   tempTest = dataScaled[FALSE,]
   vals = c()
-  for (j in c(1:58)){
+  for (j in c(1:999)){
     vals = c(vals, dataScaled[i, j])
   }
   tempTest[1,] = vals

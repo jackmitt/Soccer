@@ -145,6 +145,68 @@ def standardizeTeamName(teamName, leagueName):
         elif ("novara" in b):
             return ("Novara")
         return (b)
+    elif (leagueName == "La Liga"):
+        if ("malaga" in b):
+            return ("Malaga")
+        elif ("sevilla" in b):
+            return ("Sevilla")
+        elif ("granada" in b):
+            return ("Granada")
+        elif ("almeria" in b):
+            return ("Almeria")
+        elif ("eibar" in b):
+            return ("Eibar")
+        elif ("barcelona" in b):
+            return ("Barcelona")
+        elif ("celta vigo" in b):
+            return ("Celta Vigo")
+        elif ("levante" in b):
+            return ("Levante")
+        elif ("real madrid" in b):
+            return ("Real Madrid")
+        elif ("rayo vallecano" in b):
+            return ("Rayo Vallecano")
+        elif ("getafe" in b):
+            return ("Getafe")
+        elif ("valencia" in b):
+            return ("Valencia")
+        elif ("cordoba" in b):
+            return ("Cordoba")
+        elif ("athletic club" in b or "athletic bilbao" in b or "ath bilbao" == b):
+            return ("Athletic Club")
+        elif ("atletico madrid" in b or "atletico" == b or "atl. madrid" == b):
+            return ("Atletico Madrid")
+        elif ("espanyol" in b):
+            return ("Espanyol")
+        elif ("villarreal" in b):
+            return ("Villarreal")
+        elif ("deportivo la coruna" in b or "deportivo" == b or "dep. la coruna" == b):
+            return ("Deportivo La Coruna")
+        elif ("real sociedad" in b):
+            return ("Real Sociedad")
+        elif ("elche" in b):
+            return ("Elche")
+        elif ("real betis" in b or "betis" == b):
+            return ("Real Betis")
+        elif ("valladolid" in b):
+            return ("Real Valladolid")
+        elif ("osasuna" in b):
+            return ("Osasuna")
+        elif ("alaves" in b):
+            return ("Alaves")
+        elif ("mallorca" in b):
+            return ("Mallorca")
+        elif ("leganes" in b):
+            return ("Leganes")
+        elif ("sd huesca" in b or "huesca" == b):
+            return ("SD Huesca")
+        elif ("girona" in b):
+            return ("Girona")
+        elif ("las palmas" in b):
+            return ("Las Palmas")
+        elif ("sporting gijon" in b or "gijon" == b):
+            return ("Sporting Gijon")
+        return (b)
     else:
         print ("WRONG LEAGUE NAME")
         return ("error")

@@ -2,8 +2,8 @@ import pandas as pd
 import numpy as np
 from miscFcns import standardizeTeamName
 
-matchStats = pd.read_csv('./SerieA_Csvs/matchStats.csv', encoding = "ISO-8859-1")
-odds = pd.read_csv('./SerieA_Csvs/HistoricOddsWithElo.csv', encoding = "ISO-8859-1")
+matchStats = pd.read_csv('./EPL_Csvs/matchStats.csv', encoding = "ISO-8859-1")
+odds = pd.read_csv('./EPL_Csvs/HistoricOddsWithElo.csv', encoding = "ISO-8859-1")
 dict = {}
 for col in odds.columns:
     if (col != "Date" and col != "Home" and col != "Away"):
@@ -13,9 +13,9 @@ bool = False
 for index, row in matchStats.iterrows():
     #print (index)
     #where 2014 season begins
-    curIndex = 2278
+    curIndex = 2274
     while (curIndex < len(odds.index)):
-        if (odds.at[curIndex, "Date"] == row["Date"] and standardizeTeamName(odds.at[curIndex, "Home"], "Serie A") == standardizeTeamName(row["Home"], "Serie A") and standardizeTeamName(odds.at[curIndex, "Away"], "Serie A") == standardizeTeamName(row["Away"], "Serie A")):
+        if (odds.at[curIndex, "Date"] == row["Date"] and standardizeTeamName(odds.at[curIndex, "Home"], "La Liga") == standardizeTeamName(row["Home"], "La Liga") and standardizeTeamName(odds.at[curIndex, "Away"], "La Liga") == standardizeTeamName(row["Away"], "La Liga")):
             bool = True
             for col in odds.columns:
                 if (col != "Date" and col != "Home" and col != "Away"):
@@ -32,4 +32,4 @@ for index, row in matchStats.iterrows():
 for key in dict:
     matchStats[key] = dict[key]
 
-matchStats.to_csv("./SerieA_Csvs/allRawData.csv")
+matchStats.to_csv("./EPL_Csvs/allRawData.csv")

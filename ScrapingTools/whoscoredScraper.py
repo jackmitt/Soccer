@@ -8,96 +8,88 @@ from miscFcns import oddsToDecimal
 import gc
 #from http_request_randomizer.requests.proxy.requestProxy import RequestProxy
 
-#seasonUrls = ["https://www.whoscored.com/Regions/252/Tournaments/2/Seasons/4311/England-Premier-League", "https://www.whoscored.com/Regions/252/Tournaments/2/Seasons/5826/England-Premier-League", "https://www.whoscored.com/Regions/252/Tournaments/2/Seasons/6335/England-Premier-League", "https://www.whoscored.com/Regions/252/Tournaments/2/Seasons/6829/England-Premier-League", "https://www.whoscored.com/Regions/252/Tournaments/2/Seasons/7361/England-Premier-League"]
-seasonUrls = ["https://www.whoscored.com/Regions/252/Tournaments/2/Seasons/6829/England-Premier-League", "https://www.whoscored.com/Regions/252/Tournaments/2/Seasons/7361/England-Premier-League"]
-gameUrls = []
+# seasonUrls = ["https://www.whoscored.com/Regions/108/Tournaments/5/Seasons/5441/Italy-Serie-A", "https://www.whoscored.com/Regions/108/Tournaments/5/Seasons/5970/Italy-Serie-A", "https://www.whoscored.com/Regions/108/Tournaments/5/Seasons/6461/Italy-Serie-A", "https://www.whoscored.com/Regions/108/Tournaments/5/Seasons/6974/Italy-Serie-A", "https://www.whoscored.com/Regions/108/Tournaments/5/Seasons/7468/Italy-Serie-A"]
+# gameUrls = []
 # # req_proxy = RequestProxy()
 # # proxies = req_proxy.get_proxy_list()
 # # proxyUseCount = 2
-browser = webdriver.Chrome(executable_path='chromedriver.exe')
-for season in seasonUrls:
-    # PROXY = proxies[proxyUseCount].get_address()
-    # proxyUseCount += 1
-    # webdriver.DesiredCapabilities.CHROME['proxy']={
-    #     "httpProxy":PROXY,
-    #     "ftpProxy":PROXY,
-    #     "sslProxy":PROXY,
-    #     "proxyType":"MANUAL",
-    # }
-    browser.get(season)
-    time.sleep(3)
-    try:
-        browser.find_element_by_css_selector(".qc-cmp-button").click()
-        time.sleep(1)
-        browser.find_element_by_css_selector(".qc-cmp-button.qc-cmp-save-and-exit").click()
-        time.sleep(10)
-        browser.get(season)
-        time.sleep(3)
-    except:
-        pass
-    while(1):
-        # soup = BeautifulSoup(browser.page_source, 'html.parser')
-        # table = soup.find(id="tournament-fixture")
-        # for tr in table.find_all("tr"):
-        #     if (tr.has_attr("class") and "item" in tr["class"]):
-        #         gameUrls.append("https://www.whoscored.com" + tr.find(class_="result-1 rc")["href"])
-        try:
-            browser.find_element_by_css_selector(".previous.button.ui-state-default.rc-l.is-default").click()
-        except:
-            time.sleep(5)
-            soup = BeautifulSoup(browser.page_source, 'html.parser')
-            table = soup.find(id="tournament-fixture")
-            for tr in table.find_all("tr"):
-                if (tr.has_attr("class") and "item" in tr["class"]):
-                    gameUrls.append("https://www.whoscored.com" + tr.find(class_="result-1 rc")["href"])
-            break
-print (gameUrls)
-gameUrlDict = {"Urls":gameUrls}
-browser.quit()
-tempDict = {"Urls":gameUrls}
-#dfFinal = pd.DataFrame.from_dict(tempDict)
-#dfFinal.to_csv("./whoscoredGameUrls.csv")
+# browser = webdriver.Chrome(executable_path='chromedriver.exe')
+# for season in seasonUrls:
+#     # PROXY = proxies[proxyUseCount].get_address()
+#     # proxyUseCount += 1
+#     # webdriver.DesiredCapabilities.CHROME['proxy']={
+#     #     "httpProxy":PROXY,
+#     #     "ftpProxy":PROXY,
+#     #     "sslProxy":PROXY,
+#     #     "proxyType":"MANUAL",
+#     # }
+#     browser.get(season)
+#     time.sleep(3)
+#     try:
+#         browser.find_element_by_css_selector(".qc-cmp-button").click()
+#         time.sleep(1)
+#         browser.find_element_by_css_selector(".qc-cmp-button.qc-cmp-save-and-exit").click()
+#         time.sleep(10)
+#         browser.get(season)
+#         time.sleep(3)
+#     except:
+#         pass
+#     while(1):
+#         soup = BeautifulSoup(browser.page_source, 'html.parser')
+#         table = soup.find(id="tournament-fixture")
+#         for tr in table.find_all("a"):
+#             if (tr.has_attr("href") and "Matches" in tr["href"] and "Live" in tr["href"] and "https://www.whoscored.com" + tr["href"] not in gameUrls):
+#                 gameUrls.append("https://www.whoscored.com" + tr["href"])
+#         try:
+#             browser.find_element_by_css_selector(".previous.button.ui-state-default.rc-l.is-default").click()
+#         except:
+#             break
+# browser.quit()
+# tempDict = {"Urls":gameUrls}
+# print (gameUrls)
+# dfFinal = pd.DataFrame.from_dict(tempDict)
+# dfFinal.to_csv("./whoscoredGameUrlsSA.csv")
 
-#dict = {"Date":[],"Home":[],"Away":[]}
-#sides = ["Home", "Away"]
-#for side in sides:
-#     dict[side + " Shots"] = []
-#     dict[side + " Woodwork"] = []
-#     dict[side + " On Target"] = []
-#     dict[side + " Shots Blocked"] = []
-#     dict[side + " Possession"] = []
-#     dict[side + " Touches"] = []
-#     dict[side + " Total Passes"] = []
-#     dict[side + " Accurate Passes"] = []
-#     dict[side + " Key Passes"] = []
-#     dict[side + " Dribbles Won"] = []
-#     dict[side + " Dribbles Attempted"] = []
-#     dict[side + " Successful Tackles"] = []
-#     dict[side + " Tackles Attempted"] = []
-#     dict[side + " Clearances"] = []
-#     dict[side + " Interceptions"] = []
-#     dict[side + " Corners"] = []
-#     dict[side + " Dispossessed"] = []
-#     dict[side + " Errors"] = []
-#     dict[side + " Fouls"] = []
-#     dict[side + " Offsides"] = []
+dict = {"Date":[],"Home":[],"Away":[]}
+sides = ["Home", "Away"]
+for side in sides:
+    dict[side + " Shots"] = []
+    dict[side + " Woodwork"] = []
+    dict[side + " On Target"] = []
+    dict[side + " Shots Blocked"] = []
+    dict[side + " Possession"] = []
+    dict[side + " Touches"] = []
+    dict[side + " Total Passes"] = []
+    dict[side + " Accurate Passes"] = []
+    dict[side + " Key Passes"] = []
+    dict[side + " Dribbles Won"] = []
+    dict[side + " Dribbles Attempted"] = []
+    dict[side + " Successful Tackles"] = []
+    dict[side + " Tackles Attempted"] = []
+    dict[side + " Clearances"] = []
+    dict[side + " Interceptions"] = []
+    dict[side + " Corners"] = []
+    dict[side + " Dispossessed"] = []
+    dict[side + " Errors"] = []
+    dict[side + " Fouls"] = []
+    dict[side + " Offsides"] = []
 #
-#     dict[side + " passtype_cross"] = []
-#     dict[side + " passtype_freekick"] = []
-#     dict[side + " passtype_corner"] = []
-#     dict[side + " passtype_through"] = []
-#     dict[side + " passtype_throw"] = []
-#     dict[side + " passlength_long"] = []
-#     dict[side + " passlength_short"] = []
-#     dict[side + " passheight_chipped"] = []
-#     dict[side + " passheight_ground"] = []
-#     dict[side + " passdirection_forward"] = []
-#     dict[side + " passdirection_backward"] = []
-#     dict[side + " passdirection_left"] = []
-#     dict[side + " passdirection_right"] = []
-#     dict[side + " passzone_defensive_third"] = []
-#     dict[side + " passzone_middle_third"] = []
-#     dict[side + " passzone_final_third"] = []
+    dict[side + " passtype_cross"] = []
+    dict[side + " passtype_freekick"] = []
+    dict[side + " passtype_corner"] = []
+    dict[side + " passtype_through"] = []
+    dict[side + " passtype_throw"] = []
+    dict[side + " passlength_long"] = []
+    dict[side + " passlength_short"] = []
+    dict[side + " passheight_chipped"] = []
+    dict[side + " passheight_ground"] = []
+    dict[side + " passdirection_forward"] = []
+    dict[side + " passdirection_backward"] = []
+    dict[side + " passdirection_left"] = []
+    dict[side + " passdirection_right"] = []
+    dict[side + " passzone_defensive_third"] = []
+    dict[side + " passzone_middle_third"] = []
+    dict[side + " passzone_final_third"] = []
 
 browser = webdriver.Chrome(executable_path='chromedriver.exe')
 browser.get("https://www.whoscored.com/Regions/252/Tournaments/2/Seasons/4311/England-Premier-League")
@@ -109,17 +101,17 @@ try:
     time.sleep(3)
 except:
     pass
-# gameUrlDict = pd.DataFrame().from_csv("./whoscoredGameUrls.csv", encoding = "UTF-8")
-# gameUrlDict = gameUrlDict.to_dict("list")
-dict = pd.read_csv("./whoscoredGameStats.csv", encoding = "UTF-8")
+gameUrlDict = pd.DataFrame().from_csv("./whoscoredGameUrlsSA.csv", encoding = "UTF-8")
+gameUrlDict = gameUrlDict.to_dict("list")
+dict = pd.DataFrame().from_csv("./whoscoredGameStatsSA.csv", encoding = "UTF-8")
 dict = dict.to_dict("list")
-# gamesAccountedFor = len(dict["Date"])
-# for i in reversed(range(len(gameUrlDict["Urls"]))):
-#     if (i < gamesAccountedFor):
-#         gameUrlDict["Urls"].pop(i)
+gamesAccountedFor = len(dict["Date"])
+for i in reversed(range(len(gameUrlDict["Urls"]))):
+    if (i < gamesAccountedFor):
+        gameUrlDict["Urls"].pop(i)
 for game in gameUrlDict["Urls"]:
     browser.get(game)
-    time.sleep(10)
+    time.sleep(2.5)
     gc.collect()
     soup = BeautifulSoup(browser.page_source, 'html.parser')
     try:
@@ -205,7 +197,7 @@ for game in gameUrlDict["Urls"]:
     dict["Away Offsides"].append(int(cats[8].find_all("span")[11].string))
 
     browser.find_element_by_link_text("Chalkboard").click()
-    time.sleep(10)
+    time.sleep(2.5)
     soup = BeautifulSoup(browser.page_source, 'html.parser')
     passing = soup.find_all(class_="filterz-filter-group")[1]
 
@@ -244,5 +236,5 @@ for game in gameUrlDict["Urls"]:
     for key in dict:
         print (key, len(dict[key]))
     dfFinal = pd.DataFrame.from_dict(dict)
-    dfFinal.to_csv("./whoscoredGameStats2.csv")
+    dfFinal.to_csv("./whoscoredGameStatsSA.csv")
 browser.quit()

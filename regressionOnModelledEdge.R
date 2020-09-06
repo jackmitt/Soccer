@@ -3,7 +3,7 @@ library(sandwich)
 library(msm)
 library(glmnet)
 
-data = read.csv("C:/Users/JackMitt/Documents/EPLBettingModel/SerieA_Csvs/mlResultsByEdge.csv")
+data = read.csv("C:/Users/JackMitt/Documents/EPLBettingModel/EPL_Csvs/only_T_E_Vars/mlResultsByEdge.csv")
 predictions = c()
 for (i in 1:nrow(data)){
   print (i)
@@ -14,14 +14,14 @@ for (i in 1:nrow(data)){
   }
   tempTest[1,] = vals
   tempTrain = data[-c(i),]
-  model = glm(Result ~ P, family = binomial, data = tempTrain)
-  predictions = c(predictions, predict(model, newdata = tempTest, type = "response"))
+  model1 = glm(Result ~ P, family = binomial, data = tempTrain)
+  predictions = c(predictions, predict(model1, newdata = tempTest, type = "response"))
 }
 
 data["True Prediction"] = predictions
-write.csv(data, "C:/Users/JackMitt/Documents/EPLBettingModel/SerieA_Csvs/mlTruePredictedProbabilities.csv")
+#write.csv(data, "C:/Users/JackMitt/Documents/EPLBettingModel/EPL_Csvs/only_T_E_Vars/mlTruePredictedProbabilities.csv")
 
-data = read.csv("C:/Users/JackMitt/Documents/EPLBettingModel/SerieA_Csvs/ahResultsByEdge.csv")
+data = read.csv("C:/Users/JackMitt/Documents/EPLBettingModel/EPL_Csvs/only_T_E_Vars/ahResultsByEdge.csv")
 predictions = c()
 for (i in 1:nrow(data)){
   print (i)
@@ -32,14 +32,14 @@ for (i in 1:nrow(data)){
   }
   tempTest[1,] = vals
   tempTrain = data[-c(i),]
-  model = glm(Result ~ P, family = binomial, data = tempTrain)
-  predictions = c(predictions, predict(model, newdata = tempTest, type = "response"))
+  model2 = glm(Result ~ P, family = binomial, data = tempTrain)
+  predictions = c(predictions, predict(model2, newdata = tempTest, type = "response"))
 }
 
 data["True Prediction"] = predictions
-write.csv(data, "C:/Users/JackMitt/Documents/EPLBettingModel/SerieA_Csvs/ahTruePredictedProbabilities.csv")
+#write.csv(data, "C:/Users/JackMitt/Documents/EPLBettingModel/EPL_Csvs/only_T_E_Vars/ahTruePredictedProbabilities.csv")
 
-data = read.csv("C:/Users/JackMitt/Documents/EPLBettingModel/SerieA_Csvs/ouResultsByEdge.csv")
+data = read.csv("C:/Users/JackMitt/Documents/EPLBettingModel/EPL_Csvs/only_T_E_Vars/ouResultsByEdge.csv")
 predictions = c()
 for (i in 1:nrow(data)){
   print (i)
@@ -50,9 +50,9 @@ for (i in 1:nrow(data)){
   }
   tempTest[1,] = vals
   tempTrain = data[-c(i),]
-  model = glm(Result ~ P, family = binomial, data = tempTrain)
-  predictions = c(predictions, predict(model, newdata = tempTest, type = "response"))
+  model3 = glm(Result ~ P, family = binomial, data = tempTrain)
+  predictions = c(predictions, predict(model3, newdata = tempTest, type = "response"))
 }
 
 data["True Prediction"] = predictions
-write.csv(data, "C:/Users/JackMitt/Documents/EPLBettingModel/SerieA_Csvs/ouTruePredictedProbabilities.csv")
+#write.csv(data, "C:/Users/JackMitt/Documents/EPLBettingModel/EPL_Csvs/only_T_E_Vars/ouTruePredictedProbabilities.csv")

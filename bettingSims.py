@@ -1,8 +1,8 @@
 import pandas as pd
 import numpy as np
 
-ah = pd.read_csv('./EPL_Csvs/no_T_Vars/ahTruePredictedProbabilities.csv', encoding = "ISO-8859-1")
-ou = pd.read_csv('./EPL_Csvs/no_T_Vars/ouTruePredictedProbabilities.csv', encoding = "ISO-8859-1")
+ah = pd.read_csv('./LaLiga_Csvs/no_T_Vars/ahTruePredictedProbabilities.csv', encoding = "ISO-8859-1")
+ou = pd.read_csv('./LaLiga_Csvs/no_T_Vars/ouTruePredictedProbabilities.csv', encoding = "ISO-8859-1")
 best = 0
 bn = 0
 kellyDiv = 1

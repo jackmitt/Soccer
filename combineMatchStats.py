@@ -4,7 +4,7 @@ from miscFcns import standardizeTeamName
 from miscFcns import monthToInt
 import datetime
 
-league = input("1 for EPL, 2 for Serie A: ")
+league = input("1 for EPL, 2 for Serie A, 3 for La Liga: ")
 if (int(league) == 1):
     understat = pd.read_csv('./EPL_Csvs/understatGameStats.csv', encoding = "ISO-8859-1")
     whoscored = pd.read_csv('./EPL_Csvs/whoscoredGameStats.csv', encoding = "ISO-8859-1")
@@ -13,6 +13,10 @@ elif (int(league) == 2):
     understat = pd.read_csv('./SerieA_Csvs/understatGameStats.csv', encoding = "ISO-8859-1")
     whoscored = pd.read_csv('./SerieA_Csvs/whoscoredGameStats.csv', encoding = "ISO-8859-1")
     para = "Serie A"
+elif (int(league) == 3):
+    understat = pd.read_csv('./LaLiga_Csvs/understatGameStats.csv', encoding = "ISO-8859-1")
+    whoscored = pd.read_csv('./LaLiga_Csvs/whoscoredGameStats.csv', encoding = "ISO-8859-1")
+    para = "La Liga"
 homeXg = []
 awayXg = []
 homeDeep = []
@@ -24,7 +28,7 @@ awayXpts = []
 
 found = False
 for index, row in whoscored.iterrows():
-    #print (index)
+    print (index)
     date = datetime.datetime(2000+int(row["Date"].split("-")[2]), monthToInt(row["Date"].split("-")[1]), int(row["Date"].split("-")[0]))
     for index1, row1 in understat.iterrows():
         date1 = datetime.datetime(2000+int(row1["Date"].split("-")[2]), monthToInt(row1["Date"].split("-")[1]), int(row1["Date"].split("-")[0]))
@@ -64,3 +68,5 @@ if (int(league) == 1):
     whoscored.to_csv('./EPL_Csvs/matchStats.csv')
 elif (int(league) == 2):
     whoscored.to_csv('./SerieA_Csvs/matchStats.csv')
+elif (int(league) == 3):
+    whoscored.to_csv('./LaLiga_Csvs/matchStats.csv')

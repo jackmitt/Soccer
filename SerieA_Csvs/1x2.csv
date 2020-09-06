@@ -1,0 +1,4177 @@
+Date,Home,Away,Home Score,Away Score,1,X,2
+30-Aug-08,Sampdoria,Inter,1,1,5.59,3.14,1.91
+30-Aug-08,Udinese,Palermo,3,1,2.06,3.22,4.37
+31-Aug-08,Fiorentina,Juventus,1,1,2.81,3.04,2.97
+31-Aug-08,AC Milan,Bologna,1,2,1.33,5.33,12.71
+31-Aug-08,AS Roma,Napoli,1,1,1.66,3.7,6.68
+31-Aug-08,Atalanta,Siena,1,0,2.04,3.08,4.9
+31-Aug-08,Cagliari,Lazio,1,4,3.06,3.08,2.7
+31-Aug-08,Catania,Genoa,1,0,2.43,3,3.63
+31-Aug-08,Chievo,Reggina,2,1,2.14,3.09,4.32
+31-Aug-08,Torino,Lecce,3,0,1.81,3.27,6.13
+13-Sep-08,Inter,Catania,2,1,1.25,6.04,18.46
+13-Sep-08,Palermo,AS Roma,3,1,3.64,2.99,2.43
+14-Sep-08,Juventus,Udinese,1,0,1.56,3.98,7.88
+14-Sep-08,Bologna,Atalanta,0,1,2.25,2.93,4.19
+14-Sep-08,Genoa,AC Milan,2,0,5.16,3.42,1.87
+14-Sep-08,Lazio,Sampdoria,2,0,2.18,2.99,4.42
+14-Sep-08,Lecce,Chievo,2,0,2.52,2.93,3.54
+14-Sep-08,Napoli,Fiorentina,2,1,2.73,2.98,3.13
+14-Sep-08,Reggina,Torino,1,1,2.71,2.94,3.21
+14-Sep-08,Siena,Cagliari,2,0,2,3.14,4.9
+20-Sep-08,AS Roma,Reggina,3,0,1.37,4.93,11.28
+20-Sep-08,Catania,Atalanta,1,0,2.54,2.93,3.49
+21-Sep-08,AC Milan,Lazio,4,1,1.72,3.68,5.88
+21-Sep-08,Cagliari,Juventus,0,1,6.47,3.47,1.73
+21-Sep-08,Fiorentina,Bologna,1,0,1.54,3.93,8.69
+21-Sep-08,Lecce,Siena,1,1,2.39,2.9,3.9
+21-Sep-08,Palermo,Genoa,2,1,2.29,3.08,3.86
+21-Sep-08,Sampdoria,Chievo,1,1,1.65,3.65,7.15
+21-Sep-08,Torino,Inter,1,3,7.46,3.5,1.67
+21-Sep-08,Udinese,Napoli,0,0,2.04,3.16,4.61
+24-Sep-08,Atalanta,Cagliari,1,0,1.74,3.41,6.65
+24-Sep-08,Bologna,Udinese,0,3,2.71,2.96,3.17
+24-Sep-08,Chievo,Torino,1,1,2.25,3.04,4.05
+24-Sep-08,Genoa,AS Roma,3,1,3.23,3.04,2.61
+24-Sep-08,Inter,Lecce,1,0,1.2,6.84,26
+24-Sep-08,Juventus,Catania,1,1,1.39,4.9,10.16
+24-Sep-08,Lazio,Fiorentina,3,0,2.52,3.02,3.4
+24-Sep-08,Napoli,Palermo,2,1,2.1,3.09,4.51
+24-Sep-08,Reggina,AC Milan,1,2,8.55,4.15,1.51
+24-Sep-08,Siena,Sampdoria,0,0,2.73,3.1,3.02
+27-Sep-08,Fiorentina,Genoa,1,0,1.77,3.5,5.87
+27-Sep-08,Sampdoria,Juventus,0,0,3.56,3.15,2.36
+28-Sep-08,AC Milan,Inter,1,0,3.18,3.09,2.61
+28-Sep-08,AS Roma,Atalanta,2,0,1.73,3.56,6.21
+28-Sep-08,Bologna,Napoli,0,1,2.83,2.91,3.08
+28-Sep-08,Catania,Chievo,1,0,2.12,2.97,4.63
+28-Sep-08,Lecce,Cagliari,2,0,2.25,3,4.09
+28-Sep-08,Palermo,Reggina,1,0,1.61,3.73,7.57
+28-Sep-08,Torino,Lazio,1,3,3.25,2.97,2.65
+28-Sep-08,Udinese,Siena,2,1,1.66,3.67,6.84
+4-Oct-08,Inter,Bologna,2,1,1.24,6.33,14.4
+4-Oct-08,Lazio,Lecce,1,1,1.48,4.26,9.23
+5-Oct-08,Cagliari,AC Milan,0,0,10.19,4.15,1.41
+5-Oct-08,Atalanta,Sampdoria,4,2,2.47,3.02,3.5
+5-Oct-08,Chievo,Fiorentina,0,2,3.2,3.04,2.64
+5-Oct-08,Genoa,Napoli,3,2,2.14,3.09,4.37
+5-Oct-08,Juventus,Palermo,1,2,1.56,3.87,8.17
+5-Oct-08,Reggina,Catania,1,1,2.29,3.04,3.86
+5-Oct-08,Siena,AS Roma,1,0,4.82,3.22,1.99
+5-Oct-08,Udinese,Torino,2,0,1.81,3.49,5.45
+18-Oct-08,Napoli,Juventus,2,1,2.45,3.09,3.47
+18-Oct-08,Fiorentina,Reggina,3,0,1.47,4.34,9.25
+19-Oct-08,AS Roma,Inter,0,4,3.25,3.04,2.59
+19-Oct-08,AC Milan,Sampdoria,3,0,1.46,4.29,9.63
+19-Oct-08,Bologna,Lazio,3,1,3.68,3.1,2.35
+19-Oct-08,Catania,Palermo,2,0,2.87,2.92,3.02
+19-Oct-08,Chievo,Atalanta,1,1,2.56,2.95,3.41
+19-Oct-08,Genoa,Siena,1,0,1.86,3.25,5.71
+19-Oct-08,Lecce,Udinese,2,2,3.04,3,2.77
+19-Oct-08,Torino,Cagliari,0,1,1.87,3.23,5.69
+25-Oct-08,Juventus,Torino,1,0,1.57,3.94,7.6
+25-Oct-08,Siena,Catania,1,1,2.27,3.04,3.96
+26-Oct-08,Palermo,Fiorentina,1,3,2.52,3,3.43
+26-Oct-08,Atalanta,AC Milan,0,1,5,3.56,1.85
+26-Oct-08,Cagliari,Chievo,2,0,2.24,2.98,4.18
+26-Oct-08,Inter,Genoa,0,0,1.34,5.38,11.48
+26-Oct-08,Lazio,Napoli,0,1,2.21,3.02,4.2
+26-Oct-08,Reggina,Lecce,2,0,2.29,3.06,3.85
+26-Oct-08,Sampdoria,Bologna,2,0,1.74,3.52,6.2
+26-Oct-08,Udinese,AS Roma,3,1,2.65,3.09,3.14
+29-Oct-08,AC Milan,Siena,2,1,1.36,4.9,10.91
+29-Oct-08,Bologna,Juventus,1,2,4.47,3.09,2.1
+29-Oct-08,Catania,Udinese,0,2,3.11,2.93,2.79
+29-Oct-08,Chievo,Lazio,1,2,3.6,3.11,2.36
+29-Oct-08,Fiorentina,Inter,0,0,4.05,3.09,2.22
+29-Oct-08,Genoa,Cagliari,2,1,1.67,3.5,7.88
+29-Oct-08,Lecce,Palermo,1,1,3.68,2.94,2.44
+29-Oct-08,Napoli,Reggina,3,0,1.48,4.18,9.88
+29-Oct-08,Torino,Atalanta,2,1,2.75,2.99,3.1
+1-Nov-08,Juventus,AS Roma,2,0,2.1,3.15,4.4
+1-Nov-08,Reggina,Inter,2,3,9.83,4.04,1.49
+2-Nov-08,AC Milan,Napoli,1,0,1.68,3.86,6.09
+2-Nov-08,Atalanta,Lecce,0,0,1.81,3.29,5.84
+2-Nov-08,Cagliari,Bologna,5,1,1.91,3.21,5.45
+2-Nov-08,Lazio,Catania,1,0,1.56,3.85,9.34
+2-Nov-08,Palermo,Chievo,3,0,1.68,3.49,6.88
+2-Nov-08,Sampdoria,Torino,1,0,1.67,3.46,7.31
+2-Nov-08,Siena,Fiorentina,1,0,3.25,2.94,2.67
+2-Nov-08,Udinese,Genoa,2,2,2,3.15,4.91
+8-Nov-08,Bologna,AS Roma,1,1,5.53,3.46,1.82
+8-Nov-08,Torino,Palermo,1,0,2.54,3.02,3.31
+9-Nov-08,Lecce,AC Milan,1,1,8.02,3.73,1.6
+9-Nov-08,Catania,Cagliari,2,1,2.16,3.13,4.3
+9-Nov-08,Chievo,Juventus,0,2,6.86,3.77,1.65
+9-Nov-08,Fiorentina,Atalanta,2,1,1.57,3.82,7.85
+9-Nov-08,Genoa,Reggina,4,0,1.53,3.98,8.26
+9-Nov-08,Inter,Udinese,1,0,1.56,3.85,8.27
+9-Nov-08,Lazio,Siena,3,0,1.67,3.44,7.33
+9-Nov-08,Napoli,Sampdoria,2,0,1.88,3.29,5.42
+13-Nov-08,Juventus,Genoa,4,1,1.68,3.58,6.78
+15-Nov-08,Palermo,Inter,0,2,5.37,3.25,1.9
+16-Nov-08,AS Roma,Lazio,1,0,2.36,3.39,3.29
+16-Nov-08,AC Milan,Chievo,1,0,1.23,6.5,19.02
+16-Nov-08,Atalanta,Napoli,3,1,2.73,3,3.11
+16-Nov-08,Cagliari,Fiorentina,1,0,3.21,3.09,2.59
+16-Nov-08,Catania,Torino,3,2,2.33,3,3.89
+16-Nov-08,Sampdoria,Lecce,3,2,1.59,3.85,7.8
+16-Nov-08,Siena,Bologna,1,1,1.94,3.29,5.01
+16-Nov-08,Udinese,Reggina,0,1,1.44,4.7,9.25
+22-Nov-08,Inter,Juventus,1,0,2.21,3.04,4.08
+22-Nov-08,Fiorentina,Udinese,4,2,1.89,3.38,5.22
+23-Nov-08,Torino,AC Milan,2,2,6.39,3.44,1.72
+23-Nov-08,Bologna,Palermo,1,1,2.71,3.12,3.04
+23-Nov-08,Chievo,Siena,0,2,2.39,3.02,3.71
+23-Nov-08,Lazio,Genoa,1,1,1.97,3.41,4.63
+23-Nov-08,Lecce,AS Roma,0,3,4.48,3.24,2.08
+23-Nov-08,Napoli,Cagliari,2,2,1.74,3.52,6.21
+23-Nov-08,Reggina,Atalanta,3,1,2.56,3.02,3.27
+23-Nov-08,Sampdoria,Catania,3,0,1.66,3.64,7.63
+29-Nov-08,Juventus,Reggina,4,0,1.3,5.45,14.5
+29-Nov-08,Catania,Lecce,1,1,2.08,3.11,4.58
+30-Nov-08,Palermo,AC Milan,3,1,4.01,3.25,2.14
+30-Nov-08,AS Roma,Fiorentina,1,0,1.88,3.5,4.93
+30-Nov-08,Atalanta,Lazio,2,0,2.64,3.13,3.14
+30-Nov-08,Cagliari,Sampdoria,1,0,2.66,3.06,3.14
+30-Nov-08,Genoa,Bologna,1,1,1.61,3.82,7.88
+30-Nov-08,Inter,Napoli,2,1,1.5,4.12,8.96
+30-Nov-08,Siena,Torino,1,0,2.24,2.98,4.18
+30-Nov-08,Udinese,Chievo,0,1,1.51,4.13,7.6
+6-Dec-08,Lazio,Inter,0,3,4.07,3.2,2.17
+6-Dec-08,Chievo,AS Roma,0,1,5.34,2.18,2.27
+7-Dec-08,Sampdoria,Genoa,0,1,3,2.2,4
+7-Dec-08,AC Milan,Catania,1,0,1.69,2.79,11.5
+7-Dec-08,Atalanta,Udinese,3,0,2.31,3.31,3.48
+7-Dec-08,Cagliari,Palermo,1,0,2.52,3.11,3.31
+7-Dec-08,Lecce,Juventus,1,2,6.55,2.6,1.99
+7-Dec-08,Napoli,Siena,2,0,1.68,3.61,7
+7-Dec-08,Reggina,Bologna,2,2,2.06,3.2,4.47
+7-Dec-08,Torino,Fiorentina,1,4,3.58,3.12,2.39
+13-Dec-08,Napoli,Lecce,3,0,1.5,4.18,9.59
+13-Dec-08,Bologna,Torino,5,2,2.37,3.08,3.43
+14-Dec-08,Juventus,AC Milan,4,2,2.33,3.1,3.4
+14-Dec-08,AS Roma,Cagliari,3,2,1.41,4.54,11.82
+14-Dec-08,Fiorentina,Catania,2,0,1.41,4.51,11
+14-Dec-08,Genoa,Atalanta,1,1,2.02,3.27,4.59
+14-Dec-08,Inter,Chievo,4,2,1.19,6.5,25.5
+14-Dec-08,Palermo,Siena,2,0,1.92,3.37,4.99
+14-Dec-08,Reggina,Sampdoria,0,2,2.65,3.11,3.13
+14-Dec-08,Udinese,Lazio,3,3,2.47,3.13,3.38
+20-Dec-08,Siena,Inter,1,2,7,3.06,1.76
+20-Dec-08,Lazio,Palermo,1,0,2.29,2.41,5.3
+21-Dec-08,AC Milan,Udinese,5,1,1.6,4,6.62
+21-Dec-08,Atalanta,Juventus,1,3,4.04,3,2.2
+21-Dec-08,Cagliari,Reggina,1,1,1.84,3.37,5.54
+21-Dec-08,Catania,AS Roma,3,2,4.55,2.75,2.21
+21-Dec-08,Chievo,Genoa,0,1,2.31,3.27,3.61
+21-Dec-08,Lecce,Bologna,0,0,2.24,3.11,4
+21-Dec-08,Sampdoria,Fiorentina,0,1,2.98,3.06,2.79
+21-Dec-08,Torino,Napoli,1,0,2.52,3.14,3.31
+10-Jan-09,Inter,Cagliari,1,1,1.28,5.76,13.8
+10-Jan-09,Genoa,Torino,3,0,2.06,3.2,4.5
+11-Jan-09,AS Roma,AC Milan,2,2,2.91,3.29,2.67
+11-Jan-09,Bologna,Chievo,1,1,1.94,3.36,4.87
+11-Jan-09,Fiorentina,Lecce,1,2,1.33,5.21,15.03
+11-Jan-09,Juventus,Siena,1,0,1.33,5.24,14.8
+11-Jan-09,Napoli,Catania,1,0,1.56,3.83,8.44
+11-Jan-09,Palermo,Atalanta,3,2,2.08,3.16,4.58
+11-Jan-09,Reggina,Lazio,2,3,3.5,3.31,2.31
+11-Jan-09,Udinese,Sampdoria,1,1,2.39,3.11,3.5
+14-Jan-09,AS Roma,Sampdoria,2,0,1.79,3.5,5.57
+17-Jan-09,AC Milan,Fiorentina,1,0,1.63,3.74,7.16
+17-Jan-09,Siena,Reggina,1,0,1.83,3.36,5.48
+18-Jan-09,Lazio,Juventus,1,1,3.14,3.31,2.49
+18-Jan-09,Atalanta,Inter,3,1,6.12,3.27,1.82
+18-Jan-09,Cagliari,Udinese,2,0,2.29,3.25,3.57
+18-Jan-09,Catania,Bologna,1,2,2.04,3.2,4.55
+18-Jan-09,Chievo,Napoli,2,1,3.24,3.31,2.44
+18-Jan-09,Lecce,Genoa,0,2,2.58,3.38,2.96
+18-Jan-09,Sampdoria,Palermo,0,2,2.02,3.19,4.76
+18-Jan-09,Torino,AS Roma,0,1,4.3,3.37,2.02
+24-Jan-09,Juventus,Fiorentina,1,0,1.79,3.37,6.09
+24-Jan-09,Reggina,Chievo,0,1,2.1,3.17,4.3
+25-Jan-09,Inter,Sampdoria,1,0,1.4,4.34,13.3
+25-Jan-09,Bologna,AC Milan,1,4,24,5.4,1.24
+25-Jan-09,Genoa,Catania,1,1,1.61,3.75,8
+25-Jan-09,Lazio,Cagliari,1,4,1.69,3.6,7.18
+25-Jan-09,Lecce,Torino,3,3,2.31,2.98,3.95
+25-Jan-09,Napoli,AS Roma,0,3,2.96,3.25,2.71
+25-Jan-09,Palermo,Udinese,3,2,1.94,3.48,4.63
+25-Jan-09,Siena,Atalanta,1,0,2.65,2.92,3.31
+28-Jan-09,AC Milan,Genoa,1,1,1.46,4.38,9.44
+28-Jan-09,AS Roma,Palermo,2,1,1.49,3.99,9.31
+28-Jan-09,Atalanta,Bologna,0,1,1.79,3.44,5.87
+28-Jan-09,Cagliari,Siena,1,0,2.04,3.12,4.76
+28-Jan-09,Catania,Inter,0,2,5.74,3.46,1.78
+28-Jan-09,Chievo,Lecce,1,1,2.08,3.17,3.09
+28-Jan-09,Fiorentina,Napoli,2,1,1.68,3.5,7.29
+28-Jan-09,Sampdoria,Lazio,3,1,2.44,3.25,3.29
+28-Jan-09,Torino,Reggina,0,0,1.78,3.47,5.99
+28-Jan-09,Udinese,Juventus,2,1,4.5,3.23,2.02
+31-Jan-09,Juventus,Cagliari,2,3,1.44,4.58,9.92
+31-Jan-09,Napoli,Udinese,2,2,1.96,3.2,4.84
+1-Feb-09,Lazio,AC Milan,0,3,3.52,3.22,2.27
+1-Feb-09,Atalanta,Catania,1,0,1.89,3.41,5.16
+1-Feb-09,Chievo,Sampdoria,1,1,3.29,3,2.61
+1-Feb-09,Genoa,Palermo,1,0,1.97,3.31,4.84
+1-Feb-09,Inter,Torino,1,1,1.24,5.8,20.5
+1-Feb-09,Reggina,AS Roma,2,2,3.74,3.19,2
+1-Feb-09,Siena,Lecce,1,2,1.89,3.25,5.43
+2-Feb-09,Bologna,Fiorentina,1,3,3.5,3.12,2.43
+7-Feb-09,AC Milan,Reggina,1,1,1.22,6.33,21
+7-Feb-09,Lecce,Inter,0,3,7.56,3.59,1.64
+8-Feb-09,Palermo,Napoli,2,1,2.14,3.21,4.05
+8-Feb-09,AS Roma,Genoa,3,0,1.81,3.38,5.88
+8-Feb-09,Cagliari,Atalanta,0,1,2.29,3.13,3.8
+8-Feb-09,Catania,Juventus,1,2,5.22,3.34,1.89
+8-Feb-09,Fiorentina,Lazio,1,0,1.67,3.57,7.11
+8-Feb-09,Sampdoria,Siena,2,2,2.04,3.09,4.75
+8-Feb-09,Torino,Chievo,1,1,2.1,3.13,4.42
+8-Feb-09,Udinese,Bologna,1,0,1.7,3.62,6.38
+14-Feb-09,Napoli,Bologna,1,1,1.61,3.78,7.75
+14-Feb-09,Lazio,Torino,1,1,1.65,3.66,7.1
+15-Feb-09,Inter,AC Milan,2,1,2.27,3.23,3.77
+15-Feb-09,Atalanta,AS Roma,3,0,3.59,3.23,2.31
+15-Feb-09,Cagliari,Lecce,2,0,1.96,3.22,5.01
+15-Feb-09,Chievo,Catania,1,1,2.27,3.1,3.84
+15-Feb-09,Genoa,Fiorentina,3,3,2.54,3.15,3.2
+15-Feb-09,Juventus,Sampdoria,1,1,1.56,3.93,8.34
+15-Feb-09,Reggina,Palermo,0,0,3.06,3.13,2.67
+15-Feb-09,Siena,Udinese,1,1,2.48,3.15,3.31
+21-Feb-09,Palermo,Juventus,0,2,2.91,2.98,2.93
+21-Feb-09,AS Roma,Siena,1,0,1.74,3.42,6.8
+21-Feb-09,Bologna,Inter,1,2,5.59,3.17,1.97
+22-Feb-09,AC Milan,Cagliari,1,0,1.63,3.8,7.04
+22-Feb-09,Catania,Reggina,2,0,2.02,3.17,4.88
+22-Feb-09,Fiorentina,Chievo,2,1,1.47,4.15,9.41
+22-Feb-09,Lecce,Lazio,0,2,3.5,3.11,2.43
+22-Feb-09,Napoli,Genoa,0,1,2.27,3.19,3.72
+22-Feb-09,Sampdoria,Atalanta,1,0,2.4,3.1,3.58
+22-Feb-09,Torino,Udinese,1,0,2.58,3.06,3.27
+28-Feb-09,Juventus,Napoli,1,0,1.72,3.4,6.8
+28-Feb-09,Lazio,Bologna,2,0,1.74,3.61,6.3
+1-Mar-09,Inter,AS Roma,3,3,1.83,3.34,5.48
+1-Mar-09,Atalanta,Chievo,0,2,2.14,3,4.41
+1-Mar-09,Cagliari,Torino,0,0,2.1,3.17,4.38
+1-Mar-09,Palermo,Catania,0,4,1.8,3.33,6.43
+1-Mar-09,Reggina,Fiorentina,1,1,2.48,3.35,2.21
+1-Mar-09,Sampdoria,AC Milan,2,1,3.06,3.04,2.73
+1-Mar-09,Siena,Genoa,0,0,2.92,3.09,2.79
+1-Mar-09,Udinese,Lecce,2,0,1.87,3.25,5.59
+7-Mar-09,Torino,Juventus,0,1,4.01,3.06,2.24
+7-Mar-09,Genoa,Inter,0,2,2.83,3.1,2.91
+7-Mar-09,AS Roma,Udinese,1,1,2,3.24,4.73
+8-Mar-09,AC Milan,Atalanta,3,0,1.6,3.68,7.87
+8-Mar-09,Bologna,Sampdoria,3,0,2.44,3.13,3.43
+8-Mar-09,Catania,Siena,0,3,2.52,2.84,3.64
+8-Mar-09,Chievo,Cagliari,1,1,2.29,3.2,3.68
+8-Mar-09,Fiorentina,Palermo,0,2,1.64,3.62,7.56
+8-Mar-09,Lecce,Reggina,0,0,2.24,3.21,3.84
+8-Mar-09,Napoli,Lazio,0,2,2.34,3.27,3.46
+14-Mar-09,Juventus,Bologna,4,1,1.52,4.23,8.43
+14-Mar-09,Cagliari,Genoa,0,1,2.47,3.21,3.25
+15-Mar-09,Inter,Fiorentina,2,0,1.76,3.41,6.25
+15-Mar-09,Atalanta,Torino,2,0,2.17,3.15,4.13
+15-Mar-09,Lazio,Chievo,0,3,1.75,3.49,6.36
+15-Mar-09,Palermo,Lecce,5,2,1.74,3.65,6.16
+15-Mar-09,Reggina,Napoli,1,1,2.93,3.16,2.71
+15-Mar-09,Sampdoria,AS Roma,2,2,2.39,3.11,3.68
+15-Mar-09,Siena,AC Milan,1,5,4.25,3.25,2.06
+15-Mar-09,Udinese,Catania,1,1,1.97,3.21,5.08
+21-Mar-09,AS Roma,Juventus,1,4,2.85,3.27,2.68
+21-Mar-09,Catania,Lazio,1,0,2.61,3.08,3
+22-Mar-09,Napoli,AC Milan,0,0,3.68,3.25,2.22
+22-Mar-09,Bologna,Cagliari,0,1,2.4,3.21,3.29
+22-Mar-09,Chievo,Palermo,1,0,2.73,3.09,2.88
+22-Mar-09,Fiorentina,Siena,1,0,1.6,3.96,6.81
+22-Mar-09,Genoa,Udinese,2,0,1.84,3.5,4.62
+22-Mar-09,Inter,Reggina,3,0,1.26,6.37,14.2
+22-Mar-09,Lecce,Atalanta,2,2,2.42,3.27,3.39
+22-Mar-09,Torino,Sampdoria,1,3,2.46,3.14,3.31
+5-Apr-09,AC Milan,Lecce,2,0,1.24,5.97,14.67
+5-Apr-09,Udinese,Inter,0,1,6.04,3.54,1.74
+5-Apr-09,AS Roma,Bologna,2,1,1.53,3.85,8.49
+5-Apr-09,Cagliari,Catania,1,0,2.04,3,4.74
+5-Apr-09,Juventus,Chievo,3,3,1.35,4.76,11.65
+5-Apr-09,Palermo,Torino,1,0,1.87,3.31,5.18
+5-Apr-09,Reggina,Genoa,0,1,3.29,3.09,2.48
+5-Apr-09,Sampdoria,Napoli,2,2,2.1,3.08,4.32
+5-Apr-09,Siena,Lazio,2,0,2.56,3.04,3.18
+5-Apr-09,Atalanta,Fiorentina,1,2,2.64,3.19,2.94
+11-Apr-09,Genoa,Juventus,3,2,3.35,3.25,2.44
+11-Apr-09,Bologna,Siena,1,4,2.43,3.13,3.54
+11-Apr-09,Chievo,AC Milan,0,1,4.95,3.38,1.96
+11-Apr-09,Fiorentina,Cagliari,2,1,1.67,3.76,6.62
+11-Apr-09,Inter,Palermo,2,2,1.49,4.26,8.68
+11-Apr-09,Lazio,AS Roma,4,2,3.35,3.21,2.46
+11-Apr-09,Lecce,Sampdoria,1,3,2.66,3.23,3.02
+11-Apr-09,Napoli,Atalanta,0,0,2.02,3.23,4.69
+11-Apr-09,Torino,Catania,2,1,1.96,3.44,4.72
+12-Apr-09,Reggina,Udinese,0,2,2.35,3.41,3.31
+18-Apr-09,Juventus,Inter,1,1,2.63,3.13,3.13
+18-Apr-09,Genoa,Lazio,0,1,1.9,3.37,5.13
+19-Apr-09,AC Milan,Torino,5,1,1.33,5.41,13.23
+19-Apr-09,AS Roma,Lecce,3,2,1.35,5.53,11.4
+19-Apr-09,Atalanta,Reggina,0,1,1.57,3.99,8.13
+19-Apr-09,Cagliari,Napoli,2,0,2.7,2.93,3.23
+19-Apr-09,Catania,Sampdoria,2,0,2.62,2.93,3.36
+19-Apr-09,Palermo,Bologna,4,1,1.92,3.25,5.09
+19-Apr-09,Siena,Chievo,0,2,2.56,2.69,3.81
+19-Apr-09,Udinese,Fiorentina,3,1,3.4,3.21,2.41
+25-Apr-09,Fiorentina,AS Roma,4,1,2.33,3.46,3.37
+25-Apr-09,Chievo,Udinese,1,2,2.33,3.11,3.71
+26-Apr-09,Napoli,Inter,1,0,4.29,3.37,2.06
+26-Apr-09,AC Milan,Palermo,3,0,1.49,4.43,9.19
+26-Apr-09,Bologna,Genoa,2,0,3.9,3.38,2.14
+26-Apr-09,Lazio,Atalanta,0,1,1.88,3.36,5.11
+26-Apr-09,Lecce,Catania,2,1,1.65,3.96,6.19
+26-Apr-09,Reggina,Juventus,2,2,5.95,3.74,1.71
+26-Apr-09,Sampdoria,Cagliari,3,3,2.5,3.15,3.25
+26-Apr-09,Torino,Siena,1,0,1.79,3.58,5.55
+2-May-09,Inter,Lazio,2,0,1.52,4.21,8.15
+2-May-09,Bologna,Reggina,1,2,1.9,3.54,4.73
+3-May-09,Genoa,Sampdoria,3,1,2.35,3.29,3.43
+3-May-09,AS Roma,Chievo,0,0,1.61,4.05,6.65
+3-May-09,Catania,AC Milan,0,2,8.47,4.09,1.53
+3-May-09,Fiorentina,Torino,1,0,1.47,4.3,9.84
+3-May-09,Juventus,Lecce,2,2,1.31,5.67,12.42
+3-May-09,Palermo,Cagliari,5,1,2,3.45,4.34
+3-May-09,Siena,Napoli,2,1,2.22,2.92,4.48
+3-May-09,Udinese,Atalanta,3,0,2.02,3.36,4.38
+9-May-09,Lazio,Udinese,1,3,2.99,3.25,2.63
+9-May-09,Sampdoria,Reggina,5,0,3.41,3.35,2.33
+10-May-09,AC Milan,Juventus,1,1,1.81,3.6,5.53
+10-May-09,Atalanta,Genoa,1,1,3.9,3.45,2.1
+10-May-09,Cagliari,AS Roma,2,2,3.04,3.35,2.56
+10-May-09,Catania,Fiorentina,0,2,6.04,3.69,1.71
+10-May-09,Chievo,Inter,2,2,4.26,3.17,2.12
+10-May-09,Lecce,Napoli,1,1,1.72,4.01,5.36
+10-May-09,Siena,Palermo,1,0,2.94,3.29,2.67
+10-May-09,Torino,Bologna,1,1,2.02,3.31,4.54
+16-May-09,Udinese,AC Milan,2,1,3.76,3.41,2.14
+16-May-09,AS Roma,Catania,4,3,1.28,6.2,13.9
+17-May-09,Inter,Siena,3,0,1.43,4.75,10.5
+17-May-09,Bologna,Lecce,2,1,2.12,3.45,3.84
+17-May-09,Fiorentina,Sampdoria,1,0,1.35,5.26,10.97
+17-May-09,Genoa,Chievo,2,2,1.71,3.72,6.22
+17-May-09,Juventus,Atalanta,2,2,1.39,4.71,9.73
+17-May-09,Napoli,Torino,1,2,2.67,3.25,2.93
+17-May-09,Palermo,Lazio,2,0,1.69,3.84,6.03
+17-May-09,Reggina,Cagliari,2,1,2.06,3.61,3.87
+20-May-09,Lazio,Reggina,1,0,2.52,3.94,2.7
+24-May-09,AC Milan,AS Roma,2,3,1.72,3.77,5.96
+24-May-09,Atalanta,Palermo,2,2,3.06,3.49,2.46
+24-May-09,Cagliari,Inter,2,1,3,3.37,2.56
+24-May-09,Catania,Napoli,3,1,2.67,3.12,3.06
+24-May-09,Chievo,Bologna,0,0,2.9,1.77,8
+24-May-09,Lecce,Fiorentina,1,1,4.93,4.59,1.67
+24-May-09,Sampdoria,Udinese,2,2,3.02,3.56,2.44
+24-May-09,Siena,Juventus,0,3,9.34,4.34,1.44
+24-May-09,Torino,Genoa,2,3,1.68,3.95,5.88
+31-May-09,AS Roma,Torino,3,2,1.65,4.34,5.08
+31-May-09,Bologna,Catania,3,1,1.34,5.2,13.96
+31-May-09,Fiorentina,AC Milan,0,2,2.89,3.31,2.68
+31-May-09,Genoa,Lecce,4,1,1.45,3.75,12.57
+31-May-09,Inter,Atalanta,4,3,1.48,4.34,9.27
+31-May-09,Juventus,Lazio,2,0,1.4,4.93,11.44
+31-May-09,Napoli,Chievo,3,0,1.64,3.97,6.36
+31-May-09,Palermo,Sampdoria,2,2,2.04,3.29,4.43
+31-May-09,Reggina,Siena,1,1,2.5,3.29,3.14
+31-May-09,Udinese,Cagliari,6,2,1.79,3.65,5.33
+22-Aug-09,Siena,AC Milan,1,2,4.84,3.38,1.91
+22-Aug-09,Bologna,Fiorentina,1,1,3.92,3.22,2.18
+23-Aug-09,Catania,Sampdoria,1,2,2.79,3.29,2.77
+23-Aug-09,Genoa,AS Roma,3,2,2.16,3.44,3.71
+23-Aug-09,Juventus,Chievo,1,0,1.32,5.34,12.79
+23-Aug-09,Lazio,Atalanta,1,0,2.14,3.15,4.12
+23-Aug-09,Livorno,Cagliari,0,0,2.34,3.43,3.34
+23-Aug-09,Palermo,Napoli,2,1,2.44,3.25,3.29
+23-Aug-09,Udinese,Parma,2,2,1.93,3.45,4.63
+23-Aug-09,Inter,Bari,1,1,1.24,6.29,18.75
+29-Aug-09,AC Milan,Inter,0,4,2.9,3.22,2.73
+29-Aug-09,Bari,Bologna,0,0,2.06,3.35,4.09
+30-Aug-09,Atalanta,Genoa,0,1,2.39,3.36,3.27
+30-Aug-09,Cagliari,Siena,1,3,2.02,3.31,4.38
+30-Aug-09,Chievo,Lazio,1,2,2.47,3.21,3.31
+30-Aug-09,Fiorentina,Palermo,1,0,1.96,3.61,4.3
+30-Aug-09,Napoli,Livorno,3,1,1.54,3.8,8.1
+30-Aug-09,Parma,Catania,2,1,1.9,3.47,4.94
+30-Aug-09,Sampdoria,Udinese,3,1,2,3.45,4.43
+30-Aug-09,AS Roma,Juventus,1,3,2.94,3.35,2.63
+12-Sep-09,Lazio,Juventus,0,2,4.84,3.29,1.94
+12-Sep-09,Livorno,AC Milan,0,0,6.5,3.8,1.64
+13-Sep-09,Genoa,Napoli,4,1,2.12,3.44,3.9
+13-Sep-09,Palermo,Bari,1,1,1.74,3.65,6.05
+13-Sep-09,Atalanta,Sampdoria,0,1,2.58,3.27,3.04
+13-Sep-09,Bologna,Chievo,0,2,2.69,3,3.19
+13-Sep-09,Fiorentina,Cagliari,1,0,1.53,4.12,7.99
+13-Sep-09,Inter,Parma,2,0,1.3,5.55,15.75
+13-Sep-09,Siena,AS Roma,1,2,3.64,3.25,2.27
+13-Sep-09,Udinese,Catania,4,2,1.7,3.79,6.14
+19-Sep-09,Juventus,Livorno,2,0,1.28,5.51,13.59
+19-Sep-09,Napoli,Udinese,0,0,2.02,3.46,4.22
+20-Sep-09,AS Roma,Fiorentina,3,1,2.08,3.45,3.93
+20-Sep-09,AC Milan,Bologna,1,0,1.36,5.05,11.77
+20-Sep-09,Bari,Atalanta,4,1,2.59,3.14,3.04
+20-Sep-09,Cagliari,Inter,1,2,6.45,3.71,1.65
+20-Sep-09,Catania,Lazio,1,1,2.94,3.1,2.71
+20-Sep-09,Chievo,Genoa,3,1,3.11,3.15,2.6
+20-Sep-09,Parma,Palermo,1,0,2.48,3.24,3.21
+20-Sep-09,Sampdoria,Siena,4,1,1.67,3.68,6.68
+23-Sep-09,Atalanta,Catania,0,0,1.69,3.7,6.09
+23-Sep-09,Bari,Cagliari,0,1,2.08,3.29,4.18
+23-Sep-09,Bologna,Livorno,2,0,2.38,3.14,3.54
+23-Sep-09,Fiorentina,Sampdoria,2,0,2.02,3.34,4.44
+23-Sep-09,Inter,Napoli,3,1,1.47,4.42,9.23
+23-Sep-09,Lazio,Parma,1,2,1.71,3.76,5.82
+23-Sep-09,Palermo,AS Roma,3,3,2.91,3.4,2.61
+23-Sep-09,Siena,Chievo,0,0,2.39,3.23,3.43
+23-Sep-09,Udinese,AC Milan,1,0,3.49,3.43,2.25
+24-Sep-09,Genoa,Juventus,2,2,3.4,3.25,2.38
+26-Sep-09,Livorno,Fiorentina,0,1,3.7,3.37,2.19
+26-Sep-09,Sampdoria,Inter,1,0,4.01,3.25,2.16
+27-Sep-09,AC Milan,Bari,0,0,1.36,5.09,10.99
+27-Sep-09,Catania,AS Roma,1,1,4.38,3.41,1.99
+27-Sep-09,Chievo,Atalanta,1,1,2.27,3.25,3.74
+27-Sep-09,Juventus,Bologna,1,1,1.25,6.4,19.5
+27-Sep-09,Lazio,Palermo,1,1,2.27,3.27,3.63
+27-Sep-09,Napoli,Siena,2,1,1.68,3.7,6.5
+27-Sep-09,Parma,Cagliari,0,2,2,3.31,4.41
+27-Sep-09,Udinese,Genoa,2,0,2.4,3.31,3.25
+3-Oct-09,Inter,Udinese,2,1,1.49,4.36,8.19
+3-Oct-09,Bari,Catania,0,0,2.06,3.4,4.09
+4-Oct-09,Palermo,Juventus,2,0,4,3.5,2.04
+4-Oct-09,AS Roma,Napoli,2,1,1.74,3.72,5.59
+4-Oct-09,Atalanta,AC Milan,1,1,3.5,3.27,2.31
+4-Oct-09,Bologna,Genoa,1,3,3.11,3.19,2.56
+4-Oct-09,Cagliari,Chievo,1,2,2.19,3.23,3.78
+4-Oct-09,Fiorentina,Lazio,0,0,1.84,3.64,4.88
+4-Oct-09,Sampdoria,Parma,1,1,1.63,3.8,6.57
+4-Oct-09,Siena,Livorno,0,0,2.06,3.31,4.25
+17-Oct-09,Genoa,Inter,0,5,3.31,3.31,2.41
+17-Oct-09,Juventus,Fiorentina,1,1,1.78,3.52,5.74
+18-Oct-09,AC Milan,AS Roma,2,1,2.08,3.5,3.96
+18-Oct-09,Catania,Cagliari,2,1,2.34,3.21,3.5
+18-Oct-09,Chievo,Bari,1,2,2.08,3.12,4.5
+18-Oct-09,Lazio,Sampdoria,1,1,2.29,3.35,3.52
+18-Oct-09,Livorno,Palermo,1,2,2.75,2.97,3.12
+18-Oct-09,Napoli,Bologna,2,1,1.56,3.83,8.5
+18-Oct-09,Parma,Siena,1,0,2.35,3.1,3.67
+18-Oct-09,Udinese,Atalanta,1,3,1.83,3.43,5.4
+24-Oct-09,Inter,Catania,2,1,1.26,5.75,16.75
+24-Oct-09,Sampdoria,Bologna,4,1,1.59,3.84,7.5
+25-Oct-09,Chievo,AC Milan,1,2,4.45,3.24,2.04
+25-Oct-09,AS Roma,Livorno,0,1,1.45,4.4,9.1
+25-Oct-09,Atalanta,Parma,3,1,2.21,3.22,3.87
+25-Oct-09,Bari,Lazio,2,0,2.45,3.31,3.22
+25-Oct-09,Cagliari,Genoa,3,2,2.5,3.25,3.15
+25-Oct-09,Fiorentina,Napoli,0,1,1.77,3.64,5.61
+25-Oct-09,Palermo,Udinese,1,0,2.12,3.44,3.82
+25-Oct-09,Siena,Juventus,0,1,6.6,3.45,1.72
+28-Oct-09,Bologna,Siena,2,1,2.4,3.22,3.35
+28-Oct-09,Catania,Chievo,1,2,2.21,3.24,3.85
+28-Oct-09,Genoa,Fiorentina,2,1,2.99,3.31,2.61
+28-Oct-09,Juventus,Sampdoria,5,1,1.72,3.7,5.9
+28-Oct-09,Lazio,Cagliari,0,1,1.85,3.54,5.09
+28-Oct-09,Livorno,Atalanta,1,0,2.75,3.16,2.91
+28-Oct-09,Napoli,AC Milan,2,2,2.72,3.24,2.91
+28-Oct-09,Parma,Bari,2,0,2.12,3.16,4.19
+28-Oct-09,Udinese,AS Roma,2,1,2.14,3.36,3.93
+29-Oct-09,Inter,Palermo,5,3,1.39,4.65,11.02
+31-Oct-09,AC Milan,Parma,2,0,1.59,3.95,6.95
+31-Oct-09,Juventus,Napoli,2,3,1.57,3.91,7.4
+1-Nov-09,Palermo,Genoa,0,0,,,
+1-Nov-09,AS Roma,Bologna,2,1,1.74,3.64,5.82
+1-Nov-09,Cagliari,Atalanta,3,0,2.14,3.36,3.93
+1-Nov-09,Chievo,Udinese,1,1,2.64,3.25,2.98
+1-Nov-09,Fiorentina,Catania,3,1,1.46,4.55,8.44
+1-Nov-09,Livorno,Inter,0,2,,,
+1-Nov-09,Sampdoria,Bari,0,0,1.69,3.69,6.12
+1-Nov-09,Siena,Lazio,1,1,2.89,3.18,2.77
+7-Nov-09,Atalanta,Juventus,2,5,5.5,3.54,1.8
+7-Nov-09,Catania,Napoli,0,0,3.2,3.1,2.56
+8-Nov-09,Inter,AS Roma,1,1,1.53,4.15,7.95
+8-Nov-09,Bari,Livorno,1,0,1.83,3.34,5.66
+8-Nov-09,Bologna,Palermo,3,1,2.47,3.24,3.23
+8-Nov-09,Cagliari,Sampdoria,2,0,2.5,3.17,3.29
+8-Nov-09,Genoa,Siena,4,2,1.64,3.89,6.53
+8-Nov-09,Lazio,AC Milan,1,2,3.94,3.37,2.12
+8-Nov-09,Parma,Chievo,2,0,2.18,3.19,4.04
+8-Nov-09,Udinese,Fiorentina,0,1,2.49,3.1,3.35
+21-Nov-09,Fiorentina,Parma,2,3,1.88,3.34,5.24
+21-Nov-09,Bologna,Inter,1,3,6.12,3.49,1.75
+22-Nov-09,Juventus,Udinese,1,0,1.43,4.55,9.5
+22-Nov-09,AC Milan,Cagliari,4,3,1.58,3.88,7.7
+22-Nov-09,AS Roma,Bari,3,1,1.74,3.87,5.4
+22-Nov-09,Livorno,Genoa,2,1,3.37,3.2,2.42
+22-Nov-09,Napoli,Lazio,0,0,1.79,3.65,5.3
+22-Nov-09,Palermo,Catania,1,1,1.76,3.61,5.7
+22-Nov-09,Sampdoria,Chievo,2,1,1.81,3.5,5.44
+22-Nov-09,Siena,Atalanta,0,2,2.38,3.15,3.5
+28-Nov-09,Genoa,Sampdoria,3,0,2.44,3.23,3.33
+28-Nov-09,Udinese,Livorno,2,0,1.74,3.54,6.09
+29-Nov-09,Catania,AC Milan,0,2,4.41,3.44,1.98
+29-Nov-09,Atalanta,AS Roma,1,2,3.31,3.31,2.39
+29-Nov-09,Bari,Siena,2,1,1.86,3.46,5.15
+29-Nov-09,Cagliari,Juventus,2,0,4.05,3.33,2.1
+29-Nov-09,Chievo,Palermo,1,0,2.52,3.14,3.25
+29-Nov-09,Inter,Fiorentina,1,0,1.62,3.85,6.9
+29-Nov-09,Lazio,Bologna,0,0,1.74,3.71,5.78
+29-Nov-09,Parma,Napoli,1,1,2.34,3.31,3.42
+5-Dec-09,Juventus,Inter,2,1,2.58,3.17,3.12
+5-Dec-09,AC Milan,Sampdoria,3,0,1.57,3.99,7.73
+6-Dec-09,AS Roma,Lazio,1,0,1.91,3.52,4.73
+6-Dec-09,Bologna,Udinese,2,1,3.17,3.16,2.58
+6-Dec-09,Fiorentina,Atalanta,2,0,1.53,4.01,8.36
+6-Dec-09,Genoa,Parma,2,2,1.91,3.49,4.76
+6-Dec-09,Livorno,Chievo,0,2,2.49,3.16,3.31
+6-Dec-09,Napoli,Bari,3,2,2.04,3.25,4.48
+6-Dec-09,Palermo,Cagliari,2,1,2.22,3.21,3.81
+6-Dec-09,Siena,Catania,3,2,2.29,3.15,3.74
+12-Dec-09,Bari,Juventus,3,1,4.18,3.31,2.08
+12-Dec-09,Cagliari,Napoli,3,3,2.5,3.09,3.37
+13-Dec-09,Sampdoria,AS Roma,0,0,3.04,3.29,2.56
+13-Dec-09,AC Milan,Palermo,0,2,1.59,4.09,6.87
+13-Dec-09,Atalanta,Inter,1,1,7.34,3.79,1.61
+13-Dec-09,Catania,Livorno,0,1,1.85,3.38,5.38
+13-Dec-09,Chievo,Fiorentina,2,1,3.15,3.15,2.6
+13-Dec-09,Lazio,Genoa,1,0,2.38,3.37,3.27
+13-Dec-09,Parma,Bologna,2,1,1.9,3.39,4.97
+13-Dec-09,Siena,Udinese,2,1,2.72,3.24,2.9
+20-Dec-09,Inter,Lazio,1,0,1.41,4.75,9.8
+20-Dec-09,AS Roma,Parma,2,0,1.68,3.98,5.75
+20-Dec-09,Juventus,Catania,1,2,1.33,5.34,12.25
+20-Dec-09,Livorno,Sampdoria,3,1,2.7,3.15,3
+20-Dec-09,Napoli,Chievo,2,0,2,3.29,4.62
+20-Dec-09,Palermo,Siena,1,0,1.63,3.83,6.86
+6-Jan-10,AC Milan,Genoa,5,2,1.6,4.05,6.71
+6-Jan-10,Atalanta,Napoli,0,2,2.62,3.33,2.95
+6-Jan-10,Bari,Udinese,2,0,2.38,3.29,3.37
+6-Jan-10,Cagliari,AS Roma,2,2,2.73,3.23,2.9
+6-Jan-10,Catania,Bologna,1,0,1.94,3.5,4.51
+6-Jan-10,Lazio,Livorno,4,1,1.75,3.59,5.87
+6-Jan-10,Parma,Juventus,1,2,3.37,3.34,2.37
+6-Jan-10,Sampdoria,Palermo,1,1,2.4,3.34,3.29
+6-Jan-10,Siena,Fiorentina,1,5,3.57,3.35,2.27
+6-Jan-10,Chievo,Inter,0,1,4.28,3.27,2.08
+9-Jan-10,Inter,Siena,4,3,1.21,6.61,18.55
+9-Jan-10,AS Roma,Chievo,1,0,1.59,3.97,6.95
+10-Jan-10,Juventus,AC Milan,0,3,2.56,3.35,3.02
+10-Jan-10,Fiorentina,Bari,2,1,1.79,3.48,5.65
+10-Jan-10,Genoa,Catania,2,0,1.83,3.42,5.51
+10-Jan-10,Livorno,Parma,2,1,2.72,3.12,3
+10-Jan-10,Napoli,Sampdoria,1,0,1.83,3.62,5.01
+10-Jan-10,Palermo,Atalanta,1,0,1.74,3.7,5.76
+10-Jan-10,Bologna,Cagliari,0,1,2.77,3.17,2.89
+10-Jan-10,Udinese,Lazio,1,1,2.24,3.25,3.72
+16-Jan-10,Bari,Inter,2,2,4.32,3.31,2.04
+16-Jan-10,Cagliari,Livorno,3,0,1.85,3.34,5.5
+17-Jan-10,Napoli,Palermo,0,0,2.02,3.39,4.34
+17-Jan-10,AC Milan,Siena,4,0,1.29,5.73,13.3
+17-Jan-10,AS Roma,Genoa,3,0,1.8,3.85,4.9
+17-Jan-10,Atalanta,Lazio,3,0,2.5,3.21,3.23
+17-Jan-10,Chievo,Juventus,1,0,3.46,3.36,2.29
+17-Jan-10,Fiorentina,Bologna,1,2,1.42,4.65,10.22
+17-Jan-10,Parma,Udinese,0,0,2.29,3.25,3.63
+17-Jan-10,Sampdoria,Catania,1,1,1.94,3.41,4.7
+20-Jan-10,Bologna,Atalanta,2,2,2.7,3.1,2.99
+20-Jan-10,Genoa,Bari,1,1,2.14,3.31,3.91
+23-Jan-10,Juventus,AS Roma,1,2,2.34,3.29,3.41
+23-Jan-10,Catania,Parma,3,0,2.14,3.29,3.98
+24-Jan-10,Inter,AC Milan,2,0,2.65,3.21,3.02
+24-Jan-10,Bologna,Bari,2,1,2.86,3.25,2.73
+24-Jan-10,Genoa,Atalanta,2,0,2.02,3.25,4.54
+24-Jan-10,Lazio,Chievo,1,1,2.16,3.27,3.95
+24-Jan-10,Livorno,Napoli,0,2,3.04,3.09,2.72
+24-Jan-10,Palermo,Fiorentina,3,0,2.68,3.25,2.94
+24-Jan-10,Siena,Cagliari,1,1,2.59,3.33,2.99
+24-Jan-10,Udinese,Sampdoria,2,3,1.88,3.45,5
+30-Jan-10,Napoli,Genoa,0,0,2.02,3.31,4.48
+30-Jan-10,Bari,Palermo,4,2,2.56,3.22,3.15
+31-Jan-10,Juventus,Lazio,1,1,1.69,3.52,6.8
+31-Jan-10,AC Milan,Livorno,1,1,1.3,5.49,14.72
+31-Jan-10,AS Roma,Siena,2,1,1.37,4.82,10.51
+31-Jan-10,Cagliari,Fiorentina,2,2,2.74,3.29,2.85
+31-Jan-10,Catania,Udinese,1,1,2.36,3.27,3.42
+31-Jan-10,Chievo,Bologna,1,1,2,3.29,4.59
+31-Jan-10,Sampdoria,Atalanta,2,0,2.17,3.23,3.99
+6-Feb-10,Livorno,Juventus,1,1,4.76,3.25,1.98
+6-Feb-10,Palermo,Parma,2,1,1.72,3.6,6.13
+7-Feb-10,Fiorentina,AS Roma,0,1,2.58,3.27,3.04
+7-Feb-10,Atalanta,Bari,1,0,2.25,3.31,3.65
+7-Feb-10,Bologna,AC Milan,0,0,5.59,3.64,1.78
+7-Feb-10,Genoa,Chievo,1,0,1.93,3.41,4.79
+7-Feb-10,Inter,Cagliari,3,0,1.39,4.79,10.71
+7-Feb-10,Lazio,Catania,0,1,1.83,3.42,5.5
+7-Feb-10,Siena,Sampdoria,1,2,2.72,3.27,2.88
+7-Feb-10,Udinese,Napoli,3,1,2.49,3.23,3.2
+10-Feb-10,Parma,Inter,1,1,6.04,3.34,1.79
+12-Feb-10,AC Milan,Udinese,3,2,1.56,4,7.53
+13-Feb-10,Sampdoria,Fiorentina,2,0,2.74,3.19,2.94
+13-Feb-10,AS Roma,Palermo,4,1,1.73,3.69,5.86
+14-Feb-10,Napoli,Inter,0,0,3.52,3.11,2.4
+14-Feb-10,Cagliari,Bari,3,1,2,3.25,4.69
+14-Feb-10,Catania,Atalanta,0,0,2.21,3.13,3.99
+14-Feb-10,Chievo,Siena,0,1,1.84,3.54,5.15
+14-Feb-10,Juventus,Genoa,3,2,1.7,3.69,6.23
+14-Feb-10,Livorno,Bologna,0,1,2.21,3.15,3.99
+14-Feb-10,Parma,Lazio,0,2,2.5,3.1,3.34
+20-Feb-10,Inter,Sampdoria,0,0,1.53,4.2,8.19
+20-Feb-10,Genoa,Udinese,3,0,2.08,3.25,4.24
+21-Feb-10,Bari,AC Milan,0,2,4.38,3.49,1.97
+21-Feb-10,AS Roma,Catania,1,0,1.52,4.22,8.11
+21-Feb-10,Atalanta,Chievo,0,1,,,
+21-Feb-10,Bologna,Juventus,1,2,5.17,3.41,1.88
+21-Feb-10,Cagliari,Parma,2,0,1.96,3.45,4.55
+21-Feb-10,Fiorentina,Livorno,2,1,1.65,3.68,7.25
+21-Feb-10,Palermo,Lazio,3,1,2.1,3.21,4.21
+21-Feb-10,Siena,Napoli,0,0,3.25,3.21,2.48
+24-Feb-10,Fiorentina,AC Milan,1,2,2.98,3.29,2.61
+24-Feb-10,Udinese,Cagliari,2,1,1.96,3.43,4.59
+27-Feb-10,Lazio,Fiorentina,1,1,2.38,3.25,3.43
+27-Feb-10,Catania,Bari,4,0,2.17,3.23,4.01
+28-Feb-10,Juventus,Palermo,0,2,1.78,3.58,5.59
+28-Feb-10,AC Milan,Atalanta,3,1,1.34,5.38,11.28
+28-Feb-10,Chievo,Cagliari,2,1,2.22,3.25,3.82
+28-Feb-10,Genoa,Bologna,3,4,1.65,3.75,6.77
+28-Feb-10,Livorno,Siena,1,2,2.37,3.2,3.5
+28-Feb-10,Napoli,AS Roma,2,2,2.43,3.15,3.44
+28-Feb-10,Parma,Sampdoria,1,0,2.29,3.14,3.71
+28-Feb-10,Udinese,Inter,2,3,3.69,3.24,2.25
+6-Mar-10,AS Roma,AC Milan,0,0,2.46,3.29,3.22
+6-Mar-10,Fiorentina,Juventus,1,2,2.36,3.25,3.47
+7-Mar-10,Inter,Genoa,0,0,1.39,4.88,10
+7-Mar-10,Atalanta,Udinese,0,0,2.56,3.15,3.2
+7-Mar-10,Bari,Chievo,1,0,1.93,3.43,4.8
+7-Mar-10,Bologna,Napoli,2,1,3.33,3.18,2.48
+7-Mar-10,Cagliari,Catania,2,2,2.12,3.27,4.09
+7-Mar-10,Palermo,Livorno,1,0,1.49,4.26,8.4
+7-Mar-10,Sampdoria,Lazio,2,1,2.21,3.24,3.86
+7-Mar-10,Siena,Parma,1,1,2.25,3.29,3.68
+12-Mar-10,Catania,Inter,3,1,4.32,3.17,2.1
+13-Mar-10,Napoli,Fiorentina,1,3,2.02,3.27,4.48
+14-Mar-10,AC Milan,Chievo,1,0,1.39,4.86,9.73
+14-Mar-10,Bologna,Sampdoria,1,1,2.91,3.23,2.72
+14-Mar-10,Genoa,Cagliari,5,3,1.8,3.79,4.9
+14-Mar-10,Juventus,Siena,3,3,1.38,4.96,9.77
+14-Mar-10,Lazio,Bari,0,2,1.83,3.42,5.5
+14-Mar-10,Livorno,AS Roma,3,3,4.95,3.62,1.84
+14-Mar-10,Parma,Atalanta,1,0,2.23,3.21,3.84
+14-Mar-10,Udinese,Palermo,3,2,2.29,3.29,3.54
+20-Mar-10,AS Roma,Udinese,4,2,1.81,3.58,5.29
+20-Mar-10,Palermo,Inter,1,1,3.61,3.31,2.27
+20-Mar-10,Fiorentina,Genoa,3,0,1.87,3.6,4.84
+21-Mar-10,Sampdoria,Juventus,1,0,2.41,3.25,3.36
+21-Mar-10,AC Milan,Napoli,1,1,1.58,4,7.2
+21-Mar-10,Atalanta,Livorno,3,0,1.95,3.37,4.7
+21-Mar-10,Bari,Parma,1,1,2.06,3.06,4.7
+21-Mar-10,Cagliari,Lazio,0,2,2.33,3.34,3.42
+21-Mar-10,Chievo,Catania,1,1,3.5,1.8,5.59
+21-Mar-10,Siena,Bologna,1,0,2.14,3.36,3.87
+24-Mar-10,Atalanta,Cagliari,3,1,1.82,3.79,4.84
+24-Mar-10,Bari,Sampdoria,2,1,3.11,3.06,2.69
+24-Mar-10,Bologna,AS Roma,0,2,4.67,3.69,1.87
+24-Mar-10,Catania,Fiorentina,1,0,3.15,3.31,2.48
+24-Mar-10,Genoa,Palermo,2,2,2.12,3.42,3.89
+24-Mar-10,Inter,Livorno,3,0,1.22,6.51,19.6
+24-Mar-10,Lazio,Siena,2,0,1.86,3.47,4.95
+24-Mar-10,Parma,AC Milan,1,0,5.45,3.66,1.78
+24-Mar-10,Udinese,Chievo,0,0,1.68,3.75,6.38
+25-Mar-10,Napoli,Juventus,3,1,2.31,3.35,3.46
+27-Mar-10,Palermo,Bologna,3,1,1.67,3.79,6.38
+27-Mar-10,AS Roma,Inter,2,1,2.7,3.29,2.89
+28-Mar-10,AC Milan,Lazio,1,1,1.81,3.54,5.22
+28-Mar-10,Chievo,Parma,0,0,3.04,1.91,5.45
+28-Mar-10,Fiorentina,Udinese,4,1,1.79,3.59,4.42
+28-Mar-10,Juventus,Atalanta,2,1,1.61,3.95,6.88
+28-Mar-10,Livorno,Bari,1,1,2.35,3.29,3.41
+28-Mar-10,Napoli,Catania,1,0,1.64,3.82,6.68
+28-Mar-10,Sampdoria,Cagliari,1,1,1.66,3.8,6.34
+28-Mar-10,Siena,Genoa,0,0,2.65,3.25,2.98
+3-Apr-10,Udinese,Juventus,3,0,2.39,3.39,3.21
+3-Apr-10,Catania,Palermo,2,0,3.17,2.25,3.64
+3-Apr-10,Atalanta,Siena,2,0,1.84,3.54,5.15
+3-Apr-10,Bari,AS Roma,0,1,5.88,3.95,1.68
+3-Apr-10,Cagliari,AC Milan,2,3,4.92,3.79,1.81
+3-Apr-10,Chievo,Sampdoria,1,2,2.97,3,2.85
+3-Apr-10,Genoa,Livorno,1,1,1.51,4.57,7.56
+3-Apr-10,Inter,Bologna,3,0,1.27,5.88,13.89
+3-Apr-10,Lazio,Napoli,1,1,2.44,3.09,3.49
+3-Apr-10,Parma,Fiorentina,1,1,3.59,3.42,2.22
+10-Apr-10,Fiorentina,Inter,2,2,4.55,3.46,1.95
+10-Apr-10,Napoli,Parma,2,3,1.52,4.13,8.69
+11-Apr-10,Sampdoria,Genoa,1,0,2.34,3.14,3.62
+11-Apr-10,AC Milan,Catania,2,2,1.35,5.16,12.06
+11-Apr-10,AS Roma,Atalanta,2,1,1.26,5.97,15.25
+11-Apr-10,Bologna,Lazio,2,3,3.7,2.04,3.6
+11-Apr-10,Juventus,Cagliari,1,0,1.46,4.59,8.4
+11-Apr-10,Livorno,Udinese,0,2,3.49,3.4,2.27
+11-Apr-10,Palermo,Chievo,3,1,1.39,4.7,11.11
+11-Apr-10,Siena,Bari,3,2,2,3.48,4.29
+16-Apr-10,Inter,Juventus,2,0,1.66,3.87,6.48
+17-Apr-10,Chievo,Livorno,2,0,1.36,5.13,10.69
+18-Apr-10,Lazio,AS Roma,1,2,4.2,3.46,2.02
+18-Apr-10,Atalanta,Fiorentina,2,1,2.52,3.35,3.02
+18-Apr-10,Bari,Napoli,1,2,3.29,3.34,2.4
+18-Apr-10,Cagliari,Palermo,2,2,3.38,3.41,2.31
+18-Apr-10,Catania,Siena,2,2,1.91,3.56,4.57
+18-Apr-10,Parma,Genoa,2,3,2.33,3.19,3.61
+18-Apr-10,Sampdoria,AC Milan,2,1,2.89,3.29,2.7
+18-Apr-10,Udinese,Bologna,1,1,1.65,3.2,9.73
+24-Apr-10,Palermo,AC Milan,3,1,1.92,3.74,4.34
+24-Apr-10,Inter,Atalanta,3,1,1.26,6,15.31
+25-Apr-10,AS Roma,Sampdoria,1,2,1.46,4.76,7.83
+25-Apr-10,Bologna,Parma,2,1,,,
+25-Apr-10,Fiorentina,Chievo,0,2,1.56,4.13,7.19
+25-Apr-10,Genoa,Lazio,1,2,2.38,3.34,3.37
+25-Apr-10,Juventus,Bari,3,0,1.41,4.59,9.36
+25-Apr-10,Livorno,Catania,3,1,4.32,3.46,2
+25-Apr-10,Napoli,Cagliari,0,0,1.45,4.94,8.18
+25-Apr-10,Udinese,Siena,4,1,1.66,4.01,5.84
+1-May-10,AC Milan,Fiorentina,1,0,1.59,4.29,6.2
+1-May-10,Parma,AS Roma,1,2,7.1,4.57,1.51
+2-May-10,Lazio,Inter,0,2,10.85,5.3,1.34
+2-May-10,Atalanta,Bologna,1,1,1.85,3.59,4.93
+2-May-10,Bari,Genoa,3,0,2.81,2.14,4.7
+2-May-10,Cagliari,Udinese,2,2,3.68,1.88,4.37
+2-May-10,Catania,Juventus,1,1,3.18,3.42,2.39
+2-May-10,Chievo,Napoli,1,2,4.05,3.41,2.08
+2-May-10,Sampdoria,Livorno,2,0,,,
+2-May-10,Siena,Palermo,1,2,7.11,4.75,1.49
+9-May-10,AS Roma,Cagliari,2,1,,,
+9-May-10,Bologna,Catania,1,1,,,
+9-May-10,Fiorentina,Siena,1,1,1.43,4.73,8.59
+9-May-10,Genoa,AC Milan,1,0,3.95,3.81,1.98
+9-May-10,Inter,Chievo,4,3,,,
+9-May-10,Juventus,Parma,2,3,1.36,5.11,9.68
+9-May-10,Livorno,Lazio,1,2,5.7,3.52,1.75
+9-May-10,Napoli,Atalanta,2,0,1.55,4.34,6.72
+9-May-10,Palermo,Sampdoria,1,1,2.06,3.35,4.19
+9-May-10,Udinese,Bari,3,3,1.8,2.97,7.55
+15-May-10,AC Milan,Juventus,3,0,1.97,3.5,4.41
+15-May-10,Lazio,Udinese,3,1,2.14,2.98,4.51
+16-May-10,Atalanta,Palermo,1,2,5.79,3.96,1.66
+16-May-10,Bari,Fiorentina,2,0,2.25,3.31,3.62
+16-May-10,Cagliari,Bologna,1,1,1.6,3.89,7.21
+16-May-10,Catania,Genoa,1,0,1.77,3.69,5.41
+16-May-10,Chievo,AS Roma,0,2,8.91,4.8,1.42
+16-May-10,Parma,Livorno,4,1,1.41,4.67,9
+16-May-10,Sampdoria,Napoli,1,0,1.35,5.3,10.19
+16-May-10,Siena,Inter,0,1,,,
+28-Aug-10,AS Roma,Cesena,0,0,1.33,5.49,11.3
+28-Aug-10,Udinese,Genoa,0,1,2.37,3.21,3.48
+29-Aug-10,AC Milan,Lecce,4,0,1.28,5.82,13.48
+29-Aug-10,Chievo,Catania,2,1,2.27,3.2,3.75
+29-Aug-10,Fiorentina,Napoli,1,1,2.25,3.19,3.75
+29-Aug-10,Palermo,Cagliari,0,0,1.7,3.73,5.99
+29-Aug-10,Parma,Brescia,2,0,1.85,3.39,5
+29-Aug-10,Sampdoria,Lazio,2,0,2.31,3.04,3.8
+29-Aug-10,Bari,Juventus,1,0,3.42,3.08,2.47
+30-Aug-10,Bologna,Inter,0,0,6.42,3.78,1.67
+11-Sep-10,Cagliari,AS Roma,5,1,3.31,3.21,2.46
+11-Sep-10,Cesena,AC Milan,2,0,7.05,3.99,1.59
+11-Sep-10,Inter,Udinese,2,1,1.45,4.49,9.11
+12-Sep-10,Napoli,Bari,2,2,1.93,3.31,4.95
+12-Sep-10,Catania,Parma,2,1,2.24,3.19,3.79
+12-Sep-10,Genoa,Chievo,1,3,1.78,3.62,5.38
+12-Sep-10,Juventus,Sampdoria,3,3,1.93,3.41,4.84
+12-Sep-10,Lazio,Bologna,3,1,1.8,3.5,5.51
+12-Sep-10,Lecce,Fiorentina,1,0,3.2,3.19,2.5
+12-Sep-10,Brescia,Palermo,3,2,2.94,3.22,2.71
+18-Sep-10,AC Milan,Catania,1,1,1.36,5.19,10.14
+18-Sep-10,Fiorentina,Lazio,1,2,2.04,3.27,4.45
+19-Sep-10,Sampdoria,Napoli,1,2,2.44,3.29,3.2
+19-Sep-10,AS Roma,Bologna,2,2,1.47,4.36,8.9
+19-Sep-10,Cesena,Lecce,1,0,2.12,3.15,4.25
+19-Sep-10,Chievo,Brescia,0,1,1.94,3.41,4.72
+19-Sep-10,Palermo,Inter,1,2,3.41,3.2,2.42
+19-Sep-10,Parma,Genoa,1,1,2.56,3.2,3.16
+19-Sep-10,Udinese,Juventus,0,4,2.37,3.27,3.33
+19-Sep-10,Bari,Cagliari,0,0,2.2,3.24,3.88
+22-Sep-10,Bologna,Udinese,2,1,2.44,3.25,3.29
+22-Sep-10,Brescia,AS Roma,2,1,3.24,3.29,2.45
+22-Sep-10,Cagliari,Sampdoria,0,0,2.14,3.25,4.03
+22-Sep-10,Catania,Cesena,2,0,2.08,3.23,4.38
+22-Sep-10,Genoa,Fiorentina,1,1,2.38,3.23,3.44
+22-Sep-10,Inter,Bari,4,0,1.42,4.59,10.24
+22-Sep-10,Lazio,AC Milan,1,1,3.25,3.23,2.47
+22-Sep-10,Lecce,Parma,1,1,2.91,3.12,2.79
+22-Sep-10,Napoli,Chievo,1,3,1.65,3.65,7.02
+23-Sep-10,Juventus,Palermo,1,3,1.65,4.01,6.07
+25-Sep-10,AS Roma,Inter,1,0,3.54,3.25,2.27
+25-Sep-10,AC Milan,Genoa,1,0,1.71,3.7,6.05
+26-Sep-10,Juventus,Cagliari,4,2,1.67,3.79,6.28
+26-Sep-10,Bari,Brescia,2,1,1.89,3.46,4.92
+26-Sep-10,Catania,Bologna,1,1,2.06,3.24,4.38
+26-Sep-10,Chievo,Lazio,0,1,2.6,3.12,3.17
+26-Sep-10,Fiorentina,Parma,2,0,1.92,3.45,4.8
+26-Sep-10,Palermo,Lecce,2,2,1.51,4.3,7.8
+26-Sep-10,Sampdoria,Udinese,0,0,2.17,3.21,4.03
+26-Sep-10,Cesena,Napoli,1,4,3.25,3.14,2.54
+2-Oct-10,Parma,AC Milan,0,1,4.22,3.29,2.08
+2-Oct-10,Udinese,Cesena,1,0,1.68,3.82,6.09
+3-Oct-10,Inter,Juventus,0,0,1.88,3.54,4.8
+3-Oct-10,Bologna,Sampdoria,1,1,2.81,3.15,2.86
+3-Oct-10,Chievo,Cagliari,0,0,2.29,3.2,3.65
+3-Oct-10,Fiorentina,Palermo,1,2,2,3.47,4.26
+3-Oct-10,Genoa,Bari,2,1,1.88,3.5,4.88
+3-Oct-10,Lazio,Brescia,1,0,1.62,3.85,6.91
+3-Oct-10,Napoli,AS Roma,2,0,2.25,3.4,3.49
+3-Oct-10,Lecce,Catania,1,0,2.62,3.11,3.17
+16-Oct-10,AS Roma,Genoa,2,1,2.08,3.29,4.19
+16-Oct-10,AC Milan,Chievo,3,1,1.39,4.8,10.9
+17-Oct-10,Bari,Lazio,0,2,2.72,3.09,3
+17-Oct-10,Brescia,Udinese,0,1,3.11,3.14,2.63
+17-Oct-10,Catania,Napoli,1,1,3.16,3.24,2.52
+17-Oct-10,Cesena,Parma,1,1,2.79,3.06,2.97
+17-Oct-10,Juventus,Lecce,4,0,1.34,5.32,11.63
+17-Oct-10,Palermo,Bologna,4,1,1.66,3.98,6.01
+17-Oct-10,Sampdoria,Fiorentina,2,1,2.4,3.22,3.42
+17-Oct-10,Cagliari,Inter,0,1,4.15,3.21,2.12
+23-Oct-10,Fiorentina,Bari,2,1,1.95,3.31,4.83
+24-Oct-10,Inter,Sampdoria,1,1,1.49,4.17,9.02
+24-Oct-10,Bologna,Juventus,0,0,4.99,3.62,1.84
+24-Oct-10,Chievo,Cesena,2,1,1.76,3.54,5.82
+24-Oct-10,Genoa,Catania,1,0,1.88,3.37,5.18
+24-Oct-10,Lazio,Cagliari,2,1,1.79,3.58,5.47
+24-Oct-10,Lecce,Brescia,2,1,2.48,3.06,3.45
+24-Oct-10,Udinese,Palermo,2,1,2.27,3.22,3.7
+24-Oct-10,Parma,AS Roma,0,0,2.83,3.22,2.81
+25-Oct-10,Napoli,AC Milan,1,2,2.62,3.25,2.99
+29-Oct-10,Genoa,Inter,0,1,4.04,3.15,2.18
+30-Oct-10,AC Milan,Juventus,1,2,1.83,3.45,5.4
+30-Oct-10,AS Roma,Lecce,2,0,1.39,4.82,10.77
+31-Oct-10,Catania,Fiorentina,0,0,2.59,3.25,3.06
+31-Oct-10,Bari,Udinese,0,2,2.62,3.1,3.15
+31-Oct-10,Brescia,Napoli,0,1,3.54,3.18,2.36
+31-Oct-10,Cagliari,Bologna,2,0,1.84,3.52,5.15
+31-Oct-10,Cesena,Sampdoria,0,1,3.38,3.12,2.47
+31-Oct-10,Parma,Chievo,0,0,2.2,3.18,3.95
+31-Oct-10,Palermo,Lazio,0,1,2.27,3.27,3.61
+6-Nov-10,Inter,Brescia,1,1,1.28,5.75,16.14
+6-Nov-10,Bologna,Lecce,2,0,1.93,3.36,4.93
+7-Nov-10,Palermo,Genoa,1,0,2.06,3.29,4.29
+7-Nov-10,Bari,AC Milan,2,3,4.55,3.36,1.99
+7-Nov-10,Juventus,Cesena,3,1,1.4,4.67,10.75
+7-Nov-10,Lazio,AS Roma,0,2,2.92,3.17,2.74
+7-Nov-10,Napoli,Parma,2,0,1.85,3.43,5.26
+7-Nov-10,Sampdoria,Catania,0,0,2.08,3.25,4.32
+7-Nov-10,Udinese,Cagliari,1,1,1.84,3.54,5.12
+7-Nov-10,Fiorentina,Chievo,1,0,1.85,3.45,5.32
+10-Nov-10,AC Milan,Palermo,3,1,1.57,4.18,6.98
+10-Nov-10,AS Roma,Fiorentina,3,2,1.86,3.43,5.24
+10-Nov-10,Brescia,Juventus,1,1,3.78,3.11,2.29
+10-Nov-10,Cagliari,Napoli,0,1,2.64,3.18,3.04
+10-Nov-10,Catania,Udinese,1,0,2.43,3.14,3.45
+10-Nov-10,Cesena,Lazio,1,0,4.2,3.12,2.14
+10-Nov-10,Chievo,Bari,0,0,2.19,3.16,4.05
+10-Nov-10,Genoa,Bologna,1,0,1.58,3.9,7.52
+10-Nov-10,Lecce,Inter,1,1,5.84,3.41,1.8
+11-Nov-10,Parma,Sampdoria,1,0,2.29,3.23,3.63
+13-Nov-10,Juventus,AS Roma,1,1,2.27,3.31,3.59
+13-Nov-10,Fiorentina,Cesena,1,0,1.55,3.92,8.1
+14-Nov-10,Inter,AC Milan,0,1,2.58,3.23,3.09
+14-Nov-10,Bari,Parma,0,1,2.42,3.13,3.52
+14-Nov-10,Bologna,Brescia,1,0,2.25,3.12,3.85
+14-Nov-10,Cagliari,Genoa,0,1,2.65,3.08,3.13
+14-Nov-10,Palermo,Catania,3,1,1.75,3.54,5.93
+14-Nov-10,Sampdoria,Chievo,0,0,2.14,3.15,4.25
+14-Nov-10,Udinese,Lecce,4,0,1.43,4.43,9.5
+14-Nov-10,Lazio,Napoli,2,0,2.58,3.04,3.25
+20-Nov-10,AC Milan,Fiorentina,1,0,1.54,4.09,7.83
+20-Nov-10,AS Roma,Udinese,2,0,2.02,3.18,4.75
+21-Nov-10,Napoli,Bologna,4,1,1.45,4.42,9.75
+21-Nov-10,Brescia,Cagliari,1,2,2.68,3.06,3.11
+21-Nov-10,Catania,Bari,1,0,1.79,3.41,5.86
+21-Nov-10,Cesena,Palermo,1,2,3.7,3.27,2.24
+21-Nov-10,Chievo,Inter,2,1,4.05,3.14,2.19
+21-Nov-10,Lecce,Sampdoria,2,3,3.54,3.25,2.33
+21-Nov-10,Parma,Lazio,1,1,2.81,3.02,3
+21-Nov-10,Genoa,Juventus,0,2,2.58,3.25,3.08
+27-Nov-10,Juventus,Fiorentina,1,1,1.65,3.75,6.76
+27-Nov-10,Sampdoria,AC Milan,1,1,4.05,3.15,2.19
+28-Nov-10,Palermo,AS Roma,3,1,2.5,3.38,3.06
+28-Nov-10,Bari,Cesena,1,1,1.99,3.38,4.51
+28-Nov-10,Brescia,Genoa,0,0,3.59,3.21,2.33
+28-Nov-10,Cagliari,Lecce,3,2,1.53,4.17,7.2
+28-Nov-10,Lazio,Catania,1,1,1.65,3.6,7.23
+28-Nov-10,Udinese,Napoli,3,1,2.48,3.13,3.35
+28-Nov-10,Inter,Parma,5,2,1.67,3.57,7.08
+3-Dec-10,Lazio,Inter,3,1,2.44,3.16,3.41
+4-Dec-10,AC Milan,Brescia,3,0,1.28,5.88,14.56
+4-Dec-10,Chievo,AS Roma,2,2,2.75,3.08,3
+5-Dec-10,Catania,Juventus,1,3,3.25,3.25,2.46
+5-Dec-10,Cesena,Bologna,0,2,2.27,3.06,3.94
+5-Dec-10,Fiorentina,Cagliari,1,0,1.98,3.33,4.61
+5-Dec-10,Lecce,Genoa,1,3,4.01,3.18,2.19
+5-Dec-10,Parma,Udinese,2,1,2.64,3.16,3.11
+5-Dec-10,Sampdoria,Bari,3,0,1.79,3.46,5.88
+6-Dec-10,Napoli,Palermo,1,0,1.94,3.44,4.65
+8-Dec-10,Bologna,Chievo,2,1,2.49,3.19,3.24
+11-Dec-10,Genoa,Napoli,0,1,2.45,3.19,3.33
+11-Dec-10,Palermo,Parma,3,1,1.72,3.65,6.01
+11-Dec-10,Udinese,Fiorentina,2,1,2,3.31,4.5
+12-Dec-10,Juventus,Lazio,2,1,1.82,3.58,5.17
+12-Dec-10,AS Roma,Bari,1,0,1.27,5.93,15.65
+12-Dec-10,Brescia,Sampdoria,1,0,2.6,3.12,3.15
+12-Dec-10,Cagliari,Catania,3,0,2.12,3.17,4.28
+12-Dec-10,Lecce,Chievo,3,2,2.77,3.15,2.92
+12-Dec-10,Bologna,AC Milan,0,3,6.8,3.73,1.65
+18-Dec-10,AC Milan,AS Roma,0,1,1.6,3.94,6.92
+18-Dec-10,Cesena,Cagliari,1,0,2.79,2.98,3
+19-Dec-10,Bari,Palermo,1,1,3.41,3.15,2.43
+19-Dec-10,Catania,Brescia,1,0,1.85,3.31,5.46
+19-Dec-10,Chievo,Juventus,1,1,3.7,3.24,2.25
+19-Dec-10,Napoli,Lecce,1,0,1.32,5.25,14.05
+19-Dec-10,Parma,Bologna,0,0,1.65,3.8,6.75
+19-Dec-10,Lazio,Udinese,3,2,2.14,3.17,4.19
+6-Jan-11,Inter,Napoli,3,1,1.98,3.35,4.62
+6-Jan-11,AS Roma,Catania,4,2,1.45,4.37,9.99
+6-Jan-11,Bologna,Fiorentina,1,1,2.93,3.27,2.68
+6-Jan-11,Brescia,Cesena,1,2,2.02,3.27,4.55
+6-Jan-11,Cagliari,AC Milan,0,1,3.49,3.13,2.4
+6-Jan-11,Genoa,Lazio,0,0,2.16,3.27,3.89
+6-Jan-11,Lecce,Bari,0,1,2.38,3.16,3.54
+6-Jan-11,Palermo,Sampdoria,3,0,1.79,3.67,5.32
+6-Jan-11,Udinese,Chievo,2,0,1.75,3.59,5.87
+6-Jan-11,Juventus,Parma,1,4,1.53,3.98,8.77
+9-Jan-11,Napoli,Juventus,3,0,2.14,3.31,3.93
+9-Jan-11,AC Milan,Udinese,4,4,1.69,3.7,6.3
+9-Jan-11,Cesena,Genoa,0,0,3.2,3.18,2.54
+9-Jan-11,Chievo,Palermo,0,0,2.79,3.42,2.69
+9-Jan-11,Fiorentina,Brescia,3,2,1.68,3.62,6.68
+9-Jan-11,Lazio,Lecce,1,2,1.33,5.17,12
+9-Jan-11,Parma,Cagliari,1,2,1.95,3.38,4.75
+9-Jan-11,Bari,Bologna,0,2,2.2,3.19,3.96
+9-Jan-11,Catania,Inter,1,2,4.8,3.4,1.93
+9-Jan-11,Sampdoria,AS Roma,2,1,3.23,3.27,2.48
+15-Jan-11,Inter,Bologna,4,1,1.3,5.33,16.29
+15-Jan-11,Napoli,Fiorentina,0,0,1.74,3.67,5.8
+16-Jan-11,Lecce,AC Milan,1,1,7.88,4.22,1.52
+16-Jan-11,Brescia,Parma,2,0,3.06,3.1,2.69
+16-Jan-11,Catania,Chievo,1,1,2.1,3.2,4.26
+16-Jan-11,Cesena,AS Roma,0,1,4.86,3.56,1.86
+16-Jan-11,Genoa,Udinese,2,4,2.41,3.37,3.24
+16-Jan-11,Juventus,Bari,2,1,1.47,4.37,9.11
+16-Jan-11,Lazio,Sampdoria,1,0,1.81,3.49,5.55
+16-Jan-11,Cagliari,Palermo,3,1,2.52,3.22,3.19
+19-Jan-11,Inter,Cesena,3,2,1.24,6.13,19.28
+22-Jan-11,AS Roma,Cagliari,3,0,1.68,3.65,6.6
+22-Jan-11,Palermo,Brescia,1,0,1.41,4.67,10.19
+22-Jan-11,Parma,Catania,2,0,2,3.15,4.84
+23-Jan-11,AC Milan,Cesena,2,0,1.22,6.65,18.48
+23-Jan-11,Bari,Napoli,0,2,4.3,3.25,2.06
+23-Jan-11,Bologna,Lazio,3,1,3.11,3.04,2.69
+23-Jan-11,Chievo,Genoa,0,0,2.49,3.04,3.44
+23-Jan-11,Fiorentina,Lecce,1,1,1.54,4.13,7.72
+23-Jan-11,Sampdoria,Juventus,0,0,2.83,3.22,2.81
+23-Jan-11,Udinese,Inter,3,1,3.08,3.35,2.5
+29-Jan-11,Catania,AC Milan,0,2,4.8,3.37,1.94
+29-Jan-11,Lazio,Fiorentina,2,0,2.33,3.02,3.83
+30-Jan-11,Juventus,Udinese,1,2,2.1,3.45,3.89
+30-Jan-11,Cagliari,Bari,2,1,1.74,3.52,6.17
+30-Jan-11,Genoa,Parma,3,1,1.98,3.25,4.76
+30-Jan-11,Inter,Palermo,3,2,1.68,3.81,6.15
+30-Jan-11,Lecce,Cesena,1,1,2.08,3.27,4.21
+30-Jan-11,Napoli,Sampdoria,4,0,1.56,3.9,8.05
+30-Jan-11,Brescia,Chievo,0,3,2.89,3.02,2.92
+1-Feb-11,AC Milan,Lazio,0,0,1.6,3.95,7.19
+2-Feb-11,AS Roma,Brescia,1,1,1.27,5.72,17.14
+2-Feb-11,Cesena,Catania,1,1,2.46,3.08,3.47
+2-Feb-11,Chievo,Napoli,2,0,3.29,3.06,2.56
+2-Feb-11,Fiorentina,Genoa,1,0,2.23,3.11,3.97
+2-Feb-11,Palermo,Juventus,2,1,2.21,3.43,3.6
+2-Feb-11,Parma,Lecce,0,1,1.61,3.82,7.3
+2-Feb-11,Sampdoria,Cagliari,0,1,2.25,3.11,3.93
+2-Feb-11,Udinese,Bologna,1,1,1.59,4.01,7.05
+3-Feb-11,Bari,Inter,0,3,6.72,3.84,1.63
+5-Feb-11,Cagliari,Juventus,1,3,2.77,3.41,2.72
+5-Feb-11,Udinese,Sampdoria,2,0,1.61,3.9,7.03
+6-Feb-11,Inter,AS Roma,5,3,1.82,3.75,4.88
+6-Feb-11,Brescia,Bari,2,0,2.24,3.19,3.8
+6-Feb-11,Genoa,AC Milan,1,1,3.83,3.27,2.18
+6-Feb-11,Lazio,Chievo,1,1,1.82,3.36,5.76
+6-Feb-11,Lecce,Palermo,2,4,3.27,3.33,2.41
+6-Feb-11,Napoli,Cesena,2,0,1.35,5,12.57
+6-Feb-11,Parma,Fiorentina,1,1,2.41,3.02,3.63
+6-Feb-11,Bologna,Catania,1,0,2.02,3.17,4.72
+12-Feb-11,AS Roma,Napoli,0,2,2.37,3.21,3.46
+12-Feb-11,AC Milan,Parma,4,0,1.39,5.15,9.44
+13-Feb-11,Juventus,Inter,1,0,2.95,3.29,2.66
+13-Feb-11,Bari,Genoa,0,0,3.12,3.18,2.6
+13-Feb-11,Brescia,Lazio,0,2,3.21,3.09,2.56
+13-Feb-11,Cagliari,Chievo,4,1,2.12,2.94,4.75
+13-Feb-11,Catania,Lecce,3,2,1.83,3.47,5.44
+13-Feb-11,Cesena,Udinese,0,3,4.34,3.34,2.04
+13-Feb-11,Sampdoria,Bologna,3,1,2.04,3.17,4.63
+13-Feb-11,Palermo,Fiorentina,2,4,1.94,3.37,4.7
+16-Feb-11,Fiorentina,Inter,1,2,3.18,3.34,2.47
+16-Feb-11,Sampdoria,Genoa,0,1,3.17,3.02,2.67
+19-Feb-11,Inter,Cagliari,1,0,1.45,4.4,9.6
+19-Feb-11,Bologna,Palermo,1,0,2.65,3.34,2.92
+20-Feb-11,Napoli,Catania,1,0,1.56,4,7.82
+20-Feb-11,Chievo,AC Milan,1,2,5.2,3.46,1.85
+20-Feb-11,Fiorentina,Sampdoria,0,0,1.64,3.54,7.52
+20-Feb-11,Genoa,AS Roma,4,3,2.36,3.29,3.41
+20-Feb-11,Lazio,Bari,1,0,1.51,4.2,8.5
+20-Feb-11,Parma,Cesena,2,2,1.66,3.85,6.33
+20-Feb-11,Udinese,Brescia,0,0,1.42,4.82,9.17
+20-Feb-11,Lecce,Juventus,2,0,6.09,3.65,1.72
+23-Feb-11,Bologna,AS Roma,0,1,3.44,3.04,2.49
+26-Feb-11,Juventus,Bologna,0,2,1.56,3.88,8.19
+27-Feb-11,Sampdoria,Inter,0,2,4.3,3.31,2.04
+27-Feb-11,AS Roma,Parma,2,2,1.54,4.12,7.47
+27-Feb-11,Bari,Fiorentina,1,1,3.96,3.29,2.14
+27-Feb-11,Brescia,Lecce,2,2,2.17,3.2,4.03
+27-Feb-11,Cagliari,Lazio,1,0,2.37,3.19,3.49
+27-Feb-11,Cesena,Chievo,1,0,3.02,3.04,2.74
+27-Feb-11,Palermo,Udinese,0,7,2.54,3.5,2.93
+27-Feb-11,Catania,Genoa,2,1,2.54,3.14,3.19
+28-Feb-11,AC Milan,Napoli,3,0,1.83,3.58,5.2
+4-Mar-11,Lecce,AS Roma,1,2,4.13,3.36,2.08
+5-Mar-11,Juventus,AC Milan,0,1,3.23,3.24,2.45
+6-Mar-11,Lazio,Palermo,2,0,1.86,3.59,4.88
+6-Mar-11,Bologna,Cagliari,2,2,2.5,2.92,3.59
+6-Mar-11,Chievo,Parma,0,0,2.59,2.81,3.58
+6-Mar-11,Fiorentina,Catania,3,0,1.88,3.27,5.45
+6-Mar-11,Inter,Genoa,5,2,1.56,4.09,7.7
+6-Mar-11,Napoli,Brescia,0,0,1.41,4.59,10.35
+6-Mar-11,Udinese,Bari,1,0,1.32,5.5,12.79
+6-Mar-11,Sampdoria,Cesena,2,3,1.81,3.41,5.71
+11-Mar-11,Brescia,Inter,1,1,7.06,3.9,1.61
+12-Mar-11,Cesena,Juventus,2,2,3.93,3.18,2.21
+13-Mar-11,Parma,Napoli,1,3,3.27,3.19,2.5
+13-Mar-11,AS Roma,Lazio,2,0,2.62,3.13,3.15
+13-Mar-11,Cagliari,Udinese,0,4,2.9,3.31,2.67
+13-Mar-11,Catania,Sampdoria,1,0,1.84,3.45,5.37
+13-Mar-11,Chievo,Fiorentina,0,1,2.87,3.06,2.9
+13-Mar-11,Genoa,Palermo,1,0,1.83,3.68,4.91
+13-Mar-11,Lecce,Bologna,0,1,2.25,3.21,3.75
+13-Mar-11,AC Milan,Bari,1,1,1.18,6.92,28.5
+19-Mar-11,Palermo,AC Milan,1,0,4.71,3.61,1.88
+19-Mar-11,Lazio,Cesena,1,0,1.68,3.71,6.28
+20-Mar-11,Napoli,Cagliari,2,1,1.54,4.05,8.18
+20-Mar-11,Bari,Chievo,1,2,2.5,3.27,3.16
+20-Mar-11,Bologna,Genoa,1,1,2.75,2.94,3.15
+20-Mar-11,Inter,Lecce,1,0,1.2,7.01,21.03
+20-Mar-11,Juventus,Brescia,2,1,1.48,4.36,8.52
+20-Mar-11,Sampdoria,Parma,0,1,2.56,3.1,3.24
+20-Mar-11,Udinese,Catania,2,0,1.4,4.75,9.55
+20-Mar-11,Fiorentina,AS Roma,2,2,2.54,3.31,3.04
+2-Apr-11,AC Milan,Inter,3,0,2.56,3.19,3.15
+2-Apr-11,Brescia,Bologna,3,1,1.7,3.77,5.99
+3-Apr-11,AS Roma,Juventus,0,2,1.84,3.73,4.8
+3-Apr-11,Catania,Palermo,4,0,2.33,3.14,3.65
+3-Apr-11,Cesena,Fiorentina,2,2,3.12,3.25,2.5
+3-Apr-11,Chievo,Sampdoria,0,0,3.77,1.59,7.31
+3-Apr-11,Genoa,Cagliari,0,1,2.12,2.59,5.94
+3-Apr-11,Lecce,Udinese,2,0,4.26,3.2,2.1
+3-Apr-11,Parma,Bari,1,2,1.47,4.11,9.85
+3-Apr-11,Napoli,Lazio,4,3,1.89,3.29,5.36
+9-Apr-11,Udinese,AS Roma,1,2,2.18,3.38,3.74
+9-Apr-11,Inter,Chievo,2,0,1.47,4.48,8.21
+10-Apr-11,Fiorentina,AC Milan,1,2,4.91,3.46,1.9
+10-Apr-11,Bari,Catania,1,1,3.11,2.97,2.71
+10-Apr-11,Bologna,Napoli,0,2,4.96,3.49,1.88
+10-Apr-11,Cagliari,Brescia,1,1,3.43,2.42,3.14
+10-Apr-11,Lazio,Parma,2,0,1.97,3.27,4.8
+10-Apr-11,Palermo,Cesena,2,2,1.85,3.46,5.16
+10-Apr-11,Sampdoria,Lecce,1,2,1.97,2.91,5.84
+10-Apr-11,Juventus,Genoa,3,2,1.67,3.56,6.98
+16-Apr-11,AC Milan,Sampdoria,3,0,1.27,5.55,16.66
+16-Apr-11,Parma,Inter,2,0,3.63,3.25,2.27
+16-Apr-11,AS Roma,Palermo,2,3,1.48,4.69,7.6
+17-Apr-11,Napoli,Udinese,1,2,1.68,3.75,6.38
+17-Apr-11,Catania,Lazio,1,4,,,
+17-Apr-11,Cesena,Bari,1,0,1.7,3.62,6.43
+17-Apr-11,Chievo,Bologna,2,0,,,
+17-Apr-11,Fiorentina,Juventus,0,0,2.38,3.25,3.41
+17-Apr-11,Genoa,Brescia,3,0,,,
+17-Apr-11,Lecce,Cagliari,3,3,1.97,3.31,4.65
+23-Apr-11,Juventus,Catania,2,2,1.65,3.77,6.68
+23-Apr-11,Brescia,AC Milan,0,1,5.82,3.74,1.72
+23-Apr-11,Bari,Sampdoria,0,1,,,
+23-Apr-11,Bologna,Cesena,0,2,,,
+23-Apr-11,Cagliari,Fiorentina,1,2,,,
+23-Apr-11,Genoa,Lecce,4,2,,,
+23-Apr-11,Inter,Lazio,2,1,1.76,3.66,5.55
+23-Apr-11,Palermo,Napoli,2,1,3.13,3.23,2.56
+23-Apr-11,Udinese,Parma,0,2,1.64,3.78,6.65
+23-Apr-11,AS Roma,Chievo,1,0,1.54,4.17,7.64
+30-Apr-11,Napoli,Genoa,1,0,1.31,5.46,13.97
+30-Apr-11,Cesena,Inter,1,2,4.24,3.4,2.02
+1-May-11,Bari,AS Roma,2,3,11.27,5.49,1.33
+1-May-11,AC Milan,Bologna,1,0,1.19,7.57,18.96
+1-May-11,Catania,Cagliari,2,0,,,
+1-May-11,Chievo,Lecce,1,0,,,
+1-May-11,Fiorentina,Udinese,5,2,2.4,3.39,3.23
+1-May-11,Parma,Palermo,3,1,1.88,3.68,4.53
+1-May-11,Sampdoria,Brescia,3,3,2.04,3.47,4.01
+2-May-11,Lazio,Juventus,0,1,2.02,3.59,4.01
+7-May-11,AS Roma,AC Milan,0,0,3.19,3.16,2.54
+7-May-11,Palermo,Bari,2,1,1.51,4.55,7.16
+8-May-11,Genoa,Sampdoria,2,1,2.29,3.42,3.44
+8-May-11,Bologna,Parma,0,0,,,
+8-May-11,Brescia,Catania,1,2,2.4,3.16,3.43
+8-May-11,Cagliari,Cesena,0,2,,,
+8-May-11,Inter,Fiorentina,3,1,1.79,3.58,5.48
+8-May-11,Lecce,Napoli,2,1,2.5,3.54,2.94
+8-May-11,Udinese,Lazio,2,1,2.12,3.39,3.88
+9-May-11,Juventus,Chievo,2,2,1.4,5.08,9.27
+14-May-11,AC Milan,Cagliari,4,1,1.43,4.3,8.5
+14-May-11,Lazio,Genoa,4,2,1.4,5.16,9.18
+15-May-11,Napoli,Inter,1,1,,,
+15-May-11,Bari,Lecce,0,2,3.46,3.33,2.29
+15-May-11,Catania,AS Roma,2,1,5.59,3.82,1.72
+15-May-11,Cesena,Brescia,1,0,,,
+15-May-11,Chievo,Udinese,0,2,9.77,5.76,1.33
+15-May-11,Parma,Juventus,1,0,2.96,3.27,2.64
+15-May-11,Sampdoria,Palermo,1,2,1.37,5.34,8.02
+15-May-11,Fiorentina,Bologna,1,1,2,2.88,5.68
+22-May-11,AS Roma,Sampdoria,3,1,1.33,5.34,12
+22-May-11,Juventus,Napoli,2,2,1.78,3.89,4.88
+22-May-11,Lecce,Lazio,2,4,7.06,4.29,1.52
+22-May-11,Udinese,AC Milan,0,0,,,
+22-May-11,Bologna,Bari,0,4,1.62,3.95,6.2
+22-May-11,Brescia,Fiorentina,2,2,3.6,3.27,2.25
+22-May-11,Cagliari,Parma,1,1,1.71,4.18,4.98
+22-May-11,Genoa,Cesena,3,2,1.38,5.01,8.67
+22-May-11,Inter,Catania,3,1,1.42,4.63,9.5
+22-May-11,Palermo,Chievo,1,3,1.83,2.96,6.95
+9-Sep-11,AC Milan,Lazio,2,2,1.61,3.82,7.25
+10-Sep-11,Cesena,Napoli,1,3,4.09,3.37,2.08
+11-Sep-11,Palermo,Inter,4,3,3.88,3.39,2.14
+11-Sep-11,AS Roma,Cagliari,1,2,1.75,3.5,6.17
+11-Sep-11,Catania,Siena,0,0,2.27,2.95,3.8
+11-Sep-11,Chievo,Novara,2,2,1.83,3.54,5.24
+11-Sep-11,Fiorentina,Bologna,2,0,1.66,3.6,7.03
+11-Sep-11,Genoa,Atalanta,2,2,1.88,3.37,5.18
+11-Sep-11,Lecce,Udinese,0,2,3.2,3.46,2.39
+11-Sep-11,Juventus,Parma,4,1,1.76,3.47,6.07
+17-Sep-11,Inter,AS Roma,0,0,1.93,3.76,4.26
+17-Sep-11,Cagliari,Novara,2,1,1.68,3.67,6.49
+18-Sep-11,Napoli,AC Milan,3,1,2.52,3.27,3.11
+18-Sep-11,Bologna,Lecce,0,2,1.98,3.33,4.69
+18-Sep-11,Catania,Cesena,1,0,1.81,3.57,5.3
+18-Sep-11,Lazio,Genoa,1,2,1.92,3.38,4.94
+18-Sep-11,Parma,Chievo,2,1,2.27,3.12,3.8
+18-Sep-11,Siena,Juventus,0,1,4.08,3.15,2.18
+18-Sep-11,Udinese,Fiorentina,2,0,2.29,3.29,3.52
+18-Sep-11,Atalanta,Palermo,1,0,2.24,3.52,3.46
+20-Sep-11,Novara,Inter,3,1,,,
+21-Sep-11,AC Milan,Udinese,1,1,1.65,3.7,6.42
+21-Sep-11,Cesena,Lazio,1,2,3.47,3.36,2.29
+21-Sep-11,Chievo,Napoli,1,0,3.08,3.06,2.71
+21-Sep-11,Fiorentina,Parma,3,0,1.68,3.6,6.73
+21-Sep-11,Genoa,Catania,3,0,1.95,3.42,4.65
+21-Sep-11,Juventus,Bologna,1,1,1.29,5.58,14.2
+21-Sep-11,Lecce,Atalanta,1,2,2.58,3.2,3.12
+21-Sep-11,Palermo,Cagliari,3,2,2.25,3.25,3.7
+22-Sep-11,AS Roma,Siena,1,1,1.6,3.86,7.35
+24-Sep-11,AC Milan,Cesena,1,0,1.34,5.25,12
+24-Sep-11,Napoli,Fiorentina,0,0,1.93,3.31,4.95
+24-Sep-11,Bologna,Inter,1,3,4.26,3.33,2.04
+25-Sep-11,Parma,AS Roma,0,1,3,3.22,2.64
+25-Sep-11,Atalanta,Novara,2,1,1.97,3.21,4.98
+25-Sep-11,Cagliari,Udinese,0,0,2.5,3.29,3.16
+25-Sep-11,Catania,Juventus,1,1,4.07,3.14,2.18
+25-Sep-11,Lazio,Palermo,0,0,1.75,3.85,5.3
+25-Sep-11,Siena,Lecce,3,0,1.83,3.54,5.26
+25-Sep-11,Chievo,Genoa,2,1,2.58,3.24,3.08
+1-Oct-11,Inter,Napoli,0,3,2.1,3.31,4.09
+1-Oct-11,AS Roma,Atalanta,3,1,1.69,3.69,6.25
+2-Oct-11,Juventus,AC Milan,2,0,2.68,3.27,2.92
+2-Oct-11,Cesena,Chievo,0,0,2.81,3.06,2.95
+2-Oct-11,Fiorentina,Lazio,1,2,2.18,3.25,3.89
+2-Oct-11,Lecce,Cagliari,0,2,2.84,3.2,2.81
+2-Oct-11,Palermo,Siena,2,0,1.97,3.44,4.5
+2-Oct-11,Parma,Genoa,3,1,2.77,3.15,2.92
+2-Oct-11,Udinese,Bologna,2,0,1.45,4.45,9.44
+2-Oct-11,Novara,Catania,3,3,2.16,3.24,3.98
+15-Oct-11,AC Milan,Palermo,3,0,1.44,4.79,8.3
+15-Oct-11,Napoli,Parma,1,2,1.5,4.17,8.73
+15-Oct-11,Catania,Inter,2,1,3.04,3.21,2.61
+16-Oct-11,Lazio,AS Roma,2,1,2.54,3.31,3.06
+16-Oct-11,Atalanta,Udinese,0,0,3,3.16,2.68
+16-Oct-11,Cagliari,Siena,0,0,1.88,3.46,4.79
+16-Oct-11,Chievo,Juventus,0,0,4.91,3.17,2
+16-Oct-11,Genoa,Lecce,0,0,1.56,4.15,7.3
+16-Oct-11,Novara,Bologna,0,2,1.88,3.69,4.58
+16-Oct-11,Cesena,Fiorentina,0,0,3.46,3.09,2.45
+22-Oct-11,Juventus,Genoa,2,2,1.51,4.15,8.47
+22-Oct-11,Fiorentina,Catania,2,2,1.83,3.34,5.67
+23-Oct-11,Bologna,Lazio,0,2,4.13,3.38,2.06
+23-Oct-11,AS Roma,Palermo,1,0,1.65,3.92,6.3
+23-Oct-11,Cagliari,Napoli,0,0,2.62,3.13,3.15
+23-Oct-11,Inter,Chievo,1,0,1.6,3.85,7.26
+23-Oct-11,Parma,Atalanta,1,2,2.29,3.12,3.82
+23-Oct-11,Siena,Cesena,2,0,1.93,3.31,5.03
+23-Oct-11,Udinese,Novara,3,0,1.46,4.47,9.01
+23-Oct-11,Lecce,AC Milan,3,4,7.05,3.82,1.63
+25-Oct-11,Juventus,Fiorentina,2,1,1.67,3.56,7.1
+26-Oct-11,AC Milan,Parma,4,1,1.34,5.16,12.46
+26-Oct-11,Atalanta,Inter,1,1,3.21,3.2,2.52
+26-Oct-11,Cesena,Cagliari,1,1,2.75,3.25,2.85
+26-Oct-11,Chievo,Bologna,0,1,2.02,3.17,4.79
+26-Oct-11,Genoa,AS Roma,2,1,2.44,3.22,3.34
+26-Oct-11,Lazio,Catania,1,1,1.75,3.61,5.75
+26-Oct-11,Napoli,Udinese,2,0,1.87,3.36,5.28
+26-Oct-11,Novara,Siena,1,1,2.45,3.2,3.37
+27-Oct-11,Palermo,Lecce,2,0,1.6,4.08,6.73
+29-Oct-11,Inter,Juventus,1,2,2.7,3.21,2.96
+29-Oct-11,AS Roma,AC Milan,2,3,3.15,3.29,2.5
+29-Oct-11,Catania,Napoli,2,1,3.08,3.16,2.65
+30-Oct-11,Cagliari,Lazio,0,3,3.1,3.18,2.6
+30-Oct-11,Bologna,Atalanta,3,1,2.77,3.15,2.93
+30-Oct-11,Fiorentina,Genoa,1,0,1.93,3.41,4.73
+30-Oct-11,Lecce,Novara,1,1,2.16,3.31,3.92
+30-Oct-11,Parma,Cesena,2,0,1.99,3.29,4.69
+30-Oct-11,Udinese,Palermo,1,0,1.75,3.69,5.59
+30-Oct-11,Siena,Chievo,4,1,2.18,3.02,4.3
+5-Nov-11,Novara,AS Roma,0,2,3.73,3.5,2.14
+5-Nov-11,Palermo,Bologna,3,1,1.69,3.76,6.05
+6-Nov-11,AC Milan,Catania,4,0,1.45,4.3,9.86
+6-Nov-11,Atalanta,Cagliari,1,0,2.23,3.08,4.03
+6-Nov-11,Cesena,Lecce,0,1,2.04,3.29,4.34
+6-Nov-11,Chievo,Fiorentina,1,0,3.46,3.08,2.44
+6-Nov-11,Lazio,Parma,1,0,1.59,3.82,7.75
+6-Nov-11,Udinese,Siena,2,1,1.76,3.39,6.36
+19-Nov-11,Fiorentina,AC Milan,0,0,4.24,3.47,2
+19-Nov-11,Napoli,Lazio,0,0,1.88,3.4,5.11
+19-Nov-11,Inter,Cagliari,2,1,1.64,3.83,6.65
+20-Nov-11,AS Roma,Lecce,2,1,1.4,4.93,9.65
+20-Nov-11,Catania,Chievo,1,2,2.12,3.1,4.37
+20-Nov-11,Genoa,Novara,1,0,1.63,3.94,6.61
+20-Nov-11,Juventus,Palermo,3,0,1.4,4.88,10.18
+20-Nov-11,Parma,Udinese,2,0,2.84,3.16,2.83
+20-Nov-11,Siena,Atalanta,2,2,2.18,3.19,4.01
+20-Nov-11,Bologna,Cesena,0,1,2.16,3.11,4.24
+25-Nov-11,Udinese,AS Roma,2,0,2.42,3.42,3.17
+26-Nov-11,Atalanta,Napoli,1,1,3.02,3.17,2.68
+26-Nov-11,Lazio,Juventus,0,1,3.08,3.18,2.63
+26-Nov-11,Lecce,Catania,0,1,2.86,3.2,2.79
+26-Nov-11,Novara,Parma,2,1,2.81,3.21,2.81
+27-Nov-11,AC Milan,Chievo,4,0,1.33,5.34,12.01
+27-Nov-11,Cagliari,Bologna,1,1,1.8,3.54,5.51
+27-Nov-11,Cesena,Genoa,2,0,2.81,3.11,2.9
+27-Nov-11,Palermo,Fiorentina,2,0,2.59,3.25,3
+27-Nov-11,Siena,Inter,0,1,2.94,3.16,2.73
+29-Nov-11,Napoli,Juventus,3,3,2.56,3.21,3.13
+2-Dec-11,Genoa,AC Milan,0,2,5,3.66,1.83
+3-Dec-11,Inter,Udinese,0,1,1.99,3.39,4.5
+3-Dec-11,Napoli,Lecce,4,2,1.41,4.79,9.86
+4-Dec-11,Parma,Palermo,0,0,2,3.31,4.55
+4-Dec-11,Bologna,Siena,1,0,2.88,2.97,2.95
+4-Dec-11,Chievo,Atalanta,0,0,2.66,3.02,3.17
+4-Dec-11,Fiorentina,AS Roma,3,0,2.52,3.4,3.04
+4-Dec-11,Juventus,Cesena,2,0,1.26,5.83,16.91
+4-Dec-11,Catania,Cagliari,0,1,2.17,3.16,4.13
+5-Dec-11,Lazio,Novara,3,0,1.48,4.38,8.69
+10-Dec-11,Inter,Fiorentina,2,0,1.78,3.64,5.43
+10-Dec-11,Palermo,Cesena,0,1,1.71,3.77,5.88
+10-Dec-11,Siena,Genoa,0,2,2.1,3.24,4.18
+10-Dec-11,Lecce,Lazio,2,3,4.28,3.49,2
+11-Dec-11,Novara,Napoli,1,1,5.13,3.47,1.86
+11-Dec-11,Atalanta,Catania,1,1,2.14,3.16,4.16
+11-Dec-11,Bologna,AC Milan,2,2,8.27,4.47,1.48
+11-Dec-11,Cagliari,Parma,0,0,2.19,3.25,3.91
+11-Dec-11,Udinese,Chievo,2,1,1.68,3.58,6.9
+12-Dec-11,AS Roma,Juventus,1,1,3.31,3.29,2.42
+13-Dec-11,Genoa,Inter,0,1,3.14,3.39,2.46
+17-Dec-11,AC Milan,Siena,2,0,1.32,5.47,12.33
+17-Dec-11,Fiorentina,Atalanta,2,2,1.94,3.29,4.84
+17-Dec-11,Chievo,Cagliari,2,0,2.31,3.02,3.9
+18-Dec-11,Lazio,Udinese,2,2,2.25,3.25,3.73
+18-Dec-11,Napoli,AS Roma,1,3,1.86,3.54,4.99
+18-Dec-11,Catania,Palermo,2,0,2.06,3.27,4.34
+18-Dec-11,Cesena,Inter,0,1,4.75,3.41,1.93
+18-Dec-11,Genoa,Bologna,2,1,2,3.36,4.48
+18-Dec-11,Juventus,Novara,2,0,1.22,6.8,18.93
+18-Dec-11,Parma,Lecce,3,3,1.81,3.54,5.34
+20-Dec-11,Cagliari,AC Milan,0,2,6.5,3.56,1.7
+20-Dec-11,Siena,Fiorentina,0,0,2.47,3.24,3.24
+21-Dec-11,Atalanta,Cesena,4,1,1.88,3.42,5.15
+21-Dec-11,Bologna,AS Roma,0,2,3.79,3.4,2.16
+21-Dec-11,Inter,Lecce,4,1,1.26,6.21,15.53
+21-Dec-11,Lazio,Chievo,0,0,1.63,3.83,6.88
+21-Dec-11,Napoli,Genoa,6,1,1.51,4.07,8.84
+21-Dec-11,Novara,Palermo,2,2,2.27,3.37,3.5
+21-Dec-11,Parma,Catania,3,3,2.16,3.23,4.01
+21-Dec-11,Udinese,Juventus,0,0,3.37,3.25,2.41
+7-Jan-12,Inter,Parma,5,0,1.52,4.09,8.15
+7-Jan-12,Siena,Lazio,4,0,2.99,3.06,2.77
+8-Jan-12,Palermo,Napoli,1,3,3.69,3.34,2.22
+8-Jan-12,AS Roma,Chievo,2,0,1.59,3.98,7.12
+8-Jan-12,Atalanta,AC Milan,0,2,5.04,3.57,1.83
+8-Jan-12,Bologna,Catania,2,0,2.86,3.09,2.87
+8-Jan-12,Cagliari,Genoa,3,0,2.18,3.25,3.95
+8-Jan-12,Lecce,Juventus,0,1,7.6,4.43,1.51
+8-Jan-12,Novara,Fiorentina,0,3,3.12,3.18,2.58
+8-Jan-12,Udinese,Cesena,4,1,1.56,3.92,8.02
+15-Jan-12,AC Milan,Inter,0,1,2.1,3.29,4.12
+15-Jan-12,Cesena,Novara,3,1,2.14,3.16,4.23
+15-Jan-12,Chievo,Palermo,1,0,2.1,3.31,4.17
+15-Jan-12,Fiorentina,Lecce,0,1,1.58,4.11,6.88
+15-Jan-12,Genoa,Udinese,3,2,3.25,3.41,2.37
+15-Jan-12,Juventus,Cagliari,1,1,1.36,5.05,11.4
+15-Jan-12,Parma,Siena,3,1,2.25,3.08,3.92
+15-Jan-12,Lazio,Atalanta,2,0,1.85,3.44,5.25
+16-Jan-12,Napoli,Bologna,1,1,1.38,5.03,10.8
+21-Jan-12,Atalanta,Juventus,0,2,5.74,3.49,1.79
+21-Jan-12,AS Roma,Cesena,5,1,1.44,4.54,9.36
+22-Jan-12,Inter,Lazio,2,1,1.83,3.45,5.51
+22-Jan-12,Cagliari,Fiorentina,0,0,2.29,3.04,3.91
+22-Jan-12,Lecce,Chievo,2,2,2.48,3.16,3.34
+22-Jan-12,Novara,AC Milan,0,3,10.4,4.8,1.4
+22-Jan-12,Palermo,Genoa,5,3,1.81,3.52,4.9
+22-Jan-12,Siena,Napoli,1,1,3.52,3.2,2.38
+22-Jan-12,Udinese,Catania,2,1,1.64,3.91,6.39
+22-Jan-12,Bologna,Parma,0,0,2.4,3.29,3.33
+28-Jan-12,Juventus,Udinese,2,1,1.57,4.11,7.2
+28-Jan-12,Catania,Parma,1,1,1.98,3.38,4.51
+29-Jan-12,AC Milan,Cagliari,3,0,1.31,5.48,13.8
+29-Jan-12,AS Roma,Bologna,1,1,1.46,4.53,8.88
+29-Jan-12,Cesena,Atalanta,0,1,2.56,3.2,3.13
+29-Jan-12,Chievo,Lazio,0,3,3,3.15,2.68
+29-Jan-12,Genoa,Napoli,3,2,3.61,3.54,2.16
+29-Jan-12,Lecce,Inter,1,0,5.28,3.62,1.8
+29-Jan-12,Palermo,Novara,2,0,1.6,4.09,6.62
+29-Jan-12,Fiorentina,Siena,2,1,2.1,3.11,4.49
+1-Feb-12,Cagliari,AS Roma,4,2,3,3.31,2.6
+1-Feb-12,Inter,Palermo,4,4,1.42,4.67,10
+1-Feb-12,Lazio,AC Milan,2,0,3.97,3.24,2.18
+1-Feb-12,Napoli,Cesena,0,0,1.31,5.42,13.72
+1-Feb-12,Udinese,Lecce,2,1,1.55,4.04,7.9
+2-Feb-12,Novara,Chievo,1,2,2.54,3.25,3.13
+5-Feb-12,AC Milan,Napoli,0,0,1.74,3.78,5.55
+5-Feb-12,AS Roma,Inter,4,0,2.14,3.33,3.92
+5-Feb-12,Chievo,Parma,1,2,2.49,2.96,3.54
+5-Feb-12,Fiorentina,Udinese,3,2,2.22,3.2,3.87
+5-Feb-12,Juventus,Siena,0,0,1.28,5.54,16.39
+5-Feb-12,Lecce,Bologna,0,0,2.22,3.27,3.81
+5-Feb-12,Novara,Cagliari,0,0,3.02,3.27,2.61
+5-Feb-12,Palermo,Atalanta,2,1,2.04,3.29,4.38
+5-Feb-12,Genoa,Lazio,3,2,2.88,3.36,2.66
+8-Feb-12,Catania,AS Roma,1,1,3.56,3.42,2.25
+9-Feb-12,Lazio,Cesena,3,2,1.44,4.71,8.9
+11-Feb-12,Cagliari,Palermo,2,1,2.02,3.31,4.43
+11-Feb-12,Udinese,AC Milan,1,2,3.14,3.18,2.54
+12-Feb-12,Atalanta,Lecce,0,0,2.16,3.2,4.07
+12-Feb-12,Catania,Genoa,4,0,1.97,3.37,4.61
+12-Feb-12,Inter,Novara,0,1,1.26,6.4,14.6
+13-Feb-12,Napoli,Chievo,2,0,1.5,4.38,8.13
+13-Feb-12,Siena,AS Roma,1,0,3.27,3.39,2.38
+15-Feb-12,Atalanta,Genoa,1,0,2.21,3.34,3.7
+15-Feb-12,Parma,Juventus,0,0,5.3,3.66,1.79
+17-Feb-12,Fiorentina,Napoli,0,3,2.5,3.22,3.23
+17-Feb-12,Inter,Bologna,0,3,1.55,4.01,8.02
+18-Feb-12,Juventus,Catania,3,1,1.33,5.34,12.37
+19-Feb-12,Palermo,Lazio,5,1,2.43,3.22,3.34
+19-Feb-12,Udinese,Cagliari,0,0,2.04,3.23,4.49
+19-Feb-12,Cesena,AC Milan,1,3,7.25,4.01,1.58
+19-Feb-12,Genoa,Chievo,0,1,2.17,3.18,4.04
+19-Feb-12,Novara,Atalanta,0,0,2.94,3.23,2.71
+19-Feb-12,AS Roma,Parma,1,0,1.49,4.4,8.47
+19-Feb-12,Lecce,Siena,4,1,2.48,3.21,3.27
+21-Feb-12,Bologna,Fiorentina,2,0,2.64,3.13,3
+22-Feb-12,Siena,Catania,0,1,2.2,3.12,4.01
+25-Feb-12,AC Milan,Juventus,1,1,2.52,3.2,3.22
+25-Feb-12,Genoa,Parma,2,2,2.4,3.2,3.44
+26-Feb-12,Bologna,Udinese,1,3,2.89,3.2,2.77
+26-Feb-12,Lazio,Fiorentina,1,0,2.04,3.27,4.45
+26-Feb-12,Napoli,Inter,1,0,1.82,3.77,4.84
+26-Feb-12,Atalanta,AS Roma,4,1,3.4,3.21,2.41
+26-Feb-12,Cagliari,Lecce,1,2,2.04,3.14,4.69
+26-Feb-12,Catania,Novara,3,1,1.56,4.17,7.15
+26-Feb-12,Chievo,Cesena,1,0,1.93,3.45,4.72
+26-Feb-12,Siena,Palermo,4,1,2.23,3.29,3.72
+3-Mar-12,Juventus,Chievo,1,1,1.29,5.53,16.13
+3-Mar-12,Palermo,AC Milan,0,4,4.8,3.89,1.8
+4-Mar-12,Inter,Catania,2,2,1.81,3.58,5.26
+4-Mar-12,Bologna,Novara,1,0,1.7,3.76,6.07
+4-Mar-12,AS Roma,Lazio,1,2,2.2,3.18,3.98
+4-Mar-12,Fiorentina,Cesena,2,0,1.48,4.01,10.3
+4-Mar-12,Lecce,Genoa,2,2,2.1,3.5,3.86
+4-Mar-12,Siena,Cagliari,3,0,2.22,3.14,3.99
+4-Mar-12,Udinese,Atalanta,0,0,1.71,3.63,6.14
+4-Mar-12,Parma,Napoli,1,2,4.03,3.58,2.02
+7-Mar-12,Bologna,Juventus,1,1,5.4,3.76,1.76
+7-Mar-12,Cesena,Catania,0,0,3.12,3.2,2.58
+7-Mar-12,Parma,Fiorentina,2,2,2.46,3.02,3.52
+9-Mar-12,Chievo,Inter,0,2,3.12,3.25,2.54
+9-Mar-12,Napoli,Cagliari,6,3,1.52,4.17,8.31
+10-Mar-12,Palermo,AS Roma,0,1,3.34,3.52,2.29
+11-Mar-12,Lazio,Bologna,1,3,1.63,3.79,7.07
+11-Mar-12,Novara,Udinese,1,0,4.19,3.37,2.06
+11-Mar-12,AC Milan,Lecce,2,0,1.19,7.55,20.27
+11-Mar-12,Atalanta,Parma,1,1,2.44,3.09,3.47
+11-Mar-12,Catania,Fiorentina,1,0,2.22,3.24,3.83
+11-Mar-12,Cesena,Siena,0,2,3.84,3.19,2.24
+11-Mar-12,Genoa,Juventus,0,0,4.88,3.8,1.81
+17-Mar-12,Fiorentina,Juventus,0,5,4.34,3.33,2.04
+17-Mar-12,Parma,AC Milan,0,2,4.99,3.62,1.84
+18-Mar-12,Udinese,Napoli,2,2,2.75,3.29,2.81
+18-Mar-12,Bologna,Chievo,2,2,2.43,2.73,4.11
+18-Mar-12,Catania,Lazio,1,0,2.39,3.52,3.13
+18-Mar-12,Inter,Atalanta,0,0,1.65,3.85,6.44
+18-Mar-12,Lecce,Palermo,1,1,2.04,3.52,4
+18-Mar-12,Siena,Novara,0,2,1.79,3.65,5.3
+18-Mar-12,Cagliari,Cesena,3,0,1.54,3.98,8.38
+19-Mar-12,AS Roma,Genoa,1,0,1.44,4.74,8.57
+24-Mar-12,Palermo,Udinese,1,1,2.79,3.39,2.71
+24-Mar-12,AC Milan,AS Roma,2,1,1.68,4,5.7
+25-Mar-12,Juventus,Inter,2,0,1.58,4.08,7.02
+25-Mar-12,Cesena,Parma,2,2,3.74,3.24,2.25
+25-Mar-12,Chievo,Siena,1,1,2.43,2.56,4.44
+25-Mar-12,Genoa,Fiorentina,2,2,2.65,3.02,3.19
+25-Mar-12,Lazio,Cagliari,1,0,1.92,3.42,4.87
+25-Mar-12,Napoli,Catania,2,2,1.5,4.26,8.36
+25-Mar-12,Novara,Lecce,0,0,2.25,3.27,3.72
+25-Mar-12,Atalanta,Bologna,2,0,2.29,2.88,4.24
+31-Mar-12,Parma,Lazio,3,1,2.4,3.29,3.35
+31-Mar-12,Catania,AC Milan,1,1,3.97,3.37,2.12
+1-Apr-12,Juventus,Napoli,3,0,1.77,3.74,5.32
+1-Apr-12,Bologna,Palermo,1,3,2.36,2.69,4.5
+1-Apr-12,Cagliari,Atalanta,2,0,2.18,2.7,5.19
+1-Apr-12,Fiorentina,Chievo,1,2,1.8,3.47,5.68
+1-Apr-12,Inter,Genoa,5,4,1.65,4.01,6.11
+1-Apr-12,Lecce,Cesena,0,0,1.62,4.12,6.29
+1-Apr-12,Siena,Udinese,1,0,2.69,3.08,3.08
+1-Apr-12,AS Roma,Novara,5,2,1.29,5.84,13.5
+7-Apr-12,Lazio,Napoli,3,1,2.92,3.39,2.62
+7-Apr-12,Palermo,Juventus,0,2,9.02,4.8,1.43
+7-Apr-12,AC Milan,Fiorentina,1,2,1.29,5.75,13.7
+7-Apr-12,Atalanta,Siena,1,2,2.29,2.68,4.72
+7-Apr-12,Cagliari,Inter,2,2,3.56,3.21,2.33
+7-Apr-12,Cesena,Bologna,0,0,3,3.18,2.68
+7-Apr-12,Chievo,Catania,3,2,2.69,2.83,3.39
+7-Apr-12,Lecce,AS Roma,4,2,3.88,3.33,2.14
+7-Apr-12,Novara,Genoa,1,1,2.74,3.39,2.77
+7-Apr-12,Udinese,Parma,3,1,2.04,3.31,4.3
+10-Apr-12,Chievo,AC Milan,0,1,5.45,3.67,1.77
+11-Apr-12,AS Roma,Udinese,3,1,1.88,3.44,5.05
+11-Apr-12,Catania,Lecce,1,2,1.85,3.71,4.76
+11-Apr-12,Fiorentina,Palermo,0,0,1.64,3.86,6.64
+11-Apr-12,Genoa,Cesena,1,1,1.4,5.17,9.18
+11-Apr-12,Inter,Siena,2,1,1.71,3.63,6.22
+11-Apr-12,Juventus,Lazio,2,1,1.36,5.09,11.5
+11-Apr-12,Napoli,Atalanta,1,3,1.54,4.16,7.64
+11-Apr-12,Parma,Novara,2,0,1.51,4.37,7.91
+12-Apr-12,Bologna,Cagliari,1,0,2.72,2.54,3.85
+21-Apr-12,Catania,Atalanta,2,0,2.48,2.79,3.86
+21-Apr-12,Napoli,Novara,2,0,1.22,7.2,15.86
+21-Apr-12,Chievo,Udinese,0,0,2.72,3.06,3.08
+21-Apr-12,Parma,Cagliari,3,0,2.1,2.94,4.86
+22-Apr-12,Juventus,AS Roma,4,0,1.45,4.75,8.15
+22-Apr-12,AC Milan,Bologna,1,1,1.24,6.43,15.72
+22-Apr-12,Cesena,Palermo,2,2,2.79,3.04,2.99
+22-Apr-12,Genoa,Siena,1,4,2.29,3.04,3.88
+22-Apr-12,Lazio,Lecce,1,1,1.76,3.69,5.49
+22-Apr-12,Fiorentina,Inter,0,0,2.77,3.11,2.96
+24-Apr-12,Atalanta,Chievo,1,0,2.04,3.06,4.86
+24-Apr-12,Cagliari,Catania,3,0,2.16,3.5,3.68
+25-Apr-12,AC Milan,Genoa,1,0,1.21,7.25,17.12
+25-Apr-12,Cesena,Juventus,0,1,18.39,6.69,1.22
+25-Apr-12,AS Roma,Fiorentina,1,2,1.77,3.75,5.25
+25-Apr-12,Lecce,Napoli,0,2,3.33,3.48,2.31
+25-Apr-12,Palermo,Parma,1,2,2.9,2.68,3.31
+25-Apr-12,Siena,Bologna,1,1,2.25,2.54,5.34
+25-Apr-12,Udinese,Inter,1,3,2.41,3.44,3.17
+25-Apr-12,Novara,Lazio,2,1,4.49,3.33,2
+28-Apr-12,AS Roma,Napoli,2,2,2.4,3.5,3.14
+28-Apr-12,Cagliari,Chievo,0,0,2.54,2.71,3.82
+28-Apr-12,Palermo,Catania,1,1,2.49,3.06,3.41
+29-Apr-12,Udinese,Lazio,2,0,2.19,3.2,3.98
+29-Apr-12,Atalanta,Fiorentina,2,0,2.93,2.47,3.58
+29-Apr-12,Inter,Cesena,2,1,1.19,7.53,19.13
+29-Apr-12,Lecce,Parma,1,2,1.97,3.81,4
+29-Apr-12,Novara,Juventus,0,4,14.59,6.18,1.26
+29-Apr-12,Siena,AC Milan,1,4,4.59,3.61,1.89
+29-Apr-12,Bologna,Genoa,3,2,2.59,3.08,3.23
+1-May-12,Napoli,Palermo,2,0,1.27,6.39,12.66
+1-May-12,Chievo,AS Roma,0,0,3.48,3.35,2.29
+2-May-12,AC Milan,Atalanta,2,0,1.25,6.45,15.86
+2-May-12,Catania,Bologna,0,1,1.62,4,6.25
+2-May-12,Cesena,Udinese,0,1,6.17,3.73,1.69
+2-May-12,Fiorentina,Novara,2,2,1.45,4.48,9.13
+2-May-12,Genoa,Cagliari,2,1,1.96,3.41,4.62
+2-May-12,Juventus,Lecce,1,1,1.12,9.43,26.8
+2-May-12,Lazio,Siena,1,1,1.71,3.68,6.07
+2-May-12,Parma,Inter,3,1,4.03,3.5,2.06
+5-May-12,AS Roma,Catania,2,2,1.49,4.49,7.9
+5-May-12,Lecce,Fiorentina,0,1,2.49,3.21,3.24
+6-May-12,Cagliari,Juventus,0,2,14.12,6.19,1.27
+6-May-12,Inter,AC Milan,4,2,4.13,3.81,1.93
+6-May-12,Atalanta,Lazio,0,2,2.29,3.36,3.52
+6-May-12,Bologna,Napoli,2,0,5.87,3.88,1.68
+6-May-12,Novara,Cesena,3,0,1.84,3.65,4.88
+6-May-12,Palermo,Chievo,4,4,1.88,3.58,4.83
+6-May-12,Udinese,Genoa,2,0,1.6,3.94,7.06
+6-May-12,Siena,Parma,0,2,2.52,3.34,3.06
+13-May-12,Catania,Udinese,0,2,3.97,2.31,2.98
+13-May-12,Chievo,Lecce,1,0,2.41,3.59,3.02
+13-May-12,Genoa,Palermo,2,0,2.06,2.69,6.16
+13-May-12,Lazio,Inter,3,1,2.41,3.54,2.98
+13-May-12,Napoli,Siena,2,1,1.35,5.42,10.69
+13-May-12,Cesena,AS Roma,2,3,6.48,3.97,1.54
+13-May-12,Parma,Bologna,1,0,1.67,3.82,5.26
+13-May-12,AC Milan,Novara,2,1,1.26,6.54,13.36
+13-May-12,Fiorentina,Cagliari,0,0,2.33,3.15,3.64
+13-May-12,Juventus,Atalanta,3,1,1.33,5.2,13.29
+25-Aug-12,Juventus,Parma,2,0,1.36,5.03,11.65
+25-Aug-12,Fiorentina,Udinese,2,1,1.97,3.31,4.74
+26-Aug-12,AS Roma,Catania,2,2,1.47,4.65,8
+26-Aug-12,Atalanta,Lazio,0,1,2.68,3.2,2.98
+26-Aug-12,Chievo,Bologna,2,0,2.04,3.25,4.45
+26-Aug-12,Genoa,Cagliari,2,0,2.64,3.14,3.1
+26-Aug-12,Palermo,Napoli,0,3,3.24,3.42,2.39
+26-Aug-12,Pescara,Inter,0,3,3.99,3.31,2.14
+26-Aug-12,Siena,Torino,0,0,2.44,3.13,3.45
+26-Aug-12,AC Milan,Sampdoria,0,1,1.51,4.15,8.5
+1-Sep-12,Bologna,AC Milan,1,3,4.34,3.63,1.94
+1-Sep-12,Torino,Pescara,3,0,1.87,3.33,5.42
+2-Sep-12,Cagliari,Atalanta,1,1,2.75,3.14,2.95
+2-Sep-12,Catania,Genoa,3,2,1.79,3.66,5.32
+2-Sep-12,Inter,AS Roma,1,3,2,3.91,3.75
+2-Sep-12,Lazio,Palermo,3,0,1.54,4.34,7.05
+2-Sep-12,Napoli,Fiorentina,2,1,1.77,3.66,5.44
+2-Sep-12,Parma,Chievo,2,0,2.22,3.31,3.71
+2-Sep-12,Sampdoria,Siena,2,1,1.92,3.45,4.8
+2-Sep-12,Udinese,Juventus,1,4,5.09,3.61,1.83
+15-Sep-12,AC Milan,Atalanta,0,1,1.52,4.26,7.95
+15-Sep-12,Palermo,Cagliari,1,1,2.41,3.31,3.27
+16-Sep-12,Torino,Inter,0,2,2.79,3.36,2.72
+16-Sep-12,AS Roma,Bologna,2,3,1.37,5.15,9.44
+16-Sep-12,Fiorentina,Catania,2,0,1.84,3.62,5
+16-Sep-12,Genoa,Juventus,1,3,7.22,4.16,1.55
+16-Sep-12,Napoli,Parma,3,1,1.62,3.87,6.71
+16-Sep-12,Pescara,Sampdoria,2,3,2.97,3.41,2.56
+16-Sep-12,Siena,Udinese,2,2,2.45,3.25,3.29
+16-Sep-12,Chievo,Lazio,1,3,2.77,3.27,2.83
+22-Sep-12,Juventus,Chievo,2,0,1.38,5,10.9
+22-Sep-12,Parma,Fiorentina,1,1,2.67,3.31,2.9
+23-Sep-12,Lazio,Genoa,0,1,1.67,3.93,6.01
+23-Sep-12,Atalanta,Palermo,1,0,1.77,3.81,5.2
+23-Sep-12,Bologna,Pescara,1,1,1.84,3.69,4.84
+23-Sep-12,Catania,Napoli,0,0,3.29,3.54,2.29
+23-Sep-12,Inter,Siena,0,2,1.53,4.24,7.63
+23-Sep-12,Udinese,AC Milan,2,1,3.36,3.29,2.39
+23-Sep-12,Sampdoria,Torino,1,1,2.4,3.23,3.41
+25-Sep-12,Fiorentina,Juventus,0,0,4.04,3.2,2.17
+26-Sep-12,AC Milan,Cagliari,2,0,1.6,4.12,6.59
+26-Sep-12,AS Roma,Sampdoria,1,1,1.57,4.7,5.88
+26-Sep-12,Catania,Atalanta,2,1,2.2,3.18,3.95
+26-Sep-12,Chievo,Inter,0,2,3.43,3.25,2.37
+26-Sep-12,Genoa,Parma,1,1,2.54,3.15,3.22
+26-Sep-12,Napoli,Lazio,3,0,1.99,3.56,4.23
+26-Sep-12,Torino,Udinese,0,0,2.2,3.37,3.74
+26-Sep-12,Pescara,Palermo,1,0,2.44,3.5,3.02
+27-Sep-12,Siena,Bologna,1,0,2.16,3.1,4.07
+29-Sep-12,Juventus,AS Roma,4,1,1.63,4.58,5.36
+29-Sep-12,Parma,AC Milan,1,1,3.38,3.29,2.37
+30-Sep-12,Inter,Fiorentina,2,1,2.35,3.22,3.5
+30-Sep-12,Atalanta,Torino,1,5,2.5,3.02,3.44
+30-Sep-12,Bologna,Catania,4,0,2.39,3.2,3.45
+30-Sep-12,Cagliari,Pescara,1,2,1.71,3.71,6.05
+30-Sep-12,Lazio,Siena,2,1,1.63,3.76,6.8
+30-Sep-12,Palermo,Chievo,4,1,2,3.36,4.44
+30-Sep-12,Sampdoria,Napoli,0,1,3.73,3.29,2.23
+30-Sep-12,Udinese,Genoa,0,0,1.96,3.54,4.38
+6-Oct-12,Genoa,Palermo,1,1,2.37,3.4,3.27
+6-Oct-12,Chievo,Sampdoria,2,1,2.6,3.06,3.22
+7-Oct-12,AC Milan,Inter,0,1,2.33,3.34,3.43
+7-Oct-12,Napoli,Udinese,2,1,1.56,4.2,7.04
+7-Oct-12,Catania,Parma,2,0,2.12,3.41,3.88
+7-Oct-12,Fiorentina,Bologna,1,0,1.6,3.97,7
+7-Oct-12,Pescara,Lazio,0,3,4.28,3.42,2.02
+7-Oct-12,Siena,Juventus,1,2,7.53,4.15,1.55
+7-Oct-12,Torino,Cagliari,0,1,2.02,3.33,4.47
+7-Oct-12,AS Roma,Atalanta,2,0,1.49,4.8,7.09
+20-Oct-12,Lazio,AC Milan,3,2,2.4,3.38,3.24
+20-Oct-12,Juventus,Napoli,2,0,1.74,3.75,5.59
+21-Oct-12,Genoa,AS Roma,2,4,3.27,3.75,2.22
+21-Oct-12,Atalanta,Siena,2,1,2.02,3.25,4.59
+21-Oct-12,Chievo,Fiorentina,1,1,3.68,3.31,2.24
+21-Oct-12,Inter,Catania,2,0,1.67,4.09,5.7
+21-Oct-12,Palermo,Torino,0,0,2.29,3.15,3.73
+21-Oct-12,Parma,Sampdoria,2,1,2.1,3.38,3.97
+21-Oct-12,Udinese,Pescara,1,0,1.51,4.33,8.01
+21-Oct-12,Cagliari,Bologna,1,0,2.08,3.21,4.38
+27-Oct-12,AC Milan,Genoa,1,0,1.41,4.7,9.97
+27-Oct-12,Siena,Palermo,0,0,2.47,3.27,3.24
+28-Oct-12,AS Roma,Udinese,2,3,1.54,4.63,6.36
+28-Oct-12,Napoli,Chievo,1,0,1.45,4.67,8.48
+28-Oct-12,Bologna,Inter,1,3,3.42,3.16,2.43
+28-Oct-12,Fiorentina,Lazio,2,0,2.12,3.29,4.05
+28-Oct-12,Pescara,Atalanta,0,0,2.98,3.31,2.62
+28-Oct-12,Sampdoria,Cagliari,0,1,2.39,3.19,3.46
+28-Oct-12,Torino,Parma,1,3,2.27,3.35,3.54
+28-Oct-12,Catania,Juventus,0,1,5.47,3.6,1.79
+30-Oct-12,Palermo,AC Milan,2,2,3.17,3.48,2.39
+31-Oct-12,Atalanta,Napoli,1,0,3.34,3.14,2.49
+31-Oct-12,Cagliari,Siena,4,2,2.04,3.21,4.55
+31-Oct-12,Chievo,Pescara,2,0,1.78,3.5,5.73
+31-Oct-12,Inter,Sampdoria,3,2,1.65,3.8,6.58
+31-Oct-12,Juventus,Bologna,2,1,1.26,6.13,16.96
+31-Oct-12,Lazio,Torino,1,1,1.88,3.43,5.09
+31-Oct-12,Parma,AS Roma,3,2,2.67,3.79,2.62
+31-Oct-12,Udinese,Catania,2,2,1.97,3.41,4.54
+1-Nov-12,Genoa,Fiorentina,0,1,4.11,3.27,2.1
+3-Nov-12,Juventus,Inter,1,3,1.63,4.04,6.46
+3-Nov-12,AC Milan,Chievo,5,1,1.54,4.17,7.56
+4-Nov-12,AS Roma,Palermo,4,1,1.56,4.8,5.9
+4-Nov-12,Bologna,Udinese,1,1,2.52,3.37,3.04
+4-Nov-12,Catania,Lazio,4,0,2.48,3.31,3.2
+4-Nov-12,Fiorentina,Cagliari,4,1,1.57,3.8,8.17
+4-Nov-12,Napoli,Torino,1,1,1.55,4.38,6.84
+4-Nov-12,Sampdoria,Atalanta,1,2,2.4,3.14,3.5
+4-Nov-12,Siena,Genoa,1,0,2.17,3.36,3.86
+4-Nov-12,Pescara,Parma,2,0,3.54,3.37,2.25
+10-Nov-12,Pescara,Juventus,1,6,13.57,5.32,1.32
+10-Nov-12,Cagliari,Catania,0,0,2.16,3.33,3.91
+11-Nov-12,Atalanta,Inter,3,2,3.31,3.34,2.39
+11-Nov-12,AC Milan,Fiorentina,1,3,2.1,3.34,4.03
+11-Nov-12,Chievo,Udinese,2,2,2.72,3.27,2.88
+11-Nov-12,Genoa,Napoli,2,4,4.45,3.47,1.97
+11-Nov-12,Lazio,AS Roma,3,2,2.69,3.85,2.56
+11-Nov-12,Parma,Siena,0,0,1.75,3.54,5.98
+11-Nov-12,Torino,Bologna,1,0,2.02,3.4,4.3
+11-Nov-12,Palermo,Sampdoria,2,0,2.1,3.21,4.28
+17-Nov-12,Napoli,AC Milan,2,2,2,3.6,4.13
+17-Nov-12,Juventus,Lazio,0,0,1.51,4.43,7.48
+18-Nov-12,Sampdoria,Genoa,3,1,2.81,3.02,2.98
+18-Nov-12,Bologna,Palermo,3,0,2.21,3.37,3.7
+18-Nov-12,Catania,Chievo,2,1,1.82,3.64,5.09
+18-Nov-12,Fiorentina,Atalanta,4,1,1.74,3.54,6.2
+18-Nov-12,Inter,Cagliari,2,2,1.57,4.12,6.96
+18-Nov-12,Siena,Pescara,1,0,1.89,3.56,4.74
+18-Nov-12,Udinese,Parma,2,2,2.06,3.42,4.05
+19-Nov-12,AS Roma,Torino,2,0,1.61,4.47,5.68
+24-Nov-12,Palermo,Catania,3,1,2.36,3.25,3.46
+25-Nov-12,AC Milan,Juventus,1,0,3.75,3.29,2.22
+25-Nov-12,Atalanta,Genoa,0,1,1.8,3.83,4.95
+25-Nov-12,Chievo,Siena,0,0,2.34,3.08,3.71
+25-Nov-12,Pescara,AS Roma,0,1,5.68,5.05,1.55
+25-Nov-12,Sampdoria,Bologna,1,0,2.43,3.44,3.14
+25-Nov-12,Torino,Fiorentina,2,2,3.27,3.19,2.49
+26-Nov-12,Parma,Inter,1,0,3.09,3.45,2.45
+26-Nov-12,Cagliari,Napoli,0,1,2.85,3.27,2.74
+27-Nov-12,Lazio,Udinese,3,0,1.96,3.58,4.26
+30-Nov-12,Catania,AC Milan,1,3,3.58,3.41,2.23
+1-Dec-12,Juventus,Torino,3,0,1.36,5.15,10.97
+2-Dec-12,Fiorentina,Sampdoria,2,2,1.54,3.96,8.4
+2-Dec-12,Bologna,Atalanta,2,1,2.42,3.23,3.36
+2-Dec-12,Genoa,Chievo,2,4,2.46,3.23,3.31
+2-Dec-12,Inter,Palermo,1,0,1.44,4.92,8.07
+2-Dec-12,Lazio,Parma,2,1,1.92,3.6,4.51
+2-Dec-12,Siena,AS Roma,1,3,3.5,3.65,2.16
+2-Dec-12,Udinese,Cagliari,4,1,2.36,3.27,3.45
+2-Dec-12,Napoli,Pescara,5,1,1.21,7.23,17.92
+8-Dec-12,AS Roma,Fiorentina,4,2,2.12,3.83,3.48
+8-Dec-12,Atalanta,Parma,2,1,2.4,3.36,3.25
+9-Dec-12,Inter,Napoli,2,1,2.29,3.41,3.45
+9-Dec-12,Cagliari,Chievo,0,2,1.99,3.31,4.63
+9-Dec-12,Palermo,Juventus,0,1,6.07,4.32,1.61
+9-Dec-12,Pescara,Genoa,2,0,2.64,3.39,2.88
+9-Dec-12,Siena,Catania,1,3,2.42,3.18,3.41
+9-Dec-12,Torino,AC Milan,2,4,4.16,3.48,2.02
+10-Dec-12,Bologna,Lazio,0,0,2.85,3.25,2.75
+10-Dec-12,Sampdoria,Udinese,0,2,2.69,3.23,2.95
+15-Dec-12,Lazio,Inter,1,0,2.42,3.56,3.06
+15-Dec-12,Udinese,Palermo,1,1,1.88,3.63,4.71
+16-Dec-12,Napoli,Bologna,2,3,1.45,4.7,8.6
+16-Dec-12,AC Milan,Pescara,4,1,1.18,7.89,19.96
+16-Dec-12,Catania,Sampdoria,3,1,1.88,3.5,4.84
+16-Dec-12,Chievo,AS Roma,1,0,3.9,4.09,1.93
+16-Dec-12,Genoa,Torino,1,1,2.6,3.42,2.91
+16-Dec-12,Juventus,Atalanta,3,0,1.25,6.21,16.95
+16-Dec-12,Parma,Cagliari,4,1,2.08,3.47,3.94
+16-Dec-12,Fiorentina,Siena,4,1,1.43,4.54,9.9
+21-Dec-12,Cagliari,Juventus,1,3,9.69,4.88,1.4
+21-Dec-12,Pescara,Catania,2,1,3.29,3.48,2.33
+22-Dec-12,AS Roma,AC Milan,4,2,2.18,3.92,3.25
+22-Dec-12,Atalanta,Udinese,1,1,2.21,3.29,3.76
+22-Dec-12,Bologna,Parma,1,2,2.34,3.42,3.33
+22-Dec-12,Palermo,Fiorentina,0,3,3.1,3.4,2.48
+22-Dec-12,Sampdoria,Lazio,0,1,3.1,3.31,2.52
+22-Dec-12,Siena,Napoli,0,2,4.4,3.58,1.94
+22-Dec-12,Torino,Chievo,2,0,2.27,3.29,3.6
+22-Dec-12,Inter,Genoa,1,1,1.38,5.46,9.3
+5-Jan-13,Lazio,Cagliari,2,1,1.53,4.3,7.46
+5-Jan-13,Catania,Torino,0,0,1.95,3.36,4.75
+6-Jan-13,Napoli,AS Roma,4,1,2.12,3.84,3.47
+6-Jan-13,AC Milan,Siena,2,1,1.33,5.34,12.11
+6-Jan-13,Chievo,Atalanta,1,0,2.58,3.09,3.24
+6-Jan-13,Fiorentina,Pescara,0,2,1.2,7.4,19.07
+6-Jan-13,Genoa,Bologna,2,0,2.36,3.31,3.36
+6-Jan-13,Juventus,Sampdoria,1,2,1.2,7.27,19.11
+6-Jan-13,Parma,Palermo,2,1,1.67,3.93,6.01
+6-Jan-13,Udinese,Inter,3,0,2.67,3.42,2.83
+12-Jan-13,Inter,Pescara,2,0,1.34,5.63,10.53
+12-Jan-13,Bologna,Chievo,4,0,2.06,3.16,4.54
+13-Jan-13,Sampdoria,AC Milan,0,0,4.51,3.37,1.99
+13-Jan-13,Cagliari,Genoa,2,1,1.76,3.85,5.18
+13-Jan-13,Catania,AS Roma,1,0,2.99,4,2.29
+13-Jan-13,Lazio,Atalanta,2,0,1.72,3.78,5.79
+13-Jan-13,Napoli,Palermo,3,0,1.42,5.03,8.41
+13-Jan-13,Parma,Juventus,1,1,4.69,3.64,1.87
+13-Jan-13,Udinese,Fiorentina,3,1,3.06,3.37,2.5
+13-Jan-13,Torino,Siena,3,2,2.19,3.24,3.93
+19-Jan-13,Juventus,Udinese,4,0,1.34,5.44,10.69
+19-Jan-13,Palermo,Lazio,2,2,2.58,3.35,2.99
+20-Jan-13,AS Roma,Inter,1,1,1.8,4.11,4.51
+20-Jan-13,Atalanta,Cagliari,1,1,2.27,3.2,3.75
+20-Jan-13,AC Milan,Bologna,2,1,1.47,4.51,8.44
+20-Jan-13,Chievo,Parma,1,1,3.25,3.16,2.52
+20-Jan-13,Genoa,Catania,0,2,2.31,3.43,3.35
+20-Jan-13,Pescara,Torino,0,2,2.77,3.2,2.88
+20-Jan-13,Siena,Sampdoria,1,0,2.58,3.13,3.18
+20-Jan-13,Fiorentina,Napoli,1,1,2.34,3.29,3.46
+26-Jan-13,Juventus,Genoa,1,1,1.19,7.5,21.84
+26-Jan-13,Lazio,Chievo,0,1,1.74,3.68,5.73
+27-Jan-13,Inter,Torino,2,2,1.62,3.81,6.94
+27-Jan-13,Atalanta,AC Milan,0,1,3.93,3.41,2.12
+27-Jan-13,Cagliari,Palermo,1,1,2.02,3.52,4.09
+27-Jan-13,Catania,Fiorentina,2,1,3.34,3.31,2.39
+27-Jan-13,Parma,Napoli,1,2,2.89,3.43,2.61
+27-Jan-13,Sampdoria,Pescara,6,0,1.61,4,6.79
+27-Jan-13,Udinese,Siena,1,0,1.8,3.49,5.58
+27-Jan-13,Bologna,AS Roma,3,3,3.15,3.92,2.23
+1-Feb-13,AS Roma,Cagliari,2,4,1.47,4.91,7.21
+2-Feb-13,Napoli,Catania,2,0,1.49,4.61,7.62
+2-Feb-13,Torino,Sampdoria,0,0,2.2,3.22,3.9
+3-Feb-13,AC Milan,Udinese,2,1,1.52,4.41,7.48
+3-Feb-13,Fiorentina,Parma,2,0,1.74,3.73,5.66
+3-Feb-13,Genoa,Lazio,3,2,3,3.24,2.64
+3-Feb-13,Palermo,Atalanta,1,2,2.16,3.25,4
+3-Feb-13,Pescara,Bologna,2,3,3.47,3.37,2.31
+3-Feb-13,Siena,Inter,3,1,3.66,3.33,2.23
+3-Feb-13,Chievo,Juventus,1,2,6.68,4.01,1.61
+9-Feb-13,Lazio,Napoli,1,1,2.81,3.25,2.79
+9-Feb-13,Juventus,Fiorentina,2,0,1.63,4.16,5.96
+10-Feb-13,Inter,Chievo,3,1,1.63,3.97,6.67
+10-Feb-13,Atalanta,Catania,0,0,2.23,3.46,3.54
+10-Feb-13,Bologna,Siena,1,1,1.95,3.41,4.63
+10-Feb-13,Cagliari,AC Milan,1,1,4.03,3.47,2.06
+10-Feb-13,Palermo,Pescara,1,1,1.48,4.66,7.82
+10-Feb-13,Sampdoria,AS Roma,3,1,3.13,3.56,2.38
+10-Feb-13,Udinese,Torino,1,0,2,3.31,4.58
+10-Feb-13,Parma,Genoa,0,0,1.93,3.65,4.42
+15-Feb-13,AC Milan,Parma,2,1,1.47,4.63,8
+16-Feb-13,AS Roma,Juventus,1,0,3.41,3.67,2.2
+16-Feb-13,Chievo,Palermo,1,1,2.25,3.25,3.68
+17-Feb-13,Fiorentina,Inter,4,1,1.95,3.68,4.22
+17-Feb-13,Catania,Bologna,1,0,2.1,3.36,4.07
+17-Feb-13,Genoa,Udinese,1,0,2.41,3.33,3.27
+17-Feb-13,Napoli,Sampdoria,0,0,1.52,4.3,7.65
+17-Feb-13,Pescara,Cagliari,0,2,3.5,3.39,2.27
+17-Feb-13,Torino,Atalanta,2,1,2.14,3.12,4.3
+18-Feb-13,Siena,Lazio,3,0,3.18,3.2,2.54
+23-Feb-13,Palermo,Genoa,0,0,2,3.48,4.3
+24-Feb-13,Inter,AC Milan,1,1,4,3.49,2.04
+24-Feb-13,Atalanta,AS Roma,2,3,3.31,3.47,2.31
+24-Feb-13,Cagliari,Torino,4,3,2.27,3.11,3.88
+24-Feb-13,Juventus,Siena,3,0,1.22,7.08,16.75
+24-Feb-13,Parma,Catania,1,2,2.04,3.45,4.13
+24-Feb-13,Sampdoria,Chievo,2,0,2.02,3.29,4.47
+25-Feb-13,Lazio,Pescara,2,0,1.3,5.7,13.2
+25-Feb-13,Udinese,Napoli,0,0,3,3.45,2.5
+26-Feb-13,Bologna,Fiorentina,2,1,3.35,3.43,2.31
+1-Mar-13,Napoli,Juventus,1,1,3.12,3.27,2.52
+2-Mar-13,AC Milan,Lazio,3,0,1.63,3.88,6.9
+3-Mar-13,AS Roma,Genoa,3,1,1.42,5,8.73
+3-Mar-13,Bologna,Cagliari,3,0,2.41,3.25,3.35
+3-Mar-13,Catania,Inter,2,3,2.21,3.47,3.56
+3-Mar-13,Fiorentina,Chievo,2,1,1.43,4.57,9.6
+3-Mar-13,Pescara,Udinese,0,1,3.85,3.54,2.08
+3-Mar-13,Sampdoria,Parma,1,0,2.24,3.24,3.76
+3-Mar-13,Siena,Atalanta,0,2,2.36,3.25,3.46
+3-Mar-13,Torino,Palermo,0,0,2.04,3.35,4.28
+8-Mar-13,Genoa,AC Milan,0,2,4.59,3.62,1.9
+9-Mar-13,Udinese,AS Roma,1,1,3,3.52,2.47
+10-Mar-13,Inter,Bologna,0,1,1.81,3.82,4.88
+10-Mar-13,Lazio,Fiorentina,0,2,2.95,3.29,2.65
+10-Mar-13,Cagliari,Sampdoria,3,1,2.24,3.14,3.86
+10-Mar-13,Chievo,Napoli,2,0,3.83,3.43,2.14
+10-Mar-13,Juventus,Catania,1,0,1.27,5.9,15.6
+10-Mar-13,Palermo,Siena,1,2,1.83,3.5,5.25
+10-Mar-13,Parma,Torino,4,1,1.98,3.25,4.79
+10-Mar-13,Atalanta,Pescara,2,1,1.5,4.4,8.02
+16-Mar-13,Bologna,Juventus,0,2,5.41,3.6,1.79
+16-Mar-13,Catania,Udinese,3,1,1.84,3.5,5.18
+17-Mar-13,AS Roma,Parma,2,0,1.6,4.12,6.52
+17-Mar-13,Torino,Lazio,1,0,2.45,3.25,3.29
+17-Mar-13,AC Milan,Palermo,2,0,1.32,5.59,12.09
+17-Mar-13,Fiorentina,Genoa,3,2,1.39,4.84,10.18
+17-Mar-13,Napoli,Atalanta,3,2,1.53,4.28,7.4
+17-Mar-13,Pescara,Chievo,0,2,3.16,3.23,2.54
+17-Mar-13,Siena,Cagliari,0,0,2.49,3.42,3.06
+30-Mar-13,Torino,Napoli,3,5,3.23,3.31,2.44
+30-Mar-13,Chievo,AC Milan,0,1,5.01,3.72,1.81
+30-Mar-13,Atalanta,Sampdoria,0,0,2.24,3.12,3.94
+30-Mar-13,Cagliari,Fiorentina,2,1,3.61,3.54,2.17
+30-Mar-13,Genoa,Siena,2,2,2.14,3.2,4.07
+30-Mar-13,Inter,Juventus,1,2,4.08,3.39,2.08
+30-Mar-13,Lazio,Catania,2,1,2.08,3.39,4.09
+30-Mar-13,Palermo,AS Roma,2,0,3.18,3.46,2.4
+30-Mar-13,Parma,Pescara,3,0,1.45,4.68,8.65
+30-Mar-13,Udinese,Bologna,0,0,1.96,3.36,4.66
+3-Apr-13,Sampdoria,Inter,0,2,2.85,3.34,2.7
+6-Apr-13,Bologna,Torino,2,2,2.14,3.2,4.11
+6-Apr-13,Juventus,Pescara,2,1,1.13,9.65,26
+7-Apr-13,Inter,Atalanta,3,4,1.65,3.83,6.45
+7-Apr-13,Napoli,Genoa,2,0,1.42,4.9,8.86
+7-Apr-13,Catania,Cagliari,0,0,2.25,3.29,3.67
+7-Apr-13,Sampdoria,Palermo,1,3,2.33,3.22,3.57
+7-Apr-13,Siena,Parma,0,0,2.61,3.39,2.92
+7-Apr-13,Udinese,Chievo,3,1,1.85,3.44,5.38
+7-Apr-13,Fiorentina,AC Milan,2,2,2.48,3.33,3.17
+8-Apr-13,AS Roma,Lazio,1,1,2.08,3.52,3.88
+13-Apr-13,Atalanta,Fiorentina,0,2,3.69,3.45,2.16
+13-Apr-13,Pescara,Siena,2,3,3.65,3.5,2.17
+14-Apr-13,AC Milan,Napoli,1,1,2.1,3.34,4.09
+14-Apr-13,Cagliari,Inter,2,0,2.85,3.49,2.61
+14-Apr-13,Chievo,Catania,0,0,2.39,3.21,3.45
+14-Apr-13,Genoa,Sampdoria,1,1,2.6,3.22,3.06
+14-Apr-13,Parma,Udinese,0,3,1.98,3.42,4.5
+14-Apr-13,Torino,AS Roma,1,2,2.89,3.4,2.62
+14-Apr-13,Palermo,Bologna,1,1,1.79,3.62,5.34
+15-Apr-13,Lazio,Juventus,0,2,4.59,3.36,1.98
+20-Apr-13,Udinese,Lazio,1,0,2.33,3.27,3.5
+20-Apr-13,Genoa,Atalanta,1,1,1.89,3.47,4.87
+21-Apr-13,Juventus,AC Milan,1,0,1.76,3.65,5.62
+21-Apr-13,AS Roma,Pescara,1,1,1.14,9.01,24.57
+21-Apr-13,Bologna,Sampdoria,1,1,2.08,3.02,4.76
+21-Apr-13,Catania,Palermo,1,1,2.33,3.16,3.63
+21-Apr-13,Fiorentina,Torino,4,3,1.5,4.41,7.8
+21-Apr-13,Napoli,Cagliari,3,2,1.42,4.87,8.92
+21-Apr-13,Siena,Chievo,0,1,2.27,3.23,3.62
+21-Apr-13,Inter,Parma,1,0,2.16,3.37,3.82
+27-Apr-13,Pescara,Napoli,0,3,9.69,5.43,1.36
+27-Apr-13,Atalanta,Bologna,1,1,2.81,2.5,3.77
+27-Apr-13,Cagliari,Udinese,0,1,3.49,3.43,2.25
+28-Apr-13,AC Milan,Catania,4,2,1.3,5.66,13.5
+28-Apr-13,AS Roma,Siena,4,0,1.54,4.3,7.2
+28-Apr-13,Chievo,Genoa,0,1,2.87,3.15,2.83
+28-Apr-13,Palermo,Inter,1,0,2.02,3.7,3.88
+28-Apr-13,Parma,Lazio,0,0,2.61,3.36,2.94
+28-Apr-13,Sampdoria,Fiorentina,0,3,4.59,3.57,1.92
+28-Apr-13,Torino,Juventus,0,2,6.95,3.83,1.63
+4-May-13,Fiorentina,AS Roma,0,1,1.88,3.8,4.46
+4-May-13,Chievo,Cagliari,0,0,2.73,2.24,4.68
+5-May-13,Napoli,Inter,3,1,1.4,5.34,8.4
+5-May-13,AC Milan,Torino,1,0,1.3,5.9,12.14
+5-May-13,Catania,Siena,3,0,2.31,3.66,3.16
+5-May-13,Genoa,Pescara,4,1,1.26,6.39,14.7
+5-May-13,Juventus,Palermo,1,0,1.36,5,11.87
+5-May-13,Lazio,Bologna,6,0,1.47,4.38,8.83
+5-May-13,Parma,Atalanta,2,0,,,
+5-May-13,Udinese,Sampdoria,3,1,1.53,4.2,7.48
+7-May-13,AS Roma,Chievo,0,1,1.29,6.09,12
+8-May-13,Atalanta,Juventus,0,1,3.64,3.47,2.19
+8-May-13,Bologna,Napoli,0,3,5.09,4.12,1.72
+8-May-13,Cagliari,Parma,0,1,3.5,2.69,2.74
+8-May-13,Inter,Lazio,1,3,2.84,3.61,2.56
+8-May-13,Palermo,Udinese,2,3,2.04,3.5,3.5
+8-May-13,Sampdoria,Catania,1,1,1.86,3.46,5.15
+8-May-13,Siena,Fiorentina,0,1,4.84,3.8,1.81
+8-May-13,Torino,Genoa,0,0,,,
+8-May-13,Pescara,AC Milan,0,4,20.22,7.56,1.19
+11-May-13,Catania,Pescara,1,0,1.29,6.08,12.86
+11-May-13,Juventus,Cagliari,1,1,1.35,5.51,10.05
+12-May-13,AC Milan,AS Roma,0,0,1.59,4.34,6.18
+12-May-13,Parma,Bologna,0,2,1.64,3.97,6.26
+12-May-13,Lazio,Sampdoria,2,0,1.34,5.58,10.42
+12-May-13,Napoli,Siena,2,1,1.38,5.69,8.25
+12-May-13,Udinese,Atalanta,2,1,1.32,5.55,12.23
+12-May-13,Chievo,Torino,1,1,3.81,2.2,3.25
+12-May-13,Fiorentina,Palermo,1,0,1.38,5.01,9.65
+12-May-13,Genoa,Inter,0,0,1.8,3.78,5.01
+18-May-13,Sampdoria,Juventus,3,2,4.42,3.47,1.97
+19-May-13,AS Roma,Napoli,2,1,2.52,3.86,2.72
+19-May-13,Cagliari,Lazio,1,0,5.32,3.9,1.74
+19-May-13,Inter,Udinese,2,5,2.97,3.95,2.31
+19-May-13,Palermo,Parma,1,3,2.62,3.45,2.85
+19-May-13,Pescara,Fiorentina,1,5,15.04,7.26,1.23
+19-May-13,Siena,AC Milan,1,2,13.5,6.8,1.25
+19-May-13,Torino,Catania,2,2,2.42,3.2,3.36
+19-May-13,Atalanta,Chievo,2,2,1.72,3.71,5.91
+19-May-13,Bologna,Genoa,0,0,1.85,3.42,5.26
+24-Aug-13,Sampdoria,Juventus,0,1,8.38,4.53,1.47
+24-Aug-13,Verona,AC Milan,2,1,5.75,3.59,1.76
+25-Aug-13,Cagliari,Atalanta,2,1,2.54,3.22,3.18
+25-Aug-13,Lazio,Udinese,2,1,1.93,3.48,4.63
+25-Aug-13,Livorno,AS Roma,0,2,4.46,3.6,1.93
+25-Aug-13,Napoli,Bologna,3,0,1.4,5.26,8.47
+25-Aug-13,Parma,Chievo,0,0,1.84,3.5,5.23
+25-Aug-13,Torino,Sassuolo,2,0,2.16,3.29,3.96
+25-Aug-13,Inter,Genoa,2,0,1.65,4.05,5.92
+26-Aug-13,Fiorentina,Catania,2,1,1.42,4.78,9.52
+31-Aug-13,Juventus,Lazio,4,1,1.4,4.87,9.69
+31-Aug-13,Chievo,Napoli,2,4,4.22,3.41,2.04
+1-Sep-13,AC Milan,Cagliari,3,1,1.44,4.55,9.5
+1-Sep-13,Atalanta,Torino,2,0,2.19,3.22,3.94
+1-Sep-13,Bologna,Sampdoria,2,2,2.27,3.23,3.69
+1-Sep-13,Catania,Inter,0,3,2.97,3.48,2.52
+1-Sep-13,Genoa,Fiorentina,2,5,3.71,3.25,2.25
+1-Sep-13,Sassuolo,Livorno,1,4,2.04,3.36,4.26
+1-Sep-13,Udinese,Parma,3,1,2.08,3.34,4.13
+1-Sep-13,AS Roma,Verona,3,0,1.48,4.5,8.21
+14-Sep-13,Napoli,Atalanta,2,0,1.37,5.38,9.19
+14-Sep-13,Torino,AC Milan,2,2,4.59,3.59,1.91
+14-Sep-13,Inter,Juventus,1,1,4.34,3.27,2.06
+15-Sep-13,Sampdoria,Genoa,0,3,2.52,3.12,3.29
+15-Sep-13,Lazio,Chievo,3,0,1.66,3.8,6.43
+15-Sep-13,Livorno,Catania,2,0,2.43,3.4,3.19
+15-Sep-13,Udinese,Bologna,1,1,1.76,3.75,5.43
+15-Sep-13,Verona,Sassuolo,2,0,2.18,3.41,3.72
+15-Sep-13,Fiorentina,Cagliari,1,1,1.55,4.15,7.52
+16-Sep-13,Parma,AS Roma,1,3,3.29,3.48,2.33
+21-Sep-13,Genoa,Livorno,0,0,1.92,3.46,4.75
+21-Sep-13,Cagliari,Sampdoria,2,2,2.06,3.33,4.28
+22-Sep-13,AC Milan,Napoli,1,2,2.48,3.19,3.29
+22-Sep-13,AS Roma,Lazio,2,0,2.1,3.36,4.08
+22-Sep-13,Atalanta,Fiorentina,0,2,3.92,3.31,2.16
+22-Sep-13,Bologna,Torino,1,2,2.46,3.11,3.42
+22-Sep-13,Catania,Parma,0,0,2.5,3.23,3.23
+22-Sep-13,Juventus,Verona,2,1,1.17,8.56,21.01
+22-Sep-13,Sassuolo,Inter,0,7,4.07,3.43,1.87
+24-Sep-13,Udinese,Genoa,1,0,1.74,3.58,5.98
+25-Sep-13,Bologna,AC Milan,3,3,4.12,3.31,2.1
+25-Sep-13,Chievo,Juventus,1,2,7.67,4.68,1.48
+25-Sep-13,Lazio,Catania,3,1,1.6,4.03,6.87
+25-Sep-13,Livorno,Cagliari,1,1,3.12,3.24,2.56
+25-Sep-13,Napoli,Sassuolo,1,1,1.15,9.5,22
+25-Sep-13,Parma,Atalanta,4,3,1.92,3.42,4.83
+25-Sep-13,Sampdoria,AS Roma,0,2,4.51,3.52,1.94
+25-Sep-13,Torino,Verona,2,2,1.91,3.37,4.99
+26-Sep-13,Inter,Fiorentina,2,1,1.94,3.61,4.4
+28-Sep-13,AC Milan,Sampdoria,1,0,1.44,4.63,8.94
+28-Sep-13,Genoa,Napoli,0,2,4.25,3.65,1.96
+29-Sep-13,AS Roma,Bologna,5,0,1.37,4.74,9.26
+29-Sep-13,Atalanta,Udinese,2,0,2.81,3.17,2.85
+29-Sep-13,Cagliari,Inter,1,1,4.09,3.41,2.06
+29-Sep-13,Catania,Chievo,2,0,2.2,3.21,3.95
+29-Sep-13,Sassuolo,Lazio,2,2,3.76,3.43,2.16
+29-Sep-13,Verona,Livorno,2,1,1.98,3.64,4.17
+29-Sep-13,Torino,Juventus,0,1,8.93,4.13,1.5
+30-Sep-13,Fiorentina,Parma,2,2,1.71,3.69,5.12
+5-Oct-13,Inter,AS Roma,0,3,2.5,3.47,3
+5-Oct-13,Chievo,Atalanta,0,1,2.5,3.18,3.27
+6-Oct-13,Juventus,AC Milan,3,2,1.61,4.03,6.69
+6-Oct-13,Lazio,Fiorentina,0,0,2.61,3.31,2.99
+6-Oct-13,Bologna,Verona,1,4,2.22,3.17,3.85
+6-Oct-13,Catania,Genoa,1,1,2.06,3.49,3.98
+6-Oct-13,Napoli,Livorno,4,0,1.3,6.03,11.75
+6-Oct-13,Sampdoria,Torino,2,2,2.66,3.13,3.08
+6-Oct-13,Udinese,Cagliari,2,0,1.95,3.27,4.96
+6-Oct-13,Parma,Sassuolo,3,1,1.7,3.96,5.59
+18-Oct-13,AS Roma,Napoli,2,0,2.04,3.42,4.21
+19-Oct-13,AC Milan,Udinese,1,0,1.82,3.65,5.07
+19-Oct-13,Cagliari,Catania,2,1,1.88,3.52,4.9
+20-Oct-13,Torino,Inter,3,3,3.8,3.54,2.1
+20-Oct-13,Fiorentina,Juventus,4,2,3.9,3.54,2.08
+20-Oct-13,Genoa,Chievo,2,1,2.1,3.37,4.05
+20-Oct-13,Livorno,Sampdoria,1,2,2.54,3.25,3.12
+20-Oct-13,Sassuolo,Bologna,2,1,2.29,3.38,3.46
+20-Oct-13,Verona,Parma,3,2,2.4,3.54,3.11
+20-Oct-13,Atalanta,Lazio,2,1,2.95,3.31,2.65
+26-Oct-13,Inter,Verona,4,2,1.5,4.44,6.22
+26-Oct-13,Sampdoria,Atalanta,1,0,2.35,3.25,3.49
+27-Oct-13,Lazio,Cagliari,2,0,1.92,3.52,4.65
+27-Oct-13,Bologna,Livorno,1,0,1.98,3.37,4.55
+27-Oct-13,Catania,Sassuolo,0,0,2.24,3.35,3.63
+27-Oct-13,Chievo,Fiorentina,1,2,4.12,3.7,1.97
+27-Oct-13,Juventus,Genoa,2,0,1.2,7.12,20.42
+27-Oct-13,Parma,AC Milan,3,2,3.31,3.57,2.27
+27-Oct-13,Udinese,AS Roma,0,1,3.22,3.34,2.43
+27-Oct-13,Napoli,Torino,2,0,1.41,5.28,8.3
+29-Oct-13,Atalanta,Inter,1,1,4.17,3.31,2.08
+30-Oct-13,AC Milan,Lazio,1,1,1.71,3.77,5.84
+30-Oct-13,Cagliari,Bologna,0,3,1.66,3.81,6.45
+30-Oct-13,Fiorentina,Napoli,1,2,2.54,3.37,3.04
+30-Oct-13,Genoa,Parma,1,0,2.68,3.4,2.83
+30-Oct-13,Juventus,Catania,4,0,1.15,8.6,29
+30-Oct-13,Livorno,Torino,3,3,2.62,3.31,2.96
+30-Oct-13,Sassuolo,Udinese,1,2,3.45,3.42,2.27
+30-Oct-13,Verona,Sampdoria,2,0,2.22,3.4,3.63
+31-Oct-13,AS Roma,Chievo,1,0,1.31,5.95,11.5
+2-Nov-13,AC Milan,Fiorentina,0,2,1.85,3.73,4.69
+2-Nov-13,Napoli,Catania,2,1,1.2,7.29,19.85
+2-Nov-13,Parma,Juventus,0,1,5.18,3.93,1.74
+3-Nov-13,Torino,AS Roma,1,1,4.12,3.54,2
+3-Nov-13,Lazio,Genoa,0,2,1.71,3.66,6.12
+3-Nov-13,Sampdoria,Sassuolo,3,4,2.1,3.22,4.24
+3-Nov-13,Udinese,Inter,0,3,2.62,3.47,2.85
+3-Nov-13,Verona,Cagliari,2,1,2.27,3.43,3.48
+3-Nov-13,Livorno,Atalanta,1,0,2.54,3.39,3
+4-Nov-13,Bologna,Chievo,0,0,2.12,3.17,4.33
+9-Nov-13,Inter,Livorno,2,0,1.31,6.08,10.94
+9-Nov-13,Catania,Udinese,1,0,2.91,3.27,2.7
+10-Nov-13,Fiorentina,Sampdoria,2,1,1.39,5.05,9.8
+10-Nov-13,Juventus,Napoli,3,0,1.68,3.94,5.78
+10-Nov-13,AS Roma,Sassuolo,1,1,1.3,5.99,11.71
+10-Nov-13,Atalanta,Bologna,2,1,2.47,3.14,3.37
+10-Nov-13,Cagliari,Torino,2,1,2.04,3.4,4.2
+10-Nov-13,Chievo,AC Milan,0,0,4.46,3.52,1.95
+10-Nov-13,Parma,Lazio,1,1,2.23,3.34,3.7
+10-Nov-13,Genoa,Verona,2,0,2.29,3.37,3.49
+23-Nov-13,AC Milan,Genoa,1,1,1.39,4.78,10.69
+23-Nov-13,Napoli,Parma,0,1,1.51,4.71,6.85
+23-Nov-13,Verona,Chievo,0,1,2.24,3.27,3.72
+24-Nov-13,Bologna,Inter,1,1,3.97,3.72,2
+24-Nov-13,Livorno,Juventus,0,2,10.5,5.55,1.34
+24-Nov-13,Sampdoria,Lazio,1,1,3.25,3.21,2.47
+24-Nov-13,Sassuolo,Atalanta,2,0,2.25,3.25,3.71
+24-Nov-13,Torino,Catania,4,1,1.63,3.88,6.68
+24-Nov-13,Udinese,Fiorentina,1,0,3.11,3.31,2.52
+25-Nov-13,AS Roma,Cagliari,0,0,1.42,4.92,8.99
+30-Nov-13,Genoa,Torino,1,1,2.93,3.09,2.58
+30-Nov-13,Parma,Bologna,1,1,1.68,3.89,5.97
+1-Dec-13,Juventus,Udinese,1,0,1.28,5.84,14.61
+1-Dec-13,Atalanta,AS Roma,1,1,4.46,3.82,1.85
+1-Dec-13,Cagliari,Sassuolo,2,2,1.81,3.7,5.03
+1-Dec-13,Chievo,Livorno,3,0,2.2,3.19,3.93
+1-Dec-13,Inter,Sampdoria,1,1,1.42,4.94,8.74
+1-Dec-13,Catania,AC Milan,1,3,5.12,4.13,1.71
+2-Dec-13,Lazio,Napoli,2,4,2.54,3.4,3
+2-Dec-13,Fiorentina,Verona,4,3,1.54,4.37,7.11
+6-Dec-13,Bologna,Juventus,0,2,7.44,4.43,1.52
+7-Dec-13,Napoli,Udinese,3,3,1.61,4.07,6.41
+7-Dec-13,Livorno,AC Milan,2,2,6.2,4.15,1.63
+8-Dec-13,Inter,Parma,3,3,1.78,3.63,5.54
+8-Dec-13,Cagliari,Genoa,2,1,1.92,3.48,4.75
+8-Dec-13,Sampdoria,Catania,2,0,1.68,3.57,6.75
+8-Dec-13,Sassuolo,Chievo,0,1,2.2,3.27,3.85
+8-Dec-13,Torino,Lazio,1,0,2.43,3.31,3.25
+8-Dec-13,Verona,Atalanta,2,1,1.93,3.38,4.88
+8-Dec-13,AS Roma,Fiorentina,2,1,1.88,3.74,4.59
+14-Dec-13,Catania,Verona,0,0,2.42,3.36,3.23
+15-Dec-13,Napoli,Inter,4,2,2.06,3.66,3.83
+15-Dec-13,Juventus,Sassuolo,4,0,1.16,8.19,28
+15-Dec-13,Chievo,Sampdoria,0,1,2.29,3.16,3.72
+15-Dec-13,Fiorentina,Bologna,3,0,1.48,4.72,7.51
+15-Dec-13,Genoa,Atalanta,1,1,2.5,3.22,3.22
+15-Dec-13,Lazio,Livorno,2,0,1.5,4.34,8.21
+15-Dec-13,Parma,Cagliari,0,0,1.83,3.74,4.8
+15-Dec-13,Udinese,Torino,0,2,1.98,3.48,4.3
+16-Dec-13,AC Milan,AS Roma,2,2,2.36,3.31,3.37
+21-Dec-13,Cagliari,Napoli,1,1,4.04,3.6,2.02
+21-Dec-13,Livorno,Udinese,1,2,2.99,3.29,2.61
+22-Dec-13,Inter,AC Milan,1,0,2.74,3.27,2.86
+22-Dec-13,AS Roma,Catania,4,0,1.16,6.91,21.26
+22-Dec-13,Atalanta,Juventus,1,4,11.01,4.26,1.36
+22-Dec-13,Sampdoria,Parma,1,1,2.66,2.97,2.95
+22-Dec-13,Sassuolo,Fiorentina,0,1,3.95,3.46,1.96
+22-Dec-13,Torino,Chievo,4,1,1.96,3.16,4.43
+22-Dec-13,Verona,Lazio,4,1,2.9,3.16,2.56
+22-Dec-13,Bologna,Genoa,1,0,2.14,3.25,4.03
+5-Jan-14,Juventus,AS Roma,3,0,1.7,3.91,5.66
+5-Jan-14,Fiorentina,Livorno,1,0,1.33,5.51,11.35
+5-Jan-14,Chievo,Cagliari,0,0,2.52,3.11,3.27
+6-Jan-14,Lazio,Inter,1,0,2.54,3.36,3.02
+6-Jan-14,AC Milan,Atalanta,3,0,1.47,4.36,9.14
+6-Jan-14,Catania,Bologna,2,0,2,3.29,4.55
+6-Jan-14,Genoa,Sassuolo,2,0,2.33,3.38,3.36
+6-Jan-14,Parma,Torino,3,1,2.21,3.25,3.84
+6-Jan-14,Udinese,Verona,1,3,1.73,3.7,5.82
+6-Jan-14,Napoli,Sampdoria,2,0,1.41,4.97,9.13
+11-Jan-14,Bologna,Lazio,0,0,3.35,3.44,2.31
+11-Jan-14,Livorno,Parma,0,3,3.39,3.36,2.34
+12-Jan-14,Sassuolo,AC Milan,4,3,5.93,3.99,1.66
+12-Jan-14,AS Roma,Genoa,4,0,1.26,6.05,15.69
+12-Jan-14,Atalanta,Catania,2,1,2.04,3.54,3.98
+12-Jan-14,Cagliari,Juventus,1,4,8.52,4.34,1.49
+12-Jan-14,Verona,Napoli,0,3,3.89,3.58,2.06
+12-Jan-14,Torino,Fiorentina,0,0,3.14,3.31,2.5
+13-Jan-14,Inter,Chievo,1,1,1.43,4.59,9.69
+13-Jan-14,Sampdoria,Udinese,3,0,2.7,3.1,3.04
+18-Jan-14,Juventus,Sampdoria,4,2,1.17,8.27,21.5
+18-Jan-14,AS Roma,Livorno,3,0,1.18,7.76,23
+19-Jan-14,AC Milan,Verona,1,0,1.36,5.09,11.35
+19-Jan-14,Atalanta,Cagliari,1,0,2.43,3.23,3.35
+19-Jan-14,Bologna,Napoli,2,2,5.49,4.03,1.7
+19-Jan-14,Catania,Fiorentina,0,3,4.42,3.83,1.88
+19-Jan-14,Chievo,Parma,1,2,3.21,3.06,2.62
+19-Jan-14,Genoa,Inter,1,0,5.37,3.69,1.78
+19-Jan-14,Sassuolo,Torino,0,2,2.88,3.37,2.66
+19-Jan-14,Udinese,Lazio,2,3,2.46,3.23,3.33
+25-Jan-14,Lazio,Juventus,1,1,5.22,3.66,1.8
+25-Jan-14,Napoli,Chievo,1,1,1.33,5.45,11.61
+26-Jan-14,Fiorentina,Genoa,3,3,1.38,5.01,10.48
+26-Jan-14,Cagliari,AC Milan,1,2,3.87,3.29,2.18
+26-Jan-14,Inter,Catania,0,0,1.3,6.01,12.12
+26-Jan-14,Livorno,Sassuolo,3,1,2.56,3.25,3.08
+26-Jan-14,Parma,Udinese,1,0,2.04,3.31,4.3
+26-Jan-14,Sampdoria,Bologna,1,1,1.83,3.64,5.05
+26-Jan-14,Torino,Atalanta,1,0,1.76,3.6,5.78
+26-Jan-14,Verona,AS Roma,1,3,6.8,4.15,1.58
+1-Feb-14,AC Milan,Torino,1,1,1.59,4.09,6.8
+1-Feb-14,Bologna,Udinese,0,2,2.69,3.18,3
+1-Feb-14,Cagliari,Fiorentina,1,0,3.23,3.33,2.44
+2-Feb-14,Juventus,Inter,3,1,1.37,5.2,10
+2-Feb-14,Atalanta,Napoli,3,0,4.34,3.5,1.98
+2-Feb-14,Catania,Livorno,3,3,1.85,3.69,4.76
+2-Feb-14,Chievo,Lazio,0,2,3.31,3.08,2.52
+2-Feb-14,Sassuolo,Verona,1,2,2.25,3.46,3.5
+3-Feb-14,Genoa,Sampdoria,0,1,3.17,3.09,2.6
+8-Feb-14,Napoli,AC Milan,3,1,2.06,3.5,3.95
+8-Feb-14,Fiorentina,Atalanta,2,0,1.58,3.99,7.28
+8-Feb-14,Udinese,Chievo,3,0,1.88,3.46,5.04
+9-Feb-14,Inter,Sassuolo,1,0,1.34,5.38,11.26
+9-Feb-14,Lazio,AS Roma,0,0,4.68,3.31,1.98
+9-Feb-14,Livorno,Genoa,0,1,2.39,3.27,3.37
+9-Feb-14,Parma,Catania,0,0,1.5,4.4,7.91
+9-Feb-14,Sampdoria,Cagliari,1,0,2.06,3.29,4.32
+9-Feb-14,Verona,Juventus,2,2,9.73,5.13,1.38
+9-Feb-14,Torino,Bologna,1,2,1.63,3.86,6.92
+14-Feb-14,AC Milan,Bologna,1,0,1.34,5.37,11.37
+15-Feb-14,Fiorentina,Inter,1,2,2.14,3.35,3.89
+16-Feb-14,AS Roma,Sampdoria,3,0,1.37,5.09,9.96
+16-Feb-14,Atalanta,Parma,0,4,2.94,3.23,2.7
+16-Feb-14,Cagliari,Livorno,1,2,1.86,3.57,4.96
+16-Feb-14,Genoa,Udinese,3,3,3.19,3.17,2.56
+16-Feb-14,Juventus,Chievo,3,1,1.17,8,25
+16-Feb-14,Sassuolo,Napoli,0,2,6.01,4.37,1.6
+16-Feb-14,Catania,Lazio,3,1,3.52,3.31,2.29
+17-Feb-14,Verona,Torino,1,3,2.7,3.24,2.93
+22-Feb-14,Bologna,AS Roma,0,1,6.89,4.23,1.56
+23-Feb-14,Lazio,Sassuolo,3,2,1.46,4.37,9.52
+23-Feb-14,Juventus,Torino,1,0,1.31,5.79,12.1
+23-Feb-14,Chievo,Catania,2,0,2.36,3.18,3.56
+23-Feb-14,Inter,Cagliari,1,1,1.44,4.63,9.03
+23-Feb-14,Sampdoria,AC Milan,0,2,3.25,3.29,2.44
+23-Feb-14,Udinese,Atalanta,1,1,1.85,3.47,5.16
+23-Feb-14,Livorno,Verona,2,3,2.5,3.29,3.14
+24-Feb-14,Napoli,Genoa,1,1,1.31,5.76,12.25
+24-Feb-14,Parma,Fiorentina,2,2,2.5,3.27,3.19
+1-Mar-14,AS Roma,Inter,0,0,1.71,3.92,5.58
+2-Mar-14,AC Milan,Juventus,0,2,3.98,3.36,2.12
+2-Mar-14,Fiorentina,Lazio,0,1,2.08,3.27,4.26
+2-Mar-14,Livorno,Napoli,1,1,5.34,3.89,1.74
+2-Mar-14,Atalanta,Chievo,2,1,2.21,3.18,3.93
+2-Mar-14,Genoa,Catania,2,0,2.21,3.27,3.82
+2-Mar-14,Sassuolo,Parma,0,1,3.9,3.5,2.08
+2-Mar-14,Torino,Sampdoria,0,2,1.98,3.42,4.5
+2-Mar-14,Verona,Bologna,0,0,2,3.49,4.22
+2-Mar-14,Cagliari,Udinese,3,0,2.6,3.23,3.06
+8-Mar-14,Catania,Cagliari,1,1,2.27,3.21,3.7
+8-Mar-14,Udinese,AC Milan,1,0,2.94,3.29,2.65
+9-Mar-14,Napoli,AS Roma,1,0,2.39,3.31,3.33
+9-Mar-14,Bologna,Sassuolo,0,0,2.17,3.29,3.92
+9-Mar-14,Chievo,Genoa,2,1,2.27,3.08,3.92
+9-Mar-14,Inter,Torino,1,0,1.62,4.09,6.31
+9-Mar-14,Lazio,Atalanta,0,1,1.68,3.79,6.31
+9-Mar-14,Parma,Verona,2,0,1.64,4.03,6.16
+9-Mar-14,Sampdoria,Livorno,4,2,1.83,3.54,5.24
+9-Mar-14,Juventus,Fiorentina,1,0,1.39,5.16,9.36
+15-Mar-14,Verona,Inter,0,2,3.92,3.54,2.06
+16-Mar-14,Fiorentina,Chievo,3,1,1.58,3.89,7.57
+16-Mar-14,Genoa,Juventus,0,1,7.37,4.46,1.52
+16-Mar-14,AC Milan,Parma,2,4,1.78,3.75,5.3
+16-Mar-14,Cagliari,Lazio,0,2,3.19,3.23,2.52
+16-Mar-14,Livorno,Bologna,2,1,2.31,3.1,3.77
+16-Mar-14,Sassuolo,Catania,3,1,2.54,3.2,3.17
+16-Mar-14,Atalanta,Sampdoria,3,0,2.52,3.13,3.27
+17-Mar-14,AS Roma,Udinese,3,2,1.41,4.83,9.56
+17-Mar-14,Torino,Napoli,0,1,3.73,3.39,2.19
+22-Mar-14,Chievo,AS Roma,0,2,6.61,3.74,1.66
+22-Mar-14,Torino,Livorno,3,1,1.65,3.85,6.42
+23-Mar-14,Catania,Juventus,0,1,7.95,4.76,1.46
+23-Mar-14,Lazio,AC Milan,1,1,2.52,3.29,3.14
+23-Mar-14,Napoli,Fiorentina,0,1,1.81,3.8,4.93
+23-Mar-14,Bologna,Cagliari,1,0,2.49,3.02,3.48
+23-Mar-14,Inter,Atalanta,1,2,1.49,4.49,7.95
+23-Mar-14,Sampdoria,Verona,5,0,2.04,3.31,4.37
+23-Mar-14,Udinese,Sassuolo,1,0,1.6,4.04,6.83
+23-Mar-14,Parma,Genoa,1,1,1.62,3.84,7.11
+25-Mar-14,AS Roma,Torino,2,1,1.42,4.71,9.81
+26-Mar-14,Atalanta,Livorno,2,0,1.93,3.52,4.59
+26-Mar-14,Cagliari,Verona,1,0,2.04,3.36,4.28
+26-Mar-14,Catania,Napoli,2,4,4.46,3.81,1.87
+26-Mar-14,Chievo,Bologna,3,0,2.06,3.1,4.68
+26-Mar-14,Fiorentina,AC Milan,0,2,2.31,3.45,3.36
+26-Mar-14,Genoa,Lazio,2,0,3.42,3.23,2.39
+26-Mar-14,Juventus,Parma,2,1,1.41,4.8,9.52
+26-Mar-14,Sassuolo,Sampdoria,1,2,2.23,3.24,3.83
+27-Mar-14,Inter,Udinese,0,0,1.6,4.05,6.8
+29-Mar-14,AC Milan,Chievo,3,0,1.43,4.58,9.9
+29-Mar-14,Bologna,Atalanta,0,2,2.52,3.18,3.24
+30-Mar-14,Napoli,Juventus,2,0,2.9,3.25,2.72
+30-Mar-14,Lazio,Parma,3,2,2.22,3.44,3.61
+30-Mar-14,Sampdoria,Fiorentina,0,0,3,3.27,2.6
+30-Mar-14,Torino,Cagliari,2,1,1.95,3.36,4.76
+30-Mar-14,Verona,Genoa,3,0,2.35,3.39,3.31
+30-Mar-14,Sassuolo,AS Roma,0,2,7.58,4.55,1.5
+31-Mar-14,Livorno,Inter,2,2,5.42,3.85,1.74
+31-Mar-14,Udinese,Catania,1,0,1.74,3.83,5.49
+2-Apr-14,AS Roma,Parma,4,2,1.43,4.72,9.01
+5-Apr-14,Inter,Bologna,2,2,1.37,4.87,11.64
+5-Apr-14,Chievo,Verona,0,1,2.77,3.22,2.85
+6-Apr-14,Parma,Napoli,1,0,2.87,3.54,2.56
+6-Apr-14,Atalanta,Sassuolo,0,2,1.78,3.86,5.01
+6-Apr-14,Cagliari,AS Roma,1,3,6.05,3.9,1.67
+6-Apr-14,Catania,Torino,1,2,2.79,3.24,2.81
+6-Apr-14,Fiorentina,Udinese,2,1,1.82,3.61,5.15
+6-Apr-14,Lazio,Sampdoria,2,0,1.76,3.61,5.68
+7-Apr-14,Genoa,AC Milan,1,2,3.76,3.47,2.14
+7-Apr-14,Juventus,Livorno,2,0,1.14,9.4,24
+12-Apr-14,AS Roma,Atalanta,3,1,1.36,5.05,11.41
+12-Apr-14,Sassuolo,Cagliari,1,1,2.43,3.25,3.33
+13-Apr-14,AC Milan,Catania,1,0,1.29,6.57,10.65
+13-Apr-14,Livorno,Chievo,2,4,2.79,3.12,2.92
+13-Apr-14,Napoli,Lazio,4,2,1.63,4.03,6.42
+13-Apr-14,Sampdoria,Inter,0,4,3.5,3.7,2.14
+13-Apr-14,Torino,Genoa,2,1,1.79,3.52,5.65
+13-Apr-14,Verona,Fiorentina,3,5,3.15,3.46,2.42
+13-Apr-14,Bologna,Parma,1,1,3.54,3.34,2.27
+14-Apr-14,Udinese,Juventus,0,2,5.83,3.72,1.72
+19-Apr-14,Fiorentina,AS Roma,0,1,2.74,3.36,2.79
+19-Apr-14,Juventus,Bologna,1,0,1.19,7.8,19.5
+19-Apr-14,AC Milan,Livorno,3,0,1.29,6.19,12.01
+19-Apr-14,Atalanta,Verona,1,2,1.91,3.65,4.53
+19-Apr-14,Catania,Sampdoria,2,1,1.85,3.69,4.79
+19-Apr-14,Chievo,Sassuolo,0,1,2.02,3.49,4.2
+19-Apr-14,Genoa,Cagliari,1,2,2.16,3.33,3.89
+19-Apr-14,Lazio,Torino,3,3,2,3.35,4.48
+19-Apr-14,Parma,Inter,0,2,2.38,3.54,3.14
+19-Apr-14,Udinese,Napoli,1,1,3.25,3.47,2.34
+25-Apr-14,AS Roma,AC Milan,2,0,1.83,3.76,4.83
+26-Apr-14,Inter,Napoli,0,0,2.29,3.6,3.25
+26-Apr-14,Bologna,Fiorentina,0,3,3.45,3.35,2.31
+27-Apr-14,Atalanta,Genoa,1,1,2.24,3.25,3.74
+27-Apr-14,Cagliari,Parma,1,0,3.36,3.52,2.27
+27-Apr-14,Livorno,Lazio,0,2,3.68,3.66,2.1
+27-Apr-14,Sampdoria,Chievo,2,1,2.31,3.35,3.46
+27-Apr-14,Torino,Udinese,2,0,1.77,3.91,5
+27-Apr-14,Verona,Catania,4,0,2.1,3.79,3.54
+28-Apr-14,Sassuolo,Juventus,1,3,10.1,4.9,1.39
+4-May-14,AC Milan,Inter,1,0,2.47,3.46,3.08
+4-May-14,Catania,AS Roma,4,1,5.18,4.57,1.64
+4-May-14,Chievo,Torino,0,1,3.59,3.37,2.24
+4-May-14,Genoa,Bologna,0,0,2.74,3.19,2.91
+4-May-14,Parma,Sampdoria,2,0,1.48,4.67,7.67
+4-May-14,Udinese,Livorno,5,3,1.69,4.22,5.22
+5-May-14,Juventus,Atalanta,1,0,1.36,5.26,10
+5-May-14,Lazio,Verona,3,3,1.58,4.46,6.05
+6-May-14,Napoli,Cagliari,3,0,1.51,4.49,7.3
+6-May-14,Fiorentina,Sassuolo,3,4,1.85,3.96,4.4
+10-May-14,Inter,Lazio,4,1,1.67,4.09,5.61
+10-May-14,Verona,Udinese,2,2,2.02,3.93,3.67
+11-May-14,AS Roma,Juventus,0,1,2.35,3.58,3.17
+11-May-14,Bologna,Catania,1,2,2.12,3.67,3.59
+11-May-14,Cagliari,Chievo,0,1,4.11,3.84,1.93
+11-May-14,Livorno,Fiorentina,0,1,5.5,4.71,1.6
+11-May-14,Sampdoria,Napoli,2,5,3.37,3.89,2.14
+11-May-14,Sassuolo,Genoa,4,2,1.63,4.26,5.88
+11-May-14,Torino,Parma,1,1,2.31,3.46,3.33
+11-May-14,Atalanta,AC Milan,2,1,6.66,4.51,1.54
+17-May-14,Udinese,Sampdoria,3,3,2.08,3.61,3.79
+18-May-14,AC Milan,Sassuolo,2,1,1.28,6.67,10.96
+18-May-14,Chievo,Inter,2,1,3.69,3.58,2.12
+18-May-14,Fiorentina,Torino,2,2,2.81,3.71,2.49
+18-May-14,Lazio,Bologna,1,0,1.34,5.49,11.08
+18-May-14,Napoli,Verona,5,1,1.61,4.5,5.65
+18-May-14,Parma,Livorno,2,0,1.2,7.6,17.51
+18-May-14,Catania,Atalanta,2,1,2.06,3.78,3.67
+18-May-14,Genoa,AS Roma,1,0,3.5,3.56,2.21
+18-May-14,Juventus,Cagliari,3,0,1.21,7.25,18.39
+30-Aug-14,AS Roma,Fiorentina,2,0,1.73,3.8,5.55
+30-Aug-14,Chievo,Juventus,0,1,8.35,3.84,1.56
+31-Aug-14,Cesena,Parma,1,0,5.44,3.65,1.76
+31-Aug-14,Genoa,Napoli,1,2,3.92,3.54,2.06
+31-Aug-14,Palermo,Sampdoria,1,1,2.25,3.29,3.64
+31-Aug-14,Sassuolo,Cagliari,1,1,2.02,3.71,3.89
+31-Aug-14,Torino,Inter,0,0,2.77,3.34,2.77
+31-Aug-14,Udinese,Empoli,2,0,1.77,3.69,5.48
+31-Aug-14,AC Milan,Lazio,3,1,2.12,3.18,4.28
+31-Aug-14,Atalanta,Verona,0,0,2.06,3.47,3.99
+13-Sep-14,Juventus,Udinese,2,0,1.39,5.01,10.09
+13-Sep-14,Empoli,AS Roma,0,1,6.09,3.68,1.71
+14-Sep-14,Parma,AC Milan,4,5,2.94,3.31,2.65
+14-Sep-14,Cagliari,Atalanta,1,2,2.21,3.56,3.5
+14-Sep-14,Fiorentina,Genoa,0,0,1.51,4.38,7.66
+14-Sep-14,Inter,Sassuolo,7,0,1.52,4.61,6.84
+14-Sep-14,Lazio,Cesena,3,0,1.35,5.15,12.01
+14-Sep-14,Napoli,Chievo,0,1,1.33,5.44,11.59
+14-Sep-14,Sampdoria,Torino,2,0,2.47,3.2,3.29
+15-Sep-14,Verona,Palermo,2,1,2.1,3.47,3.9
+20-Sep-14,AC Milan,Juventus,0,1,3.43,3.25,2.37
+20-Sep-14,Cesena,Empoli,2,2,2.97,3.15,2.73
+21-Sep-14,Palermo,Inter,1,1,3.91,3.42,2.12
+21-Sep-14,Torino,Verona,0,1,1.94,3.54,4.46
+21-Sep-14,Atalanta,Fiorentina,0,1,3.68,3.48,2.17
+21-Sep-14,Udinese,Napoli,1,0,3.46,3.5,2.25
+21-Sep-14,AS Roma,Cagliari,2,0,1.32,5.95,10.46
+21-Sep-14,Genoa,Lazio,1,0,3.35,3.29,2.39
+21-Sep-14,Sassuolo,Sampdoria,0,0,2.79,3.42,2.71
+21-Sep-14,Chievo,Parma,2,3,3,3.24,2.65
+23-Sep-14,Empoli,AC Milan,2,2,4.03,3.44,2.08
+24-Sep-14,Cagliari,Torino,1,2,2.68,3.2,2.97
+24-Sep-14,Fiorentina,Sassuolo,0,0,1.42,4.7,9.81
+24-Sep-14,Inter,Atalanta,2,0,1.47,4.51,8.66
+24-Sep-14,Juventus,Cesena,3,0,1.15,8.5,30
+24-Sep-14,Napoli,Palermo,3,3,1.45,4.59,8.68
+24-Sep-14,Parma,AS Roma,1,2,3.62,3.46,2.2
+24-Sep-14,Sampdoria,Chievo,2,1,1.85,3.45,5.24
+24-Sep-14,Verona,Genoa,2,2,2.31,3.29,3.52
+25-Sep-14,Lazio,Udinese,0,1,1.83,3.67,4.99
+27-Sep-14,Atalanta,Juventus,0,3,8.84,4.09,1.51
+27-Sep-14,AS Roma,Verona,2,0,1.33,5.84,10.63
+28-Sep-14,Genoa,Sampdoria,0,1,3.14,3.06,2.66
+28-Sep-14,Cesena,AC Milan,1,1,7.21,3.93,1.6
+28-Sep-14,Chievo,Empoli,1,1,2.6,3.16,3.11
+28-Sep-14,Inter,Cagliari,1,4,1.41,4.9,9.49
+28-Sep-14,Torino,Fiorentina,1,1,2.75,3.21,2.9
+28-Sep-14,Sassuolo,Napoli,0,1,5.21,3.9,1.75
+29-Sep-14,Palermo,Lazio,0,4,3,3.25,2.62
+29-Sep-14,Udinese,Parma,4,2,2.39,3.31,3.33
+4-Oct-14,AC Milan,Chievo,2,0,1.47,4.58,8.39
+4-Oct-14,Verona,Cagliari,1,0,2.17,3.65,3.5
+5-Oct-14,Fiorentina,Inter,3,0,2.31,3.27,3.54
+5-Oct-14,Napoli,Torino,2,1,1.71,3.82,5.8
+5-Oct-14,Juventus,AS Roma,3,2,1.81,3.7,5.05
+5-Oct-14,Lazio,Sassuolo,3,2,1.48,4.65,7.64
+5-Oct-14,Parma,Genoa,1,2,1.93,3.57,4.55
+5-Oct-14,Sampdoria,Atalanta,1,0,1.94,3.47,4.61
+5-Oct-14,Udinese,Cesena,1,1,1.49,4.25,8.91
+5-Oct-14,Empoli,Palermo,3,0,2.37,3.29,3.39
+18-Oct-14,Sassuolo,Juventus,1,1,10.9,5,1.38
+18-Oct-14,AS Roma,Chievo,3,0,1.31,5.47,13.29
+19-Oct-14,Inter,Napoli,2,2,2.65,3.31,2.89
+19-Oct-14,Atalanta,Parma,1,0,2.5,3.18,3.25
+19-Oct-14,Cagliari,Sampdoria,2,2,2.54,3.42,2.99
+19-Oct-14,Palermo,Cesena,2,1,1.63,3.74,7.28
+19-Oct-14,Torino,Udinese,1,0,2.17,3.43,3.77
+19-Oct-14,Verona,AC Milan,1,3,3.61,3.6,2.14
+19-Oct-14,Fiorentina,Lazio,0,2,2.06,3.31,4.24
+20-Oct-14,Genoa,Empoli,1,1,2.16,3.38,3.75
+25-Oct-14,Sampdoria,AS Roma,0,0,3.59,3.37,2.25
+25-Oct-14,Parma,Sassuolo,1,3,1.99,3.52,4.25
+25-Oct-14,Empoli,Cagliari,0,4,2,3.61,4.05
+26-Oct-14,AC Milan,Fiorentina,1,1,2.22,3.39,3.59
+26-Oct-14,Cesena,Inter,0,1,6.61,4.05,1.61
+26-Oct-14,Lazio,Torino,2,1,1.79,3.65,5.3
+26-Oct-14,Napoli,Verona,6,2,1.35,5.29,10.8
+26-Oct-14,Chievo,Genoa,1,2,2.56,3.27,3.09
+26-Oct-14,Juventus,Palermo,2,0,1.21,6.96,20.55
+26-Oct-14,Udinese,Atalanta,2,0,2.16,3.25,3.95
+28-Oct-14,Sassuolo,Empoli,3,1,2.36,3.31,3.37
+29-Oct-14,AS Roma,Cesena,2,0,1.17,8.06,23.22
+29-Oct-14,Atalanta,Napoli,1,1,4.68,3.92,1.81
+29-Oct-14,Cagliari,AC Milan,1,1,3.39,3.52,2.25
+29-Oct-14,Fiorentina,Udinese,3,0,1.66,3.93,6.18
+29-Oct-14,Genoa,Juventus,1,0,9.55,4.43,1.45
+29-Oct-14,Inter,Sampdoria,1,0,1.75,3.65,5.68
+29-Oct-14,Palermo,Chievo,1,0,1.92,3.35,5.01
+29-Oct-14,Torino,Parma,1,0,1.79,3.58,5.5
+30-Oct-14,Verona,Lazio,1,1,3.67,3.54,2.14
+1-Nov-14,Parma,Inter,2,0,3.46,3.41,2.27
+1-Nov-14,Empoli,Juventus,0,2,9.78,4.54,1.43
+1-Nov-14,Napoli,AS Roma,2,0,2.19,3.38,3.79
+2-Nov-14,AC Milan,Palermo,0,2,1.53,4.42,7.17
+2-Nov-14,Chievo,Sassuolo,0,0,2.5,3.46,3
+2-Nov-14,Sampdoria,Fiorentina,3,1,3.85,3.31,2.18
+2-Nov-14,Torino,Atalanta,0,0,1.88,3.43,5.03
+2-Nov-14,Udinese,Genoa,2,4,2.1,3.27,4.13
+3-Nov-14,Lazio,Cagliari,4,2,1.63,4.28,5.91
+3-Nov-14,Cesena,Verona,1,1,3.41,3.24,2.39
+8-Nov-14,Sampdoria,AC Milan,2,2,2.6,3.29,3
+8-Nov-14,Sassuolo,Atalanta,0,0,2.08,3.4,4.04
+9-Nov-14,AS Roma,Torino,3,0,1.6,3.92,7.2
+9-Nov-14,Inter,Verona,2,2,1.46,4.76,7.88
+9-Nov-14,Fiorentina,Napoli,0,1,2.58,3.4,2.96
+9-Nov-14,Chievo,Cesena,2,1,1.73,3.68,5.9
+9-Nov-14,Empoli,Lazio,2,1,3.89,3.5,2.08
+9-Nov-14,Juventus,Parma,7,0,1.23,6.66,18.48
+9-Nov-14,Palermo,Udinese,1,1,2.1,3.29,4.13
+9-Nov-14,Cagliari,Genoa,1,1,2.08,3.49,3.96
+22-Nov-14,Lazio,Juventus,0,3,4.23,3.45,2.02
+22-Nov-14,Atalanta,AS Roma,1,2,5.3,3.46,1.84
+23-Nov-14,AC Milan,Inter,1,1,2.97,3.23,2.67
+23-Nov-14,Cesena,Sampdoria,1,1,4.46,3.34,2
+23-Nov-14,Napoli,Cagliari,3,3,1.36,5.65,9.17
+23-Nov-14,Parma,Empoli,0,2,2.2,3.38,3.7
+23-Nov-14,Udinese,Chievo,1,1,2,3.31,4.57
+23-Nov-14,Verona,Fiorentina,1,2,3.91,3.47,2.1
+23-Nov-14,Torino,Sassuolo,0,1,1.88,3.5,4.96
+24-Nov-14,Genoa,Palermo,1,1,2.29,3.34,3.5
+29-Nov-14,Chievo,Lazio,0,0,4.22,3.35,2.04
+29-Nov-14,Sassuolo,Verona,2,1,2.08,3.7,3.7
+30-Nov-14,AS Roma,Inter,4,2,1.85,3.79,4.65
+30-Nov-14,Juventus,Torino,2,1,1.32,5.38,13.36
+30-Nov-14,AC Milan,Udinese,2,0,1.63,4.09,6.2
+30-Nov-14,Cagliari,Fiorentina,0,4,3.29,3.54,2.29
+30-Nov-14,Cesena,Genoa,0,3,3.88,3.23,2.21
+30-Nov-14,Empoli,Atalanta,0,0,2.21,3.31,3.79
+30-Nov-14,Palermo,Parma,2,1,1.91,3.56,4.67
+1-Dec-14,Sampdoria,Napoli,1,1,3.67,3.27,2.27
+5-Dec-14,Fiorentina,Juventus,0,0,3.57,3.35,2.25
+6-Dec-14,Torino,Palermo,2,2,1.88,3.46,4.95
+6-Dec-14,AS Roma,Sassuolo,2,2,1.42,5.05,8.61
+7-Dec-14,Inter,Udinese,1,2,1.6,3.85,7.4
+7-Dec-14,Atalanta,Cesena,3,2,1.61,3.8,7.43
+7-Dec-14,Genoa,AC Milan,1,0,3.06,3.35,2.52
+7-Dec-14,Parma,Lazio,1,2,3.81,3.35,2.18
+7-Dec-14,Napoli,Empoli,2,2,1.41,4.82,9.56
+8-Dec-14,Verona,Sampdoria,1,3,2.72,3.43,2.77
+8-Dec-14,Cagliari,Chievo,0,2,1.79,3.63,5.37
+13-Dec-14,Lazio,Atalanta,3,0,1.65,3.79,6.71
+13-Dec-14,Palermo,Sassuolo,2,1,2,3.42,4.37
+14-Dec-14,AC Milan,Napoli,2,0,2.97,3.24,2.66
+14-Dec-14,Cesena,Fiorentina,1,4,7.73,4.33,1.52
+14-Dec-14,Genoa,AS Roma,0,1,3.8,3.48,2.12
+14-Dec-14,Parma,Cagliari,0,0,2.31,3.49,3.31
+14-Dec-14,Udinese,Verona,1,2,1.9,3.78,4.37
+14-Dec-14,Juventus,Sampdoria,1,1,1.3,5.55,13.88
+15-Dec-14,Chievo,Inter,0,2,4.41,3.36,2.02
+15-Dec-14,Empoli,Torino,0,0,2.73,3.13,2.99
+18-Dec-14,Napoli,Parma,2,0,1.37,5.38,9.28
+18-Dec-14,Cagliari,Juventus,1,3,8.23,5.42,1.4
+20-Dec-14,AS Roma,AC Milan,0,0,1.69,3.99,5.59
+20-Dec-14,Sassuolo,Cesena,1,1,1.46,4.49,8.81
+21-Dec-14,Inter,Lazio,2,2,2.38,3.23,3.45
+21-Dec-14,Atalanta,Palermo,3,3,2.56,3.25,3.12
+21-Dec-14,Fiorentina,Empoli,1,1,1.52,4.26,7.77
+21-Dec-14,Sampdoria,Udinese,2,2,1.74,3.8,5.54
+21-Dec-14,Torino,Genoa,2,1,1.99,3.48,4.34
+21-Dec-14,Verona,Chievo,0,1,2.4,3.4,3.24
+5-Jan-15,Lazio,Sampdoria,3,0,1.75,3.67,5.65
+6-Jan-15,Juventus,Inter,1,1,1.46,4.59,8.64
+6-Jan-15,Cesena,Napoli,1,4,10.93,5.17,1.36
+6-Jan-15,AC Milan,Sassuolo,1,2,1.63,4.15,6.08
+6-Jan-15,Chievo,Torino,0,0,2.97,3.08,2.77
+6-Jan-15,Empoli,Verona,0,0,1.88,3.62,4.68
+6-Jan-15,Genoa,Atalanta,2,2,2.22,3.23,3.82
+6-Jan-15,Palermo,Cagliari,5,0,2.21,3.31,3.77
+6-Jan-15,Parma,Fiorentina,1,0,4.28,3.52,1.99
+6-Jan-15,Udinese,AS Roma,0,1,4.86,3.43,1.92
+10-Jan-15,Torino,AC Milan,1,1,2.6,3.2,3.09
+10-Jan-15,Sassuolo,Udinese,1,1,2.08,3.33,4.18
+11-Jan-15,Napoli,Juventus,1,3,3.29,3.19,2.48
+11-Jan-15,AS Roma,Lazio,2,2,2.27,3.25,3.65
+11-Jan-15,Atalanta,Chievo,1,1,2.27,3.15,3.79
+11-Jan-15,Cagliari,Cesena,2,1,1.63,3.93,6.48
+11-Jan-15,Fiorentina,Palermo,4,3,1.66,4.07,5.78
+11-Jan-15,Sampdoria,Empoli,1,0,2.17,3.29,3.95
+11-Jan-15,Verona,Parma,3,1,2.54,3.31,3.06
+11-Jan-15,Inter,Genoa,3,1,1.69,3.85,5.93
+17-Jan-15,Palermo,AS Roma,1,1,3.68,3.35,2.23
+17-Jan-15,Empoli,Inter,0,0,3.52,3.35,2.27
+18-Jan-15,Juventus,Verona,4,0,1.15,8.65,28.6
+18-Jan-15,AC Milan,Atalanta,0,1,1.63,4,6.55
+18-Jan-15,Cesena,Torino,2,3,5.13,3.43,1.88
+18-Jan-15,Chievo,Fiorentina,1,2,4.63,3.44,1.94
+18-Jan-15,Genoa,Sassuolo,3,3,2.12,3.56,3.76
+18-Jan-15,Parma,Sampdoria,0,2,2.88,3.23,2.74
+18-Jan-15,Udinese,Cagliari,2,2,2.06,3.46,4.01
+18-Jan-15,Lazio,Napoli,0,1,2.74,3.39,2.77
+24-Jan-15,Lazio,AC Milan,3,1,1.98,3.48,4.4
+24-Jan-15,Cagliari,Sassuolo,2,1,2.35,3.34,3.36
+25-Jan-15,Fiorentina,AS Roma,1,1,2.39,3.31,3.31
+25-Jan-15,Inter,Torino,0,1,1.84,3.48,5.3
+25-Jan-15,Juventus,Chievo,2,0,1.16,8.3,26.5
+25-Jan-15,Parma,Cesena,1,2,1.65,3.98,6.14
+25-Jan-15,Sampdoria,Palermo,1,1,2.04,3.49,4.07
+25-Jan-15,Verona,Atalanta,1,0,2.46,3.29,3.23
+26-Jan-15,Napoli,Genoa,2,1,1.39,5.21,9.3
+26-Jan-15,Empoli,Udinese,1,2,2.04,3.36,4.32
+31-Jan-15,AS Roma,Empoli,1,1,1.51,4.28,8.09
+31-Jan-15,Genoa,Fiorentina,1,1,3.34,3.46,2.31
+1-Feb-15,AC Milan,Parma,3,1,1.66,3.92,6.17
+1-Feb-15,Atalanta,Cagliari,2,1,2.14,3.37,3.86
+1-Feb-15,Cesena,Lazio,2,1,7.06,4.19,1.56
+1-Feb-15,Chievo,Napoli,1,2,5.24,3.82,1.76
+1-Feb-15,Palermo,Verona,2,1,1.82,3.82,4.8
+1-Feb-15,Torino,Sampdoria,5,1,2.14,3.27,4.01
+1-Feb-15,Udinese,Juventus,0,0,9.31,4.55,1.44
+1-Feb-15,Sassuolo,Inter,3,1,3.29,3.39,2.37
+7-Feb-15,Juventus,AC Milan,3,1,1.38,5.2,9.66
+7-Feb-15,Verona,Torino,1,3,3.06,3.15,2.66
+8-Feb-15,Inter,Palermo,3,0,1.72,3.85,5.54
+8-Feb-15,Cagliari,AS Roma,1,2,3.67,3.56,2.1
+8-Feb-15,Empoli,Cesena,2,0,1.57,4.03,7.44
+8-Feb-15,Napoli,Udinese,3,1,1.39,5.19,9.21
+8-Feb-15,Sampdoria,Sassuolo,1,1,1.81,3.7,5.09
+8-Feb-15,Fiorentina,Atalanta,3,2,1.5,4.15,8.98
+9-Feb-15,Lazio,Genoa,0,1,1.53,4.25,7.5
+11-Feb-15,Parma,Chievo,0,1,2.62,3.24,3.04
+14-Feb-15,Palermo,Napoli,3,1,3.94,3.72,2
+14-Feb-15,Sassuolo,Fiorentina,1,3,3.52,3.34,2.29
+15-Feb-15,Cesena,Juventus,2,2,15.54,6.01,1.27
+15-Feb-15,Chievo,Sampdoria,2,1,2.5,3.06,3.37
+15-Feb-15,AS Roma,Parma,0,0,1.27,6.21,14.48
+15-Feb-15,Atalanta,Inter,1,4,3.78,3.34,2.19
+15-Feb-15,Genoa,Verona,5,2,1.88,3.67,4.59
+15-Feb-15,Torino,Cagliari,1,1,1.82,3.69,5.01
+15-Feb-15,Udinese,Lazio,0,1,3.5,3.31,2.31
+15-Feb-15,AC Milan,Empoli,1,1,1.9,3.69,4.48
+20-Feb-15,Juventus,Atalanta,2,1,1.19,7.5,21.5
+22-Feb-15,Fiorentina,Torino,1,1,2.02,3.36,4.34
+22-Feb-15,AC Milan,Cesena,2,0,1.48,4.45,8.28
+22-Feb-15,Empoli,Chievo,3,0,2.06,3.24,4.38
+22-Feb-15,Lazio,Palermo,2,1,1.68,3.92,5.9
+22-Feb-15,Verona,AS Roma,1,1,5.13,3.8,1.78
+23-Feb-15,Cagliari,Inter,1,2,3.37,3.41,2.31
+23-Feb-15,Napoli,Sassuolo,2,0,1.48,4.73,7.46
+24-Feb-15,Sampdoria,Genoa,1,1,2.58,3.15,3.17
+28-Feb-15,Chievo,AC Milan,0,0,3.29,3.29,2.42
+1-Mar-15,Torino,Napoli,1,0,3.12,3.21,2.59
+1-Mar-15,Inter,Fiorentina,0,1,2.18,3.35,3.8
+1-Mar-15,Atalanta,Sampdoria,1,2,2.5,3.21,3.24
+1-Mar-15,Cesena,Udinese,1,0,3.38,3.29,2.38
+1-Mar-15,Palermo,Empoli,0,0,2.41,3.34,3.25
+1-Mar-15,Sassuolo,Lazio,0,3,4.13,3.5,2.02
+1-Mar-15,Cagliari,Verona,1,2,2,3.56,4.12
+2-Mar-15,AS Roma,Juventus,1,1,3.04,3.17,2.66
+7-Mar-15,AC Milan,Verona,2,2,1.75,3.77,5.49
+7-Mar-15,Sampdoria,Cagliari,2,0,1.94,3.62,4.37
+8-Mar-15,Napoli,Inter,2,2,1.98,3.54,4.29
+8-Mar-15,Chievo,AS Roma,0,0,4.94,3.34,1.93
+8-Mar-15,Empoli,Genoa,1,1,2.2,3.29,3.81
+8-Mar-15,Parma,Atalanta,0,0,3.04,3.22,2.63
+8-Mar-15,Udinese,Torino,3,2,2.68,3.19,2.99
+8-Mar-15,Cesena,Palermo,0,0,3.14,3.34,2.49
+9-Mar-15,Juventus,Sassuolo,1,0,1.2,7.5,17.64
+9-Mar-15,Lazio,Fiorentina,4,0,2.18,3.33,3.81
+14-Mar-15,Cagliari,Empoli,1,1,2.43,3.42,3.18
+14-Mar-15,Palermo,Juventus,0,1,4.76,3.42,1.93
+15-Mar-15,Inter,Cesena,1,1,1.32,5.55,12.23
+15-Mar-15,Verona,Napoli,2,0,4.12,3.52,2.02
+15-Mar-15,Atalanta,Udinese,0,0,2.27,3.19,3.77
+15-Mar-15,Genoa,Chievo,0,2,1.83,3.63,5.01
+15-Mar-15,Sassuolo,Parma,4,1,1.68,3.78,6.18
+16-Mar-15,AS Roma,Sampdoria,0,2,1.6,3.98,7.04
+16-Mar-15,Fiorentina,AC Milan,2,1,1.9,3.68,4.5
+16-Mar-15,Torino,Lazio,0,2,3.67,3.25,2.27
+21-Mar-15,AC Milan,Cagliari,3,1,1.81,4.05,4.54
+21-Mar-15,Chievo,Palermo,1,0,2.71,3.19,2.96
+22-Mar-15,Cesena,AS Roma,0,1,6.13,3.74,1.69
+22-Mar-15,Lazio,Verona,2,0,1.35,5.24,11.19
+22-Mar-15,Napoli,Atalanta,1,1,1.39,4.83,10.6
+22-Mar-15,Parma,Torino,0,2,5.03,3.73,1.81
+22-Mar-15,Sampdoria,Inter,1,0,3.13,3.21,2.56
+22-Mar-15,Udinese,Fiorentina,2,2,3.52,3.37,2.27
+22-Mar-15,Juventus,Genoa,1,0,1.37,5.11,10.47
+22-Mar-15,Empoli,Sassuolo,3,1,1.94,3.54,4.45
+4-Apr-15,Juventus,Empoli,2,0,1.41,4.76,9.77
+4-Apr-15,Fiorentina,Sampdoria,2,0,1.68,3.92,5.84
+4-Apr-15,Cagliari,Lazio,1,3,4.59,3.91,1.83
+4-Apr-15,Genoa,Udinese,1,1,1.97,3.45,4.46
+4-Apr-15,Inter,Parma,1,1,1.24,6.85,15.55
+4-Apr-15,Palermo,AC Milan,1,2,2.58,3.34,3
+4-Apr-15,Sassuolo,Chievo,1,0,2.41,3.08,3.57
+4-Apr-15,Verona,Cesena,3,3,1.87,3.62,4.78
+4-Apr-15,Atalanta,Torino,1,2,3.15,3.16,2.58
+4-Apr-15,AS Roma,Napoli,1,0,2.36,3.31,3.4
+8-Apr-15,Parma,Udinese,1,0,3,3.1,2.74
+11-Apr-15,Verona,Inter,0,3,3.9,3.5,2.08
+11-Apr-15,Genoa,Cagliari,2,0,1.99,3.86,3.87
+11-Apr-15,Parma,Juventus,1,0,9.27,4.68,1.43
+12-Apr-15,AC Milan,Sampdoria,1,1,1.94,3.5,4.54
+12-Apr-15,Atalanta,Sassuolo,2,1,1.92,3.58,4.58
+12-Apr-15,Lazio,Empoli,4,0,1.6,3.99,6.95
+12-Apr-15,Napoli,Fiorentina,3,0,1.87,3.78,4.55
+12-Apr-15,Torino,AS Roma,1,1,2.69,3.2,2.98
+12-Apr-15,Udinese,Palermo,1,3,2.44,3.31,3.25
+12-Apr-15,Cesena,Chievo,0,1,2.92,3.15,2.77
+15-Apr-15,Genoa,Parma,2,0,1.71,3.83,5.72
+18-Apr-15,Juventus,Lazio,2,0,1.95,3.31,4.84
+18-Apr-15,Sampdoria,Cesena,0,0,1.53,4.29,7.6
+19-Apr-15,Inter,AC Milan,0,0,2.31,3.17,3.66
+19-Apr-15,Cagliari,Napoli,0,3,4.8,4.3,1.72
+19-Apr-15,AS Roma,Atalanta,1,1,1.43,4.67,9.4
+19-Apr-15,Chievo,Udinese,1,1,2.25,3.2,3.81
+19-Apr-15,Empoli,Parma,2,2,1.6,4.05,6.85
+19-Apr-15,Palermo,Genoa,2,1,2.1,3.54,3.8
+19-Apr-15,Sassuolo,Torino,1,1,3.12,3.45,2.43
+20-Apr-15,Fiorentina,Verona,0,1,1.53,4.55,6.74
+25-Apr-15,Inter,AS Roma,2,1,2.67,3.25,2.94
+25-Apr-15,Udinese,AC Milan,2,1,3.21,3.27,2.47
+26-Apr-15,Napoli,Sampdoria,4,2,1.47,4.72,7.8
+26-Apr-15,Fiorentina,Cagliari,1,3,1.43,5,8.36
+26-Apr-15,Genoa,Cesena,3,1,1.52,4.26,8
+26-Apr-15,Lazio,Chievo,1,1,1.39,4.92,10.36
+26-Apr-15,Parma,Palermo,1,0,3.02,3.43,2.5
+26-Apr-15,Torino,Juventus,2,1,4.45,3.14,2.1
+26-Apr-15,Verona,Sassuolo,3,2,2.16,3.65,3.54
+26-Apr-15,Atalanta,Empoli,2,2,2.74,3,3.11
+28-Apr-15,Udinese,Inter,1,2,3.81,3.34,2.18
+29-Apr-15,AC Milan,Genoa,1,3,2.02,3.6,4.04
+29-Apr-15,Cesena,Atalanta,2,2,3.02,3.1,2.72
+29-Apr-15,Chievo,Cagliari,1,0,2.33,3.54,3.24
+29-Apr-15,Juventus,Fiorentina,3,2,1.59,4.13,6.7
+29-Apr-15,Lazio,Parma,4,0,1.26,6.22,14.67
+29-Apr-15,Palermo,Torino,2,2,2.56,3.35,3.02
+29-Apr-15,Sampdoria,Verona,1,1,1.68,3.9,5.88
+29-Apr-15,Sassuolo,AS Roma,0,3,6.65,3.83,1.64
+30-Apr-15,Empoli,Napoli,4,2,4.5,3.73,1.88
+2-May-15,Sassuolo,Palermo,0,0,2.72,3.4,2.79
+2-May-15,Sampdoria,Juventus,0,1,4.54,3.25,2.02
+3-May-15,Napoli,AC Milan,3,0,1.44,4.83,8.44
+3-May-15,Atalanta,Lazio,1,1,5.09,3.71,1.81
+3-May-15,Fiorentina,Cesena,3,1,1.36,5.67,9.21
+3-May-15,Inter,Chievo,0,0,1.41,4.88,9.32
+3-May-15,Verona,Udinese,0,1,2.27,3.42,3.48
+3-May-15,AS Roma,Genoa,2,0,1.52,4.34,7.73
+4-May-15,Cagliari,Parma,4,0,1.61,4.13,6.4
+6-May-15,Torino,Empoli,0,1,1.88,3.75,4.54
+9-May-15,AC Milan,AS Roma,2,1,4.08,3.52,2.04
+9-May-15,Juventus,Cagliari,1,1,1.57,4.21,6.79
+10-May-15,Lazio,Inter,1,2,1.86,3.82,4.51
+10-May-15,Empoli,Fiorentina,2,3,2.56,3.37,3
+10-May-15,Parma,Napoli,2,2,7.96,5.15,1.43
+10-May-15,Cesena,Sassuolo,2,3,2.52,3.45,3
+10-May-15,Palermo,Atalanta,2,3,2.16,3.38,3.81
+10-May-15,Udinese,Sampdoria,1,4,2.56,3.4,2.99
+10-May-15,Chievo,Verona,2,2,2.58,3.15,3.19
+11-May-15,Genoa,Torino,5,1,2.52,3.27,3.15
+16-May-15,Sampdoria,Lazio,0,1,3.6,3.42,2.22
+16-May-15,Inter,Juventus,1,2,2,3.67,4.04
+17-May-15,AS Roma,Udinese,2,1,1.38,5.38,9.77
+17-May-15,Atalanta,Genoa,1,4,2.81,3.29,2.77
+17-May-15,Cagliari,Palermo,0,1,2.1,3.82,3.56
+17-May-15,Torino,Chievo,2,0,2.04,3.46,4.13
+17-May-15,Verona,Empoli,2,1,3.11,3.52,2.38
+17-May-15,Sassuolo,AC Milan,3,2,2.75,3.39,2.75
+18-May-15,Napoli,Cesena,3,2,1.16,9.23,21.54
+18-May-15,Fiorentina,Parma,3,0,1.25,6.85,13.5
+23-May-15,Genoa,Inter,3,2,3.21,3.5,2.36
+23-May-15,Juventus,Napoli,3,1,2.79,3.31,2.77
+24-May-15,AC Milan,Torino,3,0,2.49,3.44,3.06
+24-May-15,Cesena,Cagliari,0,1,2.85,3.57,2.56
+24-May-15,Chievo,Atalanta,1,1,2.14,3.46,3.77
+24-May-15,Palermo,Fiorentina,2,3,3.75,3.74,2.06
+24-May-15,Parma,Verona,2,2,2.34,3.72,3.09
+24-May-15,Udinese,Sassuolo,0,1,2.06,3.69,3.76
+24-May-15,Empoli,Sampdoria,1,1,2.14,3.58,3.62
+25-May-15,Lazio,AS Roma,1,2,2.56,2.64,3.96
+30-May-15,Atalanta,AC Milan,1,3,2.75,3.58,2.66
+30-May-15,Verona,Juventus,2,2,5.59,4.33,1.64
+31-May-15,AS Roma,Palermo,1,2,1.66,4.34,5.32
+31-May-15,Fiorentina,Chievo,3,0,1.33,5.8,10.25
+31-May-15,Inter,Empoli,4,3,1.54,4.74,6.24
+31-May-15,Napoli,Lazio,2,4,1.92,3.75,4.3
+31-May-15,Sampdoria,Parma,2,2,1.52,4.63,6.85
+31-May-15,Sassuolo,Genoa,3,1,3.15,3.8,2.27
+31-May-15,Torino,Cesena,5,0,1.39,5.43,8.52
+31-May-15,Cagliari,Udinese,4,3,2.02,3.91,3.73
+22-Aug-15,Lazio,Bologna,2,1,1.48,4.32,8.99
+22-Aug-15,Verona,AS Roma,1,1,5.68,3.85,1.71
+23-Aug-15,Empoli,Chievo,1,3,2.34,3.31,3.45
+23-Aug-15,Fiorentina,AC Milan,2,0,2.31,3.35,3.47
+23-Aug-15,Frosinone,Torino,1,2,3.77,3.44,2.16
+23-Aug-15,Inter,Atalanta,1,0,1.66,3.95,6.09
+23-Aug-15,Palermo,Genoa,1,0,2.04,3.45,4.2
+23-Aug-15,Sampdoria,Carpi,5,2,2.08,3.27,4.26
+23-Aug-15,Sassuolo,Napoli,2,1,4.88,3.71,1.83
+23-Aug-15,Juventus,Udinese,0,1,1.37,4.9,11.89
+29-Aug-15,AC Milan,Empoli,2,1,1.67,4.05,5.7
+29-Aug-15,Bologna,Sassuolo,0,1,2.93,3.2,2.72
+30-Aug-15,Atalanta,Frosinone,2,0,1.72,3.85,5.58
+30-Aug-15,Carpi,Inter,1,2,7.45,3.97,1.58
+30-Aug-15,Chievo,Lazio,4,0,4.07,3.31,2.1
+30-Aug-15,Genoa,Verona,2,0,1.98,3.65,4.12
+30-Aug-15,Napoli,Sampdoria,2,2,1.36,5.51,9.72
+30-Aug-15,Torino,Fiorentina,3,1,2.5,3.29,3.14
+30-Aug-15,Udinese,Palermo,0,1,2.44,3.38,3.18
+30-Aug-15,AS Roma,Juventus,2,1,2.6,3.25,3.04
+12-Sep-15,Juventus,Chievo,1,1,1.45,4.46,9.23
+12-Sep-15,Fiorentina,Genoa,1,0,1.83,3.66,5.13
+12-Sep-15,Frosinone,AS Roma,0,2,9.32,5.03,1.4
+13-Sep-15,Inter,AC Milan,1,0,2.18,3.36,3.8
+13-Sep-15,Lazio,Udinese,2,0,1.63,4.04,6.24
+13-Sep-15,Empoli,Napoli,2,2,4.54,3.73,1.89
+13-Sep-15,Palermo,Carpi,2,2,1.77,3.62,5.58
+13-Sep-15,Sassuolo,Atalanta,2,2,2.23,3.46,3.52
+13-Sep-15,Verona,Torino,2,2,2.92,3.48,2.56
+14-Sep-15,Sampdoria,Bologna,2,0,2,3.42,4.38
+19-Sep-15,AC Milan,Palermo,3,2,1.67,3.84,6.27
+19-Sep-15,Udinese,Empoli,1,2,2.34,3.43,3.31
+20-Sep-15,Napoli,Lazio,5,0,1.79,3.77,5.05
+20-Sep-15,Carpi,Fiorentina,0,1,4.68,3.49,1.93
+20-Sep-15,AS Roma,Sassuolo,2,2,1.46,4.63,8.27
+20-Sep-15,Atalanta,Verona,1,1,1.92,3.6,4.53
+20-Sep-15,Bologna,Frosinone,1,0,1.86,3.61,4.84
+20-Sep-15,Genoa,Juventus,0,2,4.63,3.36,1.97
+20-Sep-15,Torino,Sampdoria,2,0,1.7,3.83,5.83
+20-Sep-15,Chievo,Inter,0,1,4.3,3.34,2.04
+22-Sep-15,Udinese,AC Milan,2,3,3.22,3.31,2.45
+23-Sep-15,Carpi,Napoli,0,0,7.14,4.34,1.54
+23-Sep-15,Chievo,Torino,1,0,2.97,3.19,2.67
+23-Sep-15,Fiorentina,Bologna,2,0,1.57,4.03,7.47
+23-Sep-15,Inter,Verona,1,0,1.33,5.66,11.09
+23-Sep-15,Juventus,Frosinone,1,1,1.18,7.84,23.02
+23-Sep-15,Lazio,Genoa,2,0,1.93,3.62,4.42
+23-Sep-15,Palermo,Sassuolo,0,1,2.1,3.38,4.03
+23-Sep-15,Sampdoria,AS Roma,2,1,4.97,3.92,1.78
+24-Sep-15,Empoli,Atalanta,0,1,2.27,3.35,3.54
+26-Sep-15,Napoli,Juventus,2,1,2.12,3.42,3.91
+26-Sep-15,AS Roma,Carpi,5,1,1.32,5.69,11.41
+27-Sep-15,Inter,Fiorentina,1,4,2.16,3.37,3.85
+27-Sep-15,Bologna,Udinese,1,2,3.08,3.11,2.67
+27-Sep-15,Sassuolo,Chievo,1,1,2.22,3.27,3.77
+27-Sep-15,Torino,Palermo,2,1,1.63,3.87,6.67
+27-Sep-15,Verona,Lazio,1,2,4.38,3.43,2
+27-Sep-15,Genoa,AC Milan,1,0,2.74,3.27,2.86
+28-Sep-15,Atalanta,Sampdoria,2,1,1.94,3.7,4.22
+28-Sep-15,Frosinone,Empoli,2,0,3.57,3.43,2.23
+3-Oct-15,Chievo,Verona,1,1,2.21,3.29,3.79
+3-Oct-15,Carpi,Torino,2,1,3.43,3.33,2.34
+4-Oct-15,AC Milan,Napoli,0,4,3.23,3.46,2.37
+4-Oct-15,Fiorentina,Atalanta,3,0,1.76,3.66,5.69
+4-Oct-15,Juventus,Bologna,3,1,1.25,6.41,14.96
+4-Oct-15,Lazio,Frosinone,2,0,1.29,6.05,12.45
+4-Oct-15,Palermo,AS Roma,2,4,4.45,3.73,1.89
+4-Oct-15,Sampdoria,Inter,1,1,4.09,3.62,2
+4-Oct-15,Udinese,Genoa,1,1,2.48,3.43,3.04
+4-Oct-15,Empoli,Sassuolo,1,0,2.5,3.35,3.1
+17-Oct-15,Torino,AC Milan,1,1,2.42,3.36,3.19
+17-Oct-15,AS Roma,Empoli,3,1,1.42,4.88,8.99
+18-Oct-15,Inter,Juventus,0,0,3.41,3.27,2.37
+18-Oct-15,Atalanta,Carpi,3,0,1.87,3.5,4.99
+18-Oct-15,Frosinone,Sampdoria,2,0,2.56,3.5,2.89
+18-Oct-15,Genoa,Chievo,3,2,2.1,3.29,4.11
+18-Oct-15,Napoli,Fiorentina,2,1,1.68,4.12,5.54
+18-Oct-15,Sassuolo,Lazio,2,1,3.16,3.45,2.42
+18-Oct-15,Verona,Udinese,1,1,2.42,3.38,3.22
+18-Oct-15,Bologna,Palermo,0,1,2.66,3.33,2.88
+24-Oct-15,Palermo,Inter,1,1,3.59,3.41,2.23
+24-Oct-15,Carpi,Bologna,1,2,2.27,3.18,3.76
+24-Oct-15,Empoli,Genoa,2,0,2.71,3.36,2.83
+25-Oct-15,Chievo,Napoli,0,1,5.45,3.77,1.75
+25-Oct-15,Fiorentina,AS Roma,1,2,2.59,3.54,2.84
+25-Oct-15,Lazio,Torino,3,0,1.95,3.58,4.37
+25-Oct-15,AC Milan,Sassuolo,2,1,1.81,4,4.57
+25-Oct-15,Juventus,Atalanta,2,0,1.42,4.62,9.92
+25-Oct-15,Udinese,Frosinone,1,0,1.48,4.59,7.87
+25-Oct-15,Sampdoria,Verona,4,1,2.16,3.56,3.64
+27-Oct-15,Bologna,Inter,0,1,5.19,3.61,1.81
+28-Oct-15,AC Milan,Chievo,1,0,1.73,3.74,5.73
+28-Oct-15,AS Roma,Udinese,3,1,1.39,5.03,9.67
+28-Oct-15,Atalanta,Lazio,2,1,3.14,3.43,2.44
+28-Oct-15,Frosinone,Carpi,2,1,2.54,3.36,3.04
+28-Oct-15,Napoli,Palermo,2,0,1.25,6.52,14.46
+28-Oct-15,Sassuolo,Juventus,1,0,6.33,3.87,1.66
+28-Oct-15,Torino,Genoa,3,3,2.04,3.5,4.07
+28-Oct-15,Verona,Fiorentina,0,2,5.17,3.95,1.75
+29-Oct-15,Sampdoria,Empoli,1,1,2.59,3.34,2.99
+31-Oct-15,Inter,AS Roma,1,0,2.56,3.36,3
+31-Oct-15,Juventus,Torino,2,1,1.63,3.71,7.25
+1-Nov-15,Lazio,AC Milan,1,3,2.06,3.5,3.97
+1-Nov-15,Bologna,Atalanta,3,0,2.73,3.21,2.92
+1-Nov-15,Carpi,Verona,0,0,2.6,3.27,3.02
+1-Nov-15,Genoa,Napoli,0,0,5.51,3.92,1.71
+1-Nov-15,Udinese,Sassuolo,0,0,2.27,3.43,3.45
+1-Nov-15,Fiorentina,Frosinone,4,1,1.24,6.49,16.5
+2-Nov-15,Palermo,Empoli,0,1,2.43,3.31,3.25
+2-Nov-15,Chievo,Sampdoria,1,1,2.27,3.44,3.46
+7-Nov-15,AC Milan,Atalanta,0,0,1.72,3.78,5.67
+7-Nov-15,Verona,Bologna,0,2,2.4,3.31,3.29
+8-Nov-15,Sampdoria,Fiorentina,0,2,4.41,3.7,1.91
+8-Nov-15,Napoli,Udinese,1,0,1.25,6.65,14.29
+8-Nov-15,AS Roma,Lazio,2,0,2.14,3.48,3.77
+8-Nov-15,Empoli,Juventus,1,3,6.04,3.67,1.72
+8-Nov-15,Frosinone,Genoa,2,2,4.01,3.62,2.02
+8-Nov-15,Palermo,Chievo,1,0,2.48,3.31,3.18
+8-Nov-15,Sassuolo,Carpi,1,0,1.75,3.76,5.41
+8-Nov-15,Torino,Inter,0,1,2.79,3.23,2.83
+21-Nov-15,Juventus,AC Milan,1,0,1.57,3.91,7.49
+21-Nov-15,Bologna,AS Roma,2,2,4.47,3.5,1.96
+22-Nov-15,Inter,Frosinone,4,0,1.24,6.6,16
+22-Nov-15,Atalanta,Torino,0,1,2.85,3.27,2.75
+22-Nov-15,Carpi,Chievo,1,2,3.47,3.1,2.44
+22-Nov-15,Fiorentina,Empoli,2,2,1.61,3.96,6.92
+22-Nov-15,Genoa,Sassuolo,2,1,2.12,3.44,3.84
+22-Nov-15,Lazio,Palermo,1,1,1.44,4.69,8.83
+22-Nov-15,Udinese,Sampdoria,1,0,2.12,3.54,3.73
+22-Nov-15,Verona,Napoli,0,2,9.01,5.17,1.4
+28-Nov-15,AC Milan,Sampdoria,4,1,1.59,4.23,6.44
+28-Nov-15,Torino,Bologna,2,0,1.7,3.61,6.5
+29-Nov-15,Palermo,Juventus,0,3,8.35,4.08,1.53
+29-Nov-15,Empoli,Lazio,1,0,3.21,3.23,2.5
+29-Nov-15,AS Roma,Atalanta,0,2,1.47,4.51,8.46
+29-Nov-15,Chievo,Udinese,2,3,2.38,3.19,3.49
+29-Nov-15,Frosinone,Verona,3,2,2.64,3.34,2.92
+29-Nov-15,Genoa,Carpi,1,2,1.64,3.95,6.41
+30-Nov-15,Napoli,Inter,2,1,1.61,4.23,6.2
+30-Nov-15,Sassuolo,Fiorentina,1,1,3.94,3.4,2.1
+4-Dec-15,Lazio,Juventus,0,2,3.52,3.25,2.33
+5-Dec-15,Inter,Genoa,1,0,1.64,4.01,6.13
+5-Dec-15,Torino,AS Roma,1,1,2.6,3.27,3.02
+6-Dec-15,Carpi,AC Milan,0,0,5.16,3.52,1.84
+6-Dec-15,Sampdoria,Sassuolo,1,3,2.29,3.41,3.42
+6-Dec-15,Atalanta,Palermo,3,0,1.76,3.7,5.46
+6-Dec-15,Fiorentina,Udinese,3,0,1.53,4.34,7.41
+6-Dec-15,Frosinone,Chievo,0,2,3.09,3.34,2.52
+6-Dec-15,Verona,Empoli,0,1,3.2,3.25,2.49
+6-Dec-15,Bologna,Napoli,3,2,8.17,4.45,1.49
+12-Dec-15,Udinese,Inter,0,4,3.98,3.4,2.1
+12-Dec-15,Palermo,Frosinone,4,1,1.93,3.6,4.45
+12-Dec-15,Genoa,Bologna,0,1,1.94,3.45,4.62
+13-Dec-15,Juventus,Fiorentina,3,1,1.79,3.5,5.74
+13-Dec-15,Napoli,AS Roma,0,0,1.76,3.92,5.08
+13-Dec-15,AC Milan,Verona,1,1,1.45,4.8,8.08
+13-Dec-15,Chievo,Atalanta,1,0,2.49,3.2,3.25
+13-Dec-15,Empoli,Carpi,3,0,1.94,3.35,4.8
+14-Dec-15,Lazio,Sampdoria,1,1,1.47,4.65,7.98
+19-Dec-15,Bologna,Empoli,2,3,2.83,3.02,2.97
+20-Dec-15,Inter,Lazio,1,2,2.12,3.37,3.97
+20-Dec-15,Frosinone,AC Milan,2,4,6.19,3.93,1.66
+20-Dec-15,Sampdoria,Palermo,2,0,2.31,3.38,3.41
+20-Dec-15,Torino,Udinese,0,1,1.77,3.69,5.28
+20-Dec-15,AS Roma,Genoa,2,0,1.53,4.32,7.47
+20-Dec-15,Atalanta,Napoli,1,3,7.37,4.53,1.51
+20-Dec-15,Fiorentina,Chievo,2,0,1.53,4.2,7.75
+20-Dec-15,Verona,Sassuolo,1,1,2.7,3.41,2.79
+20-Dec-15,Carpi,Juventus,2,3,10.98,4.87,1.38
+5-Jan-16,Genoa,Sampdoria,2,3,2.42,2.96,3.71
+6-Jan-16,Napoli,Torino,2,1,1.41,4.9,9.51
+6-Jan-16,Empoli,Inter,0,1,3.63,3.37,2.23
+6-Jan-16,AC Milan,Bologna,0,1,1.51,4.29,7.92
+6-Jan-16,Chievo,AS Roma,3,3,3.14,3.27,2.52
+6-Jan-16,Juventus,Verona,3,0,1.19,7.62,21
+6-Jan-16,Lazio,Carpi,0,0,1.46,4.45,8.99
+6-Jan-16,Palermo,Fiorentina,1,3,5.42,3.77,1.76
+6-Jan-16,Sassuolo,Frosinone,2,2,1.47,4.66,8.14
+6-Jan-16,Udinese,Atalanta,2,1,2.18,3.33,3.84
+9-Jan-16,AS Roma,AC Milan,1,1,2.14,3.4,3.82
+9-Jan-16,Fiorentina,Lazio,1,3,2.08,3.44,4
+9-Jan-16,Carpi,Udinese,2,1,3.27,3.25,2.45
+10-Jan-16,Sampdoria,Juventus,1,2,7.76,4.12,1.54
+10-Jan-16,Atalanta,Genoa,0,2,2.54,3.27,3.12
+10-Jan-16,Bologna,Chievo,0,1,2.65,3,3.24
+10-Jan-16,Frosinone,Napoli,1,5,16.89,7.71,1.2
+10-Jan-16,Torino,Empoli,0,1,1.98,3.42,4.47
+10-Jan-16,Verona,Palermo,0,1,2.24,3.49,3.48
+10-Jan-16,Inter,Sassuolo,0,1,1.72,3.84,5.63
+16-Jan-16,Napoli,Sassuolo,3,1,1.31,5.95,11.05
+16-Jan-16,Torino,Frosinone,4,2,1.34,5.59,10.52
+16-Jan-16,Atalanta,Inter,1,1,4.26,3.52,2
+17-Jan-16,AC Milan,Fiorentina,2,0,2.42,3.27,3.31
+17-Jan-16,AS Roma,Verona,1,1,1.31,5.74,12.55
+17-Jan-16,Bologna,Lazio,2,2,4.01,3.36,2.1
+17-Jan-16,Carpi,Sampdoria,2,1,2.45,3.31,3.23
+17-Jan-16,Chievo,Empoli,1,1,2.35,3.12,3.64
+17-Jan-16,Udinese,Juventus,0,4,5.49,3.44,1.83
+17-Jan-16,Genoa,Palermo,4,0,1.72,3.69,5.95
+20-Jan-16,Sassuolo,Torino,1,1,2.44,3.31,3.24
+23-Jan-16,Empoli,AC Milan,2,2,3.76,3.33,2.2
+23-Jan-16,Frosinone,Atalanta,0,0,3.31,3.45,2.33
+24-Jan-16,Juventus,AS Roma,1,0,1.6,3.86,7.44
+24-Jan-16,Inter,Carpi,1,1,1.49,4.34,8.36
+24-Jan-16,Lazio,Chievo,4,1,1.65,3.76,6.85
+24-Jan-16,Palermo,Udinese,4,1,2.52,3.29,3.13
+24-Jan-16,Sampdoria,Napoli,2,4,7.5,4.57,1.5
+24-Jan-16,Sassuolo,Bologna,0,2,2.14,3.34,3.91
+24-Jan-16,Verona,Genoa,1,1,3.47,3.56,2.21
+24-Jan-16,Fiorentina,Torino,2,0,1.84,3.52,5.2
+30-Jan-16,AS Roma,Frosinone,3,1,1.24,6.95,14.5
+30-Jan-16,Atalanta,Sassuolo,1,1,2.36,3.29,3.41
+30-Jan-16,Carpi,Palermo,1,1,2.38,3.25,3.43
+31-Jan-16,AC Milan,Inter,3,0,2.73,3.06,3.04
+31-Jan-16,Bologna,Sampdoria,3,2,2.18,3.36,3.79
+31-Jan-16,Genoa,Fiorentina,0,0,3.42,3.38,2.31
+31-Jan-16,Napoli,Empoli,5,1,1.3,6.11,11.69
+31-Jan-16,Torino,Verona,0,0,1.68,4,5.75
+31-Jan-16,Udinese,Lazio,0,0,3.41,3.38,2.31
+31-Jan-16,Chievo,Juventus,0,4,9.63,4.13,1.48
+2-Feb-16,Sassuolo,AS Roma,0,2,3,3.23,2.65
+3-Feb-16,Empoli,Udinese,1,1,2.14,3.4,3.84
+3-Feb-16,Fiorentina,Carpi,2,1,1.4,4.87,10.05
+3-Feb-16,Inter,Chievo,1,0,1.4,4.84,10.32
+3-Feb-16,Juventus,Genoa,1,0,1.31,5.55,13.49
+3-Feb-16,Lazio,Napoli,0,2,3.74,3.34,2.2
+3-Feb-16,Palermo,AC Milan,0,2,4.19,3.63,1.97
+3-Feb-16,Sampdoria,Torino,2,2,3.06,3.27,2.56
+3-Feb-16,Verona,Atalanta,2,1,2.47,3.31,3.2
+3-Feb-16,Frosinone,Bologna,1,0,3,3.18,2.68
+6-Feb-16,Genoa,Lazio,0,0,2.56,3.25,3.09
+6-Feb-16,Bologna,Fiorentina,1,1,4.69,3.4,1.95
+7-Feb-16,AS Roma,Sampdoria,2,1,1.56,4.15,7.32
+7-Feb-16,Atalanta,Empoli,0,0,2.67,3.09,3.1
+7-Feb-16,AC Milan,Udinese,1,1,1.6,4.13,6.59
+7-Feb-16,Frosinone,Juventus,0,2,15.76,6.37,1.25
+7-Feb-16,Napoli,Carpi,1,0,1.2,7.5,20.01
+7-Feb-16,Sassuolo,Palermo,2,2,1.68,3.83,6.14
+7-Feb-16,Torino,Chievo,1,2,1.64,3.71,7.06
+7-Feb-16,Verona,Inter,3,3,4.63,3.6,1.9
+11-Feb-16,Lazio,Verona,5,2,1.45,4.59,8.8
+12-Feb-16,Carpi,AS Roma,1,3,4.38,3.48,1.98
+13-Feb-16,Juventus,Napoli,1,0,2.19,3.14,4.08
+13-Feb-16,Chievo,Sassuolo,1,1,3.57,3.04,2.4
+13-Feb-16,Empoli,Frosinone,1,2,1.48,4.55,8.13
+14-Feb-16,Fiorentina,Inter,2,1,2.23,3.27,3.74
+14-Feb-16,Palermo,Torino,1,3,3.84,3.25,2.21
+14-Feb-16,Sampdoria,Atalanta,0,0,2.21,3.25,3.82
+14-Feb-16,Udinese,Bologna,0,1,2.02,3.27,4.54
+14-Feb-16,AC Milan,Genoa,2,1,1.6,3.86,7.45
+19-Feb-16,Bologna,Juventus,0,0,7.93,3.74,1.6
+20-Feb-16,Inter,Sampdoria,3,1,1.56,4.32,6.72
+20-Feb-16,Verona,Chievo,3,1,2.61,3.14,3.14
+21-Feb-16,AS Roma,Palermo,5,0,1.3,6.12,11.72
+21-Feb-16,Frosinone,Lazio,0,0,8.07,4.59,1.47
+21-Feb-16,Atalanta,Fiorentina,2,3,3.59,3.31,2.27
+21-Feb-16,Genoa,Udinese,2,1,2.1,3.27,4.18
+21-Feb-16,Sassuolo,Empoli,3,2,2.1,3.34,4.05
+21-Feb-16,Torino,Carpi,0,0,1.7,3.71,6.18
+22-Feb-16,Napoli,AC Milan,1,1,1.57,4.04,7.4
+27-Feb-16,AC Milan,Torino,1,0,1.97,3.44,4.53
+27-Feb-16,Empoli,AS Roma,1,3,3.91,3.31,2.16
+28-Feb-16,Juventus,Inter,2,0,1.55,3.78,8.92
+28-Feb-16,Carpi,Atalanta,1,1,2.69,3.13,3.02
+28-Feb-16,Chievo,Genoa,1,0,3.09,3.06,2.7
+28-Feb-16,Sampdoria,Frosinone,2,0,1.55,4.18,7.38
+28-Feb-16,Udinese,Verona,2,0,1.93,3.74,4.29
+28-Feb-16,Palermo,Bologna,0,0,3.04,3.33,2.56
+29-Feb-16,Fiorentina,Napoli,1,1,3.69,3.37,2.21
+29-Feb-16,Lazio,Sassuolo,0,2,1.77,3.65,5.53
+4-Mar-16,AS Roma,Fiorentina,4,1,2.1,3.35,4.05
+5-Mar-16,Napoli,Chievo,3,1,1.21,7.2,18.5
+5-Mar-16,Verona,Sampdoria,0,3,2.59,3.43,2.92
+6-Mar-16,Inter,Palermo,3,1,1.4,5.3,8.47
+6-Mar-16,Atalanta,Juventus,0,2,10.5,4.17,1.46
+6-Mar-16,Bologna,Carpi,0,0,2.1,3.2,4.34
+6-Mar-16,Frosinone,Udinese,2,0,3.8,3.54,2.1
+6-Mar-16,Genoa,Empoli,1,0,2.08,3.31,4.2
+6-Mar-16,Sassuolo,AC Milan,2,0,2.93,3.39,2.6
+6-Mar-16,Torino,Lazio,1,1,2.56,3.19,3.16
+11-Mar-16,Juventus,Sassuolo,1,0,1.34,4.99,13.4
+12-Mar-16,Inter,Bologna,2,1,1.62,3.97,6.62
+12-Mar-16,Empoli,Sampdoria,1,1,2.36,3.25,3.47
+13-Mar-16,Lazio,Atalanta,2,0,1.94,3.38,4.76
+13-Mar-16,Palermo,Napoli,0,1,10.56,5.93,1.32
+13-Mar-16,Carpi,Frosinone,2,1,1.88,3.63,4.68
+13-Mar-16,Fiorentina,Verona,1,1,1.45,4.78,8.23
+13-Mar-16,Genoa,Torino,3,2,2.74,3.04,3.06
+13-Mar-16,Udinese,AS Roma,1,2,4.57,3.59,1.92
+13-Mar-16,Chievo,AC Milan,0,0,4.34,3.35,2.02
+19-Mar-16,AS Roma,Inter,1,1,1.84,3.64,4.94
+19-Mar-16,Empoli,Palermo,0,0,1.71,3.84,5.67
+20-Mar-16,AC Milan,Lazio,1,1,2.02,3.44,4.26
+20-Mar-16,Napoli,Genoa,3,1,1.27,6.33,13.73
+20-Mar-16,Frosinone,Fiorentina,0,0,6.87,3.93,1.61
+20-Mar-16,Sampdoria,Chievo,0,1,1.83,3.5,5.29
+20-Mar-16,Sassuolo,Udinese,1,1,2.02,3.49,4.2
+20-Mar-16,Torino,Juventus,1,4,5.72,3.37,1.83
+20-Mar-16,Verona,Carpi,1,2,2.08,3.46,3.97
+20-Mar-16,Atalanta,Bologna,2,0,2.16,3.15,4.19
+2-Apr-16,Juventus,Empoli,1,0,1.29,5.59,15.33
+2-Apr-16,Carpi,Sassuolo,1,3,3.29,3.23,2.46
+3-Apr-16,Inter,Torino,1,2,1.76,3.71,5.53
+3-Apr-16,Atalanta,AC Milan,2,1,3.44,3.29,2.34
+3-Apr-16,Chievo,Palermo,3,1,2.33,3.31,3.46
+3-Apr-16,Fiorentina,Sampdoria,1,1,1.68,3.95,5.88
+3-Apr-16,Genoa,Frosinone,4,0,1.57,4.05,7.19
+3-Apr-16,Lazio,AS Roma,1,4,3.98,3.43,2.08
+3-Apr-16,Udinese,Napoli,3,1,7.37,4.42,1.52
+4-Apr-16,Bologna,Verona,0,1,1.86,3.52,4.99
+9-Apr-16,AC Milan,Juventus,1,2,4.05,3.31,2.12
+9-Apr-16,Chievo,Carpi,1,0,2.19,3.25,3.89
+9-Apr-16,Sassuolo,Genoa,0,1,1.86,3.71,4.67
+9-Apr-16,Frosinone,Inter,0,1,6.16,3.96,1.65
+10-Apr-16,Palermo,Lazio,0,3,3.62,3.41,2.21
+10-Apr-16,Napoli,Verona,3,0,1.24,6.8,14.39
+10-Apr-16,Sampdoria,Udinese,2,0,2.18,3.25,3.92
+10-Apr-16,Torino,Atalanta,2,1,2,3.34,4.47
+10-Apr-16,Empoli,Fiorentina,2,0,3.79,3.4,2.17
+11-Apr-16,AS Roma,Bologna,1,1,1.32,5.55,12.05
+16-Apr-16,Inter,Napoli,2,0,3.27,3.31,2.41
+16-Apr-16,Carpi,Genoa,4,1,2.83,3.18,2.83
+16-Apr-16,Bologna,Torino,0,1,3.06,3.31,2.56
+17-Apr-16,Sampdoria,AC Milan,0,1,3.41,3.49,2.27
+17-Apr-16,Lazio,Empoli,2,0,1.52,4.51,7.09
+17-Apr-16,Fiorentina,Sassuolo,3,1,1.78,3.79,5.13
+17-Apr-16,Juventus,Palermo,4,0,1.16,8.11,28.71
+17-Apr-16,Udinese,Chievo,0,0,2,3.6,4.11
+17-Apr-16,Verona,Frosinone,1,2,1.63,4.37,5.71
+17-Apr-16,Atalanta,AS Roma,3,3,5.13,3.7,1.8
+19-Apr-16,Napoli,Bologna,6,0,1.27,6.31,13.36
+20-Apr-16,AS Roma,Torino,3,2,1.42,5.11,8.4
+20-Apr-16,Chievo,Frosinone,5,1,1.99,3.5,4.29
+20-Apr-16,Empoli,Verona,1,0,1.93,3.61,4.48
+20-Apr-16,Genoa,Inter,1,0,4.3,3.6,1.96
+20-Apr-16,Juventus,Lazio,3,0,1.54,4.17,7.52
+20-Apr-16,Palermo,Atalanta,2,2,2.35,3.4,3.31
+20-Apr-16,Udinese,Fiorentina,2,1,3.18,3.31,2.47
+20-Apr-16,Sassuolo,Sampdoria,0,0,2.14,3.43,3.8
+21-Apr-16,AC Milan,Carpi,0,0,1.45,4.55,9.09
+23-Apr-16,Inter,Udinese,3,1,1.5,4.45,7.7
+24-Apr-16,Fiorentina,Juventus,1,2,4.03,3.37,2.1
+24-Apr-16,Atalanta,Chievo,1,0,1.98,3.56,4.29
+24-Apr-16,Bologna,Genoa,2,0,2.27,3.36,3.5
+24-Apr-16,Sampdoria,Lazio,2,1,3.24,3.5,2.34
+24-Apr-16,Torino,Sassuolo,1,3,2.5,3.31,3.14
+24-Apr-16,Frosinone,Palermo,0,2,2.87,3.48,2.6
+25-Apr-16,Carpi,Empoli,1,0,2.02,3.44,4.26
+25-Apr-16,Verona,AC Milan,2,1,5.03,3.76,1.8
+25-Apr-16,AS Roma,Napoli,1,0,2.83,3.59,2.56
+30-Apr-16,Chievo,Fiorentina,0,0,4.4,3.61,1.94
+30-Apr-16,Udinese,Torino,1,5,2.04,3.56,4.03
+1-May-16,Lazio,Inter,2,0,2.21,3.52,3.52
+1-May-16,AC Milan,Frosinone,3,3,1.27,6.65,12.09
+1-May-16,Empoli,Bologna,0,0,2.4,3.34,3.29
+1-May-16,Palermo,Sampdoria,2,0,1.93,3.9,4.08
+1-May-16,Sassuolo,Verona,1,0,1.53,4.55,6.89
+1-May-16,Juventus,Carpi,2,0,1.3,5.36,15.1
+2-May-16,Napoli,Atalanta,2,1,1.17,8.94,19.5
+2-May-16,Genoa,AS Roma,2,3,5.44,4.25,1.66
+7-May-16,Bologna,AC Milan,0,1,4.08,3.54,2.02
+7-May-16,Inter,Empoli,2,1,1.39,5.3,9.08
+8-May-16,Torino,Napoli,1,2,8.16,4.98,1.43
+8-May-16,Verona,Juventus,2,1,5.82,4.23,1.63
+8-May-16,Atalanta,Udinese,1,1,3.37,3.39,2.33
+8-May-16,Carpi,Lazio,1,3,3.06,3.48,2.46
+8-May-16,Fiorentina,Palermo,0,0,1.69,4.03,5.55
+8-May-16,Frosinone,Sassuolo,0,1,5.4,4.36,1.65
+8-May-16,Sampdoria,Genoa,0,3,3.04,3.22,2.63
+8-May-16,AS Roma,Chievo,3,0,1.21,7.48,16.02
+14-May-16,AC Milan,AS Roma,1,3,2.95,3.89,2.36
+14-May-16,Napoli,Frosinone,4,0,1.08,15,40.4
+14-May-16,Sassuolo,Inter,3,1,1.68,4.38,5.05
+14-May-16,Juventus,Sampdoria,5,0,1.21,7.8,15.49
+15-May-16,Lazio,Fiorentina,2,4,1.92,4.17,3.85
+15-May-16,Palermo,Verona,3,2,1.28,6.56,11.89
+15-May-16,Udinese,Carpi,1,2,2.08,3.79,3.61
+15-May-16,Chievo,Bologna,0,0,2.38,3.37,3.29
+15-May-16,Empoli,Torino,2,1,2.71,3.67,2.64
+15-May-16,Genoa,Atalanta,1,2,1.59,4.58,5.8
+20-Aug-16,Juventus,Fiorentina,2,1,1.51,4.15,8.61
+20-Aug-16,AS Roma,Udinese,4,0,1.46,4.72,8.11
+21-Aug-16,Atalanta,Lazio,3,4,2.96,3.27,2.66
+21-Aug-16,Bologna,Crotone,1,0,1.78,3.5,5.79
+21-Aug-16,Chievo,Inter,2,0,4.13,3.36,2.08
+21-Aug-16,Empoli,Sampdoria,0,1,2.2,3.42,3.66
+21-Aug-16,Genoa,Cagliari,3,1,2,3.54,4.18
+21-Aug-16,Palermo,Sassuolo,0,1,3.42,3.2,2.41
+21-Aug-16,Pescara,Napoli,2,2,8.47,4.82,1.44
+21-Aug-16,AC Milan,Torino,3,2,1.94,3.47,4.61
+27-Aug-16,Napoli,AC Milan,4,2,1.63,4.05,6.32
+27-Aug-16,Lazio,Juventus,0,1,4.04,3.24,2.16
+28-Aug-16,Cagliari,AS Roma,2,2,5.15,4.29,1.68
+28-Aug-16,Crotone,Genoa,1,3,6.75,4.13,1.58
+28-Aug-16,Fiorentina,Chievo,1,0,1.68,3.71,6.43
+28-Aug-16,Sampdoria,Atalanta,2,1,2.54,3.25,3.12
+28-Aug-16,Torino,Bologna,5,1,1.93,3.46,4.74
+28-Aug-16,Udinese,Empoli,2,0,2.06,3.4,4.04
+28-Aug-16,Inter,Palermo,1,1,1.31,5.7,11.97
+10-Sep-16,Palermo,Napoli,0,3,9.15,5.05,1.4
+10-Sep-16,Juventus,Sassuolo,3,1,1.32,5.43,12.5
+11-Sep-16,Pescara,Inter,1,2,4.58,3.58,1.92
+11-Sep-16,AC Milan,Udinese,0,1,1.62,4.28,5.94
+11-Sep-16,AS Roma,Sampdoria,3,2,1.38,5.4,8.98
+11-Sep-16,Atalanta,Torino,2,1,2.67,3.22,2.99
+11-Sep-16,Chievo,Lazio,1,1,3.68,3.23,2.27
+11-Sep-16,Bologna,Cagliari,2,1,2.25,3.31,3.67
+12-Sep-16,Empoli,Crotone,2,1,1.79,3.54,5.55
+16-Sep-16,Sampdoria,AC Milan,0,1,3.31,3.27,2.42
+17-Sep-16,Napoli,Bologna,3,1,1.29,6.13,12.12
+17-Sep-16,Lazio,Pescara,3,0,1.52,4.63,6.92
+18-Sep-16,Fiorentina,AS Roma,1,0,3.06,3.52,2.44
+18-Sep-16,Inter,Juventus,2,1,4.65,3.49,1.93
+18-Sep-16,Cagliari,Atalanta,3,0,2.43,3.34,3.23
+18-Sep-16,Crotone,Palermo,1,1,3.02,3.19,2.66
+18-Sep-16,Sassuolo,Genoa,2,0,2.45,3.29,3.24
+18-Sep-16,Torino,Empoli,0,0,1.69,3.86,5.87
+18-Sep-16,Udinese,Chievo,1,2,2.41,3.16,3.47
+20-Sep-16,AC Milan,Lazio,2,0,2.27,3.41,3.5
+21-Sep-16,AS Roma,Crotone,4,0,1.14,9.43,24.59
+21-Sep-16,Atalanta,Palermo,0,1,1.58,4.29,6.5
+21-Sep-16,Chievo,Sassuolo,2,1,2.4,3.22,3.43
+21-Sep-16,Empoli,Inter,0,2,4.33,3.46,2
+21-Sep-16,Genoa,Napoli,0,0,5.01,3.93,1.76
+21-Sep-16,Juventus,Cagliari,4,0,1.2,7.4,18.25
+21-Sep-16,Pescara,Torino,0,0,3.19,3.31,2.48
+21-Sep-16,Udinese,Fiorentina,2,2,3.27,3.23,2.47
+21-Sep-16,Bologna,Sampdoria,2,0,2.29,3.23,3.64
+24-Sep-16,Napoli,Chievo,2,0,1.39,5,9.88
+24-Sep-16,Palermo,Juventus,0,1,15.21,6.56,1.25
+25-Sep-16,Fiorentina,AC Milan,0,0,2.29,3.27,3.6
+25-Sep-16,Genoa,Pescara,1,1,1.66,4.04,5.87
+25-Sep-16,Inter,Bologna,1,1,1.5,4.68,7.21
+25-Sep-16,Lazio,Empoli,2,0,1.53,4.32,7.33
+25-Sep-16,Sassuolo,Udinese,1,0,2.12,3.41,3.9
+25-Sep-16,Torino,AS Roma,3,1,3.57,3.5,2.2
+26-Sep-16,Cagliari,Sampdoria,2,1,2.14,3.46,3.78
+26-Sep-16,Crotone,Atalanta,1,3,4.54,3.48,1.95
+1-Oct-16,Udinese,Lazio,0,3,3.06,3.46,2.48
+1-Oct-16,Pescara,Chievo,0,2,2.69,3.27,2.91
+2-Oct-16,AS Roma,Inter,2,1,1.97,3.75,4.07
+2-Oct-16,AC Milan,Sassuolo,4,3,1.66,4.04,5.91
+2-Oct-16,Torino,Fiorentina,2,1,2.45,3.31,3.22
+2-Oct-16,Atalanta,Napoli,1,0,5.47,3.75,1.75
+2-Oct-16,Bologna,Genoa,0,1,2.62,3.15,3.11
+2-Oct-16,Cagliari,Crotone,2,1,1.63,3.83,6.89
+2-Oct-16,Sampdoria,Palermo,1,1,1.73,3.74,5.75
+2-Oct-16,Empoli,Juventus,0,3,11.48,5.18,1.35
+15-Oct-16,Juventus,Udinese,2,1,1.22,6.98,16.8
+15-Oct-16,Pescara,Sampdoria,1,1,2.58,3.45,2.92
+15-Oct-16,Napoli,AS Roma,1,3,1.88,3.81,4.47
+16-Oct-16,Chievo,AC Milan,1,3,3.21,3.15,2.56
+16-Oct-16,Genoa,Empoli,0,0,1.8,3.6,5.34
+16-Oct-16,Inter,Cagliari,1,2,1.36,5.44,9.99
+16-Oct-16,Lazio,Bologna,1,1,1.52,4.38,7.45
+16-Oct-16,Sassuolo,Crotone,2,1,1.58,4.15,6.76
+16-Oct-16,Fiorentina,Atalanta,0,0,1.71,3.86,5.68
+17-Oct-16,Palermo,Torino,1,4,4.47,3.52,1.95
+22-Oct-16,AC Milan,Juventus,1,0,5,3.45,1.88
+22-Oct-16,Sampdoria,Genoa,2,1,3.02,3.41,2.52
+23-Oct-16,AS Roma,Palermo,4,1,1.25,6.99,13.34
+23-Oct-16,Bologna,Sassuolo,1,1,2.88,3.11,2.85
+23-Oct-16,Atalanta,Inter,2,1,3.35,3.38,2.35
+23-Oct-16,Cagliari,Fiorentina,3,5,3.52,3.48,2.23
+23-Oct-16,Crotone,Napoli,1,2,9.39,5.55,1.36
+23-Oct-16,Empoli,Chievo,0,0,2.62,3.12,3.15
+23-Oct-16,Torino,Lazio,2,2,2.16,3.65,3.52
+23-Oct-16,Udinese,Pescara,3,1,1.96,3.7,4.18
+25-Oct-16,Genoa,AC Milan,3,0,2.87,3.16,2.77
+26-Oct-16,Chievo,Bologna,1,1,2.17,3.21,4.01
+26-Oct-16,Fiorentina,Crotone,1,1,1.26,6.55,13.86
+26-Oct-16,Inter,Torino,2,1,1.91,3.67,4.46
+26-Oct-16,Juventus,Sampdoria,4,1,1.2,7.66,17.05
+26-Oct-16,Lazio,Cagliari,4,1,1.52,4.63,6.93
+26-Oct-16,Napoli,Empoli,2,0,1.26,6.37,14.4
+26-Oct-16,Pescara,Atalanta,0,1,2.97,3.33,2.61
+26-Oct-16,Sassuolo,AS Roma,1,3,4.49,3.79,1.88
+27-Oct-16,Palermo,Udinese,1,3,2.75,3.21,2.88
+29-Oct-16,Juventus,Napoli,2,1,1.8,3.52,5.51
+29-Oct-16,Bologna,Fiorentina,0,1,3.98,3.47,2.08
+30-Oct-16,Sampdoria,Inter,1,0,3.54,3.61,2.17
+30-Oct-16,AC Milan,Pescara,1,0,1.4,5.11,9.17
+30-Oct-16,Crotone,Chievo,2,0,3.43,3.24,2.39
+30-Oct-16,Empoli,AS Roma,0,0,6.01,4.21,1.63
+30-Oct-16,Lazio,Sassuolo,2,1,1.5,4.69,7.19
+30-Oct-16,Atalanta,Genoa,3,0,2.38,3.18,3.49
+31-Oct-16,Cagliari,Palermo,2,1,1.75,3.84,5.28
+31-Oct-16,Udinese,Torino,2,2,2.73,3.4,2.77
+5-Nov-16,Napoli,Lazio,1,1,1.73,4.05,5.12
+5-Nov-16,Torino,Cagliari,5,1,1.57,4.38,6.47
+6-Nov-16,AS Roma,Bologna,3,0,1.27,6.43,12.8
+6-Nov-16,Fiorentina,Sampdoria,1,1,1.56,4.44,6.41
+6-Nov-16,Inter,Crotone,3,0,1.29,5.94,12.74
+6-Nov-16,Chievo,Juventus,1,2,7.19,3.74,1.63
+6-Nov-16,Genoa,Udinese,1,1,1.96,3.52,4.45
+6-Nov-16,Palermo,AC Milan,1,2,5.18,3.72,1.79
+6-Nov-16,Sassuolo,Atalanta,0,3,2.74,3.23,2.9
+6-Nov-16,Pescara,Empoli,0,4,2.44,3.27,3.27
+19-Nov-16,Juventus,Pescara,3,0,1.18,8.25,18.7
+19-Nov-16,Udinese,Napoli,1,2,5.63,4.17,1.66
+19-Nov-16,Chievo,Cagliari,1,0,1.99,3.41,4.47
+20-Nov-16,AC Milan,Inter,2,2,2.92,3.19,2.74
+20-Nov-16,Atalanta,AS Roma,2,1,3.92,3.59,2.06
+20-Nov-16,Bologna,Palermo,3,1,1.94,3.46,4.61
+20-Nov-16,Crotone,Torino,0,2,4.92,3.86,1.79
+20-Nov-16,Empoli,Fiorentina,0,4,4.01,3.54,2.04
+20-Nov-16,Lazio,Genoa,3,1,1.73,3.97,5.25
+20-Nov-16,Sampdoria,Sassuolo,3,2,2.23,3.45,3.54
+26-Nov-16,Empoli,AC Milan,1,4,3.54,3.31,2.29
+26-Nov-16,Torino,Chievo,2,1,1.75,3.73,5.51
+27-Nov-16,AS Roma,Pescara,3,2,1.22,7.7,14.37
+27-Nov-16,Bologna,Atalanta,0,2,3.25,3.17,2.5
+27-Nov-16,Cagliari,Udinese,2,1,2.45,3.25,3.27
+27-Nov-16,Crotone,Sampdoria,1,1,3.12,3.38,2.48
+27-Nov-16,Genoa,Juventus,3,1,7.13,3.87,1.61
+27-Nov-16,Palermo,Lazio,0,1,5.38,3.89,1.74
+28-Nov-16,Inter,Fiorentina,4,2,2.12,3.5,3.79
+28-Nov-16,Napoli,Sassuolo,1,1,1.33,5.54,11.6
+2-Dec-16,Napoli,Inter,3,0,1.79,3.9,4.86
+3-Dec-16,Juventus,Atalanta,3,1,1.51,4.24,8.28
+4-Dec-16,Fiorentina,Palermo,2,1,1.37,5.38,9.67
+4-Dec-16,Lazio,AS Roma,0,2,2.95,3.43,2.56
+4-Dec-16,Pescara,Cagliari,1,1,2.25,3.47,3.45
+4-Dec-16,Sampdoria,Torino,2,0,2.97,3.4,2.56
+4-Dec-16,Sassuolo,Empoli,3,0,1.83,3.73,4.88
+4-Dec-16,AC Milan,Crotone,2,1,1.33,5.59,11.5
+5-Dec-16,Udinese,Bologna,1,0,2.02,3.37,4.34
+5-Dec-16,Chievo,Genoa,0,0,2.5,3.1,3.36
+10-Dec-16,Sampdoria,Lazio,1,2,3.43,3.56,2.24
+10-Dec-16,Crotone,Pescara,2,1,3,3.25,2.62
+11-Dec-16,Inter,Genoa,2,0,1.64,4.11,5.97
+11-Dec-16,Atalanta,Udinese,1,3,1.78,3.64,5.45
+11-Dec-16,Bologna,Empoli,0,0,2.25,3.25,3.71
+11-Dec-16,Palermo,Chievo,0,2,3.13,3.11,2.64
+11-Dec-16,Torino,Juventus,1,3,4.62,3.57,1.91
+11-Dec-16,Cagliari,Napoli,0,5,7.13,4.63,1.51
+12-Dec-16,AS Roma,AC Milan,1,0,1.68,4.03,5.61
+12-Dec-16,Fiorentina,Sassuolo,2,1,1.63,4.26,5.83
+15-Dec-16,Genoa,Fiorentina,1,0,2.71,3.25,2.91
+17-Dec-16,Juventus,AS Roma,1,0,1.71,3.7,5.98
+17-Dec-16,AC Milan,Atalanta,0,0,2.33,3.22,3.57
+17-Dec-16,Empoli,Cagliari,2,0,2.08,3.4,4.03
+18-Dec-16,Genoa,Palermo,3,4,1.53,4.21,7.69
+18-Dec-16,Lazio,Fiorentina,3,1,1.84,3.85,4.63
+18-Dec-16,Chievo,Sampdoria,2,1,2.25,3.27,3.68
+18-Dec-16,Napoli,Torino,5,3,1.43,4.97,8.55
+18-Dec-16,Pescara,Bologna,0,3,2.46,3.29,3.23
+18-Dec-16,Udinese,Crotone,2,0,1.65,3.81,6.62
+18-Dec-16,Sassuolo,Inter,0,1,4.66,3.85,1.83
+20-Dec-16,Atalanta,Empoli,2,1,1.53,4.38,7.33
+21-Dec-16,Inter,Lazio,3,0,2.16,3.5,3.69
+22-Dec-16,AS Roma,Chievo,3,1,1.37,5.3,9.89
+22-Dec-16,Cagliari,Sassuolo,4,3,2.5,3.33,3.11
+22-Dec-16,Fiorentina,Napoli,3,3,4.4,3.83,1.88
+22-Dec-16,Palermo,Pescara,1,1,2.34,3.14,3.65
+22-Dec-16,Sampdoria,Udinese,0,0,1.98,3.61,4.18
+22-Dec-16,Torino,Genoa,1,0,1.92,3.72,4.36
+7-Jan-17,Napoli,Sampdoria,2,1,1.26,6.71,12.48
+7-Jan-17,Empoli,Palermo,1,0,1.98,3.27,4.76
+8-Jan-17,Juventus,Bologna,3,0,1.24,6.71,15.44
+8-Jan-17,AC Milan,Cagliari,1,0,1.38,5.29,9.25
+8-Jan-17,Chievo,Atalanta,1,4,3.42,3.25,2.38
+8-Jan-17,Genoa,AS Roma,0,1,3.76,3.59,2.1
+8-Jan-17,Lazio,Crotone,1,0,1.3,5.94,11.89
+8-Jan-17,Sassuolo,Torino,0,0,3.04,3.42,2.5
+8-Jan-17,Udinese,Inter,1,2,3.89,3.48,2.1
+14-Jan-17,Inter,Chievo,3,1,1.49,4.34,8.38
+14-Jan-17,Crotone,Bologna,0,1,3.08,3.12,2.67
+15-Jan-17,Fiorentina,Juventus,2,1,5.49,3.59,1.79
+15-Jan-17,Lazio,Atalanta,2,1,2.06,3.38,4.13
+15-Jan-17,Napoli,Pescara,3,1,1.16,9.44,18.79
+15-Jan-17,Sampdoria,Empoli,0,0,1.83,3.62,5.03
+15-Jan-17,Sassuolo,Palermo,4,1,1.82,3.54,5.3
+15-Jan-17,Udinese,AS Roma,0,1,4.75,3.84,1.82
+15-Jan-17,Cagliari,Genoa,4,1,3.04,3.37,2.52
+16-Jan-17,Torino,AC Milan,2,2,2.54,3.31,3.08
+21-Jan-17,AC Milan,Napoli,1,2,3.52,3.75,2.12
+21-Jan-17,Chievo,Fiorentina,0,3,3.87,3.31,2.18
+22-Jan-17,AS Roma,Cagliari,1,0,1.25,7.3,12.4
+22-Jan-17,Atalanta,Sampdoria,1,0,1.77,3.78,5.23
+22-Jan-17,Bologna,Torino,2,0,2.97,3.22,2.69
+22-Jan-17,Empoli,Udinese,1,0,2.77,3.18,2.9
+22-Jan-17,Genoa,Crotone,2,2,1.52,4.3,7.66
+22-Jan-17,Palermo,Inter,0,1,7.38,4.42,1.52
+22-Jan-17,Pescara,Sassuolo,1,3,3.15,3.42,2.44
+22-Jan-17,Juventus,Lazio,2,0,1.54,4.05,7.96
+28-Jan-17,Inter,Pescara,3,0,1.23,7,15.71
+28-Jan-17,Lazio,Chievo,0,1,1.49,4.24,8.89
+29-Jan-17,Napoli,Palermo,1,1,1.14,10,24.5
+29-Jan-17,Cagliari,Bologna,1,1,2.46,3.31,3.2
+29-Jan-17,Crotone,Empoli,4,1,2.52,3.11,3.31
+29-Jan-17,Fiorentina,Genoa,3,3,1.71,3.84,5.72
+29-Jan-17,Sampdoria,AS Roma,3,2,5.08,4.04,1.74
+29-Jan-17,Sassuolo,Juventus,0,2,9.05,4.76,1.43
+29-Jan-17,Udinese,AC Milan,2,1,3.44,3.39,2.31
+29-Jan-17,Torino,Atalanta,1,1,2.4,3.34,3.27
+1-Feb-17,Pescara,Fiorentina,1,2,4,3.52,2.06
+4-Feb-17,Bologna,Napoli,1,7,6.73,4.29,1.57
+5-Feb-17,Juventus,Inter,1,0,1.65,3.78,6.63
+5-Feb-17,Palermo,Crotone,1,0,2.38,3.25,3.42
+5-Feb-17,Atalanta,Cagliari,2,0,1.41,5.05,8.69
+5-Feb-17,Chievo,Udinese,0,0,2.79,3.11,2.94
+5-Feb-17,Empoli,Torino,1,1,3.52,3.54,2.2
+5-Feb-17,Genoa,Sassuolo,0,1,2.16,3.5,3.69
+5-Feb-17,Pescara,Lazio,2,6,6.52,4.36,1.57
+5-Feb-17,AC Milan,Sampdoria,0,1,1.78,3.8,5.09
+7-Feb-17,AS Roma,Fiorentina,4,0,1.64,4.01,6.29
+8-Feb-17,Bologna,AC Milan,0,1,3.69,3.31,2.24
+8-Feb-17,Crotone,Juventus,0,2,15.01,5.71,1.28
+10-Feb-17,Napoli,Genoa,2,0,1.28,6.43,12.22
+11-Feb-17,Fiorentina,Udinese,3,0,1.8,3.74,5.05
+12-Feb-17,Cagliari,Juventus,0,2,12.59,5.23,1.33
+12-Feb-17,Sampdoria,Bologna,3,1,2.02,3.46,4.25
+12-Feb-17,Inter,Empoli,2,0,1.3,5.8,12.32
+12-Feb-17,Palermo,Atalanta,1,3,5.15,3.74,1.79
+12-Feb-17,Sassuolo,Chievo,1,3,2,3.52,4.25
+12-Feb-17,Torino,Pescara,5,3,1.45,4.88,7.9
+12-Feb-17,Crotone,AS Roma,0,2,10.36,5.16,1.37
+13-Feb-17,Lazio,AC Milan,1,1,1.65,4.17,5.7
+17-Feb-17,Juventus,Palermo,4,1,1.16,8.33,28.4
+18-Feb-17,Empoli,Lazio,1,2,5.49,4,1.7
+18-Feb-17,Atalanta,Crotone,1,0,1.25,6.41,15.63
+19-Feb-17,AC Milan,Fiorentina,2,1,2.17,3.46,3.71
+19-Feb-17,AS Roma,Torino,4,1,1.37,5.59,8.92
+19-Feb-17,Chievo,Napoli,1,3,7.42,4.41,1.52
+19-Feb-17,Pescara,Genoa,5,0,3.11,3.69,2.34
+19-Feb-17,Sampdoria,Cagliari,1,1,1.77,3.93,4.94
+19-Feb-17,Udinese,Sassuolo,1,2,2.22,3.36,3.69
+19-Feb-17,Bologna,Inter,0,1,5.8,3.86,1.7
+25-Feb-17,Juventus,Empoli,2,0,1.18,7.65,22.7
+25-Feb-17,Napoli,Atalanta,0,2,1.61,4.16,6.35
+26-Feb-17,Inter,AS Roma,1,3,2.52,3.44,2.99
+26-Feb-17,Chievo,Pescara,2,0,1.96,3.81,4.01
+26-Feb-17,Crotone,Cagliari,1,2,2.67,3.29,2.93
+26-Feb-17,Genoa,Bologna,1,1,2.02,3.41,4.25
+26-Feb-17,Lazio,Udinese,1,0,1.5,4.51,7.51
+26-Feb-17,Sassuolo,AC Milan,0,1,2.75,3.54,2.66
+26-Feb-17,Palermo,Sampdoria,1,1,3.06,3.39,2.5
+27-Feb-17,Fiorentina,Torino,2,2,1.88,3.81,4.43
+4-Mar-17,AC Milan,Chievo,3,1,1.6,4.3,6.19
+4-Mar-17,Sampdoria,Pescara,3,1,1.68,4.4,5.11
+4-Mar-17,AS Roma,Napoli,1,2,2.23,3.48,3.5
+5-Mar-17,Bologna,Lazio,0,2,5.22,4.05,1.72
+5-Mar-17,Cagliari,Inter,1,5,5.46,3.93,1.71
+5-Mar-17,Crotone,Sassuolo,0,0,3.22,3.24,2.49
+5-Mar-17,Empoli,Genoa,0,2,2.86,3.13,2.86
+5-Mar-17,Torino,Palermo,3,1,1.5,4.55,7.55
+5-Mar-17,Udinese,Juventus,1,1,8.92,4.26,1.49
+5-Mar-17,Atalanta,Fiorentina,0,0,2.1,3.5,3.85
+10-Mar-17,Juventus,AC Milan,2,1,1.46,4.59,8.65
+11-Mar-17,Genoa,Sampdoria,0,1,2.7,3.2,2.97
+12-Mar-17,Palermo,AS Roma,0,3,8.4,5.3,1.4
+12-Mar-17,Chievo,Empoli,4,0,2.08,3.24,4.26
+12-Mar-17,Fiorentina,Cagliari,1,0,1.41,5.05,8.88
+12-Mar-17,Inter,Atalanta,7,1,1.89,3.61,4.65
+12-Mar-17,Napoli,Crotone,3,0,1.17,8.36,22.41
+12-Mar-17,Pescara,Udinese,1,3,3.02,3.7,2.39
+12-Mar-17,Sassuolo,Bologna,0,1,1.93,3.45,4.73
+13-Mar-17,Lazio,Torino,3,1,1.53,4.65,6.52
+18-Mar-17,AC Milan,Genoa,1,0,1.61,4.15,6.31
+18-Mar-17,Torino,Inter,2,2,4.3,3.9,1.88
+19-Mar-17,AS Roma,Sassuolo,3,1,1.3,6.34,10.67
+19-Mar-17,Udinese,Palermo,4,1,1.64,4.01,6.2
+19-Mar-17,Atalanta,Pescara,3,0,1.29,6.46,11.23
+19-Mar-17,Bologna,Chievo,4,1,2.27,3.35,3.56
+19-Mar-17,Cagliari,Lazio,0,0,6.21,4.51,1.57
+19-Mar-17,Crotone,Fiorentina,0,1,4.84,3.69,1.84
+19-Mar-17,Sampdoria,Juventus,0,1,7.67,4.59,1.49
+19-Mar-17,Empoli,Napoli,2,3,10.21,5.07,1.38
+1-Apr-17,AS Roma,Empoli,2,0,1.21,7.48,17.01
+1-Apr-17,Sassuolo,Lazio,1,2,4.59,4.07,1.79
+2-Apr-17,Napoli,Juventus,1,1,2.79,3.25,2.81
+2-Apr-17,Chievo,Crotone,1,2,1.83,3.59,5.12
+2-Apr-17,Fiorentina,Bologna,1,0,1.52,4.63,6.78
+2-Apr-17,Genoa,Atalanta,0,5,3.94,3.59,2.04
+2-Apr-17,Palermo,Cagliari,1,3,2.7,3.24,2.93
+2-Apr-17,Pescara,AC Milan,1,1,5.88,4.59,1.58
+2-Apr-17,Torino,Udinese,2,2,1.8,3.85,4.88
+3-Apr-17,Inter,Sampdoria,1,2,1.31,6.01,10.76
+8-Apr-17,Juventus,Chievo,2,0,1.22,6.77,19.25
+8-Apr-17,Atalanta,Sassuolo,1,1,1.48,4.76,7.48
+8-Apr-17,Empoli,Pescara,1,1,1.99,3.88,3.84
+9-Apr-17,Lazio,Napoli,0,3,3.23,3.44,2.38
+9-Apr-17,AC Milan,Palermo,4,0,1.25,6.79,13.59
+9-Apr-17,Bologna,AS Roma,0,3,7.45,5.03,1.45
+9-Apr-17,Cagliari,Torino,2,3,3.02,3.78,2.35
+9-Apr-17,Crotone,Inter,2,1,7.35,4.88,1.47
+9-Apr-17,Udinese,Genoa,3,0,2,3.38,4.43
+9-Apr-17,Sampdoria,Fiorentina,2,2,3.45,3.62,2.2
+15-Apr-17,Napoli,Udinese,3,0,1.21,7.58,16.71
+15-Apr-17,Sassuolo,Sampdoria,2,1,2.24,3.71,3.29
+15-Apr-17,AS Roma,Atalanta,1,1,1.44,4.95,8.13
+15-Apr-17,Cagliari,Chievo,4,0,2.1,3.6,3.77
+15-Apr-17,Fiorentina,Empoli,1,2,1.4,5.2,8.81
+15-Apr-17,Genoa,Lazio,2,2,5.82,4.38,1.61
+15-Apr-17,Palermo,Bologna,0,0,2.88,3.19,2.77
+15-Apr-17,Pescara,Juventus,0,2,14.15,7.38,1.23
+15-Apr-17,Torino,Crotone,1,1,1.54,4.65,6.46
+15-Apr-17,Inter,AC Milan,2,2,2.08,3.6,3.8
+22-Apr-17,Fiorentina,Inter,5,4,2.68,3.73,2.64
+22-Apr-17,Atalanta,Bologna,3,2,1.38,5.29,9.6
+23-Apr-17,Juventus,Genoa,4,0,1.19,7.8,19.8
+23-Apr-17,AC Milan,Empoli,1,2,1.41,5.01,8.74
+23-Apr-17,Chievo,Torino,1,3,3.4,3.79,2.17
+23-Apr-17,Lazio,Palermo,6,2,1.17,8.58,20.64
+23-Apr-17,Sampdoria,Crotone,1,2,1.9,3.5,4.76
+23-Apr-17,Udinese,Cagliari,2,1,1.79,3.75,5.13
+23-Apr-17,Sassuolo,Napoli,2,2,8.68,5.13,1.41
+24-Apr-17,Pescara,AS Roma,1,4,13,8.19,1.22
+28-Apr-17,Atalanta,Juventus,2,2,4.99,3.46,1.88
+29-Apr-17,Torino,Sampdoria,1,1,1.59,4.66,5.63
+30-Apr-17,Inter,Napoli,0,1,3.29,3.91,2.17
+30-Apr-17,Bologna,Udinese,4,0,2.45,3.41,3.13
+30-Apr-17,Cagliari,Pescara,1,0,1.49,5.05,6.59
+30-Apr-17,Crotone,AC Milan,1,1,4.5,4.04,1.82
+30-Apr-17,Empoli,Sassuolo,1,3,2.08,3.6,3.84
+30-Apr-17,Genoa,Chievo,1,2,1.61,4.28,5.99
+30-Apr-17,Palermo,Fiorentina,2,0,7.27,4.58,1.51
+30-Apr-17,AS Roma,Lazio,1,3,2,3.58,4.11
+6-May-17,Juventus,Torino,1,1,1.46,4.71,8.16
+6-May-17,Napoli,Cagliari,3,1,1.11,11.29,31
+7-May-17,AC Milan,AS Roma,1,4,3.24,3.81,2.23
+7-May-17,Chievo,Palermo,1,1,1.78,3.98,4.84
+7-May-17,Empoli,Bologna,3,1,2.04,3.33,4.32
+7-May-17,Genoa,Inter,1,0,4.09,3.54,2.02
+7-May-17,Lazio,Sampdoria,7,3,1.31,6.25,10.38
+7-May-17,Pescara,Crotone,0,1,4.15,4,1.89
+7-May-17,Sassuolo,Fiorentina,2,2,3.46,3.9,2.1
+7-May-17,Udinese,Atalanta,1,1,3.37,3.37,2.34
+13-May-17,Atalanta,AC Milan,1,1,2.04,3.6,3.89
+13-May-17,Fiorentina,Lazio,3,2,1.83,4.23,4.24
+14-May-17,AS Roma,Juventus,3,1,2.41,3.49,3.14
+14-May-17,Bologna,Pescara,3,1,1.67,4.32,5.29
+14-May-17,Cagliari,Empoli,3,2,2.52,3.63,2.87
+14-May-17,Crotone,Udinese,1,0,1.86,3.54,4.99
+14-May-17,Palermo,Genoa,1,0,4.15,3.16,2.14
+14-May-17,Sampdoria,Chievo,1,1,1.81,3.86,4.8
+14-May-17,Torino,Napoli,0,5,6.09,5.25,1.5
+14-May-17,Inter,Sassuolo,1,2,1.36,5.92,8.47
+20-May-17,Napoli,Fiorentina,4,1,1.22,8.25,12.8
+20-May-17,Chievo,AS Roma,3,5,14.15,7.98,1.21
+21-May-17,Lazio,Inter,1,3,1.69,4.66,4.69
+21-May-17,AC Milan,Bologna,3,0,1.3,6.24,10.61
+21-May-17,Empoli,Atalanta,0,1,3.06,3.34,2.54
+21-May-17,Genoa,Torino,2,1,2.27,3.43,3.46
+21-May-17,Juventus,Crotone,3,0,1.12,10.28,36.07
+21-May-17,Sassuolo,Cagliari,6,2,1.73,4.32,4.75
+21-May-17,Udinese,Sampdoria,1,1,2.08,3.85,3.56
+22-May-17,Pescara,Palermo,2,0,1.91,4.05,4.01
+27-May-17,Atalanta,Chievo,1,0,1.33,5.91,9.85
+27-May-17,Bologna,Juventus,1,2,5.63,4.26,1.64
+28-May-17,Crotone,Lazio,3,1,2.88,3.89,2.4
+28-May-17,Fiorentina,Pescara,2,2,1.28,7.05,10.4
+28-May-17,Inter,Udinese,5,2,1.42,5.4,7.75
+28-May-17,Palermo,Empoli,2,1,6,4.5,1.58
+28-May-17,Torino,Sassuolo,5,3,1.85,4.19,4.13
+28-May-17,AS Roma,Genoa,3,2,1.06,16.39,42
+28-May-17,Sampdoria,Napoli,2,4,10.15,7.1,1.28
+28-May-17,Cagliari,AC Milan,2,1,3.49,4.18,2.02
+19-Aug-17,Verona,Napoli,1,3,8.36,5.21,1.41
+19-Aug-17,Juventus,Cagliari,3,0,1.13,9.74,27.7
+20-Aug-17,Bologna,Torino,1,1,3.35,3.47,2.31
+20-Aug-17,Crotone,AC Milan,0,3,7.42,4.37,1.52
+20-Aug-17,Inter,Fiorentina,3,0,1.48,4.65,7.7
+20-Aug-17,Lazio,Spal,0,0,1.29,6.22,11.85
+20-Aug-17,Sampdoria,Benevento,2,1,1.64,4.18,5.86
+20-Aug-17,Sassuolo,Genoa,0,0,1.9,3.66,4.53
+20-Aug-17,Udinese,Chievo,1,2,2.06,3.45,4.08
+20-Aug-17,Atalanta,AS Roma,0,1,2.99,3.44,2.52
+26-Aug-17,AS Roma,Inter,1,3,2.25,3.56,3.39
+26-Aug-17,Benevento,Bologna,0,1,2.58,3.37,2.97
+26-Aug-17,Genoa,Juventus,2,4,8.5,4.38,1.48
+27-Aug-17,AC Milan,Cagliari,2,1,1.35,5.51,10.11
+27-Aug-17,Chievo,Lazio,1,2,4.15,3.56,2
+27-Aug-17,Crotone,Verona,0,0,2.85,3.25,2.75
+27-Aug-17,Fiorentina,Sampdoria,1,2,1.68,4.33,5.12
+27-Aug-17,Napoli,Atalanta,3,1,1.35,5.57,10.02
+27-Aug-17,Spal,Udinese,3,2,2.5,3.38,3.08
+27-Aug-17,Torino,Sassuolo,3,0,1.68,4.22,5.32
+9-Sep-17,Juventus,Chievo,3,0,1.26,6.14,15.3
+10-Sep-17,Bologna,Napoli,0,3,8.86,5.28,1.39
+10-Sep-17,Benevento,Torino,0,1,4.11,3.61,2
+10-Sep-17,Lazio,AC Milan,4,1,2.31,3.67,3.16
+10-Sep-17,Atalanta,Sassuolo,2,1,1.63,4,6.43
+10-Sep-17,Cagliari,Crotone,1,0,1.61,4.16,6.25
+10-Sep-17,Udinese,Genoa,1,0,2.48,3.25,3.24
+10-Sep-17,Verona,Fiorentina,0,5,3.98,3.65,2.02
+10-Sep-17,Inter,Spal,2,0,1.22,7.1,16.64
+16-Sep-17,AS Roma,Verona,3,0,1.23,7.19,15.13
+16-Sep-17,Fiorentina,Bologna,2,1,1.57,4.34,6.49
+16-Sep-17,Crotone,Inter,0,2,9.19,4.91,1.41
+17-Sep-17,Genoa,Lazio,2,3,4.04,3.71,1.99
+17-Sep-17,Chievo,Atalanta,1,1,2.97,3.31,2.62
+17-Sep-17,AC Milan,Udinese,2,1,1.39,4.97,9.94
+17-Sep-17,Napoli,Benevento,6,0,1.1,12,31
+17-Sep-17,Spal,Cagliari,0,2,2.43,3.35,3.23
+17-Sep-17,Torino,Sampdoria,2,2,1.72,4.2,5
+17-Sep-17,Sassuolo,Juventus,1,3,9.23,4.32,1.47
+19-Sep-17,Bologna,Inter,1,1,6.14,4.05,1.64
+20-Sep-17,AC Milan,Spal,2,0,1.25,6.62,15.12
+20-Sep-17,Atalanta,Crotone,5,1,1.36,5.13,11.4
+20-Sep-17,Cagliari,Sassuolo,0,1,2.22,3.5,3.52
+20-Sep-17,Genoa,Chievo,1,1,2.33,3.29,3.49
+20-Sep-17,Juventus,Fiorentina,1,0,1.41,4.94,9.02
+20-Sep-17,Lazio,Napoli,1,4,3.47,3.72,2.16
+20-Sep-17,Udinese,Torino,2,3,3.25,3.77,2.23
+20-Sep-17,Verona,Sampdoria,0,0,3.78,3.5,2.12
+20-Sep-17,Benevento,AS Roma,0,4,9.77,5.68,1.35
+23-Sep-17,Juventus,Torino,4,0,1.43,4.69,9.23
+23-Sep-17,Spal,Napoli,2,3,14.64,7.01,1.24
+23-Sep-17,AS Roma,Udinese,3,1,1.24,6.99,14.65
+24-Sep-17,Fiorentina,Atalanta,1,1,2.38,3.49,3.2
+24-Sep-17,Sassuolo,Bologna,0,1,2.1,3.31,4.13
+24-Sep-17,Cagliari,Chievo,0,2,2.35,3.25,3.48
+24-Sep-17,Crotone,Benevento,2,0,2.1,3.31,4.13
+24-Sep-17,Inter,Genoa,1,0,1.35,5.38,11.03
+24-Sep-17,Verona,Lazio,0,3,6.11,4.37,1.6
+24-Sep-17,Sampdoria,AC Milan,2,0,3.79,3.72,2.04
+30-Sep-17,Genoa,Bologna,0,1,2.25,3.25,3.74
+30-Sep-17,Udinese,Sampdoria,4,0,2.6,3.44,2.99
+1-Oct-17,Atalanta,Juventus,2,2,5.08,3.52,1.85
+1-Oct-17,AC Milan,AS Roma,0,2,2.68,3.62,2.7
+1-Oct-17,Benevento,Inter,1,2,10.77,5.91,1.32
+1-Oct-17,Chievo,Fiorentina,2,1,2.99,3.39,2.56
+1-Oct-17,Lazio,Sassuolo,6,1,1.53,4.5,6.93
+1-Oct-17,Spal,Crotone,1,1,1.93,3.43,4.76
+1-Oct-17,Torino,Verona,2,2,1.29,6.2,11.88
+1-Oct-17,Napoli,Cagliari,3,0,1.14,10.73,21.65
+14-Oct-17,AS Roma,Napoli,0,1,3.31,3.74,2.22
+14-Oct-17,Juventus,Lazio,1,2,1.58,4.2,6.67
+15-Oct-17,Inter,AC Milan,3,2,2.29,3.24,3.64
+15-Oct-17,Bologna,Spal,2,1,2.04,3.27,4.44
+15-Oct-17,Cagliari,Genoa,2,3,2.52,3.22,3.19
+15-Oct-17,Crotone,Torino,2,2,3.54,3.36,2.27
+15-Oct-17,Sampdoria,Atalanta,3,1,3.37,3.36,2.35
+15-Oct-17,Sassuolo,Chievo,0,0,2.25,3.31,3.65
+15-Oct-17,Fiorentina,Udinese,2,1,1.62,4.25,6
+16-Oct-17,Verona,Benevento,1,0,1.89,3.75,4.43
+21-Oct-17,Napoli,Inter,0,0,1.49,4.88,6.99
+21-Oct-17,Sampdoria,Crotone,5,0,1.54,4.34,7.04
+22-Oct-17,Lazio,Cagliari,3,0,1.26,6.93,12.35
+22-Oct-17,Udinese,Juventus,2,6,9.47,4.84,1.41
+22-Oct-17,AC Milan,Genoa,0,0,1.65,4.04,6.05
+22-Oct-17,Atalanta,Bologna,1,0,1.61,4.05,6.53
+22-Oct-17,Benevento,Fiorentina,0,3,6.19,4.76,1.54
+22-Oct-17,Spal,Sassuolo,0,1,3,3.52,2.48
+22-Oct-17,Torino,AS Roma,0,1,3.92,3.84,1.98
+22-Oct-17,Chievo,Verona,3,2,2.14,3.39,3.83
+24-Oct-17,Inter,Sampdoria,3,2,1.45,4.9,7.91
+25-Oct-17,AS Roma,Crotone,1,0,1.18,8.11,19.46
+25-Oct-17,Bologna,Lazio,1,2,4.84,3.81,1.81
+25-Oct-17,Cagliari,Benevento,2,1,1.7,4.12,5.43
+25-Oct-17,Chievo,AC Milan,1,4,3.54,3.41,2.25
+25-Oct-17,Fiorentina,Torino,3,0,1.75,4.08,5.03
+25-Oct-17,Genoa,Napoli,2,3,8.57,5.2,1.41
+25-Oct-17,Juventus,Spal,4,1,1.12,10.02,31.23
+25-Oct-17,Sassuolo,Udinese,0,1,1.88,3.63,4.67
+25-Oct-17,Atalanta,Verona,3,0,1.31,5.96,11.41
+28-Oct-17,AS Roma,Bologna,1,0,1.33,5.63,10.81
+28-Oct-17,AC Milan,Juventus,0,2,4.23,3.63,1.96
+29-Oct-17,Torino,Cagliari,2,1,1.58,4.5,6.05
+29-Oct-17,Crotone,Fiorentina,2,1,5.71,4.12,1.66
+29-Oct-17,Napoli,Sassuolo,3,1,1.15,10,20.5
+29-Oct-17,Sampdoria,Chievo,4,1,2.18,3.49,3.64
+29-Oct-17,Spal,Genoa,1,0,3.12,3.17,2.6
+29-Oct-17,Udinese,Atalanta,2,1,3.94,3.54,2.06
+29-Oct-17,Benevento,Lazio,1,5,10.23,6.05,1.32
+30-Oct-17,Verona,Inter,1,2,9.19,5.4,1.38
+4-Nov-17,Genoa,Sampdoria,0,2,2.58,3.31,3.02
+4-Nov-17,Bologna,Crotone,2,3,1.78,3.56,5.67
+5-Nov-17,Sassuolo,AC Milan,0,2,4.26,3.76,1.92
+5-Nov-17,Atalanta,Spal,1,1,1.41,4.94,9.33
+5-Nov-17,Cagliari,Verona,2,1,1.83,3.77,4.76
+5-Nov-17,Chievo,Napoli,0,0,7.74,4.92,1.45
+5-Nov-17,Fiorentina,AS Roma,2,4,3.31,3.75,2.22
+5-Nov-17,Juventus,Benevento,2,1,1.06,17,50
+5-Nov-17,Inter,Torino,1,1,1.63,4.33,5.74
+18-Nov-17,Napoli,AC Milan,2,1,1.47,4.87,7.47
+18-Nov-17,AS Roma,Lazio,2,1,2.24,3.64,3.29
+19-Nov-17,Inter,Atalanta,2,0,1.91,3.49,4.8
+19-Nov-17,Benevento,Sassuolo,1,2,3.2,3.46,2.39
+19-Nov-17,Sampdoria,Juventus,3,2,6.84,4.09,1.59
+19-Nov-17,Spal,Fiorentina,1,1,4.13,3.61,2
+19-Nov-17,Torino,Chievo,1,1,1.77,3.91,5.04
+19-Nov-17,Udinese,Cagliari,0,1,2,3.6,4.09
+19-Nov-17,Crotone,Genoa,0,1,3.25,3.18,2.5
+20-Nov-17,Verona,Bologna,2,3,3.43,3.25,2.37
+25-Nov-17,Cagliari,Inter,1,3,5.48,4.09,1.68
+25-Nov-17,Chievo,Spal,2,1,1.78,3.65,5.49
+25-Nov-17,Sassuolo,Verona,0,2,1.7,4.08,5.3
+25-Nov-17,Bologna,Sampdoria,3,0,2.5,3.34,3.11
+26-Nov-17,Juventus,Crotone,3,0,1.16,8.4,28
+26-Nov-17,Lazio,Fiorentina,1,1,1.74,4.07,5.07
+26-Nov-17,AC Milan,Torino,0,0,1.79,3.92,4.91
+26-Nov-17,Genoa,AS Roma,1,1,5.26,3.9,1.74
+26-Nov-17,Udinese,Napoli,0,1,10.69,5.69,1.33
+27-Nov-17,Atalanta,Benevento,1,0,1.21,7.1,18.93
+1-Dec-17,Napoli,Juventus,0,1,2.2,3.18,3.99
+1-Dec-17,AS Roma,Spal,3,1,1.25,6.5,15.2
+2-Dec-17,Torino,Atalanta,1,1,2.7,3.52,2.73
+3-Dec-17,Sampdoria,Lazio,1,2,3.88,3.85,1.99
+3-Dec-17,Bologna,Cagliari,1,1,2.21,3.31,3.75
+3-Dec-17,Fiorentina,Sassuolo,3,0,1.63,4.2,5.91
+3-Dec-17,Inter,Chievo,5,0,1.42,4.84,9.11
+3-Dec-17,Benevento,AC Milan,2,2,10.67,5.63,1.34
+4-Dec-17,Verona,Genoa,0,1,3.49,3.45,2.25
+4-Dec-17,Crotone,Udinese,0,3,3.35,3.25,2.41
+9-Dec-17,Juventus,Inter,0,0,1.96,3.45,4.53
+9-Dec-17,Cagliari,Sampdoria,2,2,2.48,3.42,3.08
+10-Dec-17,AC Milan,Bologna,2,1,1.55,4.24,7.18
+10-Dec-17,Sassuolo,Crotone,2,1,1.72,3.87,5.5
+10-Dec-17,Napoli,Fiorentina,0,0,1.47,4.75,7.71
+10-Dec-17,Spal,Verona,2,2,2.24,3.44,3.54
+10-Dec-17,Udinese,Benevento,2,0,1.47,4.66,7.96
+10-Dec-17,Chievo,AS Roma,0,0,5.97,4.12,1.64
+11-Dec-17,Lazio,Torino,1,3,1.53,4.67,6.53
+12-Dec-17,Genoa,Atalanta,1,2,3.39,3.43,2.29
+16-Dec-17,AS Roma,Cagliari,1,0,1.23,7.07,14.72
+16-Dec-17,Torino,Napoli,1,3,5.24,3.86,1.75
+16-Dec-17,Inter,Udinese,1,3,1.34,5.55,10.69
+17-Dec-17,Atalanta,Lazio,3,3,2.25,3.42,3.5
+17-Dec-17,Benevento,Spal,1,2,2.61,3.35,2.96
+17-Dec-17,Bologna,Juventus,0,3,9,4.4,1.47
+17-Dec-17,Crotone,Chievo,1,0,3.04,3.04,2.75
+17-Dec-17,Fiorentina,Genoa,0,0,1.81,3.57,5.29
+17-Dec-17,Sampdoria,Sassuolo,0,1,2,3.7,3.96
+17-Dec-17,Verona,AC Milan,3,0,6.86,4.34,1.55
+22-Dec-17,Cagliari,Fiorentina,0,1,3.39,3.37,2.33
+22-Dec-17,Chievo,Bologna,2,3,2.68,3.11,3.06
+23-Dec-17,Juventus,AS Roma,1,0,1.73,3.89,5.43
+23-Dec-17,AC Milan,Atalanta,0,2,2.54,3.4,2.95
+23-Dec-17,Genoa,Benevento,1,0,1.49,4.5,7.98
+23-Dec-17,Napoli,Sampdoria,3,2,1.21,7.58,15.71
+23-Dec-17,Sassuolo,Inter,1,0,5.51,3.91,1.71
+23-Dec-17,Spal,Torino,2,2,3.15,3.33,2.49
+23-Dec-17,Udinese,Verona,4,0,1.76,4.01,4.96
+23-Dec-17,Lazio,Crotone,4,0,1.27,6.25,13.31
+29-Dec-17,Crotone,Napoli,0,1,16.25,7.35,1.22
+30-Dec-17,Verona,Juventus,1,3,18.5,7.35,1.2
+30-Dec-17,Inter,Lazio,0,0,2.38,3.54,3.14
+30-Dec-17,AS Roma,Sassuolo,1,1,1.27,6.6,12.63
+30-Dec-17,Atalanta,Cagliari,1,2,1.46,4.67,8.27
+30-Dec-17,Benevento,Chievo,1,0,3,3.4,2.54
+30-Dec-17,Bologna,Udinese,1,2,2.5,3.14,3.31
+30-Dec-17,Sampdoria,Spal,2,0,1.89,3.56,4.76
+30-Dec-17,Torino,Genoa,0,0,2.37,3.23,3.46
+30-Dec-17,Fiorentina,AC Milan,1,1,2.48,3.39,3.11
+5-Jan-18,Fiorentina,Inter,1,1,2.67,3.2,3
+5-Jan-18,Chievo,Udinese,1,1,3.4,3.19,2.42
+6-Jan-18,Cagliari,Juventus,0,1,11.05,5.3,1.35
+6-Jan-18,AS Roma,Atalanta,1,2,1.92,3.52,4.65
+6-Jan-18,AC Milan,Crotone,1,0,1.28,6.3,12.5
+6-Jan-18,Benevento,Sampdoria,3,2,3.94,3.54,2.06
+6-Jan-18,Genoa,Sassuolo,1,0,2.46,3.13,3.4
+6-Jan-18,Napoli,Verona,2,0,1.1,12.5,33
+6-Jan-18,Spal,Lazio,2,5,6.2,3.9,1.66
+6-Jan-18,Torino,Bologna,3,0,2.04,3.54,4.04
+21-Jan-18,Inter,AS Roma,1,1,2.49,3.57,2.92
+21-Jan-18,Cagliari,AC Milan,1,2,4.07,3.45,2.04
+21-Jan-18,Bologna,Benevento,3,0,1.7,3.74,5.88
+21-Jan-18,Lazio,Chievo,5,1,1.29,5.98,11.7
+21-Jan-18,Sampdoria,Fiorentina,3,1,3.25,3.29,2.41
+21-Jan-18,Sassuolo,Torino,1,1,2.68,3.21,2.95
+21-Jan-18,Udinese,Spal,1,1,1.88,3.61,4.59
+21-Jan-18,Verona,Crotone,0,3,2.43,3.27,3.29
+21-Jan-18,Atalanta,Napoli,0,1,3.78,3.4,2.14
+22-Jan-18,Juventus,Genoa,1,0,1.26,5.65,17.8
+24-Jan-18,Sampdoria,AS Roma,1,1,3.91,3.71,2
+24-Jan-18,Lazio,Udinese,3,0,1.53,4.16,7.59
+27-Jan-18,Chievo,Juventus,0,2,12.1,4.92,1.35
+27-Jan-18,Sassuolo,Atalanta,0,3,3,3.34,2.54
+28-Jan-18,AS Roma,Sampdoria,0,1,1.39,5.21,8.82
+28-Jan-18,AC Milan,Lazio,2,1,2.54,3.36,2.99
+28-Jan-18,Crotone,Cagliari,1,1,2.61,2.97,3.27
+28-Jan-18,Fiorentina,Verona,1,4,1.26,6.3,14.25
+28-Jan-18,Genoa,Udinese,0,1,2.31,3.21,3.56
+28-Jan-18,Napoli,Bologna,3,1,1.19,7.75,18.43
+28-Jan-18,Torino,Benevento,3,0,1.42,5.03,8.24
+28-Jan-18,Spal,Inter,1,1,6.4,3.86,1.64
+3-Feb-18,Inter,Crotone,1,1,1.28,5.72,15.11
+3-Feb-18,Sampdoria,Torino,1,1,2.29,3.58,3.22
+4-Feb-18,Benevento,Napoli,0,2,21.94,8.53,1.16
+4-Feb-18,Atalanta,Chievo,1,0,1.46,4.57,8.33
+4-Feb-18,Bologna,Fiorentina,1,2,3.41,3.38,2.29
+4-Feb-18,Cagliari,Spal,2,0,2.1,3.38,3.9
+4-Feb-18,Juventus,Sassuolo,7,0,1.23,6.77,15.51
+4-Feb-18,Udinese,AC Milan,1,1,3.59,3.37,2.22
+4-Feb-18,Verona,AS Roma,0,1,10.19,5.15,1.36
+5-Feb-18,Lazio,Genoa,1,2,1.5,4.29,8
+9-Feb-18,Fiorentina,Juventus,0,2,4.91,3.41,1.9
+10-Feb-18,Napoli,Lazio,4,1,1.87,3.42,5.04
+10-Feb-18,Crotone,Atalanta,1,1,4.65,3.56,1.89
+10-Feb-18,Spal,AC Milan,0,4,4.93,3.41,1.89
+11-Feb-18,AS Roma,Benevento,5,2,1.19,7.6,18
+11-Feb-18,Chievo,Genoa,0,1,3.15,3.02,2.65
+11-Feb-18,Inter,Bologna,2,1,1.51,4.21,7.9
+11-Feb-18,Sampdoria,Verona,2,0,1.5,4.47,7.44
+11-Feb-18,Torino,Udinese,2,0,1.77,3.77,5.13
+11-Feb-18,Sassuolo,Cagliari,0,0,2.02,3.41,4.18
+17-Feb-18,Genoa,Inter,2,0,3.5,3.18,2.36
+17-Feb-18,Chievo,Cagliari,2,1,2.16,3.04,4.26
+17-Feb-18,Udinese,AS Roma,0,2,5.12,3.76,1.78
+18-Feb-18,AC Milan,Sampdoria,1,0,1.69,3.96,5.5
+18-Feb-18,Atalanta,Fiorentina,1,1,2.42,3.31,3.22
+18-Feb-18,Benevento,Crotone,3,2,2.37,3.27,3.37
+18-Feb-18,Bologna,Sassuolo,2,1,2.61,3.2,3.04
+18-Feb-18,Napoli,Spal,1,0,1.14,9,28.75
+18-Feb-18,Torino,Juventus,0,1,5.15,3.58,1.81
+19-Feb-18,Lazio,Verona,2,0,1.18,7.9,19.25
+24-Feb-18,Inter,Benevento,2,0,1.26,6.3,14.11
+24-Feb-18,Bologna,Genoa,2,0,2.92,2.84,3.02
+25-Feb-18,AS Roma,AC Milan,0,2,2.04,3.43,4.09
+25-Feb-18,Fiorentina,Chievo,1,0,1.49,4.44,7.8
+25-Feb-18,Sampdoria,Udinese,2,1,2.1,3.5,3.76
+25-Feb-18,Sassuolo,Lazio,0,3,4.53,3.59,1.9
+25-Feb-18,Verona,Torino,2,1,6.51,4.22,1.57
+25-Feb-18,Crotone,Spal,2,3,2.31,3.1,3.68
+26-Feb-18,Cagliari,Napoli,0,5,13.8,5.09,1.32
+3-Mar-18,Napoli,AS Roma,2,4,1.64,3.94,6.15
+3-Mar-18,Lazio,Juventus,0,1,3.25,3.24,2.44
+3-Mar-18,Spal,Bologna,1,0,2.54,3.13,3.2
+9-Mar-18,AS Roma,Torino,3,0,1.56,4.47,6.34
+10-Mar-18,Verona,Chievo,1,0,4.09,3.39,2.04
+11-Mar-18,Inter,Napoli,0,0,4.28,3.62,1.94
+11-Mar-18,Genoa,AC Milan,0,1,3.64,3.22,2.27
+11-Mar-18,Bologna,Atalanta,0,1,4.67,3.64,1.86
+11-Mar-18,Cagliari,Lazio,2,2,6.69,4.45,1.53
+11-Mar-18,Crotone,Sampdoria,4,1,2.75,3.36,2.74
+11-Mar-18,Juventus,Udinese,2,0,1.23,6.22,19.57
+11-Mar-18,Sassuolo,Spal,1,1,2.1,3.36,4
+11-Mar-18,Fiorentina,Benevento,1,0,1.43,4.76,8.6
+14-Mar-18,Juventus,Atalanta,2,0,1.44,4.3,10.25
+17-Mar-18,Spal,Juventus,0,0,12.25,5,1.34
+17-Mar-18,Udinese,Sassuolo,1,2,2.22,3.24,3.75
+18-Mar-18,Lazio,Bologna,1,1,1.32,5.7,10.96
+18-Mar-18,Napoli,Genoa,1,0,1.23,6.08,19.5
+18-Mar-18,AC Milan,Chievo,3,2,1.4,4.68,10.08
+18-Mar-18,Benevento,Cagliari,1,2,2.35,3.33,3.34
+18-Mar-18,Crotone,AS Roma,0,2,5.95,4.01,1.65
+18-Mar-18,Torino,Fiorentina,1,2,2.85,3.24,2.74
+18-Mar-18,Verona,Atalanta,0,5,10.11,5.01,1.38
+18-Mar-18,Sampdoria,Inter,0,5,4.08,3.64,1.98
+31-Mar-18,Juventus,AC Milan,3,1,1.64,3.7,7
+31-Mar-18,Chievo,Sampdoria,2,1,2.34,3.34,3.36
+31-Mar-18,Sassuolo,Napoli,1,1,9.64,4.75,1.41
+31-Mar-18,Atalanta,Udinese,2,0,1.44,4.72,8.4
+31-Mar-18,Cagliari,Torino,0,4,3.1,3.27,2.52
+31-Mar-18,Fiorentina,Crotone,2,0,1.55,4.16,7.2
+31-Mar-18,Genoa,Spal,1,1,1.86,3.33,5.3
+31-Mar-18,Inter,Verona,3,0,1.15,9.22,20.98
+31-Mar-18,Lazio,Benevento,6,2,1.23,6.75,14.82
+31-Mar-18,Bologna,AS Roma,1,1,6.08,4.66,1.55
+3-Apr-18,Atalanta,Sampdoria,1,2,1.37,5.42,8.94
+3-Apr-18,Genoa,Cagliari,2,1,1.85,3.42,5.23
+3-Apr-18,Udinese,Fiorentina,0,2,3.59,3.23,2.29
+4-Apr-18,AC Milan,Inter,0,0,2.81,3.31,2.71
+4-Apr-18,Chievo,Sassuolo,1,1,3.15,2.96,2.71
+4-Apr-18,Torino,Crotone,4,1,1.6,4.03,6.62
+4-Apr-18,Benevento,Verona,3,0,1.8,4.03,4.51
+7-Apr-18,Sampdoria,Genoa,0,0,2.43,3.29,3.22
+7-Apr-18,AS Roma,Fiorentina,0,2,1.89,3.65,4.5
+7-Apr-18,Spal,Atalanta,1,1,4.95,3.68,1.81
+7-Apr-18,Benevento,Juventus,2,4,14.5,5.3,1.3
+8-Apr-18,AC Milan,Sassuolo,1,1,1.49,4.42,7.98
+8-Apr-18,Udinese,Lazio,1,2,5.55,4.16,1.65
+8-Apr-18,Crotone,Bologna,1,0,2.4,3.22,3.35
+8-Apr-18,Napoli,Chievo,2,1,1.15,8.5,25.6
+8-Apr-18,Verona,Cagliari,1,0,3.17,3.33,2.44
+8-Apr-18,Torino,Inter,1,0,4.38,3.66,1.91
+14-Apr-18,Atalanta,Inter,0,0,2.63,3.27,2.95
+14-Apr-18,Chievo,Torino,0,0,3.56,3.35,2.25
+14-Apr-18,Genoa,Crotone,1,0,1.94,3.27,4.84
+14-Apr-18,Cagliari,Udinese,2,1,2.44,3.14,3.37
+15-Apr-18,Lazio,AS Roma,0,0,2.64,3.33,2.89
+15-Apr-18,Juventus,Sampdoria,3,0,1.34,5.07,12.37
+15-Apr-18,AC Milan,Napoli,0,0,4.5,3.63,1.89
+15-Apr-18,Bologna,Verona,2,0,1.61,4.11,6.25
+15-Apr-18,Sassuolo,Benevento,2,2,1.7,4.05,5.25
+15-Apr-18,Fiorentina,Spal,0,0,1.52,4.19,7.89
+17-Apr-18,Inter,Cagliari,4,0,1.2,7.22,20
+18-Apr-18,AS Roma,Genoa,2,1,1.32,5.54,11.66
+18-Apr-18,Crotone,Juventus,1,1,14.18,5.04,1.32
+18-Apr-18,Fiorentina,Lazio,3,4,3.06,3.52,2.41
+18-Apr-18,Napoli,Udinese,4,2,1.22,6.75,16.5
+18-Apr-18,Sampdoria,Bologna,1,0,1.7,3.91,5.48
+18-Apr-18,Spal,Chievo,0,0,2.22,3.09,4
+18-Apr-18,Torino,AC Milan,1,1,3.24,3.4,2.37
+18-Apr-18,Verona,Sassuolo,0,1,4.59,3.7,1.86
+18-Apr-18,Benevento,Atalanta,0,3,6.79,4.57,1.52
+21-Apr-18,AC Milan,Benevento,0,1,1.24,6.55,13.5
+21-Apr-18,Sassuolo,Fiorentina,1,0,3.06,3.22,2.58
+21-Apr-18,Spal,AS Roma,0,3,5.34,3.52,1.8
+22-Apr-18,Juventus,Napoli,0,1,2.36,3.22,3.44
+22-Apr-18,Atalanta,Torino,2,1,1.55,4.28,6.81
+22-Apr-18,Chievo,Inter,1,2,7.46,4.19,1.53
+22-Apr-18,Lazio,Sampdoria,4,0,1.36,5.63,8.9
+22-Apr-18,Udinese,Crotone,1,2,2,3.27,4.51
+22-Apr-18,Cagliari,Bologna,0,0,2,3.27,4.55
+23-Apr-18,Genoa,Verona,3,1,1.42,4.8,8.9
+28-Apr-18,Inter,Juventus,2,3,3.04,3.17,2.62
+28-Apr-18,AS Roma,Chievo,4,1,1.31,5.78,11.6
+29-Apr-18,Torino,Lazio,0,1,5.3,4.13,1.68
+29-Apr-18,Fiorentina,Napoli,3,0,7.58,4.71,1.47
+29-Apr-18,Atalanta,Genoa,3,1,1.42,4.8,8.83
+29-Apr-18,Benevento,Udinese,3,3,3.04,3.31,2.52
+29-Apr-18,Bologna,AC Milan,1,2,5.99,3.94,1.65
+29-Apr-18,Sampdoria,Cagliari,4,1,1.93,3.64,4.3
+29-Apr-18,Verona,Spal,1,3,3.35,3.24,2.39
+29-Apr-18,Crotone,Sassuolo,4,1,2.29,3.2,3.58
+5-May-18,Juventus,Bologna,3,1,1.13,9.44,25.95
+5-May-18,AC Milan,Verona,4,1,1.11,11.25,26.2
+6-May-18,Cagliari,AS Roma,0,1,8.14,5.09,1.42
+6-May-18,Sassuolo,Sampdoria,1,0,2.25,3.54,3.34
+6-May-18,Chievo,Crotone,2,1,2.27,3.12,3.75
+6-May-18,Genoa,Fiorentina,2,3,3.84,3.58,2.06
+6-May-18,Lazio,Atalanta,1,1,1.98,3.57,4.16
+6-May-18,Napoli,Torino,2,2,1.22,7.42,14.1
+6-May-18,Spal,Benevento,2,0,1.53,4.63,6.41
+6-May-18,Udinese,Inter,0,4,4.58,3.72,1.86
+12-May-18,Inter,Sassuolo,1,2,1.22,7.69,13.5
+12-May-18,Benevento,Genoa,1,0,2.2,3.62,3.4
+13-May-18,AS Roma,Juventus,0,0,2.94,2.96,2.79
+13-May-18,Sampdoria,Napoli,0,2,5.88,4.98,1.52
+13-May-18,Atalanta,AC Milan,1,1,2.27,2.92,4.04
+13-May-18,Bologna,Chievo,1,2,2.25,3.2,3.76
+13-May-18,Crotone,Lazio,2,2,4.2,3.5,1.99
+13-May-18,Fiorentina,Cagliari,0,1,1.55,4.53,6.31
+13-May-18,Torino,Spal,2,1,1.92,3.44,4.7
+13-May-18,Verona,Udinese,0,1,7.9,5.04,1.43
+19-May-18,Juventus,Verona,2,1,1.09,13,28
+20-May-18,Lazio,Inter,2,3,2.56,3.73,2.72
+20-May-18,Sassuolo,AS Roma,0,1,4.84,3.85,1.78
+20-May-18,AC Milan,Fiorentina,5,1,1.66,4.3,5.23
+20-May-18,Cagliari,Atalanta,1,0,3.38,3.67,2.19
+20-May-18,Chievo,Benevento,1,0,1.7,4.04,5.12
+20-May-18,Napoli,Crotone,2,1,1.41,5.55,7.13
+20-May-18,Spal,Sampdoria,3,1,1.85,3.78,4.55
+20-May-18,Udinese,Bologna,1,0,1.56,4.29,6.69
+20-May-18,Genoa,Torino,1,2,2.27,3.71,3.16
+18-Aug-18,Lazio,Napoli,1,2,2.77,3.57,2.59
+18-Aug-18,Chievo,Juventus,2,3,18.84,6.42,1.22
+19-Aug-18,Bologna,Spal,0,1,2.31,3.18,3.59
+19-Aug-18,Empoli,Cagliari,2,0,2.54,3.42,2.95
+19-Aug-18,Parma,Udinese,2,2,2.79,3.24,2.77
+19-Aug-18,Sassuolo,Inter,1,0,5.08,3.71,1.79
+19-Aug-18,Torino,AS Roma,0,1,3.62,3.54,2.14
+20-Aug-18,Atalanta,Frosinone,4,0,1.35,5.26,10.53
+25-Aug-18,Napoli,AC Milan,3,2,1.65,4.01,5.94
+25-Aug-18,Juventus,Lazio,2,0,1.51,4.53,7.08
+26-Aug-18,Cagliari,Sassuolo,2,2,2.48,3.29,3.13
+26-Aug-18,Fiorentina,Chievo,6,1,1.45,4.58,8.36
+26-Aug-18,Frosinone,Bologna,0,0,3.54,3.12,2.37
+26-Aug-18,Genoa,Empoli,2,1,2.02,3.58,3.96
+26-Aug-18,Inter,Torino,2,2,1.59,3.98,6.91
+26-Aug-18,Udinese,Sampdoria,1,0,2.27,3.5,3.34
+26-Aug-18,Spal,Parma,1,0,2.47,3,3.47
+27-Aug-18,AS Roma,Atalanta,3,3,1.57,4.19,6.57
+31-Aug-18,AC Milan,AS Roma,2,1,2.41,3.42,3.14
+1-Sep-18,Parma,Juventus,1,2,15.41,6.29,1.25
+1-Sep-18,Bologna,Inter,0,3,5.09,3.17,1.94
+2-Sep-18,Atalanta,Cagliari,0,1,1.4,5.13,8.4
+2-Sep-18,Chievo,Empoli,0,0,3.14,3.29,2.48
+2-Sep-18,Lazio,Frosinone,1,0,1.25,6.25,14.55
+2-Sep-18,Sampdoria,Napoli,3,0,7.18,4.19,1.54
+2-Sep-18,Sassuolo,Genoa,5,3,2.29,3.31,3.45
+2-Sep-18,Torino,Spal,1,0,1.68,3.74,6.2
+2-Sep-18,Fiorentina,Udinese,1,0,1.74,3.92,5.13
+15-Sep-18,Napoli,Fiorentina,1,0,1.44,4.55,8.61
+15-Sep-18,Inter,Parma,0,1,1.31,5.47,12.28
+16-Sep-18,Cagliari,AC Milan,1,1,4.99,3.44,1.85
+16-Sep-18,Empoli,Lazio,0,1,5.38,4.09,1.67
+16-Sep-18,Genoa,Bologna,1,0,2.1,3.24,4.08
+16-Sep-18,Juventus,Sassuolo,2,1,1.21,6.94,15.44
+16-Sep-18,Udinese,Torino,1,1,2.81,3.27,2.71
+16-Sep-18,AS Roma,Chievo,2,2,1.22,7.11,14.13
+17-Sep-18,Spal,Atalanta,2,0,4.94,3.84,1.76
+19-Sep-18,Sampdoria,Fiorentina,1,1,2.93,3.36,2.59
+21-Sep-18,Sassuolo,Empoli,3,1,2.18,3.27,3.83
+22-Sep-18,Sampdoria,Inter,0,1,4.55,3.64,1.87
+22-Sep-18,Fiorentina,Spal,3,0,1.68,3.78,5.8
+22-Sep-18,Parma,Cagliari,2,0,2.48,3.36,3.04
+23-Sep-18,Frosinone,Juventus,0,2,18.51,7.16,1.19
+23-Sep-18,AC Milan,Atalanta,2,2,2.19,3.27,3.79
+23-Sep-18,Bologna,AS Roma,2,0,5.84,3.98,1.65
+23-Sep-18,Chievo,Udinese,0,2,2.9,3.09,2.81
+23-Sep-18,Lazio,Genoa,4,1,1.48,4.44,7.67
+23-Sep-18,Torino,Napoli,1,3,4.46,3.5,1.93
+25-Sep-18,Inter,Fiorentina,2,1,1.63,3.89,6.34
+26-Sep-18,AS Roma,Frosinone,4,0,1.2,7.13,16.11
+26-Sep-18,Atalanta,Torino,0,0,1.68,4.16,5.17
+26-Sep-18,Cagliari,Sampdoria,0,0,2.31,3.35,3.4
+26-Sep-18,Genoa,Chievo,2,0,1.76,3.69,5.3
+26-Sep-18,Juventus,Bologna,2,0,1.13,9.25,25.76
+26-Sep-18,Napoli,Parma,3,0,1.22,6.51,16.35
+26-Sep-18,Udinese,Lazio,1,2,4.11,3.29,2.08
+27-Sep-18,Empoli,AC Milan,1,1,4.88,3.6,1.83
+27-Sep-18,Spal,Sassuolo,0,2,2.46,3.25,3.22
+29-Sep-18,Inter,Cagliari,2,0,1.4,4.86,9.07
+29-Sep-18,Juventus,Napoli,3,1,1.86,3.43,5.03
+29-Sep-18,AS Roma,Lazio,3,1,2.68,3.58,2.68
+30-Sep-18,Sassuolo,AC Milan,1,4,3.54,3.61,2.14
+30-Sep-18,Parma,Empoli,1,0,2.5,3.45,2.99
+30-Sep-18,Chievo,Torino,0,1,4.05,3.33,2.08
+30-Sep-18,Fiorentina,Atalanta,2,0,2.39,3.44,3.17
+30-Sep-18,Frosinone,Genoa,1,2,3.59,3.37,2.22
+30-Sep-18,Bologna,Udinese,2,1,2.73,3.11,2.97
+1-Oct-18,Sampdoria,Spal,2,1,1.79,3.65,5.11
+5-Oct-18,Torino,Frosinone,3,2,1.46,4.3,8.67
+6-Oct-18,Empoli,AS Roma,0,2,4.59,4.13,1.76
+6-Oct-18,Udinese,Juventus,0,2,12.24,5.37,1.31
+6-Oct-18,Cagliari,Bologna,2,0,2.1,3.24,4.13
+7-Oct-18,Spal,Inter,1,2,7.21,3.98,1.56
+7-Oct-18,Napoli,Sassuolo,2,0,1.39,4.99,8.76
+7-Oct-18,AC Milan,Chievo,3,1,1.23,6.41,15.22
+7-Oct-18,Atalanta,Sampdoria,0,1,1.57,4.28,6.25
+7-Oct-18,Lazio,Fiorentina,1,0,1.79,3.83,4.83
+7-Oct-18,Genoa,Parma,1,3,1.75,3.66,5.4
+20-Oct-18,Udinese,Napoli,0,3,7.2,3.95,1.56
+20-Oct-18,Juventus,Genoa,1,1,1.16,8.09,22.21
+20-Oct-18,AS Roma,Spal,0,2,1.3,6.04,10.28
+21-Oct-18,Inter,AC Milan,1,0,2.52,3.23,3.13
+21-Oct-18,Fiorentina,Cagliari,1,1,1.65,3.81,6.3
+21-Oct-18,Bologna,Torino,2,2,3.29,3.1,2.5
+21-Oct-18,Chievo,Atalanta,1,5,5.95,4.16,1.61
+21-Oct-18,Parma,Lazio,0,2,6.17,4.22,1.58
+21-Oct-18,Frosinone,Empoli,3,3,3.22,3.38,2.39
+22-Oct-18,Sampdoria,Sassuolo,0,0,2.27,3.42,3.42
+27-Oct-18,Torino,Fiorentina,1,1,2.4,3.25,3.34
+27-Oct-18,Empoli,Juventus,1,2,11.67,5.57,1.3
+27-Oct-18,Atalanta,Parma,3,0,1.33,5.73,9.36
+28-Oct-18,Napoli,AS Roma,1,1,1.61,4.09,6.11
+28-Oct-18,AC Milan,Sampdoria,3,2,1.51,4.54,6.76
+28-Oct-18,Cagliari,Chievo,2,1,1.61,3.82,6.85
+28-Oct-18,Genoa,Udinese,2,2,2.08,3.54,3.77
+28-Oct-18,Spal,Frosinone,0,3,1.81,3.56,5.12
+28-Oct-18,Sassuolo,Bologna,2,2,1.83,3.6,4.87
+29-Oct-18,Lazio,Inter,0,3,2.54,3.25,3.09
+31-Oct-18,AC Milan,Genoa,2,1,1.5,4.47,7.15
+2-Nov-18,Napoli,Empoli,5,1,1.22,6.86,14.62
+3-Nov-18,Juventus,Cagliari,3,1,1.16,8.05,20.94
+3-Nov-18,Fiorentina,AS Roma,1,1,2.77,3.54,2.62
+3-Nov-18,Inter,Genoa,5,0,1.4,4.58,9.77
+4-Nov-18,Udinese,AC Milan,0,1,4.7,3.31,1.95
+4-Nov-18,Bologna,Atalanta,1,2,5.49,3.82,1.71
+4-Nov-18,Chievo,Sassuolo,0,2,3.89,3.4,2.1
+4-Nov-18,Parma,Frosinone,0,0,2.12,3.44,3.76
+4-Nov-18,Sampdoria,Torino,1,4,2.99,3.15,2.68
+4-Nov-18,Lazio,Spal,4,1,1.37,4.91,10.03
+9-Nov-18,Frosinone,Fiorentina,1,1,5.23,3.61,1.79
+10-Nov-18,Genoa,Napoli,1,2,8.07,4.84,1.42
+10-Nov-18,Spal,Cagliari,2,2,2.64,3.15,3.04
+10-Nov-18,Torino,Parma,1,2,1.5,4.13,8.11
+11-Nov-18,AC Milan,Juventus,0,2,5.42,3.61,1.76
+11-Nov-18,Sassuolo,Lazio,1,1,3.97,3.63,2
+11-Nov-18,AS Roma,Sampdoria,4,1,1.42,5.01,7.85
+11-Nov-18,Chievo,Bologna,2,2,3.09,3.15,2.61
+11-Nov-18,Empoli,Udinese,2,1,2.06,3.5,3.91
+11-Nov-18,Atalanta,Inter,4,1,2.81,3.49,2.61
+24-Nov-18,Inter,Frosinone,3,0,1.28,5.92,12.31
+24-Nov-18,Juventus,Spal,2,0,1.15,8.39,23.34
+24-Nov-18,Udinese,AS Roma,1,0,4.01,3.38,2.08
+25-Nov-18,Genoa,Sampdoria,1,1,2.79,3.18,2.84
+25-Nov-18,Lazio,AC Milan,1,1,1.78,3.77,5.01
+25-Nov-18,Bologna,Fiorentina,0,0,3.31,3.21,2.43
+25-Nov-18,Empoli,Atalanta,3,2,5.38,4.19,1.65
+25-Nov-18,Napoli,Chievo,0,0,1.14,8.73,23.49
+25-Nov-18,Parma,Sassuolo,2,1,3.4,3.54,2.22
+26-Nov-18,Cagliari,Torino,0,0,2.96,3.2,2.67
+1-Dec-18,Sampdoria,Bologna,4,1,2.04,3.27,4.26
+1-Dec-18,Fiorentina,Juventus,0,3,5.76,3.7,1.71
+1-Dec-18,Spal,Empoli,2,2,2.49,3.2,3.23
+2-Dec-18,AS Roma,Inter,2,2,2.71,3.5,2.69
+2-Dec-18,Chievo,Lazio,1,1,6.88,4.42,1.52
+2-Dec-18,Frosinone,Cagliari,1,1,3.29,3.22,2.43
+2-Dec-18,Sassuolo,Udinese,0,0,2.04,3.39,4.09
+2-Dec-18,Torino,Genoa,2,1,1.88,3.59,4.63
+2-Dec-18,AC Milan,Parma,2,1,1.53,4.24,7.03
+3-Dec-18,Atalanta,Napoli,1,2,3.56,3.33,2.25
+7-Dec-18,Juventus,Inter,1,0,1.57,3.97,7.05
+8-Dec-18,Lazio,Sampdoria,2,2,1.45,4.91,7.21
+8-Dec-18,Cagliari,AS Roma,2,2,4.24,3.74,1.91
+8-Dec-18,Napoli,Frosinone,4,0,1.18,7.46,18.1
+9-Dec-18,AC Milan,Torino,0,0,1.95,3.29,4.75
+9-Dec-18,Genoa,Spal,1,1,1.94,3.48,4.42
+9-Dec-18,Empoli,Bologna,2,1,2.08,3.5,3.82
+9-Dec-18,Parma,Chievo,1,1,2.12,3.27,4.04
+9-Dec-18,Udinese,Atalanta,1,3,4.3,3.41,2
+9-Dec-18,Sassuolo,Fiorentina,3,3,2.54,3.25,3.06
+15-Dec-18,Torino,Juventus,0,1,7.16,3.83,1.59
+15-Dec-18,Inter,Udinese,1,0,1.34,5.36,10.14
+16-Dec-18,AS Roma,Genoa,3,2,1.52,4.53,6.63
+16-Dec-18,Cagliari,Napoli,0,1,7.1,3.82,1.6
+16-Dec-18,Fiorentina,Empoli,3,1,1.87,3.61,4.65
+16-Dec-18,Frosinone,Sassuolo,0,2,3.74,3.31,2.19
+16-Dec-18,Sampdoria,Parma,2,0,1.93,3.37,4.67
+16-Dec-18,Spal,Chievo,0,0,2.02,3.29,4.34
+17-Dec-18,Atalanta,Lazio,1,0,2.08,3.48,3.84
+18-Dec-18,Bologna,AC Milan,0,0,4.51,3.39,1.96
+22-Dec-18,Juventus,AS Roma,1,0,1.38,4.86,9.96
+22-Dec-18,Chievo,Inter,1,1,9.47,4.94,1.38
+22-Dec-18,Parma,Bologna,0,0,2.54,3.13,3.2
+22-Dec-18,AC Milan,Fiorentina,0,1,2.19,3.27,3.78
+22-Dec-18,Empoli,Sampdoria,2,4,2.42,3.5,3.06
+22-Dec-18,Genoa,Atalanta,3,1,4.41,3.82,1.85
+22-Dec-18,Napoli,Spal,1,0,1.19,7.47,16.85
+22-Dec-18,Sassuolo,Torino,1,1,2.62,3.08,3.14
+22-Dec-18,Udinese,Frosinone,1,1,1.71,3.77,5.55
+22-Dec-18,Lazio,Cagliari,3,1,1.33,5.46,10.28
+26-Dec-18,Inter,Napoli,1,0,2.91,3.37,2.6
+26-Dec-18,AS Roma,Sassuolo,3,1,1.53,4.49,6.53
+26-Dec-18,Spal,Udinese,0,0,2.38,3.11,3.52
+26-Dec-18,Torino,Empoli,3,0,1.78,3.66,5.15
+26-Dec-18,Atalanta,Juventus,2,2,5.07,3.31,1.89
+26-Dec-18,Bologna,Lazio,0,2,5.55,3.59,1.76
+26-Dec-18,Cagliari,Genoa,1,0,2.31,3.42,3.34
+26-Dec-18,Fiorentina,Parma,0,1,1.48,4.48,7.51
+26-Dec-18,Sampdoria,Chievo,2,0,1.63,3.79,6.61
+26-Dec-18,Frosinone,AC Milan,0,0,6.59,3.69,1.65
+29-Dec-18,AC Milan,Spal,2,1,1.47,4.15,8.97
+29-Dec-18,Napoli,Bologna,3,2,1.26,6.07,12.79
+29-Dec-18,Chievo,Frosinone,1,0,1.97,3.24,4.72
+29-Dec-18,Empoli,Inter,0,1,7.29,4.67,1.47
+29-Dec-18,Genoa,Fiorentina,0,0,2.66,3.2,2.97
+29-Dec-18,Lazio,Torino,1,1,1.65,3.88,6.04
+29-Dec-18,Parma,AS Roma,0,2,5.75,4.23,1.61
+29-Dec-18,Sassuolo,Atalanta,2,6,3.17,3.57,2.33
+29-Dec-18,Udinese,Cagliari,2,0,2.66,3,3.18
+29-Dec-18,Juventus,Sampdoria,2,1,1.2,7.06,17.17
+19-Jan-19,Inter,Sassuolo,0,0,1.44,4.61,8.14
+19-Jan-19,Udinese,Parma,1,2,2.18,3.13,4.05
+19-Jan-19,AS Roma,Torino,3,2,1.64,4.09,5.68
+20-Jan-19,Napoli,Lazio,2,1,2.14,3.39,3.77
+20-Jan-19,Cagliari,Empoli,2,2,2,3.56,4.05
+20-Jan-19,Fiorentina,Sampdoria,3,3,1.84,3.63,4.79
+20-Jan-19,Spal,Bologna,1,1,2.52,2.99,3.39
+20-Jan-19,Frosinone,Atalanta,0,5,7.56,4.62,1.47
+21-Jan-19,Juventus,Chievo,3,0,1.1,10.68,30.99
+21-Jan-19,Genoa,AC Milan,0,2,3.29,3.18,2.46
+26-Jan-19,AC Milan,Napoli,0,0,3.58,3.22,2.29
+26-Jan-19,Sampdoria,Udinese,4,0,1.93,3.35,4.71
+26-Jan-19,Sassuolo,Cagliari,3,0,2.04,3.49,3.99
+27-Jan-19,Lazio,Juventus,1,2,4.12,3.27,2.08
+27-Jan-19,Torino,Inter,1,0,3.46,3.23,2.34
+27-Jan-19,Atalanta,AS Roma,3,3,2.02,4.03,3.54
+27-Jan-19,Bologna,Frosinone,0,4,1.62,3.72,7.03
+27-Jan-19,Parma,Spal,2,3,2.35,3.11,3.61
+27-Jan-19,Chievo,Fiorentina,3,4,5.05,3.37,1.88
+28-Jan-19,Empoli,Genoa,1,3,2.48,3.35,3.1
+2-Feb-19,Juventus,Parma,3,3,1.18,7.54,19.44
+2-Feb-19,Napoli,Sampdoria,3,0,1.32,5.42,10.82
+2-Feb-19,Empoli,Chievo,2,2,1.85,3.72,4.55
+3-Feb-19,AS Roma,AC Milan,1,1,2.29,3.41,3.37
+3-Feb-19,Inter,Bologna,0,1,1.41,4.63,9.26
+3-Feb-19,Genoa,Sassuolo,1,1,2.37,3.39,3.24
+3-Feb-19,Udinese,Fiorentina,1,1,4.05,3.27,2.1
+3-Feb-19,Spal,Torino,0,0,3.35,2.98,2.56
+4-Feb-19,Cagliari,Atalanta,0,1,5.61,4.37,1.61
+4-Feb-19,Frosinone,Lazio,0,1,8.98,5.28,1.36
+7-Feb-19,Lazio,Empoli,1,0,1.42,4.84,8.25
+8-Feb-19,Chievo,AS Roma,0,3,6.3,4.51,1.54
+9-Feb-19,Parma,Inter,0,1,6.16,3.88,1.64
+9-Feb-19,Fiorentina,Napoli,0,0,4.01,3.45,2.06
+10-Feb-19,AC Milan,Cagliari,3,0,1.47,4.26,8.52
+10-Feb-19,Sassuolo,Juventus,0,3,7.91,4.01,1.52
+10-Feb-19,Atalanta,Spal,2,1,1.35,5.3,9.74
+10-Feb-19,Sampdoria,Frosinone,0,1,1.55,4.07,7.11
+10-Feb-19,Torino,Udinese,1,0,1.77,3.52,5.59
+10-Feb-19,Bologna,Genoa,1,1,2.46,3.18,3.29
+15-Feb-19,Juventus,Frosinone,3,0,1.11,10.27,31.41
+16-Feb-19,Atalanta,AC Milan,1,3,2.12,3.38,3.84
+16-Feb-19,Cagliari,Parma,2,1,2.02,3.41,4.15
+17-Feb-19,Napoli,Torino,0,0,1.38,4.8,9.77
+17-Feb-19,Inter,Sampdoria,2,1,1.58,3.88,7.2
+17-Feb-19,Empoli,Sassuolo,3,0,2.59,3.44,2.87
+17-Feb-19,Genoa,Lazio,2,1,3.39,3.33,2.33
+17-Feb-19,Udinese,Chievo,1,0,1.98,3.22,4.7
+17-Feb-19,Spal,Fiorentina,1,4,3.78,3.16,2.25
+18-Feb-19,AS Roma,Bologna,2,1,1.4,4.84,8.75
+22-Feb-19,AC Milan,Empoli,3,0,1.48,4.34,7.97
+23-Feb-19,Frosinone,AS Roma,2,3,8.43,4.73,1.42
+23-Feb-19,Torino,Atalanta,2,0,2.98,3.31,2.56
+24-Feb-19,Fiorentina,Inter,3,3,3.12,3.36,2.46
+24-Feb-19,Parma,Napoli,0,4,10.88,5.13,1.34
+24-Feb-19,Bologna,Juventus,0,1,7.76,3.91,1.55
+24-Feb-19,Chievo,Genoa,0,0,3.23,3.09,2.54
+24-Feb-19,Sassuolo,Spal,1,1,2,3.45,4.18
+24-Feb-19,Sampdoria,Cagliari,1,0,1.74,3.57,5.74
+1-Mar-19,Cagliari,Inter,2,1,5.49,3.52,1.78
+2-Mar-19,Lazio,AS Roma,3,0,2.39,3.5,3.13
+2-Mar-19,AC Milan,Sassuolo,1,0,1.57,3.96,7.1
+2-Mar-19,Empoli,Parma,3,3,2.06,3.48,3.96
+3-Mar-19,Napoli,Juventus,1,2,2.56,3.16,3.14
+3-Mar-19,Atalanta,Fiorentina,3,1,1.84,3.76,4.57
+3-Mar-19,Genoa,Frosinone,0,0,1.76,3.52,5.59
+3-Mar-19,Spal,Sampdoria,1,2,3.02,3.14,2.66
+3-Mar-19,Udinese,Bologna,2,1,2.77,2.92,3.11
+3-Mar-19,Torino,Chievo,3,0,1.6,3.84,7.04
+8-Mar-19,Juventus,Udinese,4,1,1.45,4.26,9.19
+9-Mar-19,Chievo,AC Milan,1,2,5.98,3.5,1.74
+9-Mar-19,Parma,Genoa,1,0,2.98,3.04,2.77
+10-Mar-19,Fiorentina,Lazio,1,1,3.02,3.42,2.49
+10-Mar-19,Sassuolo,Napoli,1,1,6.41,4.04,1.6
+10-Mar-19,Frosinone,Torino,1,2,4.29,3.12,2.12
+10-Mar-19,Inter,Spal,2,0,1.4,4.51,10.19
+10-Mar-19,Sampdoria,Atalanta,1,2,3.87,3.52,2.06
+10-Mar-19,Bologna,Cagliari,2,0,2,3.29,4.48
+11-Mar-19,AS Roma,Empoli,2,1,1.53,4.46,6.59
+15-Mar-19,Cagliari,Fiorentina,2,1,3.25,3.36,2.38
+16-Mar-19,Torino,Bologna,2,3,2.1,3.14,4.3
+16-Mar-19,Spal,AS Roma,2,1,3.7,3.29,2.21
+16-Mar-19,Sassuolo,Sampdoria,3,5,2.38,3.34,3.27
+17-Mar-19,AC Milan,Inter,2,3,2.7,3.04,3.06
+17-Mar-19,Napoli,Udinese,4,2,1.21,6.95,16.37
+17-Mar-19,Atalanta,Chievo,1,1,1.22,6.86,14.93
+17-Mar-19,Empoli,Frosinone,2,1,1.79,3.78,4.91
+17-Mar-19,Lazio,Parma,4,1,1.28,6.04,11.74
+17-Mar-19,Genoa,Juventus,2,0,6.04,3.43,1.75
+29-Mar-19,Chievo,Cagliari,0,3,2.61,3.1,3.13
+30-Mar-19,Sampdoria,AC Milan,1,0,3.09,3.27,2.52
+30-Mar-19,Juventus,Empoli,1,0,1.31,5.28,12.69
+30-Mar-19,Udinese,Genoa,2,0,2.75,3.14,2.91
+31-Mar-19,Inter,Lazio,0,1,2.61,3.22,3.02
+31-Mar-19,Bologna,Sassuolo,2,1,2.22,3.37,3.58
+31-Mar-19,AS Roma,Napoli,1,4,3.39,3.54,2.23
+31-Mar-19,Fiorentina,Torino,1,1,2.24,3.31,3.61
+31-Mar-19,Frosinone,Spal,0,1,3.02,3.15,2.65
+31-Mar-19,Parma,Atalanta,1,3,6.09,4.33,1.57
+2-Apr-19,Cagliari,Juventus,0,2,6.04,3.48,1.74
+2-Apr-19,AC Milan,Udinese,1,1,1.59,3.88,6.96
+3-Apr-19,AS Roma,Fiorentina,2,2,2,3.67,3.88
+3-Apr-19,Frosinone,Parma,3,2,2.06,3.27,4.21
+3-Apr-19,Genoa,Inter,0,4,4.34,3.57,1.93
+3-Apr-19,Spal,Lazio,1,0,6.14,3.96,1.63
+3-Apr-19,Torino,Sampdoria,2,1,2.22,3.31,3.68
+3-Apr-19,Empoli,Napoli,2,1,5.94,4.45,1.57
+4-Apr-19,Atalanta,Bologna,4,1,1.4,4.93,8.86
+4-Apr-19,Sassuolo,Chievo,4,0,1.71,3.74,5.69
+6-Apr-19,Sampdoria,AS Roma,0,1,2.62,3.5,2.79
+6-Apr-19,Juventus,AC Milan,2,1,1.88,3.25,5.23
+6-Apr-19,Parma,Torino,0,0,4.8,3.71,1.82
+7-Apr-19,Napoli,Genoa,1,1,1.28,5.8,12.05
+7-Apr-19,Inter,Atalanta,0,0,2.2,3.5,3.48
+7-Apr-19,Lazio,Sassuolo,2,2,1.37,5.19,9.01
+7-Apr-19,Cagliari,Spal,2,1,2.18,3.11,4.07
+7-Apr-19,Udinese,Empoli,3,2,2.54,3.11,3.23
+7-Apr-19,Fiorentina,Frosinone,0,1,1.42,4.63,8.74
+8-Apr-19,Bologna,Chievo,3,0,1.45,4.49,8.48
+13-Apr-19,AC Milan,Lazio,1,0,2.75,3.34,2.75
+13-Apr-19,AS Roma,Udinese,1,0,1.63,4.05,5.88
+13-Apr-19,Spal,Juventus,2,1,3.54,2.91,2.5
+14-Apr-19,Frosinone,Inter,1,3,7.7,4.46,1.48
+14-Apr-19,Chievo,Napoli,1,3,10.73,5.34,1.33
+14-Apr-19,Fiorentina,Bologna,0,0,2.06,3.41,3.99
+14-Apr-19,Sampdoria,Genoa,2,0,2.36,3.14,3.54
+14-Apr-19,Sassuolo,Parma,0,0,1.7,3.64,5.97
+14-Apr-19,Torino,Cagliari,1,1,1.75,3.6,5.58
+15-Apr-19,Atalanta,Empoli,0,0,1.35,5.26,9.49
+17-Apr-19,Lazio,Udinese,2,0,1.32,5.49,10.53
+20-Apr-19,Inter,AS Roma,1,1,1.82,4.01,4.37
+20-Apr-19,Juventus,Fiorentina,2,1,1.44,4.44,9.02
+20-Apr-19,Bologna,Sampdoria,3,0,2.27,3.33,3.5
+20-Apr-19,Cagliari,Frosinone,1,0,1.92,3.44,4.63
+20-Apr-19,Empoli,Spal,2,4,2.24,3.31,3.63
+20-Apr-19,Genoa,Torino,0,1,3.06,3.04,2.71
+20-Apr-19,Lazio,Chievo,1,2,1.16,8.33,20.55
+20-Apr-19,Udinese,Sassuolo,1,1,2.31,3.27,3.48
+20-Apr-19,Parma,AC Milan,1,1,5.94,3.74,1.68
+22-Apr-19,Napoli,Atalanta,1,2,2.2,3.54,3.47
+27-Apr-19,Inter,Juventus,1,1,2.81,3.27,2.73
+27-Apr-19,AS Roma,Cagliari,3,0,1.36,5.33,9.03
+27-Apr-19,Bologna,Empoli,3,1,1.72,4.01,5.01
+28-Apr-19,Torino,AC Milan,2,0,2.77,3.06,2.96
+28-Apr-19,Sampdoria,Lazio,1,2,3.17,3.67,2.29
+28-Apr-19,Chievo,Parma,1,1,2.87,3.23,2.73
+28-Apr-19,Spal,Genoa,1,1,3.13,2.96,2.73
+28-Apr-19,Frosinone,Napoli,0,2,10.94,5.46,1.32
+29-Apr-19,Fiorentina,Sassuolo,0,1,1.65,4.07,5.59
+29-Apr-19,Atalanta,Udinese,2,0,1.38,5,9.11
+3-May-19,Juventus,Torino,1,1,1.59,4.04,6.49
+4-May-19,Udinese,Inter,0,0,5.74,3.84,1.68
+4-May-19,Chievo,Spal,0,4,3.76,3.17,2.25
+5-May-19,Napoli,Cagliari,2,1,1.22,7.58,11.89
+5-May-19,Genoa,AS Roma,1,1,3.36,3.37,2.31
+5-May-19,Lazio,Atalanta,1,3,2.45,3.54,2.99
+5-May-19,Parma,Sampdoria,3,3,3.08,3.27,2.52
+5-May-19,Sassuolo,Frosinone,2,2,1.67,4.09,5.4
+5-May-19,Empoli,Fiorentina,1,0,2.5,3.75,2.77
+6-May-19,AC Milan,Bologna,2,1,1.85,3.42,5.12
+11-May-19,Fiorentina,AC Milan,0,1,3,3.45,2.49
+11-May-19,Cagliari,Lazio,1,2,4.42,3.92,1.83
+11-May-19,Atalanta,Genoa,2,1,1.58,3.89,7.08
+12-May-19,AS Roma,Juventus,2,0,2.69,3.49,2.73
+12-May-19,Spal,Napoli,1,2,5.16,3.93,1.72
+12-May-19,Frosinone,Udinese,1,3,3.82,3.31,2.16
+12-May-19,Sampdoria,Empoli,1,2,2.25,3.92,3.06
+12-May-19,Torino,Sassuolo,3,2,1.57,4.32,6.11
+13-May-19,Inter,Chievo,2,0,1.14,9.11,22.62
+13-May-19,Bologna,Parma,4,1,1.73,3.42,6.32
+18-May-19,Sassuolo,AS Roma,0,0,4.99,4.38,1.67
+18-May-19,Genoa,Cagliari,1,1,1.53,4.38,6.62
+18-May-19,Udinese,Spal,3,2,1.56,4.3,6.35
+19-May-19,Juventus,Atalanta,1,1,2.31,3.27,3.46
+19-May-19,Napoli,Inter,4,1,2.48,3.37,3.08
+19-May-19,AC Milan,Frosinone,2,0,1.18,8.13,16.12
+19-May-19,Empoli,Torino,4,1,3.09,3.75,2.29
+19-May-19,Parma,Fiorentina,1,0,4.08,3.04,2.21
+19-May-19,Chievo,Sampdoria,0,0,3.95,3.99,1.91
+20-May-19,Lazio,Bologna,3,3,2.46,2.97,3.56
+25-May-19,Bologna,Napoli,3,2,3.18,3.68,2.27
+25-May-19,Frosinone,Chievo,0,0,2.06,3.67,3.71
+26-May-19,AS Roma,Parma,2,1,1.17,8.59,16.35
+26-May-19,Atalanta,Sassuolo,3,1,1.27,6.25,11.53
+26-May-19,Cagliari,Udinese,1,2,1.85,3.88,4.34
+26-May-19,Fiorentina,Genoa,0,0,2.34,2.73,4.2
+26-May-19,Inter,Empoli,2,1,1.27,6.36,10.94
+26-May-19,Spal,AC Milan,2,3,5.41,4.3,1.63
+26-May-19,Sampdoria,Juventus,2,0,3.06,3.54,2.4
+26-May-19,Torino,Lazio,3,1,2.36,3.56,3.12

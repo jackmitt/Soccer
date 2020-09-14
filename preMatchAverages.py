@@ -29,7 +29,7 @@ def last5scale(a, b):
     return ((((np.average(e) + np.average(f)) / 2)*.5 + ((c+d)/(2*totalT)))*.5)
     #return ((((np.average(e) + np.average(f)) / 2)*.5 + ((c+d)/(2)))*.5)
 
-data = pd.read_csv('./SerieA_Csvs/allRawData.csv', encoding = "ISO-8859-1")
+data = pd.read_csv('./EPL_Csvs/allRawData.csv', encoding = "ISO-8859-1")
 dict = {}
 #X indicates opponent's stat, T adjusts for recent performance, E adjusts for quality of opponent
 sides = ["", "X_"]
@@ -1032,4 +1032,4 @@ for index, row in data.iterrows():
     #print (seasonDict)
 for key in dict:
     data[key] = dict[key]
-data.to_csv("./SerieA_Csvs/bigboy.csv")
+data.to_csv("./EPL_Csvs/bigboy.csv")

@@ -8,9 +8,10 @@ Order for recreating model from scratch:
 4.5) delete columns containing old indices
 5) preMatchAverages.py
 6) poissonFormat.py
-6.5) Delete the T variables since those don't help the model/keeping this step so that first 5 games are already removed from the set
+6.5) trainTestSplit.py if applicable
 7) poissonRegression.R
-8) bettingProbabilities.py
+***) PoissonMeansForWeibull.py then WeibullCountDist.py then fix dates if necessary in WeibullPredictions.csv
+8) bettingProbabilities.py/weibullBettingProbabilities.py
 9) naiveEvaluation.py
 10) regressionOnModelledEdge.R
 11) bettingSims.py

@@ -1,13 +1,25 @@
 library(ggplot2)
 library(sandwich)
 library(msm)
-library(glmnet)
+library(glmnetUtils)
+library(sigmoid)
+library(My.stepwise)
+library(MASS)
 
-data = read.csv("C:/Users/JackMitt/Documents/EPLBettingModel/SerieA_Csvs/poissonFormattedData.csv")
+data = read.csv("C:/Users/JackMitt/Documents/EPLBettingModel/SerieA_Csvs/newvars_only_T_E_Vars/poissonFormattedDataOnlyTE.csv")
 numData = data[-c(1,2,3,4)]
 dataScaled = as.data.frame(scale(numData))
+#tData = dataScaled[c(1:58)]
+#eData = dataScaled[-c(1:58)]
+#tData = sigmoid(tData)
+#dataScaled = cbind(tData, eData)
 dataScaled["Home Field"] = data["Home.Field"]
 dataScaled["Score"] = data["Score"]
+#model = glm(Score ~ ., family = poisson, data = dataScaled)
+#opt = stepAIC(model)
+#df = as.data.frame(model.matrix(opt))
+#dataScaled = df[-c(1)]
+#dataScaled["Score"] = data["Score"]
 predictions = c()
 for (i in 1:nrow(dataScaled)){
   print (i)
@@ -20,6 +32,8 @@ for (i in 1:nrow(dataScaled)){
   tempTrain = dataScaled[-c(i),]
   model = glm(Score ~ ., family = poisson, data = tempTrain)
   predictions = c(predictions, predict(model, newdata = tempTest, type = "response"))
+  #model = glmnet(Score ~ ., family = "poisson", data = tempTrain, alpha = 0)
+  #predictions = c(predictions, predict(model, newdata = tempTest, type = "response", s = 0.25))
 }
 
 data["Poisson Mean Prediction"] = predictions
@@ -59,5 +73,5 @@ data["8 Goal Prob"] = prob_8_goal
 data["9 Goal Prob"] = prob_9_goal
 data["10 Goal Prob"] = prob_10_goal
 
-write.csv(data, "C:/Users/JackMitt/Documents/EPLBettingModel/SerieA_Csvs/poissonPredictionMeans.csv")
+write.csv(data, "C:/Users/JackMitt/Documents/EPLBettingModel/SerieA_Csvs/poissonPredictionMeansRidge.csv")
 

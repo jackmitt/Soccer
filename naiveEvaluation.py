@@ -1,11 +1,11 @@
 import pandas as pd
 import numpy as np
 
-pred = pd.read_csv('./SerieA_Csvs/bettingPredictions.csv', encoding = "ISO-8859-1")
+pred = pd.read_csv('./EPL_Csvs/no_T_Vars/weibull_copula/bettingPredictionsTest.csv', encoding = "ISO-8859-1")
 mlDict = {"Book Prob":[],"Edge":[],"Result":[],"P":[]}
 ahDict = {"Book Prob":[],"Edge":[],"Result":[],"P":[]}
 ouDict = {"Book Prob":[],"Edge":[],"Result":[],"P":[]}
-
+print(pred)
 #pred = pred.sample(frac=1).reset_index(drop=True)
 bankroll = 30000
 resultsByEdge =[[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[]]
@@ -517,8 +517,8 @@ print ("OU Net Win Fixed Betting:", ou["netWinFixed"])
 # for i in range(20):
 #     print (i, np.average(resultsByKK[i]), len(resultsByKK[i]))
 # dfFinal = pd.DataFrame.from_dict(mlDict)
-# dfFinal.to_csv("./EPL_Csvs/only_T_E_Vars/mlResultsByEdge.csv")
+# dfFinal.to_csv("./SerieA_Csvs/newvars_only_T_E_Vars/weibull_copula/mlResultsByEdge.csv")
 # dfFinal = pd.DataFrame.from_dict(ahDict)
-# dfFinal.to_csv("./EPL_Csvs/only_T_E_Vars/ahResultsByEdge.csv")
+# dfFinal.to_csv("./SerieA_Csvs/newvars_only_T_E_Vars/weibull_copula/ahResultsByEdge.csv")
 # dfFinal = pd.DataFrame.from_dict(ouDict)
-# dfFinal.to_csv("./EPL_Csvs/only_T_E_Vars/ouResultsByEdge.csv")
+# dfFinal.to_csv("./SerieA_Csvs/newvars_only_T_E_Vars/weibull_copula/ouResultsByEdge.csv")

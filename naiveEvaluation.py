@@ -1,7 +1,7 @@
 import pandas as pd
 import numpy as np
 
-pred = pd.read_csv('./EPL_Csvs/no_T_Vars/weibull_copula/bettingPredictionsTest.csv', encoding = "ISO-8859-1")
+pred = pd.read_csv('./EPL_Csvs/newvars_no_T/weibull_copula/bettingPredictions.csv', encoding = "ISO-8859-1")
 mlDict = {"Book Prob":[],"Edge":[],"Result":[],"P":[]}
 ahDict = {"Book Prob":[],"Edge":[],"Result":[],"P":[]}
 ouDict = {"Book Prob":[],"Edge":[],"Result":[],"P":[]}
@@ -100,6 +100,11 @@ for index, row in pred.iterrows():
                 mlDict["Book Prob"].append(1/row[ml["colName"]])
                 mlDict["Edge"].append(ml["edge"])
                 mlDict["P"].append(1/row[ml["colName"]] + ml["edge"])
+    else:
+        mlDict["Result"].append(np.nan)
+        mlDict["Book Prob"].append(np.nan)
+        mlDict["Edge"].append(np.nan)
+        mlDict["P"].append(np.nan)
     if (ah["edge"] > 0 and ah["edge"]):
         ahoddsTaken.append(row[ah["colName"]])
         if (ah["colName"].split()[1].split(".")[1] != "25" and ah["colName"].split()[1].split(".")[1] != "75"):
@@ -284,6 +289,11 @@ for index, row in pred.iterrows():
                             resultsByKK[int(((row["P(" + ah["colName"] + ")"] - (1/row[ah["colName"]])) / (1-(1/row[ah["colName"]])))*50)].append(0)
                         except:
                             resultsByKK[19].append(0)
+    else:
+        ahDict["Result"].append(np.nan)
+        ahDict["Book Prob"].append(np.nan)
+        ahDict["Edge"].append(np.nan)
+        ahDict["P"].append(np.nan)
     if (ou["edge"] > 0 and ou["edge"]):
         ouoddsTaken.append(row[ou["colName"]])
         if (ou["colName"].split()[1].split(".")[1] != "25" and ou["colName"].split()[1].split(".")[1] != "75"):
@@ -495,6 +505,11 @@ for index, row in pred.iterrows():
                         ouresultsByKK[int(((row["P(" + ou["colName"] + ")"] - (1/row[ou["colName"]])) / (1-(1/row[ou["colName"]])))*50)].append(0)
                     except:
                         ouresultsByKK[19].append(0)
+    else:
+        ouDict["Result"].append(np.nan)
+        ouDict["Book Prob"].append(np.nan)
+        ouDict["Edge"].append(np.nan)
+        ouDict["P"].append(np.nan)
     #print (bankroll, ml["netWin"])
 print ("------------------------")
 print ("Final Bankroll:", bankroll)
@@ -510,15 +525,15 @@ print ("OU Odds Taken:", 1/np.average(ouoddsTaken))
 print ("OU Results:",np.average(ouresults))
 print ("OU Net Win:", ou["netWin"])
 print ("OU Net Win Fixed Betting:", ou["netWinFixed"])
-# for i in range(20):
-#     print (i, np.average(resultsByEdge[i]), len(resultsByEdge[i]))
-# for i in range(20):
-#     print (i, np.average(resultsByKK[i]), len(resultsByKK[i]))
-# for i in range(20):
-#     print (i, np.average(resultsByKK[i]), len(resultsByKK[i]))
-# dfFinal = pd.DataFrame.from_dict(mlDict)
-# dfFinal.to_csv("./SerieA_Csvs/newvars_only_T_E_Vars/weibull_copula/mlResultsByEdge.csv")
-# dfFinal = pd.DataFrame.from_dict(ahDict)
-# dfFinal.to_csv("./SerieA_Csvs/newvars_only_T_E_Vars/weibull_copula/ahResultsByEdge.csv")
-# dfFinal = pd.DataFrame.from_dict(ouDict)
-# dfFinal.to_csv("./SerieA_Csvs/newvars_only_T_E_Vars/weibull_copula/ouResultsByEdge.csv")
+for i in range(20):
+    print (i, np.average(resultsByEdge[i]), len(resultsByEdge[i]))
+for i in range(20):
+    print (i, np.average(resultsByKK[i]), len(resultsByKK[i]))
+for i in range(20):
+    print (i, np.average(resultsByKK[i]), len(resultsByKK[i]))
+dfFinal = pd.DataFrame.from_dict(mlDict)
+dfFinal.to_csv("./EPL_Csvs/newvars_no_T/weibull_copula/mlResultsByEdge.csv")
+dfFinal = pd.DataFrame.from_dict(ahDict)
+dfFinal.to_csv("./EPL_Csvs/newvars_no_T/weibull_copula/ahResultsByEdge.csv")
+dfFinal = pd.DataFrame.from_dict(ouDict)
+dfFinal.to_csv("./EPL_Csvs/newvars_no_T/weibull_copula/ouResultsByEdge.csv")

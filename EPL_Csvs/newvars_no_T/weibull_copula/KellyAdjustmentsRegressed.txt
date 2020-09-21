@@ -1,0 +1,835 @@
+Level 0 with ahDiv of 1 ; ouDiv of 100000 ; mlDiv of 100000
+Average Seasonal Return: 2.0378575941529373
+Standard Deviation: 27.717203030858773
+Lowest Observed Return: -1
+Highest Observed Return: 610.6550157796104
+Average Bet Size: 0.04068781896624961
+Percent of Seasons Ending with less than 100% of bankroll: 0.832
+Percent of Seasons Ending with less than 75% of bankroll: 0.799
+Percent of Seasons Ending with less than 50% of bankroll: 0.767
+Percent of Seasons Ending with less than 25% of bankroll: 0.707
+------------------------------------------------------------------------------------------------
+Level 1 with ahDiv of 1.5 ; ouDiv of 100000.5 ; mlDiv of 100000.5
+Average Seasonal Return: 0.8298032385595256
+Standard Deviation: 5.3435034607428324
+Lowest Observed Return: -1
+Highest Observed Return: 81.76810258904624
+Average Bet Size: 0.027086618078869244
+Percent of Seasons Ending with less than 100% of bankroll: 0.664
+Percent of Seasons Ending with less than 75% of bankroll: 0.591
+Percent of Seasons Ending with less than 50% of bankroll: 0.506
+Percent of Seasons Ending with less than 25% of bankroll: 0.34
+------------------------------------------------------------------------------------------------
+Level 2 with ahDiv of 2.0 ; ouDiv of 100001.0 ; mlDiv of 100001.0
+Average Seasonal Return: 0.6789246131601164
+Standard Deviation: 2.7289808169504237
+Lowest Observed Return: -0.9912421907276641
+Highest Observed Return: 36.57607037714851
+Average Bet Size: 0.02033989943641637
+Percent of Seasons Ending with less than 100% of bankroll: 0.568
+Percent of Seasons Ending with less than 75% of bankroll: 0.455
+Percent of Seasons Ending with less than 50% of bankroll: 0.343
+Percent of Seasons Ending with less than 25% of bankroll: 0.157
+------------------------------------------------------------------------------------------------
+Level 3 with ahDiv of 2.5 ; ouDiv of 100001.5 ; mlDiv of 100001.5
+Average Seasonal Return: 0.6015857052674095
+Standard Deviation: 1.9811725262759652
+Lowest Observed Return: -0.9723792117655
+Highest Observed Return: 20.22542870926028
+Average Bet Size: 0.01622806917871137
+Percent of Seasons Ending with less than 100% of bankroll: 0.497
+Percent of Seasons Ending with less than 75% of bankroll: 0.364
+Percent of Seasons Ending with less than 50% of bankroll: 0.207
+Percent of Seasons Ending with less than 25% of bankroll: 0.067
+------------------------------------------------------------------------------------------------
+Level 4 with ahDiv of 3.0 ; ouDiv of 100002.0 ; mlDiv of 100002.0
+Average Seasonal Return: 0.46574869336726055
+Standard Deviation: 1.3649736007578455
+Lowest Observed Return: -0.8847399756019337
+Highest Observed Return: 21.341749552683723
+Average Bet Size: 0.013595151313867638
+Percent of Seasons Ending with less than 100% of bankroll: 0.469
+Percent of Seasons Ending with less than 75% of bankroll: 0.318
+Percent of Seasons Ending with less than 50% of bankroll: 0.153
+Percent of Seasons Ending with less than 25% of bankroll: 0.029
+------------------------------------------------------------------------------------------------
+Level 5 with ahDiv of 3.5 ; ouDiv of 100002.5 ; mlDiv of 100002.5
+Average Seasonal Return: 0.45953246814525256
+Standard Deviation: 1.0859467047097264
+Lowest Observed Return: -0.9175954973401803
+Highest Observed Return: 10.176625714301123
+Average Bet Size: 0.011559197834231573
+Percent of Seasons Ending with less than 100% of bankroll: 0.428
+Percent of Seasons Ending with less than 75% of bankroll: 0.269
+Percent of Seasons Ending with less than 50% of bankroll: 0.105
+Percent of Seasons Ending with less than 25% of bankroll: 0.003
+------------------------------------------------------------------------------------------------
+Level 6 with ahDiv of 4.0 ; ouDiv of 100003.0 ; mlDiv of 100003.0
+Average Seasonal Return: 0.4454800753118197
+Standard Deviation: 0.9875224103277824
+Lowest Observed Return: -0.8260500581811705
+Highest Observed Return: 6.529928597457525
+Average Bet Size: 0.010195330302134794
+Percent of Seasons Ending with less than 100% of bankroll: 0.391
+Percent of Seasons Ending with less than 75% of bankroll: 0.221
+Percent of Seasons Ending with less than 50% of bankroll: 0.075
+Percent of Seasons Ending with less than 25% of bankroll: 0.002
+------------------------------------------------------------------------------------------------
+Level 7 with ahDiv of 4.5 ; ouDiv of 100003.5 ; mlDiv of 100003.5
+Average Seasonal Return: 0.37127609904299413
+Standard Deviation: 0.8120355693919918
+Lowest Observed Return: -0.8267737951176559
+Highest Observed Return: 7.126495511783892
+Average Bet Size: 0.009039817799228914
+Percent of Seasons Ending with less than 100% of bankroll: 0.375
+Percent of Seasons Ending with less than 75% of bankroll: 0.213
+Percent of Seasons Ending with less than 50% of bankroll: 0.053
+Percent of Seasons Ending with less than 25% of bankroll: 0.003
+------------------------------------------------------------------------------------------------
+Level 8 with ahDiv of 5.0 ; ouDiv of 100004.0 ; mlDiv of 100004.0
+Average Seasonal Return: 0.2738948919971475
+Standard Deviation: 0.5991952201241834
+Lowest Observed Return: -0.6822412557310946
+Highest Observed Return: 4.633385636922822
+Average Bet Size: 0.008122297808983126
+Percent of Seasons Ending with less than 100% of bankroll: 0.374
+Percent of Seasons Ending with less than 75% of bankroll: 0.16
+Percent of Seasons Ending with less than 50% of bankroll: 0.026
+Percent of Seasons Ending with less than 25% of bankroll: 0.0
+------------------------------------------------------------------------------------------------
+Level 9 with ahDiv of 5.5 ; ouDiv of 100004.5 ; mlDiv of 100004.5
+Average Seasonal Return: 0.32968923770535424
+Standard Deviation: 0.600554168947859
+Lowest Observed Return: -0.6452684446571979
+Highest Observed Return: 3.142219629392656
+Average Bet Size: 0.007390108300186901
+Percent of Seasons Ending with less than 100% of bankroll: 0.347
+Percent of Seasons Ending with less than 75% of bankroll: 0.121
+Percent of Seasons Ending with less than 50% of bankroll: 0.025
+Percent of Seasons Ending with less than 25% of bankroll: 0.0
+------------------------------------------------------------------------------------------------
+Level 10 with ahDiv of 6.0 ; ouDiv of 100005.0 ; mlDiv of 100005.0
+Average Seasonal Return: 0.270133705102295
+Standard Deviation: 0.521349200666564
+Lowest Observed Return: -0.6587681442868171
+Highest Observed Return: 3.3083603490398774
+Average Bet Size: 0.006762848126767773
+Percent of Seasons Ending with less than 100% of bankroll: 0.34
+Percent of Seasons Ending with less than 75% of bankroll: 0.132
+Percent of Seasons Ending with less than 50% of bankroll: 0.016
+Percent of Seasons Ending with less than 25% of bankroll: 0.0
+------------------------------------------------------------------------------------------------
+Level 11 with ahDiv of 6.5 ; ouDiv of 100005.5 ; mlDiv of 100005.5
+Average Seasonal Return: 0.25356194713101554
+Standard Deviation: 0.4714516549248822
+Lowest Observed Return: -0.6121016363479467
+Highest Observed Return: 2.618922386590811
+Average Bet Size: 0.006254637292162307
+Percent of Seasons Ending with less than 100% of bankroll: 0.334
+Percent of Seasons Ending with less than 75% of bankroll: 0.105
+Percent of Seasons Ending with less than 50% of bankroll: 0.009
+Percent of Seasons Ending with less than 25% of bankroll: 0.0
+------------------------------------------------------------------------------------------------
+Level 12 with ahDiv of 7.0 ; ouDiv of 100006.0 ; mlDiv of 100006.0
+Average Seasonal Return: 0.2545958477956045
+Standard Deviation: 0.44079044229820763
+Lowest Observed Return: -0.5392887813094269
+Highest Observed Return: 2.521615442137199
+Average Bet Size: 0.005812885740746088
+Percent of Seasons Ending with less than 100% of bankroll: 0.317
+Percent of Seasons Ending with less than 75% of bankroll: 0.104
+Percent of Seasons Ending with less than 50% of bankroll: 0.002
+Percent of Seasons Ending with less than 25% of bankroll: 0.0
+------------------------------------------------------------------------------------------------
+Level 13 with ahDiv of 7.5 ; ouDiv of 100006.5 ; mlDiv of 100006.5
+Average Seasonal Return: 0.19113955257863216
+Standard Deviation: 0.37005668823104787
+Lowest Observed Return: -0.5292384820899196
+Highest Observed Return: 1.45170275309752
+Average Bet Size: 0.005428816695595374
+Percent of Seasons Ending with less than 100% of bankroll: 0.345
+Percent of Seasons Ending with less than 75% of bankroll: 0.088
+Percent of Seasons Ending with less than 50% of bankroll: 0.001
+Percent of Seasons Ending with less than 25% of bankroll: 0.0
+------------------------------------------------------------------------------------------------
+Level 14 with ahDiv of 8.0 ; ouDiv of 100007.0 ; mlDiv of 100007.0
+Average Seasonal Return: 0.19962445307686214
+Standard Deviation: 0.3814800154547395
+Lowest Observed Return: -0.5577759629071692
+Highest Observed Return: 2.414696356032063
+Average Bet Size: 0.00507135959465225
+Percent of Seasons Ending with less than 100% of bankroll: 0.338
+Percent of Seasons Ending with less than 75% of bankroll: 0.068
+Percent of Seasons Ending with less than 50% of bankroll: 0.004
+Percent of Seasons Ending with less than 25% of bankroll: 0.0
+------------------------------------------------------------------------------------------------
+Level 15 with ahDiv of 8.5 ; ouDiv of 100007.5 ; mlDiv of 100007.5
+Average Seasonal Return: 0.23024872403917862
+Standard Deviation: 0.36733359807056565
+Lowest Observed Return: -0.6149343600312587
+Highest Observed Return: 2.069405412870131
+Average Bet Size: 0.004773771870922627
+Percent of Seasons Ending with less than 100% of bankroll: 0.296
+Percent of Seasons Ending with less than 75% of bankroll: 0.054
+Percent of Seasons Ending with less than 50% of bankroll: 0.002
+Percent of Seasons Ending with less than 25% of bankroll: 0.0
+------------------------------------------------------------------------------------------------
+Level 16 with ahDiv of 9.0 ; ouDiv of 100008.0 ; mlDiv of 100008.0
+Average Seasonal Return: 0.18505738648807787
+Standard Deviation: 0.32316962485493017
+Lowest Observed Return: -0.46752420175997433
+Highest Observed Return: 2.157007689075824
+Average Bet Size: 0.004504153760106901
+Percent of Seasons Ending with less than 100% of bankroll: 0.32
+Percent of Seasons Ending with less than 75% of bankroll: 0.055
+Percent of Seasons Ending with less than 50% of bankroll: 0.0
+Percent of Seasons Ending with less than 25% of bankroll: 0.0
+------------------------------------------------------------------------------------------------
+Level 17 with ahDiv of 9.5 ; ouDiv of 100008.5 ; mlDiv of 100008.5
+Average Seasonal Return: 0.16372085517013454
+Standard Deviation: 0.2911458275814763
+Lowest Observed Return: -0.42918487145722173
+Highest Observed Return: 1.8228288149191636
+Average Bet Size: 0.004274813765005494
+Percent of Seasons Ending with less than 100% of bankroll: 0.319
+Percent of Seasons Ending with less than 75% of bankroll: 0.049
+Percent of Seasons Ending with less than 50% of bankroll: 0.0
+Percent of Seasons Ending with less than 25% of bankroll: 0.0
+------------------------------------------------------------------------------------------------
+Level 18 with ahDiv of 10.0 ; ouDiv of 100009.0 ; mlDiv of 100009.0
+Average Seasonal Return: 0.16044060480458724
+Standard Deviation: 0.27135157039651725
+Lowest Observed Return: -0.48605695620895806
+Highest Observed Return: 1.6255649357763837
+Average Bet Size: 0.004054508376898396
+Percent of Seasons Ending with less than 100% of bankroll: 0.299
+Percent of Seasons Ending with less than 75% of bankroll: 0.043
+Percent of Seasons Ending with less than 50% of bankroll: 0.0
+Percent of Seasons Ending with less than 25% of bankroll: 0.0
+------------------------------------------------------------------------------------------------
+Level 19 with ahDiv of 10.5 ; ouDiv of 100009.5 ; mlDiv of 100009.5
+Average Seasonal Return: 0.16215572656947308
+Standard Deviation: 0.2665406789572882
+Lowest Observed Return: -0.4537362404531128
+Highest Observed Return: 1.217138610695275
+Average Bet Size: 0.003868111975935354
+Percent of Seasons Ending with less than 100% of bankroll: 0.297
+Percent of Seasons Ending with less than 75% of bankroll: 0.034
+Percent of Seasons Ending with less than 50% of bankroll: 0.0
+Percent of Seasons Ending with less than 25% of bankroll: 0.0
+------------------------------------------------------------------------------------------------
+Level 20 with ahDiv of 11.0 ; ouDiv of 100010.0 ; mlDiv of 100010.0
+Average Seasonal Return: 0.16188145708593396
+Standard Deviation: 0.2525435082084921
+Lowest Observed Return: -0.4050921144086649
+Highest Observed Return: 1.2167664394732145
+Average Bet Size: 0.0037002623949809158
+Percent of Seasons Ending with less than 100% of bankroll: 0.28
+Percent of Seasons Ending with less than 75% of bankroll: 0.028
+Percent of Seasons Ending with less than 50% of bankroll: 0.0
+Percent of Seasons Ending with less than 25% of bankroll: 0.0
+------------------------------------------------------------------------------------------------
+Level 21 with ahDiv of 11.5 ; ouDiv of 100010.5 ; mlDiv of 100010.5
+Average Seasonal Return: 0.14440408854193112
+Standard Deviation: 0.2504834803596766
+Lowest Observed Return: -0.40964382936741106
+Highest Observed Return: 1.1840727826222741
+Average Bet Size: 0.0035255281667759836
+Percent of Seasons Ending with less than 100% of bankroll: 0.314
+Percent of Seasons Ending with less than 75% of bankroll: 0.026
+Percent of Seasons Ending with less than 50% of bankroll: 0.0
+Percent of Seasons Ending with less than 25% of bankroll: 0.0
+------------------------------------------------------------------------------------------------
+Level 22 with ahDiv of 12.0 ; ouDiv of 100011.0 ; mlDiv of 100011.0
+Average Seasonal Return: 0.13174280522227752
+Standard Deviation: 0.2269139947603079
+Lowest Observed Return: -0.3912631061015719
+Highest Observed Return: 1.1180556943163529
+Average Bet Size: 0.003379132163034156
+Percent of Seasons Ending with less than 100% of bankroll: 0.299
+Percent of Seasons Ending with less than 75% of bankroll: 0.023
+Percent of Seasons Ending with less than 50% of bankroll: 0.0
+Percent of Seasons Ending with less than 25% of bankroll: 0.0
+------------------------------------------------------------------------------------------------
+Level 23 with ahDiv of 12.5 ; ouDiv of 100011.5 ; mlDiv of 100011.5
+Average Seasonal Return: 0.11833806378271654
+Standard Deviation: 0.21532088056668874
+Lowest Observed Return: -0.3905988963882605
+Highest Observed Return: 0.8878366956034622
+Average Bet Size: 0.0032566848997493056
+Percent of Seasons Ending with less than 100% of bankroll: 0.299
+Percent of Seasons Ending with less than 75% of bankroll: 0.022
+Percent of Seasons Ending with less than 50% of bankroll: 0.0
+Percent of Seasons Ending with less than 25% of bankroll: 0.0
+------------------------------------------------------------------------------------------------
+Level 24 with ahDiv of 13.0 ; ouDiv of 100012.0 ; mlDiv of 100012.0
+Average Seasonal Return: 0.12255248315602703
+Standard Deviation: 0.20664284844958442
+Lowest Observed Return: -0.36999827930174944
+Highest Observed Return: 1.02336742570765
+Average Bet Size: 0.0031170623308168968
+Percent of Seasons Ending with less than 100% of bankroll: 0.297
+Percent of Seasons Ending with less than 75% of bankroll: 0.017
+Percent of Seasons Ending with less than 50% of bankroll: 0.0
+Percent of Seasons Ending with less than 25% of bankroll: 0.0
+------------------------------------------------------------------------------------------------
+
+
+
+
+
+Level 0 with ahDiv of 1 ; ouDiv of 100000 ; mlDiv of 7
+Average Seasonal Return: 0.1701499579042745
+Standard Deviation: 4.5590604963611225
+Lowest Observed Return: -1
+Highest Observed Return: 64.32295248754906
+Average Bet Size: 0.04488806798640753
+Percent of Seasons Ending with less than 100% of bankroll: 0.836
+Percent of Seasons Ending with less than 75% of bankroll: 0.811
+Percent of Seasons Ending with less than 50% of bankroll: 0.779
+Percent of Seasons Ending with less than 25% of bankroll: 0.696
+------------------------------------------------------------------------------------------------
+Level 1 with ahDiv of 1.5 ; ouDiv of 100000.5 ; mlDiv of 7.5
+Average Seasonal Return: 0.9113441275059555
+Standard Deviation: 5.645551398498954
+Lowest Observed Return: -1
+Highest Observed Return: 120.65125537830646
+Average Bet Size: 0.03110324608958037
+Percent of Seasons Ending with less than 100% of bankroll: 0.66
+Percent of Seasons Ending with less than 75% of bankroll: 0.584
+Percent of Seasons Ending with less than 50% of bankroll: 0.492
+Percent of Seasons Ending with less than 25% of bankroll: 0.327
+------------------------------------------------------------------------------------------------
+Level 2 with ahDiv of 2.0 ; ouDiv of 100001.0 ; mlDiv of 8.0
+Average Seasonal Return: 1.1355772048105794
+Standard Deviation: 4.472953732606567
+Lowest Observed Return: -1
+Highest Observed Return: 70.04051082206678
+Average Bet Size: 0.02396973251789965
+Percent of Seasons Ending with less than 100% of bankroll: 0.518
+Percent of Seasons Ending with less than 75% of bankroll: 0.422
+Percent of Seasons Ending with less than 50% of bankroll: 0.306
+Percent of Seasons Ending with less than 25% of bankroll: 0.162
+------------------------------------------------------------------------------------------------
+Level 3 with ahDiv of 2.5 ; ouDiv of 100001.5 ; mlDiv of 8.5
+Average Seasonal Return: 0.5551237907800205
+Standard Deviation: 1.8388889178657848
+Lowest Observed Return: -0.9465968437641004
+Highest Observed Return: 19.416878042468625
+Average Bet Size: 0.019898237851163
+Percent of Seasons Ending with less than 100% of bankroll: 0.495
+Percent of Seasons Ending with less than 75% of bankroll: 0.369
+Percent of Seasons Ending with less than 50% of bankroll: 0.207
+Percent of Seasons Ending with less than 25% of bankroll: 0.066
+------------------------------------------------------------------------------------------------
+Level 4 with ahDiv of 3.0 ; ouDiv of 100002.0 ; mlDiv of 9.0
+Average Seasonal Return: 0.5562977257254378
+Standard Deviation: 1.6787338364268654
+Lowest Observed Return: -0.9081414577471378
+Highest Observed Return: 19.835646748236524
+Average Bet Size: 0.01691689694600529
+Percent of Seasons Ending with less than 100% of bankroll: 0.476
+Percent of Seasons Ending with less than 75% of bankroll: 0.349
+Percent of Seasons Ending with less than 50% of bankroll: 0.183
+Percent of Seasons Ending with less than 25% of bankroll: 0.028
+------------------------------------------------------------------------------------------------
+Level 5 with ahDiv of 3.5 ; ouDiv of 100002.5 ; mlDiv of 9.5
+Average Seasonal Return: 0.4645190656861272
+Standard Deviation: 1.1629379811451883
+Lowest Observed Return: -0.8692730715495388
+Highest Observed Return: 11.450468854461025
+Average Bet Size: 0.014846094271306787
+Percent of Seasons Ending with less than 100% of bankroll: 0.412
+Percent of Seasons Ending with less than 75% of bankroll: 0.264
+Percent of Seasons Ending with less than 50% of bankroll: 0.113
+Percent of Seasons Ending with less than 25% of bankroll: 0.011
+------------------------------------------------------------------------------------------------
+Level 6 with ahDiv of 4.0 ; ouDiv of 100003.0 ; mlDiv of 10.0
+Average Seasonal Return: 0.38844144014024645
+Standard Deviation: 0.9849598220752458
+Lowest Observed Return: -0.834512793716871
+Highest Observed Return: 9.289037363583349
+Average Bet Size: 0.013183244282162955
+Percent of Seasons Ending with less than 100% of bankroll: 0.439
+Percent of Seasons Ending with less than 75% of bankroll: 0.253
+Percent of Seasons Ending with less than 50% of bankroll: 0.095
+Percent of Seasons Ending with less than 25% of bankroll: 0.008
+------------------------------------------------------------------------------------------------
+Level 7 with ahDiv of 4.5 ; ouDiv of 100003.5 ; mlDiv of 10.5
+Average Seasonal Return: 0.3617206075951957
+Standard Deviation: 0.8153870515632701
+Lowest Observed Return: -0.9031350289345969
+Highest Observed Return: 4.990645777133214
+Average Bet Size: 0.011906913285569021
+Percent of Seasons Ending with less than 100% of bankroll: 0.401
+Percent of Seasons Ending with less than 75% of bankroll: 0.228
+Percent of Seasons Ending with less than 50% of bankroll: 0.068
+Percent of Seasons Ending with less than 25% of bankroll: 0.002
+------------------------------------------------------------------------------------------------
+Level 8 with ahDiv of 5.0 ; ouDiv of 100004.0 ; mlDiv of 11.0
+Average Seasonal Return: 0.3648940272266847
+Standard Deviation: 0.7300573945619343
+Lowest Observed Return: -0.7537555603709732
+Highest Observed Return: 5.151430073050564
+Average Bet Size: 0.010839243497764512
+Percent of Seasons Ending with less than 100% of bankroll: 0.364
+Percent of Seasons Ending with less than 75% of bankroll: 0.18
+Percent of Seasons Ending with less than 50% of bankroll: 0.042
+Percent of Seasons Ending with less than 25% of bankroll: 0.001
+------------------------------------------------------------------------------------------------
+Level 9 with ahDiv of 5.5 ; ouDiv of 100004.5 ; mlDiv of 11.5
+Average Seasonal Return: 0.30998797972806424
+Standard Deviation: 0.62460671838148
+Lowest Observed Return: -0.8275186441449243
+Highest Observed Return: 3.197658788822772
+Average Bet Size: 0.009991961617429337
+Percent of Seasons Ending with less than 100% of bankroll: 0.353
+Percent of Seasons Ending with less than 75% of bankroll: 0.169
+Percent of Seasons Ending with less than 50% of bankroll: 0.034
+Percent of Seasons Ending with less than 25% of bankroll: 0.001
+------------------------------------------------------------------------------------------------
+Level 10 with ahDiv of 6.0 ; ouDiv of 100005.0 ; mlDiv of 12.0
+Average Seasonal Return: 0.2857198512961589
+Standard Deviation: 0.5850722141835991
+Lowest Observed Return: -0.6711212507688321
+Highest Observed Return: 3.6358962802805967
+Average Bet Size: 0.009306131681205528
+Percent of Seasons Ending with less than 100% of bankroll: 0.363
+Percent of Seasons Ending with less than 75% of bankroll: 0.152
+Percent of Seasons Ending with less than 50% of bankroll: 0.025
+Percent of Seasons Ending with less than 25% of bankroll: 0.0
+------------------------------------------------------------------------------------------------
+Level 11 with ahDiv of 6.5 ; ouDiv of 100005.5 ; mlDiv of 12.5
+Average Seasonal Return: 0.2713404727998572
+Standard Deviation: 0.5433478190510689
+Lowest Observed Return: -0.625380926324924
+Highest Observed Return: 3.7220470451407026
+Average Bet Size: 0.008655274775697724
+Percent of Seasons Ending with less than 100% of bankroll: 0.343
+Percent of Seasons Ending with less than 75% of bankroll: 0.141
+Percent of Seasons Ending with less than 50% of bankroll: 0.014
+Percent of Seasons Ending with less than 25% of bankroll: 0.0
+------------------------------------------------------------------------------------------------
+Level 12 with ahDiv of 7.0 ; ouDiv of 100006.0 ; mlDiv of 13.0
+Average Seasonal Return: 0.23994881383898847
+Standard Deviation: 0.4779640712992426
+Lowest Observed Return: -0.7266359826474602
+Highest Observed Return: 2.2393877139673815
+Average Bet Size: 0.008125313600796987
+Percent of Seasons Ending with less than 100% of bankroll: 0.347
+Percent of Seasons Ending with less than 75% of bankroll: 0.118
+Percent of Seasons Ending with less than 50% of bankroll: 0.015
+Percent of Seasons Ending with less than 25% of bankroll: 0.0
+------------------------------------------------------------------------------------------------
+Level 13 with ahDiv of 7.5 ; ouDiv of 100006.5 ; mlDiv of 13.5
+Average Seasonal Return: 0.2540675502631593
+Standard Deviation: 0.43862326948949865
+Lowest Observed Return: -0.5756634651037538
+Highest Observed Return: 2.1610612575178982
+Average Bet Size: 0.007661289260611305
+Percent of Seasons Ending with less than 100% of bankroll: 0.308
+Percent of Seasons Ending with less than 75% of bankroll: 0.095
+Percent of Seasons Ending with less than 50% of bankroll: 0.006
+Percent of Seasons Ending with less than 25% of bankroll: 0.0
+------------------------------------------------------------------------------------------------
+Level 14 with ahDiv of 8.0 ; ouDiv of 100007.0 ; mlDiv of 14.0
+Average Seasonal Return: 0.25130529721748995
+Standard Deviation: 0.4285236051599702
+Lowest Observed Return: -0.5772026999954794
+Highest Observed Return: 2.6776040526944787
+Average Bet Size: 0.007237070390274727
+Percent of Seasons Ending with less than 100% of bankroll: 0.293
+Percent of Seasons Ending with less than 75% of bankroll: 0.087
+Percent of Seasons Ending with less than 50% of bankroll: 0.002
+Percent of Seasons Ending with less than 25% of bankroll: 0.0
+------------------------------------------------------------------------------------------------
+Level 15 with ahDiv of 8.5 ; ouDiv of 100007.5 ; mlDiv of 14.5
+Average Seasonal Return: 0.20899576192012995
+Standard Deviation: 0.387482384463156
+Lowest Observed Return: -0.5752472467661437
+Highest Observed Return: 2.2911051968727176
+Average Bet Size: 0.006854702423488715
+Percent of Seasons Ending with less than 100% of bankroll: 0.328
+Percent of Seasons Ending with less than 75% of bankroll: 0.089
+Percent of Seasons Ending with less than 50% of bankroll: 0.005
+Percent of Seasons Ending with less than 25% of bankroll: 0.0
+------------------------------------------------------------------------------------------------
+Level 16 with ahDiv of 9.0 ; ouDiv of 100008.0 ; mlDiv of 15.0
+Average Seasonal Return: 0.20475506485584083
+Standard Deviation: 0.3659322187240828
+Lowest Observed Return: -0.5876913508956082
+Highest Observed Return: 1.9638571759513552
+Average Bet Size: 0.006525536467316567
+Percent of Seasons Ending with less than 100% of bankroll: 0.316
+Percent of Seasons Ending with less than 75% of bankroll: 0.07
+Percent of Seasons Ending with less than 50% of bankroll: 0.002
+Percent of Seasons Ending with less than 25% of bankroll: 0.0
+------------------------------------------------------------------------------------------------
+Level 17 with ahDiv of 9.5 ; ouDiv of 100008.5 ; mlDiv of 15.5
+Average Seasonal Return: 0.2051774670206288
+Standard Deviation: 0.3483643474362049
+Lowest Observed Return: -0.5117916549562482
+Highest Observed Return: 1.755290033067514
+Average Bet Size: 0.006214404115293187
+Percent of Seasons Ending with less than 100% of bankroll: 0.309
+Percent of Seasons Ending with less than 75% of bankroll: 0.052
+Percent of Seasons Ending with less than 50% of bankroll: 0.001
+Percent of Seasons Ending with less than 25% of bankroll: 0.0
+------------------------------------------------------------------------------------------------
+Level 18 with ahDiv of 10.0 ; ouDiv of 100009.0 ; mlDiv of 16.0
+Average Seasonal Return: 0.18091515907828473
+Standard Deviation: 0.32225782490045723
+Lowest Observed Return: -0.5073417468621443
+Highest Observed Return: 2.0429852007609797
+Average Bet Size: 0.00594847126062909
+Percent of Seasons Ending with less than 100% of bankroll: 0.302
+Percent of Seasons Ending with less than 75% of bankroll: 0.072
+Percent of Seasons Ending with less than 50% of bankroll: 0.002
+Percent of Seasons Ending with less than 25% of bankroll: 0.0
+------------------------------------------------------------------------------------------------
+Level 19 with ahDiv of 10.5 ; ouDiv of 100009.5 ; mlDiv of 16.5
+Average Seasonal Return: 0.16986558842627072
+Standard Deviation: 0.2969057512580219
+Lowest Observed Return: -0.47698454289666437
+Highest Observed Return: 1.8222565025705215
+Average Bet Size: 0.005700793997865814
+Percent of Seasons Ending with less than 100% of bankroll: 0.291
+Percent of Seasons Ending with less than 75% of bankroll: 0.047
+Percent of Seasons Ending with less than 50% of bankroll: 0.0
+Percent of Seasons Ending with less than 25% of bankroll: 0.0
+------------------------------------------------------------------------------------------------
+Level 20 with ahDiv of 11.0 ; ouDiv of 100010.0 ; mlDiv of 17.0
+Average Seasonal Return: 0.15486319659620273
+Standard Deviation: 0.2878201812191195
+Lowest Observed Return: -0.4737789701802544
+Highest Observed Return: 1.2076894488140208
+Average Bet Size: 0.005472250914633346
+Percent of Seasons Ending with less than 100% of bankroll: 0.314
+Percent of Seasons Ending with less than 75% of bankroll: 0.052
+Percent of Seasons Ending with less than 50% of bankroll: 0.0
+Percent of Seasons Ending with less than 25% of bankroll: 0.0
+------------------------------------------------------------------------------------------------
+Level 21 with ahDiv of 11.5 ; ouDiv of 100010.5 ; mlDiv of 17.5
+Average Seasonal Return: 0.15462904904594055
+Standard Deviation: 0.2785113101444101
+Lowest Observed Return: -0.5140376763877533
+Highest Observed Return: 1.7685103115660308
+Average Bet Size: 0.005252453614936676
+Percent of Seasons Ending with less than 100% of bankroll: 0.315
+Percent of Seasons Ending with less than 75% of bankroll: 0.043
+Percent of Seasons Ending with less than 50% of bankroll: 0.001
+Percent of Seasons Ending with less than 25% of bankroll: 0.0
+------------------------------------------------------------------------------------------------
+Level 22 with ahDiv of 12.0 ; ouDiv of 100011.0 ; mlDiv of 18.0
+Average Seasonal Return: 0.16762609692486585
+Standard Deviation: 0.27340316150528615
+Lowest Observed Return: -0.468076102078795
+Highest Observed Return: 1.5870026050829442
+Average Bet Size: 0.005055159432653153
+Percent of Seasons Ending with less than 100% of bankroll: 0.304
+Percent of Seasons Ending with less than 75% of bankroll: 0.033
+Percent of Seasons Ending with less than 50% of bankroll: 0.0
+Percent of Seasons Ending with less than 25% of bankroll: 0.0
+------------------------------------------------------------------------------------------------
+Level 23 with ahDiv of 12.5 ; ouDiv of 100011.5 ; mlDiv of 18.5
+Average Seasonal Return: 0.13422347265880213
+Standard Deviation: 0.2518643864730539
+Lowest Observed Return: -0.5437521530189797
+Highest Observed Return: 0.9969538681182872
+Average Bet Size: 0.004879616495687924
+Percent of Seasons Ending with less than 100% of bankroll: 0.337
+Percent of Seasons Ending with less than 75% of bankroll: 0.031
+Percent of Seasons Ending with less than 50% of bankroll: 0.001
+Percent of Seasons Ending with less than 25% of bankroll: 0.0
+------------------------------------------------------------------------------------------------
+Level 24 with ahDiv of 13.0 ; ouDiv of 100012.0 ; mlDiv of 19.0
+Average Seasonal Return: 0.14455838687193498
+Standard Deviation: 0.25633104970743936
+Lowest Observed Return: -0.3947594472368713
+Highest Observed Return: 1.334571685619729
+Average Bet Size: 0.0047049059023942
+Percent of Seasons Ending with less than 100% of bankroll: 0.304
+Percent of Seasons Ending with less than 75% of bankroll: 0.026
+Percent of Seasons Ending with less than 50% of bankroll: 0.0
+Percent of Seasons Ending with less than 25% of bankroll: 0.0
+------------------------------------------------------------------------------------------------
+
+
+
+
+
+Level 0 with ahDiv of 1 ; ouDiv of 10 ; mlDiv of 7
+Average Seasonal Return: 1.182311999912201
+Standard Deviation: 14.402169186356655
+Lowest Observed Return: -1
+Highest Observed Return: 241.37906107342624
+Average Bet Size: 0.04805321975603956
+Percent of Seasons Ending with less than 100% of bankroll: 0.838
+Percent of Seasons Ending with less than 75% of bankroll: 0.808
+Percent of Seasons Ending with less than 50% of bankroll: 0.761
+Percent of Seasons Ending with less than 25% of bankroll: 0.689
+------------------------------------------------------------------------------------------------
+Level 1 with ahDiv of 1.5 ; ouDiv of 10.5 ; mlDiv of 7.5
+Average Seasonal Return: 0.9535117028561362
+Standard Deviation: 5.5711562756281285
+Lowest Observed Return: -1
+Highest Observed Return: 91.41968018364375
+Average Bet Size: 0.034100405152501206
+Percent of Seasons Ending with less than 100% of bankroll: 0.649
+Percent of Seasons Ending with less than 75% of bankroll: 0.593
+Percent of Seasons Ending with less than 50% of bankroll: 0.5
+Percent of Seasons Ending with less than 25% of bankroll: 0.354
+------------------------------------------------------------------------------------------------
+Level 2 with ahDiv of 2.0 ; ouDiv of 11.0 ; mlDiv of 8.0
+Average Seasonal Return: 0.629943704535187
+Standard Deviation: 2.4689276337898187
+Lowest Observed Return: -0.9787723300961936
+Highest Observed Return: 24.010115966176098
+Average Bet Size: 0.026975148142244998
+Percent of Seasons Ending with less than 100% of bankroll: 0.562
+Percent of Seasons Ending with less than 75% of bankroll: 0.464
+Percent of Seasons Ending with less than 50% of bankroll: 0.336
+Percent of Seasons Ending with less than 25% of bankroll: 0.173
+------------------------------------------------------------------------------------------------
+Level 3 with ahDiv of 2.5 ; ouDiv of 11.5 ; mlDiv of 8.5
+Average Seasonal Return: 0.6980335789007258
+Standard Deviation: 2.0845685131200926
+Lowest Observed Return: -0.9691957960726065
+Highest Observed Return: 17.361777943649656
+Average Bet Size: 0.0226142145252277
+Percent of Seasons Ending with less than 100% of bankroll: 0.475
+Percent of Seasons Ending with less than 75% of bankroll: 0.369
+Percent of Seasons Ending with less than 50% of bankroll: 0.234
+Percent of Seasons Ending with less than 25% of bankroll: 0.091
+------------------------------------------------------------------------------------------------
+Level 4 with ahDiv of 3.0 ; ouDiv of 12.0 ; mlDiv of 9.0
+Average Seasonal Return: 0.6064304100974505
+Standard Deviation: 1.6477211644994199
+Lowest Observed Return: -0.8961380799374381
+Highest Observed Return: 14.986708220410069
+Average Bet Size: 0.019554424219500082
+Percent of Seasons Ending with less than 100% of bankroll: 0.473
+Percent of Seasons Ending with less than 75% of bankroll: 0.336
+Percent of Seasons Ending with less than 50% of bankroll: 0.177
+Percent of Seasons Ending with less than 25% of bankroll: 0.032
+------------------------------------------------------------------------------------------------
+Level 5 with ahDiv of 3.5 ; ouDiv of 12.5 ; mlDiv of 9.5
+Average Seasonal Return: 0.4077719051415075
+Standard Deviation: 1.1369392273181866
+Lowest Observed Return: -0.8540638438992504
+Highest Observed Return: 10.286535025429828
+Average Bet Size: 0.01731431591786693
+Percent of Seasons Ending with less than 100% of bankroll: 0.439
+Percent of Seasons Ending with less than 75% of bankroll: 0.309
+Percent of Seasons Ending with less than 50% of bankroll: 0.142
+Percent of Seasons Ending with less than 25% of bankroll: 0.027
+------------------------------------------------------------------------------------------------
+Level 6 with ahDiv of 4.0 ; ouDiv of 13.0 ; mlDiv of 10.0
+Average Seasonal Return: 0.3867485615618568
+Standard Deviation: 1.0560804636452958
+Lowest Observed Return: -0.8690028917726484
+Highest Observed Return: 11.265147946749432
+Average Bet Size: 0.015582193860952215
+Percent of Seasons Ending with less than 100% of bankroll: 0.452
+Percent of Seasons Ending with less than 75% of bankroll: 0.275
+Percent of Seasons Ending with less than 50% of bankroll: 0.098
+Percent of Seasons Ending with less than 25% of bankroll: 0.01
+------------------------------------------------------------------------------------------------
+Level 7 with ahDiv of 4.5 ; ouDiv of 13.5 ; mlDiv of 10.5
+Average Seasonal Return: 0.33442828808173763
+Standard Deviation: 0.8359613073749613
+Lowest Observed Return: -0.8486389262198903
+Highest Observed Return: 8.21294243377511
+Average Bet Size: 0.014233694716435732
+Percent of Seasons Ending with less than 100% of bankroll: 0.398
+Percent of Seasons Ending with less than 75% of bankroll: 0.248
+Percent of Seasons Ending with less than 50% of bankroll: 0.073
+Percent of Seasons Ending with less than 25% of bankroll: 0.004
+------------------------------------------------------------------------------------------------
+Level 8 with ahDiv of 5.0 ; ouDiv of 14.0 ; mlDiv of 11.0
+Average Seasonal Return: 0.32573288633182107
+Standard Deviation: 0.7898895552404449
+Lowest Observed Return: -0.8142562454622413
+Highest Observed Return: 5.956145441090238
+Average Bet Size: 0.013137910618854184
+Percent of Seasons Ending with less than 100% of bankroll: 0.388
+Percent of Seasons Ending with less than 75% of bankroll: 0.196
+Percent of Seasons Ending with less than 50% of bankroll: 0.062
+Percent of Seasons Ending with less than 25% of bankroll: 0.004
+------------------------------------------------------------------------------------------------
+Level 9 with ahDiv of 5.5 ; ouDiv of 14.5 ; mlDiv of 11.5
+Average Seasonal Return: 0.27307833178490515
+Standard Deviation: 0.6431004739349084
+Lowest Observed Return: -0.7817196059081711
+Highest Observed Return: 4.867309157867288
+Average Bet Size: 0.012227555104973689
+Percent of Seasons Ending with less than 100% of bankroll: 0.386
+Percent of Seasons Ending with less than 75% of bankroll: 0.187
+Percent of Seasons Ending with less than 50% of bankroll: 0.04
+Percent of Seasons Ending with less than 25% of bankroll: 0.002
+------------------------------------------------------------------------------------------------
+Level 10 with ahDiv of 6.0 ; ouDiv of 15.0 ; mlDiv of 12.0
+Average Seasonal Return: 0.28124558748267575
+Standard Deviation: 0.5883641158772709
+Lowest Observed Return: -0.7537599881229436
+Highest Observed Return: 3.280623810937838
+Average Bet Size: 0.011390879249733126
+Percent of Seasons Ending with less than 100% of bankroll: 0.377
+Percent of Seasons Ending with less than 75% of bankroll: 0.159
+Percent of Seasons Ending with less than 50% of bankroll: 0.027
+Percent of Seasons Ending with less than 25% of bankroll: 0.001
+------------------------------------------------------------------------------------------------
+Level 11 with ahDiv of 6.5 ; ouDiv of 15.5 ; mlDiv of 12.5
+Average Seasonal Return: 0.25936534880213036
+Standard Deviation: 0.532758144211036
+Lowest Observed Return: -0.7023143193057368
+Highest Observed Return: 3.6683178202624944
+Average Bet Size: 0.010700214724494528
+Percent of Seasons Ending with less than 100% of bankroll: 0.347
+Percent of Seasons Ending with less than 75% of bankroll: 0.149
+Percent of Seasons Ending with less than 50% of bankroll: 0.019
+Percent of Seasons Ending with less than 25% of bankroll: 0.0
+------------------------------------------------------------------------------------------------
+Level 12 with ahDiv of 7.0 ; ouDiv of 16.0 ; mlDiv of 13.0
+Average Seasonal Return: 0.2425387757992922
+Standard Deviation: 0.507054403238513
+Lowest Observed Return: -0.6791775397167963
+Highest Observed Return: 3.3469157238557674
+Average Bet Size: 0.010108784703717927
+Percent of Seasons Ending with less than 100% of bankroll: 0.342
+Percent of Seasons Ending with less than 75% of bankroll: 0.133
+Percent of Seasons Ending with less than 50% of bankroll: 0.014
+Percent of Seasons Ending with less than 25% of bankroll: 0.0
+------------------------------------------------------------------------------------------------
+Level 13 with ahDiv of 7.5 ; ouDiv of 16.5 ; mlDiv of 13.5
+Average Seasonal Return: 0.21796859676447258
+Standard Deviation: 0.43934950705504006
+Lowest Observed Return: -0.6157704971583435
+Highest Observed Return: 2.889566090112024
+Average Bet Size: 0.009561902295287292
+Percent of Seasons Ending with less than 100% of bankroll: 0.346
+Percent of Seasons Ending with less than 75% of bankroll: 0.106
+Percent of Seasons Ending with less than 50% of bankroll: 0.012
+Percent of Seasons Ending with less than 25% of bankroll: 0.0
+------------------------------------------------------------------------------------------------
+Level 14 with ahDiv of 8.0 ; ouDiv of 17.0 ; mlDiv of 14.0
+Average Seasonal Return: 0.2100709684584263
+Standard Deviation: 0.4151703181566524
+Lowest Observed Return: -0.6460018751069552
+Highest Observed Return: 2.095986015173689
+Average Bet Size: 0.00910057021057101
+Percent of Seasons Ending with less than 100% of bankroll: 0.34
+Percent of Seasons Ending with less than 75% of bankroll: 0.103
+Percent of Seasons Ending with less than 50% of bankroll: 0.012
+Percent of Seasons Ending with less than 25% of bankroll: 0.0
+------------------------------------------------------------------------------------------------
+Level 15 with ahDiv of 8.5 ; ouDiv of 17.5 ; mlDiv of 14.5
+Average Seasonal Return: 0.186424962715812
+Standard Deviation: 0.4117669055583263
+Lowest Observed Return: -0.6423755524650477
+Highest Observed Return: 3.3159427048492187
+Average Bet Size: 0.008662092108510074
+Percent of Seasons Ending with less than 100% of bankroll: 0.383
+Percent of Seasons Ending with less than 75% of bankroll: 0.104
+Percent of Seasons Ending with less than 50% of bankroll: 0.005
+Percent of Seasons Ending with less than 25% of bankroll: 0.0
+------------------------------------------------------------------------------------------------
+Level 16 with ahDiv of 9.0 ; ouDiv of 18.0 ; mlDiv of 15.0
+Average Seasonal Return: 0.18425158633615912
+Standard Deviation: 0.3797568317272129
+Lowest Observed Return: -0.5699826157411949
+Highest Observed Return: 1.906596041405844
+Average Bet Size: 0.00827874945660799
+Percent of Seasons Ending with less than 100% of bankroll: 0.353
+Percent of Seasons Ending with less than 75% of bankroll: 0.083
+Percent of Seasons Ending with less than 50% of bankroll: 0.006
+Percent of Seasons Ending with less than 25% of bankroll: 0.0
+------------------------------------------------------------------------------------------------
+Level 17 with ahDiv of 9.5 ; ouDiv of 18.5 ; mlDiv of 15.5
+Average Seasonal Return: 0.1575530771871958
+Standard Deviation: 0.3525107864312254
+Lowest Observed Return: -0.5258899246452879
+Highest Observed Return: 1.6886758086162819
+Average Bet Size: 0.007944329883440059
+Percent of Seasons Ending with less than 100% of bankroll: 0.377
+Percent of Seasons Ending with less than 75% of bankroll: 0.098
+Percent of Seasons Ending with less than 50% of bankroll: 0.002
+Percent of Seasons Ending with less than 25% of bankroll: 0.0
+------------------------------------------------------------------------------------------------
+Level 18 with ahDiv of 10.0 ; ouDiv of 19.0 ; mlDiv of 16.0
+Average Seasonal Return: 0.17630267626254637
+Standard Deviation: 0.3276725590875371
+Lowest Observed Return: -0.49504893873118827
+Highest Observed Return: 2.153434518777661
+Average Bet Size: 0.0076331038668225005
+Percent of Seasons Ending with less than 100% of bankroll: 0.307
+Percent of Seasons Ending with less than 75% of bankroll: 0.073
+Percent of Seasons Ending with less than 50% of bankroll: 0.0
+Percent of Seasons Ending with less than 25% of bankroll: 0.0
+------------------------------------------------------------------------------------------------
+Level 19 with ahDiv of 10.5 ; ouDiv of 19.5 ; mlDiv of 16.5
+Average Seasonal Return: 0.15967482840928207
+Standard Deviation: 0.3334724349536277
+Lowest Observed Return: -0.4737719401524546
+Highest Observed Return: 2.069158190886103
+Average Bet Size: 0.007319579243532314
+Percent of Seasons Ending with less than 100% of bankroll: 0.353
+Percent of Seasons Ending with less than 75% of bankroll: 0.07
+Percent of Seasons Ending with less than 50% of bankroll: 0.0
+Percent of Seasons Ending with less than 25% of bankroll: 0.0
+------------------------------------------------------------------------------------------------
+Level 20 with ahDiv of 11.0 ; ouDiv of 20.0 ; mlDiv of 17.0
+Average Seasonal Return: 0.13974980111594199
+Standard Deviation: 0.30257705247562033
+Lowest Observed Return: -0.5391211144210142
+Highest Observed Return: 1.7631506640206385
+Average Bet Size: 0.007046399612330802
+Percent of Seasons Ending with less than 100% of bankroll: 0.346
+Percent of Seasons Ending with less than 75% of bankroll: 0.074
+Percent of Seasons Ending with less than 50% of bankroll: 0.001
+Percent of Seasons Ending with less than 25% of bankroll: 0.0
+------------------------------------------------------------------------------------------------
+Level 21 with ahDiv of 11.5 ; ouDiv of 20.5 ; mlDiv of 17.5
+Average Seasonal Return: 0.15457261680820342
+Standard Deviation: 0.30977071129899236
+Lowest Observed Return: -0.5156521773497224
+Highest Observed Return: 1.71071350337352
+Average Bet Size: 0.006812062483857375
+Percent of Seasons Ending with less than 100% of bankroll: 0.344
+Percent of Seasons Ending with less than 75% of bankroll: 0.058
+Percent of Seasons Ending with less than 50% of bankroll: 0.001
+Percent of Seasons Ending with less than 25% of bankroll: 0.0
+------------------------------------------------------------------------------------------------
+Level 22 with ahDiv of 12.0 ; ouDiv of 21.0 ; mlDiv of 18.0
+Average Seasonal Return: 0.14114406581226321
+Standard Deviation: 0.28010747139693887
+Lowest Observed Return: -0.46846429914804666
+Highest Observed Return: 1.4736073629064972
+Average Bet Size: 0.006562056102582754
+Percent of Seasons Ending with less than 100% of bankroll: 0.35
+Percent of Seasons Ending with less than 75% of bankroll: 0.053
+Percent of Seasons Ending with less than 50% of bankroll: 0.0
+Percent of Seasons Ending with less than 25% of bankroll: 0.0
+------------------------------------------------------------------------------------------------
+Level 23 with ahDiv of 12.5 ; ouDiv of 21.5 ; mlDiv of 18.5
+Average Seasonal Return: 0.11506434916942858
+Standard Deviation: 0.26529767680051
+Lowest Observed Return: -0.5001292854812605
+Highest Observed Return: 1.1020670812866982
+Average Bet Size: 0.006368738745007797
+Percent of Seasons Ending with less than 100% of bankroll: 0.365
+Percent of Seasons Ending with less than 75% of bankroll: 0.061
+Percent of Seasons Ending with less than 50% of bankroll: 0.001
+Percent of Seasons Ending with less than 25% of bankroll: 0.0
+------------------------------------------------------------------------------------------------
+Level 24 with ahDiv of 13.0 ; ouDiv of 22.0 ; mlDiv of 19.0
+Average Seasonal Return: 0.13712248217199643
+Standard Deviation: 0.2635046318509063
+Lowest Observed Return: -0.467155437206915
+Highest Observed Return: 1.1265931026255132
+Average Bet Size: 0.006163533648169935
+Percent of Seasons Ending with less than 100% of bankroll: 0.336
+Percent of Seasons Ending with less than 75% of bankroll: 0.04
+Percent of Seasons Ending with less than 50% of bankroll: 0.0
+Percent of Seasons Ending with less than 25% of bankroll: 0.0
+------------------------------------------------------------------------------------------------

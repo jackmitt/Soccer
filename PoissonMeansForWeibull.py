@@ -5,7 +5,7 @@ from WeibullCountModelFunctions.WeibullPMF import weibullPmf
 from WeibullCountModelFunctions.frankCopula import copula
 from sklearn.utils import shuffle
 
-pred = pd.read_csv('C:/Users/JackMitt/Documents/EPLBettingModel/EPL_Csvs/no_T_Vars/poissonPredictionMeansTestSplit.csv', encoding = "ISO-8859-1")
+pred = pd.read_csv('C:/Users/JackMitt/Documents/EPLBettingModel/EPL_Csvs/newvars_no_T/poissonPredictionMeans.csv', encoding = "ISO-8859-1")
 print (pred)
 
 newDict = {}
@@ -23,10 +23,10 @@ while (cur < len(pred.index)):
 
 dfFinal = pd.DataFrame.from_dict(newDict)
 print (dfFinal)
-#Added for train test split - eliminate extrapolated shit
-droprows = []
-for index, row in dfFinal.iterrows():
-    if (row["H_Poisson Mean Prediction"] > 5 or row["A_Poisson Mean Prediction"] > 5):
-        droprows.append(index)
-dfFinal = dfFinal.drop(droprows)
-dfFinal.to_csv("./EPL_Csvs/no_T_Vars/weibull_copula/WeibullFormatTestSplit.csv")
+# #Added for train test split - eliminate extrapolated shit
+# droprows = []
+# for index, row in dfFinal.iterrows():
+#     if (row["H_Poisson Mean Prediction"] > 5 or row["A_Poisson Mean Prediction"] > 5):
+#         droprows.append(index)
+# dfFinal = dfFinal.drop(droprows)
+dfFinal.to_csv("./EPL_Csvs/newvars_no_T/weibull_copula/WeibullFormat.csv")

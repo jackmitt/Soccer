@@ -3,7 +3,7 @@ library(sandwich)
 library(msm)
 library(glmnet)
 
-data = read.csv("C:/Users/JackMitt/Documents/EPLBettingModel/EPL_Csvs/only_T_E_Vars/mlResultsByEdge.csv")
+data = read.csv("C:/Users/JackMitt/Documents/EPLBettingModel/EPL_Csvs/newvars_no_T/weibull_copula/mlResultsByEdge.csv")
 predictions = c()
 for (i in 1:nrow(data)){
   print (i)
@@ -19,9 +19,9 @@ for (i in 1:nrow(data)){
 }
 
 data["True Prediction"] = predictions
-#write.csv(data, "C:/Users/JackMitt/Documents/EPLBettingModel/EPL_Csvs/only_T_E_Vars/mlTruePredictedProbabilities.csv")
+write.csv(data, "C:/Users/JackMitt/Documents/EPLBettingModel/EPL_Csvs/newvars_no_T/weibull_copula/mlTruePredictedProbabilities.csv")
 
-data = read.csv("C:/Users/JackMitt/Documents/EPLBettingModel/EPL_Csvs/only_T_E_Vars/ahResultsByEdge.csv")
+data = read.csv("C:/Users/JackMitt/Documents/EPLBettingModel/EPL_Csvs/newvars_no_T/weibull_copula/ahResultsByEdge.csv")
 predictions = c()
 for (i in 1:nrow(data)){
   print (i)
@@ -37,9 +37,9 @@ for (i in 1:nrow(data)){
 }
 
 data["True Prediction"] = predictions
-#write.csv(data, "C:/Users/JackMitt/Documents/EPLBettingModel/EPL_Csvs/only_T_E_Vars/ahTruePredictedProbabilities.csv")
+write.csv(data, "C:/Users/JackMitt/Documents/EPLBettingModel/EPL_Csvs/newvars_no_T/weibull_copula/ahTruePredictedProbabilities.csv")
 
-data = read.csv("C:/Users/JackMitt/Documents/EPLBettingModel/EPL_Csvs/only_T_E_Vars/ouResultsByEdge.csv")
+data = read.csv("C:/Users/JackMitt/Documents/EPLBettingModel/EPL_Csvs/newvars_no_T/weibull_copula/ouResultsByEdge.csv")
 predictions = c()
 for (i in 1:nrow(data)){
   print (i)
@@ -55,4 +55,4 @@ for (i in 1:nrow(data)){
 }
 
 data["True Prediction"] = predictions
-#write.csv(data, "C:/Users/JackMitt/Documents/EPLBettingModel/EPL_Csvs/only_T_E_Vars/ouTruePredictedProbabilities.csv")
+write.csv(data, "C:/Users/JackMitt/Documents/EPLBettingModel/EPL_Csvs/newvars_no_T/weibull_copula/ouTruePredictedProbabilities.csv")

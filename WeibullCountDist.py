@@ -5,7 +5,7 @@ from WeibullCountModelFunctions.WeibullPMF import weibullPmf
 from WeibullCountModelFunctions.frankCopula import copula
 from sklearn.utils import shuffle
 
-pred = pd.read_csv('./EPL_Csvs/no_T_Vars/weibull_copula/WeibullFormatTestSplit.csv', encoding = "ISO-8859-1")
+pred = pd.read_csv('./EPL_Csvs/newvars_no_T/weibull_copula/WeibullFormat.csv', encoding = "ISO-8859-1")
 pred = shuffle(pred, random_state = 43).reset_index(drop = True)
 
 z = 10
@@ -59,4 +59,4 @@ for j in range(11):
     for k in range(11):
         pred[str(j) + " -- " + str(k)] = dict[j][k]
 
-pred.to_csv("./EPL_Csvs/no_T_Vars/weibull_copula/WeibullPredictionsTestSplit.csv")
+pred.to_csv("./EPL_Csvs/newvars_No_T/weibull_copula/WeibullPredictions.csv")

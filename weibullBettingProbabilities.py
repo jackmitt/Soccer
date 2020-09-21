@@ -1,7 +1,7 @@
 import pandas as pd
 import numpy as np
 
-pred = pd.read_csv('./EPL_Csvs/no_T_Vars/weibull_copula/WeibullPredictionsTestSplit.csv', encoding = "ISO-8859-1")
+pred = pd.read_csv('./EPL_Csvs/newvars_No_T/weibull_copula/WeibullPredictions.csv', encoding = "ISO-8859-1")
 odds = pd.read_csv('./EPL_Csvs/bigboy.csv', encoding = "ISO-8859-1")
 dict = {"Date":[],"Home":[],"Away":[],"Home Score":[],"Away Score":[]}
 for col in odds.columns:
@@ -139,4 +139,4 @@ while (curIndex < len(pred.index)):
 for key in dict:
     print (key, len(dict[key]))
 dfFinal = pd.DataFrame.from_dict(dict)
-dfFinal.to_csv("./EPL_Csvs/no_T_Vars/weibull_copula/bettingPredictionsTest.csv")
+dfFinal.to_csv("./EPL_Csvs/newvars_No_T/weibull_copula/bettingPredictions.csv")

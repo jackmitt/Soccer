@@ -1,7 +1,7 @@
 import pandas
 import numpy
 import math
-from alpha import alpha
+from WeibullCountModelFunctions.alpha import alpha
 
 def weibullPmf(x, l, c, alphaDict):
     if (x < 0):

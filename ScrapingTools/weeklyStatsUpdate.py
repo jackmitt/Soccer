@@ -43,8 +43,8 @@ browser.quit()
 
 count = 1
 dict = {"Date":[],"Home":[],"Away":[],"Home Score":[],"Away Score":[],"Home xG":[],"Away xG":[],"Home shots":[],"Away shots":[],"Home on target":[],"Away on target":[],"Home deep":[],"Away deep":[],"Home ppda":[],"Away ppda":[],"Home xPts":[],"Away xPts":[]}
+browser = webdriver.Chrome(executable_path='chromedriver.exe')
 for game in gameUrls:
-    browser = webdriver.Chrome(executable_path='chromedriver.exe')
     browser.get(game)
     soup = BeautifulSoup(browser.page_source, 'html.parser')
     dict["Date"].append(soup.find_all("li")[5].string)
@@ -65,7 +65,7 @@ for game in gameUrls:
     dict["Away ppda"].append(float(stats[7].find_all(class_="progress-value")[1].text))
     dict["Home xPts"].append(float(stats[8].find_all(class_="progress-value")[0].text))
     dict["Away xPts"].append(float(stats[8].find_all(class_="progress-value")[1].text))
-    browser.quit()
+browser.quit()
 #
 understat = pd.DataFrame.from_dict(dict)
 print (understat)

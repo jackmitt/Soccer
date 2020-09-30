@@ -26,7 +26,7 @@ gameUrls = []
 
 #change every week - matchweek for predictions
 inMW = False
-mw = 3
+mw = 4
 dateStart = datetime.date(2020, 9, 11) + datetime.timedelta(days=7*(mw-1))
 dateThru = datetime.date(2020, 9, 11) + datetime.timedelta(days=7*mw)
 browser = webdriver.Chrome(executable_path='chromedriver.exe')
@@ -106,6 +106,7 @@ for type in betTypes:
                 except:
                     break
             soup = BeautifulSoup(browser.page_source, 'html.parser')
+            time.sleep(10)
             for i in range(len(rows)):
                 try:
                     row = soup.find(id="odds-data-table").find_all(class_="table-container")[i]
@@ -167,7 +168,6 @@ for type in betTypes:
                 for key in dict:
                     if ("Over" in key or "Under" in key):
                         dict[key].append(np.nan)
-    print(dict)
 browser.quit()
 for key in dict:
     print (key, len(dict[key]))

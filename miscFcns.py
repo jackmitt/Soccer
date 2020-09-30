@@ -10,7 +10,7 @@ def oddsToDecimal(a):
     else:
         return (np.round(((b/100) + 1), 2))
 
-def standardizeTeamName(teamName, leagueName):
+def standardizeTeamName(teamName, leagueName = "EPL"):
     b = teamName.lower()
     if (leagueName == "EPL"):
         if ("arsenal" in b):

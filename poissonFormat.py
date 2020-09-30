@@ -1,7 +1,7 @@
 import pandas as pd
 import numpy as np
 
-bb = pd.read_csv('./EPL_Csvs/bigboy.csv', encoding = "ISO-8859-1")
+bb = pd.read_csv('./EPL_Csvs/bigboy4Games.csv', encoding = "ISO-8859-1")
 
 dict = {"Date":[], "Team":[], "Score":[], "Home Field":[]}
 sides = ["expected", "opponent_expected"]
@@ -35,4 +35,4 @@ for key in dict:
 
 dfFinal = pd.DataFrame.from_dict(dict)
 dfFinal = dfFinal.dropna()
-dfFinal.to_csv("./EPL_Csvs/poissonFormattedDataNewVars.csv")
+dfFinal.to_csv("./EPL_Csvs/poissonFormattedData4Games.csv")

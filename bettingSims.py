@@ -1,9 +1,9 @@
 import pandas as pd
 import numpy as np
 
-ml = pd.read_csv('./EPL_Csvs/newvars_no_T/weibull_copula/mlResultsByEdge.csv', encoding = "ISO-8859-1")
-ah = pd.read_csv('./EPL_Csvs/newvars_no_T/weibull_copula/ahResultsByEdge.csv', encoding = "ISO-8859-1")
-ou = pd.read_csv('./EPL_Csvs/newvars_no_T/weibull_copula/ouResultsByEdge.csv', encoding = "ISO-8859-1")
+ml = pd.read_csv('./EPL_Csvs/mlResultsByEdge3Games.csv', encoding = "ISO-8859-1")
+ah = pd.read_csv('./EPL_Csvs/ahResultsByEdge3Games.csv', encoding = "ISO-8859-1")
+ou = pd.read_csv('./EPL_Csvs/ouResultsByEdge3Games.csv', encoding = "ISO-8859-1")
 for df in [ml,ah,ou]:
     best = 0
     bn = 0
@@ -29,7 +29,7 @@ for df in [ml,ah,ou]:
             break
         if (kellyDiv > 1000):
             break
-        kellyDiv = kellyDiv*1.05
+        kellyDiv *= 1.05
     print (kellyDiv)
     print (best)
     print (bn)

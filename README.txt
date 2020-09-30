@@ -4,7 +4,7 @@ Order for recreating model from scratch:
 2) delete any duplicate games
 3) combineMatchStats.py to merge whoscored and understat; combineOdds.py to merge 1x2, ah, ou
 3.5) eloGen.py
-4) combineOddsMatchStats.py to merge matcStats with EPLHistoricOddsWithElo
+4) combineOddsMatchStats.py to merge matchStats with EPLHistoricOddsWithElo
 4.5) delete columns containing old indices
 5) preMatchAverages.py
 6) poissonFormat.py
@@ -16,3 +16,8 @@ Order for recreating model from scratch:
 10) regressionOnModelledEdge.R
 11) bettingSims.py
 12) seasonSim.py
+
+Weekly script order:
+1) weeklyOddsScrape.py, weeklyStatsScrape.py (in /ScrapingTools)
+2) weeklyEloUpdate.py
+3) weeklyWagers.py

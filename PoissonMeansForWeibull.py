@@ -5,7 +5,7 @@ from WeibullCountModelFunctions.WeibullPMF import weibullPmf
 from WeibullCountModelFunctions.frankCopula import copula
 from sklearn.utils import shuffle
 
-pred = pd.read_csv('C:/Users/JackMitt/Documents/EPLBettingModel/EPL_Csvs/newvars_no_T/poissonPredictionMeans.csv', encoding = "ISO-8859-1")
+pred = pd.read_csv('C:/Users/JackMitt/Documents/EPLBettingModel/EPL_Csvs/poissonPredictionMeans4Games.csv', encoding = "ISO-8859-1")
 print (pred)
 
 newDict = {}
@@ -29,4 +29,4 @@ print (dfFinal)
 #     if (row["H_Poisson Mean Prediction"] > 5 or row["A_Poisson Mean Prediction"] > 5):
 #         droprows.append(index)
 # dfFinal = dfFinal.drop(droprows)
-dfFinal.to_csv("./EPL_Csvs/newvars_no_T/weibull_copula/WeibullFormat.csv")
+dfFinal.to_csv("./EPL_Csvs/WeibullFormat4Games.csv")

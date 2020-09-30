@@ -1,7 +1,7 @@
 import pandas as pd
 import numpy as np
 
-pred = pd.read_csv('./EPL_Csvs/newvars_no_T/weibull_copula/bettingPredictions.csv', encoding = "ISO-8859-1")
+pred = pd.read_csv('./EPL_Csvs/3Game_newvars_no_T/bettingPredictions3Games.csv', encoding = "ISO-8859-1")
 mlDict = {"Book Prob":[],"Edge":[],"Result":[],"P":[]}
 ahDict = {"Book Prob":[],"Edge":[],"Result":[],"P":[]}
 ouDict = {"Book Prob":[],"Edge":[],"Result":[],"P":[]}
@@ -28,17 +28,18 @@ for index, row in pred.iterrows():
     ou["edge"] = 0
     ou["colName"] = ""
     for col in pred.columns:
+        #(row["P(" + ml["colName"] + ")"] - (1/row[ml["colName"]])) / (1-(1/row[ml["colName"]]))
         if (("1" == col or "X" == col or "2" == col) and "P(" not in col):
             if ((row["P(" + col + ")"] - (1/row[col])) > ml["edge"]):
-                ml["edge"] = row["P(" + col + ")"] - (1/row[col])
+                ml["edge"] = (row["P(" + col + ")"] - (1/row[col]))
                 ml["colName"] = col
         if ("AH" in col and "P(" not in col and not np.isnan(row[col]) and row[col] != 1):
-            if ((row["P(" + col + ")"] - (1/row[col])) > ah["edge"]):
-                ah["edge"] = row["P(" + col + ")"] - (1/row[col])
+            if ((row["P(" + col + ")"] - (1/row[col]))> ah["edge"]):
+                ah["edge"] = (row["P(" + col + ")"] - (1/row[col]))
                 ah["colName"] = col
         if (("Over" in col or "Under" in col) and "P(" not in col and not np.isnan(row[col]) and row[col] != 1):
             if ((row["P(" + col + ")"] - (1/row[col])) > ou["edge"]):
-                ou["edge"] = row["P(" + col + ")"] - (1/row[col])
+                ou["edge"] = (row["P(" + col + ")"] - (1/row[col]))
                 ou["colName"] = col
     preBR = bankroll
     if (ml["edge"] > 0):
@@ -51,8 +52,8 @@ for index, row in pred.iterrows():
                 mlresults.append(1)
                 mlDict["Result"].append(1)
                 mlDict["Book Prob"].append(1/row[ml["colName"]])
-                mlDict["Edge"].append(ml["edge"])
-                mlDict["P"].append(1/row[ml["colName"]] + ml["edge"])
+                mlDict["Edge"].append(row["P(" + ml["colName"] + ")"] - 1/row[ml["colName"]])
+                mlDict["P"].append(row["P(" + ml["colName"] + ")"])
             else:
                 bankroll -= ((row["P(" + ml["colName"] + ")"] - (1/row[ml["colName"]])) / (1-(1/row[ml["colName"]])))*preBR
                 ml["netWin"] -= ((row["P(" + ml["colName"] + ")"] - (1/row[ml["colName"]])) / (1-(1/row[ml["colName"]])))*30000
@@ -60,8 +61,8 @@ for index, row in pred.iterrows():
                 mlresults.append(0)
                 mlDict["Result"].append(0)
                 mlDict["Book Prob"].append(1/row[ml["colName"]])
-                mlDict["Edge"].append(ml["edge"])
-                mlDict["P"].append(1/row[ml["colName"]] + ml["edge"])
+                mlDict["Edge"].append(row["P(" + ml["colName"] + ")"] - 1/row[ml["colName"]])
+                mlDict["P"].append(row["P(" + ml["colName"] + ")"])
         elif (ml["colName"] == "2"):
             if (row["Away Score"] > row["Home Score"]):
                 bankroll += ((row["P(" + ml["colName"] + ")"] - (1/row[ml["colName"]])) / (1-(1/row[ml["colName"]])))*preBR*(row[ml["colName"]] - 1)
@@ -70,8 +71,8 @@ for index, row in pred.iterrows():
                 mlresults.append(1)
                 mlDict["Result"].append(1)
                 mlDict["Book Prob"].append(1/row[ml["colName"]])
-                mlDict["Edge"].append(ml["edge"])
-                mlDict["P"].append(1/row[ml["colName"]] + ml["edge"])
+                mlDict["Edge"].append(row["P(" + ml["colName"] + ")"] - 1/row[ml["colName"]])
+                mlDict["P"].append(row["P(" + ml["colName"] + ")"])
             else:
                 bankroll -= ((row["P(" + ml["colName"] + ")"] - (1/row[ml["colName"]])) / (1-(1/row[ml["colName"]])))*preBR
                 ml["netWin"] -= ((row["P(" + ml["colName"] + ")"] - (1/row[ml["colName"]])) / (1-(1/row[ml["colName"]])))*30000
@@ -79,8 +80,8 @@ for index, row in pred.iterrows():
                 mlresults.append(0)
                 mlDict["Result"].append(0)
                 mlDict["Book Prob"].append(1/row[ml["colName"]])
-                mlDict["Edge"].append(ml["edge"])
-                mlDict["P"].append(1/row[ml["colName"]] + ml["edge"])
+                mlDict["Edge"].append(row["P(" + ml["colName"] + ")"] - 1/row[ml["colName"]])
+                mlDict["P"].append(row["P(" + ml["colName"] + ")"])
         else:
             if (row["Away Score"] == row["Home Score"]):
                 bankroll += ((row["P(" + ml["colName"] + ")"] - (1/row[ml["colName"]])) / (1-(1/row[ml["colName"]])))*preBR*(row[ml["colName"]] - 1)
@@ -89,8 +90,8 @@ for index, row in pred.iterrows():
                 mlresults.append(1)
                 mlDict["Result"].append(1)
                 mlDict["Book Prob"].append(1/row[ml["colName"]])
-                mlDict["Edge"].append(ml["edge"])
-                mlDict["P"].append(1/row[ml["colName"]] + ml["edge"])
+                mlDict["Edge"].append(row["P(" + ml["colName"] + ")"] - 1/row[ml["colName"]])
+                mlDict["P"].append(row["P(" + ml["colName"] + ")"])
             else:
                 bankroll -= ((row["P(" + ml["colName"] + ")"] - (1/row[ml["colName"]])) / (1-(1/row[ml["colName"]])))*preBR
                 ml["netWin"] -= ((row["P(" + ml["colName"] + ")"] - (1/row[ml["colName"]])) / (1-(1/row[ml["colName"]])))*30000
@@ -98,8 +99,8 @@ for index, row in pred.iterrows():
                 mlresults.append(0)
                 mlDict["Result"].append(0)
                 mlDict["Book Prob"].append(1/row[ml["colName"]])
-                mlDict["Edge"].append(ml["edge"])
-                mlDict["P"].append(1/row[ml["colName"]] + ml["edge"])
+                mlDict["Edge"].append(row["P(" + ml["colName"] + ")"] - 1/row[ml["colName"]])
+                mlDict["P"].append(row["P(" + ml["colName"] + ")"])
     else:
         mlDict["Result"].append(np.nan)
         mlDict["Book Prob"].append(np.nan)
@@ -116,13 +117,8 @@ for index, row in pred.iterrows():
                     ahresults.append(1)
                     ahDict["Result"].append(1)
                     ahDict["Book Prob"].append(1/row[ah["colName"]])
-                    ahDict["Edge"].append(ah["edge"])
+                    ahDict["Edge"].append((row["P(" + ah["colName"] + ")"] - (1/row[ah["colName"]])))
                     ahDict["P"].append(1/row[ah["colName"]] + ah["edge"])
-                    resultsByEdge[int(ah["edge"]*100/5)].append(1)
-                    try:
-                        resultsByKK[int(((row["P(" + ah["colName"] + ")"] - (1/row[ah["colName"]])) / (1-(1/row[ah["colName"]])))*50)].append(1)
-                    except:
-                        resultsByKK[19].append(1)
                 elif (row["Away Score"] - row["Home Score"] > float(ah["colName"].split()[1])):
                     bankroll -= ((row["P(" + ah["colName"] + ")"] - (1/row[ah["colName"]])) / (1-(1/row[ah["colName"]])))*preBR
                     ah["netWin"] -= ((row["P(" + ah["colName"] + ")"] - (1/row[ah["colName"]])) / (1-(1/row[ah["colName"]])))*30000
@@ -130,13 +126,8 @@ for index, row in pred.iterrows():
                     ahresults.append(0)
                     ahDict["Result"].append(0)
                     ahDict["Book Prob"].append(1/row[ah["colName"]])
-                    ahDict["Edge"].append(ah["edge"])
+                    ahDict["Edge"].append((row["P(" + ah["colName"] + ")"] - (1/row[ah["colName"]])))
                     ahDict["P"].append(1/row[ah["colName"]] + ah["edge"])
-                    resultsByEdge[int(ah["edge"]*100/5)].append(0)
-                    try:
-                        resultsByKK[int(((row["P(" + ah["colName"] + ")"] - (1/row[ah["colName"]])) / (1-(1/row[ah["colName"]])))*50)].append(0)
-                    except:
-                        resultsByKK[19].append(0)
             else:
                 if (row["Home Score"] - row["Away Score"] < 0-float(ah["colName"].split()[1])):
                     bankroll += ((row["P(" + ah["colName"] + ")"] - (1/row[ah["colName"]])) / (1-(1/row[ah["colName"]])))*preBR*(row[ah["colName"]] - 1)
@@ -145,13 +136,8 @@ for index, row in pred.iterrows():
                     ahresults.append(1)
                     ahDict["Result"].append(1)
                     ahDict["Book Prob"].append(1/row[ah["colName"]])
-                    ahDict["Edge"].append(ah["edge"])
+                    ahDict["Edge"].append((row["P(" + ah["colName"] + ")"] - (1/row[ah["colName"]])))
                     ahDict["P"].append(1/row[ah["colName"]] + ah["edge"])
-                    resultsByEdge[int(ah["edge"]*100/5)].append(1)
-                    try:
-                        resultsByKK[int(((row["P(" + ah["colName"] + ")"] - (1/row[ah["colName"]])) / (1-(1/row[ah["colName"]])))*50)].append(1)
-                    except:
-                        resultsByKK[19].append(1)
                 elif (row["Home Score"] - row["Away Score"] > 0-float(ah["colName"].split()[1])):
                     bankroll -= ((row["P(" + ah["colName"] + ")"] - (1/row[ah["colName"]])) / (1-(1/row[ah["colName"]])))*preBR
                     ah["netWin"] -= ((row["P(" + ah["colName"] + ")"] - (1/row[ah["colName"]])) / (1-(1/row[ah["colName"]])))*30000
@@ -159,13 +145,8 @@ for index, row in pred.iterrows():
                     ahresults.append(0)
                     ahDict["Result"].append(0)
                     ahDict["Book Prob"].append(1/row[ah["colName"]])
-                    ahDict["Edge"].append(ah["edge"])
+                    ahDict["Edge"].append((row["P(" + ah["colName"] + ")"] - (1/row[ah["colName"]])))
                     ahDict["P"].append(1/row[ah["colName"]] + ah["edge"])
-                    resultsByEdge[int(ah["edge"]*100/5)].append(0)
-                    try:
-                        resultsByKK[int(((row["P(" + ah["colName"] + ")"] - (1/row[ah["colName"]])) / (1-(1/row[ah["colName"]])))*50)].append(0)
-                    except:
-                        resultsByKK[19].append(0)
         else:
             if (ah["colName"].split()[1][0] == "-" and ah["colName"].split()[1].split(".")[1] == "75"):
                 toAdd = -0.25
@@ -181,13 +162,8 @@ for index, row in pred.iterrows():
                     ahresults.append(1)
                     ahDict["Result"].append(1)
                     ahDict["Book Prob"].append(1/row[ah["colName"]])
-                    ahDict["Edge"].append(ah["edge"])
-                    ahDict["P"].append(1/row[ah["colName"]] + ah["edge"])
-                    resultsByEdge[int(ah["edge"]*100/5)].append(1)
-                    try:
-                        resultsByKK[int(((row["P(" + ah["colName"] + ")"] - (1/row[ah["colName"]])) / (1-(1/row[ah["colName"]])))*50)].append(1)
-                    except:
-                        resultsByKK[19].append(1)
+                    ahDict["Edge"].append((row["P(" + ah["colName"] + ")"] - (1/row[ah["colName"]])))
+                    ahDict["P"].append(row["P(" + ah["colName"] + ")"])
                 elif (row["Away Score"] - row["Home Score"] > float(ah["colName"].split()[1]) + toAdd):
                     bankroll -= ((row["P(" + ah["colName"] + ")"] - (1/row[ah["colName"]])) / (1-(1/row[ah["colName"]])))*preBR
                     ah["netWin"] -= ((row["P(" + ah["colName"] + ")"] - (1/row[ah["colName"]])) / (1-(1/row[ah["colName"]])))*30000
@@ -195,13 +171,8 @@ for index, row in pred.iterrows():
                     ahresults.append(0)
                     ahDict["Result"].append(0)
                     ahDict["Book Prob"].append(1/row[ah["colName"]])
-                    ahDict["Edge"].append(ah["edge"])
-                    ahDict["P"].append(1/row[ah["colName"]] + ah["edge"])
-                    resultsByEdge[int(ah["edge"]*100/5)].append(0)
-                    try:
-                        resultsByKK[int(((row["P(" + ah["colName"] + ")"] - (1/row[ah["colName"]])) / (1-(1/row[ah["colName"]])))*50)].append(0)
-                    except:
-                        resultsByKK[19].append(0)
+                    ahDict["Edge"].append((row["P(" + ah["colName"] + ")"] - (1/row[ah["colName"]])))
+                    ahDict["P"].append(row["P(" + ah["colName"] + ")"])
                 else:
                     if ((ah["colName"].split()[1][0] == "-" and ah["colName"].split()[1].split(".")[1] == "75") or (ah["colName"].split()[1][0] != "-" and ah["colName"].split()[1].split(".")[1] == "25")):
                         bankroll += (((row["P(" + ah["colName"] + ")"] - (1/row[ah["colName"]])) / (1-(1/row[ah["colName"]])))*preBR*(row[ah["colName"]] - 1))/2
@@ -210,13 +181,8 @@ for index, row in pred.iterrows():
                         ahresults.append(1)
                         ahDict["Result"].append(1)
                         ahDict["Book Prob"].append(1/row[ah["colName"]])
-                        ahDict["Edge"].append(ah["edge"])
-                        ahDict["P"].append(1/row[ah["colName"]] + ah["edge"])
-                        resultsByEdge[int(ah["edge"]*100/5)].append(1)
-                        try:
-                            resultsByKK[int(((row["P(" + ah["colName"] + ")"] - (1/row[ah["colName"]])) / (1-(1/row[ah["colName"]])))*50)].append(1)
-                        except:
-                            resultsByKK[19].append(1)
+                        ahDict["Edge"].append((row["P(" + ah["colName"] + ")"] - (1/row[ah["colName"]])))
+                        ahDict["P"].append(row["P(" + ah["colName"] + ")"])
                     else:
                         bankroll -= (((row["P(" + ah["colName"] + ")"] - (1/row[ah["colName"]])) / (1-(1/row[ah["colName"]])))*preBR)/2
                         ah["netWin"] -= (((row["P(" + ah["colName"] + ")"] - (1/row[ah["colName"]])) / (1-(1/row[ah["colName"]])))*30000)/2
@@ -224,13 +190,8 @@ for index, row in pred.iterrows():
                         ahresults.append(0)
                         ahDict["Result"].append(0)
                         ahDict["Book Prob"].append(1/row[ah["colName"]])
-                        ahDict["Edge"].append(ah["edge"])
-                        ahDict["P"].append(1/row[ah["colName"]] + ah["edge"])
-                        resultsByEdge[int(ah["edge"]*100/5)].append(0)
-                        try:
-                            resultsByKK[int(((row["P(" + ah["colName"] + ")"] - (1/row[ah["colName"]])) / (1-(1/row[ah["colName"]])))*50)].append(0)
-                        except:
-                            resultsByKK[19].append(0)
+                        ahDict["Edge"].append((row["P(" + ah["colName"] + ")"] - (1/row[ah["colName"]])))
+                        ahDict["P"].append(row["P(" + ah["colName"] + ")"])
             else:
                 if (row["Home Score"] - row["Away Score"] < 0-float(ah["colName"].split()[1]) - toAdd):
                     bankroll += ((row["P(" + ah["colName"] + ")"] - (1/row[ah["colName"]])) / (1-(1/row[ah["colName"]])))*preBR*(row[ah["colName"]] - 1)
@@ -239,13 +200,8 @@ for index, row in pred.iterrows():
                     ahresults.append(1)
                     ahDict["Result"].append(1)
                     ahDict["Book Prob"].append(1/row[ah["colName"]])
-                    ahDict["Edge"].append(ah["edge"])
-                    ahDict["P"].append(1/row[ah["colName"]] + ah["edge"])
-                    resultsByEdge[int(ah["edge"]*100/5)].append(1)
-                    try:
-                        resultsByKK[int(((row["P(" + ah["colName"] + ")"] - (1/row[ah["colName"]])) / (1-(1/row[ah["colName"]])))*50)].append(1)
-                    except:
-                        resultsByKK[19].append(1)
+                    ahDict["Edge"].append((row["P(" + ah["colName"] + ")"] - (1/row[ah["colName"]])))
+                    ahDict["P"].append(row["P(" + ah["colName"] + ")"])
                 elif (row["Home Score"] - row["Away Score"] > 0-float(ah["colName"].split()[1]) - toAdd):
                     bankroll -= ((row["P(" + ah["colName"] + ")"] - (1/row[ah["colName"]])) / (1-(1/row[ah["colName"]])))*preBR
                     ah["netWin"] -= ((row["P(" + ah["colName"] + ")"] - (1/row[ah["colName"]])) / (1-(1/row[ah["colName"]])))*30000
@@ -253,13 +209,8 @@ for index, row in pred.iterrows():
                     ahresults.append(0)
                     ahDict["Result"].append(0)
                     ahDict["Book Prob"].append(1/row[ah["colName"]])
-                    ahDict["Edge"].append(ah["edge"])
-                    ahDict["P"].append(1/row[ah["colName"]] + ah["edge"])
-                    resultsByEdge[int(ah["edge"]*100/5)].append(0)
-                    try:
-                        resultsByKK[int(((row["P(" + ah["colName"] + ")"] - (1/row[ah["colName"]])) / (1-(1/row[ah["colName"]])))*50)].append(0)
-                    except:
-                        resultsByKK[19].append(0)
+                    ahDict["Edge"].append((row["P(" + ah["colName"] + ")"] - (1/row[ah["colName"]])))
+                    ahDict["P"].append(row["P(" + ah["colName"] + ")"])
                 else:
                     if ((ah["colName"].split()[1][0] == "-" and ah["colName"].split()[1].split(".")[1] == "25") or (ah["colName"].split()[1][0] != "-" and ah["colName"].split()[1].split(".")[1] == "75")):
                         bankroll += (((row["P(" + ah["colName"] + ")"] - (1/row[ah["colName"]])) / (1-(1/row[ah["colName"]])))*preBR*(row[ah["colName"]] - 1))/2
@@ -268,13 +219,8 @@ for index, row in pred.iterrows():
                         ahresults.append(1)
                         ahDict["Result"].append(1)
                         ahDict["Book Prob"].append(1/row[ah["colName"]])
-                        ahDict["Edge"].append(ah["edge"])
-                        ahDict["P"].append(1/row[ah["colName"]] + ah["edge"])
-                        resultsByEdge[int(ah["edge"]*100/5)].append(1)
-                        try:
-                            resultsByKK[int(((row["P(" + ah["colName"] + ")"] - (1/row[ah["colName"]])) / (1-(1/row[ah["colName"]])))*50)].append(1)
-                        except:
-                            resultsByKK[19].append(1)
+                        ahDict["Edge"].append((row["P(" + ah["colName"] + ")"] - (1/row[ah["colName"]])))
+                        ahDict["P"].append(row["P(" + ah["colName"] + ")"])
                     else:
                         bankroll -= (((row["P(" + ah["colName"] + ")"] - (1/row[ah["colName"]])) / (1-(1/row[ah["colName"]])))*preBR)/2
                         ah["netWin"] -= (((row["P(" + ah["colName"] + ")"] - (1/row[ah["colName"]])) / (1-(1/row[ah["colName"]])))*30000)/2
@@ -282,13 +228,8 @@ for index, row in pred.iterrows():
                         ahresults.append(0)
                         ahDict["Result"].append(0)
                         ahDict["Book Prob"].append(1/row[ah["colName"]])
-                        ahDict["Edge"].append(ah["edge"])
-                        ahDict["P"].append(1/row[ah["colName"]] + ah["edge"])
-                        resultsByEdge[int(ah["edge"]*100/5)].append(0)
-                        try:
-                            resultsByKK[int(((row["P(" + ah["colName"] + ")"] - (1/row[ah["colName"]])) / (1-(1/row[ah["colName"]])))*50)].append(0)
-                        except:
-                            resultsByKK[19].append(0)
+                        ahDict["Edge"].append((row["P(" + ah["colName"] + ")"] - (1/row[ah["colName"]])))
+                        ahDict["P"].append(row["P(" + ah["colName"] + ")"])
     else:
         ahDict["Result"].append(np.nan)
         ahDict["Book Prob"].append(np.nan)
@@ -305,12 +246,8 @@ for index, row in pred.iterrows():
                     ouresults.append(1)
                     ouDict["Result"].append(1)
                     ouDict["Book Prob"].append(1/row[ou["colName"]])
-                    ouDict["Edge"].append(ou["edge"])
-                    ouDict["P"].append(1/row[ou["colName"]] + ou["edge"])
-                    try:
-                        ouresultsByKK[int(((row["P(" + ou["colName"] + ")"] - (1/row[ou["colName"]])) / (1-(1/row[ou["colName"]])))*50)].append(1)
-                    except:
-                        ouresultsByKK[19].append(1)
+                    ouDict["Edge"].append((row["P(" + ou["colName"] + ")"] - (1/row[ou["colName"]])))
+                    ouDict["P"].append(row["P(" + ou["colName"] + ")"])
                 elif (row["Home Score"] + row["Away Score"] < float(ou["colName"].split()[1])):
                     bankroll -= ((row["P(" + ou["colName"] + ")"] - (1/row[ou["colName"]])) / (1-(1/row[ou["colName"]])))*preBR
                     ou["netWin"] -= ((row["P(" + ou["colName"] + ")"] - (1/row[ou["colName"]])) / (1-(1/row[ou["colName"]])))*30000
@@ -318,8 +255,8 @@ for index, row in pred.iterrows():
                     ouresults.append(0)
                     ouDict["Result"].append(0)
                     ouDict["Book Prob"].append(1/row[ou["colName"]])
-                    ouDict["Edge"].append(ou["edge"])
-                    ouDict["P"].append(1/row[ou["colName"]] + ou["edge"])
+                    ouDict["Edge"].append((row["P(" + ou["colName"] + ")"] - (1/row[ou["colName"]])))
+                    ouDict["P"].append(row["P(" + ou["colName"] + ")"])
             else:
                 if (row["Home Score"] + row["Away Score"] < float(ou["colName"].split()[1])):
                     bankroll += ((row["P(" + ou["colName"] + ")"] - (1/row[ou["colName"]])) / (1-(1/row[ou["colName"]])))*preBR*(row[ou["colName"]] - 1)
@@ -328,12 +265,8 @@ for index, row in pred.iterrows():
                     ouresults.append(1)
                     ouDict["Result"].append(1)
                     ouDict["Book Prob"].append(1/row[ou["colName"]])
-                    ouDict["Edge"].append(ou["edge"])
-                    ouDict["P"].append(1/row[ou["colName"]] + ou["edge"])
-                    try:
-                        ouresultsByKK[int(((row["P(" + ou["colName"] + ")"] - (1/row[ou["colName"]])) / (1-(1/row[ou["colName"]])))*50)].append(1)
-                    except:
-                        ouresultsByKK[19].append(1)
+                    ouDict["Edge"].append((row["P(" + ou["colName"] + ")"] - (1/row[ou["colName"]])))
+                    ouDict["P"].append(row["P(" + ou["colName"] + ")"])
                 elif (row["Home Score"] + row["Away Score"] > float(ou["colName"].split()[1])):
                     bankroll -= ((row["P(" + ou["colName"] + ")"] - (1/row[ou["colName"]])) / (1-(1/row[ou["colName"]])))*preBR
                     ou["netWin"] -= ((row["P(" + ou["colName"] + ")"] - (1/row[ou["colName"]])) / (1-(1/row[ou["colName"]])))*30000
@@ -341,8 +274,8 @@ for index, row in pred.iterrows():
                     ouresults.append(0)
                     ouDict["Result"].append(0)
                     ouDict["Book Prob"].append(1/row[ou["colName"]])
-                    ouDict["Edge"].append(ou["edge"])
-                    ouDict["P"].append(1/row[ou["colName"]] + ou["edge"])
+                    ouDict["Edge"].append((row["P(" + ou["colName"] + ")"] - (1/row[ou["colName"]])))
+                    ouDict["P"].append(row["P(" + ou["colName"] + ")"])
         elif (ou["colName"].split()[1].split(".")[1] == "25"):
             if ("Over" in ou["colName"]):
                 if (row["Home Score"] + row["Away Score"] == float(ou["colName"].split()[1]) - 0.25):
@@ -352,12 +285,8 @@ for index, row in pred.iterrows():
                     ouresults.append(0)
                     ouDict["Result"].append(0)
                     ouDict["Book Prob"].append(1/row[ou["colName"]])
-                    ouDict["Edge"].append(ou["edge"])
-                    ouDict["P"].append(1/row[ou["colName"]] + ou["edge"])
-                    try:
-                        ouresultsByKK[int(((row["P(" + ou["colName"] + ")"] - (1/row[ou["colName"]])) / (1-(1/row[ou["colName"]])))*50)].append(0)
-                    except:
-                        ouresultsByKK[19].append(0)
+                    ouDict["Edge"].append((row["P(" + ou["colName"] + ")"] - (1/row[ou["colName"]])))
+                    ouDict["P"].append(row["P(" + ou["colName"] + ")"])
                 elif (row["Home Score"] + row["Away Score"] > float(ou["colName"].split()[1])):
                     bankroll += ((row["P(" + ou["colName"] + ")"] - (1/row[ou["colName"]])) / (1-(1/row[ou["colName"]])))*preBR*(row[ou["colName"]] - 1)
                     ou["netWin"] += ((row["P(" + ou["colName"] + ")"] - (1/row[ou["colName"]])) / (1-(1/row[ou["colName"]])))*30000*(row[ou["colName"]] - 1)
@@ -365,12 +294,8 @@ for index, row in pred.iterrows():
                     ouresults.append(1)
                     ouDict["Result"].append(1)
                     ouDict["Book Prob"].append(1/row[ou["colName"]])
-                    ouDict["Edge"].append(ou["edge"])
-                    ouDict["P"].append(1/row[ou["colName"]] + ou["edge"])
-                    try:
-                        ouresultsByKK[int(((row["P(" + ou["colName"] + ")"] - (1/row[ou["colName"]])) / (1-(1/row[ou["colName"]])))*50)].append(1)
-                    except:
-                        ouresultsByKK[19].append(1)
+                    ouDict["Edge"].append((row["P(" + ou["colName"] + ")"] - (1/row[ou["colName"]])))
+                    ouDict["P"].append(row["P(" + ou["colName"] + ")"])
                 else:
                     bankroll -= ((row["P(" + ou["colName"] + ")"] - (1/row[ou["colName"]])) / (1-(1/row[ou["colName"]])))*preBR
                     ou["netWin"] -= ((row["P(" + ou["colName"] + ")"] - (1/row[ou["colName"]])) / (1-(1/row[ou["colName"]])))*30000
@@ -378,13 +303,8 @@ for index, row in pred.iterrows():
                     ouresults.append(0)
                     ouDict["Result"].append(0)
                     ouDict["Book Prob"].append(1/row[ou["colName"]])
-                    ouDict["Edge"].append(ou["edge"])
-                    ouDict["P"].append(1/row[ou["colName"]] + ou["edge"])
-                    try:
-                        ouresultsByKK[int(((row["P(" + ou["colName"] + ")"] - (1/row[ou["colName"]])) / (1-(1/row[ou["colName"]])))*50)].append(0)
-                    except:
-                        ouresultsByKK[19].append(0)
-            else:
+                    ouDict["Edge"].append((row["P(" + ou["colName"] + ")"] - (1/row[ou["colName"]])))
+                    ouDict["P"].append(row["P(" + ou["colName"] + ")"])
                 if (row["Home Score"] + row["Away Score"] == float(ou["colName"].split()[1]) - 0.25):
                     bankroll += ((row["P(" + ou["colName"] + ")"] - (1/row[ou["colName"]])) / (1-(1/row[ou["colName"]])))*preBR*(row[ou["colName"]] - 1)/2
                     ou["netWin"] += ((row["P(" + ou["colName"] + ")"] - (1/row[ou["colName"]])) / (1-(1/row[ou["colName"]])))*30000*(row[ou["colName"]] - 1)/2
@@ -392,12 +312,8 @@ for index, row in pred.iterrows():
                     ouresults.append(1)
                     ouDict["Result"].append(1)
                     ouDict["Book Prob"].append(1/row[ou["colName"]])
-                    ouDict["Edge"].append(ou["edge"])
-                    ouDict["P"].append(1/row[ou["colName"]] + ou["edge"])
-                    try:
-                        ouresultsByKK[int(((row["P(" + ou["colName"] + ")"] - (1/row[ou["colName"]])) / (1-(1/row[ou["colName"]])))*50)].append(1)
-                    except:
-                        ouresultsByKK[19].append(1)
+                    ouDict["Edge"].append((row["P(" + ou["colName"] + ")"] - (1/row[ou["colName"]])))
+                    ouDict["P"].append(row["P(" + ou["colName"] + ")"])
                 elif (row["Home Score"] + row["Away Score"] < float(ou["colName"].split()[1])):
                     bankroll += ((row["P(" + ou["colName"] + ")"] - (1/row[ou["colName"]])) / (1-(1/row[ou["colName"]])))*preBR*(row[ou["colName"]] - 1)
                     ou["netWin"] += ((row["P(" + ou["colName"] + ")"] - (1/row[ou["colName"]])) / (1-(1/row[ou["colName"]])))*30000*(row[ou["colName"]] - 1)
@@ -405,12 +321,8 @@ for index, row in pred.iterrows():
                     ouresults.append(1)
                     ouDict["Result"].append(1)
                     ouDict["Book Prob"].append(1/row[ou["colName"]])
-                    ouDict["Edge"].append(ou["edge"])
-                    ouDict["P"].append(1/row[ou["colName"]] + ou["edge"])
-                    try:
-                        ouresultsByKK[int(((row["P(" + ou["colName"] + ")"] - (1/row[ou["colName"]])) / (1-(1/row[ou["colName"]])))*50)].append(1)
-                    except:
-                        ouresultsByKK[19].append(1)
+                    ouDict["Edge"].append((row["P(" + ou["colName"] + ")"] - (1/row[ou["colName"]])))
+                    ouDict["P"].append(row["P(" + ou["colName"] + ")"])
                 else:
                     bankroll -= ((row["P(" + ou["colName"] + ")"] - (1/row[ou["colName"]])) / (1-(1/row[ou["colName"]])))*preBR
                     ou["netWin"] -= ((row["P(" + ou["colName"] + ")"] - (1/row[ou["colName"]])) / (1-(1/row[ou["colName"]])))*30000
@@ -418,12 +330,8 @@ for index, row in pred.iterrows():
                     ouresults.append(0)
                     ouDict["Result"].append(0)
                     ouDict["Book Prob"].append(1/row[ou["colName"]])
-                    ouDict["Edge"].append(ou["edge"])
-                    ouDict["P"].append(1/row[ou["colName"]] + ou["edge"])
-                    try:
-                        ouresultsByKK[int(((row["P(" + ou["colName"] + ")"] - (1/row[ou["colName"]])) / (1-(1/row[ou["colName"]])))*50)].append(0)
-                    except:
-                        ouresultsByKK[19].append(0)
+                    ouDict["Edge"].append((row["P(" + ou["colName"] + ")"] - (1/row[ou["colName"]])))
+                    ouDict["P"].append(row["P(" + ou["colName"] + ")"])
         else:
             if ("Over" in ou["colName"]):
                 if (row["Home Score"] + row["Away Score"] == float(ou["colName"].split()[1]) + 0.25):
@@ -433,12 +341,8 @@ for index, row in pred.iterrows():
                     ouresults.append(1)
                     ouDict["Result"].append(1)
                     ouDict["Book Prob"].append(1/row[ou["colName"]])
-                    ouDict["Edge"].append(ou["edge"])
-                    ouDict["P"].append(1/row[ou["colName"]] + ou["edge"])
-                    try:
-                        ouresultsByKK[int(((row["P(" + ou["colName"] + ")"] - (1/row[ou["colName"]])) / (1-(1/row[ou["colName"]])))*50)].append(1)
-                    except:
-                        ouresultsByKK[19].append(1)
+                    ouDict["Edge"].append((row["P(" + ou["colName"] + ")"] - (1/row[ou["colName"]])))
+                    ouDict["P"].append(row["P(" + ou["colName"] + ")"])
                 elif (row["Home Score"] + row["Away Score"] > float(ou["colName"].split()[1])):
                     bankroll += ((row["P(" + ou["colName"] + ")"] - (1/row[ou["colName"]])) / (1-(1/row[ou["colName"]])))*preBR*(row[ou["colName"]] - 1)
                     ou["netWin"] += ((row["P(" + ou["colName"] + ")"] - (1/row[ou["colName"]])) / (1-(1/row[ou["colName"]])))*30000*(row[ou["colName"]] - 1)
@@ -446,12 +350,8 @@ for index, row in pred.iterrows():
                     ouresults.append(1)
                     ouDict["Result"].append(1)
                     ouDict["Book Prob"].append(1/row[ou["colName"]])
-                    ouDict["Edge"].append(ou["edge"])
-                    ouDict["P"].append(1/row[ou["colName"]] + ou["edge"])
-                    try:
-                        ouresultsByKK[int(((row["P(" + ou["colName"] + ")"] - (1/row[ou["colName"]])) / (1-(1/row[ou["colName"]])))*50)].append(1)
-                    except:
-                        ouresultsByKK[19].append(1)
+                    ouDict["Edge"].append((row["P(" + ou["colName"] + ")"] - (1/row[ou["colName"]])))
+                    ouDict["P"].append(row["P(" + ou["colName"] + ")"])
                 else:
                     bankroll -= ((row["P(" + ou["colName"] + ")"] - (1/row[ou["colName"]])) / (1-(1/row[ou["colName"]])))*preBR
                     ou["netWin"] -= ((row["P(" + ou["colName"] + ")"] - (1/row[ou["colName"]])) / (1-(1/row[ou["colName"]])))*30000
@@ -459,12 +359,8 @@ for index, row in pred.iterrows():
                     ouresults.append(0)
                     ouDict["Result"].append(0)
                     ouDict["Book Prob"].append(1/row[ou["colName"]])
-                    ouDict["Edge"].append(ou["edge"])
-                    ouDict["P"].append(1/row[ou["colName"]] + ou["edge"])
-                    try:
-                        ouresultsByKK[int(((row["P(" + ou["colName"] + ")"] - (1/row[ou["colName"]])) / (1-(1/row[ou["colName"]])))*50)].append(0)
-                    except:
-                        ouresultsByKK[19].append(0)
+                    ouDict["Edge"].append((row["P(" + ou["colName"] + ")"] - (1/row[ou["colName"]])))
+                    ouDict["P"].append(row["P(" + ou["colName"] + ")"])
             else:
                 if (row["Home Score"] + row["Away Score"] == float(ou["colName"].split()[1]) + 0.25):
                     bankroll -= ((row["P(" + ou["colName"] + ")"] - (1/row[ou["colName"]])) / (1-(1/row[ou["colName"]])))*preBR/2
@@ -473,12 +369,8 @@ for index, row in pred.iterrows():
                     ouresults.append(0)
                     ouDict["Result"].append(0)
                     ouDict["Book Prob"].append(1/row[ou["colName"]])
-                    ouDict["Edge"].append(ou["edge"])
-                    ouDict["P"].append(1/row[ou["colName"]] + ou["edge"])
-                    try:
-                        ouresultsByKK[int(((row["P(" + ou["colName"] + ")"] - (1/row[ou["colName"]])) / (1-(1/row[ou["colName"]])))*50)].append(0)
-                    except:
-                        ouresultsByKK[19].append(0)
+                    ouDict["Edge"].append((row["P(" + ou["colName"] + ")"] - (1/row[ou["colName"]])))
+                    ouDict["P"].append(row["P(" + ou["colName"] + ")"])
                 elif (row["Home Score"] + row["Away Score"] < float(ou["colName"].split()[1])):
                     bankroll += ((row["P(" + ou["colName"] + ")"] - (1/row[ou["colName"]])) / (1-(1/row[ou["colName"]])))*preBR*(row[ou["colName"]] - 1)
                     ou["netWin"] += ((row["P(" + ou["colName"] + ")"] - (1/row[ou["colName"]])) / (1-(1/row[ou["colName"]])))*30000*(row[ou["colName"]] - 1)
@@ -486,12 +378,8 @@ for index, row in pred.iterrows():
                     ouresults.append(1)
                     ouDict["Result"].append(1)
                     ouDict["Book Prob"].append(1/row[ou["colName"]])
-                    ouDict["Edge"].append(ou["edge"])
-                    ouDict["P"].append(1/row[ou["colName"]] + ou["edge"])
-                    try:
-                        ouresultsByKK[int(((row["P(" + ou["colName"] + ")"] - (1/row[ou["colName"]])) / (1-(1/row[ou["colName"]])))*50)].append(1)
-                    except:
-                        ouresultsByKK[19].append(1)
+                    ouDict["Edge"].append((row["P(" + ou["colName"] + ")"] - (1/row[ou["colName"]])))
+                    ouDict["P"].append(row["P(" + ou["colName"] + ")"])
                 else:
                     bankroll -= ((row["P(" + ou["colName"] + ")"] - (1/row[ou["colName"]])) / (1-(1/row[ou["colName"]])))*preBR
                     ou["netWin"] -= ((row["P(" + ou["colName"] + ")"] - (1/row[ou["colName"]])) / (1-(1/row[ou["colName"]])))*30000
@@ -499,12 +387,8 @@ for index, row in pred.iterrows():
                     ouresults.append(0)
                     ouDict["Result"].append(0)
                     ouDict["Book Prob"].append(1/row[ou["colName"]])
-                    ouDict["Edge"].append(ou["edge"])
-                    ouDict["P"].append(1/row[ou["colName"]] + ou["edge"])
-                    try:
-                        ouresultsByKK[int(((row["P(" + ou["colName"] + ")"] - (1/row[ou["colName"]])) / (1-(1/row[ou["colName"]])))*50)].append(0)
-                    except:
-                        ouresultsByKK[19].append(0)
+                    ouDict["Edge"].append((row["P(" + ou["colName"] + ")"] - (1/row[ou["colName"]])))
+                    ouDict["P"].append(row["P(" + ou["colName"] + ")"])
     else:
         ouDict["Result"].append(np.nan)
         ouDict["Book Prob"].append(np.nan)
@@ -525,15 +409,9 @@ print ("OU Odds Taken:", 1/np.average(ouoddsTaken))
 print ("OU Results:",np.average(ouresults))
 print ("OU Net Win:", ou["netWin"])
 print ("OU Net Win Fixed Betting:", ou["netWinFixed"])
-for i in range(20):
-    print (i, np.average(resultsByEdge[i]), len(resultsByEdge[i]))
-for i in range(20):
-    print (i, np.average(resultsByKK[i]), len(resultsByKK[i]))
-for i in range(20):
-    print (i, np.average(resultsByKK[i]), len(resultsByKK[i]))
 dfFinal = pd.DataFrame.from_dict(mlDict)
-dfFinal.to_csv("./EPL_Csvs/newvars_no_T/weibull_copula/mlResultsByEdge.csv")
+dfFinal.to_csv("./EPL_Csvs/mlResultsByEdge3Games.csv")
 dfFinal = pd.DataFrame.from_dict(ahDict)
-dfFinal.to_csv("./EPL_Csvs/newvars_no_T/weibull_copula/ahResultsByEdge.csv")
+dfFinal.to_csv("./EPL_Csvs/ahResultsByEdge3Games.csv")
 dfFinal = pd.DataFrame.from_dict(ouDict)
-dfFinal.to_csv("./EPL_Csvs/newvars_no_T/weibull_copula/ouResultsByEdge.csv")
+dfFinal.to_csv("./EPL_Csvs/ouResultsByEdge3Games.csv")

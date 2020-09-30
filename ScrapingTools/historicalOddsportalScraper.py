@@ -23,38 +23,38 @@ for i in range(36):
     dict3["Under " + str((i+1)/4)] = []
 #
 #
-# years = []
-# yr = 2014
-# while (yr <= 2020):
-#     years.append(yr)
-#     yr += 1
-# pages = [1,2,3,4,5,6,7,8]
-# urls = []
-# for i in range(len(years)):
-#     if (years[i] == 2019):
-#         break
-#     for pg in pages:
-#         urls.append("https://www.oddsportal.com/soccer/italy/serie-a-" + str(years[i]) + "-" + str(years[i+1]) + "/results/#/page/" + str(pg))
-# gameUrls = []
-# browser = webdriver.Chrome(executable_path='chromedriver.exe')
-# for url in urls:
-#     browser.get(url)
-#     soup = BeautifulSoup(browser.page_source, 'html.parser')
-#     table = soup.find(class_="table-main")
-#     rows = table.find_all('tr')
-#     for row in rows:
-#         if ("deactivate" in row["class"]):
-#             temp = row.find(class_="name table-participant")
-#             temp = temp.find("a")
-#             gameUrls.append("https://www.oddsportal.com/" + temp["href"])
-#     time.sleep(1)
-# browser.quit()
-# a = pd.DataFrame()
+years = []
+yr = 2019
+while (yr <= 2020):
+    years.append(yr)
+    yr += 1
+pages = [1,2,3,4,5,6,7,8]
+urls = []
+for i in range(len(years)):
+    if (years[i] == 2020):
+        break
+    for pg in pages:
+        urls.append("https://www.oddsportal.com/soccer/england/premier-league-" + str(years[i]) + "-" + str(years[i+1]) + "/results/#/page/" + str(pg))
+gameUrls = []
+browser = webdriver.Chrome(executable_path='chromedriver.exe')
+for url in urls:
+    browser.get(url)
+    soup = BeautifulSoup(browser.page_source, 'html.parser')
+    table = soup.find(class_="table-main")
+    rows = table.find_all('tr')
+    for row in rows:
+        if ("deactivate" in row["class"]):
+            temp = row.find(class_="name table-participant")
+            temp = temp.find("a")
+            gameUrls.append("https://www.oddsportal.com/" + temp["href"])
+    time.sleep(1)
+browser.quit()
+a = pd.DataFrame()
 # a["Urls"] = gameUrls
 # a.to_csv("./gameurlsSA.csv")
 
-a = pd.DataFrame().from_csv("./gameurlsSA.csv", encoding = "UTF-8")
-gameUrls = a["Urls"].tolist()
+# a = pd.DataFrame().from_csv("./gameurlsSA.csv", encoding = "UTF-8")
+# gameUrls = a["Urls"].tolist()
 # dict = pd.DataFrame().from_csv("./SomeHistoricOdds.csv", encoding = "UTF-8")
 # gamesAccountedFor = len(dict["1"].tolist())
 # for i in reversed(range(len(gameUrls))):
@@ -79,15 +79,15 @@ miscBool = False
 mlBool = False
 ahBool = False
 ouBool = False
-betTypes = ["#ah;2","#over-under;2"]
+betTypes = ["#1X2;2"]
 for type in betTypes:
     browser = webdriver.Chrome(executable_path='chromedriver.exe')
     for url in gameUrls:
         print (str(count) + " out of " + str(len(gameUrls)) + " games")
         count += 1
         if (type == "#1X2;2"):
-            tempDf = pd.DataFrame().from_dict(dict1)
-            tempDf.to_csv("./1x2SA.csv")
+            # tempDf = pd.DataFrame().from_dict(dict1)
+            # tempDf.to_csv("./1x2SA.csv")
             browser.get(url + "/" + type)
             soup = BeautifulSoup(browser.page_source, 'html.parser')
             try:
@@ -116,28 +116,31 @@ for type in betTypes:
                     if ("Home" in key or "Away" in key or "Date" in key):
                         dict1[key].append(np.nan)
             table = soup.find("table")
-            rows = table.find_all("tr")
-            for row in rows:
-                if (row.find(class_="name") != None):
-                    if (row.find(class_="name").string == "Pinnacle"):
-                        tds = row.find_all("td")
-                        orderCount = 0
-                        for td in tds:
-                            try:
-                                if (td.has_attr("class") and "odds" in td["class"]):
-                                    if (orderCount == 0):
-                                        dict1["1"].append(oddsToDecimal(td.find("div").string))
-                                        mlBool = True
-                                    elif (orderCount == 1):
-                                        dict1["X"].append(oddsToDecimal(td.find("div").string))
-                                        mlBool = True
-                                    else:
-                                        dict1["2"].append(oddsToDecimal(td.find("div").string))
-                                        mlBool = True
+            try:
+                rows = table.find_all("tr")
+                for row in rows:
+                    if (row.find(class_="name") != None):
+                        if (row.find(class_="name").string == "Pinnacle"):
+                            tds = row.find_all("td")
+                            orderCount = 0
+                            for td in tds:
+                                try:
+                                    if (td.has_attr("class") and "odds" in td["class"]):
+                                        if (orderCount == 0):
+                                            dict1["1"].append(oddsToDecimal(td.find("div").string))
+                                            mlBool = True
+                                        elif (orderCount == 1):
+                                            dict1["X"].append(oddsToDecimal(td.find("div").string))
+                                            mlBool = True
+                                        else:
+                                            dict1["2"].append(oddsToDecimal(td.find("div").string))
+                                            mlBool = True
+                                        orderCount += 1
+                                except:
                                     orderCount += 1
-                            except:
-                                orderCount += 1
-                                pass
+                                    pass
+            except:
+                pass
             if (mlBool):
                 mlCounter += 1
                 for key in dict1:
@@ -406,5 +409,5 @@ for type in betTypes:
 #                         backUpDict[key].append(dict[key][i])
 #         time.sleep(1)
 # browser.quit()
-dfFinal = pd.DataFrame.from_dict(dict)
-dfFinal.to_csv("./SAHistoricOdds.csv")
+dfFinal = pd.DataFrame.from_dict(dict1)
+dfFinal.to_csv("./2019-2020Results.csv")

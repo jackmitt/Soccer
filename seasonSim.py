@@ -1,15 +1,15 @@
 import pandas as pd
 import numpy as np
 
-ml = pd.read_csv('./EPL_Csvs/newvars_no_T/weibull_copula/mlResultsByEdge.csv', encoding = "ISO-8859-1")
-ah = pd.read_csv('./EPL_Csvs/newvars_no_T/weibull_copula/ahResultsByEdge.csv', encoding = "ISO-8859-1")
-ou = pd.read_csv('./EPL_Csvs/newvars_no_T/weibull_copula/ouResultsByEdge.csv', encoding = "ISO-8859-1")
+ml = pd.read_csv('./EPL_Csvs/mlResultsByEdge3Games.csv', encoding = "ISO-8859-1")
+ah = pd.read_csv('./EPL_Csvs/ahResultsByEdge3Games.csv', encoding = "ISO-8859-1")
+ou = pd.read_csv('./EPL_Csvs/ouResultsByEdge3Games.csv', encoding = "ISO-8859-1")
 
-ahkellyDiv = 11
-oukellyDiv = 18
-mlkellyDiv = 16
+ahkellyDiv = 13
+oukellyDiv = 15
+mlkellyDiv = 14
 
-for k in range(1):
+for k in range(10):
     #Season loop
     curIter = 0
     lowestReturn = 1000
@@ -106,6 +106,6 @@ for k in range(1):
             temp.append(0)
     print ("Percent of Seasons Ending with less than 25% of bankroll:", np.average(temp))
     print ("------------------------------------------------------------------------------------------------")
-    # oukellyDiv *=  1.06
-    # ahkellyDiv *=  1.06
-    # mlkellyDiv *=  1.06
+    oukellyDiv += 0.5
+    ahkellyDiv += 0.5
+    mlkellyDiv += 0.5

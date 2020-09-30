@@ -11,7 +11,7 @@ para = "EPL"
 
 
 #change every week - number of matchweeks played
-mwThru = 2
+mwThru = 3
 dateStart = datetime.date(2020, 9, 11) + datetime.timedelta(days=7*(mwThru-1))
 dateThru = datetime.date(2020, 9, 11) + datetime.timedelta(days=7*mwThru)
 

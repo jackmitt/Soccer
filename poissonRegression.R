@@ -6,7 +6,7 @@ library(sigmoid)
 library(My.stepwise)
 library(MASS)
 
-data = read.csv("C:/Users/JackMitt/Documents/EPLBettingModel/EPL_Csvs/newvars_no_T/poissonFormattedDataNoT.csv")
+data = read.csv("C:/Users/JackMitt/Documents/EPLBettingModel/EPL_Csvs/poissonFormattedData4Games.csv")
 numData = data[-c(1,2,3,4)]
 dataScaled = as.data.frame(scale(numData))
 #tData = dataScaled[c(1:58)]
@@ -73,5 +73,5 @@ data["8 Goal Prob"] = prob_8_goal
 data["9 Goal Prob"] = prob_9_goal
 data["10 Goal Prob"] = prob_10_goal
 
-write.csv(data, "C:/Users/JackMitt/Documents/EPLBettingModel/EPL_Csvs/newvars_no_T/poissonPredictionMeans.csv")
+write.csv(data, "C:/Users/JackMitt/Documents/EPLBettingModel/EPL_Csvs/poissonPredictionMeans4Games.csv")
 

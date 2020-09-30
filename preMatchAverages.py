@@ -4,6 +4,8 @@ import datetime
 import gc
 
 def last5scale(a, b):
+    if (len(a)<=5 or len(b)<=5):
+        return (0)
     scaleBy = 1.05
     totalT = scaleBy**0 + scaleBy**1 + scaleBy**2 + scaleBy**3 + scaleBy**4
     c = 0
@@ -262,8 +264,8 @@ for index, row in data.iterrows():
                     #
                     #
                     #
-                    # CHANGED FOR EXPERIMENT - NORMALLY IS 5
-                    if (len(seasonDict[row["Home"]]["" + "ball_winning"]) < 5 or len(seasonDict[row["Away"]]["" + "ball_winning"]) < 5):
+                    # CHANGED FOR EXPERIMENT - NORMALLY IS 3
+                    if (len(seasonDict[row["Home"]]["" + "ball_winning"]) < 3 or len(seasonDict[row["Away"]]["" + "ball_winning"]) < 3):
                         dict[tCat + side + "ball_winning"].append(np.nan)
                         dict[tCat + side + "chance_efficiency"].append(np.nan)
                         dict[tCat + side + "shooting_efficiency"].append(np.nan)
@@ -1032,4 +1034,4 @@ for index, row in data.iterrows():
     #print (seasonDict)
 for key in dict:
     data[key] = dict[key]
-data.to_csv("./EPL_Csvs/bigboy.csv")
+data.to_csv("./EPL_Csvs/bigboy4Games.csv")

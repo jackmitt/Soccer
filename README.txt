@@ -13,9 +13,8 @@ Order for recreating model from scratch:
 ***) PoissonMeansForWeibull.py then WeibullCountDist.py then fix dates if necessary in WeibullPredictions.csv
 8) bettingProbabilities.py/weibullBettingProbabilities.py
 9) naiveEvaluation.py
-10) regressionOnModelledEdge.R
-11) bettingSims.py
-12) seasonSim.py
+10) bettingSims.py
+11) seasonSim.py
 
 Weekly script order:
 1) weeklyOddsScrape.py, weeklyStatsScrape.py (in /ScrapingTools)

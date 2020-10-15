@@ -5,15 +5,16 @@ import rpy2.robjects as robjects
 from WeibullCountModelFunctions.MLE import MLE
 from WeibullCountModelFunctions.WeibullPMF import weibullPmf
 from WeibullCountModelFunctions.frankCopula import copula
+from simultaneousDependentKelly import gradient_ascent
 import itertools
 import threading
 import time
 import sys
 
 #Change to be the MW that is to be predicted
-week = 5
-mlDiv = 19*2
-ahDiv = 19*2
+week = 4
+mlDiv = 18*2
+ahDiv = 17*2
 ouDiv = 19*2
 
 def last5scale(a, b):
@@ -48,7 +49,7 @@ def animate():
     for c in itertools.cycle(['|', '/', '-', '\\']):
         if done:
             break
-        sys.stdout.write('\rOptimizing Parameters ' + c)
+        sys.stdout.write('\rOptimizing Bet Sizing ' + c)
         sys.stdout.flush()
         time.sleep(0.1)
 
@@ -1102,7 +1103,7 @@ done = False
 t = threading.Thread(target=animate)
 t.start()
 train = pd.read_csv('./EPL_Csvs/3Game_newvars_no_T/WeibullFormat3Games.csv', encoding = "ISO-8859-1")
-dict = {}
+jdict = {}
 #optimal = MLE(train)
 optimal = [1.04029404, 1.09581082, 0.19346436]
 done = True
@@ -1122,28 +1123,27 @@ while (cur < len(df.index)):
             aCdf.append(weibullPmf(j, df.at[cur, "A_Poisson Mean Prediction"], optimal[1], alphaDictA) + aCdf[j-1])
     #Converts the distribution from joint CDF to joint PMF
     for j in range(11):
-        if (j not in dict):
-            dict[j] = {}
+        if (j not in jdict):
+            jdict[j] = {}
         for k in range(11):
-            if (k not in dict[j]):
-                dict[j][k] = []
+            if (k not in jdict[j]):
+                jdict[j][k] = []
             if (j == 0 and k == 0):
-                dict[j][k].append(copula(hCdf[j], aCdf[k], optimal[2]))
+                jdict[j][k].append(copula(hCdf[j], aCdf[k], optimal[2]))
             else:
                 tempProb = copula(hCdf[j], aCdf[k], optimal[2])
                 for p in range(j+1):
                     for q in range(k+1):
                         if (p == j and q == k):
                             break
-                        tempProb -= dict[p][q][n]
-                dict[j][k].append(tempProb)
+                        tempProb -= jdict[p][q][n]
+                jdict[j][k].append(tempProb)
     cur += 1
     n += 1
 
 for j in range(11):
     for k in range(11):
-        df[str(j) + " -- " + str(k)] = dict[j][k]
-
+        df[str(j) + " -- " + str(k)] = jdict[j][k]
 
 #weibullBettingProbabilities
 dict = {}
@@ -1274,8 +1274,7 @@ for key in dict:
     mwp[key] = dict[key]
 
 dict = {"Date":[],"Home":[],"Away":[],"Bet":[],"Book Odds":[],"Edge":[],"P":[],"Bet Size":[],"In Euros":[]}
-#I NEED TO CODE THIS SO I DONT HAVE TO ADJUST EVERY TIME
-bankroll = 30000*0.86 + 430 #in euros
+bankroll = 30000*0.86 #in euros
 for index, row in mwp.iterrows():
     ml = {"edge":0,"colName":""}
     ah = {"edge":0,"colName":""}
@@ -1301,8 +1300,7 @@ for index, row in mwp.iterrows():
         dict["Book Odds"].append(row[ml["colName"]])
         dict["Edge"].append(ml["edge"])
         dict["P"].append(row["P(" + ml["colName"] + ")"])
-        dict["Bet Size"].append(((row["P(" + ml["colName"] + ")"] - (1/row[ml["colName"]])) / (1-(1/row[ml["colName"]])))/mlDiv)
-        dict["In Euros"].append(((row["P(" + ml["colName"] + ")"] - (1/row[ml["colName"]])) / (1-(1/row[ml["colName"]])))*bankroll/mlDiv)
+        dict["Bet Size"].append(((row["P(" + ml["colName"] + ")"] - (1/row[ml["colName"]])) / (1-(1/row[ml["colName"]]))))
     if (ah["edge"] > 0):
         dict["Date"].append(row["Date"])
         dict["Home"].append(row["Home"])
@@ -1311,8 +1309,7 @@ for index, row in mwp.iterrows():
         dict["Book Odds"].append(row[ah["colName"]])
         dict["Edge"].append(ah["edge"])
         dict["P"].append(row["P(" + ah["colName"] + ")"])
-        dict["Bet Size"].append(((row["P(" + ah["colName"] + ")"] - (1/row[ah["colName"]])) / (1-(1/row[ah["colName"]])))/ahDiv)
-        dict["In Euros"].append(((row["P(" + ah["colName"] + ")"] - (1/row[ah["colName"]])) / (1-(1/row[ah["colName"]])))*bankroll/ahDiv)
+        dict["Bet Size"].append(((row["P(" + ah["colName"] + ")"] - (1/row[ah["colName"]])) / (1-(1/row[ah["colName"]]))))
     if (ou["edge"] > 0):
         dict["Date"].append(row["Date"])
         dict["Home"].append(row["Home"])
@@ -1321,8 +1318,77 @@ for index, row in mwp.iterrows():
         dict["Book Odds"].append(row[ou["colName"]])
         dict["Edge"].append(ou["edge"])
         dict["P"].append(row["P(" + ou["colName"] + ")"])
-        dict["Bet Size"].append(((row["P(" + ou["colName"] + ")"] - (1/row[ou["colName"]])) / (1-(1/row[ou["colName"]])))/ouDiv)
-        dict["In Euros"].append(((row["P(" + ou["colName"] + ")"] - (1/row[ou["colName"]])) / (1-(1/row[ou["colName"]])))*bankroll/ouDiv)
+        dict["Bet Size"].append(((row["P(" + ou["colName"] + ")"] - (1/row[ou["colName"]])) / (1-(1/row[ou["colName"]]))))
 
+# done = False
+# t = threading.Thread(target=animate)
+# t.start()
+
+i = 0
+adjWagers = []
+for n in range(len(dict["Date"])):
+    if (n == 0):
+        tempTable = []
+        for j in range(11):
+            tempTable.append([])
+        for j in range(11):
+            for k in range(11):
+                tempTable[j].append(jdict[j][k][i])
+        i += 1
+        bn = [dict["Bet"][n]]
+        odds = [dict["Book Odds"][n]]
+        kelly = [dict["Bet Size"][n]]
+    elif (dict["Home"][n] != dict["Home"][n-1]):
+        tempW = gradient_ascent(bn, tempTable, odds, kelly)
+        for w in tempW:
+            adjWagers.append(w)
+        tempTable = []
+        for j in range(11):
+            tempTable.append([])
+        for j in range(11):
+            for k in range(11):
+                tempTable[j].append(jdict[j][k][i])
+        i += 1
+        bn = [dict["Bet"][n]]
+        odds = [dict["Book Odds"][n]]
+        kelly = [dict["Bet Size"][n]]
+    elif (n == len(dict["Date"]) - 1 and dict["Home"][n] != dict["Home"][n-1]):
+        bn = [dict["Bet"][n]]
+        odds = [dict["Book Odds"][n]]
+        kelly = [dict["Bet Size"][n]]
+        tempTable = []
+        for j in range(11):
+            tempTable.append([])
+        for j in range(11):
+            for k in range(11):
+                tempTable[j].append(jdict[j][k][i])
+        i += 1
+        tempW = gradient_ascent(bn, tempTable, odds, kelly)
+        for w in tempW:
+            adjWagers.append(w)
+    elif (n == len(dict["Date"]) - 1 and dict["Home"][n] == dict["Home"][n-1]):
+        bn.append(dict["Bet"][n])
+        odds.append(dict["Book Odds"][n])
+        kelly.append(dict["Bet Size"][n])
+        tempW = gradient_ascent(bn, tempTable, odds, kelly)
+        for w in tempW:
+            adjWagers.append(w)
+    else:
+        bn.append(dict["Bet"][n])
+        odds.append(dict["Book Odds"][n])
+        kelly.append(dict["Bet Size"][n])
+
+done = True
+dict["Bet Size"] = []
+for i in range(len(adjWagers)):
+    if ("1" in dict["Bet"][i] or "2" in dict["Bet"][i] or "X" in dict["Bet"][i]):
+        dict["Bet Size"].append(adjWagers[i]/mlDiv)
+        dict["In Euros"].append(adjWagers[i]*bankroll/mlDiv)
+    elif ("AH" in dict["Bet"][i]):
+        dict["Bet Size"].append(adjWagers[i]/ahDiv)
+        dict["In Euros"].append(adjWagers[i]*bankroll/ahDiv)
+    elif ("Over" in dict["Bet"][i] or "Under" in dict["Bet"][i]):
+        dict["Bet Size"].append(adjWagers[i]/ouDiv)
+        dict["In Euros"].append(adjWagers[i]*bankroll/ouDiv)
 final = pd.DataFrame.from_dict(dict)
 final.to_csv("./EPL_Csvs/2020-21_Season/predictions/MW" + str(week) + ".csv")

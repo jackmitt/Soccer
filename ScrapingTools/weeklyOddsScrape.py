@@ -26,9 +26,10 @@ gameUrls = []
 
 #change every week - matchweek for predictions
 inMW = False
-mw = 4
-dateStart = datetime.date(2020, 9, 11) + datetime.timedelta(days=7*(mw-1))
-dateThru = datetime.date(2020, 9, 11) + datetime.timedelta(days=7*mw)
+mw = 5
+intBreakCount = 1
+dateStart = datetime.date(2020, 9, 11) + datetime.timedelta(days=7*(mw-1+intBreakCount))
+dateThru = datetime.date(2020, 9, 11) + datetime.timedelta(days=7*(mw+intBreakCount))
 browser = webdriver.Chrome(executable_path='chromedriver.exe')
 browser.get("https://www.oddsportal.com/soccer/england/premier-league/")
 soup = BeautifulSoup(browser.page_source, 'html.parser')

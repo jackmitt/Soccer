@@ -1,7 +1,7 @@
 import pandas as pd
 import numpy as np
 
-pred = pd.read_csv('./EPL_Csvs/WeibullPredictions4Games.csv', encoding = "ISO-8859-1")
+pred = pd.read_csv('./EPL_Csvs/3Game_newvars_no_T/WeibullPredictions3Games.csv', encoding = "ISO-8859-1")
 odds = pd.read_csv('./EPL_Csvs/bigboy.csv', encoding = "ISO-8859-1")
 dict = {"Date":[],"Home":[],"Away":[],"Home Score":[],"Away Score":[]}
 for col in odds.columns:
@@ -17,12 +17,15 @@ ouList = [0,1,2,3,4,5,6,7,8,9]
 scoreLines = []
 for col in pred.columns:
     if ("--" in col):
+        if (col not in dict):
+            dict[col] = []
         scoreLines.append(col)
 while (curIndex < len(pred.index)):
     print (curIndex)
     table = [[],[],[],[],[],[],[],[],[],[],[]]
     for score in scoreLines:
         table[int(score.split(" -- ")[0])].append(pred.at[curIndex, score])
+        dict[score].append(pred.at[curIndex, score])
     for key in dict:
         if ("P(" in key):
             dict[key].append(0)
@@ -139,4 +142,4 @@ while (curIndex < len(pred.index)):
 for key in dict:
     print (key, len(dict[key]))
 dfFinal = pd.DataFrame.from_dict(dict)
-dfFinal.to_csv("./EPL_Csvs/bettingPredictions4Games.csv")
+dfFinal.to_csv("./EPL_Csvs/3Game_newvars_no_T/bettingPredictions3Games.csv")

@@ -10,23 +10,47 @@ import threading
 import time
 import sys
 
-week = 12
-mlDiv = 30
-ahDiv = 30
-ouDiv = 30
+#Change to be the MW that is to be predicted
+week = 11
+mlDiv = 19
+ahDiv = 19
+ouDiv = 19
 
-def form(a, b, g = 3):
-    rA = []
-    rB = []
-    for i in reversed(a):
-        rA.append(i)
-        if (len(rA) == g):
+def last5scale(a, b):
+    if (len(a)<=5 or len(b)<=5):
+        return (0)
+    scaleBy = 1.05
+    totalT = scaleBy**0 + scaleBy**1 + scaleBy**2 + scaleBy**3 + scaleBy**4
+    c = 0
+    d = 0
+    for i in range(5):
+        c += a[i]*(scaleBy**(4-i))
+        d += b[i]*(scaleBy**(4-i))
+    #c = 0.15*a[4] + 0.175*a[3] + 0.2*a[2] + 0.225*a[1] + 0.25*a[0]
+    #d = 0.15*b[4] + 0.175*b[3] + 0.2*b[2] + 0.225*b[1] + 0.25*b[0]
+    if (len(a) < 10 or len(b) < 10):
+        return ((c+d)/(2*totalT))
+        #return ((c+d)/2)
+    e = []
+    f = []
+    for i in reversed(range(len(a))):
+        if (i == 4):
             break
-    for i in reversed(b):
-        rB.append(i)
-        if (len(rB) == g):
+        e.append(a[i])
+    for i in reversed(range(len(b))):
+        if (i == 4):
             break
-    return ((np.average(rA) + np.average(rB))/2)
+        f.append(b[i])
+    return ((((np.average(e) + np.average(f)) / 2)*.5 + ((c+d)/(2*totalT)))*.5)
+    #return ((((np.average(e) + np.average(f)) / 2)*.5 + ((c+d)/(2)))*.5)
+
+def animate():
+    for c in itertools.cycle(['|', '/', '-', '\\']):
+        if done:
+            break
+        sys.stdout.write('\rOptimizing Parameters ' + c)
+        sys.stdout.flush()
+        time.sleep(0.1)
 
 dict = {}
 #X indicates opponent's stat, T adjusts for recent performance, E adjusts for quality of opponent
@@ -415,7 +439,7 @@ for index, row in mwp.iterrows():
                 dict[tCat + side + "xG_aggression_adjustment"].append((np.average(seasonDict[standardizeTeamName(row["Away"])]["" + "xG_aggression_adjustment"]) + np.average(seasonDict[standardizeTeamName(row["Home"])]["X_" + "xG_aggression_adjustment"])) / 2)
                 dict[tCat + side + "xG_efficiency"].append((np.average(seasonDict[standardizeTeamName(row["Away"])]["" + "xG_efficiency"]) + np.average(seasonDict[standardizeTeamName(row["Home"])]["X_" + "xG_efficiency"])) / 2)
             else:
-                if (len(seasonDict[standardizeTeamName(row["Home"])]["" + "ball_winning"]) < 5 or len(seasonDict[standardizeTeamName(row["Away"])]["" + "ball_winning"]) < 5):
+                if (len(seasonDict[standardizeTeamName(row["Home"])]["" + "ball_winning"]) < 3 or len(seasonDict[standardizeTeamName(row["Away"])]["" + "ball_winning"]) < 3):
                     dict[tCat + side + "ball_winning"].append(np.nan)
                     dict[tCat + side + "chance_efficiency"].append(np.nan)
                     dict[tCat + side + "shooting_efficiency"].append(np.nan)
@@ -455,7 +479,7 @@ for index, row in mwp.iterrows():
                     for stat in reversed(seasonDict[standardizeTeamName(row["Away"])]["X_" + "ball_winning"]):
                         if (len(tempA) < 9999):
                             tempA.append(stat)
-                    dict[tCat + side + "ball_winning"].append(form(tempH, tempA))
+                    dict[tCat + side + "ball_winning"].append(last5scale(tempH, tempA))
                     tempH = []
                     tempA = []
                     for stat in reversed(seasonDict[standardizeTeamName(row["Home"])]["" + "chance_efficiency"]):
@@ -464,7 +488,7 @@ for index, row in mwp.iterrows():
                     for stat in reversed(seasonDict[standardizeTeamName(row["Away"])]["X_" + "chance_efficiency"]):
                         if (len(tempA) < 9999):
                             tempA.append(stat)
-                    dict[tCat + side + "chance_efficiency"].append(form(tempH, tempA))
+                    dict[tCat + side + "chance_efficiency"].append(last5scale(tempH, tempA))
                     tempH = []
                     tempA = []
                     for stat in reversed(seasonDict[standardizeTeamName(row["Home"])]["" + "shooting_efficiency"]):
@@ -473,7 +497,7 @@ for index, row in mwp.iterrows():
                     for stat in reversed(seasonDict[standardizeTeamName(row["Away"])]["X_" + "shooting_efficiency"]):
                         if (len(tempA) < 9999):
                             tempA.append(stat)
-                    dict[tCat + side + "shooting_efficiency"].append(form(tempH, tempA))
+                    dict[tCat + side + "shooting_efficiency"].append(last5scale(tempH, tempA))
                     tempH = []
                     tempA = []
                     for stat in reversed(seasonDict[standardizeTeamName(row["Home"])]["" + "key_pass_pct"]):
@@ -482,7 +506,7 @@ for index, row in mwp.iterrows():
                     for stat in reversed(seasonDict[standardizeTeamName(row["Away"])]["X_" + "key_pass_pct"]):
                         if (len(tempA) < 9999):
                             tempA.append(stat)
-                    dict[tCat + side + "key_pass_pct"].append(form(tempH, tempA))
+                    dict[tCat + side + "key_pass_pct"].append(last5scale(tempH, tempA))
                     tempH = []
                     tempA = []
                     for stat in reversed(seasonDict[standardizeTeamName(row["Home"])]["" + "pass_success"]):
@@ -491,7 +515,7 @@ for index, row in mwp.iterrows():
                     for stat in reversed(seasonDict[standardizeTeamName(row["Away"])]["X_" + "pass_success"]):
                         if (len(tempA) < 9999):
                             tempA.append(stat)
-                    dict[tCat + side + "pass_success"].append(form(tempH, tempA))
+                    dict[tCat + side + "pass_success"].append(last5scale(tempH, tempA))
                     tempH = []
                     tempA = []
                     for stat in reversed(seasonDict[standardizeTeamName(row["Home"])]["" + "dribble_success"]):
@@ -500,7 +524,7 @@ for index, row in mwp.iterrows():
                     for stat in reversed(seasonDict[standardizeTeamName(row["Away"])]["X_" + "dribble_success"]):
                         if (len(tempA) < 9999):
                             tempA.append(stat)
-                    dict[tCat + side + "dribble_success"].append(form(tempH, tempA))
+                    dict[tCat + side + "dribble_success"].append(last5scale(tempH, tempA))
                     tempH = []
                     tempA = []
                     for stat in reversed(seasonDict[standardizeTeamName(row["Home"])]["" + "tackle_success"]):
@@ -509,7 +533,7 @@ for index, row in mwp.iterrows():
                     for stat in reversed(seasonDict[standardizeTeamName(row["Away"])]["X_" + "tackle_success"]):
                         if (len(tempA) < 9999):
                             tempA.append(stat)
-                    dict[tCat + side + "tackle_success"].append(form(tempH, tempA))
+                    dict[tCat + side + "tackle_success"].append(last5scale(tempH, tempA))
                     tempH = []
                     tempA = []
                     for stat in reversed(seasonDict[standardizeTeamName(row["Home"])]["" + "xG"]):
@@ -518,7 +542,7 @@ for index, row in mwp.iterrows():
                     for stat in reversed(seasonDict[standardizeTeamName(row["Away"])]["X_" + "xG"]):
                         if (len(tempA) < 9999):
                             tempA.append(stat)
-                    dict[tCat + side + "xG"].append(form(tempH, tempA))
+                    dict[tCat + side + "xG"].append(last5scale(tempH, tempA))
                     tempH = []
                     tempA = []
                     for stat in reversed(seasonDict[standardizeTeamName(row["Home"])]["" + "xPts"]):
@@ -527,7 +551,7 @@ for index, row in mwp.iterrows():
                     for stat in reversed(seasonDict[standardizeTeamName(row["Away"])]["X_" + "xPts"]):
                         if (len(tempA) < 9999):
                             tempA.append(stat)
-                    dict[tCat + side + "xPts"].append(form(tempH, tempA))
+                    dict[tCat + side + "xPts"].append(last5scale(tempH, tempA))
                     tempH = []
                     tempA = []
                     for stat in reversed(seasonDict[standardizeTeamName(row["Home"])]["" + "deep_pct"]):
@@ -536,7 +560,7 @@ for index, row in mwp.iterrows():
                     for stat in reversed(seasonDict[standardizeTeamName(row["Away"])]["X_" + "deep_pct"]):
                         if (len(tempA) < 9999):
                             tempA.append(stat)
-                    dict[tCat + side + "deep_pct"].append(form(tempH, tempA))
+                    dict[tCat + side + "deep_pct"].append(last5scale(tempH, tempA))
                     tempH = []
                     tempA = []
                     for stat in reversed(seasonDict[standardizeTeamName(row["Home"])]["" + "pass_to_touch_ratio"]):
@@ -545,7 +569,7 @@ for index, row in mwp.iterrows():
                     for stat in reversed(seasonDict[standardizeTeamName(row["Away"])]["X_" + "pass_to_touch_ratio"]):
                         if (len(tempA) < 9999):
                             tempA.append(stat)
-                    dict[tCat + side + "pass_to_touch_ratio"].append(form(tempH, tempA))
+                    dict[tCat + side + "pass_to_touch_ratio"].append(last5scale(tempH, tempA))
                     tempH = []
                     tempA = []
                     for stat in reversed(seasonDict[standardizeTeamName(row["Home"])]["" + "foul_rate"]):
@@ -554,7 +578,7 @@ for index, row in mwp.iterrows():
                     for stat in reversed(seasonDict[standardizeTeamName(row["Away"])]["X_" + "foul_rate"]):
                         if (len(tempA) < 9999):
                             tempA.append(stat)
-                    dict[tCat + side + "foul_rate"].append(form(tempH, tempA))
+                    dict[tCat + side + "foul_rate"].append(last5scale(tempH, tempA))
                     tempH = []
                     tempA = []
                     for stat in reversed(seasonDict[standardizeTeamName(row["Home"])]["" + "clear_rate"]):
@@ -563,7 +587,7 @@ for index, row in mwp.iterrows():
                     for stat in reversed(seasonDict[standardizeTeamName(row["Away"])]["X_" + "clear_rate"]):
                         if (len(tempA) < 9999):
                             tempA.append(stat)
-                    dict[tCat + side + "clear_rate"].append(form(tempH, tempA))
+                    dict[tCat + side + "clear_rate"].append(last5scale(tempH, tempA))
                     tempH = []
                     tempA = []
                     for stat in reversed(seasonDict[standardizeTeamName(row["Home"])]["" + "long_pass_pct"]):
@@ -572,7 +596,7 @@ for index, row in mwp.iterrows():
                     for stat in reversed(seasonDict[standardizeTeamName(row["Away"])]["X_" + "long_pass_pct"]):
                         if (len(tempA) < 9999):
                             tempA.append(stat)
-                    dict[tCat + side + "long_pass_pct"].append(form(tempH, tempA))
+                    dict[tCat + side + "long_pass_pct"].append(last5scale(tempH, tempA))
                     tempH = []
                     tempA = []
                     for stat in reversed(seasonDict[standardizeTeamName(row["Home"])]["" + "fwd_pass_pct"]):
@@ -581,7 +605,7 @@ for index, row in mwp.iterrows():
                     for stat in reversed(seasonDict[standardizeTeamName(row["Away"])]["X_" + "fwd_pass_pct"]):
                         if (len(tempA) < 9999):
                             tempA.append(stat)
-                    dict[tCat + side + "fwd_pass_pct"].append(form(tempH, tempA))
+                    dict[tCat + side + "fwd_pass_pct"].append(last5scale(tempH, tempA))
                     tempH = []
                     tempA = []
                     for stat in reversed(seasonDict[standardizeTeamName(row["Home"])]["" + "fwd_pass_aggressiveness"]):
@@ -590,7 +614,7 @@ for index, row in mwp.iterrows():
                     for stat in reversed(seasonDict[standardizeTeamName(row["Away"])]["X_" + "fwd_pass_aggressiveness"]):
                         if (len(tempA) < 9999):
                             tempA.append(stat)
-                    dict[tCat + side + "fwd_pass_aggressiveness"].append(form(tempH, tempA))
+                    dict[tCat + side + "fwd_pass_aggressiveness"].append(last5scale(tempH, tempA))
                     tempH = []
                     tempA = []
                     for stat in reversed(seasonDict[standardizeTeamName(row["Home"])]["" + "defensive_third_pct"]):
@@ -599,7 +623,7 @@ for index, row in mwp.iterrows():
                     for stat in reversed(seasonDict[standardizeTeamName(row["Away"])]["X_" + "defensive_third_pct"]):
                         if (len(tempA) < 9999):
                             tempA.append(stat)
-                    dict[tCat + side + "defensive_third_pct"].append(form(tempH, tempA))
+                    dict[tCat + side + "defensive_third_pct"].append(last5scale(tempH, tempA))
                     tempH = []
                     tempA = []
                     for stat in reversed(seasonDict[standardizeTeamName(row["Home"])]["" + "final_third_pct"]):
@@ -608,7 +632,7 @@ for index, row in mwp.iterrows():
                     for stat in reversed(seasonDict[standardizeTeamName(row["Away"])]["X_" + "final_third_pct"]):
                         if (len(tempA) < 9999):
                             tempA.append(stat)
-                    dict[tCat + side + "final_third_pct"].append(form(tempH, tempA))
+                    dict[tCat + side + "final_third_pct"].append(last5scale(tempH, tempA))
                     tempH = []
                     tempA = []
                     for stat in reversed(seasonDict[standardizeTeamName(row["Home"])]["" + "ppda"]):
@@ -617,7 +641,7 @@ for index, row in mwp.iterrows():
                     for stat in reversed(seasonDict[standardizeTeamName(row["Away"])]["X_" + "ppda"]):
                         if (len(tempA) < 9999):
                             tempA.append(stat)
-                    dict[tCat + side + "ppda"].append(form(tempH, tempA))
+                    dict[tCat + side + "ppda"].append(last5scale(tempH, tempA))
                     tempH = []
                     tempA = []
                     for stat in reversed(seasonDict[standardizeTeamName(row["Home"])]["" + "touch_aggression"]):
@@ -626,7 +650,7 @@ for index, row in mwp.iterrows():
                     for stat in reversed(seasonDict[standardizeTeamName(row["Away"])]["X_" + "touch_aggression"]):
                         if (len(tempA) < 9999):
                             tempA.append(stat)
-                    dict[tCat + side + "touch_aggression"].append(form(tempH, tempA))
+                    dict[tCat + side + "touch_aggression"].append(last5scale(tempH, tempA))
                     tempH = []
                     tempA = []
                     for stat in reversed(seasonDict[standardizeTeamName(row["Home"])]["" + "pass_aggression"]):
@@ -635,7 +659,7 @@ for index, row in mwp.iterrows():
                     for stat in reversed(seasonDict[standardizeTeamName(row["Away"])]["X_" + "pass_aggression"]):
                         if (len(tempA) < 9999):
                             tempA.append(stat)
-                    dict[tCat + side + "pass_aggression"].append(form(tempH, tempA))
+                    dict[tCat + side + "pass_aggression"].append(last5scale(tempH, tempA))
                     tempH = []
                     tempA = []
                     for stat in reversed(seasonDict[standardizeTeamName(row["Home"])]["" + "dribble_aggression"]):
@@ -644,7 +668,7 @@ for index, row in mwp.iterrows():
                     for stat in reversed(seasonDict[standardizeTeamName(row["Away"])]["X_" + "dribble_aggression"]):
                         if (len(tempA) < 9999):
                             tempA.append(stat)
-                    dict[tCat + side + "dribble_aggression"].append(form(tempH, tempA))
+                    dict[tCat + side + "dribble_aggression"].append(last5scale(tempH, tempA))
                     tempH = []
                     tempA = []
                     for stat in reversed(seasonDict[standardizeTeamName(row["Home"])]["" + "tackle_aggression"]):
@@ -653,7 +677,7 @@ for index, row in mwp.iterrows():
                     for stat in reversed(seasonDict[standardizeTeamName(row["Away"])]["X_" + "tackle_aggression"]):
                         if (len(tempA) < 9999):
                             tempA.append(stat)
-                    dict[tCat + side + "tackle_aggression"].append(form(tempH, tempA))
+                    dict[tCat + side + "tackle_aggression"].append(last5scale(tempH, tempA))
                     tempH = []
                     tempA = []
                     for stat in reversed(seasonDict[standardizeTeamName(row["Home"])]["" + "corner_rate"]):
@@ -662,7 +686,7 @@ for index, row in mwp.iterrows():
                     for stat in reversed(seasonDict[standardizeTeamName(row["Away"])]["X_" + "corner_rate"]):
                         if (len(tempA) < 9999):
                             tempA.append(stat)
-                    dict[tCat + side + "corner_rate"].append(form(tempH, tempA))
+                    dict[tCat + side + "corner_rate"].append(last5scale(tempH, tempA))
                     tempH = []
                     tempA = []
                     for stat in reversed(seasonDict[standardizeTeamName(row["Home"])]["" + "dispossession_rate"]):
@@ -671,7 +695,7 @@ for index, row in mwp.iterrows():
                     for stat in reversed(seasonDict[standardizeTeamName(row["Away"])]["X_" + "dispossession_rate"]):
                         if (len(tempA) < 9999):
                             tempA.append(stat)
-                    dict[tCat + side + "dispossession_rate"].append(form(tempH, tempA))
+                    dict[tCat + side + "dispossession_rate"].append(last5scale(tempH, tempA))
                     tempH = []
                     tempA = []
                     for stat in reversed(seasonDict[standardizeTeamName(row["Home"])]["" + "offsides_rate"]):
@@ -680,7 +704,7 @@ for index, row in mwp.iterrows():
                     for stat in reversed(seasonDict[standardizeTeamName(row["Away"])]["X_" + "offsides_rate"]):
                         if (len(tempA) < 9999):
                             tempA.append(stat)
-                    dict[tCat + side + "offsides_rate"].append(form(tempH, tempA))
+                    dict[tCat + side + "offsides_rate"].append(last5scale(tempH, tempA))
                     tempH = []
                     tempA = []
                     for stat in reversed(seasonDict[standardizeTeamName(row["Home"])]["" + "cross_rate"]):
@@ -689,7 +713,7 @@ for index, row in mwp.iterrows():
                     for stat in reversed(seasonDict[standardizeTeamName(row["Away"])]["X_" + "cross_rate"]):
                         if (len(tempA) < 9999):
                             tempA.append(stat)
-                    dict[tCat + side + "cross_rate"].append(form(tempH, tempA))
+                    dict[tCat + side + "cross_rate"].append(last5scale(tempH, tempA))
                     tempH = []
                     tempA = []
                     for stat in reversed(seasonDict[standardizeTeamName(row["Home"])]["" + "through_rate"]):
@@ -698,7 +722,7 @@ for index, row in mwp.iterrows():
                     for stat in reversed(seasonDict[standardizeTeamName(row["Away"])]["X_" + "through_rate"]):
                         if (len(tempA) < 9999):
                             tempA.append(stat)
-                    dict[tCat + side + "through_rate"].append(form(tempH, tempA))
+                    dict[tCat + side + "through_rate"].append(last5scale(tempH, tempA))
                     tempH = []
                     tempA = []
                     for stat in reversed(seasonDict[standardizeTeamName(row["Home"])]["" + "xG_aggression_adjustment"]):
@@ -707,7 +731,7 @@ for index, row in mwp.iterrows():
                     for stat in reversed(seasonDict[standardizeTeamName(row["Away"])]["X_" + "xG_aggression_adjustment"]):
                         if (len(tempA) < 9999):
                             tempA.append(stat)
-                    dict[tCat + side + "xG_aggression_adjustment"].append(form(tempH, tempA))
+                    dict[tCat + side + "xG_aggression_adjustment"].append(last5scale(tempH, tempA))
                     tempH = []
                     tempA = []
                     for stat in reversed(seasonDict[standardizeTeamName(row["Home"])]["" + "xG_efficiency"]):
@@ -716,7 +740,7 @@ for index, row in mwp.iterrows():
                     for stat in reversed(seasonDict[standardizeTeamName(row["Away"])]["X_" + "xG_efficiency"]):
                         if (len(tempA) < 9999):
                             tempA.append(stat)
-                    dict[tCat + side + "xG_efficiency"].append(form(tempH, tempA))
+                    dict[tCat + side + "xG_efficiency"].append(last5scale(tempH, tempA))
                 else:
                     tempH = []
                     tempA = []
@@ -726,7 +750,7 @@ for index, row in mwp.iterrows():
                     for stat in reversed(seasonDict[standardizeTeamName(row["Home"])]["X_" + "ball_winning"]):
                         if (len(tempA) < 9999):
                             tempA.append(stat)
-                    dict[tCat + side + "ball_winning"].append(form(tempH, tempA))
+                    dict[tCat + side + "ball_winning"].append(last5scale(tempH, tempA))
                     tempH = []
                     tempA = []
                     for stat in reversed(seasonDict[standardizeTeamName(row["Away"])]["" + "chance_efficiency"]):
@@ -735,7 +759,7 @@ for index, row in mwp.iterrows():
                     for stat in reversed(seasonDict[standardizeTeamName(row["Home"])]["X_" + "chance_efficiency"]):
                         if (len(tempA) < 9999):
                             tempA.append(stat)
-                    dict[tCat + side + "chance_efficiency"].append(form(tempH, tempA))
+                    dict[tCat + side + "chance_efficiency"].append(last5scale(tempH, tempA))
                     tempH = []
                     tempA = []
                     for stat in reversed(seasonDict[standardizeTeamName(row["Away"])]["" + "shooting_efficiency"]):
@@ -744,7 +768,7 @@ for index, row in mwp.iterrows():
                     for stat in reversed(seasonDict[standardizeTeamName(row["Home"])]["X_" + "shooting_efficiency"]):
                         if (len(tempA) < 9999):
                             tempA.append(stat)
-                    dict[tCat + side + "shooting_efficiency"].append(form(tempH, tempA))
+                    dict[tCat + side + "shooting_efficiency"].append(last5scale(tempH, tempA))
                     tempH = []
                     tempA = []
                     for stat in reversed(seasonDict[standardizeTeamName(row["Away"])]["" + "key_pass_pct"]):
@@ -753,7 +777,7 @@ for index, row in mwp.iterrows():
                     for stat in reversed(seasonDict[standardizeTeamName(row["Home"])]["X_" + "key_pass_pct"]):
                         if (len(tempA) < 9999):
                             tempA.append(stat)
-                    dict[tCat + side + "key_pass_pct"].append(form(tempH, tempA))
+                    dict[tCat + side + "key_pass_pct"].append(last5scale(tempH, tempA))
                     tempH = []
                     tempA = []
                     for stat in reversed(seasonDict[standardizeTeamName(row["Away"])]["" + "pass_success"]):
@@ -762,7 +786,7 @@ for index, row in mwp.iterrows():
                     for stat in reversed(seasonDict[standardizeTeamName(row["Home"])]["X_" + "pass_success"]):
                         if (len(tempA) < 9999):
                             tempA.append(stat)
-                    dict[tCat + side + "pass_success"].append(form(tempH, tempA))
+                    dict[tCat + side + "pass_success"].append(last5scale(tempH, tempA))
                     tempH = []
                     tempA = []
                     for stat in reversed(seasonDict[standardizeTeamName(row["Away"])]["" + "dribble_success"]):
@@ -771,7 +795,7 @@ for index, row in mwp.iterrows():
                     for stat in reversed(seasonDict[standardizeTeamName(row["Home"])]["X_" + "dribble_success"]):
                         if (len(tempA) < 9999):
                             tempA.append(stat)
-                    dict[tCat + side + "dribble_success"].append(form(tempH, tempA))
+                    dict[tCat + side + "dribble_success"].append(last5scale(tempH, tempA))
                     tempH = []
                     tempA = []
                     for stat in reversed(seasonDict[standardizeTeamName(row["Away"])]["" + "tackle_success"]):
@@ -780,7 +804,7 @@ for index, row in mwp.iterrows():
                     for stat in reversed(seasonDict[standardizeTeamName(row["Home"])]["X_" + "tackle_success"]):
                         if (len(tempA) < 9999):
                             tempA.append(stat)
-                    dict[tCat + side + "tackle_success"].append(form(tempH, tempA))
+                    dict[tCat + side + "tackle_success"].append(last5scale(tempH, tempA))
                     tempH = []
                     tempA = []
                     for stat in reversed(seasonDict[standardizeTeamName(row["Away"])]["" + "xG"]):
@@ -789,7 +813,7 @@ for index, row in mwp.iterrows():
                     for stat in reversed(seasonDict[standardizeTeamName(row["Home"])]["X_" + "xG"]):
                         if (len(tempA) < 9999):
                             tempA.append(stat)
-                    dict[tCat + side + "xG"].append(form(tempH, tempA))
+                    dict[tCat + side + "xG"].append(last5scale(tempH, tempA))
                     tempH = []
                     tempA = []
                     for stat in reversed(seasonDict[standardizeTeamName(row["Away"])]["" + "xPts"]):
@@ -798,7 +822,7 @@ for index, row in mwp.iterrows():
                     for stat in reversed(seasonDict[standardizeTeamName(row["Home"])]["X_" + "xPts"]):
                         if (len(tempA) < 9999):
                             tempA.append(stat)
-                    dict[tCat + side + "xPts"].append(form(tempH, tempA))
+                    dict[tCat + side + "xPts"].append(last5scale(tempH, tempA))
                     tempH = []
                     tempA = []
                     for stat in reversed(seasonDict[standardizeTeamName(row["Away"])]["" + "deep_pct"]):
@@ -807,7 +831,7 @@ for index, row in mwp.iterrows():
                     for stat in reversed(seasonDict[standardizeTeamName(row["Home"])]["X_" + "deep_pct"]):
                         if (len(tempA) < 9999):
                             tempA.append(stat)
-                    dict[tCat + side + "deep_pct"].append(form(tempH, tempA))
+                    dict[tCat + side + "deep_pct"].append(last5scale(tempH, tempA))
                     tempH = []
                     tempA = []
                     for stat in reversed(seasonDict[standardizeTeamName(row["Away"])]["" + "pass_to_touch_ratio"]):
@@ -816,7 +840,7 @@ for index, row in mwp.iterrows():
                     for stat in reversed(seasonDict[standardizeTeamName(row["Home"])]["X_" + "pass_to_touch_ratio"]):
                         if (len(tempA) < 9999):
                             tempA.append(stat)
-                    dict[tCat + side + "pass_to_touch_ratio"].append(form(tempH, tempA))
+                    dict[tCat + side + "pass_to_touch_ratio"].append(last5scale(tempH, tempA))
                     tempH = []
                     tempA = []
                     for stat in reversed(seasonDict[standardizeTeamName(row["Away"])]["" + "foul_rate"]):
@@ -825,7 +849,7 @@ for index, row in mwp.iterrows():
                     for stat in reversed(seasonDict[standardizeTeamName(row["Home"])]["X_" + "foul_rate"]):
                         if (len(tempA) < 9999):
                             tempA.append(stat)
-                    dict[tCat + side + "foul_rate"].append(form(tempH, tempA))
+                    dict[tCat + side + "foul_rate"].append(last5scale(tempH, tempA))
                     tempH = []
                     tempA = []
                     for stat in reversed(seasonDict[standardizeTeamName(row["Away"])]["" + "clear_rate"]):
@@ -834,7 +858,7 @@ for index, row in mwp.iterrows():
                     for stat in reversed(seasonDict[standardizeTeamName(row["Home"])]["X_" + "clear_rate"]):
                         if (len(tempA) < 9999):
                             tempA.append(stat)
-                    dict[tCat + side + "clear_rate"].append(form(tempH, tempA))
+                    dict[tCat + side + "clear_rate"].append(last5scale(tempH, tempA))
                     tempH = []
                     tempA = []
                     for stat in reversed(seasonDict[standardizeTeamName(row["Away"])]["" + "long_pass_pct"]):
@@ -843,7 +867,7 @@ for index, row in mwp.iterrows():
                     for stat in reversed(seasonDict[standardizeTeamName(row["Home"])]["X_" + "long_pass_pct"]):
                         if (len(tempA) < 9999):
                             tempA.append(stat)
-                    dict[tCat + side + "long_pass_pct"].append(form(tempH, tempA))
+                    dict[tCat + side + "long_pass_pct"].append(last5scale(tempH, tempA))
                     tempH = []
                     tempA = []
                     for stat in reversed(seasonDict[standardizeTeamName(row["Away"])]["" + "fwd_pass_pct"]):
@@ -852,7 +876,7 @@ for index, row in mwp.iterrows():
                     for stat in reversed(seasonDict[standardizeTeamName(row["Home"])]["X_" + "fwd_pass_pct"]):
                         if (len(tempA) < 9999):
                             tempA.append(stat)
-                    dict[tCat + side + "fwd_pass_pct"].append(form(tempH, tempA))
+                    dict[tCat + side + "fwd_pass_pct"].append(last5scale(tempH, tempA))
                     tempH = []
                     tempA = []
                     for stat in reversed(seasonDict[standardizeTeamName(row["Away"])]["" + "fwd_pass_aggressiveness"]):
@@ -861,7 +885,7 @@ for index, row in mwp.iterrows():
                     for stat in reversed(seasonDict[standardizeTeamName(row["Home"])]["X_" + "fwd_pass_aggressiveness"]):
                         if (len(tempA) < 9999):
                             tempA.append(stat)
-                    dict[tCat + side + "fwd_pass_aggressiveness"].append(form(tempH, tempA))
+                    dict[tCat + side + "fwd_pass_aggressiveness"].append(last5scale(tempH, tempA))
                     tempH = []
                     tempA = []
                     for stat in reversed(seasonDict[standardizeTeamName(row["Away"])]["" + "defensive_third_pct"]):
@@ -870,7 +894,7 @@ for index, row in mwp.iterrows():
                     for stat in reversed(seasonDict[standardizeTeamName(row["Home"])]["X_" + "defensive_third_pct"]):
                         if (len(tempA) < 9999):
                             tempA.append(stat)
-                    dict[tCat + side + "defensive_third_pct"].append(form(tempH, tempA))
+                    dict[tCat + side + "defensive_third_pct"].append(last5scale(tempH, tempA))
                     tempH = []
                     tempA = []
                     for stat in reversed(seasonDict[standardizeTeamName(row["Away"])]["" + "final_third_pct"]):
@@ -879,7 +903,7 @@ for index, row in mwp.iterrows():
                     for stat in reversed(seasonDict[standardizeTeamName(row["Home"])]["X_" + "final_third_pct"]):
                         if (len(tempA) < 9999):
                             tempA.append(stat)
-                    dict[tCat + side + "final_third_pct"].append(form(tempH, tempA))
+                    dict[tCat + side + "final_third_pct"].append(last5scale(tempH, tempA))
                     tempH = []
                     tempA = []
                     for stat in reversed(seasonDict[standardizeTeamName(row["Away"])]["" + "ppda"]):
@@ -888,7 +912,7 @@ for index, row in mwp.iterrows():
                     for stat in reversed(seasonDict[standardizeTeamName(row["Home"])]["X_" + "ppda"]):
                         if (len(tempA) < 9999):
                             tempA.append(stat)
-                    dict[tCat + side + "ppda"].append(form(tempH, tempA))
+                    dict[tCat + side + "ppda"].append(last5scale(tempH, tempA))
                     tempH = []
                     tempA = []
                     for stat in reversed(seasonDict[standardizeTeamName(row["Away"])]["" + "touch_aggression"]):
@@ -897,7 +921,7 @@ for index, row in mwp.iterrows():
                     for stat in reversed(seasonDict[standardizeTeamName(row["Home"])]["X_" + "touch_aggression"]):
                         if (len(tempA) < 9999):
                             tempA.append(stat)
-                    dict[tCat + side + "touch_aggression"].append(form(tempH, tempA))
+                    dict[tCat + side + "touch_aggression"].append(last5scale(tempH, tempA))
                     tempH = []
                     tempA = []
                     for stat in reversed(seasonDict[standardizeTeamName(row["Away"])]["" + "pass_aggression"]):
@@ -906,7 +930,7 @@ for index, row in mwp.iterrows():
                     for stat in reversed(seasonDict[standardizeTeamName(row["Home"])]["X_" + "pass_aggression"]):
                         if (len(tempA) < 9999):
                             tempA.append(stat)
-                    dict[tCat + side + "pass_aggression"].append(form(tempH, tempA))
+                    dict[tCat + side + "pass_aggression"].append(last5scale(tempH, tempA))
                     tempH = []
                     tempA = []
                     for stat in reversed(seasonDict[standardizeTeamName(row["Away"])]["" + "dribble_aggression"]):
@@ -915,7 +939,7 @@ for index, row in mwp.iterrows():
                     for stat in reversed(seasonDict[standardizeTeamName(row["Home"])]["X_" + "dribble_aggression"]):
                         if (len(tempA) < 9999):
                             tempA.append(stat)
-                    dict[tCat + side + "dribble_aggression"].append(form(tempH, tempA))
+                    dict[tCat + side + "dribble_aggression"].append(last5scale(tempH, tempA))
                     tempH = []
                     tempA = []
                     for stat in reversed(seasonDict[standardizeTeamName(row["Away"])]["" + "tackle_aggression"]):
@@ -924,7 +948,7 @@ for index, row in mwp.iterrows():
                     for stat in reversed(seasonDict[standardizeTeamName(row["Home"])]["X_" + "tackle_aggression"]):
                         if (len(tempA) < 9999):
                             tempA.append(stat)
-                    dict[tCat + side + "tackle_aggression"].append(form(tempH, tempA))
+                    dict[tCat + side + "tackle_aggression"].append(last5scale(tempH, tempA))
                     tempH = []
                     tempA = []
                     for stat in reversed(seasonDict[standardizeTeamName(row["Away"])]["" + "corner_rate"]):
@@ -933,7 +957,7 @@ for index, row in mwp.iterrows():
                     for stat in reversed(seasonDict[standardizeTeamName(row["Home"])]["X_" + "corner_rate"]):
                         if (len(tempA) < 9999):
                             tempA.append(stat)
-                    dict[tCat + side + "corner_rate"].append(form(tempH, tempA))
+                    dict[tCat + side + "corner_rate"].append(last5scale(tempH, tempA))
                     tempH = []
                     tempA = []
                     for stat in reversed(seasonDict[standardizeTeamName(row["Away"])]["" + "dispossession_rate"]):
@@ -942,7 +966,7 @@ for index, row in mwp.iterrows():
                     for stat in reversed(seasonDict[standardizeTeamName(row["Home"])]["X_" + "dispossession_rate"]):
                         if (len(tempA) < 9999):
                             tempA.append(stat)
-                    dict[tCat + side + "dispossession_rate"].append(form(tempH, tempA))
+                    dict[tCat + side + "dispossession_rate"].append(last5scale(tempH, tempA))
                     tempH = []
                     tempA = []
                     for stat in reversed(seasonDict[standardizeTeamName(row["Away"])]["" + "offsides_rate"]):
@@ -951,7 +975,7 @@ for index, row in mwp.iterrows():
                     for stat in reversed(seasonDict[standardizeTeamName(row["Home"])]["X_" + "offsides_rate"]):
                         if (len(tempA) < 9999):
                             tempA.append(stat)
-                    dict[tCat + side + "offsides_rate"].append(form(tempH, tempA))
+                    dict[tCat + side + "offsides_rate"].append(last5scale(tempH, tempA))
                     tempH = []
                     tempA = []
                     for stat in reversed(seasonDict[standardizeTeamName(row["Away"])]["" + "cross_rate"]):
@@ -960,7 +984,7 @@ for index, row in mwp.iterrows():
                     for stat in reversed(seasonDict[standardizeTeamName(row["Home"])]["X_" + "cross_rate"]):
                         if (len(tempA) < 9999):
                             tempA.append(stat)
-                    dict[tCat + side + "cross_rate"].append(form(tempH, tempA))
+                    dict[tCat + side + "cross_rate"].append(last5scale(tempH, tempA))
                     tempH = []
                     tempA = []
                     for stat in reversed(seasonDict[standardizeTeamName(row["Away"])]["" + "through_rate"]):
@@ -969,7 +993,7 @@ for index, row in mwp.iterrows():
                     for stat in reversed(seasonDict[standardizeTeamName(row["Home"])]["X_" + "through_rate"]):
                         if (len(tempA) < 9999):
                             tempA.append(stat)
-                    dict[tCat + side + "through_rate"].append(form(tempH, tempA))
+                    dict[tCat + side + "through_rate"].append(last5scale(tempH, tempA))
                     tempH = []
                     tempA = []
                     for stat in reversed(seasonDict[standardizeTeamName(row["Away"])]["" + "xG_aggression_adjustment"]):
@@ -978,7 +1002,7 @@ for index, row in mwp.iterrows():
                     for stat in reversed(seasonDict[standardizeTeamName(row["Home"])]["X_" + "xG_aggression_adjustment"]):
                         if (len(tempA) < 9999):
                             tempA.append(stat)
-                    dict[tCat + side + "xG_aggression_adjustment"].append(form(tempH, tempA))
+                    dict[tCat + side + "xG_aggression_adjustment"].append(last5scale(tempH, tempA))
                     tempH = []
                     tempA = []
                     for stat in reversed(seasonDict[standardizeTeamName(row["Away"])]["" + "xG_efficiency"]):
@@ -987,7 +1011,7 @@ for index, row in mwp.iterrows():
                     for stat in reversed(seasonDict[standardizeTeamName(row["Home"])]["X_" + "xG_efficiency"]):
                         if (len(tempA) < 9999):
                             tempA.append(stat)
-                    dict[tCat + side + "xG_efficiency"].append(form(tempH, tempA))
+                    dict[tCat + side + "xG_efficiency"].append(last5scale(tempH, tempA))
         if (side == "home_expected_"):
             dict["E_" + side + "ball_winning"].append((np.average(seasonDict[standardizeTeamName(row["Home"])]["E_" + "ball_winning"]) + np.average(seasonDict[standardizeTeamName(row["Away"])]["E_X_" + "ball_winning"])) / 2)
             dict["E_" + side + "chance_efficiency"].append((np.average(seasonDict[standardizeTeamName(row["Home"])]["E_" + "chance_efficiency"]) + np.average(seasonDict[standardizeTeamName(row["Away"])]["E_X_" + "chance_efficiency"])) / 2)
@@ -1046,6 +1070,11 @@ dfFinal = pd.DataFrame.from_dict(dict)
 
 #Remove this when ready - this will remove teams who havent played 3 games
 #dfFinal = dfFinal.dropna()
+dropCols = []
+for a in dfFinal.columns:
+    if ("T_" in a):
+        dropCols.append(a)
+dfFinal = dfFinal.drop(columns=dropCols)
 
 dfFinal.to_csv("./EPL_Csvs/2020-21_Season/intermediate.csv", index=False)
 
@@ -1069,10 +1098,14 @@ while (cur < len(df.index)):
 
 df = pd.DataFrame.from_dict(newDict)
 
-#optimal = MLE(train)
-#print(optimal)
-optimal = [1.2487857, 1.26181929, 0.11504448]
+done = False
+t = threading.Thread(target=animate)
+t.start()
+train = pd.read_csv('./EPL_Csvs/3Game_newvars_no_T/WeibullFormat3Games.csv', encoding = "ISO-8859-1")
 dict = {}
+#optimal = MLE(train)
+optimal = [1.04029404, 1.09581082, 0.19346436]
+done = True
 alphaDictH = {}
 alphaDictA = {}
 cur = 0
@@ -1242,12 +1275,16 @@ for key in dict:
 
 dict = {"Date":[],"Home":[],"Away":[],"Bet":[],"Book Odds":[],"Edge":[],"P":[],"Bet Size":[],"In Euros":[]}
 #I NEED TO CODE THIS SO I DONT HAVE TO ADJUST EVERY TIME
-bankroll = 30000*0.86 - 5200#in euros
+bankroll = 30000*0.86 - 4316 #in euros
 for index, row in mwp.iterrows():
-    #As of MW12 2020, no longer betting on 1x2 market
+    ml = {"edge":0,"colName":""}
     ah = {"edge":0,"colName":""}
     ou = {"edge":0,"colName":""}
     for col in mwp.columns:
+        if (("1" == col or "X" == col or "2" == col) and "P(" not in col):
+            if ((row["P(" + col + ")"] - (1/row[col])) > ml["edge"]):
+                ml["edge"] = row["P(" + col + ")"] - (1/row[col])
+                ml["colName"] = col
         if ("AH" in col and "P(" not in col and not np.isnan(row[col]) and row[col] != 1):
             if ((row["P(" + col + ")"] - (1/row[col])) > ah["edge"]):
                 ah["edge"] = row["P(" + col + ")"] - (1/row[col])
@@ -1256,6 +1293,16 @@ for index, row in mwp.iterrows():
             if ((row["P(" + col + ")"] - (1/row[col])) > ou["edge"]):
                 ou["edge"] = row["P(" + col + ")"] - (1/row[col])
                 ou["colName"] = col
+    if (ml["edge"] > 0):
+        dict["Date"].append(row["Date"])
+        dict["Home"].append(row["Home"])
+        dict["Away"].append(row["Away"])
+        dict["Bet"].append(ml["colName"])
+        dict["Book Odds"].append(row[ml["colName"]])
+        dict["Edge"].append(ml["edge"])
+        dict["P"].append(row["P(" + ml["colName"] + ")"])
+        dict["Bet Size"].append(((row["P(" + ml["colName"] + ")"] - (1/row[ml["colName"]])) / (1-(1/row[ml["colName"]])))/mlDiv)
+        dict["In Euros"].append(((row["P(" + ml["colName"] + ")"] - (1/row[ml["colName"]])) / (1-(1/row[ml["colName"]])))*bankroll/mlDiv)
     if (ah["edge"] > 0):
         dict["Date"].append(row["Date"])
         dict["Home"].append(row["Home"])

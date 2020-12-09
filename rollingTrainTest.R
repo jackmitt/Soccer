@@ -8,26 +8,32 @@ library(MASS)
 library(dplyr)
 library(caret)
 
-train = read.csv("C:/Users/JackMitt/Documents/EPLBettingModel/temptrain.csv")
-test = read.csv("C:/Users/JackMitt/Documents/EPLBettingModel/temptest.csv")
-trainNum = train[-c(1,2,3,4)]
-testNum = test[-c(1,2,3,4)]
-trainS = as.data.frame(scale(trainNum))
-colMeans = c()
-colSds = c()
-for (i in colnames(trainNum)){
-  colMeans = c(colMeans, mean(trainNum[[i]]))
-  colSds = c(colSds, sd(trainNum[[i]]))
-}
-testS =as.data.frame(scale(testNum, center=colMeans, scale=colSds))
-trainS["Home Field"] = train["Home.Field"]
-trainS["Score"] = train["Score"]
-testS["Home Field"] = test["Home.Field"]
-testS["Score"] = test["Score"]
-
+train = read.csv("C:/Users/JackMitt/Documents/EPLBettingModel/temptrain5.csv")
+test = read.csv("C:/Users/JackMitt/Documents/EPLBettingModel/temptest5.csv")
 predictions = c()
-model = glm(Score ~ ., family = "poisson", data = trainS)
-predictions = c(predictions, predict(model, newdata = testS, type = "response"))
+for (i in 0:((nrow(test)/10) - 1)){
+  tempTest = slice(test, (10*i+1):(10*i+10))
+  
+  trainNum = train[-c(1,2,3,4)]
+  testNum = tempTest[-c(1,2,3,4)]
+  trainS = as.data.frame(scale(trainNum))
+  colMeans = c()
+  colSds = c()
+  for (i in colnames(trainNum)){
+    colMeans = c(colMeans, mean(trainNum[[i]]))
+    colSds = c(colSds, sd(trainNum[[i]]))
+  }
+  testS =as.data.frame(scale(testNum, center=colMeans, scale=colSds))
+  trainS["Home Field"] = train["Home.Field"]
+  trainS["Score"] = train["Score"]
+  testS["Home Field"] = tempTest["Home.Field"]
+  testS["Score"] = tempTest["Score"]
+  model = glm(Score ~ ., family = "poisson", data = trainS)
+  predictions = c(predictions, predict(model, newdata = testS, type = "response"))
+  
+  train = slice(train, 11:nrow(train))
+  train = rbind(train, tempTest)
+}
 
 test["Poisson Mean Prediction"] = predictions
 prob_0_goal = c()
@@ -66,17 +72,16 @@ test["8 Goal Prob"] = prob_8_goal
 test["9 Goal Prob"] = prob_9_goal
 test["10 Goal Prob"] = prob_10_goal
 
-write.csv(test, "C:/Users/JackMitt/Documents/EPLBettingModel/testPredictions.csv")
+write.csv(test, "C:/Users/JackMitt/Documents/EPLBettingModel/testPredictionsRolling.csv")
 
 #cross validation for predictions for train data
 foldBreaks = c(0, trunc(nrow(train)/5), trunc(2*nrow(train)/5), trunc(3*nrow(train)/5), trunc(4*nrow(train)/5), trunc(5*nrow(train)/5))
 predictions = c()
-
 for (i in 1:5){
   testIndex = seq(foldBreaks[i] + 1, foldBreaks[i+1])
   tempTrain = train[-testIndex, ]
   tempTest = train[testIndex, ]
-
+  
   trainNum = tempTrain[-c(1,2,3,4)]
   testNum = tempTest[-c(1,2,3,4)]
   trainS = as.data.frame(scale(trainNum))
@@ -92,8 +97,8 @@ for (i in 1:5){
   testS["Home Field"] = tempTest["Home.Field"]
   testS["Score"] = tempTest["Score"]
   
-  model = glm(Score ~ ., family = "poisson", data = trainS)
+  model = glm(step$formula, family = "poisson", data = trainS)
   predictions = c(predictions, predict(model, newdata = testS, type = "response"))
 }
 train["Poisson Mean Prediction"] = predictions
-write.csv(test, "C:/Users/JackMitt/Documents/EPLBettingModel/trainPredictions.csv")
+write.csv(test, "C:/Users/JackMitt/Documents/EPLBettingModel/trainPredictionsStep.csv")

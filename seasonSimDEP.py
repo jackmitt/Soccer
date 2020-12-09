@@ -4,10 +4,10 @@ from simultaneousDependentKelly import gradient_ascent
 
 pred = pd.read_csv("./EPL_Csvs/3Game_newvars_no_T/resultsByEdge3Games.csv", encoding = "ISO-8859-1")
 
-div = 14.5
-betTypes = ["AH ", "OU "]
+div = 10
+betTypes = ["ML ", "AH ", "OU "]
 
-for k in range(30):
+for k in range(10):
     #Season loop
     curIter = 0
     lowestReturn = 1000
@@ -26,6 +26,8 @@ for k in range(30):
                 curWeekWagers = []
             for t in betTypes:
                 if (not np.isnan(pred.at[i, t + "Kelly"])):
+                    if (pred.at[i, t + "Kelly"]/div > 0.03):
+                        continue
                     if (np.isnan(pred.at[i, t + "Result"])):
                         betSizes.append(pred.at[i, t + "Kelly"]/div)
                         curWeekWagers.append(pred.at[i, t + "Kelly"]/div)
@@ -48,6 +50,7 @@ for k in range(30):
         endingReturns.append((bankroll - 1))
     print ("Level", k, "with div of", div)
     print ("Average Seasonal Return:", str(np.average(endingReturns)))
+    print ("Median Seasonal Return:", str(np.median(endingReturns)))
     print ("Standard Deviation:", np.std(endingReturns))
     print ("Lowest Observed Return:", max(lowestReturn,-1))
     print ("Highest Observed Return:", highestReturn)
@@ -82,4 +85,4 @@ for k in range(30):
             temp.append(0)
     print ("Percent of Seasons Ending with less than 25% of bankroll:", np.average(temp))
     print ("------------------------------------------------------------------------------------------------")
-    div += 0.5
+    div += 4

@@ -2,7 +2,7 @@ import pandas as pd
 import numpy as np
 from miscFcns import standardizeTeamName
 
-mwThru = 4
+mwThru = 11
 curElo = {}
 curTeams = []
 df = pd.read_csv('./EPL_Csvs/EPLHistoricOdds.csv', encoding = "ISO-8859-1")

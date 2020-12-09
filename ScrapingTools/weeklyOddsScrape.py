@@ -26,10 +26,10 @@ gameUrls = []
 
 #change every week - matchweek for predictions
 inMW = False
-mw = 5
-intBreakCount = 1
-dateStart = datetime.date(2020, 9, 11) + datetime.timedelta(days=7*(mw-1+intBreakCount))
-dateThru = datetime.date(2020, 9, 11) + datetime.timedelta(days=7*(mw+intBreakCount))
+mw = 12
+intBreakCount = 2
+dateStart = datetime.date(2020, 9, 10) + datetime.timedelta(days=7*(mw-1+intBreakCount))
+dateThru = datetime.date(2020, 9, 10) + datetime.timedelta(days=7*(mw+intBreakCount))
 browser = webdriver.Chrome(executable_path='chromedriver.exe')
 browser.get("https://www.oddsportal.com/soccer/england/premier-league/")
 soup = BeautifulSoup(browser.page_source, 'html.parser')
@@ -39,7 +39,11 @@ for row in rows:
     if (len(row.find_all(class_="first2 tl")) != 0):
         if (not "England" in row.find(class_="first2 tl").text):
             d = row.find(class_="first2 tl").text
-            curDate = datetime.date(int(d.split()[2]), monthToInt(d.split()[1]), int(d.split()[0]))
+            if (d.split()[0] == "Today,"):
+                #####################################################################################################CHANGE YEAR MANUALLY
+                curDate = datetime.date(2020, monthToInt(d.split()[2]), int(d.split()[1]))
+            else:
+                curDate = datetime.date(int(d.split()[2]), monthToInt(d.split()[1]), int(d.split()[0]))
             if (curDate < dateThru and curDate > dateStart):
                 inMW = True
             else:

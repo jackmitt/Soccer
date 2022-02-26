@@ -1,0 +1,57 @@
+# This is a basic workflow to help you get started with Actions
+
+name: Scrape Nowgoal (Urls given)
+
+# Controls when the workflow will run
+on:
+  #schedule:
+    #- cron: "*/60 */2 * * *"
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  # This workflow contains a single job called "build"
+  build:
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
+
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - uses: actions/checkout@v2
+
+      - name: setup python
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.8.3' # install the python version needed       
+          
+
+      - name: Install Everything
+        run: |
+          sudo apt-get install -y chromium-browser
+          python -m pip install --upgrade pip
+          pip install pandas
+          pip install numpy
+          pip install scipy
+          pip install sklearn
+          pip install selenium
+          pip install bs4
+          pip install webdriver_manager
+          
+      - name: run script
+        run: python main2.py
+          
+      - name: commit files
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add -A
+          git commit -m "update data" -a
+          
+      - name: push changes
+        uses: ad-m/github-push-action@v0.6.0
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          branch: main

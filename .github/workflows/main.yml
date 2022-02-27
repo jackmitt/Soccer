@@ -41,7 +41,7 @@ jobs:
           pip install webdriver_manager
           
       - name: run script
-        run: python main2.py
+        run: python actionsScrape.py
           
       - name: commit files
         run: |

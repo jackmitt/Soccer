@@ -503,8 +503,12 @@ def nowgoalPt2(league):
         A.addCellToRow(datetime.date(int(fullDate.split("/")[2]), int(fullDate.split("/")[0]), int(fullDate.split("/")[1])))
         A.addCellToRow(soup.find_all(class_="sclassName")[0].find("a").text[1:])
         A.addCellToRow(soup.find_all(class_="sclassName")[1].find("a").text[1:])
-        A.addCellToRow(soup.find_all(class_="score")[0].text)
-        A.addCellToRow(soup.find_all(class_="score")[1].text)
+        try:
+            A.addCellToRow(soup.find_all(class_="score")[0].text)
+            A.addCellToRow(soup.find_all(class_="score")[1].text)
+        except IndexError:
+            A.trashRow()
+            continue
         for row in soup.find_all(class_="odds-table-bg")[0].find_all("tr"):
             if ("oods-bg" in row["class"][0]):
                 if (row.find("td").text.split()[0] == "Bet365"):

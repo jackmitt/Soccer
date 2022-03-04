@@ -1,6 +1,6 @@
 import scrapers as scr
 
-leagues = ["England1","England2","England3","England4","Spain1","Spain2"]
+leagues = ["Spain2","France1","France2","France3","Italy1","Italy2","Germany1","Germany2","Germany3"]
 while(1):
     for league in leagues:
         try:

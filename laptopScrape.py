@@ -3,7 +3,7 @@ import datetime
 import time
 
 
-leagues = ["USA1","Brazil1","Brazil2","Japan1","Japan2","Korea1","Australia1","Australia2","Iran1"]
+leagues = ["Czech1","Czech2","Denmark1","Denmark2","Finland1","Finland2","Sweden1","Sweden2","Norway1","Norway2"]
 while(1):
     for league in leagues:
         try:

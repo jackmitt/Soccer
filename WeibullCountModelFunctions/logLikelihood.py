@@ -14,21 +14,21 @@ def logLikelihood(array, df):
         #print (curIndex)
         #CDF from Weibull PMF
         F11 = 0
-        for i in range(df.at[curIndex, "H_Score"] + 1):
-            if (i == df.at[curIndex, "H_Score"]):
+        for i in range(df.at[curIndex, "Home Score"] + 1):
+            if (i == df.at[curIndex, "Home Score"]):
                 if (i == 0):
                     F12 = 0
                 else:
                     F12 = F11
-            F11 += weibullPmf(i, df.at[curIndex, "H_Poisson Mean Prediction"], array[0], alphaDict)
+            F11 += weibullPmf(i, df.at[curIndex, "H_proj"], array[0], alphaDict)
         F21 = 0
-        for i in range(df.at[curIndex, "A_Score"] + 1):
-            if (i == df.at[curIndex, "A_Score"]):
+        for i in range(df.at[curIndex, "Away Score"] + 1):
+            if (i == df.at[curIndex, "Away Score"]):
                 if (i == 0):
                     F22 = 0
                 else:
                     F22 = F21
-            F21 += weibullPmf(i, df.at[curIndex, "A_Poisson Mean Prediction"], array[1], alphaDict)
+            F21 += weibullPmf(i, df.at[curIndex, "A_proj"], array[1], alphaDict)
         total += (np.log(copula(F11, F21, array[2]) - copula(F12, F21, array[2]) - copula(F11, F22, array[2]) + copula(F12, F22, array[2])))
         curIndex += 1
     #return (np.log(copula(weibullPmf(y1, l1, c1), weibullPmf(y2, l2, c2), k) - copula(weibullPmf(y1 - 1, l1, c1), weibullPmf(y2, l2, c2), k) - copula(weibullPmf(y1, l1, c1), weibullPmf(y2 - 1, l2, c2), k) + copula(weibullPmf(y1 - 1, l1, c1), weibullPmf(y2 - 1, l2, c2), k)))

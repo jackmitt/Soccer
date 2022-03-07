@@ -1,6 +1,13 @@
 import scrapers as scr
+import data_manipulation as dm
+import predictions as pr
+import evaluations as eval
 
-#ISRAEL1 2010-2011 season was down
-leagues = ["Iran1","UAE1","Singapore1","Qatar1","SouthAfrica1","Morocco1","Algeria1"]
+
+leagues = ["England1","England2","England3","England4"]
 for league in leagues:
-    scr.nowgoal(league)
+    print (league)
+    #dm.preMatchAverages(league)
+    #dm.train_test_split(league)
+    #pr.WeibullCountDistPredictions(league)
+    eval.analyzeWinRates(league, "OU", "Open")

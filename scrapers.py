@@ -477,7 +477,7 @@ def nowgoalPt2(league):
     if (not exists("./csv_data/" + league)):
         os.makedirs("./csv_data/" + league)
     A = Database(["Date","Home","Away","Home Score","Away Score","Open 1","Open X","Open 2","Close 1","Close X","Close 2","1X2 Book","Open AH","Home Open AH Odds","Away Open AH Odds","Close AH","Home Close AH Odds","Away Close AH Odds","AH Book","Open OU","Over Open OU Odds","Under Open OU Odds","Close OU","Over Close OU Odds","Under Close OU Odds","OU Book","url"])
-    driver_path = ChromeDriverManager(chrome_type=ChromeType.CHROMIUM).install()
+    driver_path = ChromeDriverManager().install()
     chrome_options = Options()
     chrome_options.add_argument("--no-sandbox")
     chrome_options.add_argument("--headless")

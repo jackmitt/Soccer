@@ -8,6 +8,8 @@ from WeibullCountModelFunctions.MLE import MLE
 from WeibullCountModelFunctions.WeibullPMF import weibullPmf
 from WeibullCountModelFunctions.frankCopula import copula
 from itertools import combinations
+from scipy.stats import norm
+import bayesianModelFcns as bmf
 
 
 def fitWeibullParameters():
@@ -141,14 +143,14 @@ def WeibullCountDistPredictions(league):
     test.to_csv("./csv_data/" + league + "/predictions.csv", index = False)
 
 def bayesian(league):
-    train = pd.read_csv("./csv_data/England1/train.csv", encoding = "ISO-8859-1")
-    # train = train[train["H_proj"].notna()]
-    # aggLeagues = ["England2","England3","England4"]
-    # for l in aggLeagues:
-    #     new = pd.read_csv("./csv_data/" + l + "/train.csv", encoding = "ISO-8859-1")
-    #     new = new[new["H_proj"].notna()]
-    #     train = train.append(new, ignore_index = True)
-    train = train[["Home","Away","Home Score","Away Score"]]
+    f = 1.05                 # Expand the posteriors by this amount before using as priors
+    f_thresh = 0.075         # A cap on team variable standard deviation to prevent blowup
+    Δσ = 0.001               # The standard deviaton of the random walk variables
+
+
+    train = pd.read_csv("./csv_data/England1/preMatchAverages.csv", encoding = "ISO-8859-1")
+    for i in range(len(train.index)):
+        train.at[i, "Date"] = datetime.date(int(train.at[i, "Date"].split("-")[0]), int(train.at[i, "Date"].split("-")[1]), int(train.at[i, "Date"].split("-")[2]))
     train = train.rename(columns={"Home Score": "home_team_reg_score"})
     train = train.rename(columns={"Away Score": "away_team_reg_score"})
     teams = train.Home.unique()
@@ -173,9 +175,6 @@ def bayesian(league):
     train = train.rename(columns={'i': 'i_away'}).drop('team', axis=1)
     train['i_pair'] = train.apply(lambda row: team_pairs_dict[(row['Home'], row['Away'])], axis=1)
 
-    test = train.iloc[len(train.index)-10:]
-    train = train.iloc[0:len(train.index)-10]
-
 
     num_teams = len(train.i_home.drop_duplicates())
     num_team_pairs  = len(train.i_pair.drop_duplicates())
@@ -187,59 +186,94 @@ def bayesian(league):
     observed_home_goals = train.home_team_reg_score.values
     observed_away_goals = train.away_team_reg_score.values
 
-    with pm.Model() as model:
-        # Global model parameters
-        home = pm.Flat('home')
-        sd_offence = pm.HalfStudentT('sd_offence', nu=3, sd=2.5)
-        sd_defence = pm.HalfStudentT('sd_defence', nu=3, sd=2.5)
-        intercept = pm.Flat('intercept')
+    priors = {}
+    last_index_this_gw = -1
+    for index, row in train.iterrows():
+        print (index)
+        #Skip the indices already covered in the last prediction and model update cycle
+        if (last_index_this_gw >= index):
+            continue
+        if (index != 0 and abs(row["Date"] - train.at[index-1,"Date"]).days > 30):
+            pass
+            #bmf.fatten_priors(priors, 2, )
+        while (abs(row["Date"] - train.at[last_index_this_gw+1,"Date"]).days < 3):
+            last_index_this_gw += 1
+        if (index == 0):
+            last_index_this_gw += 990
+        new_obs = train.iloc[index:last_index_this_gw+1]
+
+        home_team = theano.shared(new_obs.i_home.values)
+        away_team = theano.shared(new_obs.i_away.values)
+        team_pair = theano.shared(new_obs.i_pair.values)
+
+        observed_home_goals = new_obs.home_team_reg_score.values
+        observed_away_goals = new_obs.away_team_reg_score.values
+
+        posteriors = bmf.model_update(home_team, observed_home_goals, away_team, observed_away_goals, priors, num_teams, f, f_thresh, Δσ)
+
+        priors = posteriors
+
+
+    # with pm.Model() as model:
+    #     # Global model parameters
+    #     home = pm.Flat('home')
+    #     sd_offense = pm.HalfStudentT('sd_offense', nu=3, sd=2.5)
+    #     sd_defense = pm.HalfStudentT('sd_defense', nu=3, sd=2.5)
+    #     intercept = pm.Flat('intercept')
+    # #
+    #     # Team-specific poisson model parameters
+    #     offense_star = pm.Normal('offense_star', mu=0, sd=sd_offense, shape=num_teams)
+    #     defense_star = pm.Normal('defense_star', mu=0, sd=sd_defense, shape=num_teams)
+    #     offense = pm.Deterministic('offense', offense_star - tt.mean(offense_star))
+    #     defense = pm.Deterministic('defense', defense_star - tt.mean(defense_star))
+    #     home_theta = tt.exp(intercept + home + offense[home_team] - defense[away_team])
+    #     away_theta = tt.exp(intercept + offense[away_team] - defense[home_team])
+    # #
+    # #
+    #     # Likelihood of observed data
+    #     home_goals = pm.Poisson('home_goals', mu=home_theta, observed=observed_home_goals)
+    #     away_goals = pm.Poisson('away_goals', mu=away_theta, observed=observed_away_goals)
     #
-        # Team-specific poisson model parameters
-        offence_star = pm.Normal('offence_star', mu=0, sd=sd_offence, shape=num_teams)
-        defence_star = pm.Normal('defence_star', mu=0, sd=sd_defence, shape=num_teams)
-        offence = pm.Deterministic('offence', offence_star - tt.mean(offence_star))
-        defence = pm.Deterministic('defence', defence_star - tt.mean(defence_star))
-        home_theta = tt.exp(intercept + home + offence[home_team] - defence[away_team])
-        away_theta = tt.exp(intercept + offence[away_team] - defence[home_team])
+    # with model:
+    #     trace = pm.sample(2000, tune=1000, cores=1)
+
+    # mv = {}
+    # n_teams = num_teams
+    # mv['intercept'] = [float(s) for s in trace['intercept']]
+    # mv['home'] = [float(s) for s in trace['home']]
+    # print (trace['intercept'].shape)
+    # print (trace['home'].shape)
+
+    # home_team.set_value(test.i_home.values)
+    # away_team.set_value(test.i_away.values)
+    # team_pair.set_value(test.i_pair.values)
     #
+    # with model:
+    #     post_pred = pm.sample_posterior_predictive(trace)
+
+    # preds = []
+    # for i in range(10):
+    #     preds.append([])
+    # for x in post_pred["home_goals"]:
+    #     for i in range(len(x)):
+    #         preds[i].append(x[i])
     #
-        # Likelihood of observed data
-        home_goals = pm.Poisson('home_goals', mu=home_theta, observed=observed_home_goals)
-        away_goals = pm.Poisson('away_goals', mu=away_theta, observed=observed_away_goals)
-
-    with model:
-        trace = pm.sample(2000, tune=1000, cores=1)
-
-    home_team.set_value(test.i_home.values)
-    away_team.set_value(test.i_away.values)
-    team_pair.set_value(test.i_pair.values)
-
-    with model:
-        post_pred = pm.sample_posterior_predictive(trace)
-
-    preds = []
-    for i in range(10):
-        preds.append([])
-    for x in post_pred["home_goals"]:
-        for i in range(len(x)):
-            preds[i].append(x[i])
-
-    avgGoals = []
-    for game in preds:
-        avgGoals.append(np.average(game))
-    test["H_proj"] = avgGoals
-
-    preds = []
-    for i in range(10):
-        preds.append([])
-    for x in post_pred["away_goals"]:
-        for i in range(len(x)):
-            preds[i].append(x[i])
-
-    avgGoals = []
-    for game in preds:
-        avgGoals.append(np.average(game))
-    test["A_proj"] = avgGoals
-    test.to_csv("HMMMM.csv")
+    # avgGoals = []
+    # for game in preds:
+    #     avgGoals.append(np.average(game))
+    # test["H_proj"] = avgGoals
+    #
+    # preds = []
+    # for i in range(10):
+    #     preds.append([])
+    # for x in post_pred["away_goals"]:
+    #     for i in range(len(x)):
+    #         preds[i].append(x[i])
+    #
+    # avgGoals = []
+    # for game in preds:
+    #     avgGoals.append(np.average(game))
+    # test["A_proj"] = avgGoals
+    # test.to_csv("HMMMM.csv")
 
 bayesian("England1")

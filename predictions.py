@@ -1,10 +1,29 @@
 import pandas as pd
 import numpy as np
 import datetime
+import pymc3 as pm
+import theano.tensor as tt
+import theano
 from WeibullCountModelFunctions.MLE import MLE
 from WeibullCountModelFunctions.WeibullPMF import weibullPmf
 from WeibullCountModelFunctions.frankCopula import copula
+from itertools import combinations
+from scipy.stats import norm
+import bayesianModelFcns as bmf
+import pickle
 
+
+
+def fitWeibullParameters():
+    train = pd.read_csv("./csv_data/England1/train.csv", encoding = "ISO-8859-1")
+    train = train[train["H_proj"].notna()]
+    aggLeagues = ["Algeria1","Australia1","Australia2","Brazil1","Brazil2","Czech1","Czech2","Denmark1","Denmark2","England2","England3","England4","Finland1","Finland2","France1","France2","France3","Germany1","Germany2","Germany3","Iran1","Italy1","Italy2","Japan1","Japan2","Korea1","Morocco1","Netherlands1","Netherlands2","Norway1","Norway2","Qatar1","Singapore1","SouthAfrica1","Spain1","Spain2","Sweden1","Sweden2","UAE1","USA1"]
+    for l in aggLeagues:
+        new = pd.read_csv("./csv_data/" + l + "/train.csv", encoding = "ISO-8859-1")
+        new = new[new["H_proj"].notna()]
+        train = train.append(new, ignore_index = True)
+    print (train)
+    print (MLE(train))
 
 def WeibullCountDistPredictions(league):
     train = pd.read_csv("./csv_data/England1/train.csv", encoding = "ISO-8859-1")
@@ -124,3 +143,131 @@ def WeibullCountDistPredictions(league):
     for key in pred:
         test[key] = pred[key]
     test.to_csv("./csv_data/" + league + "/predictions.csv", index = False)
+
+def bayesian(league):
+    factor = 1.05                 # Expand the posteriors by this amount before using as priors
+    f_thresh = 0.075         # A cap on team variable standard deviation to prevent blowup
+    Δσ = 0.001               # The standard deviaton of the random walk variables
+
+    # with open("./csv_data/" + league + "/last_prior.pkl","rb") as inputFile:
+    #     priors = pickle.load(inputFile)
+    # train = pd.read_csv("./csv_data/England1/betting.csv", encoding = "ISO-8859-1")
+    # for i in range(len(train.index)):
+    #     train.at[i, "Date"] = datetime.date(int(train.at[i, "Date"].split("-")[0]), int(train.at[i, "Date"].split("-")[1]), int(train.at[i, "Date"].split("-")[2]))
+    # train = train.sort_values(by=["Date"], ignore_index = True)
+    # finalDict = {}
+    # train = train.rename(columns={"Home Score": "home_team_reg_score"})
+    # train = train.rename(columns={"Away Score": "away_team_reg_score"})
+    # teams = train.Home.unique()
+    # teams = np.sort(teams)
+    # teams = pd.DataFrame(teams, columns=["team"])
+    # teams["i"] = teams.index
+    #
+    # teams_to_int = {}
+    # for index, row in teams.iterrows():
+    #     teams_to_int[row["team"]] = row["i"]
+    #
+    # all_teams_pair_combinations = combinations(teams['team'], 2)
+    # team_pairs_dict = {}
+    # team_pairs_heads_dict = {}
+    # pair_index = 0
+    # for pair in all_teams_pair_combinations:
+    #     team_pairs_dict[(pair[0], pair[1])] = pair_index
+    #     team_pairs_dict[(pair[1], pair[0])] = pair_index
+    #     team_pairs_heads_dict[(pair[0], pair[1])] = pair[0]
+    #     team_pairs_heads_dict[(pair[1], pair[0])] = pair[0]
+    #     pair_index += 1
+    #
+    # train = train.merge(teams, left_on='Home', right_on='team', how='left')
+    # train = train.rename(columns={'i': 'i_home'}).drop('team', axis=1)
+    # train = train.merge(teams, left_on='Away', right_on='team', how='left')
+    # train = train.rename(columns={'i': 'i_away'}).drop('team', axis=1)
+    # train['i_pair'] = train.apply(lambda row: team_pairs_dict[(row['Home'], row['Away'])], axis=1)
+    #
+    # gwCount = 0
+    # gws = []
+    # for index, row in train.iterrows():
+    #     if (index == 0):
+    #         startIndex = 0
+    #     elif (index != 0 and abs(train.at[startIndex,"Date"] - train.at[index,"Date"]).days > 3):
+    #         gwCount += 1
+    #         startIndex = index
+    #     gws.append(gwCount)
+    # train["gw"] = gws
+    #
+    # for col in train.columns:
+    #     finalDict[col] = []
+    # for col in ["H_proj","A_proj","p_1","p_X","p_2","p_Open_home_cover","p_Close_home_cover","p_Open_over","p_Close_over"]:
+    #     finalDict[col] = []
+    #
+    #
+    # num_teams = len(train.i_home.drop_duplicates())
+    # num_team_pairs  = len(train.i_pair.drop_duplicates())
+    #
+    # warmUp = train.iloc[:1510]
+    # train = train.iloc[1510:]
+    #
+    # home_team = theano.shared(warmUp.i_home.values)
+    # away_team = theano.shared(warmUp.i_away.values)
+    # team_pair = theano.shared(warmUp.i_pair.values)
+    #
+    # observed_home_goals = warmUp.home_team_reg_score.values
+    # observed_away_goals = warmUp.away_team_reg_score.values
+    #
+    # with pm.Model() as model:
+    #     home = pm.Flat('home')
+    #     sd_offense = pm.HalfStudentT('sd_offense', nu=3, sd=2.5)
+    #     sd_defense = pm.HalfStudentT('sd_defense', nu=3, sd=2.5)
+    #     intercept = pm.Flat('intercept')
+    #
+    #     offense_star = pm.Normal('offense_star', mu=0, sd=sd_offense, shape=num_teams)
+    #     defense_star = pm.Normal('defense_star', mu=0, sd=sd_defense, shape=num_teams)
+    #     offense = pm.Deterministic('offense', offense_star - tt.mean(offense_star))
+    #     defense = pm.Deterministic('defense', defense_star - tt.mean(defense_star))
+    #     home_theta = tt.exp(intercept + home + offense[home_team] - defense[away_team])
+    #     away_theta = tt.exp(intercept + offense[away_team] - defense[home_team])
+    #
+    #
+    #     home_goals = pm.Poisson('home_goals', mu=home_theta, observed=observed_home_goals)
+    #     away_goals = pm.Poisson('away_goals', mu=away_theta, observed=observed_away_goals)
+    #
+    # with model:
+    #     trace = pm.sample(2000, tune=1000, cores=1)
+    #     priors = bmf.get_model_posteriors(trace, num_teams)
+    #
+    # oneIterComplete = False
+    # startIndex = 0
+    # for index, row in train.iterrows():
+    #     for col in train.columns:
+    #         finalDict[col].append(row[col])
+    #     if (index != 1510 and abs(row["Date"] - train.at[index-1,"Date"]).days > 30):
+    #         bmf.fatten_priors(priors, 2, f_thresh)
+    #     if (index != 1510 and row["gw"] - train.at[index-1,"gw"] == 1):
+    #         new_obs = train.iloc[startIndex:index]
+    #
+    #         home_team = theano.shared(new_obs.i_home.values)
+    #         away_team = theano.shared(new_obs.i_away.values)
+    #         team_pair = theano.shared(new_obs.i_pair.values)
+    #
+    #         observed_home_goals = new_obs.home_team_reg_score.values
+    #         observed_away_goals = new_obs.away_team_reg_score.values
+    #
+    #         posteriors = bmf.model_update(home_team, observed_home_goals, away_team, observed_away_goals, priors, num_teams, factor, f_thresh, Δσ)
+    #
+    #         priors = posteriors
+    #
+    #         startIndex = index
+    #         oneIterComplete = True
+    #     if (oneIterComplete):
+    #         curPred = bmf.single_game_prediction(row, posteriors, teams_to_int, decimals = 5)
+    #         for key in curPred:
+    #             finalDict[key].append(curPred[key][0])
+    #     else:
+    #         for col in ["H_proj","A_proj","p_1","p_X","p_2","p_Open_home_cover","p_Close_home_cover","p_Open_over","p_Close_over"]:
+    #             finalDict[col].append(np.nan)
+    #     tempDF = pd.DataFrame.from_dict(finalDict)
+    #     tempDF.to_csv("./csv_data/" + league + "/bayes_predictions.csv", index = False)
+    #     with open("./csv_data/" + league + "/last_prior.pkl", "wb") as f:
+            pickle.dump(priors, f)
+
+bayesian("England1")

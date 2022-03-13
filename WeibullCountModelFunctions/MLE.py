@@ -7,6 +7,6 @@ import time
 
 #pass in the poissonPredictionMeans.csv dataframe
 def MLE(df):
-    init = [1.13, 0.90, 0.14]
-    results = minimize(logLikelihood, init, args=(df), method = "Nelder-Mead", options = {"disp":True})
+    init = [1.03, 0.97, 0.01]
+    results = minimize(logLikelihood, init, args=(df), method = "CG", options = {"disp":True,"maxiter":100})
     return (results.x)

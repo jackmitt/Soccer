@@ -9,6 +9,8 @@ from WeibullCountModelFunctions.WeibullPMF import weibullPmf
 from WeibullCountModelFunctions.frankCopula import copula
 from itertools import combinations
 from scipy.stats import norm
+from scipy.integrate import quad, dblquad
+from math import factorial, exp, sqrt, pi
 
 def get_model_posteriors(trace, n_teams):
     posteriors = {}
@@ -101,3 +103,107 @@ def model_update(idₕ, sₕ_obs, idₐ, sₐ_obs, priors, n_teams, f, f_thresh,
     posteriors = model_iteration(idₕ, sₕ_obs, idₐ, sₐ_obs, priors, n_teams, Δσ)
 
     return posteriors
+
+def bayesian_poisson_pdf(μ, σ, max_y=10):
+    def integrand(x, y, σ, μ):
+        pois = (np.exp(x)**y)*np.exp(-np.exp(x))/factorial(y)
+        norm = np.exp(-0.5*((x-μ)/σ)**2.0)/(σ * sqrt(2.0*pi))
+        return  pois * norm
+
+    lwr = -3.0
+    upr = 5.0
+
+    y = np.arange(0,max_y)
+    p = []
+    for yi in y:
+        I = quad(integrand, lwr, upr, args=(yi,σ,μ))
+        p.append(I[0])
+    p.append(1.0 - sum(p))
+
+    return p
+
+def single_game_prediction(row, posteriors, teams_to_int, decimals = 5):
+    precision = f".{decimals}f"
+    game_pred = {"H_proj":[],"A_proj":[],"p_1":[0],"p_X":[0],"p_2":[0],"p_Open_home_cover":[0],"p_Close_home_cover":[0],"p_Open_over":[0],"p_Close_over":[0]}
+    idₕ = teams_to_int[row["Home"]]
+    idₐ = teams_to_int[row["Away"]]
+    i_μ = posteriors["intercept"][0]
+    i_σ = posteriors["intercept"][1]
+    h_μ = posteriors["home"][0]
+    h_σ = posteriors["home"][1]
+    oₕ_μ = posteriors["offense"][0][idₕ]
+    oₕ_σ = posteriors["offense"][1][idₕ]
+    oₐ_μ = posteriors["offense"][0][idₐ]
+    oₐ_σ = posteriors["offense"][1][idₐ]
+    dₕ_μ = posteriors["defense"][0][idₕ]
+    dₕ_σ = posteriors["defense"][1][idₕ]
+    dₐ_μ = posteriors["defense"][0][idₐ]
+    dₐ_σ = posteriors["defense"][1][idₐ]
+    # Normal(μ₁,σ₁²) + Normal(μ₂,σ₂²) = Normal(μ₁ + μ₂, σ₁² + σ₂²)
+    log_λₕ_μ = i_μ + h_μ + oₕ_μ - dₐ_μ
+    game_pred["H_proj"].append(np.exp(log_λₕ_μ))
+    log_λₕ_σ = np.sqrt(i_σ ** 2 + h_σ ** 2 + oₕ_σ ** 2 + dₐ_σ ** 2)
+    log_λₐ_μ = i_μ + oₐ_μ - dₕ_μ
+    game_pred["A_proj"].append(np.exp(log_λₐ_μ))
+    log_λₐ_σ = np.sqrt(i_σ ** 2 + oₐ_σ ** 2 + dₕ_σ ** 2)
+    home_score_pdf = bayesian_poisson_pdf(log_λₕ_μ, log_λₕ_σ)
+    away_score_pdf = bayesian_poisson_pdf(log_λₐ_μ, log_λₐ_σ)
+    p_spaces = {"Open_cover":0,"Close_cover":0,"Open_over":0,"Close_over":0}
+    for sₕ, pₕ in enumerate(home_score_pdf):
+        for sₐ, pₐ in enumerate(away_score_pdf):
+            p = pₕ * pₐ
+            if sₕ > sₐ:
+                game_pred["p_1"][0] += p
+            elif sₐ > sₕ:
+                game_pred["p_2"][0] += p
+            else:
+                game_pred["p_X"][0] += p
+
+            for x in ["Open","Close"]:
+                if ("0.5" in str(row[x + " AH"])):
+                    p_spaces[x + "_cover"] += p
+                    if (sₕ > sₐ + row[x + " AH"]):
+                        game_pred["p_" + x + "_home_cover"][0] += p
+                elif ("0.75" not in str(row[x + " AH"]) and "0.25" not in str(row[x + " AH"])):
+                    if (sₕ != sₐ + row[x + " AH"]):
+                        p_spaces[x + "_cover"] += p
+                    if (sₕ > sₐ + row[x + " AH"]):
+                        game_pred["p_" + x + "_home_cover"][0] += p
+                else:
+                    parts = [row[x + " AH"] - 0.25,row[x + " AH"] + 0.25]
+                    for part in parts:
+                        if ("0.5" in str(part)):
+                            p_spaces[x + "_cover"] += p
+                            if (sₕ > sₐ + part):
+                                game_pred["p_" + x + "_home_cover"][0] += p
+                        else:
+                            if (sₕ != sₐ + part):
+                                p_spaces[x + "_cover"] += p
+                            if (sₕ > sₐ + part):
+                                game_pred["p_" + x + "_home_cover"][0] += p
+
+                if ("0.5" in str(row[x + " OU"])):
+                    p_spaces[x + "_over"] += p
+                    if (sₕ + sₐ > row[x + " OU"]):
+                        game_pred["p_" + x + "_over"][0] += p
+                elif ("0.75" not in str(row[x + " OU"]) and "0.25" not in str(row[x + " OU"])):
+                    if (sₕ + sₐ != row[x + " OU"]):
+                        p_spaces[x + "_over"] += p
+                    if (sₕ + sₐ > row[x + " OU"]):
+                        game_pred["p_" + x + "_over"][0] += p
+                else:
+                    parts = [row[x + " OU"] - 0.25,row[x + " OU"] + 0.25]
+                    for part in parts:
+                        if ("0.5" in str(part)):
+                            p_spaces[x + "_over"] += p
+                            if (sₕ + sₐ > part):
+                                game_pred["p_" + x + "_over"][0] += p
+                        else:
+                            if (sₕ + sₐ != part):
+                                p_spaces[x + "_over"] += p
+                            if (sₕ + sₐ > part):
+                                game_pred["p_" + x + "_over"][0] += p
+    for x in ["Open","Close"]:
+        game_pred["p_" + x + "_home_cover"][0] = game_pred["p_" + x + "_home_cover"][0] / p_spaces[x + "_cover"]
+        game_pred["p_" + x + "_over"][0] = game_pred["p_" + x + "_over"][0] / p_spaces[x + "_over"]
+    return game_pred

@@ -160,11 +160,11 @@ def single_game_prediction(row, posteriors, teams_to_int, decimals = 5):
                 game_pred["p_X"][0] += p
 
             for x in ["Open","Close"]:
-                if ("0.5" in str(row[x + " AH"])):
+                if (".5" in str(row[x + " AH"])):
                     p_spaces[x + "_cover"] += p
                     if (sₕ > sₐ + row[x + " AH"]):
                         game_pred["p_" + x + "_home_cover"][0] += p
-                elif ("0.75" not in str(row[x + " AH"]) and "0.25" not in str(row[x + " AH"])):
+                elif (".75" not in str(row[x + " AH"]) and ".25" not in str(row[x + " AH"])):
                     if (sₕ != sₐ + row[x + " AH"]):
                         p_spaces[x + "_cover"] += p
                     if (sₕ > sₐ + row[x + " AH"]):
@@ -172,7 +172,7 @@ def single_game_prediction(row, posteriors, teams_to_int, decimals = 5):
                 else:
                     parts = [row[x + " AH"] - 0.25,row[x + " AH"] + 0.25]
                     for part in parts:
-                        if ("0.5" in str(part)):
+                        if (".5" in str(part)):
                             p_spaces[x + "_cover"] += p
                             if (sₕ > sₐ + part):
                                 game_pred["p_" + x + "_home_cover"][0] += p
@@ -182,11 +182,11 @@ def single_game_prediction(row, posteriors, teams_to_int, decimals = 5):
                             if (sₕ > sₐ + part):
                                 game_pred["p_" + x + "_home_cover"][0] += p
 
-                if ("0.5" in str(row[x + " OU"])):
+                if (".5" in str(row[x + " OU"])):
                     p_spaces[x + "_over"] += p
                     if (sₕ + sₐ > row[x + " OU"]):
                         game_pred["p_" + x + "_over"][0] += p
-                elif ("0.75" not in str(row[x + " OU"]) and "0.25" not in str(row[x + " OU"])):
+                elif (".75" not in str(row[x + " OU"]) and ".25" not in str(row[x + " OU"])):
                     if (sₕ + sₐ != row[x + " OU"]):
                         p_spaces[x + "_over"] += p
                     if (sₕ + sₐ > row[x + " OU"]):
@@ -194,7 +194,7 @@ def single_game_prediction(row, posteriors, teams_to_int, decimals = 5):
                 else:
                     parts = [row[x + " OU"] - 0.25,row[x + " OU"] + 0.25]
                     for part in parts:
-                        if ("0.5" in str(part)):
+                        if (".5" in str(part)):
                             p_spaces[x + "_over"] += p
                             if (sₕ + sₐ > part):
                                 game_pred["p_" + x + "_over"][0] += p

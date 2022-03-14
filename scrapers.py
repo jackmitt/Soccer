@@ -477,7 +477,7 @@ def nowgoalPt2(league):
     if (not exists("./csv_data/" + league)):
         os.makedirs("./csv_data/" + league)
     A = Database(["Date","Home","Away","Home Score","Away Score","Open 1","Open X","Open 2","Close 1","Close X","Close 2","1X2 Book","Open AH","Home Open AH Odds","Away Open AH Odds","Close AH","Home Close AH Odds","Away Close AH Odds","AH Book","Open OU","Over Open OU Odds","Under Open OU Odds","Close OU","Over Close OU Odds","Under Close OU Odds","OU Book","url"])
-    driver_path = ChromeDriverManager().install()
+    driver_path = ChromeDriverManager(chrome_type=ChromeType.CHROMIUM).install()
     chrome_options = Options()
     chrome_options.add_argument("--no-sandbox")
     chrome_options.add_argument("--headless")
@@ -491,8 +491,8 @@ def nowgoalPt2(league):
     if (exists("./csv_data/" + league + "/betting.csv")):
         A.initDictFromCsv("./csv_data/" + league + "/betting.csv")
         scrapedGames = pd.read_csv('./csv_data/' + league + '/betting.csv', encoding = "ISO-8859-1")["url"].tolist()
-        for game in scrapedGames:
-            gameUrls.remove(game)
+        # for game in scrapedGames:
+        #     gameUrls.remove(game)
     #
     for game in gameUrls:
         browser.get("https:" + game)
@@ -503,12 +503,8 @@ def nowgoalPt2(league):
         A.addCellToRow(datetime.date(int(fullDate.split("/")[2]), int(fullDate.split("/")[0]), int(fullDate.split("/")[1])))
         A.addCellToRow(soup.find_all(class_="sclassName")[0].find("a").text[1:])
         A.addCellToRow(soup.find_all(class_="sclassName")[1].find("a").text[1:])
-        try:
-            A.addCellToRow(soup.find_all(class_="score")[0].text)
-            A.addCellToRow(soup.find_all(class_="score")[1].text)
-        except IndexError:
-            A.trashRow()
-            continue
+        A.addCellToRow(soup.find_all(class_="score")[0].text)
+        A.addCellToRow(soup.find_all(class_="score")[1].text)
         for row in soup.find_all(class_="odds-table-bg")[0].find_all("tr"):
             if ("oods-bg" in row["class"][0]):
                 if (row.find("td").text.split()[0] == "Bet365"):
@@ -670,7 +666,7 @@ def nowgoalPt2(league):
         A.addCellToRow(game)
         A.appendRow()
         counter += 1
-        if (counter % 100 == 1):
+        if (counter % 10 == 1):
             A.dictToCsv("./csv_data/" + league + "/betting.csv")
     A.dictToCsv("./csv_data/" + league + "/betting.csv")
     browser.close()

@@ -5,7 +5,7 @@ def kellyStake(p, decOdds, kellyDiv):
     return ((p - (1 - p)/(decOdds - 1)) / kellyDiv)
 
 def analyzeWinRates(league, betType, timing):
-    pred = pd.read_csv("./csv_data/" + league + "/predictions.csv", encoding = "ISO-8859-1")
+    pred = pd.read_csv("./csv_data/" + league + "/bayes_predictions.csv", encoding = "ISO-8859-1")
     dict = {"<3%":[],"3-5%":[],"5-10%":[],"10-17.5%":[],"17.5-25%":[],"25-40%":[],"40%+":[]}
     for index, row in pred.iterrows():
         if (betType == "1X2"):

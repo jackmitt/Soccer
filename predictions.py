@@ -151,7 +151,7 @@ def bayesian(league):
 
     # with open("./csv_data/" + league + "/last_prior.pkl","rb") as inputFile:
     #     priors = pickle.load(inputFile)
-    train = pd.read_csv("./csv_data/England1/betting.csv", encoding = "ISO-8859-1")
+    train = pd.read_csv("./csv_data/" + league + "/betting.csv", encoding = "ISO-8859-1")
     for i in range(len(train.index)):
         train.at[i, "Date"] = datetime.date(int(train.at[i, "Date"].split("-")[0]), int(train.at[i, "Date"].split("-")[1]), int(train.at[i, "Date"].split("-")[2]))
     train = train.sort_values(by=["Date"], ignore_index = True)
@@ -195,6 +195,11 @@ def bayesian(league):
         gws.append(gwCount)
     train["gw"] = gws
 
+    for index, row in train.iterrows():
+        if (index != 0 and abs(train.at[index,"Date"] - train.at[index-1,"Date"]).days > 40 and train.at[index,"Date"].year == 2012):
+            splitIndex = index
+        gws.append(gwCount)
+
     for col in train.columns:
         finalDict[col] = []
     for col in ["H_proj","A_proj","p_1","p_X","p_2","p_Open_home_cover","p_Close_home_cover","p_Open_over","p_Close_over"]:
@@ -204,8 +209,8 @@ def bayesian(league):
     num_teams = len(train.i_home.drop_duplicates())
     num_team_pairs  = len(train.i_pair.drop_duplicates())
 
-    warmUp = train.iloc[:1510]
-    train = train.iloc[1510:]
+    warmUp = train.iloc[:splitIndex]
+    train = train.iloc[splitIndex:]
 
     home_team = theano.shared(warmUp.i_home.values)
     away_team = theano.shared(warmUp.i_away.values)
@@ -240,9 +245,9 @@ def bayesian(league):
     for index, row in train.iterrows():
         for col in train.columns:
             finalDict[col].append(row[col])
-        if (index != 1510 and abs(row["Date"] - train.at[index-1,"Date"]).days > 30):
+        if (index != splitIndex and abs(row["Date"] - train.at[index-1,"Date"]).days > 30):
             bmf.fatten_priors(priors, 2, f_thresh)
-        if (index != 1510 and row["gw"] - train.at[index-1,"gw"] == 1):
+        if (index != splitIndex and row["gw"] - train.at[index-1,"gw"] == 1):
             new_obs = train.iloc[startIndex:index]
 
             home_team = theano.shared(new_obs.i_home.values)

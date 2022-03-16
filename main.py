@@ -4,7 +4,7 @@ import predictions as pr
 import evaluations as eval
 
 
-leagues = ["England2","England3","England4","France1","France2","France3","Germany1","Germany2","Germany3","Italy1","Italy2","Spain1","Spain2"]
+leagues = ["Brazil1","Brazil2","Japan1","Japan2","Korea1"]
 for league in leagues:
     #print (league)
     #dm.preMatchAverages(league)

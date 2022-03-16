@@ -8,22 +8,22 @@ import time
 #logLikelihood function for ONE game
 def logLikelihood(array, df):
     total = 0
-    curIndex = 0
+    curIndex = df.index[0]
     alphaDict = {}
     while (curIndex < len(df.index)):
         #print (curIndex)
         #CDF from Weibull PMF
         F11 = 0
-        for i in range(df.at[curIndex, "Home Score"] + 1):
-            if (i == df.at[curIndex, "Home Score"]):
+        for i in range(df.at[curIndex, "home_team_reg_score"] + 1):
+            if (i == df.at[curIndex, "home_team_reg_score"]):
                 if (i == 0):
                     F12 = 0
                 else:
                     F12 = F11
             F11 += weibullPmf(i, df.at[curIndex, "H_proj"], array[0], alphaDict)
         F21 = 0
-        for i in range(df.at[curIndex, "Away Score"] + 1):
-            if (i == df.at[curIndex, "Away Score"]):
+        for i in range(df.at[curIndex, "away_team_reg_score"] + 1):
+            if (i == df.at[curIndex, "away_team_reg_score"]):
                 if (i == 0):
                     F22 = 0
                 else:

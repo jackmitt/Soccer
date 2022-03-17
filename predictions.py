@@ -15,33 +15,33 @@ import pickle
 
 
 def fitWeibullParameters():
-    train = pd.read_csv("./csv_data/England1/train.csv", encoding = "ISO-8859-1")
-    train = train[train["H_proj"].notna()]
-    aggLeagues = ["Algeria1","Australia1","Australia2","Brazil1","Brazil2","Czech1","Czech2","Denmark1","Denmark2","England2","England3","England4","Finland1","Finland2","France1","France2","France3","Germany1","Germany2","Germany3","Iran1","Italy1","Italy2","Japan1","Japan2","Korea1","Morocco1","Netherlands1","Netherlands2","Norway1","Norway2","Qatar1","Singapore1","SouthAfrica1","Spain1","Spain2","Sweden1","Sweden2","UAE1","USA1"]
-    for l in aggLeagues:
-        new = pd.read_csv("./csv_data/" + l + "/train.csv", encoding = "ISO-8859-1")
-        new = new[new["H_proj"].notna()]
-        train = train.append(new, ignore_index = True)
+    train = pd.read_csv("./csv_data/England1/bayes_predictions.csv", encoding = "ISO-8859-1")
+    train = train.iloc[380:2270]
+    # aggLeagues = ["Algeria1","Australia1","Australia2","Brazil1","Brazil2","Czech1","Czech2","Denmark1","Denmark2","England2","England3","England4","Finland1","Finland2","France1","France2","France3","Germany1","Germany2","Germany3","Iran1","Italy1","Italy2","Japan1","Japan2","Korea1","Morocco1","Netherlands1","Netherlands2","Norway1","Norway2","Qatar1","Singapore1","SouthAfrica1","Spain1","Spain2","Sweden1","Sweden2","UAE1","USA1"]
+    # for l in aggLeagues:
+    #     new = pd.read_csv("./csv_data/" + l + "/train.csv", encoding = "ISO-8859-1")
+    #     new = new[new["H_proj"].notna()]
+    #     train = train.append(new, ignore_index = True)
     print (train)
     print (MLE(train))
 
 def WeibullCountDistPredictions(league):
-    train = pd.read_csv("./csv_data/England1/train.csv", encoding = "ISO-8859-1")
-    train = train[train["H_proj"].notna()]
-    aggLeagues = ["England2","England3","England4"]
-    for l in aggLeagues:
-        new = pd.read_csv("./csv_data/" + l + "/train.csv", encoding = "ISO-8859-1")
-        new = new[new["H_proj"].notna()]
-        train = train.append(new, ignore_index = True)
-    test = pd.read_csv("./csv_data/" + league + "/test.csv", encoding = "ISO-8859-1")
+    # train = pd.read_csv("./csv_data/England1/train.csv", encoding = "ISO-8859-1")
+    # train = train[train["H_proj"].notna()]
+    # aggLeagues = ["England2","England3","England4"]
+    # for l in aggLeagues:
+    #     new = pd.read_csv("./csv_data/" + l + "/train.csv", encoding = "ISO-8859-1")
+    #     new = new[new["H_proj"].notna()]
+    #     train = train.append(new, ignore_index = True)
+    test = pd.read_csv("./csv_data/" + league + "/bayes_predictions.csv", encoding = "ISO-8859-1")
     test = test[test["H_proj"].notna()]
     test = test.reset_index(drop=True)
-    games = len(train.index)
+    #games = len(train.index)
     dict = {}
     testCount = 0
     #[1.03212958 0.98436033 0.01603222] #OPTIMAL YESTERDAY
     #optimal = MLE(train)
-    optimal = [1.0308, 0.98436033, 0.01603222]
+    optimal = [1.0000, 1.0000, 0.25]
     alphaDictH = {}
     alphaDictA = {}
     cur = 0
@@ -75,7 +75,7 @@ def WeibullCountDistPredictions(league):
         cur += 1
         testCount += 1
 
-    pred = {"p_1":[],"p_X":[],"p_2":[],"p_Open_home_cover":[],"p_Close_home_cover":[],"p_Open_over":[],"p_Close_over":[]}
+    pred = {"w_p_1":[],"w_p_X":[],"w_p_2":[],"w_p_Open_home_cover":[],"w_p_Close_home_cover":[],"w_p_Open_over":[],"w_p_Close_over":[]}
     for key in pred:
         for i in range(len(test.index)):
             pred[key].append(0)
@@ -84,60 +84,60 @@ def WeibullCountDistPredictions(league):
         for j in range(11):
             for k in range(11):
                 if (j > k):
-                    pred["p_1"][index] += dict[j][k][index]
+                    pred["w_p_1"][index] += dict[j][k][index]
                 elif (k > j):
-                    pred["p_2"][index] += dict[j][k][index]
+                    pred["w_p_2"][index] += dict[j][k][index]
                 else:
-                    pred["p_X"][index] += dict[j][k][index]
+                    pred["w_p_X"][index] += dict[j][k][index]
 
                 for x in ["Open","Close"]:
-                    if ("0.5" in str(test.at[index, x + " AH"])):
+                    if (".5" in str(test.at[index, x + " AH"])):
                         p_spaces[x + "_cover"] += dict[j][k][index]
                         if (j > k + test.at[index, x + " AH"]):
-                            pred["p_" + x + "_home_cover"][index] += dict[j][k][index]
-                    elif ("0.75" not in str(test.at[index, x + " AH"]) and "0.25" not in str(test.at[index, x + " AH"])):
+                            pred["w_p_" + x + "_home_cover"][index] += dict[j][k][index]
+                    elif (".75" not in str(test.at[index, x + " AH"]) and ".25" not in str(test.at[index, x + " AH"])):
                         if (j != k + test.at[index, x + " AH"]):
                             p_spaces[x + "_cover"] += dict[j][k][index]
                         if (j > k + test.at[index, x + " AH"]):
-                            pred["p_" + x + "_home_cover"][index] += dict[j][k][index]
+                            pred["w_p_" + x + "_home_cover"][index] += dict[j][k][index]
                     else:
                         parts = [test.at[index, x + " AH"] - 0.25,test.at[index, x + " AH"] + 0.25]
                         for part in parts:
-                            if ("0.5" in str(part)):
+                            if (".5" in str(part)):
                                 p_spaces[x + "_cover"] += dict[j][k][index]
                                 if (j > k + part):
-                                    pred["p_" + x + "_home_cover"][index] += dict[j][k][index]
+                                    pred["w_p_" + x + "_home_cover"][index] += dict[j][k][index]
                             else:
                                 if (j != k + part):
                                     p_spaces[x + "_cover"] += dict[j][k][index]
                                 if (j > k + part):
-                                    pred["p_" + x + "_home_cover"][index] += dict[j][k][index]
+                                    pred["w_p_" + x + "_home_cover"][index] += dict[j][k][index]
 
-                    if ("0.5" in str(test.at[index, x + " OU"])):
+                    if (".5" in str(test.at[index, x + " OU"])):
                         p_spaces[x + "_over"] += dict[j][k][index]
                         if (j + k > test.at[index, x + " OU"]):
-                            pred["p_" + x + "_over"][index] += dict[j][k][index]
-                    elif ("0.75" not in str(test.at[index, x + " OU"]) and "0.25" not in str(test.at[index, x + " OU"])):
+                            pred["w_p_" + x + "_over"][index] += dict[j][k][index]
+                    elif (".75" not in str(test.at[index, x + " OU"]) and ".25" not in str(test.at[index, x + " OU"])):
                         if (j + k != test.at[index, x + " OU"]):
                             p_spaces[x + "_over"] += dict[j][k][index]
                         if (j + k > test.at[index, x + " OU"]):
-                            pred["p_" + x + "_over"][index] += dict[j][k][index]
+                            pred["w_p_" + x + "_over"][index] += dict[j][k][index]
                     else:
                         parts = [test.at[index, x + " OU"] - 0.25,test.at[index, x + " OU"] + 0.25]
                         for part in parts:
-                            if ("0.5" in str(part)):
+                            if (".5" in str(part)):
                                 p_spaces[x + "_over"] += dict[j][k][index]
                                 if (j + k > part):
-                                    pred["p_" + x + "_over"][index] += dict[j][k][index]
+                                    pred["w_p_" + x + "_over"][index] += dict[j][k][index]
                             else:
                                 if (j + k != part):
                                     p_spaces[x + "_over"] += dict[j][k][index]
                                 if (j + k > part):
-                                    pred["p_" + x + "_over"][index] += dict[j][k][index]
+                                    pred["w_p_" + x + "_over"][index] += dict[j][k][index]
 
         for x in ["Open","Close"]:
-            pred["p_" + x + "_home_cover"][index] = pred["p_" + x + "_home_cover"][index] / p_spaces[x + "_cover"]
-            pred["p_" + x + "_over"][index] = pred["p_" + x + "_over"][index] / p_spaces[x + "_over"]
+            pred["w_p_" + x + "_home_cover"][index] = pred["w_p_" + x + "_home_cover"][index] / p_spaces[x + "_cover"]
+            pred["w_p_" + x + "_over"][index] = pred["w_p_" + x + "_over"][index] / p_spaces[x + "_over"]
 
 
     for key in pred:
@@ -274,3 +274,5 @@ def bayesian(league):
         tempDF.to_csv("./csv_data/" + league + "/bayes_predictions.csv", index = False)
         with open("./csv_data/" + league + "/last_prior.pkl", "wb") as f:
             pickle.dump(priors, f)
+
+WeibullCountDistPredictions("England1")

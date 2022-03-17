@@ -1,6 +1,6 @@
 #import scrapers as scr
 import data_manipulation as dm
-import predictions as pr
+#import predictions as pr
 import evaluations as eval
 
 
@@ -10,6 +10,6 @@ for league in leagues:
     #dm.preMatchAverages(league)
     #dm.train_test_split(league)
     #pr.WeibullCountDistPredictions(league)
-    #eval.analyzeWinRates(league, "AH", "Close")
-    pr.bayesian(league)
+    eval.analyzeWinRates(league, "AH", "Open")
+    #pr.bayesian(league)
 #r.fitWeibullParameters()

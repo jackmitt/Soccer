@@ -4,12 +4,12 @@ import data_manipulation as dm
 import evaluations as eval
 
 
-leagues = ["England1"]
+leagues = ["Sweden2"]
 for league in leagues:
     print (league)
     #dm.preMatchAverages(league)
     #dm.train_test_split(league)
     #pr.WeibullCountDistPredictions(league)
-    eval.analyzeWinRates(league, "OU", "Close", "w_")
+    eval.analyzeWinRates(league, "AH", "Open", "")
     #pr.bayesian(league)
 #r.fitWeibullParameters()

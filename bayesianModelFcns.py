@@ -36,8 +36,8 @@ def get_model_posteriors(trace, n_teams):
 
 def fatten_priors(prev_posteriors, factor, f_thresh):
     priors = prev_posteriors.copy()
-    priors['home'][1] = np.minimum(priors['home'][1] * factor, f_thresh)
-    priors['intercept'][1] = np.minimum(priors['intercept'][1] * factor, f_thresh)
+    #priors['home'][1] = np.minimum(priors['home'][1] * factor, f_thresh)
+    #priors['intercept'][1] = np.minimum(priors['intercept'][1] * factor, f_thresh)
     priors['offense'][1] = np.minimum(np.array(priors['offense'][1]) * factor, f_thresh)
     priors['defense'][1] = np.minimum(np.array(priors['defense'][1]) * factor, f_thresh)
 

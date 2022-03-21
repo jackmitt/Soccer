@@ -274,5 +274,3 @@ def bayesian(league):
         tempDF.to_csv("./csv_data/" + league + "/bayes_predictions.csv", index = False)
         with open("./csv_data/" + league + "/last_prior.pkl", "wb") as f:
             pickle.dump(priors, f)
-
-WeibullCountDistPredictions("England1")

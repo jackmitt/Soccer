@@ -4,7 +4,7 @@ import data_manipulation as dm
 import evaluations as eval
 
 
-leagues = ["Sweden2"]
+leagues = ["Finland1"]
 for league in leagues:
     print (league)
     #dm.preMatchAverages(league)

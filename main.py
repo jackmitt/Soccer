@@ -1,20 +1,20 @@
 #import scrapers as scr
 import data_manipulation as dm
-#import predictions as pr
+import predictions as pr
 import evaluations as eval
 import pandas as pd
 import numpy as np
 
 
-leagues = ["Sweden2"]
+leagues = ["Japan1","Japan2","Korea1"]
 for league in leagues:
     print ("-----------------------------------------------",league)
     #dm.preMatchAverages(league)
     #dm.train_test_split(league)
     #pr.WeibullCountDistPredictions(league)
-    eval.analyzeWinRates(league, "AH", "Open")
+    #eval.analyzeWinRates(league, "AH", "Open")
     #eval.kellybet(league, "OU", "Open", 20000, 2)
-    #pr.bayesian(league)
+    pr.bayesian(league)
 #r.fitWeibullParameters()
 
 

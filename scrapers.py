@@ -13,6 +13,7 @@ from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.chrome.service import Service
 import pickle
 from helpers import Database
+from helpers import standardizeTeamName
 
 def nowgoal(league):
     A = Database(["Date","Home","Away","Open 1","Open X","Open 2","Close 1","Close X","Close 2","Open AH","Home Open AH Odds","Away Open AH Odds","Close AH","Home Close AH Odds","Away Close AH Odds","Open OU","Under Open OU Odds","Over Open OU Odds","Close OU","Under Close OU Odds","Over Close OU Odds","Home Score","Away Score","url"])
@@ -672,7 +673,7 @@ def nowgoalPt2(league):
     browser.close()
 
 def nowgoalCurSeason(league):
-    dict = {"Date":[],"Home":[],"Away":[],"home_team_reg_score":[],"away_team_reg_score":[]}
+    dict = {"Date":[],"Home":[],"Away":[],"home_team_reg_score":[],"away_team_reg_score":[],"includedInPrior":[]}
     driver_path = ChromeDriverManager(chrome_type=ChromeType.CHROMIUM).install()
     chrome_options = Options()
     chrome_options.add_argument("--no-sandbox")
@@ -715,9 +716,56 @@ def nowgoalCurSeason(league):
                     dict["Away"].append(x.find_next_sibling().find_next_sibling().find_next_sibling().find("a").string)
                     dict["home_team_reg_score"].append(x.find_next_sibling().find_next_sibling().find("a").string.split("-")[0])
                     dict["away_team_reg_score"].append(x.find_next_sibling().find_next_sibling().find("a").string.split("-")[1])
+                    dict["includedInPrior"].append(0)
         j += 1
     df = pd.DataFrame.from_dict(dict)
     df = df.sort_values(by=["Date"], ignore_index = True)
     if (not exists("./csv_data/" + league + "/current/")):
         os.makedirs("./csv_data/" + league + "/current/")
     df.to_csv("./csv_data/" + league + "/current/results.csv", index = False)
+
+def pinnacle(league):
+    if (league == "Japan1"):
+        url = "https://www.pinnacle.com/en/soccer/japan-j-league/matchups#period:0"
+
+    A = Database(["Date","Home","Away","AH","Home AH Odds","Away AH Odds","OU","Over Odds","Under Odds"])
+    driver_path = ChromeDriverManager(chrome_type=ChromeType.CHROMIUM).install()
+    chrome_options = Options()
+    chrome_options.add_argument("--no-sandbox")
+    chrome_options.add_argument("--headless")
+    chrome_options.add_argument("--window-size=1325x744")
+    browser = webdriver.Chrome(executable_path=driver_path, options = chrome_options)
+    browser.get(url)
+
+    time.sleep(5)
+    soup = BeautifulSoup(browser.page_source, 'html.parser')
+    main = soup.find(class_="contentBlock square")
+    for game in main.contents:
+        try:
+            fail = game.find_all("span")[13].text
+        except:
+            continue
+        A.addCellToRow(datetime.date.today())
+        if ("ERROR" in standardizeTeamName(game.find_all("span")[0].text, league)):
+            print (standardizeTeamName(game.find_all("span")[0].text, league))
+        if ("ERROR" in standardizeTeamName(game.find_all("span")[1].text, league)):
+            print (standardizeTeamName(game.find_all("span")[1].text, league))
+
+        A.addCellToRow(standardizeTeamName(game.find_all("span")[0].text, league))
+        A.addCellToRow(standardizeTeamName(game.find_all("span")[1].text, league))
+        if ("+" in game.find_all("span")[6].text):
+            A.addCellToRow(float(game.find_all("span")[6].text.split("+")[1]) * -1)
+        elif ("-" in game.find_all("span")[6].text):
+            A.addCellToRow(float(game.find_all("span")[6].text.split("-")[1]))
+        else:
+            A.addCellToRow(game.find_all("span")[6].text)
+        A.addCellToRow(game.find_all("span")[7].text)
+        A.addCellToRow(game.find_all("span")[9].text)
+        A.addCellToRow(game.find_all("span")[10].text)
+        A.addCellToRow(game.find_all("span")[11].text)
+        A.addCellToRow(game.find_all("span")[13].text)
+        A.appendRow()
+    browser.close()
+    return (A.getDataFrame())
+
+print (pinnacle("Japan1"))

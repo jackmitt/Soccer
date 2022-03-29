@@ -73,3 +73,15 @@ class Database:
         for key in B.getKeys():
             if (key not in list(self.dict.keys())):
                 self.dict[key] = B.getCol(key)
+
+def standardizeTeamName(name, league):
+    lname = name.lower()
+    if (league == "Japan1"):
+        if ("kyoto sanga" in lname):
+            return ("Kyoto Sanga")
+        elif ("yokohama" in lname and "marinos" in lname):
+            return ("Yokohama Marinos")
+        elif ("hiroshima sanfrecce" in lname):
+            return ("Hiroshima Sanfrecce")
+        else:
+            return (name)

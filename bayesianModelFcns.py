@@ -36,15 +36,14 @@ def get_model_posteriors(trace, n_teams):
 
 def fatten_priors(prev_posteriors, factor, f_thresh):
     priors = prev_posteriors.copy()
-    priors['home'][1] = np.minimum(priors['home'][1] * factor, f_thresh)
-    priors['intercept'][1] = np.minimum(priors['intercept'][1] * factor, f_thresh)
+    #priors['home'][1] = np.minimum(priors['home'][1] * factor, f_thresh)
+    #priors['intercept'][1] = np.minimum(priors['intercept'][1] * factor, f_thresh)
     priors['offense'][1] = np.minimum(np.array(priors['offense'][1]) * factor, f_thresh)
     priors['defense'][1] = np.minimum(np.array(priors['defense'][1]) * factor, f_thresh)
 
     return priors
 
 def model_iteration(idₕ, sₕ_obs, idₐ, sₐ_obs, priors, n_teams, Δσ, samples=2000, tune=1000, cores=1):
-
     with pm.Model():
         if (len(priors) == 0):
             h = pm.Flat('home')
@@ -77,7 +76,7 @@ def model_iteration(idₕ, sₕ_obs, idₐ, sₐ_obs, priors, n_teams, Δσ, sam
             d_star = pm.Deterministic('d_star', d_star_init + Δ_d)
             d = pm.Deterministic('defense', d_star - tt.mean(d_star))
 
-        λₕ = tt.exp(h + o[idₕ] - d[idₐ])
+        λₕ = tt.exp(i + h + o[idₕ] - d[idₐ])
         λₐ = tt.exp(i + o[idₐ] - d[idₕ])
 
         # Likelihood of observed data
@@ -122,6 +121,7 @@ def bayesian_poisson_pdf(μ, σ, max_y=10):
 
     return p
 
+
 def single_game_prediction(row, posteriors, teams_to_int, decimals = 5):
     precision = f".{decimals}f"
     game_pred = {"H_proj":[],"A_proj":[],"p_1":[0],"p_X":[0],"p_2":[0],"p_Open_home_cover":[0],"p_Close_home_cover":[0],"p_Open_over":[0],"p_Close_over":[0]}
@@ -140,9 +140,9 @@ def single_game_prediction(row, posteriors, teams_to_int, decimals = 5):
     dₐ_μ = posteriors["defense"][0][idₐ]
     dₐ_σ = posteriors["defense"][1][idₐ]
     # Normal(μ₁,σ₁²) + Normal(μ₂,σ₂²) = Normal(μ₁ + μ₂, σ₁² + σ₂²)
-    log_λₕ_μ = h_μ + oₕ_μ - dₐ_μ
+    log_λₕ_μ = i_μ + h_μ + oₕ_μ - dₐ_μ
     game_pred["H_proj"].append(np.exp(log_λₕ_μ))
-    log_λₕ_σ = np.sqrt(h_σ ** 2 + oₕ_σ ** 2 + dₐ_σ ** 2)
+    log_λₕ_σ = np.sqrt(i_σ ** 2 + h_σ ** 2 + oₕ_σ ** 2 + dₐ_σ ** 2)
     log_λₐ_μ = i_μ + oₐ_μ - dₕ_μ
     game_pred["A_proj"].append(np.exp(log_λₐ_μ))
     log_λₐ_σ = np.sqrt(i_σ ** 2 + oₐ_σ ** 2 + dₕ_σ ** 2)

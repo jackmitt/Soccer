@@ -145,9 +145,9 @@ def WeibullCountDistPredictions(league):
     test.to_csv("./csv_data/" + league + "/predictions.csv", index = False)
 
 def bayesian(league):
-    factor = 1.05                 # Expand the posteriors by this amount before using as priors
-    f_thresh = 0.075         # A cap on team variable standard deviation to prevent blowup
-    Δσ = 0.001               # The standard deviaton of the random walk variables
+    factor = 1.05                 # Expand the posteriors by this amount before using as priors -- old: 1.05
+    f_thresh = 0.075         # A cap on team variable standard deviation to prevent blowup -- old: 0.075
+    Δσ = 0.001               # The standard deviaton of the random walk variables -- old: 0.001
 
     # with open("./csv_data/" + league + "/last_prior.pkl","rb") as inputFile:
     #     priors = pickle.load(inputFile)
@@ -237,7 +237,7 @@ def bayesian(league):
         away_goals = pm.Poisson('away_goals', mu=away_theta, observed=observed_away_goals)
 
     with model:
-        trace = pm.sample(2000, tune=1000, cores=1)
+        trace = pm.sample(5000, tune=2000, cores=1)
         priors = bmf.get_model_posteriors(trace, num_teams)
 
     oneIterComplete = False
@@ -246,7 +246,7 @@ def bayesian(league):
         for col in train.columns:
             finalDict[col].append(row[col])
         if (index != splitIndex and abs(row["Date"] - train.at[index-1,"Date"]).days > 30):
-            bmf.fatten_priors(priors, 2, f_thresh)
+            bmf.fatten_priors(priors, 1.33, f_thresh)
         if (index != splitIndex and row["gw"] - train.at[index-1,"gw"] == 1):
             new_obs = train.iloc[startIndex:index]
 

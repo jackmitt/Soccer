@@ -8,7 +8,7 @@ def kellyStake(p, decOdds, kellyDiv):
     return ((p - (1 - p)/(decOdds - 1)) / kellyDiv)
 
 def analyzeWinRates(league, betType, timing, pType = ""):
-    pred = pd.read_csv("./csv_data/" + league + "/bayes_predictions_old.csv", encoding = "ISO-8859-1")
+    pred = pd.read_csv("./csv_data/" + league + "/bayes_predictions_nofat.csv", encoding = "ISO-8859-1")
     for i in range(len(pred.index)):
         pred.at[i, "Date"] = datetime.date(int(pred.at[i, "Date"].split("-")[0]), int(pred.at[i, "Date"].split("-")[1]), int(pred.at[i, "Date"].split("-")[2]))
     seasons = {}
@@ -567,8 +567,8 @@ def analyzeWinRates(league, betType, timing, pType = ""):
     for key in all:
         print (key + ":", np.average(all[key]), len(all[key]))
 
-def kellybet(league, betType, timing, bankroll, kellyDiv, pType = ""):
-    pred = pd.read_csv("./csv_data/" + league + "/bayes_predictions.csv", encoding = "ISO-8859-1")
+def kellybet(league, betType, timing, bankroll, kellyDiv, betThresh, pType = ""):
+    pred = pd.read_csv("./csv_data/" + league + "/bayes_predictions_nofat.csv", encoding = "ISO-8859-1")
     for i in range(len(pred.index)):
         pred.at[i, "Date"] = datetime.date(int(pred.at[i, "Date"].split("-")[0]), int(pred.at[i, "Date"].split("-")[1]), int(pred.at[i, "Date"].split("-")[2]))
     seasons = {}
@@ -581,31 +581,8 @@ def kellybet(league, betType, timing, bankroll, kellyDiv, pType = ""):
             else:
                 seasons[str(row["Date"].year) + "_2"] = {"netwin":0}
                 curSeason = str(row["Date"].year) + "_2"
-        if (betType == "1X2"):
-            if (row[pType + "p_1"] > 1 / row[timing + " 1"]):
-                if (row["home_team_reg_score"] > row["away_team_reg_score"]):
-                    bankroll += bankroll * kellyStake(row[pType + "p_1"], row[timing + " 1"], kellyDiv) * (row[timing + " 1"] - 1)
-                    seasons[curSeason]["netwin"] += preBR * kellyStake(row[pType + "p_1"], row[timing + " 1"], kellyDiv) * (row[timing + " 1"] - 1)
-                else:
-                    bankroll -= bankroll * kellyStake(row[pType + "p_1"], row[timing + " 1"], kellyDiv)
-                    seasons[curSeason]["netwin"] -= preBR * kellyStake(row[pType + "p_1"], row[timing + " 1"], kellyDiv)
-            if (row[pType + "p_X"] > 1 / row[timing + " X"]):
-                if (row["home_team_reg_score"] == row["away_team_reg_score"]):
-                    bankroll += bankroll * kellyStake(row[pType + "p_X"], row[timing + " X"], kellyDiv) * (row[timing + " X"] - 1)
-                    seasons[curSeason]["netwin"] += preBR * kellyStake(row[pType + "p_X"], row[timing + " X"], kellyDiv) * (row[timing + " X"] - 1)
-                else:
-                    bankroll -= bankroll * kellyStake(row[pType + "p_X"], row[timing + " X"], kellyDiv)
-                    seasons[curSeason]["netwin"] -= preBR * kellyStake(row[pType + "p_X"], row[timing + " 1X"], kellyDiv)
-            if (row[pType + "p_2"] > 1 / row[timing + " 2"]):
-                if (row["home_team_reg_score"] < row["away_team_reg_score"]):
-                    bankroll += bankroll * kellyStake(row[pType + "p_2"], row[timing + " 2"], kellyDiv) * (row[timing + " 2"] - 1)
-                    seasons[curSeason]["netwin"] += preBR * kellyStake(row[pType + "p_2"], row[timing + " 2"], kellyDiv) * (row[timing + " 2"] - 1)
-                else:
-                    bankroll -= bankroll * kellyStake(row[pType + "p_2"], row[timing + " 2"], kellyDiv)
-                    seasons[curSeason]["netwin"] -= preBR * kellyStake(row[pType + "p_2"], row[timing + " 2"], kellyDiv)
-
-        elif (betType == "AH"):
-            if (row[pType + "p_" + timing + "_home_cover"] > 1 / row["Home " + timing + " AH Odds"]):
+        if (betType == "AH"):
+            if ((row["Home " + timing + " AH Odds"] - 1) * row[pType + "p_" + timing + "_home_cover"] - (1 - row[pType + "p_" + timing + "_home_cover"]) > betThresh):
                 if (".75" not in str(row[timing + " AH"]) and ".25" not in str(row[timing + " AH"])):
                     if (row["home_team_reg_score"] > row["away_team_reg_score"] + row[timing + " AH"]):
                         bankroll += bankroll * kellyStake(row[pType + "p_" + timing + "_home_cover"], row["Home " + timing + " AH Odds"], kellyDiv) * (row["Home " + timing + " AH Odds"] - 1)
@@ -622,7 +599,7 @@ def kellybet(league, betType, timing, bankroll, kellyDiv, pType = ""):
                         elif (row["home_team_reg_score"] < row["away_team_reg_score"] + row[timing + " AH"]):
                             bankroll -= bankroll * kellyStake(row[pType + "p_" + timing + "_home_cover"], row["Home " + timing + " AH Odds"], kellyDiv) / 2
                             seasons[curSeason]["netwin"] -= preBR * kellyStake(row[pType + "p_" + timing + "_home_cover"], row["Home " + timing + " AH Odds"], kellyDiv) / 2
-            elif ((1 - row[pType + "p_" + timing + "_home_cover"]) > 1 / row["Away " + timing + " AH Odds"]):
+            elif ((row["Away " + timing + " AH Odds"] - 1) * (1 - row[pType + "p_" + timing + "_home_cover"]) - (1 - (1 - row[pType + "p_" + timing + "_home_cover"])) > betThresh):
                 if (".75" not in str(row[timing + " AH"]) and ".25" not in str(row[timing + " AH"])):
                     if (row["home_team_reg_score"] < row["away_team_reg_score"] + row[timing + " AH"]):
                         bankroll += bankroll * kellyStake((1 - row[pType + "p_" + timing + "_home_cover"]), row["Away " + timing + " AH Odds"], kellyDiv) * (row["Away " + timing + " AH Odds"] - 1)
@@ -640,7 +617,7 @@ def kellybet(league, betType, timing, bankroll, kellyDiv, pType = ""):
                             bankroll -= bankroll * kellyStake((1 - row[pType + "p_" + timing + "_home_cover"]), row["Away " + timing + " AH Odds"], kellyDiv) / 2
                             seasons[curSeason]["netwin"] -= preBR * kellyStake((1 - row[pType + "p_" + timing + "_home_cover"]), row["Away " + timing + " AH Odds"], kellyDiv) / 2
         elif (betType == "OU"):
-            if (row[pType + "p_" + timing + "_over"] > 1 / row["Over " + timing + " OU Odds"]):
+            if ((row["Over " + timing + " OU Odds"] - 1) * row[pType + "p_" + timing + "_over"] - (1 - row[pType + "p_" + timing + "_over"]) > betThresh):
                 if (".75" not in str(row[timing + " OU"]) and ".25" not in str(row[timing + " OU"])):
                     if (row["home_team_reg_score"] + row["away_team_reg_score"] > row[timing + " OU"]):
                         bankroll += bankroll * kellyStake(row[pType + "p_" + timing + "_over"], row["Over " + timing + " OU Odds"], kellyDiv) * (row["Over " + timing + " OU Odds"] - 1)
@@ -657,7 +634,7 @@ def kellybet(league, betType, timing, bankroll, kellyDiv, pType = ""):
                         elif (row["home_team_reg_score"] + row["away_team_reg_score"] < row[timing + " OU"]):
                             bankroll -= bankroll * kellyStake(row[pType + "p_" + timing + "_over"], row["Over " + timing + " OU Odds"], kellyDiv) / 2
                             seasons[curSeason]["netwin"] -= preBR * kellyStake(row[pType + "p_" + timing + "_over"], row["Over " + timing + " OU Odds"], kellyDiv) / 2
-            elif ((1 - row[pType + "p_" + timing + "_over"]) > 1 / row["Under " + timing + " OU Odds"]):
+            elif ((row["Under " + timing + " OU Odds"] - 1) * (1 - row[pType + "p_" + timing + "_over"]) - (1 - (1 - row[pType + "p_" + timing + "_over"])) > betThresh):
                 if (".75" not in str(row[timing + " OU"]) and ".25" not in str(row[timing + " OU"])):
                     if (row["home_team_reg_score"] + row["away_team_reg_score"] < row[timing + " OU"]):
                         bankroll += bankroll * kellyStake((1 - row[pType + "p_" + timing + "_over"]), row["Under " + timing + " OU Odds"], kellyDiv) * (row["Under " + timing + " OU Odds"] - 1)

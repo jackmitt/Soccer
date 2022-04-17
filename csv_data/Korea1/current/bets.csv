@@ -1,7 +1,7 @@
-Home,Away,H_proj,A_proj,pinny_AH,pinny_home_AH_odds,pinny_away_AH_odds,pinny_OU,pinny_over_odds,pinny_under_odds,p_home_cover,p_over,AH Bet,AH Bet Amount,AH Bet Odds,AH Bet Book,OU Bet,OU Bet Amount,OU Bet Odds,OU Bet Book
-Seongnam FC,Jeonbuk Hyundai Motors,0.940225106,1.487363042,-0.75,1.869,2.05,2.25,2.05,1.847,0.570731479,0.505337578,,,,,,,,
-Ulsan Hyundai FC,Daegu FC,1.793589957,0.912441851,0.75,1.934,1.97,2.25,1.826,2.08,0.522159591,0.580402034,,,,,,,,
-Gangwon FC,Pohang Steelers,1.246990066,1.432220095,-0.25,1.934,1.952,2.25,2,1.869,0.524749809,0.573685349,,,,,,,,
-Suwon FC,Gimcheon Sangmu,1.450997302,1.13352118,0,2,1.884,2.25,1.961,1.909,0.599788389,0.548745041,Suwon FC 0.0,350,1.995,PS3838,,,,
-Incheon United,Jeju United,1.103189206,1.201763075,0,2.04,1.854,2.25,2.08,1.806,0.466397799,0.469836202,,,,,,,,
-FC Seoul,Suwon Samsung Bluewings,1.323034935,1.105725952,0.25,2.14,1.775,2.25,2.08,1.806,0.481812109,0.505766804,,,,,,,,
+Home,Away,H_proj,A_proj,pinny_AH,pinny_home_AH_odds,pinny_away_AH_odds,pinny_OU,pinny_over_odds,pinny_under_odds,p_home_cover,p_over,AH Bet,AH Bet Amount,AH Bet Odds,AH Bet Book,OU Bet,OU Bet Amount,OU Bet Odds,OU Bet Book,AH Result,OU Result
+Seongnam FC,Jeonbuk Hyundai Motors,0.940225106,1.487363042,-0.75,1.869,2.05,2.25,2.05,1.847,0.570731479,0.505337578,,,,,,,,,,
+Ulsan Hyundai FC,Daegu FC,1.793589957,0.912441851,0.75,1.934,1.97,2.25,1.826,2.08,0.522159591,0.580402034,,,,,,,,,,
+Gangwon FC,Pohang Steelers,1.246990066,1.432220095,-0.25,1.934,1.952,2.25,2.0,1.869,0.524749809,0.573685349,,,,,,,,,,
+Suwon FC,Gimcheon Sangmu,1.450997302,1.13352118,0.0,2.0,1.884,2.25,1.961,1.909,0.599788389,0.548745041,Suwon FC 0,350.0,1.995,PS3838,,,,,,
+Incheon United,Jeju United,1.103189206,1.201763075,0.0,2.04,1.854,2.25,2.08,1.806,0.466397799,0.469836202,,,,,,,,,,
+FC Seoul,Suwon Samsung Bluewings,1.323034935,1.105725952,0.25,2.14,1.775,2.25,2.08,1.806,0.481812109,0.505766804,,,,,,,,,,

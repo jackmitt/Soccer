@@ -1,4 +1,9 @@
-Home,Away,H_proj,A_proj,pinny_AH,pinny_home_AH_odds,pinny_away_AH_odds,pinny_OU,pinny_over_odds,pinny_under_odds,p_home_cover,p_over,AH Bet,AH Bet Amount,AH Bet Odds,AH Bet Book,OU Bet,OU Bet Amount,OU Bet Odds,OU Bet Book
-AFC Eskilstuna,Landskrona BoIS,1.746324784,1.028424414,0.5,1.84,2.02,2.75,2.03,1.813,0.541808119,0.468078401,,,,,,,,
-IK Brage,Jonkopings Sodra IF,1.365775952,1.269547154,0.25,1.813,2.05,2.5,1.884,1.952,0.450943339,0.492879885,Jonkopings Sodra IF 0.25,239.1736303,2.05,PIN,,,,
-Orgryte,Osters IF,1.350048991,1.093162931,0.25,2.01,1.854,2.5,1.97,1.869,0.493125166,0.444248555,,,,,,,,
+Home,Away,H_proj,A_proj,pinny_AH,pinny_home_AH_odds,pinny_away_AH_odds,pinny_OU,pinny_over_odds,pinny_under_odds,p_home_cover,p_over,AH Bet,AH Bet Amount,AH Bet Odds,AH Bet Book,OU Bet,OU Bet Amount,OU Bet Odds,OU Bet Book,AH Result,OU Result
+AFC Eskilstuna,Landskrona BoIS,1.746324784,1.028424414,0.5,1.84,2.02,2.75,2.03,1.813,0.541808119,0.468078401,,,,,,,,,,
+IK Brage,Jonkopings Sodra IF,1.365775952,1.269547154,0.25,1.813,2.05,2.5,1.884,1.952,0.450943339,0.492879885,Jonkopings Sodra IF +0.25,239.1736303,2.05,PIN,,,,,,
+Orgryte,Osters IF,1.350048991,1.093162931,0.25,2.01,1.854,2.5,1.97,1.869,0.493125166,0.444248555,,,,,,,,,,
+Vasteras SK FK,Utsiktens BK,1.584989996,1.285037479,0.25,1.84,2.02,2.5,1.877,1.961,0.506309063,0.549138022,,,,,,,,,,
+Brommapojkarna,Skovde AIK,1.69493967,1.116489122,0.5,1.98,1.877,2.5,1.869,1.97,0.508914026,0.535433451,,,,,,,,,,
+Norrby IF,Orebro,1.395004232,1.244511108,0.25,1.884,1.961,2.5,1.961,1.877,0.465609995,0.493947909,,,,,,,,,,
+Dalkurd FF,Halmstads,1.242186117,1.30118878,-0.5,1.819,2.05,2.25,1.847,1.99,0.61895017,0.53772152,Dalkurd FF +0.5,307.3757247,1.825,PIN/P88,,,,,,
+Trelleborgs FF,Ostersunds FK,1.39970969,1.209712988,0.5,1.925,1.925,2.5,1.97,1.869,0.413976642,0.486481669,Ostersunds FK +0.5,246,1.925,PIN,,,,,,

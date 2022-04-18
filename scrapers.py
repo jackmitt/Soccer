@@ -20,11 +20,11 @@ def nowgoal(league):
     driver_path = ChromeDriverManager(chrome_type=ChromeType.CHROMIUM).install()
     chrome_options = Options()
     chrome_options.add_argument("--no-sandbox")
-    chrome_options.add_argument("--headless")
+    #chrome_options.add_argument("--headless")
     chrome_options.add_argument("--window-size=1325x744")
     browser = webdriver.Chrome(executable_path=driver_path, options = chrome_options)
     browser.maximize_window()
-    if (not exists("./nowgoal_gameUrls/" + league + ".csv")):
+    if (not exists("./nowgoal_gameUrls/" + league + "_new.csv")):
         oneyear = False
         if (league == "England1"):
             url = "https://football.nowgoal5.com/League/2008-2009/36"
@@ -301,9 +301,9 @@ def nowgoal(league):
         else:
             rootier = url.split("2008-2009")[0]
         league_num = url.split("/")[5]
-        curSeason = "2008-2009"
+        curSeason = "2021-2022"
         gameUrls = []
-        while (curSeason != "2021-2022"):
+        while (curSeason != "2022-2023"):
             if ((league == "Russia1" or league == "Russia2") and curSeason == "2011-2012"):
                 oneyear = False
             if (oneyear):
@@ -340,7 +340,7 @@ def nowgoal(league):
         save["urls"] = gameUrls
         dfFinal = pd.DataFrame.from_dict(save)
         dfFinal = dfFinal.drop_duplicates()
-        dfFinal.to_csv("./nowgoal_gameUrls/" + league + ".csv", index = False)
+        dfFinal.to_csv("./nowgoal_gameUrls/" + league + "_new.csv", index = False)
 
     else:
         gameUrls = pd.read_csv("./nowgoal_gameUrls/" + league + ".csv", encoding = "ISO-8859-1")["urls"].tolist()
@@ -486,6 +486,10 @@ def nowgoalPt2(league):
     browser = webdriver.Chrome(executable_path=driver_path, options = chrome_options)
     browser.maximize_window()
     gameUrls = pd.read_csv("./nowgoal_gameUrls/" + league + ".csv", encoding = "ISO-8859-1")["urls"].tolist()
+    if (exists("./nowgoal_gameUrls/" + league + "_new.csv")):
+        newurls = pd.read_csv("./nowgoal_gameUrls/" + league + "_new.csv", encoding = "ISO-8859-1")["urls"].tolist()
+        for url in newurls:
+            gameUrls.append(url)
     #
     #
     counter = 0
@@ -501,6 +505,10 @@ def nowgoalPt2(league):
         soup = BeautifulSoup(browser.page_source, 'html.parser')
         #try:
         fullDate = soup.find(class_="LName").find_next_sibling()["data-t"].split()[0]
+        try:
+            fail = soup.find_all(class_="score")[0].text
+        except IndexError:
+            continue
         A.addCellToRow(datetime.date(int(fullDate.split("/")[2]), int(fullDate.split("/")[0]), int(fullDate.split("/")[1])))
         A.addCellToRow(soup.find_all(class_="sclassName")[0].find("a").text[1:])
         A.addCellToRow(soup.find_all(class_="sclassName")[1].find("a").text[1:])
@@ -687,6 +695,22 @@ def nowgoalCurSeason(league):
         url = "https://football.nowgoal5.com/SubLeague/284"
     elif (league == "Korea1"):
         url = "https://football.nowgoal5.com/SubLeague/15"
+    elif (league == "Norway1"):
+        url = "https://football.nowgoal5.com/League/22"
+    elif (league == "Norway2"):
+        url = "https://football.nowgoal5.com/SubLeague/123"
+    elif (league == "Sweden2"):
+        url = "https://football.nowgoal5.com/SubLeague/122"
+    elif (league == "Brazil1"):
+        url = "https://football.nowgoal5.com/League/4"
+
+    inPrior = []
+    if (exists("./csv_data/" + league + "/current/results.csv")):
+        results = pd.read_csv("./csv_data/" + league + "/current/results.csv", encoding = "ISO-8859-1")
+        for i in range(len(results.index)):
+            results.at[i, "Date"] = datetime.date(int(results.at[i, "Date"].split("-")[0]), int(results.at[i, "Date"].split("-")[1]), int(results.at[i, "Date"].split("-")[2]))
+        for index, row in results.iterrows():
+            inPrior.append({"Date":row["Date"],"Home":row["Home"],"Away":row["Away"]})
 
     browser.get(url)
     time.sleep(1)
@@ -716,7 +740,13 @@ def nowgoalCurSeason(league):
                     dict["Away"].append(x.find_next_sibling().find_next_sibling().find_next_sibling().find("a").string)
                     dict["home_team_reg_score"].append(x.find_next_sibling().find_next_sibling().find("a").string.split("-")[0])
                     dict["away_team_reg_score"].append(x.find_next_sibling().find_next_sibling().find("a").string.split("-")[1])
-                    dict["includedInPrior"].append(0)
+                    inpriorBool = False
+                    for game in inPrior:
+                        if (curDate == game["Date"] and x.find_next_sibling().find("a").string == game["Home"] and x.find_next_sibling().find_next_sibling().find_next_sibling().find("a").string == game["Away"]):
+                            dict["includedInPrior"].append(1)
+                            inpriorBool = True
+                    if (not inpriorBool):
+                        dict["includedInPrior"].append(0)
         j += 1
     df = pd.DataFrame.from_dict(dict)
     df = df.sort_values(by=["Date"], ignore_index = True)
@@ -727,6 +757,18 @@ def nowgoalCurSeason(league):
 def pinnacle(league):
     if (league == "Japan1"):
         url = "https://www.pinnacle.com/en/soccer/japan-j-league/matchups#period:0"
+    elif (league == "Japan2"):
+        url = "https://www.pinnacle.com/en/soccer/japan-j2-league/matchups#period:0"
+    elif (league == "Korea1"):
+        url = "https://www.pinnacle.com/en/soccer/korea-republic-k-league-1/matchups#period:0"
+    elif (league == "Norway1"):
+        url = "https://www.pinnacle.com/en/soccer/norway-eliteserien/matchups#period:0"
+    elif (league == "Norway2"):
+        url = "https://www.pinnacle.com/en/soccer/norway-1st-division/matchups#period:0"
+    elif (league == "Sweden2"):
+        url = "https://www.pinnacle.com/en/soccer/sweden-superettan/matchups#period:0"
+    elif (league == "Brazil1"):
+        url = "https://www.pinnacle.com/en/soccer/brazil-serie-a/matchups#period:0"
 
     A = Database(["Date","Home","Away","AH","Home AH Odds","Away AH Odds","OU","Over Odds","Under Odds"])
     driver_path = ChromeDriverManager(chrome_type=ChromeType.CHROMIUM).install()
@@ -758,14 +800,12 @@ def pinnacle(league):
         elif ("-" in game.find_all("span")[6].text):
             A.addCellToRow(float(game.find_all("span")[6].text.split("-")[1]))
         else:
-            A.addCellToRow(game.find_all("span")[6].text)
-        A.addCellToRow(game.find_all("span")[7].text)
-        A.addCellToRow(game.find_all("span")[9].text)
-        A.addCellToRow(game.find_all("span")[10].text)
-        A.addCellToRow(game.find_all("span")[11].text)
-        A.addCellToRow(game.find_all("span")[13].text)
+            A.addCellToRow(float(game.find_all("span")[6].text))
+        A.addCellToRow(float(game.find_all("span")[7].text))
+        A.addCellToRow(float(game.find_all("span")[9].text))
+        A.addCellToRow(float(game.find_all("span")[10].text))
+        A.addCellToRow(float(game.find_all("span")[11].text))
+        A.addCellToRow(float(game.find_all("span")[13].text))
         A.appendRow()
     browser.close()
     return (A.getDataFrame())
-
-print (pinnacle("Japan1"))

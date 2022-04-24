@@ -5,30 +5,30 @@ Date,Home,Away,home_team_reg_score,away_team_reg_score,includedInPrior
 2022-02-19,Yokohama FC,Omiya Ardija,3,2,1
 2022-02-19,JEF United Ichihara Chiba,Grulla Morioka,0,1,1
 2022-02-19,Tokushima Vortis,Zweigen Kanazawa FC,0,0,1
+2022-02-20,Fagiano Okayama,Ventforet Kofu,4,1,1
+2022-02-20,Machida Zelvia,FC Ryukyu,0,0,1
 2022-02-20,Renofa Yamaguchi,Roasso Kumamoto,1,1,1
 2022-02-20,Vegalta Sendai,Albirex Niigata,0,0,1
-2022-02-20,Machida Zelvia,FC Ryukyu,0,0,1
-2022-02-20,Fagiano Okayama,Ventforet Kofu,4,1,1
-2022-02-26,FC Ryukyu,JEF United Ichihara Chiba,1,2,1
 2022-02-26,Omiya Ardija,Albirex Niigata,2,2,1
-2022-02-27,Ventforet Kofu,Oita Trinita,1,1,1
+2022-02-26,FC Ryukyu,JEF United Ichihara Chiba,1,2,1
+2022-02-27,Fagiano Okayama,Tokushima Vortis,1,1,1
+2022-02-27,Yokohama FC,V-Varen Nagasaki,1,0,1
+2022-02-27,Tokyo Verdy,Tochigi SC,3,0,1
+2022-02-27,Renofa Yamaguchi,Blaublitz Akita,2,0,1
+2022-02-27,Mito Hollyhock,Vegalta Sendai,2,3,1
 2022-02-27,Roasso Kumamoto,Montedio Yamagata,0,3,1
 2022-02-27,Thespa Kusatsu,Zweigen Kanazawa FC,0,0,1
+2022-02-27,Ventforet Kofu,Oita Trinita,1,1,1
 2022-02-27,Machida Zelvia,Grulla Morioka,1,0,1
-2022-02-27,Mito Hollyhock,Vegalta Sendai,2,3,1
-2022-02-27,Fagiano Okayama,Tokushima Vortis,1,1,1
-2022-02-27,Renofa Yamaguchi,Blaublitz Akita,2,0,1
-2022-02-27,Tokyo Verdy,Tochigi SC,3,0,1
-2022-02-27,Yokohama FC,V-Varen Nagasaki,1,0,1
-2022-03-05,V-Varen Nagasaki,Ventforet Kofu,1,2,1
-2022-03-05,Tochigi SC,Fagiano Okayama,0,1,1
-2022-03-05,FC Ryukyu,Grulla Morioka,1,2,1
 2022-03-05,Omiya Ardija,Roasso Kumamoto,1,2,1
 2022-03-05,Albirex Niigata,Renofa Yamaguchi,1,1,1
+2022-03-05,Tochigi SC,Fagiano Okayama,0,1,1
+2022-03-05,V-Varen Nagasaki,Ventforet Kofu,1,2,1
+2022-03-05,FC Ryukyu,Grulla Morioka,1,2,1
 2022-03-06,Tokushima Vortis,Tokyo Verdy,1,1,1
-2022-03-06,Oita Trinita,Yokohama FC,1,2,1
-2022-03-06,Mito Hollyhock,Blaublitz Akita,0,1,1
 2022-03-06,Vegalta Sendai,Thespa Kusatsu,0,0,1
+2022-03-06,Mito Hollyhock,Blaublitz Akita,0,1,1
+2022-03-06,Oita Trinita,Yokohama FC,1,2,1
 2022-03-06,JEF United Ichihara Chiba,Montedio Yamagata,0,0,1
 2022-03-06,Zweigen Kanazawa FC,Machida Zelvia,1,2,1
 2022-03-09,Oita Trinita,Mito Hollyhock,1,1,1
@@ -38,74 +38,84 @@ Date,Home,Away,home_team_reg_score,away_team_reg_score,includedInPrior
 2022-03-12,Tokushima Vortis,Roasso Kumamoto,2,2,1
 2022-03-12,V-Varen Nagasaki,Oita Trinita,4,1,1
 2022-03-13,Yokohama FC,Mito Hollyhock,3,2,1
-2022-03-13,Tochigi SC,Omiya Ardija,1,1,1
-2022-03-13,Machida Zelvia,Fagiano Okayama,3,1,1
 2022-03-13,Blaublitz Akita,Albirex Niigata,1,0,1
 2022-03-13,Zweigen Kanazawa FC,JEF United Ichihara Chiba,0,1,1
 2022-03-13,Thespa Kusatsu,Tokyo Verdy,0,1,1
-2022-03-19,Blaublitz Akita,Zweigen Kanazawa FC,2,3,1
-2022-03-19,Omiya Ardija,Tokushima Vortis,0,2,1
-2022-03-19,Albirex Niigata,Ventforet Kofu,2,0,1
-2022-03-19,Oita Trinita,Renofa Yamaguchi,1,1,1
+2022-03-13,Machida Zelvia,Fagiano Okayama,3,1,1
+2022-03-13,Tochigi SC,Omiya Ardija,1,1,1
 2022-03-19,FC Ryukyu,Mito Hollyhock,1,2,1
-2022-03-20,Fagiano Okayama,Yokohama FC,1,1,1
+2022-03-19,Oita Trinita,Renofa Yamaguchi,1,1,1
+2022-03-19,Omiya Ardija,Tokushima Vortis,0,2,1
+2022-03-19,Blaublitz Akita,Zweigen Kanazawa FC,2,3,1
+2022-03-19,Albirex Niigata,Ventforet Kofu,2,0,1
 2022-03-20,JEF United Ichihara Chiba,Thespa Kusatsu,0,1,1
 2022-03-20,Grulla Morioka,Tochigi SC,1,1,1
 2022-03-20,Montedio Yamagata,Vegalta Sendai,2,3,1
+2022-03-20,Fagiano Okayama,Yokohama FC,1,1,1
 2022-03-20,Tokyo Verdy,Machida Zelvia,2,1,1
 2022-03-21,Roasso Kumamoto,V-Varen Nagasaki,2,0,1
-2022-03-23,Oita Trinita,FC Ryukyu,4,1,1
 2022-03-23,Tokushima Vortis,Blaublitz Akita,0,0,1
-2022-03-26,Grulla Morioka,Renofa Yamaguchi,0,0,1
-2022-03-26,Omiya Ardija,Fagiano Okayama,1,1,1
+2022-03-23,Oita Trinita,FC Ryukyu,4,1,1
+2022-03-26,Vegalta Sendai,Machida Zelvia,0,3,1
+2022-03-26,Tochigi SC,JEF United Ichihara Chiba,2,1,1
+2022-03-26,V-Varen Nagasaki,Zweigen Kanazawa FC,0,1,1
+2022-03-26,Montedio Yamagata,Tokyo Verdy,3,3,1
 2022-03-26,Albirex Niigata,Thespa Kusatsu,3,2,1
 2022-03-26,Ventforet Kofu,Yokohama FC,1,2,1
+2022-03-26,Grulla Morioka,Renofa Yamaguchi,0,0,1
 2022-03-26,Mito Hollyhock,Roasso Kumamoto,2,0,1
-2022-03-26,Montedio Yamagata,Tokyo Verdy,3,3,1
-2022-03-26,Tochigi SC,JEF United Ichihara Chiba,2,1,1
-2022-03-26,Vegalta Sendai,Machida Zelvia,0,3,1
-2022-03-26,V-Varen Nagasaki,Zweigen Kanazawa FC,0,1,1
-2022-03-30,Yokohama FC,Montedio Yamagata,2,1,1
+2022-03-26,Omiya Ardija,Fagiano Okayama,1,1,1
 2022-03-30,Vegalta Sendai,Oita Trinita,1,3,1
+2022-03-30,Yokohama FC,Montedio Yamagata,2,1,1
 2022-03-30,FC Ryukyu,Tokyo Verdy,2,5,1
-2022-03-30,Renofa Yamaguchi,Tokushima Vortis,0,0,1
 2022-03-30,Fagiano Okayama,Grulla Morioka,0,1,1
-2022-03-30,Zweigen Kanazawa FC,Roasso Kumamoto,2,2,1
-2022-03-30,Machida Zelvia,Omiya Ardija,3,0,1
+2022-03-30,Mito Hollyhock,Tochigi SC,0,1,1
+2022-03-30,Renofa Yamaguchi,Tokushima Vortis,0,0,1
 2022-03-30,Thespa Kusatsu,V-Varen Nagasaki,2,3,1
+2022-03-30,Zweigen Kanazawa FC,Roasso Kumamoto,2,2,1
 2022-03-30,JEF United Ichihara Chiba,Albirex Niigata,1,0,1
 2022-03-30,Blaublitz Akita,Ventforet Kofu,0,0,1
-2022-03-30,Mito Hollyhock,Tochigi SC,0,1,1
+2022-03-30,Machida Zelvia,Omiya Ardija,3,0,1
 2022-04-03,Tochigi SC,Zweigen Kanazawa FC,0,2,1
 2022-04-03,Tokyo Verdy,Oita Trinita,1,0,1
 2022-04-03,Yokohama FC,FC Ryukyu,3,1,1
 2022-04-03,Tokushima Vortis,V-Varen Nagasaki,0,0,1
 2022-04-03,Renofa Yamaguchi,Omiya Ardija,1,0,1
-2022-04-03,Montedio Yamagata,Fagiano Okayama,0,1,1
+2022-04-03,Blaublitz Akita,Grulla Morioka,3,1,1
 2022-04-03,Machida Zelvia,JEF United Ichihara Chiba,1,1,1
 2022-04-03,Thespa Kusatsu,Mito Hollyhock,2,1,1
 2022-04-03,Ventforet Kofu,Vegalta Sendai,2,3,1
 2022-04-03,Roasso Kumamoto,Albirex Niigata,1,2,1
-2022-04-03,Blaublitz Akita,Grulla Morioka,3,1,1
-2022-04-09,Grulla Morioka,Thespa Kusatsu,0,1,1
-2022-04-09,Omiya Ardija,Ventforet Kofu,1,3,1
-2022-04-09,V-Varen Nagasaki,Machida Zelvia,1,0,1
+2022-04-03,Montedio Yamagata,Fagiano Okayama,0,1,1
 2022-04-09,Tokyo Verdy,Roasso Kumamoto,2,3,1
 2022-04-09,FC Ryukyu,Fagiano Okayama,3,3,1
-2022-04-10,Vegalta Sendai,Renofa Yamaguchi,2,1,1
-2022-04-10,Oita Trinita,Tokushima Vortis,1,0,1
-2022-04-10,Montedio Yamagata,Blaublitz Akita,5,1,1
-2022-04-10,JEF United Ichihara Chiba,Yokohama FC,1,1,1
+2022-04-09,V-Varen Nagasaki,Machida Zelvia,1,0,1
+2022-04-09,Grulla Morioka,Thespa Kusatsu,0,1,1
+2022-04-09,Omiya Ardija,Ventforet Kofu,1,3,1
 2022-04-10,Albirex Niigata,Tochigi SC,2,0,1
+2022-04-10,JEF United Ichihara Chiba,Yokohama FC,1,1,1
 2022-04-10,Zweigen Kanazawa FC,Mito Hollyhock,1,1,1
+2022-04-10,Montedio Yamagata,Blaublitz Akita,5,1,1
+2022-04-10,Oita Trinita,Tokushima Vortis,1,0,1
+2022-04-10,Vegalta Sendai,Renofa Yamaguchi,2,1,1
 2022-04-16,Grulla Morioka,Oita Trinita,1,2,1
 2022-04-16,Zweigen Kanazawa FC,Ventforet Kofu,2,3,1
 2022-04-16,Omiya Ardija,JEF United Ichihara Chiba,2,1,1
 2022-04-16,FC Ryukyu,Thespa Kusatsu,0,1,1
-2022-04-17,Tochigi SC,Roasso Kumamoto,1,1,1
-2022-04-17,Blaublitz Akita,V-Varen Nagasaki,0,1,1
-2022-04-17,Machida Zelvia,Montedio Yamagata,1,1,1
-2022-04-17,Mito Hollyhock,Tokushima Vortis,1,1,1
-2022-04-17,Fagiano Okayama,Albirex Niigata,1,1,1
-2022-04-17,Renofa Yamaguchi,Tokyo Verdy,3,1,1
 2022-04-17,Yokohama FC,Vegalta Sendai,2,1,1
+2022-04-17,Tochigi SC,Roasso Kumamoto,1,1,1
+2022-04-17,Renofa Yamaguchi,Tokyo Verdy,3,1,1
+2022-04-17,Mito Hollyhock,Tokushima Vortis,1,1,1
+2022-04-17,Machida Zelvia,Montedio Yamagata,1,1,1
+2022-04-17,Blaublitz Akita,V-Varen Nagasaki,0,1,1
+2022-04-17,Fagiano Okayama,Albirex Niigata,1,1,1
+2022-04-20,Oita Trinita,Zweigen Kanazawa FC,1,3,1
+2022-04-20,Tokushima Vortis,Grulla Morioka,5,0,1
+2022-04-22,Roasso Kumamoto,Fagiano Okayama,1,1,1
+2022-04-23,Mito Hollyhock,Renofa Yamaguchi,3,2,1
+2022-04-23,Albirex Niigata,V-Varen Nagasaki,2,1,1
+2022-04-23,Ventforet Kofu,Machida Zelvia,1,0,1
+2022-04-23,Montedio Yamagata,Omiya Ardija,2,0,1
+2022-04-23,Vegalta Sendai,FC Ryukyu,2,0,1
+2022-04-23,Tokyo Verdy,JEF United Ichihara Chiba,1,1,1
+2022-04-23,Tochigi SC,Yokohama FC,0,0,1

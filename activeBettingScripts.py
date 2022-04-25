@@ -121,6 +121,7 @@ def update(league):
     startIndex = 0
     includedInPrior = []
     for index, row in train.iterrows():
+        print (row)
         for col in train.columns:
             if (col == "gw" or "i_" in col):
                 continue
@@ -133,7 +134,10 @@ def update(league):
         if (row["includedInPrior"] == 0 and train.at[index-1,"includedInPrior"] == 1):
             startIndex = index
         if ((row["gw"] - train.at[index-1,"gw"] == 1 or index == len(train.index) - 1) and row["includedInPrior"] == 0):
-            new_obs = train.iloc[startIndex:index]
+            if (index == len(train.index) - 1):
+                new_obs = train.iloc[startIndex:index+1]
+            else:
+                new_obs = train.iloc[startIndex:index]
 
             home_team = theano.shared(new_obs.i_home.values)
             away_team = theano.shared(new_obs.i_away.values)
@@ -407,9 +411,9 @@ def bet_adjustments(league):
                             if (r["pinny_AH"] > row["pinny_AH"] or (r["pinny_AH"] == row["pinny_AH"] and r["pinny_away_AH_odds"] > row["pinny_away_AH_odds"])):
                                 print (row["Away"], float(r["pinny_AH"]), kellyStake(1-row["p_home_cover"], row["pinny_away_AH_odds"], 8) * bankroll - row["AH Bet Amount"])
 
-league = "Brazil1"
+league = "Brazil2"
 #scr.nowgoalCurSeason(league)
-#grade_bets(league = league)
-update(league)
+#print(grade_bets(league = league))
+#update(league)
 bet_on_pinny_games(league)
 #bet_adjustments(league)

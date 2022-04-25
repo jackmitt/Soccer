@@ -191,6 +191,57 @@ def standardizeTeamName(name, league):
             return ("Fluminense RJ")
         elif ("internacional rs" in lname):
             return ("Internacional RS")
+        elif ("santos fc sp" in lname):
+            return ("Santos")
+        elif ("america fc mg" in lname):
+            return ("America MG")
+        elif ("juventude" in lname):
+            return ("Juventude")
+        elif ("cuiaba esporte" in lname):
+            return ("Cuiaba")
+        else:
+            return (name)
+    elif (league == "Brazil2"):
+        if ("sc recife pe" in lname):
+            return ("Sport Club Recife PE")
+        elif ("ituano fc sp" in lname):
+            return ("Ituano  SP")
+        elif ("gremio novorizontino" in lname):
+            return ("Gremio Novorizontin")
+        elif ("brusque sc" in lname):
+            return ("Brusque FC")
+        elif ("cs alagoano al" in lname):
+            return ("Centro Sportivo Alagoano")
+        elif ("vila nova" in lname):
+            return ("Vila Nova")
+        elif ("tombense" in lname):
+            return ("Tombense")
+        elif ("ec bahia" in lname):
+            return ("Bahia")
+        elif ("sampaio correa" in lname):
+            return ("Sampaio Correa")
+        elif ("cruzeiro" in lname):
+            return ("Cruzeiro (MG)")
+        elif ("londrina" in lname):
+            return ("Londrina PR")
+        elif ("cr brasil al" in lname):
+            return ("CRB AL")
+        elif ("nautico pe" in lname):
+            return ("Nautico (PE)")
+        elif ("operario ferroviario" in lname):
+            return ("Operario Ferroviario PR")
+        elif ("gremio fb porto" in lname):
+            return ("Gremio (RS)")
+        elif ("guarani fc sp" in lname):
+            return ("Guarani SP")
+        elif ("criciuma" in lname):
+            return ("Criciuma")
+        elif ("vasco da gama" in lname):
+            return ("Vasco da Gama")
+        elif ("ponte preta" in lname):
+            return ("Ponte Preta")
+        else:
+            return (name)
 
 def grade_bets(league):
     netwin = 0

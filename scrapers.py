@@ -703,6 +703,8 @@ def nowgoalCurSeason(league):
         url = "https://football.nowgoal5.com/SubLeague/122"
     elif (league == "Brazil1"):
         url = "https://football.nowgoal5.com/League/4"
+    elif (league == "Brazil2"):
+        url = "https://football.nowgoal5.com/League/358"
 
     inPrior = []
     if (exists("./csv_data/" + league + "/current/results.csv")):
@@ -769,6 +771,8 @@ def pinnacle(league):
         url = "https://www.pinnacle.com/en/soccer/sweden-superettan/matchups#period:0"
     elif (league == "Brazil1"):
         url = "https://www.pinnacle.com/en/soccer/brazil-serie-a/matchups#period:0"
+    elif (league == "Brazil2"):
+        url = "https://www.pinnacle.com/en/soccer/brazil-serie-b/matchups#period:0"
 
     A = Database(["Date","Home","Away","AH","Home AH Odds","Away AH Odds","OU","Over Odds","Under Odds"])
     driver_path = ChromeDriverManager(chrome_type=ChromeType.CHROMIUM).install()

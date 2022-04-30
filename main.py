@@ -6,7 +6,7 @@ import pandas as pd
 import numpy as np
 
 
-leagues = ["Japan1","Japan2","Korea1"]
+leagues = ["Kazakhstan1","Iceland1","Australia2","Estonia1","Ireland1"]
 for league in leagues:
     print ("-----------------------------------------------",league)
     #dm.preMatchAverages(league)

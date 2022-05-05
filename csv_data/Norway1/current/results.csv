@@ -8,20 +8,20 @@ Date,Home,Away,home_team_reg_score,away_team_reg_score,includedInPrior
 2022-04-03,Jerv,Stromsgodset,1,0,1
 2022-04-04,Bodo Glimt,Rosenborg,2,2,1
 2022-04-09,Lillestrom,Jerv,4,0,1
+2022-04-10,Sandefjord,Bodo Glimt,1,2,1
+2022-04-10,Kristiansund BK,Sarpsborg 08,2,3,1
+2022-04-10,Valerenga,Haugesund,2,1,1
 2022-04-10,Rosenborg,Odd Grenland,1,0,1
 2022-04-10,Stromsgodset,Molde,1,3,1
 2022-04-10,Tromso IL,Ham-Kam,2,1,1
-2022-04-10,Valerenga,Haugesund,2,1,1
-2022-04-10,Kristiansund BK,Sarpsborg 08,2,3,1
-2022-04-10,Sandefjord,Bodo Glimt,1,2,1
 2022-04-11,Viking,Aalesund FK,1,0,1
-2022-04-18,Molde,Lillestrom,1,2,1
-2022-04-18,Odd Grenland,Viking,2,1,1
-2022-04-18,Jerv,Kristiansund BK,1,0,1
-2022-04-18,Aalesund FK,Tromso IL,2,2,1
-2022-04-18,Ham-Kam,Sandefjord,3,0,1
 2022-04-18,Haugesund,Stromsgodset,0,1,1
 2022-04-18,Sarpsborg 08,Rosenborg,1,1,1
+2022-04-18,Ham-Kam,Sandefjord,3,0,1
+2022-04-18,Molde,Lillestrom,1,2,1
+2022-04-18,Jerv,Kristiansund BK,1,0,1
+2022-04-18,Odd Grenland,Viking,2,1,1
+2022-04-18,Aalesund FK,Tromso IL,2,2,1
 2022-04-19,Bodo Glimt,Valerenga,5,1,1
 2022-04-23,Odd Grenland,Aalesund FK,2,3,1
 2022-04-23,Stromsgodset,Sandefjord,0,5,1
@@ -31,3 +31,5 @@ Date,Home,Away,home_team_reg_score,away_team_reg_score,includedInPrior
 2022-04-24,Valerenga,Jerv,1,0,1
 2022-04-24,Lillestrom,Haugesund,1,0,1
 2022-04-25,Rosenborg,Molde,0,0,1
+2022-04-29,Lillestrom,Aalesund FK,2,0,1
+2022-04-30,Viking,Haugesund,5,1,1

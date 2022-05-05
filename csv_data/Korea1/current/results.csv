@@ -25,10 +25,10 @@ Date,Home,Away,home_team_reg_score,away_team_reg_score,includedInPrior
 2022-03-06,Jeju United,Suwon FC,0,0,1
 2022-03-11,Ulsan Hyundai FC,FC Seoul,2,1,1
 2022-03-11,Daegu FC,Seongnam FC,3,1,1
-2022-03-12,Suwon Samsung Bluewings,Pohang Steelers,1,1,1
 2022-03-12,Jeju United,Jeonbuk Hyundai Motors,2,0,1
-2022-03-13,Incheon United,Gimcheon Sangmu,1,0,1
+2022-03-12,Suwon Samsung Bluewings,Pohang Steelers,1,1,1
 2022-03-13,Gangwon FC,Suwon FC,0,2,1
+2022-03-13,Incheon United,Gimcheon Sangmu,1,0,1
 2022-03-19,Suwon Samsung Bluewings,Gangwon FC,2,2,1
 2022-03-19,FC Seoul,Jeju United,1,2,1
 2022-03-19,Jeonbuk Hyundai Motors,Gimcheon Sangmu,1,1,1
@@ -39,11 +39,11 @@ Date,Home,Away,home_team_reg_score,away_team_reg_score,includedInPrior
 2022-04-02,Incheon United,Ulsan Hyundai FC,1,1,1
 2022-04-02,Gimcheon Sangmu,Suwon Samsung Bluewings,1,1,1
 2022-04-02,Gangwon FC,Jeonbuk Hyundai Motors,1,2,1
-2022-04-03,Pohang Steelers,FC Seoul,1,1,1
 2022-04-03,Suwon FC,Seongnam FC,3,4,1
+2022-04-03,Pohang Steelers,FC Seoul,1,1,1
+2022-04-05,Jeju United,Ulsan Hyundai FC,1,2,1
 2022-04-05,Suwon Samsung Bluewings,Jeonbuk Hyundai Motors,0,1,1
 2022-04-05,Daegu FC,Incheon United,1,2,1
-2022-04-05,Jeju United,Ulsan Hyundai FC,1,2,1
 2022-04-06,Seongnam FC,Gimcheon Sangmu,0,3,1
 2022-04-06,Pohang Steelers,Suwon FC,2,0,1
 2022-04-06,FC Seoul,Gangwon FC,2,2,1
@@ -53,3 +53,9 @@ Date,Home,Away,home_team_reg_score,away_team_reg_score,includedInPrior
 2022-04-10,Suwon FC,Gimcheon Sangmu,3,2,1
 2022-04-10,Incheon United,Jeju United,2,2,1
 2022-04-10,FC Seoul,Suwon Samsung Bluewings,2,0,1
+2022-05-05,Pohang Steelers,Daegu FC,1,1,1
+2022-05-05,Suwon Samsung Bluewings,Ulsan Hyundai FC,1,0,1
+2022-05-05,Gimcheon Sangmu,Gangwon FC,1,0,1
+2022-05-05,Seongnam FC,Jeju United,1,2,1
+2022-05-05,Jeonbuk Hyundai Motors,FC Seoul,1,1,1
+2022-05-05,Suwon FC,Incheon United,2,2,1

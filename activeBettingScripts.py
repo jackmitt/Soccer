@@ -118,10 +118,12 @@ def update(league):
         gws.append(gwCount)
     train["gw"] = gws
 
+    print (priors)
+
     startIndex = 0
     includedInPrior = []
     for index, row in train.iterrows():
-        print (row)
+        #print (row)
         for col in train.columns:
             if (col == "gw" or "i_" in col):
                 continue
@@ -133,11 +135,10 @@ def update(league):
             continue
         if (row["includedInPrior"] == 0 and train.at[index-1,"includedInPrior"] == 1):
             startIndex = index
-        if ((row["gw"] - train.at[index-1,"gw"] == 1 or index == len(train.index) - 1) and row["includedInPrior"] == 0):
-            if (index == len(train.index) - 1):
-                new_obs = train.iloc[startIndex:index+1]
-            else:
-                new_obs = train.iloc[startIndex:index]
+        if ((index == len(train.index) - 1 or row["gw"] - train.at[index+1,"gw"] == -1) and row["includedInPrior"] == 0):
+            new_obs = train.iloc[startIndex:index+1]
+
+            print (new_obs)
 
             home_team = theano.shared(new_obs.i_home.values)
             away_team = theano.shared(new_obs.i_away.values)
@@ -145,11 +146,12 @@ def update(league):
             observed_home_goals = new_obs.home_team_reg_score.values
             observed_away_goals = new_obs.away_team_reg_score.values
 
+
             posteriors = bmf.model_update(home_team, observed_home_goals, away_team, observed_away_goals, priors, num_teams, factor, f_thresh, Δσ)
 
             priors = posteriors
 
-            startIndex = index
+            startIndex = index + 1
         includedInPrior.append(1)
         with open("./csv_data/" + league + "/current/last_prior.pkl", "wb") as f:
             pickle.dump(priors, f)
@@ -258,7 +260,7 @@ def bet_on_pinny_games(league):
         for index, row in teams.iterrows():
             teams_to_int[row["team"]] = row["i"]
 
-    bankroll = 15000
+    bankroll = 15500
     dict = {"Home":[],"Away":[],"H_proj":[],"A_proj":[],"pinny_AH":[],"pinny_home_AH_odds":[],"pinny_away_AH_odds":[],"pinny_OU":[],"pinny_over_odds":[],"pinny_under_odds":[],"p_home_cover":[],"p_over":[],"AH Bet":[],"AH Bet Amount":[],"AH Bet Odds":[],"AH Bet Book":[],"OU Bet":[],"OU Bet Amount":[],"OU Bet Odds":[],"OU Bet Book":[]}
     for index, row in scr.pinnacle(league).iterrows():
         dict["Home"].append(row["Home"])
@@ -340,7 +342,7 @@ def bet_adjustments(league):
         for index, row in teams.iterrows():
             teams_to_int[row["team"]] = row["i"]
 
-    bankroll = 15000
+    bankroll = 15500
     dict = {"Home":[],"Away":[],"H_proj":[],"A_proj":[],"pinny_AH":[],"pinny_home_AH_odds":[],"pinny_away_AH_odds":[],"pinny_OU":[],"pinny_over_odds":[],"pinny_under_odds":[],"p_home_cover":[],"p_over":[],"AH Bet":[],"AH Bet Amount":[],"AH Bet Odds":[],"AH Bet Book":[],"OU Bet":[],"OU Bet Amount":[],"OU Bet Odds":[],"OU Bet Book":[]}
     for index, row in scr.pinnacle(league).iterrows():
         dict["Home"].append(row["Home"])
@@ -411,7 +413,7 @@ def bet_adjustments(league):
                             if (r["pinny_AH"] > row["pinny_AH"] or (r["pinny_AH"] == row["pinny_AH"] and r["pinny_away_AH_odds"] > row["pinny_away_AH_odds"])):
                                 print (row["Away"], float(r["pinny_AH"]), kellyStake(1-row["p_home_cover"], row["pinny_away_AH_odds"], 8) * bankroll - row["AH Bet Amount"])
 
-league = "Brazil2"
+league = "Korea1"
 #scr.nowgoalCurSeason(league)
 #print(grade_bets(league = league))
 #update(league)

@@ -199,6 +199,20 @@ def standardizeTeamName(name, league):
             return ("Juventude")
         elif ("cuiaba esporte" in lname):
             return ("Cuiaba")
+        elif ("ceara sc" in lname):
+            return ("Ceara")
+        elif ("goianiense" in lname):
+            return ("Atletico Clube Goianiense")
+        elif ("goias ec go" in lname):
+            return ("Goias")
+        elif ("atletico mineiro" in lname):
+            return ("Atletico Mineiro")
+        elif ("botafogo" in lname):
+            return ("Botafogo RJ")
+        elif ("fortaleza" in lname):
+            return ("Fortaleza")
+        elif ("coritiba" in lname):
+            return ("Coritiba PR")
         else:
             return (name)
     elif (league == "Brazil2"):

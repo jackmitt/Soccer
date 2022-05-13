@@ -3,28 +3,28 @@ Date,Home,Away,home_team_reg_score,away_team_reg_score,includedInPrior
 2022-04-10,Atletico Clube Goianiense,Flamengo,1,1,1
 2022-04-10,Palmeiras,Ceara,2,3,1
 2022-04-10,Coritiba PR,Goias,3,0,1
-2022-04-11,Sao Paulo,Atletico Paranaense,4,0,1
-2022-04-11,Fortaleza,Cuiaba,0,1,1
-2022-04-11,Avai FC SC,America MG,1,0,1
 2022-04-11,Atletico Mineiro,Internacional RS,2,0,1
 2022-04-11,Botafogo RJ,Corinthians Paulista (SP),1,3,1
+2022-04-11,Fortaleza,Cuiaba,0,1,1
+2022-04-11,Sao Paulo,Atletico Paranaense,4,0,1
+2022-04-11,Avai FC SC,America MG,1,0,1
 2022-04-12,Juventude,Bragantino,2,2,1
+2022-04-17,Santos,Coritiba PR,2,1,1
+2022-04-17,Cuiaba,Fluminense RJ,0,1,1
 2022-04-17,Goias,Palmeiras,1,1,1
 2022-04-17,America MG,Juventude,4,1,1
 2022-04-17,Corinthians Paulista (SP),Avai FC SC,3,0,1
-2022-04-17,Cuiaba,Fluminense RJ,0,1,1
-2022-04-17,Santos,Coritiba PR,2,1,1
-2022-04-18,Atletico Paranaense,Atletico Mineiro,0,1,1
-2022-04-18,Internacional RS,Fortaleza,2,1,1
-2022-04-18,Ceara,Botafogo RJ,1,3,1
 2022-04-18,Flamengo,Sao Paulo,3,1,1
 2022-04-18,Bragantino,Atletico Clube Goianiense,4,0,1
+2022-04-18,Internacional RS,Fortaleza,2,1,1
+2022-04-18,Atletico Paranaense,Atletico Mineiro,0,1,1
+2022-04-18,Ceara,Botafogo RJ,1,3,1
 2022-04-21,Flamengo,Palmeiras,0,0,1
-2022-04-24,Atletico Paranaense,Flamengo,1,0,1
-2022-04-24,Bragantino,Sao Paulo,1,1,1
-2022-04-24,Palmeiras,Corinthians Paulista (SP),3,0,1
 2022-04-24,Fluminense RJ,Internacional RS,0,1,1
 2022-04-24,Atletico Mineiro,Coritiba PR,2,2,1
+2022-04-24,Bragantino,Sao Paulo,1,1,1
+2022-04-24,Atletico Paranaense,Flamengo,1,0,1
+2022-04-24,Palmeiras,Corinthians Paulista (SP),3,0,1
 2022-04-25,Santos,America MG,3,0,1
 2022-04-25,Juventude,Cuiaba,0,1,1
 2022-04-25,Atletico Clube Goianiense,Botafogo RJ,1,1,1
@@ -34,7 +34,17 @@ Date,Home,Away,home_team_reg_score,away_team_reg_score,includedInPrior
 2022-05-01,Goias,Atletico Mineiro,2,2,1
 2022-05-01,Cuiaba,Atletico Clube Goianiense,1,1,1
 2022-05-01,Botafogo RJ,Juventude,1,1,1
+2022-05-02,Internacional RS,Avai FC SC,0,0,1
 2022-05-02,Corinthians Paulista (SP),Fortaleza,1,0,1
 2022-05-02,Coritiba PR,Fluminense RJ,3,2,1
-2022-05-02,Internacional RS,Avai FC SC,0,0,1
 2022-05-03,Sao Paulo,Santos,2,1,1
+2022-05-08,Atletico Mineiro,America MG,1,2,1
+2022-05-08,Atletico Paranaense,Ceara,1,0,1
+2022-05-08,Flamengo,Botafogo RJ,0,1,1
+2022-05-09,Juventude,Internacional RS,1,1,1
+2022-05-09,Palmeiras,Fluminense RJ,1,1,1
+2022-05-09,Atletico Clube Goianiense,Goias,0,1,1
+2022-05-09,Santos,Cuiaba,4,1,1
+2022-05-09,Bragantino,Corinthians Paulista (SP),0,1,1
+2022-05-09,Fortaleza,Sao Paulo,1,1,1
+2022-05-10,Avai FC SC,Coritiba PR,2,1,1

@@ -7,35 +7,43 @@ Date,Home,Away,home_team_reg_score,away_team_reg_score,includedInPrior
 2022-04-05,Landskrona BoIS,Osters IF,1,3,1
 2022-04-05,IK Brage,Orebro,3,0,1
 2022-04-06,Orgryte,Halmstads,2,2,1
-2022-04-09,Skovde AIK,Landskrona BoIS,2,0,1
-2022-04-09,Dalkurd FF,Trelleborgs FF,2,0,1
 2022-04-09,AFC Eskilstuna,Orgryte,4,3,1
-2022-04-10,Osters IF,IK Brage,1,2,1
+2022-04-09,Dalkurd FF,Trelleborgs FF,2,0,1
+2022-04-09,Skovde AIK,Landskrona BoIS,2,0,1
 2022-04-10,Utsiktens BK,Brommapojkarna,3,2,1
+2022-04-10,Osters IF,IK Brage,1,2,1
 2022-04-12,Vasteras SK FK,Ostersunds FK,1,1,1
 2022-04-12,Halmstads,Norrby IF,1,2,1
 2022-04-13,Orebro,Jonkopings Sodra IF,3,1,1
 2022-04-17,Vasteras SK FK,Utsiktens BK,0,3,1
 2022-04-17,AFC Eskilstuna,Landskrona BoIS,2,0,1
-2022-04-18,Orgryte,Osters IF,0,1,1
-2022-04-18,Dalkurd FF,Halmstads,0,1,1
-2022-04-18,IK Brage,Jonkopings Sodra IF,1,2,1
 2022-04-18,Brommapojkarna,Skovde AIK,2,2,1
+2022-04-18,IK Brage,Jonkopings Sodra IF,1,2,1
 2022-04-18,Norrby IF,Orebro,0,2,1
+2022-04-18,Dalkurd FF,Halmstads,0,1,1
+2022-04-18,Orgryte,Osters IF,0,1,1
 2022-04-20,Trelleborgs FF,Ostersunds FK,1,1,1
 2022-04-23,Ostersunds FK,Dalkurd FF,1,0,1
 2022-04-23,Utsiktens BK,AFC Eskilstuna,2,3,1
 2022-04-23,Jonkopings Sodra IF,Trelleborgs FF,2,3,1
 2022-04-24,Skovde AIK,Norrby IF,2,0,1
 2022-04-24,IK Brage,Brommapojkarna,3,1,1
-2022-04-26,Landskrona BoIS,Orgryte,3,2,1
 2022-04-26,Osters IF,Vasteras SK FK,1,1,1
+2022-04-26,Landskrona BoIS,Orgryte,3,2,1
 2022-04-27,Orebro,Halmstads,0,2,1
 2022-04-30,Brommapojkarna,Jonkopings Sodra IF,2,1,1
 2022-04-30,AFC Eskilstuna,Skovde AIK,1,2,1
 2022-04-30,Trelleborgs FF,IK Brage,2,2,1
-2022-05-01,Vasteras SK FK,Orebro,2,1,1
 2022-05-01,Orgryte,Utsiktens BK,0,2,1
-2022-05-03,Norrby IF,Landskrona BoIS,0,0,1
+2022-05-01,Vasteras SK FK,Orebro,2,1,1
 2022-05-03,Dalkurd FF,Osters IF,0,3,1
+2022-05-03,Norrby IF,Landskrona BoIS,0,0,1
 2022-05-04,Halmstads,Ostersunds FK,2,0,1
+2022-05-07,Brommapojkarna,Trelleborgs FF,4,2,1
+2022-05-07,Osters IF,Norrby IF,2,0,1
+2022-05-07,AFC Eskilstuna,Vasteras SK FK,5,2,1
+2022-05-08,IK Brage,Orgryte,4,0,1
+2022-05-08,Utsiktens BK,Dalkurd FF,3,0,1
+2022-05-10,Skovde AIK,Halmstads,1,3,1
+2022-05-10,Orebro,Ostersunds FK,1,0,1
+2022-05-11,Jonkopings Sodra IF,Landskrona BoIS,2,4,1

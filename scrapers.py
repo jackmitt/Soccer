@@ -709,10 +709,12 @@ def nowgoalCurSeason(league):
     inPrior = []
     if (exists("./csv_data/" + league + "/current/results.csv")):
         results = pd.read_csv("./csv_data/" + league + "/current/results.csv", encoding = "ISO-8859-1")
+        print (results)
         for i in range(len(results.index)):
             results.at[i, "Date"] = datetime.date(int(results.at[i, "Date"].split("-")[0]), int(results.at[i, "Date"].split("-")[1]), int(results.at[i, "Date"].split("-")[2]))
         for index, row in results.iterrows():
             inPrior.append({"Date":row["Date"],"Home":row["Home"],"Away":row["Away"]})
+    print (inPrior)
 
     browser.get(url)
     time.sleep(1)
@@ -722,7 +724,7 @@ def nowgoalCurSeason(league):
     while (1):
         try:
             browser.find_element_by_xpath("//*[@id='Table2']/tbody/tr[" + str(i) + "]/td[" + str(j) + "]").click()
-            time.sleep(0.5)
+            time.sleep(2)
         except:
             if (i == 1):
                 i = 2
@@ -744,12 +746,19 @@ def nowgoalCurSeason(league):
                     dict["away_team_reg_score"].append(x.find_next_sibling().find_next_sibling().find("a").string.split("-")[1])
                     inpriorBool = False
                     for game in inPrior:
+                        print (curDate, game["Date"])
+                        print (x.find_next_sibling().find("a").string, game["Home"])
+                        print (x.find_next_sibling().find_next_sibling().find_next_sibling().find("a").string, game["Away"])
                         if (curDate == game["Date"] and x.find_next_sibling().find("a").string == game["Home"] and x.find_next_sibling().find_next_sibling().find_next_sibling().find("a").string == game["Away"]):
                             dict["includedInPrior"].append(1)
                             inpriorBool = True
                     if (not inpriorBool):
+                        print (x.find_next_sibling().find("a").string, curDate)
                         dict["includedInPrior"].append(0)
         j += 1
+    print (dict)
+    for key in dict:
+        print (key, len(dict[key]), dict[key])
     df = pd.DataFrame.from_dict(dict)
     df = df.sort_values(by=["Date"], ignore_index = True)
     if (not exists("./csv_data/" + league + "/current/")):
@@ -783,7 +792,7 @@ def pinnacle(league):
     browser = webdriver.Chrome(executable_path=driver_path, options = chrome_options)
     browser.get(url)
 
-    time.sleep(5)
+    time.sleep(20)
     soup = BeautifulSoup(browser.page_source, 'html.parser')
     main = soup.find(class_="contentBlock square")
     for game in main.contents:

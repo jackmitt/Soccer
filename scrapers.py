@@ -709,12 +709,10 @@ def nowgoalCurSeason(league):
     inPrior = []
     if (exists("./csv_data/" + league + "/current/results.csv")):
         results = pd.read_csv("./csv_data/" + league + "/current/results.csv", encoding = "ISO-8859-1")
-        print (results)
         for i in range(len(results.index)):
             results.at[i, "Date"] = datetime.date(int(results.at[i, "Date"].split("-")[0]), int(results.at[i, "Date"].split("-")[1]), int(results.at[i, "Date"].split("-")[2]))
         for index, row in results.iterrows():
             inPrior.append({"Date":row["Date"],"Home":row["Home"],"Away":row["Away"]})
-    print (inPrior)
 
     browser.get(url)
     time.sleep(1)
@@ -746,9 +744,6 @@ def nowgoalCurSeason(league):
                     dict["away_team_reg_score"].append(x.find_next_sibling().find_next_sibling().find("a").string.split("-")[1])
                     inpriorBool = False
                     for game in inPrior:
-                        print (curDate, game["Date"])
-                        print (x.find_next_sibling().find("a").string, game["Home"])
-                        print (x.find_next_sibling().find_next_sibling().find_next_sibling().find("a").string, game["Away"])
                         if (curDate == game["Date"] and x.find_next_sibling().find("a").string == game["Home"] and x.find_next_sibling().find_next_sibling().find_next_sibling().find("a").string == game["Away"]):
                             dict["includedInPrior"].append(1)
                             inpriorBool = True
@@ -756,7 +751,6 @@ def nowgoalCurSeason(league):
                         print (x.find_next_sibling().find("a").string, curDate)
                         dict["includedInPrior"].append(0)
         j += 1
-    print (dict)
     for key in dict:
         print (key, len(dict[key]), dict[key])
     df = pd.DataFrame.from_dict(dict)

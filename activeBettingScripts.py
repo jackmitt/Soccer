@@ -415,9 +415,9 @@ def bet_adjustments(league):
 
 #leagues = ["Sweden2","Brazil1","Brazil2"]
 #for league in leagues:
-league = "Japan2"
-scr.nowgoalCurSeason(league)
-print(grade_bets(league = league))
-update(league)
+league = "Norway1"
+#scr.nowgoalCurSeason(league)
+#print(grade_bets(league = league))
+#update(league)
 bet_on_pinny_games(league)
 #bet_adjustments(league)

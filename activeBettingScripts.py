@@ -260,7 +260,7 @@ def bet_on_pinny_games(league):
         for index, row in teams.iterrows():
             teams_to_int[row["team"]] = row["i"]
 
-    bankroll = 15500
+    bankroll = 17500
     dict = {"Home":[],"Away":[],"H_proj":[],"A_proj":[],"pinny_AH":[],"pinny_home_AH_odds":[],"pinny_away_AH_odds":[],"pinny_OU":[],"pinny_over_odds":[],"pinny_under_odds":[],"p_home_cover":[],"p_over":[],"AH Bet":[],"AH Bet Amount":[],"AH Bet Odds":[],"AH Bet Book":[],"OU Bet":[],"OU Bet Amount":[],"OU Bet Odds":[],"OU Bet Book":[]}
     for index, row in scr.pinnacle(league).iterrows():
         dict["Home"].append(row["Home"])
@@ -342,7 +342,7 @@ def bet_adjustments(league):
         for index, row in teams.iterrows():
             teams_to_int[row["team"]] = row["i"]
 
-    bankroll = 15500
+    bankroll = 17500
     dict = {"Home":[],"Away":[],"H_proj":[],"A_proj":[],"pinny_AH":[],"pinny_home_AH_odds":[],"pinny_away_AH_odds":[],"pinny_OU":[],"pinny_over_odds":[],"pinny_under_odds":[],"p_home_cover":[],"p_over":[],"AH Bet":[],"AH Bet Amount":[],"AH Bet Odds":[],"AH Bet Book":[],"OU Bet":[],"OU Bet Amount":[],"OU Bet Odds":[],"OU Bet Book":[]}
     for index, row in scr.pinnacle(league).iterrows():
         dict["Home"].append(row["Home"])
@@ -413,11 +413,11 @@ def bet_adjustments(league):
                             if (r["pinny_AH"] > row["pinny_AH"] or (r["pinny_AH"] == row["pinny_AH"] and r["pinny_away_AH_odds"] > row["pinny_away_AH_odds"])):
                                 print (row["Away"], float(r["pinny_AH"]), kellyStake(1-row["p_home_cover"], row["pinny_away_AH_odds"], 8) * bankroll - row["AH Bet Amount"])
 
-#leagues = ["Sweden2","Brazil1","Brazil2"]
-#for league in leagues:
-league = "Norway1"
-#scr.nowgoalCurSeason(league)
-#print(grade_bets(league = league))
-#update(league)
-bet_on_pinny_games(league)
+leagues = ["Norway1"]
+for league in leagues:
+#league = "Norway1"
+    scr.nowgoalCurSeason(league)
+    print(grade_bets(league = league))
+    update(league)
+    bet_on_pinny_games(league)
 #bet_adjustments(league)

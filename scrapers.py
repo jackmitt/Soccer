@@ -733,15 +733,16 @@ def nowgoalCurSeason(league):
         soup = BeautifulSoup(browser.page_source, 'html.parser')
         for x in soup.find(class_="tdsolid").find_all("td"):
             if (x.has_attr("data-t")):
-                if (x.find_next_sibling().find_next_sibling().find("a").string != "Postp."):
+                if ("Postp." not in  x.find_next_sibling().find_next_sibling().find("a").get_text() and "Abd" not in  x.find_next_sibling().find_next_sibling().find("a").get_text()):
                     curDate = datetime.date(int(x["data-t"].split()[0].split("-")[0]), int(x["data-t"].split()[0].split("-")[1]), int(x["data-t"].split()[0].split("-")[2]))
                     if (curDate > datetime.date.today()):
                         continue
                     dict["Date"].append(curDate)
                     dict["Home"].append(x.find_next_sibling().find("a").string)
                     dict["Away"].append(x.find_next_sibling().find_next_sibling().find_next_sibling().find("a").string)
-                    dict["home_team_reg_score"].append(x.find_next_sibling().find_next_sibling().find("a").string.split("-")[0])
-                    dict["away_team_reg_score"].append(x.find_next_sibling().find_next_sibling().find("a").string.split("-")[1])
+                    print (x.find_next_sibling().find_next_sibling().find("a").get_text())
+                    dict["home_team_reg_score"].append(x.find_next_sibling().find_next_sibling().find("a").get_text().split("-")[0])
+                    dict["away_team_reg_score"].append(x.find_next_sibling().find_next_sibling().find("a").get_text().split("-")[1])
                     inpriorBool = False
                     for game in inPrior:
                         if (curDate == game["Date"] and x.find_next_sibling().find("a").string == game["Home"] and x.find_next_sibling().find_next_sibling().find_next_sibling().find("a").string == game["Away"]):

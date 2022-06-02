@@ -413,7 +413,7 @@ def bet_adjustments(league):
                             if (r["pinny_AH"] > row["pinny_AH"] or (r["pinny_AH"] == row["pinny_AH"] and r["pinny_away_AH_odds"] > row["pinny_away_AH_odds"])):
                                 print (row["Away"], float(r["pinny_AH"]), kellyStake(1-row["p_home_cover"], row["pinny_away_AH_odds"], 8) * bankroll - row["AH Bet Amount"])
 
-leagues = ["Japan1","Japan2","Korea1","Norway2","Sweden2","Brazil1","Brazil2"]
+leagues = ["Japan2","Brazil1","Brazil2"]
 for league in leagues:
 #league = "Norway1"
     scr.nowgoalCurSeason(league)
@@ -421,3 +421,5 @@ for league in leagues:
     update(league)
     bet_on_pinny_games(league)
 #bet_adjustments(league)
+
+

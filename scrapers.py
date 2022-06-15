@@ -754,6 +754,8 @@ def nowgoalCurSeason(league):
         j += 1
     for key in dict:
         print (key, len(dict[key]), dict[key])
+    if (len(dict["includedInPrior"]) == 0):
+        nowgoalCurSeason(league)
     df = pd.DataFrame.from_dict(dict)
     df = df.sort_values(by=["Date"], ignore_index = True)
     if (not exists("./csv_data/" + league + "/current/")):

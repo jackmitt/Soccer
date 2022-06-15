@@ -413,9 +413,9 @@ def bet_adjustments(league):
                             if (r["pinny_AH"] > row["pinny_AH"] or (r["pinny_AH"] == row["pinny_AH"] and r["pinny_away_AH_odds"] > row["pinny_away_AH_odds"])):
                                 print (row["Away"], float(r["pinny_AH"]), kellyStake(1-row["p_home_cover"], row["pinny_away_AH_odds"], 8) * bankroll - row["AH Bet Amount"])
 
-leagues = ["Brazil2"]
+leagues = ["Korea1","Norway1","Norway2","Brazil1","Brazil2"]
 for league in leagues:
-#league = "Norway1"
+#league = "Japan2"
     scr.nowgoalCurSeason(league)
     print(grade_bets(league = league))
     update(league)

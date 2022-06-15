@@ -66,14 +66,14 @@ Date,Home,Away,home_team_reg_score,away_team_reg_score,includedInPrior
 2022-04-06,Kyoto Sanga,Gamba Osaka,1,1,1
 2022-04-06,Sagan Tosu,Consadole Sapporo,5,0,1
 2022-04-09,Kawasaki Frontale,Kashiwa Reysol,1,0,1
-2022-04-10,Kyoto Sanga,Sagan Tosu,3,1,1
 2022-04-10,Shonan Bellmare,Jubilo Iwata,0,0,1
-2022-04-10,Hiroshima Sanfrecce,Avispa Fukuoka,1,0,1
-2022-04-10,Kashima Antlers,Yokohama Marinos,0,3,1
-2022-04-10,Shimizu S-Pulse,Gamba Osaka,1,1,1
-2022-04-10,FC Tokyo,Urawa Red Diamonds,0,0,1
 2022-04-10,Nagoya Grampus,Consadole Sapporo,0,2,1
+2022-04-10,Kyoto Sanga,Sagan Tosu,3,1,1
 2022-04-10,Vissel Kobe,Cerezo Osaka,0,1,1
+2022-04-10,Kashima Antlers,Yokohama Marinos,0,3,1
+2022-04-10,Hiroshima Sanfrecce,Avispa Fukuoka,1,0,1
+2022-04-10,FC Tokyo,Urawa Red Diamonds,0,0,1
+2022-04-10,Shimizu S-Pulse,Gamba Osaka,1,1,1
 2022-04-16,Consadole Sapporo,FC Tokyo,0,0,1
 2022-04-17,Gamba Osaka,Shonan Bellmare,0,1,1
 2022-04-17,Kashima Antlers,Nagoya Grampus,0,0,1
@@ -86,50 +86,59 @@ Date,Home,Away,home_team_reg_score,away_team_reg_score,includedInPrior
 2022-04-29,FC Tokyo,Gamba Osaka,2,0,1
 2022-04-29,Kashiwa Reysol,Sagan Tosu,1,4,1
 2022-04-29,Cerezo Osaka,Kashima Antlers,0,3,1
+2022-04-29,Shimizu S-Pulse,Hiroshima Sanfrecce,2,2,1
 2022-04-29,Consadole Sapporo,Shonan Bellmare,1,0,1
 2022-04-29,Kyoto Sanga,Avispa Fukuoka,0,1,1
-2022-04-29,Shimizu S-Pulse,Hiroshima Sanfrecce,2,2,1
+2022-05-03,Avispa Fukuoka,FC Tokyo,5,1,1
 2022-05-03,Nagoya Grampus,Kyoto Sanga,1,1,1
 2022-05-03,Hiroshima Sanfrecce,Kashiwa Reysol,1,2,1
 2022-05-03,Kashima Antlers,Jubilo Iwata,3,1,1
 2022-05-03,Sagan Tosu,Cerezo Osaka,1,1,1
 2022-05-03,Shonan Bellmare,Shimizu S-Pulse,1,4,1
-2022-05-03,Avispa Fukuoka,FC Tokyo,5,1,1
 2022-05-04,Gamba Osaka,Consadole Sapporo,0,0,1
 2022-05-06,Cerezo Osaka,Jubilo Iwata,2,1,1
-2022-05-07,Avispa Fukuoka,Shonan Bellmare,0,0,1
-2022-05-07,Consadole Sapporo,Kyoto Sanga,1,0,1
 2022-05-07,Yokohama Marinos,Nagoya Grampus,2,1,1
 2022-05-07,Shimizu S-Pulse,Kawasaki Frontale,0,2,1
+2022-05-07,Consadole Sapporo,Kyoto Sanga,1,0,1
 2022-05-07,Hiroshima Sanfrecce,Kashima Antlers,3,0,1
+2022-05-07,Avispa Fukuoka,Shonan Bellmare,0,0,1
 2022-05-08,Gamba Osaka,Vissel Kobe,2,0,1
-2022-05-08,FC Tokyo,Sagan Tosu,0,1,1
 2022-05-08,Kashiwa Reysol,Urawa Red Diamonds,0,0,1
+2022-05-08,FC Tokyo,Sagan Tosu,0,1,1
 2022-05-13,Urawa Red Diamonds,Hiroshima Sanfrecce,0,0,1
-2022-05-14,Nagoya Grampus,Cerezo Osaka,1,0,1
-2022-05-14,Kashiwa Reysol,Gamba Osaka,0,1,1
 2022-05-14,Jubilo Iwata,FC Tokyo,2,1,1
 2022-05-14,Kyoto Sanga,Shimizu S-Pulse,0,0,1
-2022-05-14,Shonan Bellmare,Yokohama Marinos,1,4,1
+2022-05-14,Nagoya Grampus,Cerezo Osaka,1,0,1
 2022-05-14,Kashima Antlers,Consadole Sapporo,4,1,1
 2022-05-14,Vissel Kobe,Sagan Tosu,4,0,1
 2022-05-14,Kawasaki Frontale,Avispa Fukuoka,2,0,1
-2022-05-18,Urawa Red Diamonds,Yokohama Marinos,3,3,1
+2022-05-14,Shonan Bellmare,Yokohama Marinos,1,4,1
+2022-05-14,Kashiwa Reysol,Gamba Osaka,0,1,1
 2022-05-18,Vissel Kobe,Kawasaki Frontale,0,1,1
-2022-05-21,Avispa Fukuoka,Yokohama Marinos,1,0,1
+2022-05-18,Urawa Red Diamonds,Yokohama Marinos,3,3,1
 2022-05-21,Urawa Red Diamonds,Kashima Antlers,1,1,1
 2022-05-21,Sagan Tosu,Kawasaki Frontale,0,0,1
 2022-05-21,Shonan Bellmare,Vissel Kobe,2,1,1
-2022-05-21,Hiroshima Sanfrecce,Kyoto Sanga,3,1,1
+2022-05-21,Avispa Fukuoka,Yokohama Marinos,1,0,1
 2022-05-21,Shimizu S-Pulse,Nagoya Grampus,1,2,1
 2022-05-21,Cerezo Osaka,Gamba Osaka,3,1,1
+2022-05-21,Hiroshima Sanfrecce,Kyoto Sanga,3,1,1
 2022-05-21,FC Tokyo,Kashiwa Reysol,0,0,1
 2022-05-22,Jubilo Iwata,Consadole Sapporo,1,2,1
+2022-05-25,Nagoya Grampus,Avispa Fukuoka,1,0,1
 2022-05-25,Consadole Sapporo,Kashiwa Reysol,1,6,1
-2022-05-25,Cerezo Osaka,Urawa Red Diamonds,2,0,1
-2022-05-25,Kashima Antlers,Sagan Tosu,4,4,1
-2022-05-25,Kawasaki Frontale,Shonan Bellmare,0,4,1
-2022-05-25,Shimizu S-Pulse,FC Tokyo,0,3,1
 2022-05-25,Vissel Kobe,Jubilo Iwata,0,0,1
 2022-05-25,Yokohama Marinos,Kyoto Sanga,2,0,1
-2022-05-25,Nagoya Grampus,Avispa Fukuoka,1,0,1
+2022-05-25,Kawasaki Frontale,Shonan Bellmare,0,4,1
+2022-05-25,Kashima Antlers,Sagan Tosu,4,4,1
+2022-05-25,Cerezo Osaka,Urawa Red Diamonds,2,0,1
+2022-05-25,Shimizu S-Pulse,FC Tokyo,0,3,1
+2022-05-28,Hiroshima Sanfrecce,Nagoya Grampus,1,0,1
+2022-05-28,Avispa Fukuoka,Urawa Red Diamonds,0,0,1
+2022-05-29,Kashiwa Reysol,Shimizu S-Pulse,3,1,1
+2022-05-29,Vissel Kobe,Consadole Sapporo,4,1,1
+2022-05-29,Kyoto Sanga,Kawasaki Frontale,1,0,1
+2022-05-29,FC Tokyo,Kashima Antlers,3,1,1
+2022-05-29,Shonan Bellmare,Cerezo Osaka,0,2,1
+2022-05-29,Jubilo Iwata,Yokohama Marinos,0,2,1
+2022-05-29,Sagan Tosu,Gamba Osaka,2,1,1

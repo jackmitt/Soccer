@@ -6,15 +6,16 @@ import pandas as pd
 import numpy as np
 
 
-leagues = ["England1","England2","England3","England4","France1","France2","France3","Germany1","Germany2","Germany3","Italy1","Italy2","Spain1","Spain2"]
+leagues = ["Norway1","Japan2"]
 for league in leagues:
     print ("-----------------------------------------------",league)
     #dm.preMatchAverages(league)
     #dm.train_test_split(league)
     #pr.WeibullCountDistPredictions(league)
-    #eval.analyzeWinRates(league, "AH", "Open")
-    #eval.kellybet(league, "OU", "Open", 20000, 2)
-    pr.bayesian(league)
+    #eval.analyzeWinRates(league, "AH", "Close")
+    eval.kellybet(league, "AH", "Close", 20000, 12, 0.1)
+    #pr.bayesian(league)
+    #eval.analyzeLineMovement(league, "AH", moveDirection = "renst")
 #r.fitWeibullParameters()
 
 

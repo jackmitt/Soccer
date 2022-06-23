@@ -674,17 +674,17 @@ def analyzeLineMovement(league, betType, moveDirection = "With", pType = ""):
                 if (moveDirection == "With"):
                     if (row[pType + "p_Close_home_cover"] > row[pType + "p_Open_home_cover"]):
                         continue
-                    elif (row[pType + "p_Close_home_cover"] == row[pType + "p_Open_home_cover"] and row["Home Close AH Odds"] >= row["Home Open AH Odds"]):
+                    elif (row[pType + "p_Close_home_cover"] == row[pType + "p_Open_home_cover"]):
                         continue
                 elif (moveDirection == "Against"):
                     if (row[pType + "p_Close_home_cover"] < row[pType + "p_Open_home_cover"]):
                         continue
-                    elif (row[pType + "p_Close_home_cover"] == row[pType + "p_Open_home_cover"] and row["Home Close AH Odds"] <= row["Home Open AH Odds"]):
+                    elif (row[pType + "p_Close_home_cover"] == row[pType + "p_Open_home_cover"]):
                         continue
                 else:
                     if (row[pType + "p_Close_home_cover"] != row[pType + "p_Open_home_cover"]):
                         continue
-                    elif (row[pType + "p_Close_home_cover"] == row[pType + "p_Open_home_cover"] and row["Home Close AH Odds"] != row["Home Open AH Odds"]):
+                    elif (row[pType + "p_Close_home_cover"] == row[pType + "p_Open_home_cover"]):
                         continue
                 if ((row["Home Close AH Odds"] - 1) * row[pType + "p_Close_home_cover"] - (1 - row[pType + "p_Close_home_cover"]) < 0.03):
                     if (".75" not in str(row["Close AH"]) and ".25" not in str(row["Close AH"])):

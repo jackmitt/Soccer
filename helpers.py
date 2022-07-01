@@ -83,10 +83,16 @@ def standardizeTeamName(name, league):
             return ("Kyoto Sanga")
         elif ("yokohama" in lname and "marinos" in lname):
             return ("Yokohama Marinos")
-        elif ("hiroshima sanfrecce" in lname):
+        elif ("hiroshima" in lname and "sanfrecce" in lname):
             return ("Hiroshima Sanfrecce")
         elif ("nagoya grampus" in lname):
             return ("Nagoya Grampus")
+        elif (" iwata" in lname):
+            return ("Jubilo Iwata")
+        elif ("consadole sapporo" in lname):
+            return ("Consadole Sapporo")
+        elif ("matsumoto yamaga" in lname):
+            return ("Matsumoto Yamaga FC")
         else:
             return (name)
     elif (league == "Japan2"):

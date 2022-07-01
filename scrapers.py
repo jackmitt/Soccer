@@ -819,3 +819,29 @@ def pinnacle(league):
         A.appendRow()
     browser.close()
     return (A.getDataFrame())
+
+def transfermarkt(league):
+    if (league == "Japan1"):
+        urlRoot = "https://www.transfermarkt.co.uk/j1-league/startseite/wettbewerb/JAP1/plus/?saison_id="
+
+
+    A = Database(["Season","Team","Value"])
+    driver_path = ChromeDriverManager(chrome_type=ChromeType.CHROMIUM).install()
+    chrome_options = Options()
+    chrome_options.add_argument("--no-sandbox")
+    chrome_options.add_argument("--headless")
+    chrome_options.add_argument("--window-size=1325x744")
+    browser = webdriver.Chrome(executable_path=driver_path, options = chrome_options)
+    for curSeason in [2012,2013,2014,2015,2016,2017,2018,2019,2020,2021]:
+        browser.get(urlRoot + str(curSeason - 1))
+
+        time.sleep(2)
+        soup = BeautifulSoup(browser.page_source, 'html.parser')
+        table = soup.find(class_="responsive-table").find("tbody")
+
+        for row in table.find_all("tr"):
+            A.addCellToRow(curSeason)
+            A.addCellToRow(row.find_all("td")[1].get_text())
+            A.addCellToRow(row.find_all("td")[6].get_text())
+            A.appendRow()
+    A.dictToCsv("./csv_data/" + league + "/transfermarkt.csv")

@@ -14,8 +14,8 @@ Date,Home,Away,home_team_reg_score,away_team_reg_score,includedInPrior
 2022-04-16,Nautico (PE),Bahia,0,1,1
 2022-04-16,Operario Ferroviario PR,Ponte Preta,2,0,1
 2022-04-17,CRB AL,Vasco da Gama,1,1,1
-2022-04-17,Sampaio Correa,Tombense,1,1,1
 2022-04-17,Guarani SP,Sport Club do Recife,0,0,1
+2022-04-17,Sampaio Correa,Tombense,1,1,1
 2022-04-17,Ituano  SP,Centro Sportivo Alagoano,0,0,1
 2022-04-22,Gremio (RS),Guarani SP,3,1,1
 2022-04-22,Londrina PR,Gremio Novorizontin,1,1,1
@@ -23,19 +23,19 @@ Date,Home,Away,home_team_reg_score,away_team_reg_score,includedInPrior
 2022-04-23,Chapecoense SC,Vasco da Gama,0,0,1
 2022-04-23,Criciuma,Sport Club do Recife,1,1,1
 2022-04-24,Sampaio Correa,Brusque FC,3,1,1
-2022-04-24,Ituano  SP,Vila Nova,3,1,1
-2022-04-24,Tombense,Cruzeiro,1,1,1
 2022-04-24,Ponte Preta,CRB AL,1,0,1
+2022-04-24,Tombense,Cruzeiro,1,1,1
+2022-04-24,Ituano  SP,Vila Nova,3,1,1
 2022-04-25,Nautico (PE),Operario Ferroviario PR,2,0,1
-2022-04-27,Cruzeiro,Londrina PR,1,0,1
-2022-04-27,Bahia,Sampaio Correa,1,0,1
-2022-04-27,Gremio Novorizontin,Chapecoense SC,0,3,1
-2022-04-27,Sport Club do Recife,Ituano  SP,1,0,1
-2022-04-27,Vila Nova,Tombense,1,1,1
 2022-04-27,Brusque FC,Centro Sportivo Alagoano,2,0,1
+2022-04-27,Vila Nova,Tombense,1,1,1
+2022-04-27,Sport Club do Recife,Ituano  SP,1,0,1
+2022-04-27,Cruzeiro,Londrina PR,1,0,1
+2022-04-27,Gremio Novorizontin,Chapecoense SC,0,3,1
+2022-04-27,Bahia,Sampaio Correa,1,0,1
 2022-04-28,Guarani SP,Criciuma,1,0,1
-2022-04-28,Vasco da Gama,Ponte Preta,1,0,1
 2022-04-28,CRB AL,Nautico (PE),1,2,1
+2022-04-28,Vasco da Gama,Ponte Preta,1,0,1
 2022-04-28,Operario Ferroviario PR,Gremio (RS),0,1,1
 2022-04-30,Londrina PR,Vila Nova,2,2,1
 2022-04-30,Ituano  SP,Bahia,1,0,1
@@ -53,80 +53,80 @@ Date,Home,Away,home_team_reg_score,away_team_reg_score,includedInPrior
 2022-05-06,Brusque FC,Chapecoense SC,0,0,1
 2022-05-07,Vila Nova,Nautico (PE),2,0,1
 2022-05-07,Sport Club do Recife,Tombense,2,0,1
-2022-05-08,Vasco da Gama,Centro Sportivo Alagoano,1,0,1
-2022-05-08,Gremio Novorizontin,Ituano  SP,2,1,1
 2022-05-08,Operario Ferroviario PR,Criciuma,2,0,1
-2022-05-09,Cruzeiro,Gremio (RS),1,0,1
+2022-05-08,Gremio Novorizontin,Ituano  SP,2,1,1
+2022-05-08,Vasco da Gama,Centro Sportivo Alagoano,1,0,1
 2022-05-09,Guarani SP,Ponte Preta,0,0,1
+2022-05-09,Cruzeiro,Gremio (RS),1,0,1
 2022-05-10,CRB AL,Sampaio Correa,2,1,1
 2022-05-14,Ponte Preta,Gremio Novorizontin,0,1,1
 2022-05-14,Chapecoense SC,Sport Club do Recife,0,1,1
 2022-05-14,Criciuma,CRB AL,3,0,1
 2022-05-14,Londrina PR,Brusque FC,2,1,1
-2022-05-15,Centro Sportivo Alagoano,Operario Ferroviario PR,0,0,1
 2022-05-15,Tombense,Guarani SP,1,1,1
 2022-05-15,Sampaio Correa,Vila Nova,2,0,1
-2022-05-16,Nautico (PE),Cruzeiro,0,1,1
+2022-05-15,Centro Sportivo Alagoano,Operario Ferroviario PR,0,0,1
 2022-05-16,Vasco da Gama,Bahia,1,0,1
+2022-05-16,Nautico (PE),Cruzeiro,0,1,1
 2022-05-17,Ituano  SP,Gremio (RS),1,1,1
 2022-05-18,Gremio Novorizontin,Sport Club do Recife,0,0,1
 2022-05-19,CRB AL,Londrina PR,1,0,1
-2022-05-20,Nautico (PE),Centro Sportivo Alagoano,1,1,1
-2022-05-20,Guarani SP,Vasco da Gama,0,0,1
-2022-05-20,Vila Nova,Chapecoense SC,0,0,1
 2022-05-20,Gremio (RS),Criciuma,0,0,1
-2022-05-21,Brusque FC,Tombense,1,0,1
+2022-05-20,Vila Nova,Chapecoense SC,0,0,1
+2022-05-20,Guarani SP,Vasco da Gama,0,0,1
+2022-05-20,Nautico (PE),Centro Sportivo Alagoano,1,1,1
 2022-05-21,Bahia,Ponte Preta,2,1,1
 2022-05-21,Operario Ferroviario PR,Ituano  SP,3,2,1
+2022-05-21,Brusque FC,Tombense,1,0,1
 2022-05-22,Cruzeiro,Sampaio Correa,2,0,1
-2022-05-25,Sport Club do Recife,CRB AL,0,1,1
 2022-05-25,Ponte Preta,Chapecoense SC,0,0,1
+2022-05-25,Sport Club do Recife,CRB AL,0,1,1
 2022-05-26,Londrina PR,Operario Ferroviario PR,2,1,1
-2022-05-27,Ituano  SP,Nautico (PE),0,0,1
 2022-05-27,Vasco da Gama,Brusque FC,2,0,1
+2022-05-27,Ituano  SP,Nautico (PE),0,0,1
 2022-05-28,Tombense,Bahia,1,0,1
 2022-05-28,Criciuma,Cruzeiro,0,1,1
 2022-05-29,Centro Sportivo Alagoano,Gremio Novorizontin,2,1,1
 2022-05-29,Sampaio Correa,Guarani SP,2,1,1
 2022-05-30,Vila Nova,Gremio (RS),0,0,1
 2022-06-02,CRB AL,Centro Sportivo Alagoano,0,0,1
-2022-06-03,Guarani SP,Vila Nova,1,1,1
-2022-06-03,Sport Club do Recife,Ponte Preta,2,1,1
 2022-06-03,Vasco da Gama,Gremio (RS),0,0,1
+2022-06-03,Sport Club do Recife,Ponte Preta,2,1,1
+2022-06-03,Guarani SP,Vila Nova,1,1,1
 2022-06-04,Operario Ferroviario PR,Cruzeiro,1,2,1
 2022-06-05,Gremio Novorizontin,Sampaio Correa,0,0,1
 2022-06-05,Bahia,Criciuma,2,1,1
 2022-06-05,Brusque FC,Nautico (PE),1,2,1
 2022-06-05,Tombense,Ituano  SP,2,1,1
 2022-06-07,Guarani SP,Operario Ferroviario PR,0,3,1
-2022-06-08,Gremio (RS),Gremio Novorizontin,2,0,1
-2022-06-08,Centro Sportivo Alagoano,Chapecoense SC,1,1,1
-2022-06-08,Criciuma,Sampaio Correa,3,1,1
+2022-06-08,Londrina PR,Tombense,1,1,1
 2022-06-08,Vila Nova,Brusque FC,0,2,1
 2022-06-08,Nautico (PE),Vasco da Gama,2,3,1
-2022-06-08,Londrina PR,Tombense,1,1,1
 2022-06-08,Ituano  SP,Ponte Preta,1,2,1
-2022-06-09,Bahia,Sport Club do Recife,1,0,1
+2022-06-08,Criciuma,Sampaio Correa,3,1,1
+2022-06-08,Centro Sportivo Alagoano,Chapecoense SC,1,1,1
+2022-06-08,Gremio (RS),Gremio Novorizontin,2,0,1
 2022-06-09,Cruzeiro,CRB AL,2,0,1
-2022-06-11,Chapecoense SC,Criciuma,2,3,1
+2022-06-09,Bahia,Sport Club do Recife,1,0,1
 2022-06-11,Brusque FC,Ituano  SP,0,1,1
+2022-06-11,Chapecoense SC,Criciuma,2,3,1
 2022-06-11,Sampaio Correa,Nautico (PE),2,0,1
+2022-06-12,Gremio Novorizontin,Guarani SP,1,2,1
 2022-06-12,CRB AL,Vila Nova,1,0,1
 2022-06-12,Ponte Preta,Londrina PR,1,2,1
 2022-06-12,Operario Ferroviario PR,Bahia,0,1,1
-2022-06-12,Gremio Novorizontin,Guarani SP,1,2,1
-2022-06-13,Vasco da Gama,Cruzeiro,1,0,1
 2022-06-13,Tombense,Centro Sportivo Alagoano,2,1,1
+2022-06-13,Vasco da Gama,Cruzeiro,1,0,1
 2022-06-14,Sport Club do Recife,Gremio (RS),0,0,1
 2022-06-15,Bahia,Chapecoense SC,0,1,1
-2022-06-17,Cruzeiro,Ponte Preta,2,0,1
 2022-06-17,Vila Nova,Operario Ferroviario PR,0,0,1
+2022-06-17,Cruzeiro,Ponte Preta,2,0,1
 2022-06-18,Criciuma,Brusque FC,0,1,1
 2022-06-18,CRB AL,Ituano  SP,1,1,1
 2022-06-18,Gremio (RS),Sampaio Correa,2,0,1
+2022-06-19,Londrina PR,Vasco da Gama,0,1,1
 2022-06-19,Gremio Novorizontin,Tombense,1,3,1
 2022-06-19,Nautico (PE),Sport Club do Recife,1,1,1
-2022-06-19,Londrina PR,Vasco da Gama,0,1,1
 2022-06-19,Guarani SP,Centro Sportivo Alagoano,0,0,1
 2022-06-22,Chapecoense SC,CRB AL,1,2,1
 2022-06-24,Centro Sportivo Alagoano,Gremio (RS),1,1,1
@@ -144,6 +144,21 @@ Date,Home,Away,home_team_reg_score,away_team_reg_score,includedInPrior
 2022-06-29,Guarani SP,Ituano  SP,0,2,1
 2022-06-29,Vila Nova,Ponte Preta,1,1,1
 2022-06-29,Cruzeiro,Sport Club do Recife,2,1,1
-2022-06-30,Gremio Novorizontin,Vasco da Gama,2,0,1
 2022-06-30,Nautico (PE),Criciuma,1,1,1
+2022-06-30,Gremio Novorizontin,Vasco da Gama,2,0,1
 2022-06-30,CRB AL,Tombense,0,0,1
+2022-07-02,Cruzeiro,Vila Nova,2,0,1
+2022-07-02,Chapecoense SC,Sampaio Correa,3,1,1
+2022-07-02,Brusque FC,Operario Ferroviario PR,2,0,1
+2022-07-02,Londrina PR,Centro Sportivo Alagoano,0,0,1
+2022-07-03,Ituano  SP,Criciuma,1,2,1
+2022-07-03,Nautico (PE),Gremio Novorizontin,3,1,1
+2022-07-03,Ponte Preta,Tombense,0,0,1
+2022-07-03,CRB AL,Guarani SP,1,1,1
+2022-07-04,Bahia,Gremio (RS),0,0,1
+2022-07-04,Vasco da Gama,Sport Club do Recife,0,0,1
+2022-07-06,Chapecoense SC,Londrina PR,0,3,1
+2022-07-06,Ituano  SP,Cruzeiro,1,1,1
+2022-07-06,Operario Ferroviario PR,CRB AL,2,3,1
+2022-07-07,Gremio Novorizontin,Brusque FC,1,0,1
+2022-07-08,Centro Sportivo Alagoano,Ponte Preta,0,1,1

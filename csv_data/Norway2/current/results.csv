@@ -9,78 +9,78 @@ Date,Home,Away,home_team_reg_score,away_team_reg_score,includedInPrior
 2022-04-04,Mjondalen IF,Kongsvinger,1,0,1
 2022-04-09,Brann,Asane Fotball,1,1,1
 2022-04-10,Grorud,Fredrikstad,2,2,1
-2022-04-11,Stabaek,Sogndal,0,0,1
-2022-04-11,Raufoss,Ranheim IL,1,1,1
-2022-04-11,Stjordals Blink,Sandnes Ulf,1,2,1
-2022-04-11,Kongsvinger,Skeid Oslo,1,0,1
-2022-04-11,Bryne,KFUM Oslo,1,2,1
 2022-04-11,Start Kristiansand,Mjondalen IF,1,1,1
+2022-04-11,Bryne,KFUM Oslo,1,2,1
+2022-04-11,Kongsvinger,Skeid Oslo,1,0,1
+2022-04-11,Stjordals Blink,Sandnes Ulf,1,2,1
+2022-04-11,Raufoss,Ranheim IL,1,1,1
+2022-04-11,Stabaek,Sogndal,0,0,1
 2022-04-18,Fredrikstad,Start Kristiansand,1,0,1
-2022-04-19,Mjondalen IF,Stjordals Blink,2,1,1
-2022-04-19,Sandnes Ulf,Kongsvinger,4,1,1
-2022-04-19,Ranheim IL,Grorud,2,1,1
-2022-04-19,KFUM Oslo,Raufoss,1,1,1
+2022-04-19,Asane Fotball,Stabaek,0,4,1
 2022-04-19,Sogndal,Bryne,2,1,1
 2022-04-19,Skeid Oslo,Brann,2,3,1
-2022-04-19,Asane Fotball,Stabaek,0,4,1
-2022-04-24,Brann,Sogndal,1,1,1
+2022-04-19,Ranheim IL,Grorud,2,1,1
+2022-04-19,Sandnes Ulf,Kongsvinger,4,1,1
+2022-04-19,KFUM Oslo,Raufoss,1,1,1
+2022-04-19,Mjondalen IF,Stjordals Blink,2,1,1
 2022-04-24,Stjordals Blink,KFUM Oslo,1,3,1
 2022-04-24,Raufoss,Grorud,1,1,1
+2022-04-24,Brann,Sogndal,1,1,1
 2022-04-25,Bryne,Ranheim IL,1,2,1
 2022-04-25,Stabaek,Sandnes Ulf,0,1,1
 2022-04-25,Kongsvinger,Asane Fotball,1,1,1
 2022-04-25,Mjondalen IF,Fredrikstad,2,0,1
 2022-04-25,Start Kristiansand,Skeid Oslo,3,2,1
 2022-04-29,Mjondalen IF,Bryne,2,1,1
-2022-05-08,Grorud,Start Kristiansand,0,3,1
 2022-05-08,Asane Fotball,Stjordals Blink,1,1,1
 2022-05-08,Skeid Oslo,Mjondalen IF,1,2,1
+2022-05-08,Grorud,Start Kristiansand,0,3,1
+2022-05-09,KFUM Oslo,Brann,1,5,1
+2022-05-09,Ranheim IL,Stabaek,0,1,1
 2022-05-09,Sandnes Ulf,Fredrikstad,0,4,1
 2022-05-09,Sogndal,Kongsvinger,2,1,1
-2022-05-09,KFUM Oslo,Brann,1,5,1
 2022-05-09,Raufoss,Bryne,2,0,1
-2022-05-09,Ranheim IL,Stabaek,0,1,1
-2022-05-15,Kongsvinger,Raufoss,4,1,1
 2022-05-15,Mjondalen IF,KFUM Oslo,2,1,1
 2022-05-15,Bryne,Asane Fotball,2,1,1
 2022-05-15,Stjordals Blink,Ranheim IL,0,1,1
 2022-05-15,Start Kristiansand,Sogndal,5,1,1
-2022-05-16,Fredrikstad,Skeid Oslo,2,0,1
-2022-05-16,Brann,Sandnes Ulf,3,0,1
+2022-05-15,Kongsvinger,Raufoss,4,1,1
 2022-05-16,Stabaek,Grorud,1,1,1
+2022-05-16,Brann,Sandnes Ulf,3,0,1
+2022-05-16,Fredrikstad,Skeid Oslo,2,0,1
+2022-05-22,Raufoss,Stabaek,0,4,1
 2022-05-22,Brann,Fredrikstad,3,0,1
 2022-05-22,Sogndal,Asane Fotball,2,3,1
-2022-05-22,Raufoss,Stabaek,0,4,1
+2022-05-23,Skeid Oslo,Stjordals Blink,3,1,1
+2022-05-23,Grorud,Bryne,2,2,1
 2022-05-23,Ranheim IL,Start Kristiansand,2,2,1
 2022-05-23,Sandnes Ulf,Mjondalen IF,0,2,1
 2022-05-23,KFUM Oslo,Kongsvinger,1,0,1
-2022-05-23,Grorud,Bryne,2,2,1
-2022-05-23,Skeid Oslo,Stjordals Blink,3,1,1
-2022-05-26,Start Kristiansand,Raufoss,2,2,1
-2022-05-26,Asane Fotball,Grorud,3,2,1
-2022-05-26,Kongsvinger,Brann,1,3,1
+2022-05-26,Skeid Oslo,Sandnes Ulf,0,1,1
+2022-05-26,Fredrikstad,KFUM Oslo,1,2,1
 2022-05-26,Mjondalen IF,Ranheim IL,1,2,1
 2022-05-26,Bryne,Stabaek,0,0,1
-2022-05-26,Fredrikstad,KFUM Oslo,1,2,1
-2022-05-26,Skeid Oslo,Sandnes Ulf,0,1,1
 2022-05-26,Stjordals Blink,Sogndal,1,3,1
-2022-05-29,Sogndal,Sandnes Ulf,1,2,1
-2022-05-29,Bryne,Start Kristiansand,2,0,1
+2022-05-26,Kongsvinger,Brann,1,3,1
+2022-05-26,Asane Fotball,Grorud,3,2,1
+2022-05-26,Start Kristiansand,Raufoss,2,2,1
 2022-05-29,Ranheim IL,Fredrikstad,3,2,1
-2022-05-30,Grorud,Stjordals Blink,1,2,1
-2022-05-30,Stabaek,Kongsvinger,1,0,1
-2022-05-30,Raufoss,Asane Fotball,1,0,1
+2022-05-29,Bryne,Start Kristiansand,2,0,1
+2022-05-29,Sogndal,Sandnes Ulf,1,2,1
 2022-05-30,KFUM Oslo,Skeid Oslo,3,0,1
+2022-05-30,Raufoss,Asane Fotball,1,0,1
 2022-05-30,Brann,Mjondalen IF,7,0,1
+2022-05-30,Stabaek,Kongsvinger,1,0,1
+2022-05-30,Grorud,Stjordals Blink,1,2,1
 2022-06-19,Stjordals Blink,Brann,1,2,1
 2022-06-19,Start Kristiansand,Stabaek,0,0,1
-2022-06-20,Sandnes Ulf,KFUM Oslo,2,2,1
-2022-06-20,Skeid Oslo,Sogndal,2,3,1
 2022-06-20,Kongsvinger,Grorud,2,2,1
 2022-06-20,Asane Fotball,Ranheim IL,1,2,1
+2022-06-20,Sandnes Ulf,KFUM Oslo,2,2,1
+2022-06-20,Skeid Oslo,Sogndal,2,3,1
+2022-06-26,Start Kristiansand,Kongsvinger,0,1,1
 2022-06-26,Stabaek,Fredrikstad,0,0,1
 2022-06-26,Raufoss,Skeid Oslo,1,0,1
-2022-06-26,Start Kristiansand,Kongsvinger,0,1,1
 2022-06-27,Bryne,Stjordals Blink,0,0,1
 2022-06-27,Asane Fotball,Sandnes Ulf,2,1,1
 2022-06-27,Grorud,Brann,0,2,1
@@ -89,8 +89,16 @@ Date,Home,Away,home_team_reg_score,away_team_reg_score,includedInPrior
 2022-07-03,Skeid Oslo,Grorud,3,2,1
 2022-07-03,Mjondalen IF,Stabaek,2,4,1
 2022-07-03,KFUM Oslo,Sogndal,3,2,1
-2022-07-04,Sandnes Ulf,Raufoss,1,4,1
-2022-07-04,Brann,Bryne,2,1,1
 2022-07-04,Stjordals Blink,Start Kristiansand,0,3,1
 2022-07-04,Fredrikstad,Asane Fotball,2,2,1
+2022-07-04,Sandnes Ulf,Raufoss,1,4,1
+2022-07-04,Brann,Bryne,2,1,1
 2022-07-04,Kongsvinger,Ranheim IL,2,2,1
+2022-07-07,Stabaek,Stjordals Blink,4,2,1
+2022-07-07,Start Kristiansand,Brann,0,2,1
+2022-07-07,Sogndal,Fredrikstad,1,1,1
+2022-07-07,Bryne,Kongsvinger,1,1,1
+2022-07-07,Asane Fotball,KFUM Oslo,0,3,1
+2022-07-07,Raufoss,Mjondalen IF,2,1,1
+2022-07-07,Grorud,Sandnes Ulf,1,3,1
+2022-07-07,Ranheim IL,Skeid Oslo,4,0,1

@@ -132,8 +132,12 @@ def standardizeTeamName(name, league):
             return ("Molde")
         elif ("viking fk" in lname):
             return ("Viking")
-        elif ("aalesunds" in lname):
+        elif ("aalesund" in lname):
             return ("Aalesund FK")
+        elif ("haugesund" in lname):
+            return ("Haugesund")
+        elif ("ham kam" in lname):
+            return ("Ham-Kam")
         else:
             return (name)
     elif (league == "Norway2"):
@@ -141,28 +145,30 @@ def standardizeTeamName(name, league):
             return ("Fredrikstad")
         elif ("ik start" in lname):
             return ("Start Kristiansand")
-        elif ("aasane fotball" in lname):
+        elif ("aasane " in lname):
             return ("Asane Fotball")
-        elif ("stabaek if" in lname):
+        elif ("stabaek " in lname):
             return ("Stabaek")
-        elif ("skeid fotball" in lname):
+        elif ("skeid " in lname):
             return ("Skeid Oslo")
         elif ("sk brann" in lname):
             return ("Brann")
         elif ("stjordals/blink" in lname):
             return ("Stjordals Blink")
-        elif ("sogndal il" in lname):
+        elif ("sogndal" in lname):
             return ("Sogndal")
-        elif ("bryne fk" in lname):
+        elif ("bryne" in lname):
             return ("Bryne")
-        elif ("raufoss il" in lname):
+        elif ("raufoss" in lname):
             return ("Raufoss")
         elif ("ranheim" == lname):
             return ("Ranheim IL")
-        elif ("grorud il" in lname):
+        elif ("grorud " in lname):
             return ("Grorud")
-        elif ("kongsvinger il fotball" in lname):
+        elif ("kongsvinger " in lname):
             return ("Kongsvinger")
+        elif ("kfum " in lname):
+            return ("KFUM Oslo")
         else:
             return (name)
     elif (league == "Sweden2"):
@@ -469,3 +475,13 @@ def grade_bets(league):
         bets["OU Result"] = ouresult
         bets.to_csv("./csv_data/" + league + "/current/bets.csv", index = False)
     return (netwin)
+
+def convert_league(league):
+    if (league == "NORWAY ELITESERIEN"):
+        return ("Norway1")
+    elif (league == "NORWAY DIVISION 1"):
+        return ("Norway2")
+    elif (league == "Norway1"):
+        return ("NORWAY ELITESERIEN")
+    elif (league == "Norway2"):
+        return ("NORWAY DIVISION 1")

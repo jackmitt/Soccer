@@ -52,7 +52,10 @@ def update(league):
             priors = pickle.load(inputFile)
     train = pd.read_csv("./csv_data/" + league + "/betting.csv", encoding = "ISO-8859-1")
     for i in range(len(train.index)):
-        train.at[i, "Date"] = datetime.date(int(train.at[i, "Date"].split("-")[0]), int(train.at[i, "Date"].split("-")[1]), int(train.at[i, "Date"].split("-")[2]))
+        try:
+            train.at[i, "Date"] = datetime.date(int(train.at[i, "Date"].split("-")[0]), int(train.at[i, "Date"].split("-")[1]), int(train.at[i, "Date"].split("-")[2]))
+        except:
+            train.at[i, "Date"] = datetime.date(int(train.at[i, "Date"].split("/")[2]), int(train.at[i, "Date"].split("/")[0]), int(train.at[i, "Date"].split("/")[1]))
     train = train.sort_values(by=["Date"], ignore_index = True)
     train = train.rename(columns={"Home Score": "home_team_reg_score"})
     train = train.rename(columns={"Away Score": "away_team_reg_score"})
@@ -259,7 +262,7 @@ def predict_pinnacle_games(league, url, token):
 
     dict = {}
     for match in lines:
-        dict[lines[match]["GameId"]] = {"MatchId":match,"Home":standardizeTeamName(lines[match]["Home"], league),"Away":standardizeTeamName(lines[match]["Away"], league),"AH":lines[match]["AH"],"MarketTypeId":lines[match]["MarketTypeId"],"home_odds":lines[match]["home_odds"],"away_odds":lines[match]["away_odds"]}
+        dict[lines[match]["GameId"]] = {"Date":lines[match]["Date"],"MatchId":match,"Home":standardizeTeamName(lines[match]["Home"], league),"Away":standardizeTeamName(lines[match]["Away"], league),"AH":lines[match]["AH"],"MarketTypeId":lines[match]["MarketTypeId"],"home_odds":lines[match]["home_odds"],"away_odds":lines[match]["away_odds"]}
         game_pred = single_game_prediction(league,lines[match],teams_to_int)
         for key in game_pred:
             dict[lines[match]["GameId"]][key] = game_pred[key][0]
@@ -283,7 +286,7 @@ def bet(league, url, token):
     placement = get_placement_info(league, url, token)
     bankroll = api.get_account_balance(url, token)
     print ("Current Bankroll:", bankroll)
-    bet_refs = {"League":[],"MatchId":[],"Home":[],"Away":[],"Ref":[],"AH":[],"Odds":[],"Stake":[]}
+    bet_refs = {"Date":[],"League":[],"MatchId":[],"Home":[],"Away":[],"Ref":[],"AH":[],"Odds":[],"Stake":[],"Side":[]}
     cur_bets = api.get_current_bets(url, token)
     print (cur_bets)
     for game in placement:
@@ -307,7 +310,7 @@ def bet(league, url, token):
                     total_staked += bet["Stake"]
                 avg_taken_odds = weighted_avg_odds / total_staked
                 total_staked = total_staked / bankroll
-            print (avg_taken_odds, total_staked)
+            print ("Prev bet:", avg_taken_odds, total_staked)
             if (placement[game]["OddsName"] == "HomeOdds"):
                 p = placement[game]["p_home_cover"]
             elif (placement[game]["OddsName"] == "AwayOdds"):
@@ -319,30 +322,41 @@ def bet(league, url, token):
                 continue
             print ("NEW BET:", desired_bet)
             print ("BOOKIEODDS:", best_odds["Book"] + ":" + str(best_odds["odds"]))
-    #         temp_bookie_odds = "P88:" + str(placement[game]["placement_info"]["P88"]["odds"])
-    #         return_ref = api.place_bet(url, token, game, placement[game]["MarketTypeId"], placement[game]["OddsName"], 2, temp_bookie_odds)
-    #         if (return_ref != -1):
-    #             bet_refs["League"].append(league)
-    #             bet_refs["MatchId"].append(placement[game]["MatchId"])
-    #             bet_refs["Home"].append(placement[game]["Home"])
-    #             bet_refs["Away"].append(placement[game]["Away"])
-    #             bet_refs["Ref"].append(return_ref)
-    #             bet_refs["AH"].append(placement[game]["AH"])
-    #             #UPDATE THIS FOR WHEN YOU AVERAGE ODDS BETWEEN 2 BOOKS
-    #             bet_refs["Odds"].append(placement[game]["placement_info"]["P88"]["odds"])
-    #             bet_refs["Stake"].append(2)
-    #         print ("Just placed bet", (placement[game]["Home"], placement[game]["Away"]))
-    # df = pd.DataFrame.from_dict(bet_refs)
-    # if (exists("./csv_data/api_bets.csv")):
-    #     oldbets = pd.read_csv("./csv_data/api_bets.csv", encoding = "ISO-8859-1")
-    #     oldbets = oldbets.append(df)
-    #     oldbets.to_csv("./csv_data/api_bets.csv", index = False)
-    # else:
-    #     df.to_csv("./csv_data/api_bets.csv", index = False)
+            return_ref = api.place_bet(url, token, game, placement[game]["MarketTypeId"], placement[game]["OddsName"], desired_bet, best_odds["Book"] + ":" + str(best_odds["odds"]))
+            if (return_ref != -1):
+                bet_refs["Date"].append(placement[game]["Date"].split()[0])
+                bet_refs["League"].append(league)
+                bet_refs["MatchId"].append(placement[game]["MatchId"])
+                bet_refs["Home"].append(placement[game]["Home"])
+                bet_refs["Away"].append(placement[game]["Away"])
+                bet_refs["Ref"].append(return_ref)
+                bet_refs["AH"].append(placement[game]["AH"])
+                bet_refs["Odds"].append(best_odds["odds"])
+                bet_refs["Stake"].append(desired_bet)
+                bet_refs["Side"].append(placement[game]["OddsName"])
+            print ("Just placed bet", (placement[game]["Home"], placement[game]["Away"]))
+    df = pd.DataFrame.from_dict(bet_refs)
+    if (exists("./csv_data/api_bets.csv")):
+        oldbets = pd.read_csv("./csv_data/api_bets.csv", encoding = "ISO-8859-1")
+        oldbets = oldbets.append(df)
+        oldbets.to_csv("./csv_data/api_bets.csv", index = False)
+    else:
+        df.to_csv("./csv_data/api_bets.csv", index = False)
 
-#scr.nowgoalCurSeason("Norway1")
-#update("Norway1")
-url, token = api.login()
-bet("Norway1", url, token)
-#print(api.get_current_bets(url, token))
-api.logout(url, token)
+
+
+leagues = ["Brazil2"]
+for league in leagues:
+    #scr.nowgoalCurSeason(league)
+    #update(league)
+    url, token = api.login()
+    #api.get_team_names(url, token, [convert_league(league)])
+    bet(league, url, token)
+    #print (api.non_running_bets(url, token))
+    #print(api.get_current_bets(url, token))
+    #print(api.get_account_balance(url, token))
+    #print (api.get_bet_by_ref(url, token, "WA-1657457657223"))
+
+
+
+    api.logout(url, token)

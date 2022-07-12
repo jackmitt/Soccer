@@ -517,3 +517,7 @@ def convert_league(league):
         return ("BRAZIL SERIE B")
     elif (league == "BRAZIL SERIE B"):
         return ("Brazil2")
+    elif (league == "Sweden2"):
+        return ("SWEDEN SUPERETTAN")
+    elif (league == "SWEDEN SUPERETTAN"):
+        return ("Sweden2")

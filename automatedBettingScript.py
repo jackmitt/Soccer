@@ -43,6 +43,9 @@ def update(league):
     f_thresh = 0.075         # A cap on team variable standard deviation to prevent blowup
     Δσ = 0.001               # The standard deviaton of the random walk variables
 
+    if (0 not in list(pd.read_csv("./csv_data/" + league + "/current/results.csv", encoding = "ISO-8859-1")["includedInPrior"])):
+        return (-1)
+
 
     if (exists("./csv_data/" + league + "/current/last_prior.pkl")):
         with open("./csv_data/" + league + "/current/last_prior.pkl","rb") as inputFile:
@@ -343,20 +346,30 @@ def bet(league, url, token):
     else:
         df.to_csv("./csv_data/api_bets.csv", index = False)
 
+def check_accepted_bets(url, token):
+    api_bets = pd.read_csv("./csv_data/api_bets.csv")
+    accept = []
+    for index, row in api_bets.iterrows():
+        if (row["Accepted"] == "T" or api.get_bet_by_ref(url, token, row["Ref"])["Date"][0]["Status"] == "Running"):
+            accept.append("T")
+        else:
+            accept.append("F")
+    api_bets["Accepted"] = accept
+    api_bets.to_csv("./csv_data/api_bets.csv", index = False)
+
+url, token = api.login()
+check_accepted_bets(url, token)
 
 
-leagues = ["Brazil2"]
+leagues = ["Japan1","Japan2","Korea1","Norway1","Brazil1","Brazil2","Norway2","Sweden2"]
 for league in leagues:
-    #scr.nowgoalCurSeason(league)
-    #update(league)
-    url, token = api.login()
+    scr.nowgoalCurSeason(league)
+    update(league)
     #api.get_team_names(url, token, [convert_league(league)])
-    bet(league, url, token)
+    for i in range(3):
+        bet(league, url, token)
     #print (api.non_running_bets(url, token))
     #print(api.get_current_bets(url, token))
     #print(api.get_account_balance(url, token))
     #print (api.get_bet_by_ref(url, token, "WA-1657457657223"))
-
-
-
-    api.logout(url, token)
+api.logout(url, token)

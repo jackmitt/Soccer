@@ -196,6 +196,10 @@ def standardizeTeamName(name, league):
             return ("Utsiktens BK")
         elif ("trelleborgs" in lname):
             return ("Trelleborgs FF")
+        elif ("orebro " in lname):
+            return ("Orebro")
+        elif ("halmstads " in lname):
+            return ("Halmstads")
         else:
             return (name)
     elif (league == "Brazil1"):

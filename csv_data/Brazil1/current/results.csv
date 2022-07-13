@@ -110,21 +110,21 @@ Date,Home,Away,home_team_reg_score,away_team_reg_score,includedInPrior
 2022-06-13,Sao Paulo,America MG,1,0,1
 2022-06-14,Botafogo RJ,Avai FC,0,1,1
 2022-06-15,Juventude,Santos,1,2,1
+2022-06-16,America MG,Fluminense RJ,0,0,1
 2022-06-16,Bragantino,Coritiba PR,4,2,1
 2022-06-16,Ceara,Atletico Mineiro,0,0,1
 2022-06-16,Flamengo,Cuiaba,2,0,1
 2022-06-16,Goias,Internacional RS,1,2,1
 2022-06-16,Atletico Paranaense,Corinthians Paulista (SP),1,1,1
-2022-06-16,America MG,Fluminense RJ,0,0,1
 2022-06-17,Avai FC,Fortaleza,3,2,1
-2022-06-17,Palmeiras,Atletico Clube Goianiense,4,2,1
 2022-06-17,Botafogo RJ,Sao Paulo,1,0,1
+2022-06-17,Palmeiras,Atletico Clube Goianiense,4,2,1
 2022-06-19,Cuiaba,Ceara,0,0,1
 2022-06-19,Santos,Bragantino,2,2,1
-2022-06-20,Fluminense RJ,Avai FC,2,0,1
+2022-06-20,Fortaleza,America MG,1,0,1
 2022-06-20,Internacional RS,Botafogo RJ,2,3,1
 2022-06-20,Atletico Clube Goianiense,Juventude,3,1,1
-2022-06-20,Fortaleza,America MG,1,0,1
+2022-06-20,Fluminense RJ,Avai FC,2,0,1
 2022-06-20,Atletico Mineiro,Flamengo,2,0,1
 2022-06-20,Corinthians Paulista (SP),Goias,1,0,1
 2022-06-20,Coritiba PR,Atletico Paranaense,0,1,1
@@ -136,9 +136,9 @@ Date,Home,Away,home_team_reg_score,away_team_reg_score,includedInPrior
 2022-06-26,Atletico Mineiro,Fortaleza,3,2,1
 2022-06-27,Sao Paulo,Juventude,0,0,1
 2022-06-27,Ceara,Atletico Clube Goianiense,1,1,1
+2022-06-27,Goias,Cuiaba,1,0,1
 2022-06-27,Avai FC,Palmeiras,2,2,1
 2022-06-27,Botafogo RJ,Fluminense RJ,0,1,1
-2022-06-27,Goias,Cuiaba,1,0,1
 2022-07-03,Fluminense RJ,Corinthians Paulista (SP),4,0,1
 2022-07-03,Juventude,Atletico Mineiro,1,2,1
 2022-07-03,Santos,Flamengo,1,2,1
@@ -149,12 +149,13 @@ Date,Home,Away,home_team_reg_score,away_team_reg_score,includedInPrior
 2022-07-04,America MG,Goias,1,0,1
 2022-07-04,Coritiba PR,Fortaleza,2,1,1
 2022-07-05,Bragantino,Botafogo RJ,0,1,1
-2022-07-10,Goias,Atletico Paranaense,2,1,1
-2022-07-10,Coritiba PR,Juventude,2,2,1
 2022-07-10,Bragantino,Avai FC,4,0,1
 2022-07-10,Fluminense RJ,Ceara,2,1,1
-2022-07-11,Santos,Atletico Clube Goianiense,1,0,1
+2022-07-10,Goias,Atletico Paranaense,2,1,1
+2022-07-10,Coritiba PR,Juventude,2,2,1
 2022-07-11,Fortaleza,Palmeiras,0,0,1
+2022-07-11,Santos,Atletico Clube Goianiense,1,0,1
+2022-07-11,Cuiaba,Botafogo RJ,2,0,1
 2022-07-11,Corinthians Paulista (SP),Flamengo,1,0,1
 2022-07-11,Atletico Mineiro,Sao Paulo,0,0,1
-2022-07-11,Cuiaba,Botafogo RJ,2,0,1
+2022-07-12,Internacional RS,America MG,1,0,1

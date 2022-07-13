@@ -15,6 +15,7 @@ import asian_odds_api as api
 from helpers import standardizeTeamName
 from helpers import convert_league
 import math
+import time
 
 #where d0 is the avg odds already bet, d1 is the quoted odds, k0 is the stake already bet (in pct of bankroll) at d0 odds
 #returns pct of bankroll you should bet at d1 odds on top of k0 @ d0
@@ -350,7 +351,7 @@ def check_accepted_bets(url, token):
     api_bets = pd.read_csv("./csv_data/api_bets.csv")
     accept = []
     for index, row in api_bets.iterrows():
-        if (row["Accepted"] == "T" or api.get_bet_by_ref(url, token, row["Ref"])["Date"][0]["Status"] == "Running"):
+        if (row["Accepted"] == "T" or (api.get_bet_by_ref(url, token, row["Ref"])["Code"] == 0 and api.get_bet_by_ref(url, token, row["Ref"])["Data"][0]["Status"] == "Running")):
             accept.append("T")
         else:
             accept.append("F")
@@ -362,11 +363,15 @@ check_accepted_bets(url, token)
 
 
 leagues = ["Japan1","Japan2","Korea1","Norway1","Brazil1","Brazil2","Norway2","Sweden2"]
+leagues = ["Sweden2"]
 for league in leagues:
-    scr.nowgoalCurSeason(league)
-    update(league)
+    #scr.nowgoalCurSeason(league)
+    #update(league)
     #api.get_team_names(url, token, [convert_league(league)])
     for i in range(3):
+        api.logout(url, token)
+        url, token = api.login()
+        time.sleep(7)
         bet(league, url, token)
     #print (api.non_running_bets(url, token))
     #print(api.get_current_bets(url, token))

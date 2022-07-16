@@ -15,3 +15,5 @@ def verifyTeamNamesTransfermarkt(league):
                 fix = fix + " "
         if (standardizeTeamName(fix,league) not in real):
             print (fix)
+
+verifyTeamNamesTransfermarkt("Japan2")

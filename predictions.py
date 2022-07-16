@@ -163,12 +163,19 @@ def bayesian(league):
             fix = fix + row["Team"].split()[i]
             if (i != len(row["Team"].split()) - 1):
                 fix = fix + " "
-        club_val_map[row["Season"]][standardizeTeamName(fix,league)] = float(row["Value"].split("£")[1].split("m")[0])
+        if ("Th." in row["Value"][1:]):
+            club_val_map[row["Season"]][standardizeTeamName(fix,league)] = float(row["Value"][1:].split("Th")[0]) / 1000
+        else:
+            club_val_map[row["Season"]][standardizeTeamName(fix,league)] = float(row["Value"][1:].split("m")[0])
 
+    print (club_val_map)
 
     train = pd.read_csv("./csv_data/" + league + "/betting.csv", encoding = "ISO-8859-1")
     for i in range(len(train.index)):
-        train.at[i, "Date"] = datetime.date(int(train.at[i, "Date"].split("-")[0]), int(train.at[i, "Date"].split("-")[1]), int(train.at[i, "Date"].split("-")[2]))
+        try:
+            train.at[i, "Date"] = datetime.date(int(train.at[i, "Date"].split("/")[2]), int(train.at[i, "Date"].split("/")[0]), int(train.at[i, "Date"].split("/")[1]))
+        except:
+            train.at[i, "Date"] = datetime.date(int(train.at[i, "Date"].split("-")[0]), int(train.at[i, "Date"].split("-")[1]), int(train.at[i, "Date"].split("-")[2]))
     train = train.sort_values(by=["Date"], ignore_index = True)
     finalDict = {}
     train = train.rename(columns={"Home Score": "home_team_reg_score"})
@@ -257,14 +264,17 @@ def bayesian(league):
 
     oneIterComplete = False
     startIndex = 0
+    new_teams = {}
 
     for index, row in train.iterrows():
+        print (row["Date"])
         for col in train.columns:
             finalDict[col].append(row[col])
         if (index != splitIndex and abs(row["Date"] - train.at[index-1,"Date"]).days > 30):
             bmf.fatten_priors(priors, 1.33, f_thresh)
         #THIS ONLY WORKS FOR 1 YEAR LEAGUES, NEED TO HARD CODE SEASONS FOR OTHER LEAGUES
-        if (index != splitIndex and row["Date"].year - train.at[index-1,"Date"].year == 1):
+        if (index != splitIndex and row["Season"] != train.at[index-1,"Season"]):
+            new_teams = {}
             #adjust priors for newly promoted/demoted teams based on market value *starting in 2013
             curYear = row["Date"].year
             if (curYear >= 2013):
@@ -277,12 +287,19 @@ def bayesian(league):
                 curValsStd = np.std(curVals)
                 for team in club_val_map[curYear]:
                     if (team not in club_val_map[curYear-1]):
+                        new_teams[teams_to_int[team]] = 0
                         val_z = (club_val_map[curYear][team] - curValsMean) / curValsStd
-                        priors["offense"][0][teams_to_int[team]] = curOffStd * val_z
-                        priors["defense"][0][teams_to_int[team]] = curDefStd * val_z
+                        priors["offense"][0][teams_to_int[team]] = curOffStd * val_z / 4
+                        priors["defense"][0][teams_to_int[team]] = curDefStd * val_z / 4
         if (index != splitIndex and row["gw"] - train.at[index-1,"gw"] == 1):
-            new_obs = train.iloc[startIndex:index]
 
+            for i in range(len(priors["offense"][0])):
+                if (i in new_teams and new_teams[i] <= 10):
+                    priors["offense"][1][i] = priors["offense"][1][i] * 2
+                    priors["defense"][1][i] = priors["defense"][1][i] * 2
+
+            new_obs = train.iloc[startIndex:index]
+            print ("SLICE INDEXES:", startIndex, index)
             home_team = theano.shared(new_obs.i_home.values)
             away_team = theano.shared(new_obs.i_away.values)
             team_pair = theano.shared(new_obs.i_pair.values)
@@ -293,6 +310,13 @@ def bayesian(league):
             posteriors = bmf.model_update(home_team, observed_home_goals, away_team, observed_away_goals, priors, num_teams, factor, f_thresh, Δσ)
 
             priors = posteriors
+
+            for team in new_obs.i_home.values:
+                if (team in new_teams):
+                    new_teams[team] += 1
+            for team in new_obs.i_away.values:
+                if (team in new_teams):
+                    new_teams[team] += 1
 
             startIndex = index
             oneIterComplete = True

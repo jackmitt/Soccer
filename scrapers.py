@@ -822,7 +822,22 @@ def pinnacle(league):
 
 def transfermarkt(league):
     if (league == "Japan1"):
-        urlRoot = "https://www.transfermarkt.co.uk/j1-league/startseite/wettbewerb/JAP1/plus/?saison_id="
+        urlRoot = "https://www.transfermarkt.com/j1-league/startseite/wettbewerb/JAP1/plus/?saison_id="
+    elif (league == "Japan2"):
+        urlRoot = "https://www.transfermarkt.com/j2-league/startseite/wettbewerb/JAP2/plus/?saison_id="
+    elif (league == "Norway1"):
+        urlRoot = "https://www.transfermarkt.com/eliteserien/startseite/wettbewerb/NO1/plus/?saison_id="
+    elif (league == "Norway2"):
+        urlRoot = "https://www.transfermarkt.com/obos-ligaen/startseite/wettbewerb/NO2/plus/?saison_id"
+    elif (league == "Brazil1"):
+        urlRoot = "https://www.transfermarkt.com/campeonato-brasileiro-serie-a/startseite/wettbewerb/BRA1/plus/?saison_id="
+    elif (league == "Brazil2"):
+        urlRoot = "https://www.transfermarkt.com/campeonato-brasileiro-serie-b/startseite/wettbewerb/BRA2/plus/?saison_id="
+    elif (league == "Sweden2"):
+        urlRoot = "https://www.transfermarkt.com/superettan/startseite/wettbewerb/SE2/plus/?saison_id="
+    elif (league == "Korea1"):
+        urlRoot = "https://www.transfermarkt.com/k-league-1/startseite/wettbewerb/RSK1/plus/?saison_id="
+
 
 
     A = Database(["Season","Team","Value"])

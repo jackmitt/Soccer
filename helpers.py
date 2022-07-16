@@ -102,6 +102,16 @@ def standardizeTeamName(name, league):
             return ("Zweigen Kanazawa FC")
         elif ("niigata albirex" in lname):
             return ("Albirex Niigata")
+        elif ("consadole sapporo" in lname):
+            return ("Consadole Sapporo")
+        elif ("matsumoto yamaga" in lname):
+            return ("Matsumoto Yamaga FC")
+        elif (" iwata" in lname):
+            return ("Jubilo Iwata")
+        elif ("jef united" in lname):
+            return ("JEF United Ichihara Chiba")
+        elif ("mito holly" in lname):
+            return ("Mito Hollyhock")
         else:
             return (name)
     elif (league == "Korea1"):
@@ -111,29 +121,63 @@ def standardizeTeamName(name, league):
             return ("Suwon FC")
         elif ("suwon samsung bluewings" in lname):
             return ("Suwon Samsung Bluewings")
+        elif ("sangju sangmu" in lname):
+            return ("Gimcheon Sangmu")
+        elif ("ulsan hyundai" in lname):
+            return ("Ulsan Hyundai FC")
+        elif ("seongnam" in lname):
+            return ("Seongnam FC")
+        elif ("busan ipark" in lname):
+            return ("Busan I Park")
+        elif ("chunnam dragon" in lname):
+            return ("Jeonnam Dragons")
+        elif ("gwangju " in lname):
+            return ("Gwangju Football Club")
         else:
             return (name)
     elif (league == "Norway1"):
-        if ("lillestrom sk" in lname):
+        if ("lillestrom sk" in lname or "lillestrøm" in lname):
             return ("Lillestrom")
         elif ("sarpsborg 08" in lname):
             return ("Sarpsborg 08")
-        elif ("tromso" == lname):
+        elif ("tromso" == lname or "tromsø" in lname):
             return ("Tromso IL")
         elif ("fk jerv" in lname):
             return ("Jerv")
         elif ("rosenborg" in lname):
             return ("Rosenborg")
-        elif ("odd bk" == lname):
+        elif ("odd bk" == lname or "odds bk" in lname):
             return ("Odd Grenland")
-        elif ("stromsgodset" in lname):
+        elif ("stromsgodset" in lname or "strømsgodset" in lname):
             return ("Stromsgodset")
         elif ("molde fk" in lname):
             return ("Molde")
-        elif ("viking fk" in lname):
+        elif ("viking fk" in lname or "viking stava" in lname):
             return ("Viking")
         elif ("aalesunds" in lname):
             return ("Aalesund FK")
+        elif ("lerenga " in lname):
+            return ("Valerenga")
+        elif ("sk brann" in lname):
+            return ("Brann")
+        elif ("haugesund" in lname):
+            return ("Haugesund")
+        elif ("fredrikstad" in lname):
+            return ("Fredrikstad")
+        elif ("stabaek if" in lname or "stabæk" in lname):
+            return ("Stabaek")
+        elif ("hönefoss" in lname):
+            return ("Honefoss BK")
+        elif ("sogndal il" in lname):
+            return ("Sogndal")
+        elif ("ik start" in lname):
+            return ("Start Kristiansand")
+        elif ("/glimt" in lname):
+            return ("Bodo Glimt")
+        elif ("sandefjord" in lname):
+            return ("Sandefjord")
+        elif ("mjøndalen" in lname):
+            return ("Mjondalen IF")
         else:
             return (name)
     elif (league == "Norway2"):
@@ -143,13 +187,13 @@ def standardizeTeamName(name, league):
             return ("Start Kristiansand")
         elif ("aasane fotball" in lname):
             return ("Asane Fotball")
-        elif ("stabaek if" in lname):
+        elif ("stabaek if" in lname or "stabæk" in lname):
             return ("Stabaek")
         elif ("skeid fotball" in lname):
             return ("Skeid Oslo")
         elif ("sk brann" in lname):
             return ("Brann")
-        elif ("stjordals/blink" in lname):
+        elif ("stj" in lname and "rdals" in lname and "blink" in lname):
             return ("Stjordals Blink")
         elif ("sogndal il" in lname):
             return ("Sogndal")
@@ -161,8 +205,12 @@ def standardizeTeamName(name, league):
             return ("Ranheim IL")
         elif ("grorud il" in lname):
             return ("Grorud")
-        elif ("kongsvinger il fotball" in lname):
+        elif ("kongsvinger" in lname):
             return ("Kongsvinger")
+        elif ("mjøndalen" in lname):
+            return ("Mjondalen IF")
+        elif ("kfum" in lname and "oslo" in lname):
+            return ("KFUM Oslo")
         else:
             return (name)
     elif (league == "Sweden2"):
@@ -189,29 +237,29 @@ def standardizeTeamName(name, league):
             return ("Atletico Paranaense")
         elif ("bragantino" in lname):
             return ("Bragantino")
-        elif ("sao paulo" in lname):
+        elif ("sao paulo" in lname or "são paulo" in lname):
             return ("Sao Paulo")
         elif ("corinthians" in lname):
             return ("Corinthians Paulista (SP)")
         elif ("fluminense" in lname):
             return ("Fluminense RJ")
-        elif ("internacional rs" in lname):
+        elif ("internacional rs" in lname or "sport club internacional" in lname):
             return ("Internacional RS")
-        elif ("santos fc sp" in lname):
+        elif ("santos fc" in lname):
             return ("Santos")
-        elif ("america fc mg" in lname):
+        elif ("america fc mg" in lname or ("américa" in lname and "(mg)" in lname)):
             return ("America MG")
         elif ("juventude" in lname):
             return ("Juventude")
-        elif ("cuiaba esporte" in lname):
+        elif ("cuiaba esporte" in lname or "cuiabá" in lname):
             return ("Cuiaba")
         elif ("ceara sc" in lname):
             return ("Ceara")
         elif ("goianiense" in lname):
             return ("Atletico Clube Goianiense")
-        elif ("goias ec go" in lname):
+        elif ("goias ec go" in lname or "goiás" in lname):
             return ("Goias")
-        elif ("atletico mineiro" in lname):
+        elif ("atletico mineiro" in lname or "atlético mineiro" in lname):
             return ("Atletico Mineiro")
         elif ("botafogo" in lname):
             return ("Botafogo RJ")
@@ -219,16 +267,52 @@ def standardizeTeamName(name, league):
             return ("Fortaleza")
         elif ("coritiba" in lname):
             return ("Coritiba PR")
+        elif (("gremio" in lname or "grêmio" in lname) and "porto" in lname):
+            return ("Gremio (RS)")
+        elif ("cruzeiro" in lname):
+            return ("Cruzeiro (MG)")
+        elif ("vasco da gama" in lname):
+            return ("Vasco da Gama")
+        elif ("figueirense" in lname):
+            return ("Figueirense")
+        elif ("portuguesa" in lname):
+            return ("Portuguesa Desportos")
+        elif (" bahia" in lname):
+            return ("Bahia")
+        elif ("sc recife pe" in lname or "do recife" in lname):
+            return ("Sport Club Recife PE")
+        elif ("nautico pe" in lname or "náutico" in lname):
+            return ("Nautico (PE)")
+        elif ("ponte preta" in lname):
+            return ("Ponte Preta")
+        elif ("criciuma" in lname or "criciúma" in lname):
+            return ("Criciuma")
+        elif ("vitória" in lname):
+            return ("Vitoria BA")
+        elif ("chapecoense" in lname):
+            return ("Chapecoense SC")
+        elif ("avaí futebol clube (sc)" in lname):
+            return ("Avai FC SC")
+        elif ("joinville" in lname):
+            return ("Joinville SC")
+        elif ("santa cruz" in lname):
+            return ("Santa Cruz PE")
+        elif ("ceará" in lname):
+            return ("Ceara")
+        elif ("paraná" in lname):
+            return ("Parana PR")
+        elif ("centro sportivo alagoano" in lname):
+            return ("Centro Sportivo Alagoano")
         else:
             return (name)
     elif (league == "Brazil2"):
-        if ("sc recife pe" in lname):
+        if ("sc recife pe" in lname or "do recife" in lname):
             return ("Sport Club Recife PE")
         elif ("ituano fc sp" in lname):
             return ("Ituano  SP")
         elif ("gremio novorizontino" in lname):
             return ("Gremio Novorizontin")
-        elif ("brusque sc" in lname):
+        elif ("brusque " in lname):
             return ("Brusque FC")
         elif ("cs alagoano al" in lname):
             return ("Centro Sportivo Alagoano")
@@ -236,30 +320,146 @@ def standardizeTeamName(name, league):
             return ("Vila Nova")
         elif ("tombense" in lname):
             return ("Tombense")
-        elif ("ec bahia" in lname):
+        elif (" bahia" in lname):
             return ("Bahia")
-        elif ("sampaio correa" in lname):
+        elif ("sampaio corr" in lname):
             return ("Sampaio Correa")
         elif ("cruzeiro" in lname):
             return ("Cruzeiro (MG)")
         elif ("londrina" in lname):
             return ("Londrina PR")
-        elif ("cr brasil al" in lname):
+        elif ("cr brasil al" in lname or "regatas brasil" in lname):
             return ("CRB AL")
-        elif ("nautico pe" in lname):
+        elif ("nautico pe" in lname or "náutico" in lname):
             return ("Nautico (PE)")
         elif ("operario ferroviario" in lname):
             return ("Operario Ferroviario PR")
-        elif ("gremio fb porto" in lname):
+        elif (("gremio" in lname or "grêmio" in lname) and "porto" in lname):
             return ("Gremio (RS)")
-        elif ("guarani fc sp" in lname):
+        elif ("guarani " in lname):
             return ("Guarani SP")
-        elif ("criciuma" in lname):
+        elif ("criciuma" in lname or "criciúma" in lname):
             return ("Criciuma")
         elif ("vasco da gama" in lname):
             return ("Vasco da Gama")
         elif ("ponte preta" in lname):
             return ("Ponte Preta")
+        elif ("chapecoense" in lname):
+            return ("Chapecoense SC")
+        elif ("flamengo" in lname):
+            return ("Flamengo")
+        elif ("palmeiras" in lname):
+            return ("Palmeiras")
+        elif ("paranaense" in lname):
+            return ("Atletico Paranaense")
+        elif ("bragantino" in lname):
+            return ("Bragantino")
+        elif ("sao paulo" in lname or "são paulo" in lname):
+            return ("Sao Paulo")
+        elif ("corinthians" in lname):
+            return ("Corinthians Paulista (SP)")
+        elif ("fluminense" in lname):
+            return ("Fluminense RJ")
+        elif ("internacional rs" in lname or "sport club internacional" in lname):
+            return ("Internacional RS")
+        elif ("santos fc" in lname):
+            return ("Santos")
+        elif ("america fc mg" in lname or ("américa" in lname and "(mg)" in lname)):
+            return ("America MG")
+        elif ("juventude" in lname):
+            return ("Juventude")
+        elif ("cuiaba esporte" in lname or "cuiabá" in lname):
+            return ("Cuiaba")
+        elif ("ceara sc" in lname):
+            return ("Ceara")
+        elif ("goianiense" in lname):
+            return ("Atletico Clube Goianiense")
+        elif ("goias ec go" in lname or "goiás" in lname):
+            return ("Goias")
+        elif ("atletico mineiro" in lname or "atlético mineiro" in lname):
+            return ("Atletico Mineiro")
+        elif ("botafogo" in lname):
+            return ("Botafogo RJ")
+        elif ("fortaleza" in lname):
+            return ("Fortaleza")
+        elif ("coritiba" in lname):
+            return ("Coritiba PR")
+        elif (("gremio" in lname or "grêmio" in lname) and "porto" in lname):
+            return ("Gremio (RS)")
+        elif ("cruzeiro" in lname):
+            return ("Cruzeiro (MG)")
+        elif ("vasco da gama" in lname):
+            return ("Vasco da Gama")
+        elif ("figueirense" in lname):
+            return ("Figueirense")
+        elif ("portuguesa" in lname):
+            return ("Portuguesa Desportos")
+        elif (" bahia" in lname):
+            return ("Bahia")
+        elif ("sc recife pe" in lname or "do recife" in lname):
+            return ("Sport Club Recife PE")
+        elif ("nautico pe" in lname or "náutico" in lname):
+            return ("Nautico (PE)")
+        elif ("ponte preta" in lname):
+            return ("Ponte Preta")
+        elif ("criciuma" in lname or "criciúma" in lname):
+            return ("Criciuma")
+        elif ("vitória" in lname):
+            return ("Vitoria BA")
+        elif ("chapecoense" in lname):
+            return ("Chapecoense SC")
+        elif ("avaí futebol clube (sc)" in lname):
+            return ("Avai FC SC")
+        elif ("joinville" in lname):
+            return ("Joinville SC")
+        elif ("santa cruz" in lname):
+            return ("Santa Cruz PE")
+        elif ("ceará" in lname):
+            return ("Ceara")
+        elif ("paraná" in lname):
+            return ("Parana PR")
+        elif ("centro sportivo alagoano" in lname):
+            return ("Centro Sportivo Alagoano")
+        elif ("barueri" in lname):
+            return ("Gremio Barueri SP")
+        elif ("abc " in lname and "(rn)" in lname):
+            return ("ABC RN")
+        elif ("américa" in lname and "(rn)" in lname):
+            return ("America FC Natal RN")
+        elif ("boa esporte" in lname):
+            return ("Boa Esporte Clube")
+        elif ("caetano" in lname):
+            return ("Sao Caetano")
+        elif ("guaratinguet" in lname):
+            return ("Guaratingueta")
+        elif ("ipatinga" in lname):
+            return ("Ipatinga")
+        elif ("rapiraquense" in lname):
+            return ("ASA AL")
+        elif ("oeste " in lname):
+            return ("Oeste")
+        elif ("paysandu" in lname):
+            return ("SC Paysandu Para")
+        elif ("icasa " in lname):
+            return ("Icasa CE")
+        elif ("luverdense" in lname):
+            return ("Luverdense")
+        elif ("macaé " in lname):
+            return ("Macae")
+        elif ("mogi mirim" in lname):
+            return ("Mogi Mirim EC")
+        elif ("grêmio esportivo brasil (rs)" in lname):
+            return ("Brasil de Pelotas")
+        elif ("tupi " in lname):
+            return ("Tupi Juiz de Fora MG")
+        elif ("são bento" in lname):
+            return ("Sao Bento")
+        elif ("perário ferroviário" in lname):
+            return ("Operario Ferroviario PR")
+        elif ("confiança " in lname):
+            return ("Confianca SE")
+        elif ("do remo" in lname):
+            return ("Remo Belem (PA)")
         else:
             return (name)
 

@@ -20,6 +20,8 @@ def analyzeWinRates(league, betType, timing, pType = ""):
             else:
                 seasons[str(row["Date"].year) + "_2"] = {"<3%":[],"3-5%":[],"5-10%":[],"10-17.5%":[],"17.5-25%":[],"25-40%":[],"40%+":[]}
                 curSeason = str(row["Date"].year) + "_2"
+        if (row["Date"].year < 2017):
+            continue
         if (betType == "1X2"):
             if (row[pType + "p_1"] > 1 / row[timing + " 1"]):
                 if ((row[timing + " 1"] - 1) * row[pType + "p_1"] - (1 - row[pType + "p_1"]) < 0.03):
@@ -568,7 +570,7 @@ def analyzeWinRates(league, betType, timing, pType = ""):
         print (key + ":", np.average(all[key]), len(all[key]))
 
 def kellybet(league, betType, timing, bankroll, kellyDiv, betThresh, pType = ""):
-    pred = pd.read_csv("./csv_data/" + league + "/bayes_predictions.csv", encoding = "ISO-8859-1")
+    pred = pd.read_csv("./csv_data/" + league + "/bayes_predictions_transfer_val.csv", encoding = "ISO-8859-1")
     for i in range(len(pred.index)):
         pred.at[i, "Date"] = datetime.date(int(pred.at[i, "Date"].split("-")[0]), int(pred.at[i, "Date"].split("-")[1]), int(pred.at[i, "Date"].split("-")[2]))
     seasons = {}

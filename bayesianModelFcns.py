@@ -97,9 +97,12 @@ def model_iteration(idₕ, sₕ_obs, idₐ, sₐ_obs, priors, n_teams, Δσ, sam
         return posteriors
 
 def model_update(idₕ, sₕ_obs, idₐ, sₐ_obs, priors, n_teams, f, f_thresh, Δσ):
-    if (len(priors) != 0):
-        priors = fatten_priors(priors, f, f_thresh)
+    priors["offense"][0] = np.array(priors["offense"][0])
+    priors["offense"][1] = np.array(priors["offense"][1])
+    priors["defense"][1] = np.array(priors["defense"][1])
+    priors["defense"][0] = np.array(priors["defense"][0])
     posteriors = model_iteration(idₕ, sₕ_obs, idₐ, sₐ_obs, priors, n_teams, Δσ)
+    posteriors = fatten_priors(posteriors, f, f_thresh)
 
     return posteriors
 

@@ -719,6 +719,7 @@ def nowgoalCurSeason(league):
     soup = BeautifulSoup(browser.page_source, 'html.parser')
     i = 1
     j = 2
+    lastDate = "..."
     while (1):
         try:
             browser.find_element_by_xpath("//*[@id='Table2']/tbody/tr[" + str(i) + "]/td[" + str(j) + "]").click()
@@ -731,6 +732,16 @@ def nowgoalCurSeason(league):
             else:
                 break
         soup = BeautifulSoup(browser.page_source, 'html.parser')
+        try:
+            print(soup.find(class_="tdsolid").find_all("td")[2]["data-t"])
+        except:
+            j += 1
+            continue
+        while (soup.find(class_="tdsolid").find_all("td")[2]["data-t"] == lastDate):
+            print(soup.find(class_="tdsolid").find_all("td")[2]["data-t"])
+            time.sleep(5)
+            soup = BeautifulSoup(browser.page_source, 'html.parser')
+        lastDate = soup.find(class_="tdsolid").find_all("td")[2]["data-t"]
         for x in soup.find(class_="tdsolid").find_all("td"):
             if (x.has_attr("data-t")):
                 if ("Postp." not in  x.find_next_sibling().find_next_sibling().find("a").get_text() and "Abd" not in  x.find_next_sibling().find_next_sibling().find("a").get_text()):
@@ -745,7 +756,7 @@ def nowgoalCurSeason(league):
                     dict["away_team_reg_score"].append(x.find_next_sibling().find_next_sibling().find("a").get_text().split("-")[1])
                     inpriorBool = False
                     for game in inPrior:
-                        if (curDate == game["Date"] and x.find_next_sibling().find("a").string == game["Home"] and x.find_next_sibling().find_next_sibling().find_next_sibling().find("a").string == game["Away"]):
+                        if (abs(curDate - game["Date"]).days <= 2 and x.find_next_sibling().find("a").string == game["Home"] and x.find_next_sibling().find_next_sibling().find_next_sibling().find("a").string == game["Away"]):
                             dict["includedInPrior"].append(1)
                             inpriorBool = True
                     if (not inpriorBool):

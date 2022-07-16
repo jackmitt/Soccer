@@ -7,12 +7,17 @@ def kellyStake(p, decOdds, kellyDiv):
         return 0.05
     return ((p - (1 - p)/(decOdds - 1)) / kellyDiv)
 
-def analyzeWinRates(league, betType, timing, pType = ""):
+def analyzeWinRates(league, betType, timing, pType = "", repeatBet = "NA"):
     pred = pd.read_csv("./csv_data/" + league + "/bayes_predictions.csv", encoding = "ISO-8859-1")
     for i in range(len(pred.index)):
         pred.at[i, "Date"] = datetime.date(int(pred.at[i, "Date"].split("-")[0]), int(pred.at[i, "Date"].split("-")[1]), int(pred.at[i, "Date"].split("-")[2]))
     seasons = {}
+    teams = {}
     for index, row in pred.iterrows():
+        if (row["Home"] not in teams):
+            teams[row["Home"]] = {"For":0,"Against":0}
+        if (row["Away"] not in teams):
+            teams[row["Away"]] = {"For":0,"Against":0}
         if (index == 0 or abs(row["Date"] - pred.at[index - 1,"Date"]).days > 30):
             if (str(row["Date"].year) not in seasons):
                 seasons[str(row["Date"].year)] = {"<3%":[],"3-5%":[],"5-10%":[],"10-17.5%":[],"17.5-25%":[],"25-40%":[],"40%+":[]}
@@ -134,6 +139,20 @@ def analyzeWinRates(league, betType, timing, pType = ""):
 
         elif (betType == "AH"):
             if (row[pType + "p_" + timing + "_home_cover"] > 1 / row["Home " + timing + " AH Odds"]):
+                teams[row["Home"]]["For"] += 1
+                teams[row["Home"]]["Against"] = 0
+                teams[row["Away"]]["For"] = 0
+                teams[row["Away"]]["Against"] += 1
+                if (repeatBet == "For"):
+                    if (teams[row["Home"]]["For"] >= 10):
+                        pass
+                    else:
+                        continue
+                if (repeatBet == "Against"):
+                    if (teams[row["Away"]]["Against"] >= 10):
+                        pass
+                    else:
+                        continue
                 if ((row["Home " + timing + " AH Odds"] - 1) * row[pType + "p_" + timing + "_home_cover"] - (1 - row[pType + "p_" + timing + "_home_cover"]) < 0.03):
                     if (".75" not in str(row[timing + " AH"]) and ".25" not in str(row[timing + " AH"])):
                         if (row["home_team_reg_score"] > row["away_team_reg_score"] + row[timing + " AH"]):
@@ -240,6 +259,20 @@ def analyzeWinRates(league, betType, timing, pType = ""):
                                 ret += -1/2
                         seasons[curSeason]["40%+"].append(ret)
             elif ((1 - row[pType + "p_" + timing + "_home_cover"]) > 1 / row["Away " + timing + " AH Odds"]):
+                teams[row["Home"]]["For"] = 0
+                teams[row["Home"]]["Against"] += 1
+                teams[row["Away"]]["For"] += 1
+                teams[row["Away"]]["Against"] = 0
+                if (repeatBet == "For"):
+                    if (teams[row["Away"]]["For"] >= 10):
+                        pass
+                    else:
+                        continue
+                if (repeatBet == "Against"):
+                    if (teams[row["Home"]]["Against"] >= 10):
+                        pass
+                    else:
+                        continue
                 if ((row["Away " + timing + " AH Odds"] - 1) * (1 - row[pType + "p_" + timing + "_home_cover"]) - (1 - (1 - row[pType + "p_" + timing + "_home_cover"])) < 0.03):
                     if (".75" not in str(row[timing + " AH"]) and ".25" not in str(row[timing + " AH"])):
                         if (row["home_team_reg_score"] < row["away_team_reg_score"] + row[timing + " AH"]):
@@ -345,6 +378,11 @@ def analyzeWinRates(league, betType, timing, pType = ""):
                             elif (row["home_team_reg_score"] > row["away_team_reg_score"] + row[timing + " AH"]):
                                 ret += -1/2
                         seasons[curSeason]["40%+"].append(ret)
+            else:
+                teams[row["Home"]]["For"] = 0
+                teams[row["Home"]]["Against"] = 0
+                teams[row["Away"]]["For"] = 0
+                teams[row["Away"]]["Against"] = 0
         elif (betType == "OU"):
             if (row[pType + "p_" + timing + "_over"] > 1 / row["Over " + timing + " OU Odds"]):
                 if ((row["Over " + timing + " OU Odds"] - 1) * row[pType + "p_" + timing + "_over"] - (1 - row[pType + "p_" + timing + "_over"]) < 0.03):

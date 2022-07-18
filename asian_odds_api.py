@@ -195,3 +195,49 @@ def get_team_names(url_base, token, leagues):
     for match in matches:
         print (matches[match]["Home"])
         print (matches[match]["Away"])
+
+
+def get_inplay_best_pinnacle_lines(url_base, token):
+    leagues = ["Japan1","Japan2","Korea1","Norway1","Brazil1","Brazil2","Norway2","Sweden2"]
+
+    league_id_map = get_league_ids(url_base, token)
+
+    league_id_string = ""
+    for league in leagues:
+        if (league_id_string != ""):
+            league_id_string = league_id_string + ","
+        league_id_string = league_id_string + str(league_id_map[convert_league(league)])
+
+    matches = {}
+    response = requests.get(url_base + "/GetFeeds?sportsType=1&marketTypeId=0&leagues=" + league_id_string + "&since=1000000000000&bookies=PIN",headers={"AOToken":token,"accept":"application/json"}).json()
+    print (response)
+    for x in response["Result"]["Sports"][0]["MatchGames"]:
+        sum_odds = abs(2 - float(x["FullTimeHdp"]["BookieOdds"].split(";")[0].split("=")[1].split(",")[0])) + abs(2 - float(x["FullTimeHdp"]["BookieOdds"].split(";")[0].split("=")[1].split(",")[1]))
+        if (x["MatchId"] not in matches):
+            matches[x["MatchId"]] = {"Date":x["StartsOn"],"GameId":x["GameId"],"sum_odds":sum_odds,"Home":x["HomeTeam"]["Name"],"Away":x["AwayTeam"]["Name"],"MarketTypeId":int(i),"home_odds":float(x["FullTimeHdp"]["BookieOdds"].split(";")[0].split("=")[1].split(",")[0]),"away_odds":float(x["FullTimeHdp"]["BookieOdds"].split(";")[0].split("=")[1].split(",")[1])}
+            if (x["FullTimeFavoured"] == 2):
+                if ("-" in x["FullTimeHdp"]["Handicap"]):
+                    matches[x["MatchId"]]["AH"] = 0 - (float(x["FullTimeHdp"]["Handicap"].split("-")[0]) + float(x["FullTimeHdp"]["Handicap"].split("-")[1])) / 2
+                else:
+                    matches[x["MatchId"]]["AH"] = 0 - float(x["FullTimeHdp"]["Handicap"])
+            else:
+                if ("-" in x["FullTimeHdp"]["Handicap"]):
+                    matches[x["MatchId"]]["AH"] = (float(x["FullTimeHdp"]["Handicap"].split("-")[0]) + float(x["FullTimeHdp"]["Handicap"].split("-")[1])) / 2
+                else:
+                    matches[x["MatchId"]]["AH"] = float(x["FullTimeHdp"]["Handicap"])
+        #The lowest sum_odds is what the main line is for the match
+        if (sum_odds < matches[x["MatchId"]]["sum_odds"]):
+            matches[x["MatchId"]] = {"Date":x["StartsOn"],"GameId":x["GameId"],"sum_odds":sum_odds,"Home":x["HomeTeam"]["Name"],"Away":x["AwayTeam"]["Name"],"MarketTypeId":int(i),"home_odds":float(x["FullTimeHdp"]["BookieOdds"].split(";")[0].split("=")[1].split(",")[0]),"away_odds":float(x["FullTimeHdp"]["BookieOdds"].split(";")[0].split("=")[1].split(",")[1])}
+            if (x["FullTimeFavoured"] == 2):
+                if ("-" in x["FullTimeHdp"]["Handicap"]):
+                    matches[x["MatchId"]]["AH"] = 0 - (float(x["FullTimeHdp"]["Handicap"].split("-")[0]) + float(x["FullTimeHdp"]["Handicap"].split("-")[1])) / 2
+                else:
+                    matches[x["MatchId"]]["AH"] = 0 - float(x["FullTimeHdp"]["Handicap"])
+            else:
+                if ("-" in x["FullTimeHdp"]["Handicap"]):
+                    matches[x["MatchId"]]["AH"] = (float(x["FullTimeHdp"]["Handicap"].split("-")[0]) + float(x["FullTimeHdp"]["Handicap"].split("-")[1])) / 2
+                else:
+                    matches[x["MatchId"]]["AH"] = float(x["FullTimeHdp"]["Handicap"])
+
+
+    return (matches)

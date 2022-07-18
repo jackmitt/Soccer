@@ -8,7 +8,7 @@ import os
 import datetime
 from dateutil.relativedelta import relativedelta
 from webdriver_manager.chrome import ChromeDriverManager
-from webdriver_manager.utils import ChromeType
+from webdriver_manager.core.utils import ChromeType
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.chrome.service import Service
 import pickle
@@ -682,12 +682,14 @@ def nowgoalPt2(league):
 
 def nowgoalCurSeason(league):
     dict = {"Date":[],"Home":[],"Away":[],"home_team_reg_score":[],"away_team_reg_score":[],"includedInPrior":[]}
-    driver_path = ChromeDriverManager(chrome_type=ChromeType.CHROMIUM).install()
+    #driver_path = ChromeDriverManager(chrome_type=ChromeType.CHROMIUM).install()
     chrome_options = Options()
     chrome_options.add_argument("--no-sandbox")
     chrome_options.add_argument("--headless")
     chrome_options.add_argument("--window-size=1325x744")
-    browser = webdriver.Chrome(executable_path=driver_path, options = chrome_options)
+    #chrome_options.add_argument("--disable-dev-shm-usage")
+    #chrome_options.add_argument('--remote-debugging-port=9222')
+    browser = webdriver.Chrome(executable_path="/snap/bin/chromium.chromedriver", options = chrome_options)
     browser.maximize_window()
     if (league == "Japan1"):
         url = "https://football.nowgoal5.com/SubLeague/25"
@@ -706,9 +708,11 @@ def nowgoalCurSeason(league):
     elif (league == "Brazil2"):
         url = "https://football.nowgoal5.com/League/358"
 
+    prev_len = 0
     inPrior = []
     if (exists("./csv_data/" + league + "/current/results.csv")):
         results = pd.read_csv("./csv_data/" + league + "/current/results.csv", encoding = "ISO-8859-1")
+        prev_len = len(results.index)
         for i in range(len(results.index)):
             results.at[i, "Date"] = datetime.date(int(results.at[i, "Date"].split("-")[0]), int(results.at[i, "Date"].split("-")[1]), int(results.at[i, "Date"].split("-")[2]))
         for index, row in results.iterrows():
@@ -722,7 +726,7 @@ def nowgoalCurSeason(league):
     lastDate = "..."
     while (1):
         try:
-            browser.find_element_by_xpath("//*[@id='Table2']/tbody/tr[" + str(i) + "]/td[" + str(j) + "]").click()
+            browser.find_element("xpath", "//*[@id='Table2']/tbody/tr[" + str(i) + "]/td[" + str(j) + "]").click()
             time.sleep(2)
         except:
             if (i == 1):
@@ -746,6 +750,11 @@ def nowgoalCurSeason(league):
             if (x.has_attr("data-t")):
                 if ("Postp." not in  x.find_next_sibling().find_next_sibling().find("a").get_text() and "Abd" not in  x.find_next_sibling().find_next_sibling().find("a").get_text()):
                     curDate = datetime.date(int(x["data-t"].split()[0].split("-")[0]), int(x["data-t"].split()[0].split("-")[1]), int(x["data-t"].split()[0].split("-")[2]))
+                    if (curDate == datetime.date.today()):
+                        try:
+                            score = x.find_next_sibling().find_next_sibling().find("a").get_text().split("-")[0]
+                        except:
+                            return (0)
                     if (curDate > datetime.date.today()):
                         continue
                     dict["Date"].append(curDate)
@@ -765,13 +774,15 @@ def nowgoalCurSeason(league):
         j += 1
     for key in dict:
         print (key, len(dict[key]), dict[key])
-    if (len(dict["includedInPrior"]) == 0):
-        nowgoalCurSeason(league)
-    df = pd.DataFrame.from_dict(dict)
-    df = df.sort_values(by=["Date"], ignore_index = True)
-    if (not exists("./csv_data/" + league + "/current/")):
-        os.makedirs("./csv_data/" + league + "/current/")
-    df.to_csv("./csv_data/" + league + "/current/results.csv", index = False)
+    if (len(dict["includedInPrior"]) > prev_len):
+        df = pd.DataFrame.from_dict(dict)
+        df = df.sort_values(by=["Date"], ignore_index = True)
+        if (not exists("./csv_data/" + league + "/current/")):
+            os.makedirs("./csv_data/" + league + "/current/")
+        df.to_csv("./csv_data/" + league + "/current/results.csv", index = False)
+        return (1)
+    else:
+        return (0)
 
 def pinnacle(league):
     if (league == "Japan1"):

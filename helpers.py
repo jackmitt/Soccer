@@ -106,7 +106,6 @@ def standardizeTeamName(name, league):
             return ("Zweigen Kanazawa FC")
         elif ("niigata albirex" in lname):
             return ("Albirex Niigata")
-<<<<<<< HEAD
         elif ("consadole sapporo" in lname):
             return ("Consadole Sapporo")
         elif ("matsumoto yamaga" in lname):
@@ -117,7 +116,6 @@ def standardizeTeamName(name, league):
             return ("JEF United Ichihara Chiba")
         elif ("mito holly" in lname):
             return ("Mito Hollyhock")
-=======
         elif ("varen nagasaki" in lname):
             return ("V-Varen Nagasaki")
         elif ("yokohama" in lname):
@@ -126,7 +124,6 @@ def standardizeTeamName(name, league):
             return ("JEF United Ichihara Chiba")
         elif ("ryukyu" in lname):
             return ("FC Ryukyu")
->>>>>>> 21fec374f12ca82b13f80136db8c34f70dd26cb7
         else:
             return (name)
     elif (league == "Korea1"):
@@ -136,8 +133,8 @@ def standardizeTeamName(name, league):
             return ("Suwon FC")
         elif ("suwon samsung bluewings" in lname):
             return ("Suwon Samsung Bluewings")
-        elif ("sangju sangmu" in lname):
-            return ("Gimcheon Sangmu")
+        elif ("sangju sangmu" in lname or "gimcheon sangmu" in lname):
+            return ("Gimcheon Sangmu FC")
         elif ("ulsan hyundai" in lname):
             return ("Ulsan Hyundai FC")
         elif ("seongnam" in lname):
@@ -171,7 +168,6 @@ def standardizeTeamName(name, league):
             return ("Viking")
         elif ("aalesund" in lname):
             return ("Aalesund FK")
-<<<<<<< HEAD
         elif ("lerenga " in lname):
             return ("Valerenga")
         elif ("sk brann" in lname):
@@ -194,12 +190,10 @@ def standardizeTeamName(name, league):
             return ("Sandefjord")
         elif ("mjøndalen" in lname):
             return ("Mjondalen IF")
-=======
         elif ("haugesund" in lname):
             return ("Haugesund")
         elif ("ham kam" in lname):
             return ("Ham-Kam")
->>>>>>> 21fec374f12ca82b13f80136db8c34f70dd26cb7
         else:
             return (name)
     elif (league == "Norway2"):
@@ -209,11 +203,7 @@ def standardizeTeamName(name, league):
             return ("Start Kristiansand")
         elif ("aasane " in lname):
             return ("Asane Fotball")
-<<<<<<< HEAD
         elif ("stabaek if" in lname or "stabæk" in lname):
-=======
-        elif ("stabaek " in lname):
->>>>>>> 21fec374f12ca82b13f80136db8c34f70dd26cb7
             return ("Stabaek")
         elif ("skeid " in lname):
             return ("Skeid Oslo")
@@ -231,17 +221,15 @@ def standardizeTeamName(name, league):
             return ("Ranheim IL")
         elif ("grorud " in lname):
             return ("Grorud")
-<<<<<<< HEAD
         elif ("kongsvinger" in lname):
             return ("Kongsvinger")
         elif ("mjøndalen" in lname):
             return ("Mjondalen IF")
         elif ("kfum" in lname and "oslo" in lname):
-=======
+            return ("KFUM Oslo")
         elif ("kongsvinger " in lname):
             return ("Kongsvinger")
         elif ("kfum " in lname):
->>>>>>> 21fec374f12ca82b13f80136db8c34f70dd26cb7
             return ("KFUM Oslo")
         else:
             return (name)
@@ -293,11 +281,7 @@ def standardizeTeamName(name, league):
             return ("Ceara")
         elif ("goianiense" in lname):
             return ("Atletico Clube Goianiense")
-<<<<<<< HEAD
         elif ("goias ec go" in lname or "goiás" in lname):
-=======
-        elif ("goias " in lname):
->>>>>>> 21fec374f12ca82b13f80136db8c34f70dd26cb7
             return ("Goias")
         elif ("atletico mineiro" in lname or "atlético mineiro" in lname):
             return ("Atletico Mineiro")
@@ -346,11 +330,7 @@ def standardizeTeamName(name, league):
         else:
             return (name)
     elif (league == "Brazil2"):
-<<<<<<< HEAD
-        if ("sc recife pe" in lname or "do recife" in lname):
-=======
         if ("recife pe" in lname):
->>>>>>> 21fec374f12ca82b13f80136db8c34f70dd26cb7
             return ("Sport Club Recife PE")
         elif ("ituano " in lname):
             return ("Ituano  SP")
@@ -364,11 +344,7 @@ def standardizeTeamName(name, league):
             return ("Vila Nova")
         elif ("tombense" in lname):
             return ("Tombense")
-<<<<<<< HEAD
         elif (" bahia" in lname):
-=======
-        elif ("ec bahia" in lname or "bahia ba" in lname):
->>>>>>> 21fec374f12ca82b13f80136db8c34f70dd26cb7
             return ("Bahia")
         elif ("sampaio corr" in lname):
             return ("Sampaio Correa")
@@ -378,19 +354,11 @@ def standardizeTeamName(name, league):
             return ("Londrina PR")
         elif ("cr brasil al" in lname or "regatas brasil" in lname):
             return ("CRB AL")
-<<<<<<< HEAD
-        elif ("nautico pe" in lname or "náutico" in lname):
-=======
         elif ("nautico " in lname):
->>>>>>> 21fec374f12ca82b13f80136db8c34f70dd26cb7
             return ("Nautico (PE)")
         elif ("operario " in lname):
             return ("Operario Ferroviario PR")
-<<<<<<< HEAD
         elif (("gremio" in lname or "grêmio" in lname) and "porto" in lname):
-=======
-        elif ("gremio " in lname and "porto" in lname):
->>>>>>> 21fec374f12ca82b13f80136db8c34f70dd26cb7
             return ("Gremio (RS)")
         elif ("guarani " in lname):
             return ("Guarani SP")

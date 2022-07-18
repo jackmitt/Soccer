@@ -6,7 +6,7 @@ import pandas as pd
 import numpy as np
 
 
-leagues = ["Croatia1", "Czech1", "Czech2", "Denmark1", "Denmark2", "England1", "England2", "England3", "England4", "France1", "France2", "France3", "Germany1", "Germany2", "Germany3", "Greece1", "Hungary1"]
+leagues = ["Poland1", "Poland2", "Portugal1", "Portugal2", "Romania1", "Scotland1", "Scotland2", "Serbia1", "Slovakia1", "Slovakia2", "Slovenia1", "Spain1", "Spain2", "Switzerland1", "Switzerland2", "Turkey1", "Turkey2"]
 for league in leagues:
     print ("-----------------------------------------------",league)
     #dm.preMatchAverages(league)

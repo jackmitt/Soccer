@@ -304,6 +304,8 @@ def bet(league, url, token):
             for book in placement[game]["placement_info"]:
                 if (placement[game]["placement_info"][book]["odds"] > best_odds["odds"]):
                     best_odds = {"Book":book,"max":placement[game]["placement_info"][book]["max"],"min":placement[game]["placement_info"][book]["min"],"odds":placement[game]["placement_info"][book]["odds"],"AH":placement[game]["AH"]}
+            if (placement[game]["Home"] == "Brann" or placement[game]["Away"] == "Brann"):
+                continue
             if ((placement[game]["Home"], placement[game]["Away"]) in cur_bets):
                 if (cur_bets[(placement[game]["Home"], placement[game]["Away"])][0]["AH"] != best_odds["AH"]):
                     print ("AH has changed for " + placement[game]["Home"] + " vs. " + placement[game]["Away"] + ": Aborting...")
@@ -358,23 +360,145 @@ def check_accepted_bets(url, token):
     api_bets["Accepted"] = accept
     api_bets.to_csv("./csv_data/api_bets.csv", index = False)
 
-url, token = api.login()
-check_accepted_bets(url, token)
+def move_old_bets():
+    api_bets = pd.read_csv("./csv_data/api_bets.csv")
+    activeBets = []
+    oldBets = []
+    for index, row in api_bets.iterrows():
+        thisDate = datetime.date(int(row["Date"].split("/")[2]), int(row["Date"].split("/")[0]), int(row["Date"].split("/")[1]))
+        if (thisDate < datetime.date.today()):
+            if (row["Accepted"] == "F"):
+                continue
+            oldBets.append(index)
+        else:
+            activeBets.append(index)
+    api_bets.iloc[activeBets].to_csv("./csv_data/api_bets.csv", index = False)
+    old_finished = pd.read_csv("./csv_data/api_bets_finished.csv")
+    old_finished = old_finished.append(api_bets.iloc[oldBets])
+    old_finished.to_csv("./csv_data/api_bets_finished.csv", index = False)
+
+def grade_bets():
+    bets = pd.read_csv("./csv_data/api_bets_finished.csv")
+    results = []
+    for index, row in bets.iterrows():
+        if (row["Results"] == row["Results"]):
+            results.append(row["Results"])
+            continue
+        try:
+            league_results = pd.read_csv("./csv_data/" + row["League"] + "/current/results.csv")
+        except:
+            results.append(np.nan)
+            continue
+        found = False
+        for curIndex, r in league_results.iterrows():
+            r_date = datetime.date(int(r["Date"].split("-")[0]), int(r["Date"].split("-")[1]), int(r["Date"].split("-")[2]))
+            row_date = datetime.date(int(row["Date"].split("/")[2]), int(row["Date"].split("/")[0]), int(row["Date"].split("/")[1]))
+            if (r["Home"] == row["Home"] and r["Away"] == row["Away"] and abs(r_date - row_date).days < 5):
+                found = True
+                if ("HomeOdds" == row["Side"]):
+                    if (".75" not in str(row["AH"]) and ".25" not in str(row["AH"])):
+                        if (league_results.at[curIndex, "home_team_reg_score"] - float(row["AH"]) > league_results.at[curIndex, "away_team_reg_score"]):
+                            results.append("WW")
+                        elif (league_results.at[curIndex, "home_team_reg_score"] - float(row["AH"]) < league_results.at[curIndex, "away_team_reg_score"]):
+                            results.append("LL")
+                        else:
+                            results.append("PP")
+                    else:
+                        parts = [float(row["AH"]) - 0.25,float(row["AH"]) + 0.25]
+                        cur_result = ""
+                        for part in parts:
+                            if (league_results.at[curIndex, "home_team_reg_score"] - part > league_results.at[curIndex, "away_team_reg_score"]):
+                                cur_result += "W"
+                            elif (league_results.at[curIndex, "home_team_reg_score"] - part < league_results.at[curIndex, "away_team_reg_score"]):
+                                cur_result += "L"
+                            else:
+                                cur_result += "P"
+                        results.append(cur_result)
+                else:
+                    if (".75" not in str(row["AH"]) and ".25" not in str(row["AH"])):
+                        if (league_results.at[curIndex, "away_team_reg_score"] + float(row["AH"]) > league_results.at[curIndex, "home_team_reg_score"]):
+                            results.append("WW")
+                        elif (league_results.at[curIndex, "away_team_reg_score"] + float(row["AH"]) < league_results.at[curIndex, "home_team_reg_score"]):
+                            results.append("LL")
+                        else:
+                            results.append("PP")
+                    else:
+                        parts = [float(row["AH"]) - 0.25,float(row["AH"]) + 0.25]
+                        cur_result = ""
+                        for part in parts:
+                            if (league_results.at[curIndex, "away_team_reg_score"] + part > league_results.at[curIndex, "home_team_reg_score"]):
+                                cur_result += "W"
+                            elif (league_results.at[curIndex, "away_team_reg_score"] + part < league_results.at[curIndex, "home_team_reg_score"]):
+                                cur_result += "L"
+                            else:
+                                cur_result += "P"
+                        results.append(cur_result)
+        if (not found):
+            results.append(np.nan)
+    bets["Results"] = results
+    netWin = []
+    for index, row in bets.iterrows():
+        if (row["Results"] != row["Results"]):
+            netWin.append(np.nan)
+            continue
+        if (row["Results"] == "PP"):
+            netWin.append(0)
+        elif (row["Results"] == "WP" or row["Results"] == "PW"):
+            netWin.append((row["Odds"] - 1) * row["Stake"] / 2)
+        elif (row["Results"] == "PL" or row["Results"] == "LP"):
+            netWin.append(-row["Stake"] / 2)
+        elif (row["Results"] == "LL"):
+            netWin.append(-row["Stake"])
+        elif (row["Results"] == "WW"):
+            netWin.append(row["Stake"] * (row["Odds"] - 1))
+    bets["Net Win"] = netWin
+    bets.to_csv("./csv_data/api_bets_finished.csv", index = False)
 
 
-leagues = ["Japan1","Japan2","Korea1","Norway1","Brazil1","Brazil2","Norway2","Sweden2"]
-leagues = ["Sweden2"]
-for league in leagues:
-    #scr.nowgoalCurSeason(league)
-    #update(league)
-    #api.get_team_names(url, token, [convert_league(league)])
-    for i in range(3):
-        api.logout(url, token)
+while(1):
+    move_old_bets()
+    grade_bets()
+    try:
         url, token = api.login()
-        time.sleep(7)
-        bet(league, url, token)
-    #print (api.non_running_bets(url, token))
-    #print(api.get_current_bets(url, token))
-    #print(api.get_account_balance(url, token))
-    #print (api.get_bet_by_ref(url, token, "WA-1657457657223"))
-api.logout(url, token)
+    except:
+        print ("Login Failed")
+    try:
+        check_accepted_bets(url, token)
+    except:
+        print ("Check Accepted Bets Failed")
+
+
+    leagues = ["Japan1","Japan2","Korea1","Norway1","Brazil1","Brazil2","Norway2","Sweden2"]
+    for league in leagues:
+        print (league, "---------------------------------")
+        #try:
+        if (scr.nowgoalCurSeason(league) == 0):
+            continue
+        #except:
+            #print ("Now Goal Scrape Failed")
+            #continue
+        try:
+            update(league)
+        except:
+            print ("Update Failed")
+            continue
+        #api.get_team_names(url, token, [convert_league(league)])
+        for i in range(3):
+            try:
+                api.logout(url, token)
+            except:
+                print ("Logout Failed")
+            try:
+                url, token = api.login()
+            except:
+                print ("Login Failed")
+            time.sleep(7)
+            try:
+                bet(league, url, token)
+            except:
+                print ("Betting Failed")
+        #print (api.non_running_bets(url, token))
+        #print(api.get_current_bets(url, token))
+        #print(api.get_account_balance(url, token))
+        #print (api.get_bet_by_ref(url, token, "WA-1657457657223"))
+    api.logout(url, token)

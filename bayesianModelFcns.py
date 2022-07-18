@@ -43,7 +43,7 @@ def fatten_priors(prev_posteriors, factor, f_thresh):
 
     return priors
 
-def model_iteration(idₕ, sₕ_obs, idₐ, sₐ_obs, priors, n_teams, Δσ, samples=2000, tune=1000, cores=1):
+def model_iteration(idₕ, sₕ_obs, idₐ, sₐ_obs, priors, n_teams, Δσ, samples=2000, tune=1000, cores=3):
     with pm.Model():
         if (len(priors) == 0):
             h = pm.Flat('home')

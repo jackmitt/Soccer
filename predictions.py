@@ -153,22 +153,22 @@ def bayesian(league):
     # with open("./csv_data/" + league + "/last_prior.pkl","rb") as inputFile:
     #     priors = pickle.load(inputFile)
 
-    club_vals = pd.read_csv("./csv_data/" + league + "/transfermarkt.csv", encoding = "UTF-8")
-    club_val_map = {}
-    for index, row in club_vals.iterrows():
-        if (row["Season"] not in club_val_map):
-            club_val_map[row["Season"]] = {}
-        fix = ""
-        for i in range(len(row["Team"].split())):
-            fix = fix + row["Team"].split()[i]
-            if (i != len(row["Team"].split()) - 1):
-                fix = fix + " "
-        if ("Th." in row["Value"][1:]):
-            club_val_map[row["Season"]][standardizeTeamName(fix,league)] = float(row["Value"][1:].split("Th")[0]) / 1000
-        else:
-            club_val_map[row["Season"]][standardizeTeamName(fix,league)] = float(row["Value"][1:].split("m")[0])
-
-    print (club_val_map)
+    # club_vals = pd.read_csv("./csv_data/" + league + "/transfermarkt.csv", encoding = "UTF-8")
+    # club_val_map = {}
+    # for index, row in club_vals.iterrows():
+    #     if (row["Season"] not in club_val_map):
+    #         club_val_map[row["Season"]] = {}
+    #     fix = ""
+    #     for i in range(len(row["Team"].split())):
+    #         fix = fix + row["Team"].split()[i]
+    #         if (i != len(row["Team"].split()) - 1):
+    #             fix = fix + " "
+    #     if ("Th." in row["Value"][1:]):
+    #         club_val_map[row["Season"]][standardizeTeamName(fix,league)] = float(row["Value"][1:].split("Th")[0]) / 1000
+    #     else:
+    #         club_val_map[row["Season"]][standardizeTeamName(fix,league)] = float(row["Value"][1:].split("m")[0])
+    #
+    # print (club_val_map)
 
     train = pd.read_csv("./csv_data/" + league + "/betting.csv", encoding = "ISO-8859-1")
     for i in range(len(train.index)):
@@ -273,30 +273,30 @@ def bayesian(league):
         if (index != splitIndex and abs(row["Date"] - train.at[index-1,"Date"]).days > 30):
             bmf.fatten_priors(priors, 1.33, f_thresh)
         #THIS ONLY WORKS FOR 1 YEAR LEAGUES, NEED TO HARD CODE SEASONS FOR OTHER LEAGUES
-        if (index != splitIndex and row["Season"] != train.at[index-1,"Season"]):
-            new_teams = {}
-            #adjust priors for newly promoted/demoted teams based on market value *starting in 2013
-            curYear = row["Date"].year
-            if (curYear >= 2013):
-                curOffStd = np.std(priors["offense"][0])
-                curDefStd = np.std(priors["defense"][0])
-                curVals = []
-                for team in club_val_map[curYear]:
-                    curVals.append(club_val_map[curYear][team])
-                curValsMean = np.average(curVals)
-                curValsStd = np.std(curVals)
-                for team in club_val_map[curYear]:
-                    if (team not in club_val_map[curYear-1]):
-                        new_teams[teams_to_int[team]] = 0
-                        val_z = (club_val_map[curYear][team] - curValsMean) / curValsStd
-                        priors["offense"][0][teams_to_int[team]] = curOffStd * val_z / 4
-                        priors["defense"][0][teams_to_int[team]] = curDefStd * val_z / 4
+        # if (index != splitIndex and row["Season"] != train.at[index-1,"Season"]):
+        #     new_teams = {}
+        #     #adjust priors for newly promoted/demoted teams based on market value *starting in 2013
+        #     curYear = row["Date"].year
+        #     if (curYear >= 2013):
+        #         curOffStd = np.std(priors["offense"][0])
+        #         curDefStd = np.std(priors["defense"][0])
+        #         curVals = []
+        #         for team in club_val_map[curYear]:
+        #             curVals.append(club_val_map[curYear][team])
+        #         curValsMean = np.average(curVals)
+        #         curValsStd = np.std(curVals)
+        #         for team in club_val_map[curYear]:
+        #             if (team not in club_val_map[curYear-1]):
+        #                 new_teams[teams_to_int[team]] = 0
+        #                 val_z = (club_val_map[curYear][team] - curValsMean) / curValsStd
+        #                 priors["offense"][0][teams_to_int[team]] = curOffStd * val_z / 4
+        #                 priors["defense"][0][teams_to_int[team]] = curDefStd * val_z / 4
         if (index != splitIndex and row["gw"] - train.at[index-1,"gw"] == 1):
 
-            for i in range(len(priors["offense"][0])):
-                if (i in new_teams and new_teams[i] <= 10):
-                    priors["offense"][1][i] = priors["offense"][1][i] * 2
-                    priors["defense"][1][i] = priors["defense"][1][i] * 2
+            # for i in range(len(priors["offense"][0])):
+            #     if (i in new_teams and new_teams[i] <= 10):
+            #         priors["offense"][1][i] = priors["offense"][1][i] * 2
+            #         priors["defense"][1][i] = priors["defense"][1][i] * 2
 
             new_obs = train.iloc[startIndex:index]
             print ("SLICE INDEXES:", startIndex, index)
@@ -328,6 +328,6 @@ def bayesian(league):
             for col in ["H_proj","A_proj","p_1","p_X","p_2","p_Open_home_cover","p_Close_home_cover","p_Open_over","p_Close_over"]:
                 finalDict[col].append(np.nan)
         tempDF = pd.DataFrame.from_dict(finalDict)
-        tempDF.to_csv("./csv_data/" + league + "/bayes_predictions_transfer_val.csv", index = False)
-        with open("./csv_data/" + league + "/last_prior_transfer_val.pkl", "wb") as f:
+        tempDF.to_csv("./csv_data/" + league + "/bayes_predictions.csv", index = False)
+        with open("./csv_data/" + league + "/last_prior.pkl", "wb") as f:
             pickle.dump(priors, f)

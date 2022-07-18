@@ -608,7 +608,7 @@ def analyzeWinRates(league, betType, timing, pType = "", repeatBet = "NA"):
         print (key + ":", np.average(all[key]), len(all[key]))
 
 def kellybet(league, betType, timing, bankroll, kellyDiv, betThresh, pType = ""):
-    pred = pd.read_csv("./csv_data/" + league + "/bayes_predictions_transfer_val.csv", encoding = "ISO-8859-1")
+    pred = pd.read_csv("./csv_data/" + league + "/bayes_predictions.csv", encoding = "ISO-8859-1")
     for i in range(len(pred.index)):
         pred.at[i, "Date"] = datetime.date(int(pred.at[i, "Date"].split("-")[0]), int(pred.at[i, "Date"].split("-")[1]), int(pred.at[i, "Date"].split("-")[2]))
     seasons = {}

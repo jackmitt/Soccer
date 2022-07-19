@@ -486,6 +486,80 @@ def standardizeTeamName(name, league):
             return ("Remo Belem (PA)")
         else:
             return (name)
+    elif (league == "Austria1"):
+        if ("austria vienna" in lname):
+            return ("Austria Wien")
+        elif ("rapid vienna" in lname):
+            return ("Rapid Wien")
+        elif ("sturm" in lname and "graz" in lname):
+            return ("Sturm graz")
+        elif ("kapfenberg" in lname):
+            return ("Kapfenberg")
+        elif ("admira wacker" in lname):
+            return ("Trenkwalder Admira Wacker")
+        elif ("mattersburg" in lname):
+            return ("Mattersburg")
+        elif ("wiener neustadt" in lname):
+            return ("FC Magna Wiener Neustadt")
+        elif ("sv gr" in lname and "dig" in lname):
+            return ("SV Grodig")
+        elif (" altach" in lname):
+            return ("Rheindorf Altach")
+        elif ("st. " in lname and "lten" in lname):
+            return ("St.Polten")
+        elif ("lask" == lname):
+            return ("LASK Linz")
+        elif ("wsg tirol" in lname):
+            return ("WSG Wattens")
+        elif ("austria klagenfurt" in lname):
+            return ("SG Austria Klagenfurt")
+        return (name)
+    elif (league == "Austria2"):
+        if ("lask" == lname):
+            return ("LASK Linz")
+        elif (" altach" in lname):
+            return ("Rheindorf Altach")
+        elif ("st. " in lname and "lten" in lname):
+            return ("St.Polten")
+        elif ("sv gr" in lname and "dig" in lname):
+            return ("SV Grodig")
+        elif ("mattersburg" in lname):
+            return ("Mattersburg")
+        elif ("wiener neustadt" in lname):
+            return ("FC Magna Wiener Neustadt")
+        elif ("first vienna" in lname):
+            return ("First Wien 1894")
+        elif ("austria lustenau" in lname):
+            return ("Austria Lustenau")
+        elif ("wac - st. and" in lname):
+            return ("Wolfsberger AC")
+        elif ("fc lustenau" == lname):
+            return ("Lustenau")
+        elif ("blau-weiss" in lname):
+            return ("FC Blau Weiss Linz")
+        elif ("kapfenberg" in lname):
+            return ("Kapfenberg")
+        elif ("parndorf" in lname):
+            return ("Parndorf")
+        elif ("austria klagenfurt" in lname):
+            return ("SG Austria Klagenfurt")
+        elif ("young" in lname and "austria wien" in lname):
+            return ("Austria Wien (Youth)")
+        elif ("wacker innsbruck ii" in lname):
+            return ("FC Wacker Innsbruck Amateure")
+        elif ("rapid wien ii" in lname):
+            return ("Rapid Vienna (Youth)")
+        elif ("lafnitz" in lname):
+            return ("Lafnitz")
+        elif ("grazer " in lname):
+            return ("Grazer AK")
+        elif (" steyr" in lname):
+            return ("SK Vorwarts Steyr")
+        elif ("dornbirn" in lname):
+            return ("FC Dornbirn 1913")
+        elif ("fc juniors o" in lname):
+            return ("FC Superfund Pasching")
+        return (name)
 
 def grade_bets(league):
     netwin = 0

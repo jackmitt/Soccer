@@ -8,7 +8,7 @@ import os
 import datetime
 from dateutil.relativedelta import relativedelta
 from webdriver_manager.chrome import ChromeDriverManager
-from webdriver_manager.core.utils import ChromeType
+from webdriver_manager.utils import ChromeType
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.chrome.service import Service
 import pickle
@@ -859,8 +859,94 @@ def transfermarkt(league):
         urlRoot = "https://www.transfermarkt.com/superettan/startseite/wettbewerb/SE2/plus/?saison_id="
     elif (league == "Korea1"):
         urlRoot = "https://www.transfermarkt.com/k-league-1/startseite/wettbewerb/RSK1/plus/?saison_id="
-
-
+    elif (league == "Austria1"):
+        urlRoot = "https://www.transfermarkt.us/bundesliga/startseite/wettbewerb/A1/plus/?saison_id="
+    elif (league == "Austria2"):
+        urlRoot = "https://www.transfermarkt.us/2-liga/startseite/wettbewerb/A2/plus/?saison_id="
+    elif (league == "Belgium1"):
+        urlRoot = "https://www.transfermarkt.us/jupiler-pro-league/startseite/wettbewerb/BE1/plus/?saison_id="
+    elif (league == "Belgium2"):
+        urlRoot = "https://www.transfermarkt.us/challenger-pro-league/startseite/wettbewerb/BE2/plus/?saison_id="
+    elif (league == "Bosnia1"):
+        urlRoot = "https://www.transfermarkt.us/premijer-liga/startseite/wettbewerb/BOS1/plus/?saison_id="
+    elif (league == "Bulgaria1"):
+        urlRoot = "https://www.transfermarkt.us/efbet-liga/startseite/wettbewerb/BU1/plus/?saison_id="
+    elif (league == "Croatia1"):
+        urlRoot = "https://www.transfermarkt.us/supersport-hnl/startseite/wettbewerb/KR1/plus/?saison_id="
+    elif (league == "Czech1"):
+        urlRoot = "https://www.transfermarkt.us/fortuna-liga/startseite/wettbewerb/TS1/plus/?saison_id="
+    elif (league == "Czech2"):
+        urlRoot = "https://www.transfermarkt.us/fortuna-narodni-liga/startseite/wettbewerb/TS2/plus/?saison_id="
+    elif (league == "Denmark1"):
+        urlRoot = "https://www.transfermarkt.us/superligaen/startseite/wettbewerb/DK1/plus/?saison_id="
+    elif (league == "Denmark2"):
+        urlRoot = "https://www.transfermarkt.us/1-division/startseite/wettbewerb/DK2/plus/?saison_id="
+    elif (league == "England1"):
+        urlRoot = "https://www.transfermarkt.us/premier-league/startseite/wettbewerb/GB1/plus/?saison_id="
+    elif (league == "England2"):
+        urlRoot = "https://www.transfermarkt.us/championship/startseite/wettbewerb/GB2/plus/?saison_id="
+    elif (league == "England3"):
+        urlRoot = "https://www.transfermarkt.us/league-one/startseite/wettbewerb/GB3/plus/?saison_id="
+    elif (league == "England4"):
+        urlRoot = "https://www.transfermarkt.us/league-two/startseite/wettbewerb/GB4/plus/?saison_id="
+    elif (league == "France1"):
+        urlRoot = "https://www.transfermarkt.us/ligue-1/startseite/wettbewerb/FR1/plus/?saison_id="
+    elif (league == "France2"):
+        urlRoot = "https://www.transfermarkt.us/ligue-2/startseite/wettbewerb/FR2/plus/?saison_id="
+    elif (league == "France3"):
+        urlRoot = "https://www.transfermarkt.us/championnat-national/startseite/wettbewerb/FR3/plus/?saison_id="
+    elif (league == "Germany1"):
+        urlRoot = "https://www.transfermarkt.us/bundesliga/startseite/wettbewerb/L1/plus/?saison_id="
+    elif (league == "Germany2"):
+        urlRoot = "https://www.transfermarkt.us/2-bundesliga/startseite/wettbewerb/L2/plus/?saison_id="
+    elif (league == "Germany3"):
+        urlRoot = "https://www.transfermarkt.us/3-liga/startseite/wettbewerb/L3/plus/?saison_id="
+    elif (league == "Greece1"):
+        urlRoot = "https://www.transfermarkt.us/super-league-1/startseite/wettbewerb/GR1/plus/?saison_id="
+    elif (league == "Hungary1"):
+        urlRoot = "https://www.transfermarkt.us/nemzeti-bajnoksag/startseite/wettbewerb/UNG1/plus/?saison_id="
+    elif (league == "Italy1"):
+        urlRoot = "https://www.transfermarkt.us/serie-a/startseite/wettbewerb/IT1/plus/?saison_id="
+    elif (league == "Italy2"):
+        urlRoot = "https://www.transfermarkt.us/serie-b/startseite/wettbewerb/IT2/plus/?saison_id="
+    elif (league == "Netherlands1"):
+        urlRoot = "https://www.transfermarkt.us/eredivisie/startseite/wettbewerb/NL1/plus/?saison_id="
+    elif (league == "Netherlands2"):
+        urlRoot = "https://www.transfermarkt.us/keuken-kampioen-divisie/startseite/wettbewerb/NL2/plus/?saison_id="
+    elif (league == "Poland1"):
+        urlRoot = "https://www.transfermarkt.us/pko-ekstraklasa/startseite/wettbewerb/PL1/plus/?saison_id="
+    elif (league == "Poland2"):
+        urlRoot = "https://www.transfermarkt.us/fortuna-1-liga/startseite/wettbewerb/PL2/plus/?saison_id="
+    elif (league == "Portugal1"):
+        urlRoot = "https://www.transfermarkt.us/liga-portugal/startseite/wettbewerb/PO1/plus/?saison_id="
+    elif (league == "Portugal2"):
+        urlRoot = "https://www.transfermarkt.us/liga-portugal-2/startseite/wettbewerb/PO2/plus/?saison_id="
+    elif (league == "Romania1"):
+        urlRoot = "https://www.transfermarkt.us/superliga/startseite/wettbewerb/RO1/plus/?saison_id="
+    elif (league == "Scotland1"):
+        urlRoot = "https://www.transfermarkt.us/scottish-premiership/startseite/wettbewerb/SC1/plus/?saison_id="
+    elif (league == "Scotland2"):
+        urlRoot = "https://www.transfermarkt.us/scottish-championship/startseite/wettbewerb/SC2/plus/?saison_id="
+    elif (league == "Serbia1"):
+        urlRoot = "https://www.transfermarkt.us/super-liga-srbije/startseite/wettbewerb/SER1/plus/?saison_id="
+    elif (league == "Slovakia1"):
+        urlRoot = "https://www.transfermarkt.us/fortuna-liga/startseite/wettbewerb/SLO1/plus/?saison_id="
+    elif (league == "Slovakia2"):
+        urlRoot = "https://www.transfermarkt.us/ii-liga/startseite/wettbewerb/SK2/plus/?saison_id="
+    elif (league == "Slovenia1"):
+        urlRoot = "https://www.transfermarkt.us/prva-liga/startseite/wettbewerb/SL1/plus/?saison_id="
+    elif (league == "Spain1"):
+        urlRoot = "https://www.transfermarkt.com/laliga/startseite/wettbewerb/ES1/plus/?saison_id="
+    elif (league == "Spain2"):
+        urlRoot = "https://www.transfermarkt.us/laliga2/startseite/wettbewerb/ES2/plus/?saison_id="
+    elif (league == "Switzerland1"):
+        urlRoot = "https://www.transfermarkt.us/super-league/startseite/wettbewerb/C1/plus/?saison_id="
+    elif (league == "Switzerland2"):
+        urlRoot = "https://www.transfermarkt.us/challenge-league/startseite/wettbewerb/C2/plus/?saison_id="
+    elif (league == "Turkey1"):
+        urlRoot = "https://www.transfermarkt.us/super-lig/startseite/wettbewerb/TR1/plus/?saison_id="
+    elif (league == "Turkey2"):
+        urlRoot = "https://www.transfermarkt.us/1-lig/startseite/wettbewerb/TR2/plus/?saison_id="
 
     A = Database(["Season","Team","Value"])
     driver_path = ChromeDriverManager(chrome_type=ChromeType.CHROMIUM).install()
@@ -869,10 +955,10 @@ def transfermarkt(league):
     chrome_options.add_argument("--headless")
     chrome_options.add_argument("--window-size=1325x744")
     browser = webdriver.Chrome(executable_path=driver_path, options = chrome_options)
-    for curSeason in [2012,2013,2014,2015,2016,2017,2018,2019,2020,2021]:
+    for curSeason in [2012,2013,2014,2015,2016,2017,2018,2019,2020,2021,2022]:
         browser.get(urlRoot + str(curSeason - 1))
 
-        time.sleep(2)
+        time.sleep(5)
         soup = BeautifulSoup(browser.page_source, 'html.parser')
         table = soup.find(class_="responsive-table").find("tbody")
 

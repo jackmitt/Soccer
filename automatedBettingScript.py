@@ -451,6 +451,8 @@ def grade_bets():
             netWin.append(-row["Stake"])
         elif (row["Results"] == "WW"):
             netWin.append(row["Stake"] * (row["Odds"] - 1))
+        else:
+            netWin.append(np.nan)
     bets["Net Win"] = netWin
     bets.to_csv("./csv_data/api_bets_finished.csv", index = False)
 

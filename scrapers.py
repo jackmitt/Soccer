@@ -320,6 +320,7 @@ def nowgoal(league):
             soup = BeautifulSoup(browser.page_source, 'html.parser')
             i = 1
             j = 2
+            lastDate = "..."
             while (1):
                 try:
                     browser.find_element_by_xpath("//*[@id='Table2']/tbody/tr[" + str(i) + "]/td[" + str(j) + "]").click()
@@ -333,6 +334,11 @@ def nowgoal(league):
                         curSeason = curSeason.split("-")[1] + "-" + str(int(curSeason.split("-")[1]) + 1)
                         break
                 soup = BeautifulSoup(browser.page_source, 'html.parser')
+                while (soup.find(class_="tdsolid").find_all("td")[2]["data-t"] == lastDate):
+                    print(soup.find(class_="tdsolid").find_all("td")[2]["data-t"])
+                    time.sleep(5)
+                    soup = BeautifulSoup(browser.page_source, 'html.parser')
+                lastDate = soup.find(class_="tdsolid").find_all("td")[2]["data-t"]
                 for t in soup.find_all(class_="odds-icon"):
                     gameUrls.append(t['href'])
                 j += 1
@@ -968,3 +974,12 @@ def transfermarkt(league):
             A.addCellToRow(row.find_all("td")[6].get_text())
             A.appendRow()
     A.dictToCsv("./csv_data/" + league + "/transfermarkt.csv")
+
+# leagues = ["Austria1", "Austria2", "Belgium1", "Belgium2", "Bosnia1", "Bulgaria1", "Italy1", "Italy2", "Netherlands1", "Netherlands2", "Croatia1", "Czech1", "Czech2", "Denmark1", "Denmark2", "England1", "England2", "England3", "England4", "France1", "France2", "France3", "Germany1", "Germany2", "Germany3", "Greece1", "Hungary1", "Poland1", "Poland2", "Portugal1", "Portugal2", "Romania1", "Scotland1", "Scotland2", "Serbia1", "Slovakia1", "Slovakia2", "Slovenia1", "Spain1", "Spain2", "Switzerland1", "Switzerland2", "Turkey1", "Turkey2"]
+#
+# for league in leagues:
+#     nowgoal(league)
+
+#transfermarkt("Netherlands2")
+
+#NEED TO RESCRAPE TURKEY2

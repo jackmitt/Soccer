@@ -560,6 +560,222 @@ def standardizeTeamName(name, league):
         elif ("fc juniors o" in lname):
             return ("FC Superfund Pasching")
         return (name)
+    elif (league == "Belgium2"):
+        if ("lommel united" == lname):
+            return ("KVSK Lommel")
+        elif ("white star woluwe" in lname):
+            return ("White Star Bruxelles")
+        elif ("club nxt" in lname):
+            return ("Club Brugge(U23)")
+        elif ("royal excel mouscron" in lname):
+            return ("Excelsior Mouscron")
+        elif ("lierse " in lname):
+            return ("Lierse")
+    elif (league == "Bosnia1"):
+        if ("nk jajce" in lname):
+            return ("NK Metalleghe-BSI")
+        elif ("sloboda tuzla" in lname):
+            return ("Sloboda")
+    elif (league == "Bulgaria1"):
+        if ("neftochimik" in lname):
+            return ("Neff supporting Simic")
+        elif ("etar veliko" in lname):
+            return ("Etar")
+    elif (league == "Italy1"):
+        if ("spal" == lname or "spal 2013" == lname):
+            return ("Spal")
+        elif ("ac siena" in lname):
+            return ("Robur Siena S.S.D.")
+    elif (league == "Italy2"):
+        if ("spal" == lname or "spal 2013" == lname):
+            return ("Spal")
+        elif ("ac siena" in lname):
+            return ("Robur Siena S.S.D.")
+        elif ("ascoli " in lname):
+            return ("Ascoli")
+        elif ("novara " in lname):
+            return ("Novara")
+        elif ("ac pisa " in lname or "pisa sporting" in lname):
+            return ("Pisa")
+        elif ("parma calcio" in lname):
+            return ("Parma")
+        elif ("chievo verona" in lname):
+            return ("Chievo")
+        elif ("ternana " in lname):
+            return ("Ternana")
+        elif ("alessandria " in lname):
+            return ("Alessandria")
+    elif (league == "Netherlands1"):
+        if ("ajax " in lname):
+            return ("AFC Ajax")
+        elif ("excelsior rotterdam" in lname):
+            return ("Excelsior SBV")
+    elif (league == "Netherlands2"):
+        if ("excelsior rotterdam" in lname):
+            return ("Excelsior SBV")
+        elif ("ajax amsterdam" in lname):
+            return ("Jong Ajax (Youth)")
+        elif ("fc twente enschede u21" in lname):
+            return ("FC Twente Enschede Reserve")
+        elif ("psv eindhoven u21" in lname):
+            return ("Jong PSV Eindhoven (Youth)")
+    elif (league == "Czech1"):
+        if ("zbrojovka brno" in lname):
+            return ("Brno")
+        elif ("fastav zlin" in lname):
+            return ("Tescoma Zlin")
+    elif (league == "Czech2"):
+        if ("zbrojovka brno" in lname):
+            return ("Brno")
+        elif ("fastav zlin" in lname):
+            return ("Tescoma Zlin")
+        elif ("banik most" in lname):
+            return ("Most Mus")
+        elif (" trinec" in lname):
+            return ("Trinec")
+        elif ("sellier &" in lname):
+            return ("FK Graffin Vlasim")
+        elif ("olympia radotin" in lname):
+            return ("Olymp.Hradec Kralove")
+    elif (league == "Denmark1"):
+        if ("vejle boldklub" in lname):
+            return ("Vejle")
+    elif (league == "Denmark2"):
+        #cant find FC Hjörring equivalent
+        if ("vejle boldklub" in lname):
+            return ("Vejle")
+        elif ("brönshöj" in lname):
+            return ("Bronshoj")
+        elif ("hb köge" in lname):
+            return ("Herfolge Boldklub Koge")
+        elif ("akademisk" in lname):
+            return ("AB Copenhagen")
+        elif ("blokhus " in lname):
+            return ("Jammerbugt")
+    elif (league == "England1"):
+        if ("wolverhampton" in lname):
+            return ("Wolves")
+    elif (league == "England2"):
+        if ("wolverhampton" in lname):
+            return ("Wolves")
+    elif (league == "England3"):
+        if ("wolverhampton" in lname):
+            return ("Wolves")
+    elif (league == "England4"):
+        if ("dagenham redbridge" in lname):
+            return ("Dagenham   Redbridge")
+    elif (league == "France1"):
+        if ("stade rennais" in lname):
+            return ("Rennes")
+        elif ("stade reims" in lname):
+            return ("Reims")
+    elif (league == "France2"):
+        if ("stade reims" in lname):
+            return ("Reims")
+        elif ("us orléans" in lname):
+            return ("Orleans US 45")
+        elif ("cs sedan" in lname):
+            return ("Sedan")
+    elif (league == "France3"):
+        if ("us orléans" in lname):
+            return ("Orleans US 45")
+        elif ("cs sedan" in lname):
+            return ("Sedan")
+        elif ("olympique ajaccio" in lname):
+            return ("Ajaccio Gfco")
+        elif ("unis colmar" in lname):
+            return ("Colmar")
+        elif ("sporting club de lyon" == lname):
+            return ("Lyon Duchere")
+    elif (league == "Germany3"):
+        if ("ürkgücü" in lname):
+            return ("Te Cu Kukuh Atta Seip")
+    elif (league == "Greece1"):
+        if (" veria" in lname):
+            return ("Veria FC")
+    elif (league == "Hungary1"):
+        if ("eto fc gy" in lname):
+            return ("Gyori ETO")
+        elif ("paksi " in lname):
+            return ("Paksi SE Honlapja")
+        elif ("mtk budapest" in lname):
+            return ("MTK Hungaria")
+        elif ("mol vidi " in lname or "mol feh" in lname):
+            return ("Fehervar Videoton")
+        elif ("budafoki " in lname):
+            return ("Dafuji cloth MTE")
+        elif ("kisvárda" in lname):
+            return ("Varda SE")
+    elif (league == "Portugal1"):
+        if ("desportivo aves" in lname):
+            return ("Aves")
+        elif ("cd nacional" in lname):
+            return ("Nacional da Madeira")
+    elif (league == "Portugal2"):
+        if ("desportivo aves" in lname):
+            return ("Aves")
+        elif ("cd nacional" in lname):
+            return ("Nacional da Madeira")
+        elif ("cadémico viseu" in lname):
+            return ("Viseu")
+        elif ("cd trofense" in lname):
+            return ("Clube Desportivo Trofense")
+        elif ("naval" in lname and "de maio" in lname):
+            return ("Associacao Naval")
+    elif (league == "Romania1"):
+        if ("fcsb" == lname):
+            return ("FC Steaua Bucuresti")
+    elif (league == "Serbia1"):
+        if ("red star belgrade" in lname):
+            return ("Crvena Zvezda")
+        elif ("javor-matis" in lname):
+            return ("Habitpharm Javor")
+        elif ("ofk backa" in lname):
+            return ("FK Backa Backa Palanka")
+    elif (league == "Slovakia1"):
+        if ("pohronie" in lname):
+            return ("Sokol Dolna Zdana")
+    elif (league == "Slovenia1"):
+        if ("nk krsko" in lname):
+            return ("Krsko Posavlje")
+        elif ("nk bravo" in lname):
+            return ("ASK Bravo Publikum")
+    elif (league == "Spain1"):
+        if ("alavés" in lname):
+            return ("Alaves")
+    elif (league == "Spain2"):
+        if ("villarreal cf" in lname):
+            return ("Villarreal")
+        elif ("alavés" in lname):
+            return ("Alaves")
+        elif ("bilbao athletic" in lname):
+            return ("Athletic Bilbao B")
+    elif (league == "Turkey1"):
+        if ("akhisar belediyespor" in lname or "akhisarspor" == lname):
+            return ("Akhisar Bld.Geng")
+        elif ("osmanlispor" in lname):
+            return ("Ankaraspor FK")
+        elif ("erzurumspor" in lname):
+            return ("Erzurum BB")
+        elif ("gaziantep fk" in lname):
+            return ("Gazisehir Gaziantep")
+    elif (league == "Turkey2"):
+        if ("akhisar belediyespor" in lname or "akhisarspor" == lname):
+            return ("Akhisar Bld.Geng")
+        elif ("osmanlispor" in lname):
+            return ("Ankaraspor FK")
+        elif ("erzurumspor" in lname):
+            return ("Erzurum BB")
+        elif ("gaziantep " in lname):
+            return ("Gazisehir Gaziantep")
+        elif ("tavsanli" in lname):
+            return ("Tavsanli Belediye T.L")
+        elif ("güngören" in lname):
+            return ("Gungoren")
+        elif ("sanliurfaspor" in lname):
+            return ("S.Urfaspor")
+
+    return (name)
 
 def grade_bets(league):
     netwin = 0

@@ -106,9 +106,14 @@ def update(league):
         num_teams = len(teams_to_int)
 
 
+
+    #ISSUE WHEN TEAMS NAMES WERE UPDATED FROM YEAR TO YEAR - GOING TO PRINT NEW NAME AND LET THERE BE AN ERROR THROWN
+    #UPDATING AUTOMATICALLY ERASES OLD PRIORS IF TEAM NAME CHANGE
     tempDict = {"i_home":[],"i_away":[]}
     for index, row in train.iterrows():
         if (row["Home"] not in teams_to_int):
+            print ("ERROR:", row["Home"])
+            continue
             priors["offense"][0].append(0)
             priors["offense"][1].append(0.075)
             priors["defense"][0].append(0)
@@ -118,6 +123,8 @@ def update(league):
             with open("./csv_data/" + league + "/current/teams_to_int.pkl", "wb") as f:
                 pickle.dump(teams_to_int, f)
         if (row["Away"] not in teams_to_int):
+            print ("ERROR:", row["Away"])
+            continue
             priors["offense"][0].append(0)
             priors["offense"][1].append(0.075)
             priors["defense"][0].append(0)

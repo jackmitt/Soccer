@@ -477,7 +477,7 @@ while(1):
         print ("Check Accepted Bets Failed")
 
 
-    leagues = ["Japan1","Japan2","Korea1","Norway1","Brazil1","Brazil2","Norway2","Sweden2"]
+    leagues = ["Japan1","Japan2","Korea1","Norway1","Norway2","Sweden2"]
     for league in leagues:
         print (league, "---------------------------------")
         #try:

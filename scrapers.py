@@ -8,7 +8,7 @@ import os
 import datetime
 from dateutil.relativedelta import relativedelta
 from webdriver_manager.chrome import ChromeDriverManager
-from webdriver_manager.utils import ChromeType
+from webdriver_manager.core.utils import ChromeType
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.chrome.service import Service
 import pickle
@@ -788,7 +788,7 @@ def nowgoalCurSeason(league):
         df.to_csv("./csv_data/" + league + "/current/results.csv", index = False)
         return (1)
     else:
-        return (0)
+        return (-1)
 
 def pinnacle(league):
     if (league == "Japan1"):

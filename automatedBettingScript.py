@@ -480,12 +480,12 @@ while(1):
     leagues = ["Japan1","Japan2","Korea1","Norway1","Norway2","Sweden2"]
     for league in leagues:
         print (league, "---------------------------------")
-        #try:
-        if (scr.nowgoalCurSeason(league) == 0):
+        try:
+            if (scr.nowgoalCurSeason(league) == 0):
+                continue
+        except:
+            print ("Now Goal Scrape Failed")
             continue
-        #except:
-            #print ("Now Goal Scrape Failed")
-            #continue
         try:
             update(league)
         except:

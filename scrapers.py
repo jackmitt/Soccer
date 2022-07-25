@@ -20,9 +20,9 @@ def nowgoal(league):
     driver_path = ChromeDriverManager(chrome_type=ChromeType.CHROMIUM).install()
     chrome_options = Options()
     chrome_options.add_argument("--no-sandbox")
-    #chrome_options.add_argument("--headless")
+    chrome_options.add_argument("--headless")
     chrome_options.add_argument("--window-size=1325x744")
-    browser = webdriver.Chrome(executable_path=driver_path, options = chrome_options)
+    browser = webdriver.Chrome(executable_path="/snap/bin/chromium.chromedriver", options = chrome_options)
     browser.maximize_window()
     if (not exists("./nowgoal_gameUrls/" + league + "_new.csv")):
         oneyear = False
@@ -313,9 +313,9 @@ def nowgoal(league):
             time.sleep(1)
             if (playoff):
                 try:
-                    browser.find_element_by_xpath("//*[@id='SubSelectDiv']/ul/li[1]").click()
+                    browser.find_element("xpath", "//*[@id='SubSelectDiv']/ul/li[1]").click()
                 except:
-                    browser.find_element_by_xpath("//*[@id='SubSelectDiv']/ul/li").click()
+                    browser.find_element("xpath", "//*[@id='SubSelectDiv']/ul/li").click()
             time.sleep(1)
             soup = BeautifulSoup(browser.page_source, 'html.parser')
             i = 1
@@ -323,7 +323,7 @@ def nowgoal(league):
             lastDate = "..."
             while (1):
                 try:
-                    browser.find_element_by_xpath("//*[@id='Table2']/tbody/tr[" + str(i) + "]/td[" + str(j) + "]").click()
+                    browser.find_element("xpath", "//*[@id='Table2']/tbody/tr[" + str(i) + "]/td[" + str(j) + "]").click()
                     time.sleep(0.5)
                 except:
                     if (i == 1):
@@ -489,7 +489,7 @@ def nowgoalPt2(league):
     chrome_options.add_argument("--no-sandbox")
     chrome_options.add_argument("--headless")
     chrome_options.add_argument("--window-size=1325x744")
-    browser = webdriver.Chrome(executable_path=driver_path, options = chrome_options)
+    browser = webdriver.Chrome(executable_path="/snap/bin/chromium.chromedriver", options = chrome_options)
     browser.maximize_window()
     gameUrls = pd.read_csv("./nowgoal_gameUrls/" + league + ".csv", encoding = "ISO-8859-1")["urls"].tolist()
     if (exists("./nowgoal_gameUrls/" + league + "_new.csv")):
@@ -975,10 +975,10 @@ def transfermarkt(league):
             A.appendRow()
     A.dictToCsv("./csv_data/" + league + "/transfermarkt.csv")
 
-# leagues = ["Austria1", "Austria2", "Belgium1", "Belgium2", "Bosnia1", "Bulgaria1", "Italy1", "Italy2", "Netherlands1", "Netherlands2", "Croatia1", "Czech1", "Czech2", "Denmark1", "Denmark2", "England1", "England2", "England3", "England4", "France1", "France2", "France3", "Germany1", "Germany2", "Germany3", "Greece1", "Hungary1", "Poland1", "Poland2", "Portugal1", "Portugal2", "Romania1", "Scotland1", "Scotland2", "Serbia1", "Slovakia1", "Slovakia2", "Slovenia1", "Spain1", "Spain2", "Switzerland1", "Switzerland2", "Turkey1", "Turkey2"]
+leagues = ["Austria1", "Austria2", "Belgium1", "Belgium2", "Bosnia1", "Bulgaria1", "Italy1", "Italy2", "Netherlands1", "Netherlands2", "Croatia1", "Czech1", "Czech2", "Denmark1", "Denmark2", "England1", "England2", "England3", "England4", "France1", "France2", "France3", "Germany1", "Germany2", "Germany3", "Greece1", "Hungary1", "Poland1", "Poland2", "Portugal1", "Portugal2", "Romania1", "Scotland1", "Scotland2", "Serbia1", "Slovakia1", "Slovakia2", "Slovenia1", "Spain1", "Spain2", "Switzerland1", "Switzerland2", "Turkey1", "Turkey2"]
 #
-# for league in leagues:
-#     nowgoal(league)
+for league in leagues:
+    nowgoal(league)
 
 #transfermarkt("Netherlands2")
 

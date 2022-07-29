@@ -1,10 +1,10 @@
 import pandas as pd
 import numpy as np
 import datetime
-import pymc as pm
-import pymc.sampling_jax
-import aesara.tensor as tt
-import aesara
+import pymc3 as pm
+import theano.tensor as tt
+import theano
+import gc
 from WeibullCountModelFunctions.MLE import MLE
 from WeibullCountModelFunctions.WeibullPMF import weibullPmf
 from WeibullCountModelFunctions.frankCopula import copula
@@ -14,33 +14,20 @@ from scipy.integrate import quad, dblquad
 from math import factorial, exp, sqrt, pi
 
 def get_model_posteriors(trace, n_teams):
-    tracedict = {"home":[],"intercept":[],"offense":[],"defense":[]}
-    for i in range(n_teams):
-        tracedict["offense"].append([])
-        tracedict["defense"].append([])
-    for key in tracedict:
-        for a in trace.posterior[key]:
-            if (key == "offense" or key == "defense"):
-                for b in a.data:
-                    for i in range(len(b)):
-                        tracedict[key][i].append(b[i])
-            else:
-                tracedict[key].extend(a.data)
-
     posteriors = {}
-    h_μ, h_σ = norm.fit(tracedict['home'])
+    h_μ, h_σ = norm.fit(trace['home'])
     posteriors['home'] = [h_μ, h_σ]
-    i_μ, i_σ = norm.fit(tracedict['intercept'])
+    i_μ, i_σ = norm.fit(trace['intercept'])
     posteriors['intercept'] = [i_μ, i_σ]
     o_μ = []
     o_σ = []
     d_μ = []
     d_σ = []
     for i in range(n_teams):
-        oᵢ_μ, oᵢ_σ = norm.fit(tracedict['offense'][i])
+        oᵢ_μ, oᵢ_σ = norm.fit(trace['offense'][:,i])
         o_μ.append(oᵢ_μ)
         o_σ.append(oᵢ_σ)
-        dᵢ_μ, dᵢ_σ = norm.fit(tracedict['defense'][i])
+        dᵢ_μ, dᵢ_σ = norm.fit(trace['defense'][:,i])
         d_μ.append(dᵢ_μ)
         d_σ.append(dᵢ_σ)
     posteriors['offense'] = [o_μ, o_σ]
@@ -62,15 +49,15 @@ def model_iteration(idₕ, sₕ_obs, idₐ, sₐ_obs, priors, n_teams, Δσ, sam
         if (len(priors) == 0):
             h = pm.Flat('home')
             i = pm.Flat('intercept')
-            sd_offense = pm.HalfStudentT('sd_offense', nu=3, sigma=2.5)
-            sd_defense = pm.HalfStudentT('sd_defense', nu=3, sigma=2.5)
+            sd_offense = pm.HalfStudentT('sd_offense', nu=3, sd=2.5)
+            sd_defense = pm.HalfStudentT('sd_defense', nu=3, sd=2.5)
 
-            o_star_init = pm.Normal('offense_star', mu=0, sigma=sd_offense, shape=n_teams)
+            o_star_init = pm.Normal('offense_star', mu=0, sd=sd_offense, shape=n_teams)
             Δ_o = pm.Normal('Δ_o', mu=0.0, sigma=Δσ, shape=n_teams)
             o_star = pm.Deterministic('o_star', o_star_init + Δ_o)
             o = pm.Deterministic('offense', o_star - tt.mean(o_star))
 
-            d_star_init = pm.Normal('defense_star', mu=0, sigma=sd_defense, shape=n_teams)
+            d_star_init = pm.Normal('defense_star', mu=0, sd=sd_defense, shape=n_teams)
             Δ_d = pm.Normal('Δ_d', mu=0.0, sigma=Δσ, shape=n_teams)
             d_star = pm.Deterministic('d_star', d_star_init + Δ_d)
             d = pm.Deterministic('defense', d_star - tt.mean(d_star))
@@ -97,14 +84,17 @@ def model_iteration(idₕ, sₕ_obs, idₐ, sₐ_obs, priors, n_teams, Δσ, sam
         sₕ = pm.Poisson('sₕ', mu=λₕ, observed=sₕ_obs)
         sₐ = pm.Poisson('sₐ', mu=λₐ, observed=sₐ_obs)
 
-        trace = pm.sampling_jax.sample_numpyro_nuts(
+        trace = pm.sample(
             samples,
             tune=tune,
-            chains=3
+            chains=3,
+            cores=cores,
+            progressbar=True,
+            return_inferencedata=False
         )
 
         posteriors = get_model_posteriors(trace, n_teams)
-
+        gc.collect()
         return posteriors
 
 def model_update(idₕ, sₕ_obs, idₐ, sₐ_obs, priors, n_teams, f, f_thresh, Δσ):

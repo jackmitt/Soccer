@@ -1,7 +1,8 @@
 import requests
 import hashlib
-import pandas
-import numpy
+import pandas as pd
+import numpy as np
+import datetime
 import time
 from helpers import standardizeTeamName
 from helpers import convert_league
@@ -75,7 +76,10 @@ def get_best_pinnacle_lines(url_base, token, leagues):
     for i in ["1","2"]:
         response = requests.get(url_base + "/GetFeeds?sportsType=1&marketTypeId=" + i + "&leagues=" + league_id_string + "&since=1000000000000&bookies=PIN",headers={"AOToken":token,"accept":"application/json"}).json()
         for x in response["Result"]["Sports"][0]["MatchGames"]:
-            sum_odds = abs(2 - float(x["FullTimeHdp"]["BookieOdds"].split(";")[0].split("=")[1].split(",")[0])) + abs(2 - float(x["FullTimeHdp"]["BookieOdds"].split(";")[0].split("=")[1].split(",")[1]))
+            try:
+                sum_odds = abs(2 - float(x["FullTimeHdp"]["BookieOdds"].split(";")[0].split("=")[1].split(",")[0])) + abs(2 - float(x["FullTimeHdp"]["BookieOdds"].split(";")[0].split("=")[1].split(",")[1]))
+            except IndexError:
+                continue
             if (x["MatchId"] not in matches):
                 matches[x["MatchId"]] = {"Date":x["StartsOn"],"GameId":x["GameId"],"sum_odds":sum_odds,"Home":x["HomeTeam"]["Name"],"Away":x["AwayTeam"]["Name"],"MarketTypeId":int(i),"home_odds":float(x["FullTimeHdp"]["BookieOdds"].split(";")[0].split("=")[1].split(",")[0]),"away_odds":float(x["FullTimeHdp"]["BookieOdds"].split(";")[0].split("=")[1].split(",")[1])}
                 if (x["FullTimeFavoured"] == 2):
@@ -149,7 +153,8 @@ def non_running_bets(url_base, token):
     return (requests.get(url_base + "/GetNonRunningBets",headers={"AOToken":token,"accept":"application/json"}).json())
 
 
-def get_team_names(url_base, token, leagues):
+def test_team_names(url_base, token, leagues):
+    leagues[0] = convert_league(leagues[0])
     league_id_map = get_league_ids(url_base, token)
 
     league_id_string = ""
@@ -164,7 +169,10 @@ def get_team_names(url_base, token, leagues):
     for i in ["1","2"]:
         response = requests.get(url_base + "/GetFeeds?sportsType=1&marketTypeId=" + i + "&leagues=" + league_id_string + "&since=1000000000000&bookies=PIN",headers={"AOToken":token,"accept":"application/json"}).json()
         for x in response["Result"]["Sports"][0]["MatchGames"]:
-            sum_odds = abs(2 - float(x["FullTimeHdp"]["BookieOdds"].split(";")[0].split("=")[1].split(",")[0])) + abs(2 - float(x["FullTimeHdp"]["BookieOdds"].split(";")[0].split("=")[1].split(",")[1]))
+            try:
+                sum_odds = abs(2 - float(x["FullTimeHdp"]["BookieOdds"].split(";")[0].split("=")[1].split(",")[0])) + abs(2 - float(x["FullTimeHdp"]["BookieOdds"].split(";")[0].split("=")[1].split(",")[1]))
+            except:
+                continue
             if (x["MatchId"] not in matches):
                 matches[x["MatchId"]] = {"GameId":x["GameId"],"sum_odds":sum_odds,"Home":x["HomeTeam"]["Name"],"Away":x["AwayTeam"]["Name"],"MarketTypeId":int(i),"home_odds":float(x["FullTimeHdp"]["BookieOdds"].split(";")[0].split("=")[1].split(",")[0]),"away_odds":float(x["FullTimeHdp"]["BookieOdds"].split(";")[0].split("=")[1].split(",")[1])}
                 if (x["FullTimeFavoured"] == 2):
@@ -191,10 +199,30 @@ def get_team_names(url_base, token, leagues):
                     else:
                         matches[x["MatchId"]]["AH"] = float(x["FullTimeHdp"]["Handicap"])
 
+    train = pd.read_csv("./csv_data/" + convert_league(leagues[0]) + "/betting.csv", encoding = "ISO-8859-1")
+    for i in range(len(train.index)):
+        try:
+            train.at[i, "Date"] = datetime.date(int(train.at[i, "Date"].split("-")[0]), int(train.at[i, "Date"].split("-")[1]), int(train.at[i, "Date"].split("-")[2]))
+        except:
+            train.at[i, "Date"] = datetime.date(int(train.at[i, "Date"].split("/")[2]), int(train.at[i, "Date"].split("/")[0]), int(train.at[i, "Date"].split("/")[1]))
+    train = train.sort_values(by=["Date"], ignore_index = True)
+    train = train.rename(columns={"Home Score": "home_team_reg_score"})
+    train = train.rename(columns={"Away Score": "away_team_reg_score"})
+    teams = train.Home.unique()
+    teams = np.sort(teams)
+    teams = pd.DataFrame(teams, columns=["team"])
+    teams["i"] = teams.index
+
+    teams_to_int = {}
+    for index, row in teams.iterrows():
+        teams_to_int[row["team"]] = row["i"]
 
     for match in matches:
-        print (matches[match]["Home"])
-        print (matches[match]["Away"])
+        if (standardizeTeamName(matches[match]["Home"], convert_league(leagues[0])) not in teams_to_int):
+            print (matches[match]["Home"])
+        if (standardizeTeamName(matches[match]["Away"], convert_league(leagues[0])) not in teams_to_int):
+            print (matches[match]["Away"])
+    print (teams_to_int.keys())
 
 
 def get_inplay_best_pinnacle_lines(url_base, token):

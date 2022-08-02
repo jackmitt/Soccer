@@ -499,192 +499,214 @@ def nowgoalPt2(league):
     #
     #
     counter = 0
-    if (exists("./csv_data/" + league + "/betting.csv")):
+    if (exists("./csv_data/" + league + "/betting_new.csv")):
+        A.initDictFromCsv("./csv_data/" + league + "/betting_new.csv")
+        scrapedGames = pd.read_csv('./csv_data/' + league + '/betting_new.csv', encoding = "ISO-8859-1")["url"].tolist()
+        for game in scrapedGames:
+            try:
+                gameUrls.remove(game)
+            except:
+                game = list(game)
+                game[13] = "6"
+                gameUrls.remove("".join(game))
+    elif (exists("./csv_data/" + league + "/betting.csv")):
         A.initDictFromCsv("./csv_data/" + league + "/betting.csv")
         scrapedGames = pd.read_csv('./csv_data/' + league + '/betting.csv', encoding = "ISO-8859-1")["url"].tolist()
         for game in scrapedGames:
-            gameUrls.remove(game)
-    #
-    for game in gameUrls:
-        browser.get("https:" + game)
-        time.sleep(1)
-        soup = BeautifulSoup(browser.page_source, 'html.parser')
-        #try:
-        fullDate = soup.find(class_="LName").find_next_sibling()["data-t"].split()[0]
-        try:
-            fail = soup.find_all(class_="score")[0].text
-        except IndexError:
-            continue
-        A.addCellToRow(datetime.date(int(fullDate.split("/")[2]), int(fullDate.split("/")[0]), int(fullDate.split("/")[1])))
-        A.addCellToRow(soup.find_all(class_="sclassName")[0].find("a").text[1:])
-        A.addCellToRow(soup.find_all(class_="sclassName")[1].find("a").text[1:])
-        A.addCellToRow(soup.find_all(class_="score")[0].text)
-        A.addCellToRow(soup.find_all(class_="score")[1].text)
-        for row in soup.find_all(class_="odds-table-bg")[0].find_all("tr"):
-            if ("oods-bg" in row["class"][0]):
-                if (row.find("td").text.split()[0] == "Bet365"):
-                    try:
-                        hOddsLen = int(len(row.find_all("td")[4].text) / 2)
-                        dOddsLen = int(len(row.find_all("td")[5].text) / 2)
-                        aOddsLen = int(len(row.find_all("td")[6].text) / 2)
-                        A.addCellToRow(row.find_all("td")[4].text[0:hOddsLen])
-                        A.addCellToRow(row.find_all("td")[5].text[0:dOddsLen])
-                        A.addCellToRow(row.find_all("td")[6].text[0:aOddsLen])
-                        A.addCellToRow(row.find_all("td")[4].text[hOddsLen:hOddsLen*2])
-                        A.addCellToRow(row.find_all("td")[5].text[dOddsLen:dOddsLen*2])
-                        A.addCellToRow(row.find_all("td")[6].text[aOddsLen:aOddsLen*2])
-                        A.addCellToRow(row.find("td").text.split()[0])
-                    except:
-                        found = False
-                        for r in soup.find_all(class_="odds-table-bg")[0].find_all("tr"):
-                            try:
-                                hOddsLen = int(len(r.find_all("td")[4].text) / 2)
-                                dOddsLen = int(len(r.find_all("td")[5].text) / 2)
-                                aOddsLen = int(len(r.find_all("td")[6].text) / 2)
-                                A.addCellToRow(r.find_all("td")[4].text[0:hOddsLen])
-                                A.addCellToRow(r.find_all("td")[5].text[0:dOddsLen])
-                                A.addCellToRow(r.find_all("td")[6].text[0:aOddsLen])
-                                A.addCellToRow(r.find_all("td")[4].text[hOddsLen:hOddsLen*2])
-                                A.addCellToRow(r.find_all("td")[5].text[dOddsLen:dOddsLen*2])
-                                A.addCellToRow(r.find_all("td")[6].text[aOddsLen:aOddsLen*2])
-                                A.addCellToRow(r.find("td").text.split()[0])
-                                found = True
-                                break
-                            except:
-                                continue
-                        if (not found):
-                            A.addCellToRow(np.nan)
-                            A.addCellToRow(np.nan)
-                            A.addCellToRow(np.nan)
-                            A.addCellToRow(np.nan)
-                            A.addCellToRow(np.nan)
-                            A.addCellToRow(np.nan)
-                            A.addCellToRow(np.nan)
+            try:
+                gameUrls.remove(game)
+            except:
+                game = list(game)
+                game[13] = "6"
+                gameUrls.remove("".join(game))
+
+    try:
+        for game in gameUrls:
+            #CODED THIS IN TO MAKE IT SKIP CANCELLED OLD GAMES AND START WITH 2021 SEASON
+            if ("nowgoal5" in game):
+                continue
+            print (game)
+            browser.get("https:" + game)
+            time.sleep(1)
+            soup = BeautifulSoup(browser.page_source, 'html.parser')
+            #try:
+            fullDate = soup.find(class_="LName").find_next_sibling()["data-t"].split()[0]
+            try:
+                fail = soup.find_all(class_="score")[0].text
+            except IndexError:
+                continue
+            A.addCellToRow(datetime.date(int(fullDate.split("/")[2]), int(fullDate.split("/")[0]), int(fullDate.split("/")[1])))
+            A.addCellToRow(soup.find_all(class_="sclassName")[0].find("a").text[1:])
+            A.addCellToRow(soup.find_all(class_="sclassName")[1].find("a").text[1:])
+            A.addCellToRow(soup.find_all(class_="score")[0].text)
+            A.addCellToRow(soup.find_all(class_="score")[1].text)
+            for row in soup.find_all(class_="odds-table-bg")[0].find_all("tr"):
+                if ("oods-bg" in row["class"][0]):
+                    if (row.find("td").text.split()[0] == "Bet365"):
+                        try:
+                            hOddsLen = int(len(row.find_all("td")[4].text) / 2)
+                            dOddsLen = int(len(row.find_all("td")[5].text) / 2)
+                            aOddsLen = int(len(row.find_all("td")[6].text) / 2)
+                            A.addCellToRow(row.find_all("td")[4].text[0:hOddsLen])
+                            A.addCellToRow(row.find_all("td")[5].text[0:dOddsLen])
+                            A.addCellToRow(row.find_all("td")[6].text[0:aOddsLen])
+                            A.addCellToRow(row.find_all("td")[4].text[hOddsLen:hOddsLen*2])
+                            A.addCellToRow(row.find_all("td")[5].text[dOddsLen:dOddsLen*2])
+                            A.addCellToRow(row.find_all("td")[6].text[aOddsLen:aOddsLen*2])
+                            A.addCellToRow(row.find("td").text.split()[0])
+                        except:
+                            found = False
+                            for r in soup.find_all(class_="odds-table-bg")[0].find_all("tr"):
+                                try:
+                                    hOddsLen = int(len(r.find_all("td")[4].text) / 2)
+                                    dOddsLen = int(len(r.find_all("td")[5].text) / 2)
+                                    aOddsLen = int(len(r.find_all("td")[6].text) / 2)
+                                    A.addCellToRow(r.find_all("td")[4].text[0:hOddsLen])
+                                    A.addCellToRow(r.find_all("td")[5].text[0:dOddsLen])
+                                    A.addCellToRow(r.find_all("td")[6].text[0:aOddsLen])
+                                    A.addCellToRow(r.find_all("td")[4].text[hOddsLen:hOddsLen*2])
+                                    A.addCellToRow(r.find_all("td")[5].text[dOddsLen:dOddsLen*2])
+                                    A.addCellToRow(r.find_all("td")[6].text[aOddsLen:aOddsLen*2])
+                                    A.addCellToRow(r.find("td").text.split()[0])
+                                    found = True
+                                    break
+                                except:
+                                    continue
+                            if (not found):
+                                A.addCellToRow(np.nan)
+                                A.addCellToRow(np.nan)
+                                A.addCellToRow(np.nan)
+                                A.addCellToRow(np.nan)
+                                A.addCellToRow(np.nan)
+                                A.addCellToRow(np.nan)
+                                A.addCellToRow(np.nan)
 
 
-                    try:
-                        if ("/" in row.find_all("td")[2].find_all("span")[0].text):
-                            if ("-" in row.find_all("td")[2].find_all("span")[0].text):
-                                spread = 0 - round((abs(float(row.find_all("td")[2].find_all("span")[0].text.split("/")[0])) + abs(float(row.find_all("td")[2].find_all("span")[0].text.split("/")[1]))) / 2, 2)
+                        try:
+                            if ("/" in row.find_all("td")[2].find_all("span")[0].text):
+                                if ("-" in row.find_all("td")[2].find_all("span")[0].text):
+                                    spread = 0 - round((abs(float(row.find_all("td")[2].find_all("span")[0].text.split("/")[0])) + abs(float(row.find_all("td")[2].find_all("span")[0].text.split("/")[1]))) / 2, 2)
+                                else:
+                                    spread = round((float(row.find_all("td")[2].find_all("span")[0].text.split("/")[0]) + float(row.find_all("td")[2].find_all("span")[0].text.split("/")[1])) / 2, 2)
                             else:
-                                spread = round((float(row.find_all("td")[2].find_all("span")[0].text.split("/")[0]) + float(row.find_all("td")[2].find_all("span")[0].text.split("/")[1])) / 2, 2)
-                        else:
-                            spread = row.find_all("td")[2].find_all("span")[0].text
-                        A.addCellToRow(spread)
-                        A.addCellToRow(round(float(row.find_all("td")[1].find_all("span")[0].text) + 1,2))
-                        A.addCellToRow(round(float(row.find_all("td")[3].find_all("span")[0].text) + 1,2))
-                        if ("/" in row.find_all("td")[2].find_all("span")[1].text):
-                            if ("-" in row.find_all("td")[2].find_all("span")[1].text):
-                                spread = 0 - round((abs(float(row.find_all("td")[2].find_all("span")[1].text.split("/")[0])) + abs(float(row.find_all("td")[2].find_all("span")[1].text.split("/")[1]))) / 2, 2)
+                                spread = row.find_all("td")[2].find_all("span")[0].text
+                            A.addCellToRow(spread)
+                            A.addCellToRow(round(float(row.find_all("td")[1].find_all("span")[0].text) + 1,2))
+                            A.addCellToRow(round(float(row.find_all("td")[3].find_all("span")[0].text) + 1,2))
+                            if ("/" in row.find_all("td")[2].find_all("span")[1].text):
+                                if ("-" in row.find_all("td")[2].find_all("span")[1].text):
+                                    spread = 0 - round((abs(float(row.find_all("td")[2].find_all("span")[1].text.split("/")[0])) + abs(float(row.find_all("td")[2].find_all("span")[1].text.split("/")[1]))) / 2, 2)
+                                else:
+                                    spread = round((float(row.find_all("td")[2].find_all("span")[1].text.split("/")[0]) + float(row.find_all("td")[2].find_all("span")[1].text.split("/")[1])) / 2, 2)
                             else:
-                                spread = round((float(row.find_all("td")[2].find_all("span")[1].text.split("/")[0]) + float(row.find_all("td")[2].find_all("span")[1].text.split("/")[1])) / 2, 2)
-                        else:
-                            spread = row.find_all("td")[2].find_all("span")[1].text
-                        A.addCellToRow(spread)
-                        A.addCellToRow(round(float(row.find_all("td")[1].find_all("span")[1].text) + 1,2))
-                        A.addCellToRow(round(float(row.find_all("td")[3].find_all("span")[1].text) + 1,2))
-                        A.addCellToRow(row.find("td").text.split()[0])
-                    except:
-                        found = False
-                        for r in soup.find_all(class_="odds-table-bg")[0].find_all("tr"):
-                            try:
-                                if ("/" in r.find_all("td")[2].find_all("span")[0].text):
-                                    if ("-" in r.find_all("td")[2].find_all("span")[0].text):
-                                        spread = 0 - round((abs(float(r.find_all("td")[2].find_all("span")[0].text.split("/")[0])) + abs(float(r.find_all("td")[2].find_all("span")[0].text.split("/")[1]))) / 2, 2)
+                                spread = row.find_all("td")[2].find_all("span")[1].text
+                            A.addCellToRow(spread)
+                            A.addCellToRow(round(float(row.find_all("td")[1].find_all("span")[1].text) + 1,2))
+                            A.addCellToRow(round(float(row.find_all("td")[3].find_all("span")[1].text) + 1,2))
+                            A.addCellToRow(row.find("td").text.split()[0])
+                        except:
+                            found = False
+                            for r in soup.find_all(class_="odds-table-bg")[0].find_all("tr"):
+                                try:
+                                    if ("/" in r.find_all("td")[2].find_all("span")[0].text):
+                                        if ("-" in r.find_all("td")[2].find_all("span")[0].text):
+                                            spread = 0 - round((abs(float(r.find_all("td")[2].find_all("span")[0].text.split("/")[0])) + abs(float(r.find_all("td")[2].find_all("span")[0].text.split("/")[1]))) / 2, 2)
+                                        else:
+                                            spread = round((float(r.find_all("td")[2].find_all("span")[0].text.split("/")[0]) + float(r.find_all("td")[2].find_all("span")[0].text.split("/")[1])) / 2, 2)
                                     else:
-                                        spread = round((float(r.find_all("td")[2].find_all("span")[0].text.split("/")[0]) + float(r.find_all("td")[2].find_all("span")[0].text.split("/")[1])) / 2, 2)
-                                else:
-                                    spread = r.find_all("td")[2].find_all("span")[0].text
-                                A.addCellToRow(spread)
-                                A.addCellToRow(round(float(r.find_all("td")[1].find_all("span")[0].text) + 1,2))
-                                A.addCellToRow(round(float(r.find_all("td")[3].find_all("span")[0].text) + 1,2))
-                                if ("/" in r.find_all("td")[2].find_all("span")[1].text):
-                                    if ("-" in r.find_all("td")[2].find_all("span")[1].text):
-                                        spread = 0 - round((abs(float(r.find_all("td")[2].find_all("span")[1].text.split("/")[0])) + abs(float(r.find_all("td")[2].find_all("span")[1].text.split("/")[1]))) / 2, 2)
+                                        spread = r.find_all("td")[2].find_all("span")[0].text
+                                    A.addCellToRow(spread)
+                                    A.addCellToRow(round(float(r.find_all("td")[1].find_all("span")[0].text) + 1,2))
+                                    A.addCellToRow(round(float(r.find_all("td")[3].find_all("span")[0].text) + 1,2))
+                                    if ("/" in r.find_all("td")[2].find_all("span")[1].text):
+                                        if ("-" in r.find_all("td")[2].find_all("span")[1].text):
+                                            spread = 0 - round((abs(float(r.find_all("td")[2].find_all("span")[1].text.split("/")[0])) + abs(float(r.find_all("td")[2].find_all("span")[1].text.split("/")[1]))) / 2, 2)
+                                        else:
+                                            spread = round((float(r.find_all("td")[2].find_all("span")[1].text.split("/")[0]) + float(r.find_all("td")[2].find_all("span")[1].text.split("/")[1])) / 2, 2)
                                     else:
-                                        spread = round((float(r.find_all("td")[2].find_all("span")[1].text.split("/")[0]) + float(r.find_all("td")[2].find_all("span")[1].text.split("/")[1])) / 2, 2)
-                                else:
-                                    spread = r.find_all("td")[2].find_all("span")[1].text
-                                A.addCellToRow(spread)
-                                A.addCellToRow(round(float(r.find_all("td")[1].find_all("span")[1].text) + 1,2))
-                                A.addCellToRow(round(float(r.find_all("td")[3].find_all("span")[1].text) + 1,2))
-                                A.addCellToRow(r.find("td").text.split()[0])
-                                found = True
-                                break
-                            except:
-                                continue
-                        if (not found):
-                            A.addCellToRow(np.nan)
-                            A.addCellToRow(np.nan)
-                            A.addCellToRow(np.nan)
-                            A.addCellToRow(np.nan)
-                            A.addCellToRow(np.nan)
-                            A.addCellToRow(np.nan)
-                            A.addCellToRow(np.nan)
+                                        spread = r.find_all("td")[2].find_all("span")[1].text
+                                    A.addCellToRow(spread)
+                                    A.addCellToRow(round(float(r.find_all("td")[1].find_all("span")[1].text) + 1,2))
+                                    A.addCellToRow(round(float(r.find_all("td")[3].find_all("span")[1].text) + 1,2))
+                                    A.addCellToRow(r.find("td").text.split()[0])
+                                    found = True
+                                    break
+                                except:
+                                    continue
+                            if (not found):
+                                A.addCellToRow(np.nan)
+                                A.addCellToRow(np.nan)
+                                A.addCellToRow(np.nan)
+                                A.addCellToRow(np.nan)
+                                A.addCellToRow(np.nan)
+                                A.addCellToRow(np.nan)
+                                A.addCellToRow(np.nan)
 
 
-                    try:
-                        if (".5/" in row.find_all("td")[8].find_all("span")[0].text):
-                            total = row.find_all("td")[8].find_all("span")[0].text[0] + ".75"
-                        elif ("/" in row.find_all("td")[8].find_all("span")[0].text):
-                            total = row.find_all("td")[8].find_all("span")[0].text[0] + ".25"
-                        else:
-                            total = row.find_all("td")[8].find_all("span")[0].text
-                        A.addCellToRow(total)
-                        A.addCellToRow(round(float(row.find_all("td")[7].find_all("span")[0].text) + 1,2))
-                        A.addCellToRow(round(float(row.find_all("td")[9].find_all("span")[0].text) + 1,2))
-                        if (".5/" in row.find_all("td")[8].find_all("span")[1].text):
-                            total = row.find_all("td")[8].find_all("span")[1].text[0] + ".75"
-                        elif ("/" in row.find_all("td")[8].find_all("span")[1].text):
-                            total = row.find_all("td")[8].find_all("span")[1].text[0] + ".25"
-                        else:
-                            total = row.find_all("td")[8].find_all("span")[1].text
-                        A.addCellToRow(total)
-                        A.addCellToRow(round(float(row.find_all("td")[7].find_all("span")[1].text) + 1,2))
-                        A.addCellToRow(round(float(row.find_all("td")[9].find_all("span")[1].text) + 1,2))
-                        A.addCellToRow(row.find("td").text.split()[0])
-                    except:
-                        found = False
-                        for r in soup.find_all(class_="odds-table-bg")[0].find_all("tr"):
-                            try:
-                                if (".5/" in r.find_all("td")[8].find_all("span")[0].text):
-                                    total = r.find_all("td")[8].find_all("span")[0].text[0] + ".75"
-                                elif ("/" in r.find_all("td")[8].find_all("span")[0].text):
-                                    total = r.find_all("td")[8].find_all("span")[0].text[0] + ".25"
-                                else:
-                                    total = r.find_all("td")[8].find_all("span")[0].text
-                                A.addCellToRow(total)
-                                A.addCellToRow(round(float(r.find_all("td")[7].find_all("span")[0].text) + 1,2))
-                                A.addCellToRow(round(float(r.find_all("td")[9].find_all("span")[0].text) + 1,2))
-                                if (".5/" in r.find_all("td")[8].find_all("span")[1].text):
-                                    total = r.find_all("td")[8].find_all("span")[1].text[0] + ".75"
-                                elif ("/" in r.find_all("td")[8].find_all("span")[1].text):
-                                    total = r.find_all("td")[8].find_all("span")[1].text[0] + ".25"
-                                else:
-                                    total = r.find_all("td")[8].find_all("span")[1].text
-                                A.addCellToRow(total)
-                                A.addCellToRow(round(float(r.find_all("td")[7].find_all("span")[1].text) + 1,2))
-                                A.addCellToRow(round(float(r.find_all("td")[9].find_all("span")[1].text) + 1,2))
-                                A.addCellToRow(r.find("td").text.split()[0])
-                                found = True
-                                break
-                            except:
-                                continue
-                        if (not found):
-                            A.addCellToRow(np.nan)
-                            A.addCellToRow(np.nan)
-                            A.addCellToRow(np.nan)
-                            A.addCellToRow(np.nan)
-                            A.addCellToRow(np.nan)
-                            A.addCellToRow(np.nan)
-                            A.addCellToRow(np.nan)
-        A.addCellToRow(game)
-        A.appendRow()
-        counter += 1
-        if (counter % 100 == 1):
-            A.dictToCsv("./csv_data/" + league + "/betting.csv")
-    A.dictToCsv("./csv_data/" + league + "/betting.csv")
-    browser.close()
+                        try:
+                            if (".5/" in row.find_all("td")[8].find_all("span")[0].text):
+                                total = row.find_all("td")[8].find_all("span")[0].text[0] + ".75"
+                            elif ("/" in row.find_all("td")[8].find_all("span")[0].text):
+                                total = row.find_all("td")[8].find_all("span")[0].text[0] + ".25"
+                            else:
+                                total = row.find_all("td")[8].find_all("span")[0].text
+                            A.addCellToRow(total)
+                            A.addCellToRow(round(float(row.find_all("td")[7].find_all("span")[0].text) + 1,2))
+                            A.addCellToRow(round(float(row.find_all("td")[9].find_all("span")[0].text) + 1,2))
+                            if (".5/" in row.find_all("td")[8].find_all("span")[1].text):
+                                total = row.find_all("td")[8].find_all("span")[1].text[0] + ".75"
+                            elif ("/" in row.find_all("td")[8].find_all("span")[1].text):
+                                total = row.find_all("td")[8].find_all("span")[1].text[0] + ".25"
+                            else:
+                                total = row.find_all("td")[8].find_all("span")[1].text
+                            A.addCellToRow(total)
+                            A.addCellToRow(round(float(row.find_all("td")[7].find_all("span")[1].text) + 1,2))
+                            A.addCellToRow(round(float(row.find_all("td")[9].find_all("span")[1].text) + 1,2))
+                            A.addCellToRow(row.find("td").text.split()[0])
+                        except:
+                            found = False
+                            for r in soup.find_all(class_="odds-table-bg")[0].find_all("tr"):
+                                try:
+                                    if (".5/" in r.find_all("td")[8].find_all("span")[0].text):
+                                        total = r.find_all("td")[8].find_all("span")[0].text[0] + ".75"
+                                    elif ("/" in r.find_all("td")[8].find_all("span")[0].text):
+                                        total = r.find_all("td")[8].find_all("span")[0].text[0] + ".25"
+                                    else:
+                                        total = r.find_all("td")[8].find_all("span")[0].text
+                                    A.addCellToRow(total)
+                                    A.addCellToRow(round(float(r.find_all("td")[7].find_all("span")[0].text) + 1,2))
+                                    A.addCellToRow(round(float(r.find_all("td")[9].find_all("span")[0].text) + 1,2))
+                                    if (".5/" in r.find_all("td")[8].find_all("span")[1].text):
+                                        total = r.find_all("td")[8].find_all("span")[1].text[0] + ".75"
+                                    elif ("/" in r.find_all("td")[8].find_all("span")[1].text):
+                                        total = r.find_all("td")[8].find_all("span")[1].text[0] + ".25"
+                                    else:
+                                        total = r.find_all("td")[8].find_all("span")[1].text
+                                    A.addCellToRow(total)
+                                    A.addCellToRow(round(float(r.find_all("td")[7].find_all("span")[1].text) + 1,2))
+                                    A.addCellToRow(round(float(r.find_all("td")[9].find_all("span")[1].text) + 1,2))
+                                    A.addCellToRow(r.find("td").text.split()[0])
+                                    found = True
+                                    break
+                                except:
+                                    continue
+                            if (not found):
+                                A.addCellToRow(np.nan)
+                                A.addCellToRow(np.nan)
+                                A.addCellToRow(np.nan)
+                                A.addCellToRow(np.nan)
+                                A.addCellToRow(np.nan)
+                                A.addCellToRow(np.nan)
+                                A.addCellToRow(np.nan)
+            A.addCellToRow(game)
+            A.appendRow()
+            counter += 1
+            if (counter % 5 == 1):
+                A.dictToCsv("./csv_data/" + league + "/betting_new.csv")
+        A.dictToCsv("./csv_data/" + league + "/betting_new.csv")
+        browser.close()
+    except:
+        nowgoalPt2(league)
 
 def nowgoalCurSeason(league):
     dict = {"Date":[],"Home":[],"Away":[],"home_team_reg_score":[],"away_team_reg_score":[],"includedInPrior":[]}
@@ -713,6 +735,26 @@ def nowgoalCurSeason(league):
         url = "https://football.nowgoal5.com/League/4"
     elif (league == "Brazil2"):
         url = "https://football.nowgoal5.com/League/358"
+    elif (league == "England1"):
+        url = "https://football.nowgoal6.com/League/36"
+    elif (league == "Croatia1"):
+        url = "https://football.nowgoal6.com/SubLeague/133"
+    elif (league == "Denmark1"):
+        url = "https://football.nowgoal6.com/SubLeague/7"
+    elif (league == "Germany1"):
+        url = "https://football.nowgoal6.com/League/8"
+    elif (league == "Netherlands1"):
+        url = "https://football.nowgoal6.com/SubLeague/16"
+    elif (league == "Portugal1"):
+        url = "https://football.nowgoal6.com/SubLeague/23"
+    elif (league == "Scotland1"):
+        url = "https://football.nowgoal6.com/SubLeague/29"
+    elif (league == "Slovenia1"):
+        url = "https://football.nowgoal6.com/SubLeague/247"
+    elif (league == "Spain1"):
+        url = "https://football.nowgoal6.com/League/31"
+    elif (league == "Switzerland1"):
+        url = "https://football.nowgoal6.com/SubLeague/27"
 
     prev_len = 0
     inPrior = []
@@ -730,10 +772,13 @@ def nowgoalCurSeason(league):
     i = 1
     j = 2
     lastDate = "..."
+    lastDates = []
     while (1):
         try:
             browser.find_element("xpath", "//*[@id='Table2']/tbody/tr[" + str(i) + "]/td[" + str(j) + "]").click()
             time.sleep(2)
+            if (i == 1 and j == 2):
+                time.sleep(30)
         except:
             if (i == 1):
                 i = 2
@@ -752,6 +797,10 @@ def nowgoalCurSeason(league):
             time.sleep(5)
             soup = BeautifulSoup(browser.page_source, 'html.parser')
         lastDate = soup.find(class_="tdsolid").find_all("td")[2]["data-t"]
+        #TEMP FIX - FAILS IF RESCHEDULED GAME IS FIRST ON GW WITH SAME DATE AS FIRST GAME ON OTHER GW
+        if (lastDate in lastDates):
+            return (0)
+        lastDates.append(lastDate)
         for x in soup.find(class_="tdsolid").find_all("td"):
             if (x.has_attr("data-t")):
                 if ("Postp." not in  x.find_next_sibling().find_next_sibling().find("a").get_text() and "Abd" not in  x.find_next_sibling().find_next_sibling().find("a").get_text()):
@@ -975,7 +1024,5 @@ def transfermarkt(league):
             A.appendRow()
     A.dictToCsv("./csv_data/" + league + "/transfermarkt.csv")
 
-
-#transfermarkt("Netherlands2")
 
 #NEED TO RESCRAPE TURKEY2

@@ -1,9 +1,7 @@
 import pandas as pd
 import numpy as np
 import datetime
-import pymc3 as pm
-import theano.tensor as tt
-import theano
+import aesara
 from itertools import combinations
 from scipy.stats import norm
 import bayesianModelFcns as bmf
@@ -35,8 +33,8 @@ def new_kelly(p, d0, d1, k0, kellyDiv):
     #opt_1 = (-b + math.sqrt(b**2 - 4*a*c)) / (2*a)
     opt_2 = (-b - math.sqrt(b**2 - 4*a*c)) / (2*a)
 
-    if (opt_2/kellyDiv + k0 > 0.04):
-        return (0.04 - k0)
+    if (opt_2/kellyDiv + k0 > 0.02):
+        return (0.02 - k0)
     return(opt_2/kellyDiv)
 
 def update(league):
@@ -44,16 +42,19 @@ def update(league):
     f_thresh = 0.075         # A cap on team variable standard deviation to prevent blowup
     Δσ = 0.001               # The standard deviaton of the random walk variables
 
-    if (0 not in list(pd.read_csv("./csv_data/" + league + "/current/results.csv", encoding = "ISO-8859-1")["includedInPrior"])):
+    if (exists("./csv_data/" + league + "/current/results.csv")):
+        if (0 not in list(pd.read_csv("./csv_data/" + league + "/current/results.csv", encoding = "ISO-8859-1")["includedInPrior"])):
+            return (-1)
+    else:
         return (-1)
-
 
     if (exists("./csv_data/" + league + "/current/last_prior.pkl")):
         with open("./csv_data/" + league + "/current/last_prior.pkl","rb") as inputFile:
             priors = pickle.load(inputFile)
     else:
-        with open("./csv_data/" + league + "/last_prior.pkl","rb") as inputFile:
+        with open("./csv_data/" + league + "/current/start_prior.pkl","rb") as inputFile:
             priors = pickle.load(inputFile)
+
     train = pd.read_csv("./csv_data/" + league + "/betting.csv", encoding = "ISO-8859-1")
     for i in range(len(train.index)):
         try:
@@ -171,8 +172,8 @@ def update(league):
 
             print (new_obs)
 
-            home_team = theano.shared(new_obs.i_home.values)
-            away_team = theano.shared(new_obs.i_away.values)
+            home_team = aesara.shared(new_obs.i_home.values)
+            away_team = aesara.shared(new_obs.i_away.values)
 
             observed_home_goals = new_obs.home_team_reg_score.values
             observed_away_goals = new_obs.away_team_reg_score.values
@@ -191,8 +192,12 @@ def update(league):
     train.to_csv("./csv_data/" + league + "/current/results.csv", index = False)
 
 def single_game_prediction(league, row, teams_to_int, decimals = 5):
-    with open("./csv_data/" + league + "/current/last_prior.pkl","rb") as inputFile:
-        posteriors = pickle.load(inputFile)
+    if (exists("./csv_data/" + league + "/current/last_prior.pkl")):
+        with open("./csv_data/" + league + "/current/last_prior.pkl","rb") as inputFile:
+            posteriors = pickle.load(inputFile)
+    else:
+        with open("./csv_data/" + league + "/current/start_prior.pkl","rb") as inputFile:
+            posteriors = pickle.load(inputFile)
     precision = f".{decimals}f"
     game_pred = {"H_proj":[],"A_proj":[],"p_home_cover":[0]}
     idₕ = teams_to_int[standardizeTeamName(row["Home"], league)]
@@ -294,6 +299,8 @@ def get_placement_info(league, url, token):
     return (predictions)
 
 def bet(league, url, token):
+    exclusions = ["Jerv"]
+
     placement = get_placement_info(league, url, token)
     bankroll = api.get_account_balance(url, token)
     print ("Current Bankroll:", bankroll)
@@ -311,7 +318,7 @@ def bet(league, url, token):
             for book in placement[game]["placement_info"]:
                 if (placement[game]["placement_info"][book]["odds"] > best_odds["odds"]):
                     best_odds = {"Book":book,"max":placement[game]["placement_info"][book]["max"],"min":placement[game]["placement_info"][book]["min"],"odds":placement[game]["placement_info"][book]["odds"],"AH":placement[game]["AH"]}
-            if (placement[game]["Home"] == "Brann" or placement[game]["Away"] == "Brann"):
+            if (placement[game]["Home"] in exclusions or placement[game]["Away"] in exclusions):
                 continue
             if ((placement[game]["Home"], placement[game]["Away"]) in cur_bets):
                 if (cur_bets[(placement[game]["Home"], placement[game]["Away"])][0]["AH"] != best_odds["AH"]):
@@ -328,7 +335,7 @@ def bet(league, url, token):
                 p = placement[game]["p_home_cover"]
             elif (placement[game]["OddsName"] == "AwayOdds"):
                 p = 1 - placement[game]["p_home_cover"]
-            desired_bet = new_kelly(p, avg_taken_odds, best_odds["odds"], total_staked, 12)*bankroll
+            desired_bet = new_kelly(p, avg_taken_odds, best_odds["odds"], total_staked, 30)*bankroll
             if (desired_bet > best_odds["max"]):
                 desired_bet = best_odds["max"]
             elif (desired_bet < best_odds["min"]):
@@ -477,7 +484,7 @@ while(1):
         print ("Check Accepted Bets Failed")
 
 
-    leagues = ["Japan1","Japan2","Korea1","Norway1","Sweden2"]
+    leagues = ["Japan1","Japan2","Korea1","Norway1","Sweden2","Croatia1", "Denmark1", "Germany1", "Netherlands1", "Scotland1", "Spain1", "Switzerland1"]
     for league in leagues:
         print (league, "---------------------------------")
         try:
@@ -502,10 +509,10 @@ while(1):
             except:
                 print ("Login Failed")
             time.sleep(7)
-            try:
-                bet(league, url, token)
-            except:
-                print ("Betting Failed")
+            #try:
+            bet(league, url, token)
+            #except:
+                #print ("Betting Failed")
         #print (api.non_running_bets(url, token))
         #print(api.get_current_bets(url, token))
         #print(api.get_account_balance(url, token))

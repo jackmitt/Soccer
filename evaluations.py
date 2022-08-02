@@ -7,8 +7,8 @@ def kellyStake(p, decOdds, kellyDiv):
         return 0.05
     return ((p - (1 - p)/(decOdds - 1)) / kellyDiv)
 
-def analyzeWinRates(league, betType, timing, pType = "", repeatBet = "NA"):
-    pred = pd.read_csv("./csv_data/" + league + "/bayes_predictions.csv", encoding = "ISO-8859-1")
+def analyzeWinRates(league, betType, timing, pType = "", repeatBet = "NA", file = "/bayes_predictions.csv"):
+    pred = pd.read_csv("./csv_data/" + league + file, encoding = "ISO-8859-1")
     for i in range(len(pred.index)):
         pred.at[i, "Date"] = datetime.date(int(pred.at[i, "Date"].split("-")[0]), int(pred.at[i, "Date"].split("-")[1]), int(pred.at[i, "Date"].split("-")[2]))
     seasons = {}
@@ -607,8 +607,8 @@ def analyzeWinRates(league, betType, timing, pType = "", repeatBet = "NA"):
     for key in all:
         print (key + ":", np.average(all[key]), len(all[key]))
 
-def kellybet(league, betType, timing, bankroll, kellyDiv, betThresh, pType = ""):
-    pred = pd.read_csv("./csv_data/" + league + "/bayes_predictions.csv", encoding = "ISO-8859-1")
+def kellybet(league, betType, timing, bankroll, kellyDiv, betThresh, pType = "", file = "/bayes_predictions.csv"):
+    pred = pd.read_csv("./csv_data/" + league + file, encoding = "ISO-8859-1")
     for i in range(len(pred.index)):
         pred.at[i, "Date"] = datetime.date(int(pred.at[i, "Date"].split("-")[0]), int(pred.at[i, "Date"].split("-")[1]), int(pred.at[i, "Date"].split("-")[2]))
     seasons = {}
@@ -621,6 +621,8 @@ def kellybet(league, betType, timing, bankroll, kellyDiv, betThresh, pType = "")
             else:
                 seasons[str(row["Date"].year) + "_2"] = {"netwin":0}
                 curSeason = str(row["Date"].year) + "_2"
+        if (row["Date"].year < 2017):
+            continue
         if (betType == "AH"):
             if ((row["Home " + timing + " AH Odds"] - 1) * row[pType + "p_" + timing + "_home_cover"] - (1 - row[pType + "p_" + timing + "_home_cover"]) > betThresh):
                 if (".75" not in str(row[timing + " AH"]) and ".25" not in str(row[timing + " AH"])):

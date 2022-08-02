@@ -4,9 +4,10 @@ import predictions as pr
 import evaluations as eval
 import pandas as pd
 import numpy as np
+import gc
 
 
-leagues = ["France1", "France2", "France3", "Germany1", "Germany2", "Germany3"]
+leagues = ["Greece1", "Hungary1"]
 for league in leagues:
     print ("-----------------------------------------------",league)
     #dm.preMatchAverages(league)
@@ -15,6 +16,7 @@ for league in leagues:
     #eval.analyzeWinRates(league, "AH", "Close")
     #eval.kellybet(league, "AH", "Close", 20000, 12, 0.1)
     pr.bayesian(league)
+    gc.collect()
     #eval.analyzeLineMovement(league, "AH", moveDirection = "renst")
 #r.fitWeibullParameters()
 

@@ -772,7 +772,6 @@ def nowgoalCurSeason(league):
     i = 1
     j = 2
     lastDate = "..."
-    lastDates = []
     while (1):
         try:
             browser.find_element("xpath", "//*[@id='Table2']/tbody/tr[" + str(i) + "]/td[" + str(j) + "]").click()
@@ -796,11 +795,12 @@ def nowgoalCurSeason(league):
             print(soup.find(class_="tdsolid").find_all("td")[2]["data-t"])
             time.sleep(5)
             soup = BeautifulSoup(browser.page_source, 'html.parser')
+            try:
+                print(soup.find(class_="tdsolid").find_all("td")[2]["data-t"])
+            except:
+                j += 1
+                continue
         lastDate = soup.find(class_="tdsolid").find_all("td")[2]["data-t"]
-        #TEMP FIX - FAILS IF RESCHEDULED GAME IS FIRST ON GW WITH SAME DATE AS FIRST GAME ON OTHER GW
-        if (lastDate in lastDates):
-            return (0)
-        lastDates.append(lastDate)
         for x in soup.find(class_="tdsolid").find_all("td"):
             if (x.has_attr("data-t")):
                 if ("Postp." not in  x.find_next_sibling().find_next_sibling().find("a").get_text() and "Abd" not in  x.find_next_sibling().find_next_sibling().find("a").get_text()):
@@ -829,9 +829,18 @@ def nowgoalCurSeason(league):
         j += 1
     for key in dict:
         print (key, len(dict[key]), dict[key])
-    if (len(dict["includedInPrior"]) > prev_len):
-        df = pd.DataFrame.from_dict(dict)
-        df = df.sort_values(by=["Date"], ignore_index = True)
+    df = pd.DataFrame.from_dict(dict)
+    df = df.sort_values(by=["Date"], ignore_index = True)
+    fullLen = len(df.index)
+    df = df.drop_duplicates()
+    df = df.reset_index(drop=True)
+    if (len(df.index) != fullLen):
+        print ("Duplicates detected in scrape. Aborting...")
+        return (0)
+    if (lastDate == "..."):
+        print ("Failed to load pages. Aborting...")
+        return (0)
+    if (len(df.index) > prev_len):
         if (not exists("./csv_data/" + league + "/current/")):
             os.makedirs("./csv_data/" + league + "/current/")
         df.to_csv("./csv_data/" + league + "/current/results.csv", index = False)

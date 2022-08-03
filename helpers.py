@@ -124,6 +124,8 @@ def standardizeTeamName(name, league):
             return ("JEF United Ichihara Chiba")
         elif ("ryukyu" in lname):
             return ("FC Ryukyu")
+        elif ("grulla morioka" in lname):
+            return ("Grulla Morioka")
         else:
             return (name)
     elif (league == "Korea1"):
@@ -646,7 +648,7 @@ def standardizeTeamName(name, league):
             return ("Vejle")
         elif ("agf aarhus" in lname):
             return ("Aarhus AGF")
-        elif ("aab" == lname):
+        elif ("aab" == lname or "aalborg" in lname):
             return ("Aalborg")
         elif ("viborg" in lname):
             return ("Viborg")
@@ -817,9 +819,9 @@ def standardizeTeamName(name, league):
     elif (league == "Spain1"):
         if ("alavés" in lname):
             return ("Alaves")
-        elif ("vallodolid" in lname):
+        elif ("valladolid" in lname):
             return ("Real Valladolid")
-        elif ("villarreal" == lname):
+        elif ("villarreal" in lname):
             return ("Villarreal")
         elif ("barcelona" == lname):
             return ("FC Barcelona")

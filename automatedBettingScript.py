@@ -305,7 +305,17 @@ def bet(league, url, token):
     bankroll = api.get_account_balance(url, token)
     print ("Current Bankroll:", bankroll)
     bet_refs = {"Date":[],"League":[],"MatchId":[],"Home":[],"Away":[],"Ref":[],"AH":[],"Odds":[],"Stake":[],"Side":[]}
-    cur_bets = api.get_current_bets(url, token)
+    #Only works for less than 100 active bets
+    #cur_bets = api.get_current_bets(url, token)
+    active_bets = pd.read_csv("./csv_data/api_bets.csv", encoding = "ISO-8859-1")
+    cur_bets = {}
+    for index, row in active_bets.iterrows():
+        if ((row["Home"], row["Away"]) not in cur_bets):
+            if (row["Accepted"] != "F"):
+                cur_bets[(row["Home"], row["Away"])] = [{"Ref":row["Ref"],"AH":row["AH"],"Odds":row["Odds"],"Stake":row["Stake"]}]
+        else:
+            if (row["Accepted"] != "F"):
+                cur_bets[(row["Home"], row["Away"])].append({"Ref":row["Ref"],"AH":row["AH"],"Odds":row["Odds"],"Stake":row["Stake"]})
     print (cur_bets)
     for game in placement:
         if ("placement_info" in placement[game]):
@@ -484,7 +494,7 @@ while(1):
         print ("Check Accepted Bets Failed")
 
 
-    leagues = ["Japan1","Japan2","Korea1","Norway1","Sweden2","Croatia1", "Denmark1", "Germany1", "Netherlands1", "Scotland1", "Spain1", "Switzerland1"]
+    leagues = ["Scotland1","Spain1","Japan1","Japan2","Korea1","Norway1","Croatia1","Denmark1", "England1", "Germany1","Netherlands1","Slovenia1"]
     for league in leagues:
         print (league, "---------------------------------")
         try:
@@ -509,10 +519,10 @@ while(1):
             except:
                 print ("Login Failed")
             time.sleep(7)
-            #try:
-            bet(league, url, token)
-            #except:
-                #print ("Betting Failed")
+            try:
+                bet(league, url, token)
+            except:
+                print ("Betting Failed")
         #print (api.non_running_bets(url, token))
         #print(api.get_current_bets(url, token))
         #print(api.get_account_balance(url, token))

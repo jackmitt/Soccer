@@ -660,6 +660,8 @@ def standardizeTeamName(name, league):
             return ("FC Copenhagen")
         elif (" odense" in lname):
             return ("Odense BK")
+        elif ("midtjylland" in lname):
+            return ("Midtjylland")
     elif (league == "Denmark2"):
         #cant find FC Hjörring equivalent
         if ("vejle boldklub" in lname):
@@ -775,6 +777,10 @@ def standardizeTeamName(name, league):
             return ("Sporting Braga")
         elif ("portimonense" in lname):
             return ("Portimonense")
+        elif ("gil vicente" in lname):
+            return ("Gil Vicente")
+        elif ("pacos ferreira" in lname):
+            return ("Pacos de Ferreira")
     elif (league == "Portugal2"):
         if ("desportivo aves" in lname):
             return ("Aves")

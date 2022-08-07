@@ -804,10 +804,13 @@ def nowgoalCurSeason(league):
         for x in soup.find(class_="tdsolid").find_all("td"):
             if (x.has_attr("data-t")):
                 if ("Postp." not in  x.find_next_sibling().find_next_sibling().find("a").get_text() and "Abd" not in  x.find_next_sibling().find_next_sibling().find("a").get_text()):
-                    curDate = datetime.date(int(x["data-t"].split()[0].split("-")[0]), int(x["data-t"].split()[0].split("-")[1]), int(x["data-t"].split()[0].split("-")[2]))
+                    if (int(x["data-t"].split()[1].split(":")[0]) < 13):
+                        curDate = datetime.date(int(x["data-t"].split()[0].split("-")[0]), int(x["data-t"].split()[0].split("-")[1]), int(x["data-t"].split()[0].split("-")[2])) - datetime.timedelta(days=1)
+                    else:
+                        curDate = datetime.date(int(x["data-t"].split()[0].split("-")[0]), int(x["data-t"].split()[0].split("-")[1]), int(x["data-t"].split()[0].split("-")[2]))
                     if (curDate == datetime.date.today()):
                         try:
-                            score = x.find_next_sibling().find_next_sibling().find("a").get_text().split("-")[0]
+                            score = x.find_next_sibling().find_next_sibling().find("a").get_text().split("-")[1]
                         except:
                             return (0)
                     if (curDate > datetime.date.today()):

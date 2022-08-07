@@ -1,16 +1,18 @@
 Date,Home,Away,home_team_reg_score,away_team_reg_score,includedInPrior
-2022-07-16,FC Koper,Tabor Sezana,2,1,1
+2022-07-15,FC Koper,Tabor Sezana,2,1,1
 2022-07-16,Domzale,NK Publikum Celje,0,0,1
-2022-07-17,Maribor,Radomlje,0,3,1
-2022-07-18,NK Olimpija Ljubljana,NK Mura 05,2,0,1
-2022-07-19,ND Gorica,NK Bravo,2,0,1
-2022-07-23,Radomlje,NK Publikum Celje,1,1,1
-2022-07-24,Maribor,ND Gorica,3,2,1
-2022-07-24,NK Bravo,FC Koper,1,0,1
+2022-07-16,Maribor,Radomlje,0,3,1
+2022-07-17,NK Olimpija Ljubljana,NK Mura 05,2,0,1
+2022-07-18,ND Gorica,NK Bravo,2,0,1
+2022-07-22,Radomlje,NK Publikum Celje,1,1,1
+2022-07-23,Maribor,ND Gorica,3,2,1
+2022-07-24,NK Mura 05,Domzale,4,3,1
 2022-07-24,Tabor Sezana,NK Olimpija Ljubljana,0,1,1
-2022-07-25,NK Mura 05,Domzale,4,3,1
-2022-07-30,ND Gorica,Radomlje,0,1,1
-2022-07-31,Domzale,Tabor Sezana,1,1,1
+2022-07-24,NK Bravo,FC Koper,1,0,1
+2022-07-29,ND Gorica,Radomlje,0,1,1
+2022-07-30,Domzale,Tabor Sezana,1,1,1
 2022-07-31,NK Olimpija Ljubljana,NK Bravo,1,0,1
-2022-08-01,FC Koper,Maribor,2,1,1
-2022-08-01,NK Publikum Celje,NK Mura 05,3,3,1
+2022-07-31,FC Koper,Maribor,2,1,1
+2022-07-31,NK Publikum Celje,NK Mura 05,3,3,1
+2022-08-05,Tabor Sezana,NK Publikum Celje,1,0,1
+2022-08-06,NK Bravo,Domzale,0,1,1

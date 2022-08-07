@@ -33,8 +33,8 @@ def new_kelly(p, d0, d1, k0, kellyDiv):
     #opt_1 = (-b + math.sqrt(b**2 - 4*a*c)) / (2*a)
     opt_2 = (-b - math.sqrt(b**2 - 4*a*c)) / (2*a)
 
-    if (opt_2/kellyDiv + k0 > 0.02):
-        return (0.02 - k0)
+    if (opt_2/kellyDiv + k0 > 0.0375):
+        return (0.0375 - k0)
     return(opt_2/kellyDiv)
 
 def update(league):
@@ -114,7 +114,8 @@ def update(league):
     for index, row in train.iterrows():
         if (row["Home"] not in teams_to_int):
             print ("ERROR:", row["Home"])
-            continue
+            if (league != "Brazil1"):
+                continue
             priors["offense"][0].append(0)
             priors["offense"][1].append(0.075)
             priors["defense"][0].append(0)
@@ -125,7 +126,8 @@ def update(league):
                 pickle.dump(teams_to_int, f)
         if (row["Away"] not in teams_to_int):
             print ("ERROR:", row["Away"])
-            continue
+            if (league != "Brazil1"):
+                continue
             priors["offense"][0].append(0)
             priors["offense"][1].append(0.075)
             priors["defense"][0].append(0)
@@ -345,7 +347,7 @@ def bet(league, url, token):
                 p = placement[game]["p_home_cover"]
             elif (placement[game]["OddsName"] == "AwayOdds"):
                 p = 1 - placement[game]["p_home_cover"]
-            desired_bet = new_kelly(p, avg_taken_odds, best_odds["odds"], total_staked, 30)*bankroll
+            desired_bet = new_kelly(p, avg_taken_odds, best_odds["odds"], total_staked, 15)*bankroll
             if (desired_bet > best_odds["max"]):
                 desired_bet = best_odds["max"]
             elif (desired_bet < best_odds["min"]):
@@ -494,11 +496,12 @@ while(1):
         print ("Check Accepted Bets Failed")
 
 
-    leagues = ["Scotland1","Spain1","Japan1","Japan2","Korea1","Norway1","Croatia1","Denmark1", "England1", "Germany1","Netherlands1","Slovenia1"]
+    leagues = ["Portugal1","Brazil1","Netherlands1","Slovenia1","Sweden2","Denmark1","Scotland1","Spain1","Japan1","Japan2","Korea1","Norway1","Croatia1","England1", "Germany1"]
     for league in leagues:
         print (league, "---------------------------------")
         try:
             if (scr.nowgoalCurSeason(league) == 0):
+                print ("Games today in progress...")
                 continue
         except:
             print ("Now Goal Scrape Failed")
@@ -509,7 +512,7 @@ while(1):
             print ("Update Failed")
             continue
         #api.get_team_names(url, token, [convert_league(league)])
-        for i in range(3):
+        for i in range(5):
             try:
                 api.logout(url, token)
             except:
@@ -527,4 +530,7 @@ while(1):
         #print(api.get_current_bets(url, token))
         #print(api.get_account_balance(url, token))
         #print (api.get_bet_by_ref(url, token, "WA-1657457657223"))
-    api.logout(url, token)
+    try:
+        api.logout(url, token)
+    except:
+        print ("Logout Failed")

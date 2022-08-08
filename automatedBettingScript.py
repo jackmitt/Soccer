@@ -64,6 +64,9 @@ def update(league):
     train = train.sort_values(by=["Date"], ignore_index = True)
     train = train.rename(columns={"Home Score": "home_team_reg_score"})
     train = train.rename(columns={"Away Score": "away_team_reg_score"})
+    for i in range(len(train.index)):
+        train.at["Home", i] = standardizeTeamName(train.at["Home", i], league)
+        train.at["Away", i] = standardizeTeamName(train.at["Away", i], league)
     teams = train.Home.unique()
     teams = np.sort(teams)
     teams = pd.DataFrame(teams, columns=["team"])
@@ -96,6 +99,9 @@ def update(league):
 
     train = pd.read_csv("./csv_data/" + league + "/current/results.csv", encoding = "ISO-8859-1")
     for i in range(len(train.index)):
+        train.at["Home", i] = standardizeTeamName(train.at["Home", i], league)
+        train.at["Away", i] = standardizeTeamName(train.at["Away", i], league)
+    for i in range(len(train.index)):
         train.at[i, "Date"] = datetime.date(int(train.at[i, "Date"].split("-")[0]), int(train.at[i, "Date"].split("-")[1]), int(train.at[i, "Date"].split("-")[2]))
     finalDict = {}
     for col in train.columns:
@@ -114,8 +120,7 @@ def update(league):
     for index, row in train.iterrows():
         if (row["Home"] not in teams_to_int):
             print ("ERROR:", row["Home"])
-            if (league != "Brazil1"):
-                continue
+            continue
             priors["offense"][0].append(0)
             priors["offense"][1].append(0.075)
             priors["defense"][0].append(0)
@@ -126,8 +131,7 @@ def update(league):
                 pickle.dump(teams_to_int, f)
         if (row["Away"] not in teams_to_int):
             print ("ERROR:", row["Away"])
-            if (league != "Brazil1"):
-                continue
+            continue
             priors["offense"][0].append(0)
             priors["offense"][1].append(0.075)
             priors["defense"][0].append(0)
@@ -419,7 +423,7 @@ def grade_bets():
         for curIndex, r in league_results.iterrows():
             r_date = datetime.date(int(r["Date"].split("-")[0]), int(r["Date"].split("-")[1]), int(r["Date"].split("-")[2]))
             row_date = datetime.date(int(row["Date"].split("/")[2]), int(row["Date"].split("/")[0]), int(row["Date"].split("/")[1]))
-            if (r["Home"] == row["Home"] and r["Away"] == row["Away"] and abs(r_date - row_date).days < 5):
+            if (standardizeTeamName(r["Home"], row["League"]) == row["Home"] and standardizeTeamName(r["Away"], row["League"]) == row["Away"] and abs(r_date - row_date).days < 5):
                 found = True
                 if ("HomeOdds" == row["Side"]):
                     if (".75" not in str(row["AH"]) and ".25" not in str(row["AH"])):
@@ -482,10 +486,30 @@ def grade_bets():
     bets["Net Win"] = netWin
     bets.to_csv("./csv_data/api_bets_finished.csv", index = False)
 
+def join_matches():
+    bets = pd.read_csv("./csv_data/api_bets_finished.csv")
+    dict = {}
+    for col in bets.columns:
+        if (col != "Ref" and col != "Accepted"):
+            dict[col] = []
+    for index, row in bets.iterrows():
+        if (row["MatchId"] not in dict["MatchId"]):
+            for col in bets.columns:
+                if (col != "Ref" and col != "Accepted"):
+                    dict[col].append(row[col])
+        else:
+            match_row = dict["MatchId"].index(row["MatchId"])
+            new_odds = (row["Odds"] * row["Stake"] + dict["Odds"][match_row] * dict["Stake"][match_row]) / (dict["Stake"][match_row] + row["Stake"])
+            dict["Odds"][match_row] = new_odds
+            dict["Stake"][match_row] = dict["Stake"][match_row] + row["Stake"]
+            dict["Net Win"][match_row] = dict["Net Win"][match_row] + row["Net Win"]
+    df = pd.DataFrame.from_dict(dict)
+    df.to_csv("./csv_data/api_bets_finished_joined.csv", index = False)
 
 while(1):
     move_old_bets()
     grade_bets()
+    join_matches()
     try:
         url, token = api.login()
     except:
@@ -495,8 +519,8 @@ while(1):
     except:
         print ("Check Accepted Bets Failed")
 
-
-    leagues = ["Portugal1","Brazil1","Netherlands1","Slovenia1","Sweden2","Denmark1","Scotland1","Spain1","Japan1","Japan2","Korea1","Norway1","Croatia1","England1", "Germany1"]
+        #TEMP REMOVE SLOVENIA
+    leagues = ["Brazil1","Portugal1","Netherlands1","Sweden2","Denmark1","Scotland1","Spain1","Japan1","Japan2","Korea1","Norway1","Croatia1","England1", "Germany1"]
     for league in leagues:
         print (league, "---------------------------------")
         try:
@@ -506,11 +530,11 @@ while(1):
         except:
             print ("Now Goal Scrape Failed")
             continue
-        try:
-            update(league)
-        except:
-            print ("Update Failed")
-            continue
+        #try:
+        update(league)
+        #except:
+            #print ("Update Failed")
+            #continue
         #api.get_team_names(url, token, [convert_league(league)])
         for i in range(5):
             try:

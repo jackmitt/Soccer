@@ -42,7 +42,7 @@ def bayesian(league):
     #
     # print (club_val_map)
 
-    train = pd.read_csv("./csv_data/" + league + "/betting_new.csv", encoding = "ISO-8859-1")
+    train = pd.read_csv("./csv_data/" + league + "/betting.csv", encoding = "ISO-8859-1")
     for i in range(len(train.index)):
         try:
             train.at[i, "Date"] = datetime.date(int(train.at[i, "Date"].split("/")[2]), int(train.at[i, "Date"].split("/")[0]), int(train.at[i, "Date"].split("/")[1]))
@@ -52,14 +52,20 @@ def bayesian(league):
     finalDict = {}
     train = train.rename(columns={"Home Score": "home_team_reg_score"})
     train = train.rename(columns={"Away Score": "away_team_reg_score"})
+    for i in range(len(train.index)):
+        train.at[i, "Home"] = standardizeTeamName(train.at[i, "Home"], league)
+        train.at[i, "Away"] = standardizeTeamName(train.at[i, "Away"], league)
     teams = train.Home.unique()
     teams = np.sort(teams)
     teams = pd.DataFrame(teams, columns=["team"])
     teams["i"] = teams.index
 
+
     teams_to_int = {}
     for index, row in teams.iterrows():
         teams_to_int[row["team"]] = row["i"]
+
+    print (teams_to_int)
 
     all_teams_pair_combinations = combinations(teams['team'], 2)
     team_pairs_dict = {}
@@ -235,6 +241,9 @@ def bayesian_new_season(league):
     train = train.sort_values(by=["Date"], ignore_index = True)
     train = train.rename(columns={"Home Score": "home_team_reg_score"})
     train = train.rename(columns={"Away Score": "away_team_reg_score"})
+    for i in range(len(train.index)):
+        train.at["Home", i] = standardizeTeamName(train.at["Home", i], league)
+        train.at["Away", i] = standardizeTeamName(train.at["Away", i], league)
     teams = train.Home.unique()
     teams = np.sort(teams)
     teams = pd.DataFrame(teams, columns=["team"])
@@ -368,6 +377,6 @@ def bayesian_new_season(league):
         tempDF = pd.DataFrame.from_dict(finalDict)
         tempDF.to_csv("./csv_data/" + league + "/bayes_predictions_new_notJax.csv", index = False)
 
-leagues = ["Slovenia1", "Portugal1"]
+leagues = ["Slovenia1"]
 for league in leagues:
     bayesian(league)

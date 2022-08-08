@@ -317,7 +317,7 @@ def standardizeTeamName(name, league):
             return ("Vitoria BA")
         elif ("chapecoense" in lname):
             return ("Chapecoense SC")
-        elif ("avaí futebol clube (sc)" in lname):
+        elif ("avaí futebol clube (sc)" in lname or "avai fc" == lname):
             return ("Avai FC SC")
         elif ("joinville" in lname):
             return ("Joinville SC")

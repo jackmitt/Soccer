@@ -242,8 +242,8 @@ def bayesian_new_season(league):
     train = train.rename(columns={"Home Score": "home_team_reg_score"})
     train = train.rename(columns={"Away Score": "away_team_reg_score"})
     for i in range(len(train.index)):
-        train.at["Home", i] = standardizeTeamName(train.at["Home", i], league)
-        train.at["Away", i] = standardizeTeamName(train.at["Away", i], league)
+        train.at[i, "Home"] = standardizeTeamName(train.at[i, "Home"], league)
+        train.at[i, "Away"] = standardizeTeamName(train.at[i, "Away"], league)
     teams = train.Home.unique()
     teams = np.sort(teams)
     teams = pd.DataFrame(teams, columns=["team"])

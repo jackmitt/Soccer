@@ -14,6 +14,7 @@ from helpers import standardizeTeamName
 from helpers import convert_league
 import math
 import time
+import concurrent.futures
 
 #where d0 is the avg odds already bet, d1 is the quoted odds, k0 is the stake already bet (in pct of bankroll) at d0 odds
 #returns pct of bankroll you should bet at d1 odds on top of k0 @ d0
@@ -65,8 +66,8 @@ def update(league):
     train = train.rename(columns={"Home Score": "home_team_reg_score"})
     train = train.rename(columns={"Away Score": "away_team_reg_score"})
     for i in range(len(train.index)):
-        train.at["Home", i] = standardizeTeamName(train.at["Home", i], league)
-        train.at["Away", i] = standardizeTeamName(train.at["Away", i], league)
+        train.at[i, "Home"] = standardizeTeamName(train.at[i, "Home"], league)
+        train.at[i, "Away"] = standardizeTeamName(train.at[i, "Away"], league)
     teams = train.Home.unique()
     teams = np.sort(teams)
     teams = pd.DataFrame(teams, columns=["team"])
@@ -99,8 +100,8 @@ def update(league):
 
     train = pd.read_csv("./csv_data/" + league + "/current/results.csv", encoding = "ISO-8859-1")
     for i in range(len(train.index)):
-        train.at["Home", i] = standardizeTeamName(train.at["Home", i], league)
-        train.at["Away", i] = standardizeTeamName(train.at["Away", i], league)
+        train.at[i, "Home"] = standardizeTeamName(train.at[i, "Home"], league)
+        train.at[i, "Away"] = standardizeTeamName(train.at[i, "Away"], league)
     for i in range(len(train.index)):
         train.at[i, "Date"] = datetime.date(int(train.at[i, "Date"].split("-")[0]), int(train.at[i, "Date"].split("-")[1]), int(train.at[i, "Date"].split("-")[2]))
     finalDict = {}
@@ -267,10 +268,16 @@ def predict_pinnacle_games(league, url, token):
     else:
         train = pd.read_csv("./csv_data/" + league + "/betting.csv", encoding = "ISO-8859-1")
         for i in range(len(train.index)):
-            train.at[i, "Date"] = datetime.date(int(train.at[i, "Date"].split("-")[0]), int(train.at[i, "Date"].split("-")[1]), int(train.at[i, "Date"].split("-")[2]))
+            try:
+                train.at[i, "Date"] = datetime.date(int(train.at[i, "Date"].split("-")[0]), int(train.at[i, "Date"].split("-")[1]), int(train.at[i, "Date"].split("-")[2]))
+            except:
+                train.at[i, "Date"] = datetime.date(int(train.at[i, "Date"].split("/")[2]), int(train.at[i, "Date"].split("/")[0]), int(train.at[i, "Date"].split("/")[1]))
         train = train.sort_values(by=["Date"], ignore_index = True)
         train = train.rename(columns={"Home Score": "home_team_reg_score"})
         train = train.rename(columns={"Away Score": "away_team_reg_score"})
+        for i in range(len(train.index)):
+            train.at[i, "Home"] = standardizeTeamName(train.at[i, "Home"], league)
+            train.at[i, "Away"] = standardizeTeamName(train.at[i, "Away"], league)
         teams = train.Home.unique()
         teams = np.sort(teams)
         teams = pd.DataFrame(teams, columns=["team"])
@@ -506,7 +513,7 @@ def join_matches():
     df = pd.DataFrame.from_dict(dict)
     df.to_csv("./csv_data/api_bets_finished_joined.csv", index = False)
 
-while(1):
+def run_bot():
     move_old_bets()
     grade_bets()
     join_matches()
@@ -519,10 +526,17 @@ while(1):
     except:
         print ("Check Accepted Bets Failed")
 
-        #TEMP REMOVE SLOVENIA
-    leagues = ["Brazil1","Portugal1","Netherlands1","Sweden2","Denmark1","Scotland1","Spain1","Japan1","Japan2","Korea1","Norway1","Croatia1","England1", "Germany1"]
+
+    leagues = ["Croatia1","Korea1","Brazil1","Sweden2","Denmark1","Spain1","Japan1","Japan2","Norway1","England1", "Germany1","Portugal1","Slovenia1","Scotland1","Netherlands1"]
     for league in leagues:
         print (league, "---------------------------------")
+        try:
+            api.logout(url, token)
+            url, token = api.login()
+            api.test_team_names(url, token, [league])
+        except:
+            pass
+        #continue
         try:
             if (scr.nowgoalCurSeason(league) == 0):
                 print ("Games today in progress...")
@@ -530,12 +544,11 @@ while(1):
         except:
             print ("Now Goal Scrape Failed")
             continue
-        #try:
-        update(league)
-        #except:
-            #print ("Update Failed")
-            #continue
-        #api.get_team_names(url, token, [convert_league(league)])
+        try:
+            update(league)
+        except:
+            print ("Update Failed")
+            continue
         for i in range(5):
             try:
                 api.logout(url, token)
@@ -550,11 +563,15 @@ while(1):
                 bet(league, url, token)
             except:
                 print ("Betting Failed")
-        #print (api.non_running_bets(url, token))
-        #print(api.get_current_bets(url, token))
-        #print(api.get_account_balance(url, token))
-        #print (api.get_bet_by_ref(url, token, "WA-1657457657223"))
     try:
         api.logout(url, token)
     except:
         print ("Logout Failed")
+
+def multiprocess_wrapper(*args, **kwargs):
+    with concurrent.futures.ProcessPoolExecutor(max_workers=1) as executor:
+        future = executor.submit(run_bot, *args, **kwargs)
+        return future.result()
+
+while(1):
+    multiprocess_wrapper()

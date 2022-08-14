@@ -5,35 +5,37 @@ import evaluations as eval
 import pandas as pd
 import numpy as np
 import pickle
-
+from helpers import standardizeTeamName
 
 leagues = ["Croatia1","Denmark1","Denmark2","England2","Germany1","Germany2","Netherlands1","Netherlands2","Poland1","Portugal1","Portugal2","Romania1","Scotland1","Slovakia1","Slovenia1","Spain1","Switzerland1","Turkey1"]
 leagues = ["Slovenia1"]
 for league in leagues:
     print ("-----------------------------------------------",league)
-    with open("./csv_data/" + league + "/current/start_prior.pkl","rb") as inputFile:
-        priors = pickle.load(inputFile)
-        #print (priors["offense"][0])
+    for year in ["2008","2009","2010","2011","2012","2013","2014","2015"]:
+        print (year, "---------------------------------")
+        with open("./csv_data/England/last_prior_year_end" + year + ".pkl","rb") as inputFile:
+            priors = pickle.load(inputFile)
+            #print (priors["offense"][0])
     #with open("./csv_data/" + league + "/last_prior_newSeason2.pkl","rb") as inputFile:
     #     priors = pickle.load(inputFile)
     #     print (priors["offense"][0])
-    # with open("./csv_data/" + league + "/current/teams_to_int.pkl","rb") as inputFile:
-    #     teams_to_int = pickle.load(inputFile)
-    #     print (teams_to_int)
-    train = pd.read_csv("./csv_data/" + league + "/betting.csv", encoding = "ISO-8859-1")
-    for i in range(len(train.index)):
-        train.at["Home", i] = standardizeTeamName(train.at["Home", i], league)
-        train.at["Away", i] = standardizeTeamName(train.at["Away", i], league)
-    teams = train.Home.unique()
-    teams = np.sort(teams)
-    teams = pd.DataFrame(teams, columns=["team"])
-    teams["i"] = teams.index
+        with open("./csv_data/England/teams_to_int_year_end" + year + ".pkl","rb") as inputFile:
+            teams_to_int = pickle.load(inputFile)
+            print (teams_to_int)
+    #train = pd.read_csv("./csv_data/" + league + "/betting.csv", encoding = "ISO-8859-1")
+    # for i in range(len(train.index)):
+    #     train.at[i, "Home"] = standardizeTeamName(train.at[i, "Home"], league)
+    #     train.at[i, "Away"] = standardizeTeamName(train.at[i, "Away"], league)
+    #teams = train.Home.unique()
+    #teams = np.sort(teams)
+    #teams = pd.DataFrame(teams, columns=["team"])
+    #teams["i"] = teams.index
     #
-    teams_to_int = {}
-    for index, row in teams.iterrows():
-        teams_to_int[row["team"]] = row["i"]
-    for team in teams_to_int:
-        print (team, priors["offense"][0][teams_to_int[team]], priors["defense"][0][teams_to_int[team]])
+    #teams_to_int = {}
+    #for index, row in teams.iterrows():
+        #teams_to_int[row["team"]] = row["i"]
+        for team in teams_to_int:
+            print (team, priors["offense"][0][teams_to_int[team]], priors["defense"][0][teams_to_int[team]])
     # print (priors["home"][0], priors["intercept"][0])
     #dm.preMatchAverages(league)
     #dm.train_test_split(league)

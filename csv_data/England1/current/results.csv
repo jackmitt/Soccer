@@ -1,8 +1,18 @@
 Date,Home,Away,home_team_reg_score,away_team_reg_score,includedInPrior
 2022-08-05,Crystal Palace,Arsenal,0,2,1
 2022-08-06,Fulham,Liverpool,2,2,1
+2022-08-06,Newcastle United,Nottingham Forest,2,0,1
+2022-08-06,Leeds United,Wolves,2,1,1
 2022-08-06,Bournemouth AFC,Aston Villa,2,0,1
 2022-08-06,Tottenham Hotspur,Southampton,4,1,1
-2022-08-06,Leeds United,Wolves,2,1,1
-2022-08-06,Newcastle United,Nottingham Forest,2,0,1
 2022-08-06,Everton,Chelsea,0,1,1
+2022-08-07,West Ham United,Manchester City,0,2,1
+2022-08-07,Leicester City,Brentford,2,2,1
+2022-08-07,Manchester United,Brighton Hove Albion,1,2,1
+2022-08-13,Aston Villa,Everton,2,1,1
+2022-08-13,Arsenal,Leicester City,4,2,1
+2022-08-13,Manchester City,Bournemouth AFC,4,0,1
+2022-08-13,Wolves,Fulham,0,0,1
+2022-08-13,Southampton,Leeds United,2,2,1
+2022-08-13,Brighton Hove Albion,Newcastle United,0,0,1
+2022-08-13,Brentford,Manchester United,4,0,1

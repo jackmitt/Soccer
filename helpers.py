@@ -258,6 +258,8 @@ def standardizeTeamName(name, league):
             return ("Halmstads")
         elif ("brommapojkarna" in lname):
             return ("Brommapojkarna")
+        elif ("orgryte" in lname):
+            return ("Orgryte")
         else:
             return (name)
     elif (league == "Brazil1"):
@@ -289,7 +291,7 @@ def standardizeTeamName(name, league):
             return ("Ceara")
         elif ("goianiense" in lname):
             return ("Atletico Clube Goianiense")
-        elif ("goias ec" in lname or "goiás" in lname):
+        elif ("goias " in lname or "goiás" in lname):
             return ("Goias")
         elif ("atletico mineiro" in lname or "atlético mineiro" in lname):
             return ("Atletico Mineiro")
@@ -323,7 +325,7 @@ def standardizeTeamName(name, league):
             return ("Vitoria BA")
         elif ("chapecoense" in lname):
             return ("Chapecoense SC")
-        elif ("avaí futebol clube (sc)" in lname or "avai fc" == lname):
+        elif ("avaí futebol clube (sc)" in lname or "avai fc" == lname or "avai sc" == lname):
             return ("Avai FC SC")
         elif ("joinville" in lname):
             return ("Joinville SC")
@@ -676,6 +678,8 @@ def standardizeTeamName(name, league):
             return ("Odense BK")
         elif ("midtjylland" in lname):
             return ("Midtjylland")
+        elif ("nordsjaelland" in lname):
+            return ("Nordsjaelland")
     elif (league == "Denmark2"):
         #cant find FC Hjörring equivalent
         if ("vejle boldklub" in lname):
@@ -861,6 +865,8 @@ def standardizeTeamName(name, league):
             return ("Athletic Bilbao")
         elif ("elche " in lname):
             return ("Elche")
+        elif ("espanyol" == lname):
+            return ("RCD Espanyol")
     elif (league == "Spain2"):
         if ("villarreal cf" in lname):
             return ("Villarreal")

@@ -527,7 +527,7 @@ def run_bot():
         print ("Check Accepted Bets Failed")
 
 
-    leagues = ["Croatia1","Korea1","Brazil1","Sweden2","Denmark1","Spain1","Japan1","Japan2","Norway1","England1", "Germany1","Portugal1","Slovenia1","Scotland1","Netherlands1"]
+    leagues = ["Japan1","Japan2","Norway1","England1", "Germany1","Portugal1","Slovenia1","Scotland1","Netherlands1","Croatia1","Korea1","Brazil1","Sweden2","Denmark1","Spain1"]
     for league in leagues:
         print (league, "---------------------------------")
         try:
@@ -536,7 +536,6 @@ def run_bot():
             api.test_team_names(url, token, [league])
         except:
             pass
-        #continue
         try:
             if (scr.nowgoalCurSeason(league) == 0):
                 print ("Games today in progress...")

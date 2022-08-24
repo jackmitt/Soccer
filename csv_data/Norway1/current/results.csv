@@ -19,39 +19,39 @@ Date,Home,Away,home_team_reg_score,away_team_reg_score,includedInPrior
 2022-04-18,Bodo Glimt,Valerenga,5,1,1
 2022-04-18,Sarpsborg 08,Rosenborg,1,1,1
 2022-04-18,Ham-Kam,Sandefjord,3,0,1
-2022-04-18,Molde,Lillestrom,1,2,1
 2022-04-18,Jerv,Kristiansund BK,1,0,1
 2022-04-18,Odd Grenland,Viking,2,1,1
+2022-04-18,Molde,Lillestrom,1,2,1
 2022-04-18,Aalesund FK,Tromso IL,2,2,1
 2022-04-23,Odd Grenland,Aalesund FK,2,3,1
 2022-04-23,Stromsgodset,Sandefjord,0,5,1
-2022-04-24,Rosenborg,Molde,0,0,1
 2022-04-24,Viking,Bodo Glimt,2,0,1
 2022-04-24,Kristiansund BK,Ham-Kam,2,2,1
 2022-04-24,Tromso IL,Sarpsborg 08,2,5,1
 2022-04-24,Valerenga,Jerv,1,0,1
 2022-04-24,Lillestrom,Haugesund,1,0,1
+2022-04-24,Rosenborg,Molde,0,0,1
 2022-04-28,Lillestrom,Aalesund FK,2,0,1
 2022-04-30,Viking,Haugesund,5,1,1
-2022-05-07,Molde,Viking,3,4,1
 2022-05-07,Sarpsborg 08,Odd Grenland,1,0,1
-2022-05-08,Bodo Glimt,Lillestrom,1,1,1
-2022-05-08,Haugesund,Kristiansund BK,2,0,1
-2022-05-08,Stromsgodset,Rosenborg,3,0,1
-2022-05-08,Sandefjord,Valerenga,1,3,1
-2022-05-08,Jerv,Tromso IL,1,1,1
+2022-05-07,Molde,Viking,3,4,1
 2022-05-08,Ham-Kam,Aalesund FK,0,0,1
+2022-05-08,Jerv,Tromso IL,1,1,1
+2022-05-08,Stromsgodset,Rosenborg,3,0,1
+2022-05-08,Haugesund,Kristiansund BK,2,0,1
+2022-05-08,Sandefjord,Valerenga,1,3,1
+2022-05-08,Bodo Glimt,Lillestrom,1,1,1
 2022-05-11,Molde,Odd Grenland,3,0,1
 2022-05-12,Tromso IL,Valerenga,1,0,1
 2022-05-12,Viking,Stromsgodset,0,0,1
 2022-05-16,Aalesund FK,Molde,0,2,1
 2022-05-16,Kristiansund BK,Stromsgodset,0,3,1
+2022-05-16,Valerenga,Ham-Kam,1,1,1
 2022-05-16,Odd Grenland,Haugesund,0,4,1
 2022-05-16,Rosenborg,Sandefjord,3,0,1
 2022-05-16,Viking,Jerv,3,0,1
 2022-05-16,Bodo Glimt,Tromso IL,1,1,1
 2022-05-16,Lillestrom,Sarpsborg 08,1,0,1
-2022-05-16,Valerenga,Ham-Kam,1,1,1
 2022-05-21,Sandefjord,Lillestrom,1,4,1
 2022-05-21,Molde,Kristiansund BK,2,1,1
 2022-05-22,Haugesund,Bodo Glimt,1,4,1
@@ -60,11 +60,11 @@ Date,Home,Away,home_team_reg_score,away_team_reg_score,includedInPrior
 2022-05-22,Stromsgodset,Valerenga,3,2,1
 2022-05-22,Jerv,Odd Grenland,0,1,1
 2022-05-22,Ham-Kam,Rosenborg,1,1,1
-2022-05-25,Viking,Ham-Kam,1,1,1
-2022-05-25,Lillestrom,Valerenga,2,0,1
-2022-05-25,Odd Grenland,Sandefjord,0,1,1
 2022-05-25,Bodo Glimt,Stromsgodset,2,2,1
+2022-05-25,Lillestrom,Valerenga,2,0,1
+2022-05-25,Viking,Ham-Kam,1,1,1
 2022-05-25,Aalesund FK,Jerv,2,1,1
+2022-05-25,Odd Grenland,Sandefjord,0,1,1
 2022-05-26,Sarpsborg 08,Molde,1,2,1
 2022-05-26,Rosenborg,Haugesund,3,3,1
 2022-05-28,Ham-Kam,Odd Grenland,1,2,1
@@ -77,11 +77,11 @@ Date,Home,Away,home_team_reg_score,away_team_reg_score,includedInPrior
 2022-06-18,Sarpsborg 08,Stromsgodset,5,1,1
 2022-06-18,Kristiansund BK,Bodo Glimt,0,2,1
 2022-06-19,Aalesund FK,Valerenga,2,2,1
-2022-06-19,Viking,Sandefjord,1,2,1
+2022-06-19,Lillestrom,Rosenborg,3,1,1
 2022-06-19,Tromso IL,Haugesund,1,1,1
 2022-06-19,Jerv,Ham-Kam,1,2,1
+2022-06-19,Viking,Sandefjord,1,2,1
 2022-06-19,Odd Grenland,Molde,1,2,1
-2022-06-19,Lillestrom,Rosenborg,3,1,1
 2022-06-25,Haugesund,Viking,4,2,1
 2022-06-25,Rosenborg,Kristiansund BK,3,1,1
 2022-06-26,Sandefjord,Tromso IL,2,2,1
@@ -89,42 +89,42 @@ Date,Home,Away,home_team_reg_score,away_team_reg_score,includedInPrior
 2022-06-26,Bodo Glimt,Aalesund FK,2,0,1
 2022-06-26,Ham-Kam,Sarpsborg 08,3,2,1
 2022-06-26,Valerenga,Odd Grenland,0,1,1
-2022-07-02,Odd Grenland,Bodo Glimt,3,2,1
 2022-07-02,Jerv,Haugesund,1,0,1
+2022-07-02,Odd Grenland,Bodo Glimt,3,2,1
 2022-07-03,Sarpsborg 08,Sandefjord,4,3,1
 2022-07-03,Kristiansund BK,Lillestrom,1,3,1
 2022-07-03,Ham-Kam,Molde,0,0,1
 2022-07-03,Aalesund FK,Stromsgodset,1,0,1
 2022-07-03,Viking,Rosenborg,1,1,1
 2022-07-06,Molde,Jerv,1,1,1
-2022-07-09,Bodo Glimt,Sarpsborg 08,4,1,1
 2022-07-09,Stromsgodset,Odd Grenland,0,0,1
-2022-07-10,Haugesund,Ham-Kam,1,1,1
+2022-07-09,Bodo Glimt,Sarpsborg 08,4,1,1
 2022-07-10,Lillestrom,Viking,0,1,1
 2022-07-10,Molde,Tromso IL,5,1,1
 2022-07-10,Valerenga,Kristiansund BK,3,0,1
+2022-07-10,Haugesund,Ham-Kam,1,1,1
 2022-07-10,Rosenborg,Jerv,3,2,1
 2022-07-12,Sandefjord,Aalesund FK,2,2,1
-2022-07-16,Ham-Kam,Bodo Glimt,0,2,1
 2022-07-16,Jerv,Sandefjord,1,2,1
+2022-07-16,Ham-Kam,Bodo Glimt,0,2,1
+2022-07-17,Aalesund FK,Rosenborg,0,0,1
 2022-07-17,Molde,Haugesund,1,0,1
 2022-07-17,Odd Grenland,Lillestrom,1,2,1
-2022-07-17,Viking,Kristiansund BK,2,1,1
 2022-07-17,Sarpsborg 08,Valerenga,0,1,1
-2022-07-17,Aalesund FK,Rosenborg,0,0,1
+2022-07-17,Viking,Kristiansund BK,2,1,1
 2022-07-23,Bodo Glimt,Jerv,5,0,1
 2022-07-23,Rosenborg,Tromso IL,3,0,1
 2022-07-24,Stromsgodset,Ham-Kam,1,1,1
+2022-07-24,Haugesund,Sarpsborg 08,3,1,1
 2022-07-24,Valerenga,Viking,4,2,1
 2022-07-24,Kristiansund BK,Odd Grenland,2,2,1
 2022-07-24,Sandefjord,Molde,2,3,1
-2022-07-24,Haugesund,Sarpsborg 08,3,1,1
 2022-07-27,Sandefjord,Kristiansund BK,2,0,1
+2022-07-30,Aalesund FK,Bodo Glimt,1,2,1
 2022-07-30,Ham-Kam,Kristiansund BK,0,1,1
 2022-07-30,Tromso IL,Sandefjord,3,0,1
 2022-07-30,Odd Grenland,Rosenborg,2,3,1
 2022-07-30,Jerv,Valerenga,2,5,1
-2022-07-30,Aalesund FK,Bodo Glimt,1,2,1
 2022-07-31,Molde,Stromsgodset,3,0,1
 2022-07-31,Sarpsborg 08,Lillestrom,0,2,1
 2022-08-03,Kristiansund BK,Tromso IL,1,1,1
@@ -139,6 +139,13 @@ Date,Home,Away,home_team_reg_score,away_team_reg_score,includedInPrior
 2022-08-12,Sandefjord,Rosenborg,2,5,1
 2022-08-12,Sarpsborg 08,Bodo Glimt,1,4,1
 2022-08-13,Aalesund FK,Haugesund,1,2,1
+2022-08-14,Ham-Kam,Valerenga,1,1,1
 2022-08-14,Tromso IL,Kristiansund BK,2,1,1
 2022-08-14,Jerv,Lillestrom,1,0,1
-2022-08-14,Ham-Kam,Valerenga,1,1,1
+2022-08-20,Bodo Glimt,Ham-Kam,2,2,1
+2022-08-20,Odd Grenland,Sarpsborg 08,1,0,1
+2022-08-21,Haugesund,Molde,0,1,1
+2022-08-21,Valerenga,Tromso IL,1,0,1
+2022-08-21,Lillestrom,Sandefjord,3,0,1
+2022-08-21,Stromsgodset,Jerv,6,0,1
+2022-08-21,Rosenborg,Aalesund FK,2,1,1

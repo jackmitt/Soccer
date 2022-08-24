@@ -5,15 +5,21 @@ Date,Home,Away,home_team_reg_score,away_team_reg_score,includedInPrior
 2022-07-30,Saint Johnstone,Hibernian,0,1,1
 2022-07-31,Saint Mirren,Motherwell,0,1,1
 2022-07-31,Celtic FC,Aberdeen,2,0,1
-2022-08-06,Aberdeen,Saint Mirren,4,1,1
-2022-08-06,Ross County,Celtic FC,1,3,1
 2022-08-06,Motherwell,Saint Johnstone,1,2,1
 2022-08-06,Glasgow Rangers,Kilmarnock,2,0,1
-2022-08-07,Hibernian,Heart of Midlothian,1,1,1
+2022-08-06,Ross County,Celtic FC,1,3,1
+2022-08-06,Aberdeen,Saint Mirren,4,1,1
 2022-08-07,Dundee United,Livingston,0,1,1
+2022-08-07,Hibernian,Heart of Midlothian,1,1,1
 2022-08-13,Saint Mirren,Ross County,1,0,1
 2022-08-13,Aberdeen,Motherwell,2,3,1
 2022-08-13,Glasgow Rangers,Saint Johnstone,4,0,1
 2022-08-13,Livingston,Hibernian,2,1,1
 2022-08-14,Kilmarnock,Celtic FC,0,5,1
 2022-08-14,Heart of Midlothian,Dundee United,4,1,1
+2022-08-20,Saint Johnstone,Aberdeen,0,1,1
+2022-08-20,Hibernian,Glasgow Rangers,2,2,1
+2022-08-20,Motherwell,Livingston,1,0,1
+2022-08-20,Dundee United,Saint Mirren,0,3,1
+2022-08-20,Ross County,Kilmarnock,1,0,1
+2022-08-21,Celtic FC,Heart of Midlothian,2,0,1

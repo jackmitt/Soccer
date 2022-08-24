@@ -11,8 +11,8 @@ Date,Home,Away,home_team_reg_score,away_team_reg_score,includedInPrior
 2022-07-29,HNK Sibenik,NK Lokomotiva Zagreb,2,1,1
 2022-07-29,Dinamo Zagreb,Istra 1961 Pula,4,1,1
 2022-07-30,NK Varteks Varazdin,Hajduk Split,0,2,1
-2022-07-31,ZNK Osijek,Slaven Koprivnica,0,0,1
 2022-07-31,Rijeka,HNK Gorica,1,1,1
+2022-07-31,ZNK Osijek,Slaven Koprivnica,0,0,1
 2022-08-05,NK Varteks Varazdin,Dinamo Zagreb,1,1,1
 2022-08-06,Slaven Koprivnica,HNK Sibenik,0,0,1
 2022-08-06,Istra 1961 Pula,ZNK Osijek,1,0,1
@@ -22,3 +22,8 @@ Date,Home,Away,home_team_reg_score,away_team_reg_score,includedInPrior
 2022-08-13,Dinamo Zagreb,Hajduk Split,4,1,1
 2022-08-14,ZNK Osijek,NK Varteks Varazdin,2,2,1
 2022-08-14,Rijeka,Slaven Koprivnica,0,1,1
+2022-08-19,Slaven Koprivnica,HNK Gorica,2,1,1
+2022-08-20,NK Varteks Varazdin,HNK Sibenik,2,2,1
+2022-08-20,Dinamo Zagreb,ZNK Osijek,5,2,1
+2022-08-21,Istra 1961 Pula,Rijeka,1,1,1
+2022-08-21,Hajduk Split,NK Lokomotiva Zagreb,2,1,1

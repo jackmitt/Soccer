@@ -13,8 +13,8 @@ Date,Home,Away,home_team_reg_score,away_team_reg_score,includedInPrior
 2022-08-13,Emmen,RKC Waalwijk,1,1,1
 2022-08-13,FC Utrecht,SC Cambuur,0,0,1
 2022-08-13,Feyenoord,SC Heerenveen,0,0,1
-2022-08-14,Sparta Rotterdam,AZ Alkmaar,2,3,1
 2022-08-14,FC Twente Enschede,Fortuna Sittard,3,0,1
+2022-08-14,Sparta Rotterdam,AZ Alkmaar,2,3,1
 2022-08-14,Volendam,NEC Nijmegen,1,4,1
 2022-08-14,AFC Ajax,Groningen,6,1,1
 2022-08-20,Vitesse Arnhem,SC Heerenveen,0,4,1
@@ -29,6 +29,8 @@ Date,Home,Away,home_team_reg_score,away_team_reg_score,includedInPrior
 2022-08-27,Feyenoord,Emmen,4,0,1
 2022-08-27,SC Heerenveen,Fortuna Sittard,2,1,1
 2022-08-28,Excelsior SBV,PSV Eindhoven,1,6,1
-2022-08-28,Volendam,FC Twente Enschede,1,0,1
 2022-08-28,FC Utrecht,AFC Ajax,0,2,1
 2022-08-28,SC Cambuur,AZ Alkmaar,0,1,1
+2022-08-28,Volendam,FC Twente Enschede,1,0,1
+2022-08-31,PSV Eindhoven,Volendam,7,1,1
+2022-08-31,FC Twente Enschede,Excelsior SBV,4,0,1

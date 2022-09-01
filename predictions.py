@@ -440,7 +440,7 @@ def bayesian_xg(league):
     train["gw"] = gws
 
     for index, row in train.iterrows():
-        if (index != 0 and abs(train.at[index,"Date"] - train.at[index-1,"Date"]).days > 40 and train.at[index,"Date"].year == 2017):
+        if (index != 0 and abs(train.at[index,"Date"] - train.at[index-1,"Date"]).days > 40 and train.at[index,"Date"].year == 2012):
             splitIndex = index
         gws.append(gwCount)
 
@@ -499,12 +499,14 @@ def bayesian_xg(league):
     oneIterComplete = False
     startIndex = 0
     new_teams = {}
+    print(priors)
 
     for index, row in train.iterrows():
         print (row["Date"])
         for col in train.columns:
             finalDict[col].append(row[col])
         if (index != splitIndex and row["gw"] - train.at[index-1,"gw"] == 1):
+            print (priors)
 
             new_obs = train.iloc[startIndex:index]
             print ("SLICE INDEXES:", startIndex, index)
@@ -512,11 +514,14 @@ def bayesian_xg(league):
             away_team = aesara.shared(new_obs.i_away.values)
             team_pair = aesara.shared(new_obs.i_pair.values)
 
-            observed_home_goals = new_obs.h_xg.values
-            observed_away_goals = new_obs.a_xg.values
-
-            posteriors = bmf.model_update(home_team, observed_home_goals, away_team, observed_away_goals, priors, num_teams, factor, f_thresh, Δσ, xgUpdate = True)
-
+            if (train.at[index,"Date"].year >= 2017):
+                observed_home_goals = new_obs.h_xg.values
+                observed_away_goals = new_obs.a_xg.values
+                posteriors = bmf.model_update(home_team, observed_home_goals, away_team, observed_away_goals, priors, num_teams, factor, f_thresh, Δσ, xgUpdate = True)
+            else:
+                observed_home_goals = new_obs.home_team_reg_score.values
+                observed_away_goals = new_obs.away_team_reg_score.values
+                posteriors = bmf.model_update(home_team, observed_home_goals, away_team, observed_away_goals, priors, num_teams, factor, f_thresh, Δσ, xgUpdate = False)
             priors = posteriors
 
             startIndex = index

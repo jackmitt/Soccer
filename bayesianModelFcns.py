@@ -108,15 +108,15 @@ def model_iteration_xg(idₕ, sₕ_obs, idₐ, sₐ_obs, priors, n_teams, Δσ, 
         d_star = pm.Deterministic('d_star', d_star_init + Δ_d)
         d = pm.Deterministic('defense', d_star - tt.mean(d_star))
 
-        λₕ = i + h + o[idₕ] - d[idₐ]
+        λₕ = tt.exp(i + h + o[idₕ] - d[idₐ])
         σₕ = sqrt(priors['home'][1]**2 + priors["intercept"][1]**2 + 0.15)
-        λₐ = i + o[idₐ] - d[idₕ]
+        λₐ = tt.exp(i + o[idₐ] - d[idₕ])
         σₐ = sqrt(priors["intercept"][1]**2 + 0.15)
 
 
         # Likelihood of observed data
-        sₕ = pm.LogNormal('sₕ', mu=λₕ, sigma=σₕ, observed=sₕ_obs)
-        sₐ = pm.LogNormal('sₐ', mu=λₐ, sigma=σₐ, observed=sₐ_obs)
+        sₕ = pm.Normal('sₕ', mu=λₕ, sigma=2, observed=sₕ_obs)
+        sₐ = pm.Normal('sₐ', mu=λₐ, sigma=2, observed=sₐ_obs)
 
         trace = pm.sampling_jax.sample_numpyro_nuts(
             samples,

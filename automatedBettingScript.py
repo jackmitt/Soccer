@@ -320,6 +320,7 @@ def bet(league, url, token):
     bet_refs = {"Date":[],"League":[],"MatchId":[],"Home":[],"Away":[],"Ref":[],"AH":[],"Odds":[],"Stake":[],"Side":[]}
     #Only works for less than 100 active bets
     #cur_bets = api.get_current_bets(url, token)
+    #print (cur_bets)
     active_bets = pd.read_csv("./csv_data/api_bets.csv", encoding = "ISO-8859-1")
     cur_bets = {}
     for index, row in active_bets.iterrows():
@@ -366,17 +367,17 @@ def bet(league, url, token):
             print ("NEW BET:", desired_bet)
             print ("BOOKIEODDS:", best_odds["Book"] + ":" + str(best_odds["odds"]))
             return_ref = api.place_bet(url, token, game, placement[game]["MarketTypeId"], placement[game]["OddsName"], desired_bet, best_odds["Book"] + ":" + str(best_odds["odds"]))
-            if (return_ref != -1):
-                bet_refs["Date"].append(placement[game]["Date"].split()[0])
-                bet_refs["League"].append(league)
-                bet_refs["MatchId"].append(placement[game]["MatchId"])
-                bet_refs["Home"].append(placement[game]["Home"])
-                bet_refs["Away"].append(placement[game]["Away"])
-                bet_refs["Ref"].append(return_ref)
-                bet_refs["AH"].append(placement[game]["AH"])
-                bet_refs["Odds"].append(best_odds["odds"])
-                bet_refs["Stake"].append(desired_bet)
-                bet_refs["Side"].append(placement[game]["OddsName"])
+            #if (return_ref != -1):
+            bet_refs["Date"].append(placement[game]["Date"].split()[0])
+            bet_refs["League"].append(league)
+            bet_refs["MatchId"].append(placement[game]["MatchId"])
+            bet_refs["Home"].append(placement[game]["Home"])
+            bet_refs["Away"].append(placement[game]["Away"])
+            bet_refs["Ref"].append(return_ref)
+            bet_refs["AH"].append(placement[game]["AH"])
+            bet_refs["Odds"].append(best_odds["odds"])
+            bet_refs["Stake"].append(desired_bet)
+            bet_refs["Side"].append(placement[game]["OddsName"])
             print ("Just placed bet", (placement[game]["Home"], placement[game]["Away"]))
     df = pd.DataFrame.from_dict(bet_refs)
     if (exists("./csv_data/api_bets.csv")):

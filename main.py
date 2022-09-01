@@ -7,15 +7,15 @@ import numpy as np
 import gc
 
 
-leagues = ["Greece1", "Hungary1"]
+leagues = ["England1"]
 for league in leagues:
     print ("-----------------------------------------------",league)
     #dm.preMatchAverages(league)
     #dm.train_test_split(league)
     #pr.WeibullCountDistPredictions(league)
-    #eval.analyzeWinRates(league, "AH", "Close")
+    eval.analyzeWinRates(league, "AH", "Open", file = "/bayes_predictions_JAX.csv")
     #eval.kellybet(league, "AH", "Close", 20000, 12, 0.1)
-    pr.bayesian(league)
+    #pr.bayesian_xg(league)
     gc.collect()
     #eval.analyzeLineMovement(league, "AH", moveDirection = "renst")
 #r.fitWeibullParameters()

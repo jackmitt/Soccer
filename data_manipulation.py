@@ -98,4 +98,3 @@ def merge_betting_footy(league):
     betting["h_xg"] = newcols["h_xg"]
     betting["a_xg"] = newcols["a_xg"]
     betting.to_csv("./csv_data/" + league + "/betting_xg.csv",index = False)
-merge_betting_footy("England1")

@@ -59,36 +59,20 @@ def fatten_priors(prev_posteriors, factor, f_thresh):
 
 def model_iteration(idₕ, sₕ_obs, idₐ, sₐ_obs, priors, n_teams, Δσ, samples=2000, tune=1000, cores=3):
     with pm.Model():
-        if (len(priors) == 0):
-            h = pm.Flat('home')
-            i = pm.Flat('intercept')
-            sd_offense = pm.HalfStudentT('sd_offense', nu=3, sigma=2.5)
-            sd_defense = pm.HalfStudentT('sd_defense', nu=3, sigma=2.5)
+        # Global model parameters
+        h = pm.Normal('home', mu=priors['home'][0], sigma=priors['home'][1])
+        i = pm.Normal('intercept', mu=priors['intercept'][0], sigma=priors['intercept'][1])
 
-            o_star_init = pm.Normal('offense_star', mu=0, sigma=sd_offense, shape=n_teams)
-            Δ_o = pm.Normal('Δ_o', mu=0.0, sigma=Δσ, shape=n_teams)
-            o_star = pm.Deterministic('o_star', o_star_init + Δ_o)
-            o = pm.Deterministic('offense', o_star - tt.mean(o_star))
+        # Team-specific poisson model parameters
+        o_star_init = pm.Normal('o_star_init', mu=priors['offense'][0], sigma=priors['offense'][1], shape=n_teams)
+        Δ_o = pm.Normal('Δ_o', mu=0.0, sigma=Δσ, shape=n_teams)
+        o_star = pm.Deterministic('o_star', o_star_init + Δ_o)
+        o = pm.Deterministic('offense', o_star - tt.mean(o_star))
 
-            d_star_init = pm.Normal('defense_star', mu=0, sigma=sd_defense, shape=n_teams)
-            Δ_d = pm.Normal('Δ_d', mu=0.0, sigma=Δσ, shape=n_teams)
-            d_star = pm.Deterministic('d_star', d_star_init + Δ_d)
-            d = pm.Deterministic('defense', d_star - tt.mean(d_star))
-        else:
-            # Global model parameters
-            h = pm.Normal('home', mu=priors['home'][0], sigma=priors['home'][1])
-            i = pm.Normal('intercept', mu=priors['intercept'][0], sigma=priors['intercept'][1])
-
-            # Team-specific poisson model parameters
-            o_star_init = pm.Normal('o_star_init', mu=priors['offense'][0], sigma=priors['offense'][1], shape=n_teams)
-            Δ_o = pm.Normal('Δ_o', mu=0.0, sigma=Δσ, shape=n_teams)
-            o_star = pm.Deterministic('o_star', o_star_init + Δ_o)
-            o = pm.Deterministic('offense', o_star - tt.mean(o_star))
-
-            d_star_init = pm.Normal('d_star_init', mu=priors['defense'][0], sigma=priors['defense'][1], shape=n_teams)
-            Δ_d = pm.Normal('Δ_d', mu=0.0, sigma=Δσ, shape=n_teams)
-            d_star = pm.Deterministic('d_star', d_star_init + Δ_d)
-            d = pm.Deterministic('defense', d_star - tt.mean(d_star))
+        d_star_init = pm.Normal('d_star_init', mu=priors['defense'][0], sigma=priors['defense'][1], shape=n_teams)
+        Δ_d = pm.Normal('Δ_d', mu=0.0, sigma=Δσ, shape=n_teams)
+        d_star = pm.Deterministic('d_star', d_star_init + Δ_d)
+        d = pm.Deterministic('defense', d_star - tt.mean(d_star))
 
         λₕ = tt.exp(i + h + o[idₕ] - d[idₐ])
         λₐ = tt.exp(i + o[idₐ] - d[idₕ])
@@ -107,12 +91,52 @@ def model_iteration(idₕ, sₕ_obs, idₐ, sₐ_obs, priors, n_teams, Δσ, sam
 
         return posteriors
 
-def model_update(idₕ, sₕ_obs, idₐ, sₐ_obs, priors, n_teams, f, f_thresh, Δσ):
+def model_iteration_xg(idₕ, sₕ_obs, idₐ, sₐ_obs, priors, n_teams, Δσ, samples=2000, tune=1000, cores=3):
+    with pm.Model():
+        # Global model parameters
+        h = pm.Normal('home', mu=priors['home'][0], sigma=priors['home'][1])
+        i = pm.Normal('intercept', mu=priors['intercept'][0], sigma=priors['intercept'][1])
+
+        # Team-specific poisson model parameters
+        o_star_init = pm.Normal('o_star_init', mu=priors['offense'][0], sigma=priors['offense'][1], shape=n_teams)
+        Δ_o = pm.Normal('Δ_o', mu=0.0, sigma=Δσ, shape=n_teams)
+        o_star = pm.Deterministic('o_star', o_star_init + Δ_o)
+        o = pm.Deterministic('offense', o_star - tt.mean(o_star))
+
+        d_star_init = pm.Normal('d_star_init', mu=priors['defense'][0], sigma=priors['defense'][1], shape=n_teams)
+        Δ_d = pm.Normal('Δ_d', mu=0.0, sigma=Δσ, shape=n_teams)
+        d_star = pm.Deterministic('d_star', d_star_init + Δ_d)
+        d = pm.Deterministic('defense', d_star - tt.mean(d_star))
+
+        λₕ = i + h + o[idₕ] - d[idₐ]
+        σₕ = sqrt(priors['home'][1]**2 + priors["intercept"][1]**2 + 0.15)
+        λₐ = i + o[idₐ] - d[idₕ]
+        σₐ = sqrt(priors["intercept"][1]**2 + 0.15)
+
+
+        # Likelihood of observed data
+        sₕ = pm.LogNormal('sₕ', mu=λₕ, sigma=σₕ, observed=sₕ_obs)
+        sₐ = pm.LogNormal('sₐ', mu=λₐ, sigma=σₐ, observed=sₐ_obs)
+
+        trace = pm.sampling_jax.sample_numpyro_nuts(
+            samples,
+            tune=tune,
+            chains=3
+        )
+
+        posteriors = get_model_posteriors(trace, n_teams)
+
+        return posteriors
+
+def model_update(idₕ, sₕ_obs, idₐ, sₐ_obs, priors, n_teams, f, f_thresh, Δσ, xgUpdate = False):
     priors["offense"][0] = np.array(priors["offense"][0])
     priors["offense"][1] = np.array(priors["offense"][1])
     priors["defense"][1] = np.array(priors["defense"][1])
     priors["defense"][0] = np.array(priors["defense"][0])
-    posteriors = model_iteration(idₕ, sₕ_obs, idₐ, sₐ_obs, priors, n_teams, Δσ)
+    if (xgUpdate == True):
+        posteriors = model_iteration_xg(idₕ, sₕ_obs, idₐ, sₐ_obs, priors, n_teams, Δσ)
+    else:
+        posteriors = model_iteration(idₕ, sₕ_obs, idₐ, sₐ_obs, priors, n_teams, Δσ)
     posteriors = fatten_priors(posteriors, f, f_thresh)
 
     return posteriors

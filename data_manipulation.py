@@ -1,6 +1,9 @@
 import pandas as pd
 import numpy as np
 import datetime
+from os.path import exists
+import os
+from fuzzywuzzy import fuzz
 
 def preMatchAverages(league):
     stats = pd.read_csv("./csv_data/" + league + "/betting.csv", encoding = "ISO-8859-1")
@@ -52,3 +55,47 @@ def train_test_split(league):
             trainRows.append(index)
     data.iloc[trainRows].to_csv("./csv_data/" + league + "/train.csv", index = False)
     data.iloc[testRows].to_csv("./csv_data/" + league + "/test.csv", index = False)
+
+def split_by_league(nation):
+    pred = pd.read_csv("./csv_data/" + nation + "/bayes_predictions_experimental.csv", encoding = "ISO-8859-1")
+    for league in pred.League.unique():
+        if (not exists("./csv_data/" + nation + "/" + league)):
+            os.makedirs("./csv_data/" + nation + "/" + league)
+        pred.loc[pred["League"] == league].to_csv("./csv_data/" + nation + "/" + league + "/bayes_predictions_experimental.csv", index = False)
+
+def merge_betting_footy(league):
+    betting = pd.read_csv("./csv_data/" + league + "/betting.csv", encoding = "ISO-8859-1")
+    for i in range(len(betting.index)):
+        try:
+            betting.at[i, "Date"] = datetime.date(int(betting.at[i, "Date"].split("-")[0]), int(betting.at[i, "Date"].split("-")[1]), int(betting.at[i, "Date"].split("-")[2]))
+        except:
+            betting.at[i, "Date"] = datetime.date(int(betting.at[i, "Date"].split("/")[2]), int(betting.at[i, "Date"].split("/")[0]), int(betting.at[i, "Date"].split("/")[1]))
+    footy = pd.read_csv("./csv_data/" + league + "/footystats.csv", encoding = "ISO-8859-1")
+    for i in range(len(footy.index)):
+        footy.at[i, "Date"] = datetime.date(int(footy.at[i, "Date"].split()[0].split("-")[0]), int(footy.at[i, "Date"].split()[0].split("-")[1]), int(footy.at[i, "Date"].split()[0].split("-")[2]))
+    betting_teams = betting.Home.unique()
+    footy_teams = footy.Home.unique()
+    team_map = {}
+    for x in betting_teams:
+        cur_best = 0
+        for y in footy_teams:
+            if (fuzz.ratio(x, y) > cur_best):
+                cur_best = fuzz.ratio(x, y)
+                team_map[x] = y
+    print (team_map)
+
+    newcols = {"h_xg":[],"a_xg":[]}
+    match_inds = []
+    for i in range(len(footy.index)):
+        match_inds.append(i)
+    for index, row in betting.iterrows():
+        for i in match_inds:
+            if (footy.at[i, "Home"] == team_map[row["Home"]] and footy.at[i, "Away"] == team_map[row["Away"]] and abs(row["Date"] - footy.at[i, "Date"]).days <= 5):
+                newcols["h_xg"].append(footy.at[i, "h_xg"])
+                newcols["a_xg"].append(footy.at[i, "a_xg"])
+                match_inds.remove(i)
+                break
+    betting["h_xg"] = newcols["h_xg"]
+    betting["a_xg"] = newcols["a_xg"]
+    betting.to_csv("./csv_data/" + league + "/betting_xg.csv",index = False)
+merge_betting_footy("England1")

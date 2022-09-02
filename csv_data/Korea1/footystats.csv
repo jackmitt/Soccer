@@ -1,0 +1,2223 @@
+Season,Date,h_id,a_id,Home,Away,h_goals,a_goals,h_xg,a_xg
+2013,2013-03-01 23:45:00,3836,3834,Ulsan,Daegu,2,1,2.0,1.0
+2013,2013-03-02 00:00:00,3833,3835,FC Seoul,Pohang Steelers,2,2,2.0,2.0
+2013,2013-03-02 00:00:00,3838,3832,Jeonnam Dragons,Jeju United,0,1,0.0,1.0
+2013,2013-03-02 23:00:00,3844,3842,Seongnam,Suwon Bluewings,1,2,1.0,2.0
+2013,2013-03-02 23:00:00,3840,3847,Incheon United,Gyeongnam,0,0,0.0,0.0
+2013,2013-03-02 23:00:00,3846,3831,Busan I'Park,Gangwon,2,2,2.0,2.0
+2013,2013-03-03 01:00:00,3845,3837,Daejeon Citizen,Jeonbuk Motors,1,3,1.0,3.0
+2013,2013-03-08 23:00:00,3833,3840,FC Seoul,Incheon United,2,3,2.0,3.0
+2013,2013-03-08 23:00:00,3835,3845,Pohang Steelers,Daejeon Citizen,3,0,3.0,0.0
+2013,2013-03-08 23:00:00,3842,3831,Suwon Bluewings,Gangwon,1,0,1.0,0.0
+2013,2013-03-09 00:00:00,3832,3844,Jeju United,Seongnam,1,1,1.0,1.0
+2013,2013-03-09 01:00:00,3837,3836,Jeonbuk Motors,Ulsan,2,1,2.0,1.0
+2013,2013-03-09 23:00:00,3847,3846,Gyeongnam,Busan I'Park,1,0,1.0,0.0
+2013,2013-03-10 00:00:00,3834,3838,Daegu,Jeonnam Dragons,1,1,1.0,1.0
+2013,2013-03-16 00:00:00,3845,3832,Daejeon Citizen,Jeju United,1,1,1.0,1.0
+2013,2013-03-16 00:00:00,3831,3834,Gangwon,Daegu,0,0,0.0,0.0
+2013,2013-03-16 02:00:00,3847,3837,Gyeongnam,Jeonbuk Motors,1,1,1.0,1.0
+2013,2013-03-16 02:00:00,3844,3840,Seongnam,Incheon United,1,3,1.0,3.0
+2013,2013-03-17 00:00:00,3846,3833,Busan I'Park,FC Seoul,1,0,1.0,0.0
+2013,2013-03-17 01:00:00,3838,3836,Jeonnam Dragons,Ulsan,0,1,0.0,1.0
+2013,2013-03-17 02:00:00,3842,3835,Suwon Bluewings,Pohang Steelers,0,2,0.0,2.0
+2013,2013-03-30 00:00:00,3833,3847,FC Seoul,Gyeongnam,2,2,2.0,2.0
+2013,2013-03-30 00:00:00,3837,3842,Jeonbuk Motors,Suwon Bluewings,1,2,1.0,2.0
+2013,2013-03-30 01:00:00,3834,3844,Daegu,Seongnam,0,0,0.0,0.0
+2013,2013-03-30 01:00:00,3832,3846,Jeju United,Busan I'Park,1,0,1.0,0.0
+2013,2013-03-30 02:00:00,3835,3838,Pohang Steelers,Jeonnam Dragons,2,1,2.0,1.0
+2013,2013-03-31 00:00:00,3836,3831,Ulsan,Gangwon,3,0,3.0,0.0
+2013,2013-03-31 02:00:00,3840,3845,Incheon United,Daejeon Citizen,1,2,1.0,2.0
+2013,2013-04-06 00:00:00,3837,3832,Jeonbuk Motors,Jeju United,2,1,2.0,1.0
+2013,2013-04-06 00:00:00,3835,3840,Pohang Steelers,Incheon United,1,1,1.0,1.0
+2013,2013-04-06 00:00:00,3842,3834,Suwon Bluewings,Daegu,3,1,3.0,1.0
+2013,2013-04-06 02:00:00,3833,3836,FC Seoul,Ulsan,2,2,2.0,2.0
+2013,2013-04-07 00:00:00,3846,3844,Busan I'Park,Seongnam,2,0,2.0,0.0
+2013,2013-04-07 00:00:00,3845,3847,Daejeon Citizen,Gyeongnam,1,1,1.0,1.0
+2013,2013-04-07 02:00:00,3831,3838,Gangwon,Jeonnam Dragons,1,1,1.0,1.0
+2013,2013-04-13 00:00:00,3847,3835,Gyeongnam,Pohang Steelers,1,1,1.0,1.0
+2013,2013-04-13 01:00:00,3832,3831,Jeju United,Gangwon,4,0,4.0,0.0
+2013,2013-04-13 01:00:00,3834,3840,Daegu,Incheon United,1,3,1.0,3.0
+2013,2013-04-13 01:00:00,3838,3845,Jeonnam Dragons,Daejeon Citizen,3,1,3.0,1.0
+2013,2013-04-13 02:00:00,3836,3846,Ulsan,Busan I'Park,0,0,0.0,0.0
+2013,2013-04-14 00:00:00,3844,3837,Seongnam,Jeonbuk Motors,2,1,2.0,1.0
+2013,2013-04-14 00:00:00,3842,3833,Suwon Bluewings,FC Seoul,1,1,1.0,1.0
+2013,2013-04-16 05:00:00,3831,3835,Gangwon,Pohang Steelers,0,3,0.0,3.0
+2013,2013-04-16 05:30:00,3840,3838,Incheon United,Jeonnam Dragons,0,0,0.0,0.0
+2013,2013-04-17 05:00:00,3837,3834,Jeonbuk Motors,Daegu,2,0,2.0,0.0
+2013,2013-04-17 05:30:00,3846,3842,Busan I'Park,Suwon Bluewings,2,1,2.0,1.0
+2013,2013-04-17 05:30:00,3845,3836,Daejeon Citizen,Ulsan,0,3,0.0,3.0
+2013,2013-04-17 05:30:00,3844,3833,Seongnam,FC Seoul,2,1,2.0,1.0
+2013,2013-04-20 00:00:00,3845,3842,Daejeon Citizen,Suwon Bluewings,1,4,1.0,4.0
+2013,2013-04-20 00:00:00,3833,3834,FC Seoul,Daegu,4,0,4.0,0.0
+2013,2013-04-20 00:00:00,3835,3832,Pohang Steelers,Jeju United,1,0,1.0,0.0
+2013,2013-04-20 02:00:00,3840,3837,Incheon United,Jeonbuk Motors,3,1,3.0,1.0
+2013,2013-04-21 00:00:00,3847,3831,Gyeongnam,Gangwon,1,1,1.0,1.0
+2013,2013-04-21 01:00:00,3838,3846,Jeonnam Dragons,Busan I'Park,2,2,2.0,2.0
+2013,2013-04-21 02:00:00,3836,3844,Ulsan,Seongnam,0,1,0.0,1.0
+2013,2013-04-27 00:00:00,3837,3835,Jeonbuk Motors,Pohang Steelers,1,1,1.0,1.0
+2013,2013-04-27 00:00:00,3844,3838,Seongnam,Jeonnam Dragons,0,0,0.0,0.0
+2013,2013-04-27 01:00:00,3834,3832,Daegu,Jeju United,1,1,1.0,1.0
+2013,2013-04-28 00:00:00,3846,3845,Busan I'Park,Daejeon Citizen,1,1,1.0,1.0
+2013,2013-04-28 00:00:00,3836,3840,Ulsan,Incheon United,2,2,2.0,2.0
+2013,2013-04-28 02:00:00,3833,3831,FC Seoul,Gangwon,3,2,3.0,2.0
+2013,2013-05-01 05:00:00,3832,3847,Jeju United,Gyeongnam,2,1,2.0,1.0
+2013,2013-05-04 23:30:00,3847,3838,Gyeongnam,Jeonnam Dragons,0,1,0.0,1.0
+2013,2013-05-05 00:00:00,3831,3845,Gangwon,Daejeon Citizen,1,1,1.0,1.0
+2013,2013-05-05 00:00:00,3837,3833,Jeonbuk Motors,FC Seoul,1,0,1.0,0.0
+2013,2013-05-05 00:00:00,3842,3840,Suwon Bluewings,Incheon United,1,0,1.0,0.0
+2013,2013-05-05 01:00:00,3832,3836,Jeju United,Ulsan,3,1,3.0,1.0
+2013,2013-05-05 01:00:00,3834,3846,Daegu,Busan I'Park,0,1,0.0,1.0
+2013,2013-05-05 02:00:00,3835,3844,Pohang Steelers,Seongnam,1,0,1.0,0.0
+2013,2013-05-11 00:00:00,3836,3842,Ulsan,Suwon Bluewings,1,0,1.0,0.0
+2013,2013-05-11 00:00:00,3846,3835,Busan I'Park,Pohang Steelers,2,2,2.0,2.0
+2013,2013-05-11 01:00:00,3838,3837,Jeonnam Dragons,Jeonbuk Motors,2,2,2.0,2.0
+2013,2013-05-11 02:00:00,3845,3833,Daejeon Citizen,FC Seoul,1,2,1.0,2.0
+2013,2013-05-12 00:00:00,3831,3844,Gangwon,Seongnam,2,1,2.0,1.0
+2013,2013-05-12 00:00:00,3840,3832,Incheon United,Jeju United,0,0,0.0,0.0
+2013,2013-05-12 02:00:00,3847,3834,Gyeongnam,Daegu,3,1,3.0,1.0
+2013,2013-05-18 00:00:00,3835,3836,Pohang Steelers,Ulsan,1,2,1.0,2.0
+2013,2013-05-18 00:00:00,3842,3832,Suwon Bluewings,Jeju United,1,2,1.0,2.0
+2013,2013-05-19 00:00:00,3840,3831,Incheon United,Gangwon,1,0,1.0,0.0
+2013,2013-05-19 00:30:00,3834,3845,Daegu,Daejeon Citizen,1,1,1.0,1.0
+2013,2013-05-19 02:00:00,3844,3847,Seongnam,Gyeongnam,2,0,2.0,0.0
+2013,2013-05-25 00:00:00,3836,3847,Ulsan,Gyeongnam,4,1,4.0,1.0
+2013,2013-05-25 02:00:00,3846,3840,Busan I'Park,Incheon United,0,3,0.0,3.0
+2013,2013-05-25 02:00:00,3845,3844,Daejeon Citizen,Seongnam,0,2,0.0,2.0
+2013,2013-05-26 00:00:00,3835,3834,Pohang Steelers,Daegu,4,2,4.0,2.0
+2013,2013-05-26 00:00:00,3831,3837,Gangwon,Jeonbuk Motors,1,3,1.0,3.0
+2013,2013-05-26 01:00:00,3838,3842,Jeonnam Dragons,Suwon Bluewings,1,0,1.0,0.0
+2013,2013-05-26 01:00:00,3832,3833,Jeju United,FC Seoul,4,4,4.0,4.0
+2013,2013-06-01 01:00:00,3832,3835,Jeju United,Pohang Steelers,2,3,2.0,3.0
+2013,2013-06-01 03:00:00,3837,3846,Jeonbuk Motors,Busan I'Park,1,4,1.0,4.0
+2013,2013-06-01 04:00:00,3842,3847,Suwon Bluewings,Gyeongnam,0,0,0.0,0.0
+2013,2013-06-01 05:00:00,3833,3838,FC Seoul,Jeonnam Dragons,3,0,3.0,0.0
+2013,2013-06-23 03:00:00,3834,3836,Daegu,Ulsan,5,3,5.0,3.0
+2013,2013-06-23 03:00:00,3847,3845,Gyeongnam,Daejeon Citizen,6,0,6.0,0.0
+2013,2013-06-23 04:00:00,3833,3846,FC Seoul,Busan I'Park,1,0,1.0,0.0
+2013,2013-06-23 05:00:00,3838,3831,Jeonnam Dragons,Gangwon,0,0,0.0,0.0
+2013,2013-06-26 05:30:00,3840,3844,Incheon United,Seongnam,1,4,1.0,4.0
+2013,2013-06-26 05:30:00,3842,3837,Suwon Bluewings,Jeonbuk Motors,5,4,5.0,4.0
+2013,2013-06-29 03:00:00,3840,3835,Incheon United,Pohang Steelers,2,1,2.0,1.0
+2013,2013-06-29 05:00:00,3846,3834,Busan I'Park,Daegu,1,0,1.0,0.0
+2013,2013-06-29 05:00:00,3844,3832,Seongnam,Jeju United,2,2,2.0,2.0
+2013,2013-06-30 03:00:00,3836,3833,Ulsan,FC Seoul,2,0,2.0,0.0
+2013,2013-06-30 05:00:00,3845,3838,Daejeon Citizen,Jeonnam Dragons,1,2,1.0,2.0
+2013,2013-06-30 05:00:00,3831,3842,Gangwon,Suwon Bluewings,2,1,2.0,1.0
+2013,2013-06-30 05:00:00,3837,3847,Jeonbuk Motors,Gyeongnam,4,0,4.0,0.0
+2013,2013-07-03 05:00:00,3831,3846,Gangwon,Busan I'Park,2,2,2.0,2.0
+2013,2013-07-03 05:00:00,3837,3844,Jeonbuk Motors,Seongnam,2,3,2.0,3.0
+2013,2013-07-03 05:30:00,3834,3847,Daegu,Gyeongnam,3,2,3.0,2.0
+2013,2013-07-03 05:30:00,3835,3833,Pohang Steelers,FC Seoul,1,0,1.0,0.0
+2013,2013-07-03 05:30:00,3842,3845,Suwon Bluewings,Daejeon Citizen,3,1,3.0,1.0
+2013,2013-07-03 05:30:00,3836,3838,Ulsan,Jeonnam Dragons,3,1,3.0,1.0
+2013,2013-07-06 03:00:00,3834,3831,Daegu,Gangwon,0,0,0.0,0.0
+2013,2013-07-06 05:00:00,3838,3840,Jeonnam Dragons,Incheon United,1,1,1.0,1.0
+2013,2013-07-06 05:00:00,3845,3846,Daejeon Citizen,Busan I'Park,0,0,0.0,0.0
+2013,2013-07-06 05:00:00,3847,3832,Gyeongnam,Jeju United,2,4,2.0,4.0
+2013,2013-07-07 03:00:00,3833,3844,FC Seoul,Seongnam,3,0,3.0,0.0
+2013,2013-07-07 05:00:00,3842,3836,Suwon Bluewings,Ulsan,0,0,0.0,0.0
+2013,2013-07-07 05:00:00,3835,3837,Pohang Steelers,Jeonbuk Motors,0,2,0.0,2.0
+2013,2013-07-13 03:00:00,3838,3833,Jeonnam Dragons,FC Seoul,1,2,1.0,2.0
+2013,2013-07-13 05:00:00,3831,3847,Gangwon,Gyeongnam,1,1,1.0,1.0
+2013,2013-07-13 05:00:00,3832,3842,Jeju United,Suwon Bluewings,1,2,1.0,2.0
+2013,2013-07-13 05:00:00,3844,3835,Seongnam,Pohang Steelers,2,2,2.0,2.0
+2013,2013-07-13 05:00:00,3846,3837,Busan I'Park,Jeonbuk Motors,1,2,1.0,2.0
+2013,2013-07-13 05:30:00,3840,3834,Incheon United,Daegu,2,1,2.0,1.0
+2013,2013-07-13 05:30:00,3836,3845,Ulsan,Daejeon Citizen,2,0,2.0,0.0
+2013,2013-07-16 05:00:00,3831,3833,Gangwon,FC Seoul,0,1,0.0,1.0
+2013,2013-07-16 05:00:00,3837,3845,Jeonbuk Motors,Daejeon Citizen,1,1,1.0,1.0
+2013,2013-07-16 05:30:00,3846,3838,Busan I'Park,Jeonnam Dragons,2,1,2.0,1.0
+2013,2013-07-16 05:30:00,3835,3842,Pohang Steelers,Suwon Bluewings,1,0,1.0,0.0
+2013,2013-07-16 05:30:00,3844,3834,Seongnam,Daegu,0,1,0.0,1.0
+2013,2013-07-16 05:30:00,3836,3832,Ulsan,Jeju United,4,0,4.0,0.0
+2013,2013-07-16 06:00:00,3847,3840,Gyeongnam,Incheon United,1,0,1.0,0.0
+2013,2013-07-21 05:00:00,3832,3840,Jeju United,Incheon United,1,1,1.0,1.0
+2013,2013-07-31 05:00:00,3834,3837,Daegu,Jeonbuk Motors,0,1,0.0,1.0
+2013,2013-07-31 05:30:00,3845,3840,Daejeon Citizen,Incheon United,0,1,0.0,1.0
+2013,2013-07-31 05:30:00,3833,3832,FC Seoul,Jeju United,1,0,1.0,0.0
+2013,2013-07-31 05:30:00,3835,3831,Pohang Steelers,Gangwon,4,0,4.0,0.0
+2013,2013-07-31 05:30:00,3842,3846,Suwon Bluewings,Busan I'Park,2,0,2.0,0.0
+2013,2013-07-31 05:30:00,3838,3844,Jeonnam Dragons,Seongnam,2,1,2.0,1.0
+2013,2013-07-31 06:00:00,3847,3836,Gyeongnam,Ulsan,1,3,1.0,3.0
+2013,2013-08-03 05:00:00,3846,3847,Busan I'Park,Gyeongnam,5,1,5.0,1.0
+2013,2013-08-03 05:00:00,3833,3842,FC Seoul,Suwon Bluewings,2,1,2.0,1.0
+2013,2013-08-03 05:00:00,3832,3838,Jeju United,Jeonnam Dragons,0,0,0.0,0.0
+2013,2013-08-03 05:00:00,3834,3835,Daegu,Pohang Steelers,0,1,0.0,1.0
+2013,2013-08-03 05:30:00,3840,3836,Incheon United,Ulsan,2,2,2.0,2.0
+2013,2013-08-04 05:00:00,3837,3831,Jeonbuk Motors,Gangwon,4,1,4.0,1.0
+2013,2013-08-04 05:00:00,3844,3845,Seongnam,Daejeon Citizen,2,2,2.0,2.0
+2013,2013-08-10 05:00:00,3831,3832,Gangwon,Jeju United,0,4,0.0,4.0
+2013,2013-08-10 05:00:00,3836,3837,Ulsan,Jeonbuk Motors,2,2,2.0,2.0
+2013,2013-08-10 05:30:00,3840,3833,Incheon United,FC Seoul,2,3,2.0,3.0
+2013,2013-08-11 04:00:00,3845,3835,Daejeon Citizen,Pohang Steelers,0,1,0.0,1.0
+2013,2013-08-11 05:00:00,3838,3834,Jeonnam Dragons,Daegu,1,1,1.0,1.0
+2013,2013-08-11 05:00:00,3847,3842,Gyeongnam,Suwon Bluewings,0,3,0.0,3.0
+2013,2013-08-11 05:00:00,3844,3846,Seongnam,Busan I'Park,1,0,1.0,0.0
+2013,2013-08-15 05:00:00,3833,3845,FC Seoul,Daejeon Citizen,3,2,3.0,2.0
+2013,2013-08-17 05:00:00,3842,3844,Suwon Bluewings,Seongnam,2,2,2.0,2.0
+2013,2013-08-17 05:00:00,3837,3838,Jeonbuk Motors,Jeonnam Dragons,1,0,1.0,0.0
+2013,2013-08-18 05:00:00,3835,3847,Pohang Steelers,Gyeongnam,0,0,0.0,0.0
+2013,2013-08-18 05:00:00,3846,3836,Busan I'Park,Ulsan,1,0,1.0,0.0
+2013,2013-08-18 05:00:00,3832,3834,Jeju United,Daegu,1,1,1.0,1.0
+2013,2013-08-18 05:00:00,3831,3840,Gangwon,Incheon United,1,2,1.0,2.0
+2013,2013-08-24 05:00:00,3845,3831,Daejeon Citizen,Gangwon,2,0,2.0,0.0
+2013,2013-08-24 05:00:00,3832,3837,Jeju United,Jeonbuk Motors,0,3,0.0,3.0
+2013,2013-08-24 05:00:00,3844,3836,Seongnam,Ulsan,3,1,3.0,1.0
+2013,2013-08-24 05:30:00,3840,3846,Incheon United,Busan I'Park,0,1,0.0,1.0
+2013,2013-08-25 05:00:00,3834,3842,Daegu,Suwon Bluewings,0,2,0.0,2.0
+2013,2013-08-25 05:00:00,3838,3835,Jeonnam Dragons,Pohang Steelers,2,3,2.0,3.0
+2013,2013-08-25 05:00:00,3847,3833,Gyeongnam,FC Seoul,0,0,0.0,0.0
+2013,2013-08-28 05:30:00,3846,3832,Busan I'Park,Jeju United,1,2,1.0,2.0
+2013,2013-08-28 05:30:00,3845,3834,Daejeon Citizen,Daegu,1,3,1.0,3.0
+2013,2013-08-28 05:30:00,3833,3837,FC Seoul,Jeonbuk Motors,1,1,1.0,1.0
+2013,2013-08-28 05:30:00,3840,3842,Incheon United,Suwon Bluewings,3,1,3.0,1.0
+2013,2013-08-28 05:30:00,3844,3831,Seongnam,Gangwon,2,0,2.0,0.0
+2013,2013-08-28 05:30:00,3836,3835,Ulsan,Pohang Steelers,2,0,2.0,0.0
+2013,2013-08-28 05:30:00,3838,3847,Jeonnam Dragons,Gyeongnam,1,0,1.0,0.0
+2013,2013-09-01 05:00:00,3834,3833,Daegu,FC Seoul,0,1,0.0,1.0
+2013,2013-09-01 05:00:00,3831,3836,Gangwon,Ulsan,1,2,1.0,2.0
+2013,2013-09-01 05:00:00,3847,3844,Gyeongnam,Seongnam,0,1,0.0,1.0
+2013,2013-09-01 05:00:00,3832,3845,Jeju United,Daejeon Citizen,2,1,2.0,1.0
+2013,2013-09-01 05:00:00,3837,3840,Jeonbuk Motors,Incheon United,2,0,2.0,0.0
+2013,2013-09-01 05:00:00,3835,3846,Pohang Steelers,Busan I'Park,1,2,1.0,2.0
+2013,2013-09-01 05:00:00,3842,3838,Suwon Bluewings,Jeonnam Dragons,0,0,0.0,0.0
+2013,2013-09-07 03:00:00,3834,3832,Daegu,Jeju United,0,1,0.0,1.0
+2013,2013-09-07 05:00:00,3838,3847,Jeonnam Dragons,Gyeongnam,1,1,1.0,1.0
+2013,2013-09-07 05:00:00,3844,3845,Seongnam,Daejeon Citizen,3,1,3.0,1.0
+2013,2013-09-08 03:00:00,3837,3835,Jeonbuk Motors,Pohang Steelers,0,3,0.0,3.0
+2013,2013-09-08 03:00:00,3836,3840,Ulsan,Incheon United,2,1,2.0,1.0
+2013,2013-09-08 05:00:00,3846,3833,Busan I'Park,FC Seoul,0,0,0.0,0.0
+2013,2013-09-11 05:00:00,3834,3831,Daegu,Gangwon,1,1,1.0,1.0
+2013,2013-09-11 05:30:00,3845,3832,Daejeon Citizen,Jeju United,1,2,1.0,2.0
+2013,2013-09-11 05:30:00,3844,3838,Seongnam,Jeonnam Dragons,0,1,0.0,1.0
+2013,2013-09-11 05:30:00,3842,3846,Suwon Bluewings,Busan I'Park,1,0,1.0,0.0
+2013,2013-09-11 05:30:00,3833,3835,FC Seoul,Pohang Steelers,2,0,2.0,0.0
+2013,2013-09-11 05:30:00,3840,3837,Incheon United,Jeonbuk Motors,1,1,1.0,1.0
+2013,2013-09-21 02:00:00,3846,3837,Busan I'Park,Jeonbuk Motors,0,1,0.0,1.0
+2013,2013-09-21 03:00:00,3831,3844,Gangwon,Seongnam,0,2,0.0,2.0
+2013,2013-09-22 00:00:00,3842,3840,Suwon Bluewings,Incheon United,1,1,1.0,1.0
+2013,2013-09-22 00:00:00,3835,3836,Pohang Steelers,Ulsan,1,1,1.0,1.0
+2013,2013-09-22 00:00:00,3847,3834,Gyeongnam,Daegu,3,0,3.0,0.0
+2013,2013-09-22 01:00:00,3838,3845,Jeonnam Dragons,Daejeon Citizen,2,2,2.0,2.0
+2013,2013-09-28 02:00:00,3840,3835,Incheon United,Pohang Steelers,2,2,2.0,2.0
+2013,2013-09-28 02:00:00,3847,3844,Gyeongnam,Seongnam,1,2,1.0,2.0
+2013,2013-09-28 02:00:00,3845,3831,Daejeon Citizen,Gangwon,1,3,1.0,3.0
+2013,2013-09-29 00:00:00,3832,3838,Jeju United,Jeonnam Dragons,1,0,1.0,0.0
+2013,2013-09-29 00:15:00,3837,3842,Jeonbuk Motors,Suwon Bluewings,0,0,0.0,0.0
+2013,2013-10-05 00:00:00,3831,3847,Gangwon,Gyeongnam,2,1,2.0,1.0
+2013,2013-10-05 00:00:00,3835,3842,Pohang Steelers,Suwon Bluewings,2,2,2.0,2.0
+2013,2013-10-05 02:00:00,3834,3845,Daegu,Daejeon Citizen,1,1,1.0,1.0
+2013,2013-10-05 02:00:00,3836,3846,Ulsan,Busan I'Park,1,0,1.0,0.0
+2013,2013-10-06 00:00:00,3844,3832,Seongnam,Jeju United,2,1,2.0,1.0
+2013,2013-10-06 02:00:00,3840,3833,Incheon United,FC Seoul,0,0,0.0,0.0
+2013,2013-10-08 23:00:00,3842,3833,Suwon Bluewings,FC Seoul,2,0,2.0,0.0
+2013,2013-10-09 00:00:00,3835,3846,Pohang Steelers,Busan I'Park,0,0,0.0,0.0
+2013,2013-10-09 00:00:00,3832,3831,Jeju United,Gangwon,1,1,1.0,1.0
+2013,2013-10-09 01:00:00,3838,3834,Jeonnam Dragons,Daegu,1,2,1.0,2.0
+2013,2013-10-09 02:00:00,3845,3847,Daejeon Citizen,Gyeongnam,0,1,0.0,1.0
+2013,2013-10-09 02:00:00,3837,3836,Jeonbuk Motors,Ulsan,1,0,1.0,0.0
+2013,2013-10-20 00:00:00,3833,3836,FC Seoul,Ulsan,0,2,0.0,2.0
+2013,2013-10-20 01:00:00,3832,3845,Jeju United,Daejeon Citizen,0,1,0.0,1.0
+2013,2013-10-26 00:00:00,3847,3832,Gyeongnam,Jeju United,1,2,1.0,2.0
+2013,2013-10-27 00:00:00,3831,3838,Gangwon,Jeonnam Dragons,2,1,2.0,1.0
+2013,2013-10-27 00:00:00,3834,3844,Daegu,Seongnam,2,2,2.0,2.0
+2013,2013-10-27 01:00:00,3846,3840,Busan I'Park,Incheon United,0,0,0.0,0.0
+2013,2013-10-27 02:00:00,3836,3842,Ulsan,Suwon Bluewings,2,1,2.0,1.0
+2013,2013-10-30 00:00:00,3835,3840,Pohang Steelers,Incheon United,2,1,2.0,1.0
+2013,2013-10-30 05:00:00,3847,3838,Gyeongnam,Jeonnam Dragons,4,2,4.0,2.0
+2013,2013-10-30 05:30:00,3844,3831,Seongnam,Gangwon,1,2,1.0,2.0
+2013,2013-10-30 05:30:00,3836,3833,Ulsan,FC Seoul,1,0,1.0,0.0
+2013,2013-10-30 05:30:00,3837,3846,Jeonbuk Motors,Busan I'Park,3,2,3.0,2.0
+2013,2013-11-02 00:00:00,3833,3842,FC Seoul,Suwon Bluewings,2,1,2.0,1.0
+2013,2013-11-02 01:00:00,3838,3832,Jeonnam Dragons,Jeju United,0,1,0.0,1.0
+2013,2013-11-03 01:00:00,3845,3834,Daejeon Citizen,Daegu,3,2,3.0,2.0
+2013,2013-11-03 01:00:00,3840,3836,Incheon United,Ulsan,0,1,0.0,1.0
+2013,2013-11-03 01:00:00,3846,3835,Busan I'Park,Pohang Steelers,1,3,1.0,3.0
+2013,2013-11-03 01:00:00,3844,3847,Seongnam,Gyeongnam,2,1,2.0,1.0
+2013,2013-11-08 23:00:00,3831,3845,Gangwon,Daejeon Citizen,1,3,1.0,3.0
+2013,2013-11-09 01:00:00,3836,3837,Ulsan,Jeonbuk Motors,2,0,2.0,0.0
+2013,2013-11-09 23:00:00,3832,3844,Jeju United,Seongnam,1,0,1.0,0.0
+2013,2013-11-09 23:00:00,3834,3838,Daegu,Jeonnam Dragons,0,1,0.0,1.0
+2013,2013-11-09 23:00:00,3842,3835,Suwon Bluewings,Pohang Steelers,1,2,1.0,2.0
+2013,2013-11-10 01:00:00,3840,3846,Incheon United,Busan I'Park,1,2,1.0,2.0
+2013,2013-11-15 22:30:00,3847,3831,Gyeongnam,Gangwon,1,2,1.0,2.0
+2013,2013-11-15 23:00:00,3835,3837,Pohang Steelers,Jeonbuk Motors,2,1,2.0,1.0
+2013,2013-11-16 23:00:00,3845,3844,Daejeon Citizen,Seongnam,1,0,1.0,0.0
+2013,2013-11-16 23:00:00,3833,3840,FC Seoul,Incheon United,2,2,2.0,2.0
+2013,2013-11-16 23:00:00,3832,3834,Jeju United,Daegu,1,2,1.0,2.0
+2013,2013-11-17 00:00:00,3846,3842,Busan I'Park,Suwon Bluewings,1,0,1.0,0.0
+2013,2013-11-20 04:00:00,3833,3837,FC Seoul,Jeonbuk Motors,4,1,4.0,1.0
+2013,2013-11-22 23:00:00,3844,3834,Seongnam,Daegu,0,0,0.0,0.0
+2013,2013-11-23 00:00:00,3838,3831,Jeonnam Dragons,Gangwon,1,0,1.0,0.0
+2013,2013-11-23 01:00:00,3842,3836,Suwon Bluewings,Ulsan,1,2,1.0,2.0
+2013,2013-11-23 01:00:00,3837,3840,Jeonbuk Motors,Incheon United,2,0,2.0,0.0
+2013,2013-11-23 23:00:00,3832,3847,Jeju United,Gyeongnam,0,1,0.0,1.0
+2013,2013-11-23 23:00:00,3833,3846,FC Seoul,Busan I'Park,3,2,3.0,2.0
+2013,2013-11-26 23:00:00,3831,3834,Gangwon,Daegu,2,2,2.0,2.0
+2013,2013-11-26 23:00:00,3835,3833,Pohang Steelers,FC Seoul,3,1,3.0,1.0
+2013,2013-11-27 04:00:00,3847,3845,Gyeongnam,Daejeon Citizen,1,1,1.0,1.0
+2013,2013-11-27 04:30:00,3846,3836,Busan I'Park,Ulsan,2,1,2.0,1.0
+2013,2013-11-27 04:30:00,3838,3844,Jeonnam Dragons,Seongnam,0,1,0.0,1.0
+2013,2013-11-27 04:30:00,3842,3837,Suwon Bluewings,Jeonbuk Motors,1,0,1.0,0.0
+2013,2013-11-29 23:00:00,3845,3838,Daejeon Citizen,Jeonnam Dragons,2,0,2.0,0.0
+2013,2013-11-29 23:00:00,3834,3847,Daegu,Gyeongnam,0,0,0.0,0.0
+2013,2013-11-29 23:00:00,3831,3832,Gangwon,Jeju United,3,0,3.0,0.0
+2013,2013-11-30 23:00:00,3840,3842,Incheon United,Suwon Bluewings,2,1,2.0,1.0
+2013,2013-11-30 23:00:00,3837,3833,Jeonbuk Motors,FC Seoul,1,1,1.0,1.0
+2013,2013-11-30 23:00:00,3836,3835,Ulsan,Pohang Steelers,0,1,0.0,1.0
+2014,2014-03-07 23:00:00,3835,3836,Pohang Steelers,Ulsan,0,1,0.0,1.0
+2014,2014-03-08 01:00:00,3837,3846,Jeonbuk Motors,Busan I'Park,3,0,3.0,0.0
+2014,2014-03-08 01:00:00,3833,3838,FC Seoul,Jeonnam Dragons,0,1,0.0,1.0
+2014,2014-03-08 23:00:00,3839,3840,Sangju Sangmu,Incheon United,2,2,2.0,2.0
+2014,2014-03-08 23:00:00,3847,3844,Gyeongnam,Seongnam,1,0,1.0,0.0
+2014,2014-03-09 01:00:00,3832,3842,Jeju United,Suwon Bluewings,0,1,0.0,1.0
+2014,2014-03-15 00:00:00,3840,3837,Incheon United,Jeonbuk Motors,0,1,0.0,1.0
+2014,2014-03-15 00:00:00,3846,3835,Busan I'Park,Pohang Steelers,3,1,3.0,1.0
+2014,2014-03-15 02:00:00,3844,3833,Seongnam,FC Seoul,0,0,0.0,0.0
+2014,2014-03-16 00:00:00,3842,3839,Suwon Bluewings,Sangju Sangmu,2,2,2.0,2.0
+2014,2014-03-16 00:00:00,3836,3847,Ulsan,Gyeongnam,3,0,3.0,0.0
+2014,2014-03-16 02:00:00,3838,3832,Jeonnam Dragons,Jeju United,1,2,1.0,2.0
+2014,2014-03-22 00:00:00,3832,3844,Jeju United,Seongnam,1,0,1.0,0.0
+2014,2014-03-22 00:00:00,3835,3842,Pohang Steelers,Suwon Bluewings,2,1,2.0,1.0
+2014,2014-03-22 02:00:00,3847,3838,Gyeongnam,Jeonnam Dragons,2,3,2.0,3.0
+2014,2014-03-23 00:00:00,3839,3837,Sangju Sangmu,Jeonbuk Motors,0,0,0.0,0.0
+2014,2014-03-23 00:00:00,3833,3846,FC Seoul,Busan I'Park,0,1,0.0,1.0
+2014,2014-03-23 02:00:00,3836,3840,Ulsan,Incheon United,3,0,3.0,0.0
+2014,2014-03-26 05:00:00,3847,3840,Gyeongnam,Incheon United,1,0,1.0,0.0
+2014,2014-03-26 05:00:00,3838,3836,Jeonnam Dragons,Ulsan,1,0,1.0,0.0
+2014,2014-03-26 05:00:00,3837,3835,Jeonbuk Motors,Pohang Steelers,1,3,1.0,3.0
+2014,2014-03-26 05:30:00,3833,3832,FC Seoul,Jeju United,2,0,2.0,0.0
+2014,2014-03-26 05:30:00,3846,3839,Busan I'Park,Sangju Sangmu,1,1,1.0,1.0
+2014,2014-03-26 05:30:00,3844,3842,Seongnam,Suwon Bluewings,2,0,2.0,0.0
+2014,2014-03-29 00:00:00,3836,3833,Ulsan,FC Seoul,2,1,2.0,1.0
+2014,2014-03-29 00:00:00,3835,3839,Pohang Steelers,Sangju Sangmu,4,2,4.0,2.0
+2014,2014-03-29 02:00:00,3837,3844,Jeonbuk Motors,Seongnam,1,0,1.0,0.0
+2014,2014-03-30 00:00:00,3840,3838,Incheon United,Jeonnam Dragons,0,0,0.0,0.0
+2014,2014-03-30 00:00:00,3832,3847,Jeju United,Gyeongnam,1,1,1.0,1.0
+2014,2014-03-30 02:00:00,3842,3846,Suwon Bluewings,Busan I'Park,1,0,1.0,0.0
+2014,2014-04-05 00:00:00,3847,3842,Gyeongnam,Suwon Bluewings,2,2,2.0,2.0
+2014,2014-04-05 00:00:00,3839,3832,Sangju Sangmu,Jeju United,0,1,0.0,1.0
+2014,2014-04-05 02:00:00,3844,3840,Seongnam,Incheon United,0,0,0.0,0.0
+2014,2014-04-06 00:00:00,3833,3837,FC Seoul,Jeonbuk Motors,1,1,1.0,1.0
+2014,2014-04-06 00:15:00,3838,3835,Jeonnam Dragons,Pohang Steelers,2,2,2.0,2.0
+2014,2014-04-06 02:00:00,3846,3836,Busan I'Park,Ulsan,0,0,0.0,0.0
+2014,2014-04-09 05:00:00,3839,3833,Sangju Sangmu,FC Seoul,2,1,2.0,1.0
+2014,2014-04-09 05:00:00,3832,3837,Jeju United,Jeonbuk Motors,2,0,2.0,0.0
+2014,2014-04-09 05:30:00,3840,3846,Incheon United,Busan I'Park,0,0,0.0,0.0
+2014,2014-04-09 05:30:00,3835,3847,Pohang Steelers,Gyeongnam,3,0,3.0,0.0
+2014,2014-04-09 05:30:00,3842,3838,Suwon Bluewings,Jeonnam Dragons,1,0,1.0,0.0
+2014,2014-04-09 05:30:00,3836,3844,Ulsan,Seongnam,0,1,0.0,1.0
+2014,2014-04-12 00:30:00,3837,3836,Jeonbuk Motors,Ulsan,1,0,1.0,0.0
+2014,2014-04-12 02:00:00,3833,3847,FC Seoul,Gyeongnam,0,0,0.0,0.0
+2014,2014-04-12 02:00:00,3835,3832,Pohang Steelers,Jeju United,3,0,3.0,0.0
+2014,2014-04-13 00:00:00,3844,3839,Seongnam,Sangju Sangmu,0,0,0.0,0.0
+2014,2014-04-13 00:00:00,3838,3846,Jeonnam Dragons,Busan I'Park,2,1,2.0,1.0
+2014,2014-04-13 02:00:00,3840,3842,Incheon United,Suwon Bluewings,0,3,0.0,3.0
+2014,2014-04-19 00:00:00,3836,3842,Ulsan,Suwon Bluewings,2,2,2.0,2.0
+2014,2014-04-19 00:00:00,3846,3844,Busan I'Park,Seongnam,1,0,1.0,0.0
+2014,2014-04-19 02:00:00,3838,3837,Jeonnam Dragons,Jeonbuk Motors,0,2,0.0,2.0
+2014,2014-04-20 00:00:00,3833,3835,FC Seoul,Pohang Steelers,0,1,0.0,1.0
+2014,2014-04-20 00:00:00,3847,3839,Gyeongnam,Sangju Sangmu,0,0,0.0,0.0
+2014,2014-04-20 02:00:00,3832,3840,Jeju United,Incheon United,1,0,1.0,0.0
+2014,2014-04-26 00:00:00,3832,3846,Jeju United,Busan I'Park,2,1,2.0,1.0
+2014,2014-04-26 00:00:00,3837,3847,Jeonbuk Motors,Gyeongnam,4,1,4.0,1.0
+2014,2014-04-26 02:00:00,3844,3838,Seongnam,Jeonnam Dragons,0,1,0.0,1.0
+2014,2014-04-27 00:00:00,3835,3840,Pohang Steelers,Incheon United,3,0,3.0,0.0
+2014,2014-04-27 00:15:00,3842,3833,Suwon Bluewings,FC Seoul,0,1,0.0,1.0
+2014,2014-04-27 02:00:00,3839,3836,Sangju Sangmu,Ulsan,1,1,1.0,1.0
+2014,2014-05-03 00:00:00,3844,3835,Seongnam,Pohang Steelers,3,1,3.0,1.0
+2014,2014-05-03 00:00:00,3842,3837,Suwon Bluewings,Jeonbuk Motors,1,0,1.0,0.0
+2014,2014-05-03 00:00:00,3836,3832,Ulsan,Jeju United,1,1,1.0,1.0
+2014,2014-05-03 02:00:00,3840,3833,Incheon United,FC Seoul,1,0,1.0,0.0
+2014,2014-05-04 00:00:00,3846,3847,Busan I'Park,Gyeongnam,2,2,2.0,2.0
+2014,2014-05-04 00:00:00,3838,3839,Jeonnam Dragons,Sangju Sangmu,4,3,4.0,3.0
+2014,2014-05-10 00:00:00,3837,3840,Jeonbuk Motors,Incheon United,1,1,1.0,1.0
+2014,2014-05-10 00:00:00,3847,3832,Gyeongnam,Jeju United,1,1,1.0,1.0
+2014,2014-05-10 00:00:00,3839,3842,Sangju Sangmu,Suwon Bluewings,1,1,1.0,1.0
+2014,2014-05-10 02:00:00,3835,3838,Pohang Steelers,Jeonnam Dragons,3,1,3.0,1.0
+2014,2014-05-11 00:00:00,3836,3846,Ulsan,Busan I'Park,3,0,3.0,0.0
+2014,2014-05-18 02:00:00,3833,3844,FC Seoul,Seongnam,1,0,1.0,0.0
+2014,2014-07-05 05:00:00,3842,3847,Suwon Bluewings,Gyeongnam,0,0,0.0,0.0
+2014,2014-07-05 05:00:00,3838,3833,Jeonnam Dragons,FC Seoul,2,2,2.0,2.0
+2014,2014-07-05 05:00:00,3832,3835,Jeju United,Pohang Steelers,0,0,0.0,0.0
+2014,2014-07-05 05:30:00,3846,3837,Busan I'Park,Jeonbuk Motors,0,2,0.0,2.0
+2014,2014-07-06 05:00:00,3840,3839,Incheon United,Sangju Sangmu,1,2,1.0,2.0
+2014,2014-07-06 05:00:00,3844,3836,Seongnam,Ulsan,1,1,1.0,1.0
+2014,2014-07-09 05:00:00,3837,3832,Jeonbuk Motors,Jeju United,1,1,1.0,1.0
+2014,2014-07-09 05:00:00,3839,3846,Sangju Sangmu,Busan I'Park,2,0,2.0,0.0
+2014,2014-07-09 05:00:00,3838,3847,Jeonnam Dragons,Gyeongnam,3,1,3.0,1.0
+2014,2014-07-09 05:30:00,3835,3833,Pohang Steelers,FC Seoul,0,0,0.0,0.0
+2014,2014-07-09 05:30:00,3842,3836,Suwon Bluewings,Ulsan,3,2,3.0,2.0
+2014,2014-07-09 05:30:00,3840,3844,Incheon United,Seongnam,1,1,1.0,1.0
+2014,2014-07-12 05:00:00,3833,3842,FC Seoul,Suwon Bluewings,2,0,2.0,0.0
+2014,2014-07-12 05:00:00,3839,3838,Sangju Sangmu,Jeonnam Dragons,1,2,1.0,2.0
+2014,2014-07-12 05:30:00,3836,3835,Ulsan,Pohang Steelers,0,2,0.0,2.0
+2014,2014-07-13 05:00:00,3844,3832,Seongnam,Jeju United,1,2,1.0,2.0
+2014,2014-07-13 05:00:00,3847,3837,Gyeongnam,Jeonbuk Motors,1,4,1.0,4.0
+2014,2014-07-13 05:30:00,3846,3840,Busan I'Park,Incheon United,2,2,2.0,2.0
+2014,2014-07-19 05:00:00,3847,3836,Gyeongnam,Ulsan,0,1,0.0,1.0
+2014,2014-07-19 05:00:00,3832,3833,Jeju United,FC Seoul,1,1,1.0,1.0
+2014,2014-07-19 05:00:00,3838,3844,Jeonnam Dragons,Seongnam,2,0,2.0,0.0
+2014,2014-07-19 05:00:00,3842,3840,Suwon Bluewings,Incheon United,3,2,3.0,2.0
+2014,2014-07-20 05:00:00,3835,3846,Pohang Steelers,Busan I'Park,2,0,2.0,0.0
+2014,2014-07-20 05:00:00,3837,3839,Jeonbuk Motors,Sangju Sangmu,6,0,6.0,0.0
+2014,2014-07-23 05:00:00,3832,3838,Jeju United,Jeonnam Dragons,2,0,2.0,0.0
+2014,2014-07-23 05:30:00,3833,3839,FC Seoul,Sangju Sangmu,2,1,2.0,1.0
+2014,2014-07-23 05:30:00,3846,3842,Busan I'Park,Suwon Bluewings,0,2,0.0,2.0
+2014,2014-07-23 05:30:00,3844,3847,Seongnam,Gyeongnam,1,0,1.0,0.0
+2014,2014-07-23 05:30:00,3840,3835,Incheon United,Pohang Steelers,0,0,0.0,0.0
+2014,2014-07-23 05:30:00,3836,3837,Ulsan,Jeonbuk Motors,0,0,0.0,0.0
+2014,2014-08-02 05:00:00,3840,3836,Incheon United,Ulsan,2,0,2.0,0.0
+2014,2014-08-02 05:00:00,3839,3844,Sangju Sangmu,Seongnam,1,1,1.0,1.0
+2014,2014-08-02 05:30:00,3846,3832,Busan I'Park,Jeju United,1,1,1.0,1.0
+2014,2014-08-03 05:00:00,3842,3835,Suwon Bluewings,Pohang Steelers,4,1,4.0,1.0
+2014,2014-08-03 05:00:00,3837,3838,Jeonbuk Motors,Jeonnam Dragons,2,0,2.0,0.0
+2014,2014-08-03 05:00:00,3847,3833,Gyeongnam,FC Seoul,1,1,1.0,1.0
+2014,2014-08-06 05:00:00,3837,3842,Jeonbuk Motors,Suwon Bluewings,3,2,3.0,2.0
+2014,2014-08-06 05:00:00,3832,3839,Jeju United,Sangju Sangmu,2,3,2.0,3.0
+2014,2014-08-06 05:00:00,3838,3840,Jeonnam Dragons,Incheon United,1,2,1.0,2.0
+2014,2014-08-06 05:30:00,3847,3846,Gyeongnam,Busan I'Park,1,1,1.0,1.0
+2014,2014-08-06 05:30:00,3833,3836,FC Seoul,Ulsan,0,1,0.0,1.0
+2014,2014-08-06 05:30:00,3835,3844,Pohang Steelers,Seongnam,1,0,1.0,0.0
+2014,2014-08-09 05:00:00,3839,3835,Sangju Sangmu,Pohang Steelers,0,2,0.0,2.0
+2014,2014-08-09 05:30:00,3844,3837,Seongnam,Jeonbuk Motors,0,3,0.0,3.0
+2014,2014-08-09 05:30:00,3836,3838,Ulsan,Jeonnam Dragons,1,0,1.0,0.0
+2014,2014-08-10 05:00:00,3840,3847,Incheon United,Gyeongnam,2,0,2.0,0.0
+2014,2014-08-10 05:00:00,3842,3832,Suwon Bluewings,Jeju United,1,0,1.0,0.0
+2014,2014-08-10 05:30:00,3846,3833,Busan I'Park,FC Seoul,0,2,0.0,2.0
+2014,2014-08-16 05:00:00,3835,3837,Pohang Steelers,Jeonbuk Motors,0,2,0.0,2.0
+2014,2014-08-16 05:00:00,3832,3836,Jeju United,Ulsan,1,0,1.0,0.0
+2014,2014-08-16 05:00:00,3833,3840,FC Seoul,Incheon United,5,1,5.0,1.0
+2014,2014-08-17 05:00:00,3838,3842,Jeonnam Dragons,Suwon Bluewings,3,1,3.0,1.0
+2014,2014-08-17 05:00:00,3839,3847,Sangju Sangmu,Gyeongnam,1,3,1.0,3.0
+2014,2014-08-17 05:30:00,3844,3846,Seongnam,Busan I'Park,2,4,2.0,4.0
+2014,2014-08-23 05:00:00,3847,3835,Gyeongnam,Pohang Steelers,0,0,0.0,0.0
+2014,2014-08-23 05:00:00,3837,3833,Jeonbuk Motors,FC Seoul,1,2,1.0,2.0
+2014,2014-08-23 05:30:00,3836,3839,Ulsan,Sangju Sangmu,3,0,3.0,0.0
+2014,2014-08-24 05:00:00,3840,3832,Incheon United,Jeju United,0,0,0.0,0.0
+2014,2014-08-24 05:00:00,3842,3844,Suwon Bluewings,Seongnam,1,1,1.0,1.0
+2014,2014-08-24 05:30:00,3846,3838,Busan I'Park,Jeonnam Dragons,0,1,0.0,1.0
+2014,2014-08-30 05:00:00,3839,3844,Sangju Sangmu,Seongnam,1,1,1.0,1.0
+2014,2014-08-30 05:00:00,3840,3846,Incheon United,Busan I'Park,3,0,3.0,0.0
+2014,2014-08-30 05:00:00,3847,3842,Gyeongnam,Suwon Bluewings,0,1,0.0,1.0
+2014,2014-08-31 03:00:00,3836,3835,Ulsan,Pohang Steelers,1,2,1.0,2.0
+2014,2014-08-31 04:00:00,3833,3832,FC Seoul,Jeju United,0,0,0.0,0.0
+2014,2014-08-31 05:00:00,3838,3837,Jeonnam Dragons,Jeonbuk Motors,2,1,2.0,1.0
+2014,2014-09-03 05:30:00,3842,3846,Suwon Bluewings,Busan I'Park,1,1,1.0,1.0
+2014,2014-09-06 02:00:00,3837,3839,Jeonbuk Motors,Sangju Sangmu,2,0,2.0,0.0
+2014,2014-09-06 03:00:00,3844,3840,Seongnam,Incheon United,2,0,2.0,0.0
+2014,2014-09-06 05:00:00,3832,3838,Jeju United,Jeonnam Dragons,6,2,6.0,2.0
+2014,2014-09-07 03:00:00,3836,3847,Ulsan,Gyeongnam,2,1,2.0,1.0
+2014,2014-09-07 05:00:00,3835,3833,Pohang Steelers,FC Seoul,0,1,0.0,1.0
+2014,2014-09-10 05:00:00,3838,3835,Jeonnam Dragons,Pohang Steelers,0,1,0.0,1.0
+2014,2014-09-10 05:00:00,3839,3832,Sangju Sangmu,Jeju United,1,2,1.0,2.0
+2014,2014-09-10 05:30:00,3842,3836,Suwon Bluewings,Ulsan,2,0,2.0,0.0
+2014,2014-09-10 05:30:00,3846,3837,Busan I'Park,Jeonbuk Motors,1,1,1.0,1.0
+2014,2014-09-10 05:30:00,3847,3840,Gyeongnam,Incheon United,0,0,0.0,0.0
+2014,2014-09-10 05:30:00,3844,3833,Seongnam,FC Seoul,1,2,1.0,2.0
+2014,2014-09-13 05:00:00,3835,3844,Pohang Steelers,Seongnam,1,0,1.0,0.0
+2014,2014-09-13 05:00:00,3833,3840,FC Seoul,Incheon United,3,1,3.0,1.0
+2014,2014-09-13 05:30:00,3846,3836,Busan I'Park,Ulsan,1,3,1.0,3.0
+2014,2014-09-14 00:15:00,3837,3847,Jeonbuk Motors,Gyeongnam,1,0,1.0,0.0
+2014,2014-09-14 03:00:00,3832,3842,Jeju United,Suwon Bluewings,0,0,0.0,0.0
+2014,2014-09-14 05:00:00,3839,3838,Sangju Sangmu,Jeonnam Dragons,1,0,1.0,0.0
+2014,2014-09-20 00:00:00,3836,3840,Ulsan,Incheon United,1,1,1.0,1.0
+2014,2014-09-20 00:00:00,3837,3833,Jeonbuk Motors,FC Seoul,0,0,0.0,0.0
+2014,2014-09-20 02:00:00,3842,3835,Suwon Bluewings,Pohang Steelers,2,1,2.0,1.0
+2014,2014-09-20 02:00:00,3847,3839,Gyeongnam,Sangju Sangmu,1,0,1.0,0.0
+2014,2014-09-21 00:00:00,3844,3832,Seongnam,Jeju United,1,1,1.0,1.0
+2014,2014-09-21 00:00:00,3838,3846,Jeonnam Dragons,Busan I'Park,2,1,2.0,1.0
+2014,2014-09-24 05:30:00,3833,3847,FC Seoul,Gyeongnam,1,1,1.0,1.0
+2014,2014-09-27 00:00:00,3846,3844,Busan I'Park,Seongnam,1,0,1.0,0.0
+2014,2014-09-27 00:00:00,3832,3840,Jeju United,Incheon United,0,2,0.0,2.0
+2014,2014-09-27 02:00:00,3839,3842,Sangju Sangmu,Suwon Bluewings,0,1,0.0,1.0
+2014,2014-09-28 00:00:00,3835,3837,Pohang Steelers,Jeonbuk Motors,2,2,2.0,2.0
+2014,2014-09-28 00:00:00,3838,3836,Jeonnam Dragons,Ulsan,1,1,1.0,1.0
+2014,2014-10-01 05:00:00,3837,3832,Jeonbuk Motors,Jeju United,2,0,2.0,0.0
+2014,2014-10-01 05:00:00,3847,3835,Gyeongnam,Pohang Steelers,2,1,2.0,1.0
+2014,2014-10-01 05:30:00,3844,3838,Seongnam,Jeonnam Dragons,1,0,1.0,0.0
+2014,2014-10-01 05:30:00,3846,3839,Busan I'Park,Sangju Sangmu,1,1,1.0,1.0
+2014,2014-10-01 05:30:00,3842,3840,Suwon Bluewings,Incheon United,1,1,1.0,1.0
+2014,2014-10-04 00:00:00,3838,3847,Jeonnam Dragons,Gyeongnam,0,0,0.0,0.0
+2014,2014-10-04 00:00:00,3832,3836,Jeju United,Ulsan,1,0,1.0,0.0
+2014,2014-10-04 02:00:00,3844,3837,Seongnam,Jeonbuk Motors,0,1,0.0,1.0
+2014,2014-10-05 00:00:00,3833,3842,FC Seoul,Suwon Bluewings,0,1,0.0,1.0
+2014,2014-10-05 00:00:00,3835,3846,Pohang Steelers,Busan I'Park,0,0,0.0,0.0
+2014,2014-10-05 02:00:00,3840,3839,Incheon United,Sangju Sangmu,1,0,1.0,0.0
+2014,2014-10-09 00:00:00,3836,3833,Ulsan,FC Seoul,0,3,0.0,3.0
+2014,2014-10-11 00:00:00,3840,3835,Incheon United,Pohang Steelers,2,1,2.0,1.0
+2014,2014-10-11 00:00:00,3842,3838,Suwon Bluewings,Jeonnam Dragons,2,1,2.0,1.0
+2014,2014-10-11 02:00:00,3847,3844,Gyeongnam,Seongnam,0,2,0.0,2.0
+2014,2014-10-12 00:00:00,3846,3832,Busan I'Park,Jeju United,2,1,2.0,1.0
+2014,2014-10-12 00:00:00,3837,3836,Jeonbuk Motors,Ulsan,1,0,1.0,0.0
+2014,2014-10-12 02:00:00,3839,3833,Sangju Sangmu,FC Seoul,1,0,1.0,0.0
+2014,2014-10-18 00:00:00,3840,3837,Incheon United,Jeonbuk Motors,0,2,0.0,2.0
+2014,2014-10-18 00:00:00,3838,3833,Jeonnam Dragons,FC Seoul,1,2,1.0,2.0
+2014,2014-10-18 02:00:00,3832,3835,Jeju United,Pohang Steelers,3,0,3.0,0.0
+2014,2014-10-19 00:00:00,3842,3844,Suwon Bluewings,Seongnam,2,2,2.0,2.0
+2014,2014-10-19 00:00:00,3846,3847,Busan I'Park,Gyeongnam,4,0,4.0,0.0
+2014,2014-10-19 02:00:00,3836,3839,Ulsan,Sangju Sangmu,2,1,2.0,1.0
+2014,2014-10-26 00:00:00,3837,3842,Jeonbuk Motors,Suwon Bluewings,1,0,1.0,0.0
+2014,2014-10-26 00:00:00,3835,3839,Pohang Steelers,Sangju Sangmu,3,0,3.0,0.0
+2014,2014-10-26 00:00:00,3833,3846,FC Seoul,Busan I'Park,1,1,1.0,1.0
+2014,2014-10-26 00:00:00,3840,3838,Incheon United,Jeonnam Dragons,3,3,3.0,3.0
+2014,2014-10-26 00:00:00,3844,3836,Seongnam,Ulsan,3,4,3.0,4.0
+2014,2014-10-26 00:00:00,3847,3832,Gyeongnam,Jeju United,1,0,1.0,0.0
+2014,2014-11-01 00:00:00,3838,3844,Jeonnam Dragons,Seongnam,1,1,1.0,1.0
+2014,2014-11-01 00:00:00,3835,3832,Pohang Steelers,Jeju United,1,1,1.0,1.0
+2014,2014-11-01 02:00:00,3836,3842,Ulsan,Suwon Bluewings,0,3,0.0,3.0
+2014,2014-11-02 00:00:00,3839,3846,Sangju Sangmu,Busan I'Park,2,3,2.0,3.0
+2014,2014-11-02 00:00:00,3833,3837,FC Seoul,Jeonbuk Motors,0,1,0.0,1.0
+2014,2014-11-02 01:00:00,3840,3847,Incheon United,Gyeongnam,1,1,1.0,1.0
+2014,2014-11-07 23:00:00,3846,3840,Busan I'Park,Incheon United,1,0,1.0,0.0
+2014,2014-11-07 23:00:00,3839,3844,Sangju Sangmu,Seongnam,1,1,1.0,1.0
+2014,2014-11-08 01:00:00,3832,3837,Jeju United,Jeonbuk Motors,0,3,0.0,3.0
+2014,2014-11-08 23:00:00,3842,3833,Suwon Bluewings,FC Seoul,0,1,0.0,1.0
+2014,2014-11-08 23:00:00,3847,3838,Gyeongnam,Jeonnam Dragons,3,1,3.0,1.0
+2014,2014-11-09 01:00:00,3835,3836,Pohang Steelers,Ulsan,2,2,2.0,2.0
+2014,2014-11-14 23:00:00,3846,3838,Busan I'Park,Jeonnam Dragons,1,1,1.0,1.0
+2014,2014-11-14 23:00:00,3840,3839,Incheon United,Sangju Sangmu,1,1,1.0,1.0
+2014,2014-11-14 23:30:00,3837,3835,Jeonbuk Motors,Pohang Steelers,1,0,1.0,0.0
+2014,2014-11-15 23:00:00,3844,3847,Seongnam,Gyeongnam,1,1,1.0,1.0
+2014,2014-11-15 23:00:00,3833,3836,FC Seoul,Ulsan,2,2,2.0,2.0
+2014,2014-11-16 01:00:00,3832,3842,Jeju United,Suwon Bluewings,0,1,0.0,1.0
+2014,2014-11-21 23:00:00,3847,3846,Gyeongnam,Busan I'Park,0,1,0.0,1.0
+2014,2014-11-21 23:00:00,3838,3839,Jeonnam Dragons,Sangju Sangmu,3,1,3.0,1.0
+2014,2014-11-22 01:00:00,3842,3837,Suwon Bluewings,Jeonbuk Motors,1,2,1.0,2.0
+2014,2014-11-22 02:00:00,3836,3832,Ulsan,Jeju United,0,1,0.0,1.0
+2014,2014-11-26 04:30:00,3833,3835,FC Seoul,Pohang Steelers,0,0,0.0,0.0
+2014,2014-11-26 04:30:00,3840,3844,Incheon United,Seongnam,0,1,0.0,1.0
+2014,2014-11-28 23:00:00,3839,3847,Sangju Sangmu,Gyeongnam,3,1,3.0,1.0
+2014,2014-11-28 23:00:00,3844,3846,Seongnam,Busan I'Park,1,0,1.0,0.0
+2014,2014-11-28 23:00:00,3838,3840,Jeonnam Dragons,Incheon United,0,0,0.0,0.0
+2014,2014-11-29 23:00:00,3837,3836,Jeonbuk Motors,Ulsan,1,1,1.0,1.0
+2014,2014-11-29 23:00:00,3832,3833,Jeju United,FC Seoul,1,2,1.0,2.0
+2014,2014-11-29 23:00:00,3835,3842,Pohang Steelers,Suwon Bluewings,1,2,1.0,2.0
+2015,2015-03-06 23:00:00,3840,3841,Incheon United,Gwangju,2,2,2.0,2.0
+2015,2015-03-07 00:00:00,3837,3844,Jeonbuk Motors,Seongnam,2,0,2.0,0.0
+2015,2015-03-07 01:00:00,3846,3845,Busan I'Park,Daejeon Citizen,1,0,1.0,0.0
+2015,2015-03-07 23:00:00,3842,3835,Suwon Bluewings,Pohang Steelers,0,1,0.0,1.0
+2015,2015-03-07 23:00:00,3838,3832,Jeonnam Dragons,Jeju United,1,1,1.0,1.0
+2015,2015-03-08 01:00:00,3836,3833,Ulsan,FC Seoul,2,0,2.0,0.0
+2015,2015-03-14 00:00:00,3842,3840,Suwon Bluewings,Incheon United,2,1,2.0,1.0
+2015,2015-03-14 00:00:00,3833,3837,FC Seoul,Jeonbuk Motors,1,2,1.0,2.0
+2015,2015-03-14 02:00:00,3844,3838,Seongnam,Jeonnam Dragons,0,0,0.0,0.0
+2015,2015-03-15 00:00:00,3845,3841,Daejeon Citizen,Gwangju,0,2,0.0,2.0
+2015,2015-03-15 00:15:00,3835,3836,Pohang Steelers,Ulsan,2,4,2.0,4.0
+2015,2015-03-15 02:00:00,3832,3846,Jeju United,Busan I'Park,0,0,0.0,0.0
+2015,2015-03-21 00:00:00,3846,3841,Busan I'Park,Gwangju,2,3,2.0,3.0
+2015,2015-03-21 00:00:00,3836,3838,Ulsan,Jeonnam Dragons,0,0,0.0,0.0
+2015,2015-03-21 02:00:00,3832,3845,Jeju United,Daejeon Citizen,5,0,5.0,0.0
+2015,2015-03-22 00:00:00,3844,3842,Seongnam,Suwon Bluewings,1,3,1.0,3.0
+2015,2015-03-22 00:00:00,3835,3833,Pohang Steelers,FC Seoul,2,1,2.0,1.0
+2015,2015-03-22 02:00:00,3840,3837,Incheon United,Jeonbuk Motors,0,0,0.0,0.0
+2015,2015-04-04 00:00:00,3833,3832,FC Seoul,Jeju United,1,0,1.0,0.0
+2015,2015-04-04 00:00:00,3842,3846,Suwon Bluewings,Busan I'Park,2,1,2.0,1.0
+2015,2015-04-04 00:00:00,3837,3835,Jeonbuk Motors,Pohang Steelers,1,0,1.0,0.0
+2015,2015-04-04 02:00:00,3845,3844,Daejeon Citizen,Seongnam,1,4,1.0,4.0
+2015,2015-04-05 00:00:00,3836,3841,Ulsan,Gwangju,2,0,2.0,0.0
+2015,2015-04-05 02:00:00,3838,3840,Jeonnam Dragons,Incheon United,1,0,1.0,0.0
+2015,2015-04-11 00:00:00,3845,3836,Daejeon Citizen,Ulsan,1,1,1.0,1.0
+2015,2015-04-11 00:00:00,3844,3846,Seongnam,Busan I'Park,1,0,1.0,0.0
+2015,2015-04-11 02:00:00,3832,3835,Jeju United,Pohang Steelers,1,0,1.0,0.0
+2015,2015-04-12 00:00:00,3840,3833,Incheon United,FC Seoul,1,1,1.0,1.0
+2015,2015-04-12 00:00:00,3838,3842,Jeonnam Dragons,Suwon Bluewings,1,1,1.0,1.0
+2015,2015-04-12 02:00:00,3841,3837,Gwangju,Jeonbuk Motors,2,3,2.0,3.0
+2015,2015-04-15 05:00:00,3846,3837,Busan I'Park,Jeonbuk Motors,1,2,1.0,2.0
+2015,2015-04-15 05:30:00,3835,3838,Pohang Steelers,Jeonnam Dragons,4,1,4.0,1.0
+2015,2015-04-15 05:30:00,3836,3842,Ulsan,Suwon Bluewings,1,1,1.0,1.0
+2015,2015-04-15 05:30:00,3844,3840,Seongnam,Incheon United,0,0,0.0,0.0
+2015,2015-04-15 05:30:00,3833,3845,FC Seoul,Daejeon Citizen,1,0,1.0,0.0
+2015,2015-04-15 05:30:00,3832,3841,Jeju United,Gwangju,2,1,2.0,1.0
+2015,2015-04-18 00:00:00,3837,3832,Jeonbuk Motors,Jeju United,1,0,1.0,0.0
+2015,2015-04-18 01:00:00,3842,3833,Suwon Bluewings,FC Seoul,5,1,5.0,1.0
+2015,2015-04-18 02:00:00,3841,3844,Gwangju,Seongnam,0,0,0.0,0.0
+2015,2015-04-19 00:00:00,3840,3836,Incheon United,Ulsan,1,1,1.0,1.0
+2015,2015-04-19 02:00:00,3846,3838,Busan I'Park,Jeonnam Dragons,0,2,0.0,2.0
+2015,2015-04-19 02:00:00,3845,3835,Daejeon Citizen,Pohang Steelers,0,2,0.0,2.0
+2015,2015-04-25 01:00:00,3840,3835,Incheon United,Pohang Steelers,1,1,1.0,1.0
+2015,2015-04-25 02:00:00,3836,3846,Ulsan,Busan I'Park,1,1,1.0,1.0
+2015,2015-04-26 00:00:00,3844,3832,Seongnam,Jeju United,1,1,1.0,1.0
+2015,2015-04-26 00:00:00,3838,3837,Jeonnam Dragons,Jeonbuk Motors,2,1,2.0,1.0
+2015,2015-04-26 00:00:00,3841,3833,Gwangju,FC Seoul,1,1,1.0,1.0
+2015,2015-04-26 02:00:00,3842,3845,Suwon Bluewings,Daejeon Citizen,1,2,1.0,2.0
+2015,2015-05-02 00:00:00,3833,3844,FC Seoul,Seongnam,1,1,1.0,1.0
+2015,2015-05-02 01:00:00,3837,3842,Jeonbuk Motors,Suwon Bluewings,2,0,2.0,0.0
+2015,2015-05-02 23:30:00,3841,3838,Gwangju,Jeonnam Dragons,3,2,3.0,2.0
+2015,2015-05-03 00:00:00,3845,3840,Daejeon Citizen,Incheon United,1,2,1.0,2.0
+2015,2015-05-05 00:00:00,3835,3846,Pohang Steelers,Busan I'Park,1,2,1.0,2.0
+2015,2015-05-05 00:00:00,3832,3836,Jeju United,Ulsan,2,1,2.0,1.0
+2015,2015-05-09 00:00:00,3838,3845,Jeonnam Dragons,Daejeon Citizen,0,0,0.0,0.0
+2015,2015-05-09 00:00:00,3841,3842,Gwangju,Suwon Bluewings,0,2,0.0,2.0
+2015,2015-05-09 02:00:00,3840,3832,Incheon United,Jeju United,1,0,1.0,0.0
+2015,2015-05-10 00:00:00,3836,3837,Ulsan,Jeonbuk Motors,1,2,1.0,2.0
+2015,2015-05-10 00:00:00,3846,3833,Busan I'Park,FC Seoul,0,1,0.0,1.0
+2015,2015-05-10 02:00:00,3835,3844,Pohang Steelers,Seongnam,2,2,2.0,2.0
+2015,2015-05-16 00:00:00,3842,3832,Suwon Bluewings,Jeju United,1,0,1.0,0.0
+2015,2015-05-16 00:00:00,3833,3838,FC Seoul,Jeonnam Dragons,3,0,3.0,0.0
+2015,2015-05-16 01:00:00,3837,3845,Jeonbuk Motors,Daejeon Citizen,2,1,2.0,1.0
+2015,2015-05-16 02:00:00,3844,3836,Seongnam,Ulsan,1,0,1.0,0.0
+2015,2015-05-17 00:00:00,3846,3840,Busan I'Park,Incheon United,1,2,1.0,2.0
+2015,2015-05-17 00:00:00,3841,3835,Gwangju,Pohang Steelers,0,0,0.0,0.0
+2015,2015-05-23 01:00:00,3832,3838,Jeju United,Jeonnam Dragons,3,2,3.0,2.0
+2015,2015-05-23 02:00:00,3837,3840,Jeonbuk Motors,Incheon United,1,0,1.0,0.0
+2015,2015-05-24 00:00:00,3841,3846,Gwangju,Busan I'Park,0,1,0.0,1.0
+2015,2015-05-25 00:00:00,3836,3835,Ulsan,Pohang Steelers,2,2,2.0,2.0
+2015,2015-05-30 00:00:00,3841,3832,Gwangju,Jeju United,1,0,1.0,0.0
+2015,2015-05-30 00:00:00,3835,3845,Pohang Steelers,Daejeon Citizen,2,1,2.0,1.0
+2015,2015-05-30 02:00:00,3838,3846,Jeonnam Dragons,Busan I'Park,3,1,3.0,1.0
+2015,2015-05-31 00:00:00,3844,3837,Seongnam,Jeonbuk Motors,2,1,2.0,1.0
+2015,2015-05-31 00:00:00,3840,3842,Incheon United,Suwon Bluewings,1,1,1.0,1.0
+2015,2015-05-31 02:00:00,3833,3836,FC Seoul,Ulsan,0,0,0.0,0.0
+2015,2015-06-03 05:00:00,3846,3836,Busan I'Park,Ulsan,1,0,1.0,0.0
+2015,2015-06-03 05:00:00,3838,3841,Jeonnam Dragons,Gwangju,1,2,1.0,2.0
+2015,2015-06-03 05:30:00,3845,3842,Daejeon Citizen,Suwon Bluewings,1,2,1.0,2.0
+2015,2015-06-03 05:30:00,3833,3840,FC Seoul,Incheon United,1,0,1.0,0.0
+2015,2015-06-03 05:30:00,3835,3837,Pohang Steelers,Jeonbuk Motors,0,0,0.0,0.0
+2015,2015-06-03 06:00:00,3832,3844,Jeju United,Seongnam,4,3,4.0,3.0
+2015,2015-06-06 05:00:00,3837,3833,Jeonbuk Motors,FC Seoul,1,2,1.0,2.0
+2015,2015-06-06 05:00:00,3845,3846,Daejeon Citizen,Busan I'Park,0,0,0.0,0.0
+2015,2015-06-06 05:00:00,3840,3838,Incheon United,Jeonnam Dragons,1,2,1.0,2.0
+2015,2015-06-07 02:00:00,3836,3832,Ulsan,Jeju United,2,0,2.0,0.0
+2015,2015-06-07 03:00:00,3844,3835,Seongnam,Pohang Steelers,0,2,0.0,2.0
+2015,2015-06-07 04:00:00,3842,3841,Suwon Bluewings,Gwangju,0,1,0.0,1.0
+2015,2015-06-10 05:00:00,3845,3833,Daejeon Citizen,FC Seoul,1,2,1.0,2.0
+2015,2015-06-13 04:00:00,3842,3844,Suwon Bluewings,Seongnam,1,1,1.0,1.0
+2015,2015-06-17 05:00:00,3837,3836,Jeonbuk Motors,Ulsan,2,1,2.0,1.0
+2015,2015-06-17 05:00:00,3838,3844,Jeonnam Dragons,Seongnam,2,1,2.0,1.0
+2015,2015-06-17 05:30:00,3835,3840,Pohang Steelers,Incheon United,0,2,0.0,2.0
+2015,2015-06-17 05:30:00,3833,3846,FC Seoul,Busan I'Park,0,0,0.0,0.0
+2015,2015-06-17 05:30:00,3845,3841,Daejeon Citizen,Gwangju,0,0,0.0,0.0
+2015,2015-06-17 06:00:00,3832,3842,Jeju United,Suwon Bluewings,3,4,3.0,4.0
+2015,2015-06-20 02:00:00,3844,3841,Seongnam,Gwangju,1,1,1.0,1.0
+2015,2015-06-20 05:00:00,3846,3835,Busan I'Park,Pohang Steelers,1,2,1.0,2.0
+2015,2015-06-20 05:00:00,3838,3833,Jeonnam Dragons,FC Seoul,2,0,2.0,0.0
+2015,2015-06-21 04:00:00,3836,3840,Ulsan,Incheon United,1,1,1.0,1.0
+2015,2015-06-21 04:00:00,3842,3837,Suwon Bluewings,Jeonbuk Motors,2,2,2.0,2.0
+2015,2015-06-21 05:00:00,3845,3832,Daejeon Citizen,Jeju United,2,2,2.0,2.0
+2015,2015-06-27 03:00:00,3833,3842,FC Seoul,Suwon Bluewings,0,0,0.0,0.0
+2015,2015-06-27 05:00:00,3846,3832,Busan I'Park,Jeju United,1,3,1.0,3.0
+2015,2015-06-27 05:00:00,3835,3841,Pohang Steelers,Gwangju,2,1,2.0,1.0
+2015,2015-06-27 05:00:00,3836,3844,Ulsan,Seongnam,0,1,0.0,1.0
+2015,2015-06-28 04:00:00,3840,3845,Incheon United,Daejeon Citizen,2,0,2.0,0.0
+2015,2015-06-28 05:00:00,3837,3838,Jeonbuk Motors,Jeonnam Dragons,2,2,2.0,2.0
+2015,2015-07-01 05:00:00,3837,3846,Jeonbuk Motors,Busan I'Park,2,1,2.0,1.0
+2015,2015-07-01 05:00:00,3838,3835,Jeonnam Dragons,Pohang Steelers,0,0,0.0,0.0
+2015,2015-07-01 05:30:00,3842,3836,Suwon Bluewings,Ulsan,3,1,3.0,1.0
+2015,2015-07-01 05:30:00,3844,3845,Seongnam,Daejeon Citizen,3,1,3.0,1.0
+2015,2015-07-01 05:30:00,3840,3841,Incheon United,Gwangju,1,0,1.0,0.0
+2015,2015-07-01 06:00:00,3832,3833,Jeju United,FC Seoul,2,4,2.0,4.0
+2015,2015-07-04 05:00:00,3835,3842,Pohang Steelers,Suwon Bluewings,0,1,0.0,1.0
+2015,2015-07-04 05:00:00,3832,3840,Jeju United,Incheon United,0,0,0.0,0.0
+2015,2015-07-04 05:00:00,3846,3844,Busan I'Park,Seongnam,0,1,0.0,1.0
+2015,2015-07-05 04:00:00,3833,3841,FC Seoul,Gwangju,1,1,1.0,1.0
+2015,2015-07-05 05:00:00,3838,3836,Jeonnam Dragons,Ulsan,2,1,2.0,1.0
+2015,2015-07-05 05:00:00,3845,3837,Daejeon Citizen,Jeonbuk Motors,3,4,3.0,4.0
+2015,2015-07-08 05:00:00,3837,3841,Jeonbuk Motors,Gwangju,1,1,1.0,1.0
+2015,2015-07-08 05:30:00,3842,3838,Suwon Bluewings,Jeonnam Dragons,1,0,1.0,0.0
+2015,2015-07-08 05:30:00,3844,3833,Seongnam,FC Seoul,1,1,1.0,1.0
+2015,2015-07-08 05:30:00,3836,3845,Ulsan,Daejeon Citizen,4,1,4.0,1.0
+2015,2015-07-08 05:30:00,3835,3832,Pohang Steelers,Jeju United,3,4,3.0,4.0
+2015,2015-07-08 05:30:00,3840,3846,Incheon United,Busan I'Park,3,1,3.0,1.0
+2015,2015-07-11 05:00:00,3832,3837,Jeju United,Jeonbuk Motors,0,3,0.0,3.0
+2015,2015-07-11 05:00:00,3833,3835,FC Seoul,Pohang Steelers,1,3,1.0,3.0
+2015,2015-07-11 05:00:00,3836,3841,Ulsan,Gwangju,0,1,0.0,1.0
+2015,2015-07-12 04:00:00,3840,3844,Incheon United,Seongnam,0,1,0.0,1.0
+2015,2015-07-12 05:00:00,3845,3838,Daejeon Citizen,Jeonnam Dragons,2,3,2.0,3.0
+2015,2015-07-12 05:00:00,3846,3842,Busan I'Park,Suwon Bluewings,1,1,1.0,1.0
+2015,2015-07-25 05:00:00,3836,3844,Ulsan,Seongnam,0,0,0.0,0.0
+2015,2015-07-25 05:00:00,3835,3841,Pohang Steelers,Gwangju,0,0,0.0,0.0
+2015,2015-07-25 05:00:00,3833,3840,FC Seoul,Incheon United,2,0,2.0,0.0
+2015,2015-07-26 05:00:00,3838,3832,Jeonnam Dragons,Jeju United,3,1,3.0,1.0
+2015,2015-07-26 05:00:00,3846,3845,Busan I'Park,Daejeon Citizen,2,1,2.0,1.0
+2015,2015-07-26 05:00:00,3837,3842,Jeonbuk Motors,Suwon Bluewings,2,1,2.0,1.0
+2015,2015-08-12 05:00:00,3841,3838,Gwangju,Jeonnam Dragons,0,0,0.0,0.0
+2015,2015-08-12 05:00:00,3837,3846,Jeonbuk Motors,Busan I'Park,2,0,2.0,0.0
+2015,2015-08-12 05:00:00,3842,3845,Suwon Bluewings,Daejeon Citizen,2,1,2.0,1.0
+2015,2015-08-12 05:30:00,3840,3835,Incheon United,Pohang Steelers,0,2,0.0,2.0
+2015,2015-08-12 05:30:00,3844,3832,Seongnam,Jeju United,1,1,1.0,1.0
+2015,2015-08-12 05:30:00,3836,3833,Ulsan,FC Seoul,1,2,1.0,2.0
+2015,2015-08-15 05:00:00,3845,3844,Daejeon Citizen,Seongnam,0,2,0.0,2.0
+2015,2015-08-15 05:00:00,3835,3837,Pohang Steelers,Jeonbuk Motors,3,0,3.0,0.0
+2015,2015-08-15 05:00:00,3838,3840,Jeonnam Dragons,Incheon United,0,2,0.0,2.0
+2015,2015-08-16 05:00:00,3846,3836,Busan I'Park,Ulsan,2,2,2.0,2.0
+2015,2015-08-16 05:00:00,3832,3842,Jeju United,Suwon Bluewings,2,4,2.0,4.0
+2015,2015-08-19 05:00:00,3846,3833,Busan I'Park,FC Seoul,2,4,2.0,4.0
+2015,2015-08-19 05:00:00,3841,3845,Gwangju,Daejeon Citizen,1,2,1.0,2.0
+2015,2015-08-19 05:00:00,3837,3838,Jeonbuk Motors,Jeonnam Dragons,2,1,2.0,1.0
+2015,2015-08-19 05:30:00,3840,3832,Incheon United,Jeju United,1,0,1.0,0.0
+2015,2015-08-19 05:30:00,3842,3844,Suwon Bluewings,Seongnam,0,1,0.0,1.0
+2015,2015-08-19 05:30:00,3836,3835,Ulsan,Pohang Steelers,1,1,1.0,1.0
+2015,2015-08-22 05:00:00,3833,3845,FC Seoul,Daejeon Citizen,2,0,2.0,0.0
+2015,2015-08-22 05:00:00,3842,3836,Suwon Bluewings,Ulsan,3,1,3.0,1.0
+2015,2015-08-22 05:00:00,3844,3846,Seongnam,Busan I'Park,1,0,1.0,0.0
+2015,2015-08-22 05:00:00,3837,3840,Jeonbuk Motors,Incheon United,0,1,0.0,1.0
+2015,2015-08-23 05:00:00,3841,3832,Gwangju,Jeju United,0,1,0.0,1.0
+2015,2015-08-23 05:00:00,3838,3835,Jeonnam Dragons,Pohang Steelers,0,0,0.0,0.0
+2015,2015-08-29 05:00:00,3841,3836,Gwangju,Ulsan,1,2,1.0,2.0
+2015,2015-08-29 05:00:00,3840,3845,Incheon United,Daejeon Citizen,2,1,2.0,1.0
+2015,2015-08-29 05:00:00,3846,3838,Busan I'Park,Jeonnam Dragons,1,1,1.0,1.0
+2015,2015-08-29 05:00:00,3832,3833,Jeju United,FC Seoul,2,1,2.0,1.0
+2015,2015-08-30 03:00:00,3844,3837,Seongnam,Jeonbuk Motors,0,1,0.0,1.0
+2015,2015-08-30 05:00:00,3835,3842,Pohang Steelers,Suwon Bluewings,0,0,0.0,0.0
+2015,2015-09-09 05:00:00,3841,3840,Gwangju,Incheon United,1,0,1.0,0.0
+2015,2015-09-09 05:00:00,3838,3844,Jeonnam Dragons,Seongnam,1,1,1.0,1.0
+2015,2015-09-09 05:00:00,3846,3842,Busan I'Park,Suwon Bluewings,2,2,2.0,2.0
+2015,2015-09-09 05:30:00,3845,3832,Daejeon Citizen,Jeju United,2,4,2.0,4.0
+2015,2015-09-09 05:30:00,3836,3837,Ulsan,Jeonbuk Motors,2,0,2.0,0.0
+2015,2015-09-09 05:30:00,3833,3835,FC Seoul,Pohang Steelers,0,0,0.0,0.0
+2015,2015-09-12 00:00:00,3835,3844,Pohang Steelers,Seongnam,2,1,2.0,1.0
+2015,2015-09-12 01:05:00,3837,3833,Jeonbuk Motors,FC Seoul,3,0,3.0,0.0
+2015,2015-09-12 02:00:00,3842,3840,Suwon Bluewings,Incheon United,1,0,1.0,0.0
+2015,2015-09-13 00:00:00,3841,3846,Gwangju,Busan I'Park,0,0,0.0,0.0
+2015,2015-09-13 02:00:00,3838,3845,Jeonnam Dragons,Daejeon Citizen,1,1,1.0,1.0
+2015,2015-09-13 02:30:00,3832,3836,Jeju United,Ulsan,2,2,2.0,2.0
+2015,2015-09-19 00:00:00,3840,3846,Incheon United,Busan I'Park,2,1,2.0,1.0
+2015,2015-09-19 01:05:00,3842,3833,Suwon Bluewings,FC Seoul,0,3,0.0,3.0
+2015,2015-09-19 02:00:00,3832,3835,Jeju United,Pohang Steelers,0,1,0.0,1.0
+2015,2015-09-19 02:00:00,3844,3841,Seongnam,Gwangju,2,1,2.0,1.0
+2015,2015-09-19 03:00:00,3836,3838,Ulsan,Jeonnam Dragons,3,2,3.0,2.0
+2015,2015-09-20 02:00:00,3837,3845,Jeonbuk Motors,Daejeon Citizen,3,1,3.0,1.0
+2015,2015-09-23 05:00:00,3838,3842,Jeonnam Dragons,Suwon Bluewings,0,2,0.0,2.0
+2015,2015-09-23 05:00:00,3841,3837,Gwangju,Jeonbuk Motors,1,2,1.0,2.0
+2015,2015-09-23 05:00:00,3846,3832,Busan I'Park,Jeju United,0,2,0.0,2.0
+2015,2015-09-23 05:30:00,3845,3835,Daejeon Citizen,Pohang Steelers,0,1,0.0,1.0
+2015,2015-09-23 05:30:00,3833,3844,FC Seoul,Seongnam,0,1,0.0,1.0
+2015,2015-09-23 05:30:00,3840,3836,Incheon United,Ulsan,1,2,1.0,2.0
+2015,2015-09-28 03:00:00,3833,3841,FC Seoul,Gwangju,3,1,3.0,1.0
+2015,2015-10-04 00:00:00,3844,3840,Seongnam,Incheon United,1,0,1.0,0.0
+2015,2015-10-04 00:00:00,3833,3838,FC Seoul,Jeonnam Dragons,3,2,3.0,2.0
+2015,2015-10-04 00:00:00,3845,3836,Daejeon Citizen,Ulsan,0,0,0.0,0.0
+2015,2015-10-04 00:00:00,3841,3842,Gwangju,Suwon Bluewings,2,4,2.0,4.0
+2015,2015-10-04 00:00:00,3832,3837,Jeju United,Jeonbuk Motors,3,2,3.0,2.0
+2015,2015-10-04 00:00:00,3835,3846,Pohang Steelers,Busan I'Park,2,0,2.0,0.0
+2015,2015-10-17 00:00:00,3846,3841,Busan I'Park,Gwangju,0,1,0.0,1.0
+2015,2015-10-17 01:00:00,3837,3835,Jeonbuk Motors,Pohang Steelers,0,1,0.0,1.0
+2015,2015-10-17 02:00:00,3840,3836,Incheon United,Ulsan,2,2,2.0,2.0
+2015,2015-10-18 00:00:00,3845,3838,Daejeon Citizen,Jeonnam Dragons,1,0,1.0,0.0
+2015,2015-10-18 00:00:00,3842,3832,Suwon Bluewings,Jeju United,0,1,0.0,1.0
+2015,2015-10-18 02:00:00,3844,3833,Seongnam,FC Seoul,1,2,1.0,2.0
+2015,2015-10-24 00:00:00,3835,3832,Pohang Steelers,Jeju United,2,1,2.0,1.0
+2015,2015-10-24 00:00:00,3845,3846,Daejeon Citizen,Busan I'Park,2,1,2.0,1.0
+2015,2015-10-24 02:00:00,3844,3842,Seongnam,Suwon Bluewings,0,0,0.0,0.0
+2015,2015-10-25 00:00:00,3838,3836,Jeonnam Dragons,Ulsan,2,5,2.0,5.0
+2015,2015-10-25 02:00:00,3833,3837,FC Seoul,Jeonbuk Motors,0,0,0.0,0.0
+2015,2015-10-25 02:00:00,3841,3840,Gwangju,Incheon United,0,0,0.0,0.0
+2015,2015-11-06 23:00:00,3838,3841,Jeonnam Dragons,Gwangju,2,1,2.0,1.0
+2015,2015-11-07 00:00:00,3833,3842,FC Seoul,Suwon Bluewings,4,3,4.0,3.0
+2015,2015-11-07 01:00:00,3836,3845,Ulsan,Daejeon Citizen,2,1,2.0,1.0
+2015,2015-11-07 23:00:00,3840,3846,Incheon United,Busan I'Park,0,0,0.0,0.0
+2015,2015-11-07 23:00:00,3832,3837,Jeju United,Jeonbuk Motors,0,1,0.0,1.0
+2015,2015-11-08 01:00:00,3835,3844,Pohang Steelers,Seongnam,0,0,0.0,0.0
+2015,2015-11-20 23:00:00,3845,3840,Daejeon Citizen,Incheon United,0,2,0.0,2.0
+2015,2015-11-21 00:00:00,3837,3844,Jeonbuk Motors,Seongnam,1,1,1.0,1.0
+2015,2015-11-21 01:00:00,3832,3833,Jeju United,FC Seoul,1,1,1.0,1.0
+2015,2015-11-21 23:00:00,3842,3835,Suwon Bluewings,Pohang Steelers,2,1,2.0,1.0
+2015,2015-11-21 23:00:00,3841,3836,Gwangju,Ulsan,0,1,0.0,1.0
+2015,2015-11-21 23:00:00,3846,3838,Busan I'Park,Jeonnam Dragons,1,1,1.0,1.0
+2015,2015-11-27 23:00:00,3840,3838,Incheon United,Jeonnam Dragons,0,1,0.0,1.0
+2015,2015-11-27 23:00:00,3836,3846,Ulsan,Busan I'Park,2,1,2.0,1.0
+2015,2015-11-27 23:00:00,3841,3845,Gwangju,Daejeon Citizen,2,1,2.0,1.0
+2015,2015-11-28 23:00:00,3842,3837,Suwon Bluewings,Jeonbuk Motors,2,1,2.0,1.0
+2015,2015-11-28 23:00:00,3835,3833,Pohang Steelers,FC Seoul,2,1,2.0,1.0
+2015,2015-11-28 23:00:00,3844,3832,Seongnam,Jeju United,2,1,2.0,1.0
+2016,2016-03-11 23:00:00,3844,3842,Seongnam,Suwon Bluewings,2,0,2.0,0.0
+2016,2016-03-11 23:00:00,3837,3833,Jeonbuk Motors,FC Seoul,1,0,1.0,0.0
+2016,2016-03-12 01:00:00,3835,3841,Pohang Steelers,Gwangju,3,3,3.0,3.0
+2016,2016-03-12 23:00:00,3838,3843,Jeonnam Dragons,Suwon,0,0,0.0,0.0
+2016,2016-03-12 23:00:00,3832,3840,Jeju United,Incheon United,3,1,3.0,1.0
+2016,2016-03-13 01:00:00,3839,3836,Sangju Sangmu,Ulsan,2,0,2.0,0.0
+2016,2016-03-19 01:00:00,3843,3844,Suwon,Seongnam,1,1,1.0,1.0
+2016,2016-03-19 02:00:00,3841,3832,Gwangju,Jeju United,1,0,1.0,0.0
+2016,2016-03-20 00:00:00,3840,3835,Incheon United,Pohang Steelers,0,2,0.0,2.0
+2016,2016-03-20 00:00:00,3836,3837,Ulsan,Jeonbuk Motors,0,0,0.0,0.0
+2016,2016-03-20 00:00:00,3833,3839,FC Seoul,Sangju Sangmu,4,0,4.0,0.0
+2016,2016-03-20 02:00:00,3842,3838,Suwon Bluewings,Jeonnam Dragons,2,2,2.0,2.0
+2016,2016-04-02 00:00:00,3837,3832,Jeonbuk Motors,Jeju United,2,1,2.0,1.0
+2016,2016-04-02 00:00:00,3842,3839,Suwon Bluewings,Sangju Sangmu,2,1,2.0,1.0
+2016,2016-04-02 00:00:00,3844,3835,Seongnam,Pohang Steelers,1,0,1.0,0.0
+2016,2016-04-02 02:00:00,3833,3840,FC Seoul,Incheon United,3,1,3.0,1.0
+2016,2016-04-03 00:00:00,3843,3841,Suwon,Gwangju,2,1,2.0,1.0
+2016,2016-04-03 02:00:00,3836,3838,Ulsan,Jeonnam Dragons,2,1,2.0,1.0
+2016,2016-04-09 00:00:00,3839,3843,Sangju Sangmu,Suwon,1,1,1.0,1.0
+2016,2016-04-09 00:00:00,3841,3836,Gwangju,Ulsan,0,2,0.0,2.0
+2016,2016-04-09 02:00:00,3840,3844,Incheon United,Seongnam,2,3,2.0,3.0
+2016,2016-04-10 00:00:00,3838,3833,Jeonnam Dragons,FC Seoul,1,2,1.0,2.0
+2016,2016-04-10 00:00:00,3835,3837,Pohang Steelers,Jeonbuk Motors,1,1,1.0,1.0
+2016,2016-04-10 02:00:00,3832,3842,Jeju United,Suwon Bluewings,2,2,2.0,2.0
+2016,2016-04-13 00:00:00,3841,3833,Gwangju,FC Seoul,1,2,1.0,2.0
+2016,2016-04-13 00:00:00,3842,3835,Suwon Bluewings,Pohang Steelers,1,1,1.0,1.0
+2016,2016-04-13 00:00:00,3844,3838,Seongnam,Jeonnam Dragons,0,0,0.0,0.0
+2016,2016-04-13 00:00:00,3837,3840,Jeonbuk Motors,Incheon United,1,1,1.0,1.0
+2016,2016-04-13 02:00:00,3832,3839,Jeju United,Sangju Sangmu,4,2,4.0,2.0
+2016,2016-04-13 02:00:00,3843,3836,Suwon,Ulsan,1,1,1.0,1.0
+2016,2016-04-16 00:00:00,3840,3842,Incheon United,Suwon Bluewings,1,1,1.0,1.0
+2016,2016-04-16 00:00:00,3833,3843,FC Seoul,Suwon,3,0,3.0,0.0
+2016,2016-04-16 01:00:00,3837,3844,Jeonbuk Motors,Seongnam,3,2,3.0,2.0
+2016,2016-04-16 02:00:00,3839,3835,Sangju Sangmu,Pohang Steelers,2,0,2.0,0.0
+2016,2016-04-17 00:00:00,3838,3841,Jeonnam Dragons,Gwangju,1,2,1.0,2.0
+2016,2016-04-17 02:00:00,3836,3832,Ulsan,Jeju United,0,1,0.0,1.0
+2016,2016-04-23 00:00:00,3832,3844,Jeju United,Seongnam,2,2,2.0,2.0
+2016,2016-04-23 02:00:00,3843,3840,Suwon,Incheon United,0,0,0.0,0.0
+2016,2016-04-24 00:00:00,3836,3833,Ulsan,FC Seoul,1,2,1.0,2.0
+2016,2016-04-24 00:00:00,3841,3842,Gwangju,Suwon Bluewings,1,1,1.0,1.0
+2016,2016-04-24 00:00:00,3839,3837,Sangju Sangmu,Jeonbuk Motors,2,2,2.0,2.0
+2016,2016-04-24 01:00:00,3835,3838,Pohang Steelers,Jeonnam Dragons,0,1,0.0,1.0
+2016,2016-04-30 00:00:00,3835,3832,Pohang Steelers,Jeju United,1,0,1.0,0.0
+2016,2016-04-30 01:00:00,3842,3833,Suwon Bluewings,FC Seoul,1,1,1.0,1.0
+2016,2016-04-30 02:00:00,3837,3843,Jeonbuk Motors,Suwon,3,1,3.0,1.0
+2016,2016-05-01 00:00:00,3840,3836,Incheon United,Ulsan,0,1,0.0,1.0
+2016,2016-05-01 00:00:00,3838,3839,Jeonnam Dragons,Sangju Sangmu,3,4,3.0,4.0
+2016,2016-05-01 02:00:00,3844,3841,Seongnam,Gwangju,2,0,2.0,0.0
+2016,2016-05-05 00:00:00,3836,3844,Ulsan,Seongnam,0,3,0.0,3.0
+2016,2016-05-05 00:00:00,3840,3838,Incheon United,Jeonnam Dragons,0,0,0.0,0.0
+2016,2016-05-05 02:00:00,3841,3839,Gwangju,Sangju Sangmu,1,0,1.0,0.0
+2016,2016-05-07 00:00:00,3843,3832,Suwon,Jeju United,2,5,2.0,5.0
+2016,2016-05-08 00:00:00,3833,3835,FC Seoul,Pohang Steelers,1,3,1.0,3.0
+2016,2016-05-08 03:00:00,3842,3837,Suwon Bluewings,Jeonbuk Motors,2,3,2.0,3.0
+2016,2016-05-14 01:00:00,3836,3835,Ulsan,Pohang Steelers,0,0,0.0,0.0
+2016,2016-05-14 01:00:00,3844,3833,Seongnam,FC Seoul,2,3,2.0,3.0
+2016,2016-05-14 03:00:00,3843,3842,Suwon,Suwon Bluewings,1,2,1.0,2.0
+2016,2016-05-15 00:00:00,3839,3840,Sangju Sangmu,Incheon United,4,2,4.0,2.0
+2016,2016-05-15 02:00:00,3832,3838,Jeju United,Jeonnam Dragons,3,0,3.0,0.0
+2016,2016-05-21 00:00:00,3839,3844,Sangju Sangmu,Seongnam,2,3,2.0,3.0
+2016,2016-05-21 00:00:00,3842,3836,Suwon Bluewings,Ulsan,2,4,2.0,4.0
+2016,2016-05-21 01:00:00,3838,3837,Jeonnam Dragons,Jeonbuk Motors,1,2,1.0,2.0
+2016,2016-05-22 00:00:00,3835,3843,Pohang Steelers,Suwon,0,1,0.0,1.0
+2016,2016-05-22 02:00:00,3840,3841,Incheon United,Gwangju,0,1,0.0,1.0
+2016,2016-05-28 00:00:00,3844,3840,Seongnam,Incheon United,0,1,0.0,1.0
+2016,2016-05-28 01:00:00,3832,3836,Jeju United,Ulsan,1,2,1.0,2.0
+2016,2016-05-28 02:00:00,3841,3843,Gwangju,Suwon,1,0,1.0,0.0
+2016,2016-05-29 00:00:00,3833,3838,FC Seoul,Jeonnam Dragons,1,1,1.0,1.0
+2016,2016-05-29 02:00:00,3837,3839,Jeonbuk Motors,Sangju Sangmu,3,2,3.0,2.0
+2016,2016-05-29 03:00:00,3835,3842,Pohang Steelers,Suwon Bluewings,2,2,2.0,2.0
+2016,2016-06-04 05:00:00,3841,3837,Gwangju,Jeonbuk Motors,1,1,1.0,1.0
+2016,2016-06-06 03:50:00,3833,3832,FC Seoul,Jeju United,3,4,3.0,4.0
+2016,2016-06-11 03:00:00,3836,3839,Ulsan,Sangju Sangmu,1,0,1.0,0.0
+2016,2016-06-11 04:00:00,3842,3840,Suwon Bluewings,Incheon United,2,2,2.0,2.0
+2016,2016-06-11 05:00:00,3832,3841,Jeju United,Gwangju,3,2,3.0,2.0
+2016,2016-06-12 02:00:00,3844,3837,Seongnam,Jeonbuk Motors,2,2,2.0,2.0
+2016,2016-06-12 05:00:00,3843,3833,Suwon,FC Seoul,0,3,0.0,3.0
+2016,2016-06-12 05:00:00,3838,3835,Jeonnam Dragons,Pohang Steelers,0,0,0.0,0.0
+2016,2016-06-15 05:00:00,3838,3836,Jeonnam Dragons,Ulsan,3,1,3.0,1.0
+2016,2016-06-15 05:00:00,3837,3842,Jeonbuk Motors,Suwon Bluewings,2,1,2.0,1.0
+2016,2016-06-15 05:00:00,3839,3832,Sangju Sangmu,Jeju United,4,0,4.0,0.0
+2016,2016-06-15 05:30:00,3840,3843,Incheon United,Suwon,2,0,2.0,0.0
+2016,2016-06-15 05:30:00,3833,3841,FC Seoul,Gwangju,3,2,3.0,2.0
+2016,2016-06-15 05:30:00,3835,3844,Pohang Steelers,Seongnam,3,1,3.0,1.0
+2016,2016-06-18 04:00:00,3840,3837,Incheon United,Jeonbuk Motors,0,0,0.0,0.0
+2016,2016-06-18 05:00:00,3833,3842,FC Seoul,Suwon Bluewings,1,1,1.0,1.0
+2016,2016-06-18 05:00:00,3832,3835,Jeju United,Pohang Steelers,3,1,3.0,1.0
+2016,2016-06-19 03:00:00,3836,3843,Ulsan,Suwon,1,0,1.0,0.0
+2016,2016-06-19 05:00:00,3839,3838,Sangju Sangmu,Jeonnam Dragons,3,2,3.0,2.0
+2016,2016-06-19 05:00:00,3841,3844,Gwangju,Seongnam,1,1,1.0,1.0
+2016,2016-06-25 04:00:00,3842,3832,Suwon Bluewings,Jeju United,1,0,1.0,0.0
+2016,2016-06-25 05:00:00,3838,3840,Jeonnam Dragons,Incheon United,1,0,1.0,0.0
+2016,2016-06-25 05:00:00,3835,3833,Pohang Steelers,FC Seoul,2,1,2.0,1.0
+2016,2016-06-26 05:00:00,3841,3837,Gwangju,Jeonbuk Motors,1,1,1.0,1.0
+2016,2016-06-26 05:00:00,3843,3839,Suwon,Sangju Sangmu,0,3,0.0,3.0
+2016,2016-06-26 05:00:00,3844,3836,Seongnam,Ulsan,0,1,0.0,1.0
+2016,2016-06-29 05:00:00,3837,3838,Jeonbuk Motors,Jeonnam Dragons,2,1,2.0,1.0
+2016,2016-06-29 05:30:00,3833,3844,FC Seoul,Seongnam,1,3,1.0,3.0
+2016,2016-06-29 05:30:00,3840,3839,Incheon United,Sangju Sangmu,1,0,1.0,0.0
+2016,2016-06-29 05:30:00,3835,3836,Pohang Steelers,Ulsan,4,0,4.0,0.0
+2016,2016-06-29 05:30:00,3842,3841,Suwon Bluewings,Gwangju,0,2,0.0,2.0
+2016,2016-06-29 06:00:00,3832,3843,Jeju United,Suwon,0,0,0.0,0.0
+2016,2016-07-02 05:00:00,3836,3842,Ulsan,Suwon Bluewings,2,1,2.0,1.0
+2016,2016-07-02 05:00:00,3839,3833,Sangju Sangmu,FC Seoul,2,1,2.0,1.0
+2016,2016-07-02 05:00:00,3838,3844,Jeonnam Dragons,Seongnam,0,1,0.0,1.0
+2016,2016-07-03 04:00:00,3840,3832,Incheon United,Jeju United,2,1,2.0,1.0
+2016,2016-07-03 05:00:00,3841,3835,Gwangju,Pohang Steelers,0,1,0.0,1.0
+2016,2016-07-03 05:00:00,3843,3837,Suwon,Jeonbuk Motors,2,2,2.0,2.0
+2016,2016-07-09 05:00:00,3841,3840,Gwangju,Incheon United,2,2,2.0,2.0
+2016,2016-07-09 05:00:00,3838,3832,Jeonnam Dragons,Jeju United,2,1,2.0,1.0
+2016,2016-07-09 05:00:00,3833,3836,FC Seoul,Ulsan,0,0,0.0,0.0
+2016,2016-07-10 05:00:00,3837,3835,Jeonbuk Motors,Pohang Steelers,3,0,3.0,0.0
+2016,2016-07-10 05:00:00,3844,3839,Seongnam,Sangju Sangmu,2,3,2.0,3.0
+2016,2016-07-10 05:00:00,3842,3843,Suwon Bluewings,Suwon,1,0,1.0,0.0
+2016,2016-07-16 05:00:00,3836,3841,Ulsan,Gwangju,3,2,3.0,2.0
+2016,2016-07-16 05:00:00,3832,3837,Jeju United,Jeonbuk Motors,1,2,1.0,2.0
+2016,2016-07-16 05:00:00,3843,3838,Suwon,Jeonnam Dragons,1,2,1.0,2.0
+2016,2016-07-17 04:00:00,3840,3833,Incheon United,FC Seoul,1,2,1.0,2.0
+2016,2016-07-17 05:00:00,3842,3844,Suwon Bluewings,Seongnam,1,2,1.0,2.0
+2016,2016-07-17 05:00:00,3835,3839,Pohang Steelers,Sangju Sangmu,0,2,0.0,2.0
+2016,2016-07-20 05:00:00,3839,3842,Sangju Sangmu,Suwon Bluewings,0,1,0.0,1.0
+2016,2016-07-20 05:00:00,3841,3838,Gwangju,Jeonnam Dragons,0,0,0.0,0.0
+2016,2016-07-20 05:30:00,3836,3840,Ulsan,Incheon United,1,3,1.0,3.0
+2016,2016-07-20 05:30:00,3833,3837,FC Seoul,Jeonbuk Motors,2,3,2.0,3.0
+2016,2016-07-20 05:30:00,3843,3835,Suwon,Pohang Steelers,1,0,1.0,0.0
+2016,2016-07-20 05:30:00,3844,3832,Seongnam,Jeju United,0,0,0.0,0.0
+2016,2016-07-23 05:00:00,3839,3841,Sangju Sangmu,Gwangju,0,4,0.0,4.0
+2016,2016-07-23 05:00:00,3835,3840,Pohang Steelers,Incheon United,3,1,3.0,1.0
+2016,2016-07-23 05:00:00,3838,3842,Jeonnam Dragons,Suwon Bluewings,3,0,3.0,0.0
+2016,2016-07-24 05:00:00,3837,3836,Jeonbuk Motors,Ulsan,2,1,2.0,1.0
+2016,2016-07-24 05:00:00,3832,3833,Jeju United,FC Seoul,3,2,3.0,2.0
+2016,2016-07-24 05:00:00,3844,3843,Seongnam,Suwon,1,2,1.0,2.0
+2016,2016-07-30 05:00:00,3837,3841,Jeonbuk Motors,Gwangju,3,0,3.0,0.0
+2016,2016-07-30 05:00:00,3836,3838,Ulsan,Jeonnam Dragons,0,2,0.0,2.0
+2016,2016-07-30 05:00:00,3843,3839,Suwon,Sangju Sangmu,0,2,0.0,2.0
+2016,2016-07-31 04:00:00,3840,3844,Incheon United,Seongnam,2,2,2.0,2.0
+2016,2016-07-31 05:00:00,3833,3835,FC Seoul,Pohang Steelers,2,0,2.0,0.0
+2016,2016-07-31 05:00:00,3842,3832,Suwon Bluewings,Jeju United,5,3,5.0,3.0
+2016,2016-08-03 05:00:00,3837,3836,Jeonbuk Motors,Ulsan,1,1,1.0,1.0
+2016,2016-08-03 05:30:00,3844,3833,Seongnam,FC Seoul,1,2,1.0,2.0
+2016,2016-08-10 05:00:00,3839,3833,Sangju Sangmu,FC Seoul,1,2,1.0,2.0
+2016,2016-08-10 05:00:00,3841,3840,Gwangju,Incheon United,1,1,1.0,1.0
+2016,2016-08-10 05:00:00,3837,3843,Jeonbuk Motors,Suwon,2,1,2.0,1.0
+2016,2016-08-10 05:30:00,3844,3838,Seongnam,Jeonnam Dragons,2,0,2.0,0.0
+2016,2016-08-10 05:30:00,3842,3836,Suwon Bluewings,Ulsan,0,0,0.0,0.0
+2016,2016-08-10 06:00:00,3832,3835,Jeju United,Pohang Steelers,3,0,3.0,0.0
+2016,2016-08-13 05:00:00,3833,3842,FC Seoul,Suwon Bluewings,1,0,1.0,0.0
+2016,2016-08-13 05:00:00,3839,3844,Sangju Sangmu,Seongnam,2,2,2.0,2.0
+2016,2016-08-13 05:00:00,3838,3840,Jeonnam Dragons,Incheon United,2,1,2.0,1.0
+2016,2016-08-14 05:00:00,3832,3841,Jeju United,Gwangju,1,2,1.0,2.0
+2016,2016-08-14 05:00:00,3835,3837,Pohang Steelers,Jeonbuk Motors,0,0,0.0,0.0
+2016,2016-08-14 05:00:00,3843,3836,Suwon,Ulsan,1,2,1.0,2.0
+2016,2016-08-17 05:00:00,3838,3833,Jeonnam Dragons,FC Seoul,1,4,1.0,4.0
+2016,2016-08-17 05:30:00,3844,3841,Seongnam,Gwangju,0,1,0.0,1.0
+2016,2016-08-17 05:30:00,3842,3835,Suwon Bluewings,Pohang Steelers,1,1,1.0,1.0
+2016,2016-08-17 05:30:00,3836,3839,Ulsan,Sangju Sangmu,2,3,2.0,3.0
+2016,2016-08-17 05:30:00,3843,3832,Suwon,Jeju United,5,3,5.0,3.0
+2016,2016-08-17 06:00:00,3840,3837,Incheon United,Jeonbuk Motors,1,3,1.0,3.0
+2016,2016-08-20 05:00:00,3842,3838,Suwon Bluewings,Jeonnam Dragons,1,1,1.0,1.0
+2016,2016-08-20 05:00:00,3835,3839,Pohang Steelers,Sangju Sangmu,1,0,1.0,0.0
+2016,2016-08-21 04:00:00,3840,3832,Incheon United,Jeju United,0,1,0.0,1.0
+2016,2016-08-21 05:00:00,3841,3843,Gwangju,Suwon,0,0,0.0,0.0
+2016,2016-08-27 05:00:00,3843,3840,Suwon,Incheon United,2,0,2.0,0.0
+2016,2016-08-27 05:00:00,3832,3844,Jeju United,Seongnam,1,0,1.0,0.0
+2016,2016-08-27 05:00:00,3836,3841,Ulsan,Gwangju,1,1,1.0,1.0
+2016,2016-08-28 05:00:00,3833,3837,FC Seoul,Jeonbuk Motors,1,3,1.0,3.0
+2016,2016-08-28 05:00:00,3838,3835,Jeonnam Dragons,Pohang Steelers,2,1,2.0,1.0
+2016,2016-08-28 05:00:00,3839,3842,Sangju Sangmu,Suwon Bluewings,1,1,1.0,1.0
+2016,2016-09-03 05:00:00,3833,3836,FC Seoul,Ulsan,2,2,2.0,2.0
+2016,2016-09-10 01:00:00,3837,3838,Jeonbuk Motors,Jeonnam Dragons,2,2,2.0,2.0
+2016,2016-09-10 04:00:00,3840,3833,Incheon United,FC Seoul,1,0,1.0,0.0
+2016,2016-09-10 04:00:00,3844,3842,Seongnam,Suwon Bluewings,1,2,1.0,2.0
+2016,2016-09-10 05:00:00,3835,3843,Pohang Steelers,Suwon,2,3,2.0,3.0
+2016,2016-09-11 04:00:00,3832,3836,Jeju United,Ulsan,1,1,1.0,1.0
+2016,2016-09-11 04:00:00,3841,3839,Gwangju,Sangju Sangmu,1,0,1.0,0.0
+2016,2016-09-17 04:00:00,3844,3843,Seongnam,Suwon,2,1,2.0,1.0
+2016,2016-09-17 05:00:00,3838,3841,Jeonnam Dragons,Gwangju,2,0,2.0,0.0
+2016,2016-09-18 02:00:00,3833,3832,FC Seoul,Jeju United,0,0,0.0,0.0
+2016,2016-09-18 04:00:00,3837,3842,Jeonbuk Motors,Suwon Bluewings,1,1,1.0,1.0
+2016,2016-09-18 04:00:00,3840,3839,Incheon United,Sangju Sangmu,0,0,0.0,0.0
+2016,2016-09-18 04:00:00,3836,3835,Ulsan,Pohang Steelers,1,0,1.0,0.0
+2016,2016-09-21 05:00:00,3838,3839,Jeonnam Dragons,Sangju Sangmu,1,0,1.0,0.0
+2016,2016-09-21 05:00:00,3841,3842,Gwangju,Suwon Bluewings,1,1,1.0,1.0
+2016,2016-09-21 05:30:00,3843,3833,Suwon,FC Seoul,0,1,0.0,1.0
+2016,2016-09-21 05:30:00,3836,3844,Ulsan,Seongnam,2,1,2.0,1.0
+2016,2016-09-21 05:30:00,3835,3840,Pohang Steelers,Incheon United,0,1,0.0,1.0
+2016,2016-09-21 06:00:00,3832,3837,Jeju United,Jeonbuk Motors,2,2,2.0,2.0
+2016,2016-09-24 01:00:00,3840,3842,Incheon United,Suwon Bluewings,2,2,2.0,2.0
+2016,2016-09-24 04:00:00,3837,3844,Jeonbuk Motors,Seongnam,1,0,1.0,0.0
+2016,2016-09-24 05:00:00,3835,3841,Pohang Steelers,Gwangju,1,0,1.0,0.0
+2016,2016-09-25 02:00:00,3839,3832,Sangju Sangmu,Jeju United,1,5,1.0,5.0
+2016,2016-09-25 02:00:00,3843,3838,Suwon,Jeonnam Dragons,0,0,0.0,0.0
+2016,2016-10-02 00:00:00,3841,3833,Gwangju,FC Seoul,1,2,1.0,2.0
+2016,2016-10-02 00:00:00,3844,3835,Seongnam,Pohang Steelers,1,4,1.0,4.0
+2016,2016-10-02 00:00:00,3838,3832,Jeonnam Dragons,Jeju United,0,2,0.0,2.0
+2016,2016-10-02 00:00:00,3839,3837,Sangju Sangmu,Jeonbuk Motors,1,1,1.0,1.0
+2016,2016-10-02 00:00:00,3842,3843,Suwon Bluewings,Suwon,4,5,4.0,5.0
+2016,2016-10-02 00:00:00,3836,3840,Ulsan,Incheon United,2,3,2.0,3.0
+2016,2016-10-15 01:00:00,3837,3832,Jeonbuk Motors,Jeju United,2,3,2.0,3.0
+2016,2016-10-15 01:00:00,3833,3836,FC Seoul,Ulsan,2,0,2.0,0.0
+2016,2016-10-15 01:00:00,3835,3842,Pohang Steelers,Suwon Bluewings,2,2,2.0,2.0
+2016,2016-10-16 01:00:00,3839,3838,Sangju Sangmu,Jeonnam Dragons,0,1,0.0,1.0
+2016,2016-10-16 01:00:00,3844,3840,Seongnam,Incheon United,0,0,0.0,0.0
+2016,2016-10-16 01:00:00,3843,3841,Suwon,Gwangju,1,2,1.0,2.0
+2016,2016-10-22 01:00:00,3836,3837,Ulsan,Jeonbuk Motors,0,0,0.0,0.0
+2016,2016-10-22 01:00:00,3842,3844,Suwon Bluewings,Seongnam,2,0,2.0,0.0
+2016,2016-10-22 01:20:00,3833,3839,FC Seoul,Sangju Sangmu,2,2,2.0,2.0
+2016,2016-10-23 01:00:00,3832,3838,Jeju United,Jeonnam Dragons,5,3,5.0,3.0
+2016,2016-10-23 01:00:00,3835,3843,Pohang Steelers,Suwon,0,1,0.0,1.0
+2016,2016-10-23 01:00:00,3840,3841,Incheon United,Gwangju,2,0,2.0,0.0
+2016,2016-10-29 01:00:00,3841,3844,Gwangju,Seongnam,0,0,0.0,0.0
+2016,2016-10-29 01:00:00,3838,3837,Jeonnam Dragons,Jeonbuk Motors,0,5,0.0,5.0
+2016,2016-10-29 01:00:00,3840,3835,Incheon United,Pohang Steelers,3,2,3.0,2.0
+2016,2016-10-30 01:00:00,3839,3836,Sangju Sangmu,Ulsan,1,2,1.0,2.0
+2016,2016-10-30 01:00:00,3832,3833,Jeju United,FC Seoul,0,2,0.0,2.0
+2016,2016-10-30 02:00:00,3843,3842,Suwon,Suwon Bluewings,2,3,2.0,3.0
+2016,2016-11-02 05:00:00,3837,3839,Jeonbuk Motors,Sangju Sangmu,4,1,4.0,1.0
+2016,2016-11-02 05:00:00,3841,3835,Gwangju,Pohang Steelers,1,1,1.0,1.0
+2016,2016-11-02 05:30:00,3836,3832,Ulsan,Jeju United,0,0,0.0,0.0
+2016,2016-11-02 05:30:00,3842,3840,Suwon Bluewings,Incheon United,3,2,3.0,2.0
+2016,2016-11-02 05:30:00,3833,3838,FC Seoul,Jeonnam Dragons,2,1,2.0,1.0
+2016,2016-11-02 05:30:00,3844,3843,Seongnam,Suwon,1,2,1.0,2.0
+2016,2016-11-05 01:00:00,3840,3843,Incheon United,Suwon,1,0,1.0,0.0
+2016,2016-11-05 01:00:00,3835,3844,Pohang Steelers,Seongnam,1,0,1.0,0.0
+2016,2016-11-05 01:00:00,3842,3841,Suwon Bluewings,Gwangju,1,1,1.0,1.0
+2016,2016-11-06 01:00:00,3837,3833,Jeonbuk Motors,FC Seoul,0,1,0.0,1.0
+2016,2016-11-06 01:00:00,3838,3836,Jeonnam Dragons,Ulsan,1,1,1.0,1.0
+2016,2016-11-06 01:00:00,3832,3839,Jeju United,Sangju Sangmu,3,0,3.0,0.0
+2017,2017-03-04 00:00:00,3836,3835,Ulsan,Pohang Steelers,2,1,2.0,1.0
+2017,2017-03-04 00:00:00,3839,3831,Sangju Sangmu,Gangwon,1,2,1.0,2.0
+2017,2017-03-04 00:00:00,3841,3834,Gwangju,Daegu,1,0,1.0,0.0
+2017,2017-03-05 00:00:00,3837,3838,Jeonbuk Motors,Jeonnam Dragons,2,1,2.0,1.0
+2017,2017-03-05 00:00:00,3833,3842,FC Seoul,Suwon Bluewings,1,1,1.0,1.0
+2017,2017-03-05 00:00:00,3840,3832,Incheon United,Jeju United,0,1,0.0,1.0
+2017,2017-03-10 23:00:00,3834,3840,Daegu,Incheon United,2,2,2.0,2.0
+2017,2017-03-11 00:00:00,3832,3836,Jeju United,Ulsan,3,0,3.0,0.0
+2017,2017-03-11 00:00:00,3842,3837,Suwon Bluewings,Jeonbuk Motors,0,2,0.0,2.0
+2017,2017-03-11 00:00:00,3831,3833,Gangwon,FC Seoul,0,1,0.0,1.0
+2017,2017-03-12 00:00:00,3835,3841,Pohang Steelers,Gwangju,2,0,2.0,0.0
+2017,2017-03-12 00:00:00,3838,3839,Jeonnam Dragons,Sangju Sangmu,1,3,1.0,3.0
+2017,2017-03-18 01:00:00,3831,3835,Gangwon,Pohang Steelers,2,2,2.0,2.0
+2017,2017-03-18 01:00:00,3840,3837,Incheon United,Jeonbuk Motors,0,0,0.0,0.0
+2017,2017-03-19 01:00:00,3836,3839,Ulsan,Sangju Sangmu,0,1,0.0,1.0
+2017,2017-03-19 01:00:00,3842,3834,Suwon Bluewings,Daegu,1,1,1.0,1.0
+2017,2017-03-19 02:00:00,3833,3841,FC Seoul,Gwangju,2,1,2.0,1.0
+2017,2017-03-19 03:00:00,3832,3838,Jeju United,Jeonnam Dragons,2,0,2.0,0.0
+2017,2017-04-01 01:00:00,3839,3834,Sangju Sangmu,Daegu,1,1,1.0,1.0
+2017,2017-04-01 01:00:00,3840,3842,Incheon United,Suwon Bluewings,3,3,3.0,3.0
+2017,2017-04-01 01:00:00,3838,3835,Jeonnam Dragons,Pohang Steelers,1,3,1.0,3.0
+2017,2017-04-02 01:00:00,3832,3841,Jeju United,Gwangju,1,1,1.0,1.0
+2017,2017-04-02 01:00:00,3836,3831,Ulsan,Gangwon,2,1,2.0,1.0
+2017,2017-04-02 01:00:00,3837,3833,Jeonbuk Motors,FC Seoul,1,0,1.0,0.0
+2017,2017-04-08 01:00:00,3842,3839,Suwon Bluewings,Sangju Sangmu,0,0,0.0,0.0
+2017,2017-04-08 01:00:00,3841,3836,Gwangju,Ulsan,1,1,1.0,1.0
+2017,2017-04-08 01:00:00,3833,3832,FC Seoul,Jeju United,0,0,0.0,0.0
+2017,2017-04-08 03:00:00,3831,3837,Gangwon,Jeonbuk Motors,1,1,1.0,1.0
+2017,2017-04-09 01:00:00,3835,3840,Pohang Steelers,Incheon United,2,0,2.0,0.0
+2017,2017-04-09 01:00:00,3834,3838,Daegu,Jeonnam Dragons,2,1,2.0,1.0
+2017,2017-04-15 01:00:00,3840,3838,Incheon United,Jeonnam Dragons,1,3,1.0,3.0
+2017,2017-04-15 01:00:00,3835,3834,Pohang Steelers,Daegu,2,1,2.0,1.0
+2017,2017-04-16 01:00:00,3837,3839,Jeonbuk Motors,Sangju Sangmu,4,1,4.0,1.0
+2017,2017-04-16 01:00:00,3832,3831,Jeju United,Gangwon,1,2,1.0,2.0
+2017,2017-04-16 01:00:00,3842,3841,Suwon Bluewings,Gwangju,0,0,0.0,0.0
+2017,2017-04-16 01:00:00,3836,3833,Ulsan,FC Seoul,1,1,1.0,1.0
+2017,2017-04-22 01:00:00,3838,3836,Jeonnam Dragons,Ulsan,5,0,5.0,0.0
+2017,2017-04-22 01:00:00,3832,3834,Jeju United,Daegu,4,2,4.0,2.0
+2017,2017-04-22 01:00:00,3831,3842,Gangwon,Suwon Bluewings,1,2,1.0,2.0
+2017,2017-04-22 03:00:00,3833,3840,FC Seoul,Incheon United,3,0,3.0,0.0
+2017,2017-04-23 01:00:00,3837,3835,Jeonbuk Motors,Pohang Steelers,2,0,2.0,0.0
+2017,2017-04-23 01:00:00,3839,3841,Sangju Sangmu,Gwangju,1,0,1.0,0.0
+2017,2017-04-29 01:00:00,3838,3831,Jeonnam Dragons,Gangwon,2,1,2.0,1.0
+2017,2017-04-29 01:00:00,3835,3839,Pohang Steelers,Sangju Sangmu,1,2,1.0,2.0
+2017,2017-04-30 01:00:00,3841,3837,Gwangju,Jeonbuk Motors,1,0,1.0,0.0
+2017,2017-04-30 01:00:00,3832,3842,Jeju United,Suwon Bluewings,1,2,1.0,2.0
+2017,2017-04-30 01:00:00,3834,3833,Daegu,FC Seoul,2,1,2.0,1.0
+2017,2017-04-30 03:00:00,3840,3836,Incheon United,Ulsan,1,2,1.0,2.0
+2017,2017-05-03 01:00:00,3839,3840,Sangju Sangmu,Incheon United,0,1,0.0,1.0
+2017,2017-05-03 01:00:00,3841,3831,Gwangju,Gangwon,1,1,1.0,1.0
+2017,2017-05-03 01:00:00,3836,3834,Ulsan,Daegu,1,0,1.0,0.0
+2017,2017-05-03 01:00:00,3842,3835,Suwon Bluewings,Pohang Steelers,1,0,1.0,0.0
+2017,2017-05-03 01:00:00,3837,3832,Jeonbuk Motors,Jeju United,0,4,0.0,4.0
+2017,2017-05-03 01:00:00,3833,3838,FC Seoul,Jeonnam Dragons,1,0,1.0,0.0
+2017,2017-05-06 00:00:00,3842,3836,Suwon Bluewings,Ulsan,1,2,1.0,2.0
+2017,2017-05-06 01:00:00,3835,3833,Pohang Steelers,FC Seoul,3,2,3.0,2.0
+2017,2017-05-06 01:00:00,3832,3839,Jeju United,Sangju Sangmu,4,1,4.0,1.0
+2017,2017-05-06 03:00:00,3834,3837,Daegu,Jeonbuk Motors,0,2,0.0,2.0
+2017,2017-05-07 01:00:00,3831,3840,Gangwon,Incheon United,2,1,2.0,1.0
+2017,2017-05-07 01:00:00,3838,3841,Jeonnam Dragons,Gwangju,5,0,5.0,0.0
+2017,2017-05-13 01:00:00,3841,3840,Gwangju,Incheon United,0,0,0.0,0.0
+2017,2017-05-13 01:00:00,3831,3834,Gangwon,Daegu,2,1,2.0,1.0
+2017,2017-05-14 01:00:00,3839,3833,Sangju Sangmu,FC Seoul,2,2,2.0,2.0
+2017,2017-05-14 01:00:00,3836,3837,Ulsan,Jeonbuk Motors,0,0,0.0,0.0
+2017,2017-05-14 01:00:00,3835,3832,Pohang Steelers,Jeju United,2,1,2.0,1.0
+2017,2017-05-14 03:00:00,3838,3842,Jeonnam Dragons,Suwon Bluewings,1,3,1.0,3.0
+2017,2017-05-20 04:00:00,3836,3838,Ulsan,Jeonnam Dragons,1,0,1.0,0.0
+2017,2017-05-20 05:00:00,3833,3831,FC Seoul,Gangwon,2,3,2.0,3.0
+2017,2017-05-20 05:00:00,3839,3842,Sangju Sangmu,Suwon Bluewings,1,3,1.0,3.0
+2017,2017-05-20 05:00:00,3834,3832,Daegu,Jeju United,1,2,1.0,2.0
+2017,2017-05-21 02:00:00,3837,3840,Jeonbuk Motors,Incheon United,1,1,1.0,1.0
+2017,2017-05-21 05:00:00,3841,3835,Gwangju,Pohang Steelers,1,2,1.0,2.0
+2017,2017-05-27 02:00:00,3837,3842,Jeonbuk Motors,Suwon Bluewings,2,0,2.0,0.0
+2017,2017-05-27 04:00:00,3835,3831,Pohang Steelers,Gangwon,1,2,1.0,2.0
+2017,2017-05-27 05:00:00,3833,3836,FC Seoul,Ulsan,0,0,0.0,0.0
+2017,2017-05-28 05:00:00,3834,3839,Daegu,Sangju Sangmu,2,0,2.0,0.0
+2017,2017-05-28 05:00:00,3838,3840,Jeonnam Dragons,Incheon United,3,2,3.0,2.0
+2017,2017-06-17 04:00:00,3835,3836,Pohang Steelers,Ulsan,1,2,1.0,2.0
+2017,2017-06-17 05:00:00,3838,3837,Jeonnam Dragons,Jeonbuk Motors,0,3,0.0,3.0
+2017,2017-06-17 05:00:00,3834,3841,Daegu,Gwangju,2,2,2.0,2.0
+2017,2017-06-18 04:00:00,3842,3833,Suwon Bluewings,FC Seoul,1,2,1.0,2.0
+2017,2017-06-18 05:00:00,3840,3839,Incheon United,Sangju Sangmu,1,1,1.0,1.0
+2017,2017-06-18 05:00:00,3831,3832,Gangwon,Jeju United,2,1,2.0,1.0
+2017,2017-06-21 05:00:00,3839,3838,Sangju Sangmu,Jeonnam Dragons,1,1,1.0,1.0
+2017,2017-06-21 05:00:00,3841,3842,Gwangju,Suwon Bluewings,0,3,0.0,3.0
+2017,2017-06-21 05:00:00,3837,3831,Jeonbuk Motors,Gangwon,4,1,4.0,1.0
+2017,2017-06-21 05:30:00,3836,3832,Ulsan,Jeju United,1,0,1.0,0.0
+2017,2017-06-21 05:30:00,3833,3834,FC Seoul,Daegu,0,0,0.0,0.0
+2017,2017-06-21 05:30:00,3840,3835,Incheon United,Pohang Steelers,0,3,0.0,3.0
+2017,2017-06-24 04:00:00,3832,3835,Jeju United,Pohang Steelers,3,0,3.0,0.0
+2017,2017-06-24 05:00:00,3836,3840,Ulsan,Incheon United,1,2,1.0,2.0
+2017,2017-06-24 05:00:00,3841,3838,Gwangju,Jeonnam Dragons,1,2,1.0,2.0
+2017,2017-06-25 04:00:00,3842,3831,Suwon Bluewings,Gangwon,3,3,3.0,3.0
+2017,2017-06-25 05:00:00,3833,3839,FC Seoul,Sangju Sangmu,1,2,1.0,2.0
+2017,2017-06-25 05:00:00,3837,3834,Jeonbuk Motors,Daegu,2,2,2.0,2.0
+2017,2017-06-28 05:00:00,3838,3833,Jeonnam Dragons,FC Seoul,2,2,2.0,2.0
+2017,2017-06-28 05:00:00,3839,3836,Sangju Sangmu,Ulsan,0,0,0.0,0.0
+2017,2017-06-28 05:30:00,3835,3837,Pohang Steelers,Jeonbuk Motors,1,3,1.0,3.0
+2017,2017-06-28 05:30:00,3834,3842,Daegu,Suwon Bluewings,0,3,0.0,3.0
+2017,2017-06-28 05:30:00,3831,3841,Gangwon,Gwangju,2,2,2.0,2.0
+2017,2017-06-28 06:00:00,3832,3840,Jeju United,Incheon United,1,1,1.0,1.0
+2017,2017-07-01 05:00:00,3840,3841,Incheon United,Gwangju,1,0,1.0,0.0
+2017,2017-07-01 05:00:00,3836,3842,Ulsan,Suwon Bluewings,2,1,2.0,1.0
+2017,2017-07-01 05:00:00,3834,3831,Daegu,Gangwon,1,2,1.0,2.0
+2017,2017-07-02 05:00:00,3838,3832,Jeonnam Dragons,Jeju United,2,2,2.0,2.0
+2017,2017-07-02 05:00:00,3833,3837,FC Seoul,Jeonbuk Motors,2,1,2.0,1.0
+2017,2017-07-02 05:00:00,3839,3835,Sangju Sangmu,Pohang Steelers,0,1,0.0,1.0
+2017,2017-07-08 05:00:00,3835,3838,Pohang Steelers,Jeonnam Dragons,1,1,1.0,1.0
+2017,2017-07-08 05:00:00,3837,3836,Jeonbuk Motors,Ulsan,4,0,4.0,0.0
+2017,2017-07-08 05:00:00,3840,3834,Incheon United,Daegu,0,0,0.0,0.0
+2017,2017-07-09 04:00:00,3842,3832,Suwon Bluewings,Jeju United,1,0,1.0,0.0
+2017,2017-07-09 05:00:00,3841,3833,Gwangju,FC Seoul,3,2,3.0,2.0
+2017,2017-07-09 05:00:00,3831,3839,Gangwon,Sangju Sangmu,2,0,2.0,0.0
+2017,2017-07-12 05:00:00,3841,3839,Gwangju,Sangju Sangmu,1,2,1.0,2.0
+2017,2017-07-12 05:30:00,3842,3840,Suwon Bluewings,Incheon United,3,0,3.0,0.0
+2017,2017-07-12 05:30:00,3831,3838,Gangwon,Jeonnam Dragons,2,2,2.0,2.0
+2017,2017-07-12 05:30:00,3833,3835,FC Seoul,Pohang Steelers,1,0,1.0,0.0
+2017,2017-07-12 05:30:00,3834,3836,Daegu,Ulsan,1,3,1.0,3.0
+2017,2017-07-12 06:00:00,3832,3837,Jeju United,Jeonbuk Motors,2,1,2.0,1.0
+2017,2017-07-15 05:00:00,3838,3834,Jeonnam Dragons,Daegu,4,3,4.0,3.0
+2017,2017-07-15 05:00:00,3835,3842,Pohang Steelers,Suwon Bluewings,2,3,2.0,3.0
+2017,2017-07-15 05:00:00,3836,3841,Ulsan,Gwangju,1,0,1.0,0.0
+2017,2017-07-16 05:00:00,3840,3831,Incheon United,Gangwon,1,1,1.0,1.0
+2017,2017-07-16 05:00:00,3832,3833,Jeju United,FC Seoul,1,2,1.0,2.0
+2017,2017-07-16 05:00:00,3839,3837,Sangju Sangmu,Jeonbuk Motors,1,3,1.0,3.0
+2017,2017-07-19 05:00:00,3837,3841,Jeonbuk Motors,Gwangju,3,1,3.0,1.0
+2017,2017-07-19 05:00:00,3839,3832,Sangju Sangmu,Jeju United,0,3,0.0,3.0
+2017,2017-07-19 05:30:00,3831,3836,Gangwon,Ulsan,0,1,0.0,1.0
+2017,2017-07-19 05:30:00,3834,3835,Daegu,Pohang Steelers,3,0,3.0,0.0
+2017,2017-07-19 05:30:00,3840,3833,Incheon United,FC Seoul,1,5,1.0,5.0
+2017,2017-07-19 05:30:00,3842,3838,Suwon Bluewings,Jeonnam Dragons,4,1,4.0,1.0
+2017,2017-07-22 05:00:00,3841,3838,Gwangju,Jeonnam Dragons,2,1,2.0,1.0
+2017,2017-07-22 05:00:00,3836,3840,Ulsan,Incheon United,1,1,1.0,1.0
+2017,2017-07-22 05:00:00,3832,3835,Jeju United,Pohang Steelers,3,2,3.0,2.0
+2017,2017-07-23 04:00:00,3842,3839,Suwon Bluewings,Sangju Sangmu,3,0,3.0,0.0
+2017,2017-07-23 05:00:00,3831,3834,Gangwon,Daegu,0,1,0.0,1.0
+2017,2017-07-23 05:00:00,3833,3837,FC Seoul,Jeonbuk Motors,1,2,1.0,2.0
+2017,2017-08-02 05:00:00,3838,3839,Jeonnam Dragons,Sangju Sangmu,2,0,2.0,0.0
+2017,2017-08-02 05:30:00,3833,3831,FC Seoul,Gangwon,3,1,3.0,1.0
+2017,2017-08-02 05:30:00,3835,3841,Pohang Steelers,Gwangju,3,2,3.0,2.0
+2017,2017-08-02 05:30:00,3836,3842,Ulsan,Suwon Bluewings,1,1,1.0,1.0
+2017,2017-08-02 05:30:00,3840,3837,Incheon United,Jeonbuk Motors,1,3,1.0,3.0
+2017,2017-08-02 06:00:00,3832,3834,Jeju United,Daegu,2,0,2.0,0.0
+2017,2017-08-05 05:00:00,3834,3833,Daegu,FC Seoul,2,2,2.0,2.0
+2017,2017-08-05 05:00:00,3840,3832,Incheon United,Jeju United,0,0,0.0,0.0
+2017,2017-08-05 05:00:00,3841,3842,Gwangju,Suwon Bluewings,0,1,0.0,1.0
+2017,2017-08-06 05:00:00,3839,3831,Sangju Sangmu,Gangwon,1,2,1.0,2.0
+2017,2017-08-06 05:00:00,3837,3836,Jeonbuk Motors,Ulsan,0,1,0.0,1.0
+2017,2017-08-06 05:00:00,3835,3838,Pohang Steelers,Jeonnam Dragons,1,1,1.0,1.0
+2017,2017-08-12 05:00:00,3839,3840,Sangju Sangmu,Incheon United,1,2,1.0,2.0
+2017,2017-08-12 05:00:00,3838,3837,Jeonnam Dragons,Jeonbuk Motors,1,1,1.0,1.0
+2017,2017-08-12 05:00:00,3842,3833,Suwon Bluewings,FC Seoul,0,1,0.0,1.0
+2017,2017-08-13 05:00:00,3841,3834,Gwangju,Daegu,0,1,0.0,1.0
+2017,2017-08-13 05:00:00,3836,3835,Ulsan,Pohang Steelers,1,1,1.0,1.0
+2017,2017-08-13 05:00:00,3831,3832,Gangwon,Jeju United,0,2,0.0,2.0
+2017,2017-08-19 05:00:00,3833,3836,FC Seoul,Ulsan,1,1,1.0,1.0
+2017,2017-08-19 05:00:00,3832,3838,Jeju United,Jeonnam Dragons,3,1,3.0,1.0
+2017,2017-08-19 05:00:00,3842,3831,Suwon Bluewings,Gangwon,2,3,2.0,3.0
+2017,2017-08-19 05:00:00,3837,3841,Jeonbuk Motors,Gwangju,3,1,3.0,1.0
+2017,2017-08-20 05:00:00,3840,3835,Incheon United,Pohang Steelers,2,0,2.0,0.0
+2017,2017-08-20 05:00:00,3834,3839,Daegu,Sangju Sangmu,2,2,2.0,2.0
+2017,2017-09-02 05:00:00,3841,3832,Gwangju,Jeju United,0,1,0.0,1.0
+2017,2017-09-09 05:00:00,3836,3839,Ulsan,Sangju Sangmu,4,2,4.0,2.0
+2017,2017-09-09 05:00:00,3833,3832,FC Seoul,Jeju United,0,0,0.0,0.0
+2017,2017-09-10 01:00:00,3842,3838,Suwon Bluewings,Jeonnam Dragons,3,0,3.0,0.0
+2017,2017-09-10 03:00:00,3837,3831,Jeonbuk Motors,Gangwon,4,3,4.0,3.0
+2017,2017-09-10 04:00:00,3840,3841,Incheon United,Gwangju,0,0,0.0,0.0
+2017,2017-09-10 05:00:00,3834,3835,Daegu,Pohang Steelers,2,1,2.0,1.0
+2017,2017-09-16 01:00:00,3831,3838,Gangwon,Jeonnam Dragons,3,3,3.0,3.0
+2017,2017-09-16 05:00:00,3839,3841,Sangju Sangmu,Gwangju,3,2,3.0,2.0
+2017,2017-09-16 05:00:00,3834,3842,Daegu,Suwon Bluewings,0,0,0.0,0.0
+2017,2017-09-17 01:00:00,3840,3833,Incheon United,FC Seoul,1,0,1.0,0.0
+2017,2017-09-17 04:00:00,3832,3836,Jeju United,Ulsan,2,1,2.0,1.0
+2017,2017-09-17 04:00:00,3835,3837,Pohang Steelers,Jeonbuk Motors,0,4,0.0,4.0
+2017,2017-09-20 05:00:00,3837,3839,Jeonbuk Motors,Sangju Sangmu,1,2,1.0,2.0
+2017,2017-09-20 05:00:00,3838,3840,Jeonnam Dragons,Incheon United,0,0,0.0,0.0
+2017,2017-09-20 05:00:00,3841,3833,Gwangju,FC Seoul,1,4,1.0,4.0
+2017,2017-09-20 05:30:00,3836,3834,Ulsan,Daegu,3,2,3.0,2.0
+2017,2017-09-20 05:30:00,3842,3832,Suwon Bluewings,Jeju United,2,3,2.0,3.0
+2017,2017-09-20 05:30:00,3835,3831,Pohang Steelers,Gangwon,5,2,5.0,2.0
+2017,2017-09-23 04:00:00,3840,3842,Incheon United,Suwon Bluewings,1,1,1.0,1.0
+2017,2017-09-23 04:00:00,3836,3838,Ulsan,Jeonnam Dragons,1,0,1.0,0.0
+2017,2017-09-23 05:00:00,3839,3832,Sangju Sangmu,Jeju United,2,2,2.0,2.0
+2017,2017-09-24 01:10:00,3833,3835,FC Seoul,Pohang Steelers,1,1,1.0,1.0
+2017,2017-09-24 04:00:00,3837,3834,Jeonbuk Motors,Daegu,1,1,1.0,1.0
+2017,2017-09-24 05:00:00,3841,3831,Gwangju,Gangwon,1,1,1.0,1.0
+2017,2017-09-30 01:00:00,3834,3840,Daegu,Incheon United,1,1,1.0,1.0
+2017,2017-09-30 01:00:00,3838,3833,Jeonnam Dragons,FC Seoul,0,1,0.0,1.0
+2017,2017-09-30 01:00:00,3835,3839,Pohang Steelers,Sangju Sangmu,2,2,2.0,2.0
+2017,2017-10-01 01:00:00,3842,3837,Suwon Bluewings,Jeonbuk Motors,1,1,1.0,1.0
+2017,2017-10-01 01:00:00,3831,3836,Gangwon,Ulsan,1,1,1.0,1.0
+2017,2017-10-01 01:00:00,3832,3841,Jeju United,Gwangju,1,1,1.0,1.0
+2017,2017-10-08 01:00:00,3832,3837,Jeju United,Jeonbuk Motors,0,1,0.0,1.0
+2017,2017-10-08 01:00:00,3839,3833,Sangju Sangmu,FC Seoul,0,1,0.0,1.0
+2017,2017-10-08 01:00:00,3841,3836,Gwangju,Ulsan,1,1,1.0,1.0
+2017,2017-10-08 01:00:00,3838,3834,Jeonnam Dragons,Daegu,1,4,1.0,4.0
+2017,2017-10-08 01:00:00,3831,3840,Gangwon,Incheon United,2,0,2.0,0.0
+2017,2017-10-08 01:00:00,3835,3842,Pohang Steelers,Suwon Bluewings,1,1,1.0,1.0
+2017,2017-10-14 01:00:00,3832,3831,Jeju United,Gangwon,1,0,1.0,0.0
+2017,2017-10-14 01:00:00,3835,3840,Pohang Steelers,Incheon United,5,0,5.0,0.0
+2017,2017-10-14 01:00:00,3839,3834,Sangju Sangmu,Daegu,2,2,2.0,2.0
+2017,2017-10-15 01:00:00,3837,3833,Jeonbuk Motors,FC Seoul,0,0,0.0,0.0
+2017,2017-10-15 01:00:00,3838,3841,Jeonnam Dragons,Gwangju,2,4,2.0,4.0
+2017,2017-10-15 01:00:00,3842,3836,Suwon Bluewings,Ulsan,2,0,2.0,0.0
+2017,2017-10-21 01:00:00,3833,3842,FC Seoul,Suwon Bluewings,2,2,2.0,2.0
+2017,2017-10-21 01:00:00,3838,3835,Jeonnam Dragons,Pohang Steelers,1,3,1.0,3.0
+2017,2017-10-21 01:00:00,3834,3840,Daegu,Incheon United,0,0,0.0,0.0
+2017,2017-10-22 01:00:00,3831,3837,Gangwon,Jeonbuk Motors,0,4,0.0,4.0
+2017,2017-10-22 01:00:00,3836,3832,Ulsan,Jeju United,0,1,0.0,1.0
+2017,2017-10-22 01:00:00,3841,3839,Gwangju,Sangju Sangmu,1,0,1.0,0.0
+2017,2017-10-28 01:00:00,3835,3834,Pohang Steelers,Daegu,1,2,1.0,2.0
+2017,2017-10-28 01:00:00,3833,3836,FC Seoul,Ulsan,3,0,3.0,0.0
+2017,2017-10-28 01:00:00,3839,3838,Sangju Sangmu,Jeonnam Dragons,0,0,0.0,0.0
+2017,2017-10-29 01:00:00,3837,3832,Jeonbuk Motors,Jeju United,3,0,3.0,0.0
+2017,2017-10-29 01:00:00,3842,3831,Suwon Bluewings,Gangwon,2,1,2.0,1.0
+2017,2017-10-29 01:00:00,3840,3841,Incheon United,Gwangju,0,0,0.0,0.0
+2017,2017-11-04 01:00:00,3831,3833,Gangwon,FC Seoul,4,0,4.0,0.0
+2017,2017-11-04 01:00:00,3839,3835,Sangju Sangmu,Pohang Steelers,3,4,3.0,4.0
+2017,2017-11-04 01:00:00,3834,3841,Daegu,Gwangju,2,0,2.0,0.0
+2017,2017-11-05 01:00:00,3836,3837,Ulsan,Jeonbuk Motors,1,2,1.0,2.0
+2017,2017-11-05 01:00:00,3832,3842,Jeju United,Suwon Bluewings,0,0,0.0,0.0
+2017,2017-11-05 01:00:00,3838,3840,Jeonnam Dragons,Incheon United,2,2,2.0,2.0
+2017,2017-11-18 00:00:00,3834,3838,Daegu,Jeonnam Dragons,1,0,1.0,0.0
+2017,2017-11-18 00:00:00,3840,3839,Incheon United,Sangju Sangmu,2,0,2.0,0.0
+2017,2017-11-18 00:00:00,3841,3835,Gwangju,Pohang Steelers,0,4,0.0,4.0
+2017,2017-11-19 00:00:00,3831,3836,Gangwon,Ulsan,1,2,1.0,2.0
+2017,2017-11-19 00:00:00,3837,3842,Jeonbuk Motors,Suwon Bluewings,2,3,2.0,3.0
+2017,2017-11-19 00:00:00,3833,3832,FC Seoul,Jeju United,3,2,3.0,2.0
+2018,2018-02-28 23:00:00,3837,3836,Jeonbuk Motors,Ulsan,2,0,1.68,1.1
+2018,2018-02-28 23:00:00,3842,3838,Suwon Bluewings,Jeonnam Dragons,1,2,1.88,1.92
+2018,2018-03-01 01:00:00,3832,3833,Jeju United,FC Seoul,0,0,1.26,1.64
+2018,2018-03-02 23:00:00,3835,3834,Pohang Steelers,Daegu,3,0,1.43,1.29
+2018,2018-03-03 01:00:00,3831,3840,Gangwon,Incheon United,2,1,1.81,1.97
+2018,2018-03-03 23:00:00,3847,3839,Gyeongnam,Sangju Sangmu,3,1,1.01,1.98
+2018,2018-03-09 23:00:00,3834,3842,Daegu,Suwon Bluewings,0,2,1.21,1.44
+2018,2018-03-09 23:00:00,3847,3832,Gyeongnam,Jeju United,2,0,2.54,1.12
+2018,2018-03-09 23:00:00,3840,3837,Incheon United,Jeonbuk Motors,3,2,3.0,2.0
+2018,2018-03-10 01:00:00,3836,3839,Ulsan,Sangju Sangmu,0,2,1.06,1.4
+2018,2018-03-10 23:00:00,3838,3835,Jeonnam Dragons,Pohang Steelers,2,3,1.83,2.02
+2018,2018-03-11 01:00:00,3833,3831,FC Seoul,Gangwon,1,2,1.34,1.36
+2018,2018-03-17 00:00:00,3840,3834,Incheon United,Daegu,0,0,1.16,1.69
+2018,2018-03-17 00:00:00,3831,3839,Gangwon,Sangju Sangmu,2,1,1.61,2.01
+2018,2018-03-17 02:00:00,3838,3847,Jeonnam Dragons,Gyeongnam,1,3,1.27,1.53
+2018,2018-03-18 00:00:00,3836,3832,Ulsan,Jeju United,0,1,0.6,1.35
+2018,2018-03-18 00:00:00,3837,3833,Jeonbuk Motors,FC Seoul,2,1,2.24,1.37
+2018,2018-03-18 02:00:00,3842,3835,Suwon Bluewings,Pohang Steelers,1,1,1.58,1.03
+2018,2018-03-31 00:00:00,3832,3842,Jeju United,Suwon Bluewings,0,1,1.76,1.22
+2018,2018-03-31 00:00:00,3835,3836,Pohang Steelers,Ulsan,2,1,1.5,1.61
+2018,2018-03-31 02:00:00,3837,3839,Jeonbuk Motors,Sangju Sangmu,1,0,1.16,1.31
+2018,2018-03-31 02:00:00,3834,3838,Daegu,Jeonnam Dragons,1,1,1.61,0.89
+2018,2018-04-01 00:00:00,3833,3840,FC Seoul,Incheon United,1,1,1.4,1.72
+2018,2018-04-01 02:00:00,3831,3847,Gangwon,Gyeongnam,1,3,2.44,2.03
+2018,2018-04-07 00:00:00,3840,3838,Incheon United,Jeonnam Dragons,2,2,2.19,1.36
+2018,2018-04-07 02:00:00,3847,3834,Gyeongnam,Daegu,1,1,1.05,1.16
+2018,2018-04-08 00:00:00,3842,3833,Suwon Bluewings,FC Seoul,0,0,1.25,1.1
+2018,2018-04-08 00:00:00,3835,3837,Pohang Steelers,Jeonbuk Motors,0,2,1.52,1.37
+2018,2018-04-08 02:00:00,3832,3839,Jeju United,Sangju Sangmu,0,0,1.28,1.21
+2018,2018-04-08 02:00:00,3836,3831,Ulsan,Gangwon,3,1,1.61,1.85
+2018,2018-04-11 05:30:00,3833,3835,FC Seoul,Pohang Steelers,2,1,2.0,1.0
+2018,2018-04-11 05:30:00,3847,3837,Gyeongnam,Jeonbuk Motors,0,4,2.03,2.44
+2018,2018-04-11 05:30:00,3834,3836,Daegu,Ulsan,0,2,0.0,2.0
+2018,2018-04-11 05:30:00,3838,3832,Jeonnam Dragons,Jeju United,0,3,1.22,2.05
+2018,2018-04-11 05:30:00,3840,3839,Incheon United,Sangju Sangmu,0,1,2.25,1.51
+2018,2018-04-11 06:00:00,3831,3842,Gangwon,Suwon Bluewings,2,3,2.0,3.0
+2018,2018-04-14 00:00:00,3836,3833,Ulsan,FC Seoul,1,0,1.1,0.78
+2018,2018-04-14 00:00:00,3842,3839,Suwon Bluewings,Sangju Sangmu,2,1,1.58,1.84
+2018,2018-04-14 02:00:00,3832,3840,Jeju United,Incheon United,4,2,1.5,2.02
+2018,2018-04-14 02:00:00,3837,3838,Jeonbuk Motors,Jeonnam Dragons,3,0,2.41,0.9
+2018,2018-04-15 00:00:00,3834,3831,Daegu,Gangwon,2,1,2.3,1.66
+2018,2018-04-15 02:00:00,3835,3847,Pohang Steelers,Gyeongnam,2,1,1.6,1.89
+2018,2018-04-21 00:00:00,3833,3834,FC Seoul,Daegu,3,0,1.73,1.91
+2018,2018-04-21 00:00:00,3838,3831,Jeonnam Dragons,Gangwon,1,4,2.81,1.83
+2018,2018-04-21 02:00:00,3835,3839,Pohang Steelers,Sangju Sangmu,0,2,1.5,2.06
+2018,2018-04-22 00:00:00,3832,3837,Jeju United,Jeonbuk Motors,0,1,0.89,2.15
+2018,2018-04-22 02:00:00,3847,3836,Gyeongnam,Ulsan,0,0,1.39,1.77
+2018,2018-04-22 02:00:00,3840,3842,Incheon United,Suwon Bluewings,2,3,2.12,1.96
+2018,2018-04-25 05:30:00,3838,3833,Jeonnam Dragons,FC Seoul,2,1,1.76,1.69
+2018,2018-04-25 05:30:00,3836,3840,Ulsan,Incheon United,2,1,1.74,2.52
+2018,2018-04-25 05:30:00,3842,3847,Suwon Bluewings,Gyeongnam,3,1,2.41,1.25
+2018,2018-04-25 05:30:00,3835,3832,Pohang Steelers,Jeju United,0,1,1.44,1.7
+2018,2018-04-25 05:30:00,3834,3839,Daegu,Sangju Sangmu,1,2,1.78,1.48
+2018,2018-04-25 06:00:00,3831,3837,Gangwon,Jeonbuk Motors,0,2,1.61,2.09
+2018,2018-04-28 00:00:00,3834,3832,Daegu,Jeju United,1,4,1.19,2.21
+2018,2018-04-28 02:00:00,3833,3839,FC Seoul,Sangju Sangmu,0,0,1.53,0.89
+2018,2018-04-28 02:00:00,3836,3838,Ulsan,Jeonnam Dragons,1,1,1.13,1.53
+2018,2018-04-29 00:00:00,3837,3842,Jeonbuk Motors,Suwon Bluewings,2,0,2.05,0.59
+2018,2018-04-29 02:00:00,3831,3835,Gangwon,Pohang Steelers,0,0,2.2,1.01
+2018,2018-04-29 02:00:00,3840,3847,Incheon United,Gyeongnam,2,3,1.86,1.83
+2018,2018-05-02 05:00:00,3837,3834,Jeonbuk Motors,Daegu,2,1,1.92,1.95
+2018,2018-05-02 05:30:00,3839,3838,Sangju Sangmu,Jeonnam Dragons,1,1,0.82,0.89
+2018,2018-05-02 05:30:00,3832,3831,Jeju United,Gangwon,3,5,2.07,1.4
+2018,2018-05-02 05:30:00,3835,3840,Pohang Steelers,Incheon United,0,0,1.43,2.12
+2018,2018-05-02 05:30:00,3847,3833,Gyeongnam,FC Seoul,0,0,1.61,2.06
+2018,2018-05-02 05:30:00,3842,3836,Suwon Bluewings,Ulsan,0,0,1.61,1.78
+2018,2018-05-05 00:00:00,3836,3835,Ulsan,Pohang Steelers,2,1,1.5,0.94
+2018,2018-05-05 00:00:00,3838,3837,Jeonnam Dragons,Jeonbuk Motors,0,0,2.45,1.22
+2018,2018-05-05 00:00:00,3840,3832,Incheon United,Jeju United,1,2,1.15,1.2
+2018,2018-05-05 00:00:00,3834,3847,Daegu,Gyeongnam,0,2,1.86,1.54
+2018,2018-05-05 02:00:00,3833,3842,FC Seoul,Suwon Bluewings,2,1,1.24,1.7
+2018,2018-05-05 02:00:00,3839,3831,Sangju Sangmu,Gangwon,3,0,1.72,1.05
+2018,2018-05-12 00:00:00,3837,3835,Jeonbuk Motors,Pohang Steelers,0,3,2.1,1.34
+2018,2018-05-12 00:00:00,3831,3833,Gangwon,FC Seoul,1,1,1.88,1.53
+2018,2018-05-12 02:00:00,3832,3838,Jeju United,Jeonnam Dragons,1,0,1.52,2.73
+2018,2018-05-13 00:00:00,3839,3840,Sangju Sangmu,Incheon United,3,2,1.78,1.39
+2018,2018-05-13 02:00:00,3842,3834,Suwon Bluewings,Daegu,2,0,1.72,1.29
+2018,2018-05-13 02:00:00,3836,3847,Ulsan,Gyeongnam,1,1,1.5,2.14
+2018,2018-05-19 00:00:00,3847,3831,Gyeongnam,Gangwon,0,1,0.79,3.05
+2018,2018-05-19 02:00:00,3838,3834,Jeonnam Dragons,Daegu,1,1,2.07,1.54
+2018,2018-05-20 00:00:00,3840,3836,Incheon United,Ulsan,1,1,1.64,1.55
+2018,2018-05-20 00:00:00,3839,3832,Sangju Sangmu,Jeju United,0,0,1.06,1.25
+2018,2018-05-20 02:00:00,3833,3837,FC Seoul,Jeonbuk Motors,0,4,1.34,2.57
+2018,2018-05-20 02:00:00,3835,3842,Pohang Steelers,Suwon Bluewings,1,1,0.99,2.23
+2018,2018-07-07 05:00:00,3847,3835,Gyeongnam,Pohang Steelers,2,0,2.49,1.39
+2018,2018-07-07 05:00:00,3837,3840,Jeonbuk Motors,Incheon United,3,3,4.08,0.89
+2018,2018-07-07 05:00:00,3842,3832,Suwon Bluewings,Jeju United,2,3,1.65,1.98
+2018,2018-07-08 04:00:00,3831,3838,Gangwon,Jeonnam Dragons,1,1,1.44,1.03
+2018,2018-07-08 05:00:00,3834,3833,Daegu,FC Seoul,2,2,2.1,1.53
+2018,2018-07-08 05:30:00,3839,3836,Sangju Sangmu,Ulsan,2,3,1.23,1.77
+2018,2018-07-11 05:30:00,3838,3842,Jeonnam Dragons,Suwon Bluewings,0,2,1.52,1.72
+2018,2018-07-11 05:30:00,3832,3847,Jeju United,Gyeongnam,0,0,1.54,1.24
+2018,2018-07-11 05:30:00,3840,3831,Incheon United,Gangwon,3,3,1.34,1.73
+2018,2018-07-11 05:30:00,3839,3834,Sangju Sangmu,Daegu,0,1,1.61,1.36
+2018,2018-07-11 05:30:00,3836,3837,Ulsan,Jeonbuk Motors,0,2,0.73,1.87
+2018,2018-07-11 05:30:00,3835,3833,Pohang Steelers,FC Seoul,0,3,2.1,1.85
+2018,2018-07-14 05:00:00,3847,3840,Gyeongnam,Incheon United,3,0,1.65,1.68
+2018,2018-07-14 05:00:00,3842,3837,Suwon Bluewings,Jeonbuk Motors,0,3,2.48,2.13
+2018,2018-07-14 05:00:00,3838,3839,Jeonnam Dragons,Sangju Sangmu,2,0,1.39,1.14
+2018,2018-07-15 05:00:00,3832,3834,Jeju United,Daegu,1,2,1.45,1.34
+2018,2018-07-15 05:00:00,3833,3836,FC Seoul,Ulsan,1,1,1.1,1.57
+2018,2018-07-15 05:00:00,3835,3831,Pohang Steelers,Gangwon,0,0,1.56,1.53
+2018,2018-07-18 05:00:00,3837,3832,Jeonbuk Motors,Jeju United,1,0,2.5,1.68
+2018,2018-07-18 05:30:00,3834,3835,Daegu,Pohang Steelers,0,1,2.93,1.63
+2018,2018-07-18 05:30:00,3833,3838,FC Seoul,Jeonnam Dragons,2,1,1.97,1.41
+2018,2018-07-18 05:30:00,3842,3840,Suwon Bluewings,Incheon United,5,2,2.18,1.6
+2018,2018-07-18 05:30:00,3839,3847,Sangju Sangmu,Gyeongnam,0,1,1.5,1.59
+2018,2018-07-18 06:00:00,3831,3836,Gangwon,Ulsan,3,3,1.68,1.76
+2018,2018-07-21 05:00:00,3835,3838,Pohang Steelers,Jeonnam Dragons,3,1,2.15,1.59
+2018,2018-07-21 05:00:00,3847,3842,Gyeongnam,Suwon Bluewings,2,2,1.51,2.45
+2018,2018-07-21 06:00:00,3831,3832,Gangwon,Jeju United,3,1,2.02,1.71
+2018,2018-07-22 04:00:00,3840,3833,Incheon United,FC Seoul,2,1,2.25,1.87
+2018,2018-07-22 05:00:00,3836,3834,Ulsan,Daegu,2,0,2.01,1.42
+2018,2018-07-22 05:30:00,3839,3837,Sangju Sangmu,Jeonbuk Motors,0,2,1.5,2.07
+2018,2018-07-28 05:00:00,3833,3847,FC Seoul,Gyeongnam,2,3,2.1,1.53
+2018,2018-07-28 05:00:00,3838,3840,Jeonnam Dragons,Incheon United,1,3,1.99,1.0
+2018,2018-07-28 05:30:00,3839,3835,Sangju Sangmu,Pohang Steelers,2,1,1.44,1.91
+2018,2018-07-29 05:00:00,3842,3831,Suwon Bluewings,Gangwon,2,0,2.19,1.53
+2018,2018-07-29 05:00:00,3834,3837,Daegu,Jeonbuk Motors,1,3,2.12,1.74
+2018,2018-07-29 05:00:00,3832,3836,Jeju United,Ulsan,1,1,1.64,2.61
+2018,2018-08-04 06:00:00,3839,3842,Sangju Sangmu,Suwon Bluewings,1,1,0.53,0.57
+2018,2018-08-04 06:00:00,3840,3835,Incheon United,Pohang Steelers,1,2,2.15,2.18
+2018,2018-08-04 06:00:00,3833,3832,FC Seoul,Jeju United,3,0,1.41,1.78
+2018,2018-08-05 06:00:00,3837,3847,Jeonbuk Motors,Gyeongnam,0,1,3.28,1.25
+2018,2018-08-05 06:00:00,3838,3836,Jeonnam Dragons,Ulsan,1,2,1.52,1.34
+2018,2018-08-05 06:00:00,3831,3834,Gangwon,Daegu,1,3,1.46,2.32
+2018,2018-08-11 05:00:00,3837,3831,Jeonbuk Motors,Gangwon,3,1,3.33,1.73
+2018,2018-08-11 05:00:00,3832,3835,Jeju United,Pohang Steelers,0,0,1.27,1.3
+2018,2018-08-11 05:00:00,3834,3840,Daegu,Incheon United,2,1,2.19,1.32
+2018,2018-08-12 05:00:00,3836,3842,Ulsan,Suwon Bluewings,1,0,1.78,1.77
+2018,2018-08-12 05:00:00,3847,3838,Gyeongnam,Jeonnam Dragons,3,0,1.98,1.51
+2018,2018-08-12 05:30:00,3839,3833,Sangju Sangmu,FC Seoul,1,2,1.67,1.05
+2018,2018-08-15 05:00:00,3832,3834,Jeju United,Daegu,2,3,2.65,1.49
+2018,2018-08-15 05:00:00,3838,3831,Jeonnam Dragons,Gangwon,0,1,1.04,1.53
+2018,2018-08-15 05:00:00,3842,3833,Suwon Bluewings,FC Seoul,1,2,2.21,1.37
+2018,2018-08-15 05:00:00,3835,3837,Pohang Steelers,Jeonbuk Motors,5,2,1.91,2.93
+2018,2018-08-15 05:30:00,3847,3836,Gyeongnam,Ulsan,3,3,2.03,1.52
+2018,2018-08-15 05:30:00,3840,3839,Incheon United,Sangju Sangmu,0,0,1.32,1.5
+2018,2018-08-18 05:00:00,3835,3847,Pohang Steelers,Gyeongnam,0,3,1.45,2.05
+2018,2018-08-18 05:00:00,3834,3836,Daegu,Ulsan,0,2,1.93,1.26
+2018,2018-08-18 05:30:00,3839,3832,Sangju Sangmu,Jeju United,1,1,1.36,1.62
+2018,2018-08-19 05:00:00,3838,3842,Jeonnam Dragons,Suwon Bluewings,6,4,1.99,1.6
+2018,2018-08-19 05:00:00,3831,3840,Gangwon,Incheon United,7,0,2.15,1.43
+2018,2018-08-19 05:00:00,3833,3837,FC Seoul,Jeonbuk Motors,0,2,0.99,2.2
+2018,2018-08-22 05:00:00,3837,3834,Jeonbuk Motors,Daegu,2,1,2.37,1.11
+2018,2018-08-22 05:30:00,3833,3835,FC Seoul,Pohang Steelers,0,1,0.83,1.05
+2018,2018-08-22 05:30:00,3836,3839,Ulsan,Sangju Sangmu,4,1,1.47,0.79
+2018,2018-08-22 05:30:00,3840,3838,Incheon United,Jeonnam Dragons,3,1,2.18,1.58
+2018,2018-08-22 05:30:00,3847,3831,Gyeongnam,Gangwon,2,1,1.87,1.62
+2018,2018-08-25 05:00:00,3832,3840,Jeju United,Incheon United,0,0,1.78,1.06
+2018,2018-08-25 05:00:00,3836,3833,Ulsan,FC Seoul,4,1,2.07,1.71
+2018,2018-08-25 05:00:00,3842,3847,Suwon Bluewings,Gyeongnam,1,0,1.94,1.01
+2018,2018-08-25 05:30:00,3839,3837,Sangju Sangmu,Jeonbuk Motors,2,2,1.95,1.28
+2018,2018-08-26 05:00:00,3834,3831,Daegu,Gangwon,2,0,3.19,1.45
+2018,2018-08-26 05:00:00,3838,3835,Jeonnam Dragons,Pohang Steelers,3,2,2.09,1.47
+2018,2018-09-01 05:30:00,3839,3838,Sangju Sangmu,Jeonnam Dragons,1,2,1.45,1.38
+2018,2018-09-01 06:00:00,3831,3833,Gangwon,FC Seoul,0,0,1.28,1.32
+2018,2018-09-02 04:00:00,3835,3832,Pohang Steelers,Jeju United,2,2,1.63,2.46
+2018,2018-09-02 04:00:00,3840,3836,Incheon United,Ulsan,3,2,1.58,1.64
+2018,2018-09-02 05:00:00,3847,3837,Gyeongnam,Jeonbuk Motors,0,3,0.9,2.68
+2018,2018-09-02 05:00:00,3834,3842,Daegu,Suwon Bluewings,4,2,0.89,0.28
+2018,2018-09-08 02:00:00,3832,3842,Jeju United,Suwon Bluewings,0,0,1.98,1.47
+2018,2018-09-15 00:00:00,3836,3835,Ulsan,Pohang Steelers,2,0,1.53,0.92
+2018,2018-09-15 00:00:00,3837,3832,Jeonbuk Motors,Jeju United,4,0,1.7,1.89
+2018,2018-09-15 02:00:00,3840,3842,Incheon United,Suwon Bluewings,0,0,1.2,0.93
+2018,2018-09-16 00:00:00,3838,3847,Jeonnam Dragons,Gyeongnam,3,3,2.23,1.08
+2018,2018-09-16 02:00:00,3833,3834,FC Seoul,Daegu,0,2,1.39,2.62
+2018,2018-09-16 02:00:00,3831,3839,Gangwon,Sangju Sangmu,2,3,1.65,1.22
+2018,2018-09-22 00:00:00,3847,3833,Gyeongnam,FC Seoul,2,1,1.59,1.19
+2018,2018-09-22 00:00:00,3835,3840,Pohang Steelers,Incheon United,1,0,1.8,1.82
+2018,2018-09-22 02:00:00,3839,3834,Sangju Sangmu,Daegu,2,5,1.11,1.86
+2018,2018-09-23 00:00:00,3832,3831,Jeju United,Gangwon,2,2,1.95,2.05
+2018,2018-09-23 02:00:00,3838,3836,Jeonnam Dragons,Ulsan,1,0,1.92,1.04
+2018,2018-09-23 02:00:00,3842,3837,Suwon Bluewings,Jeonbuk Motors,0,0,1.55,1.78
+2018,2018-09-26 00:00:00,3834,3847,Daegu,Gyeongnam,2,2,1.51,1.76
+2018,2018-09-26 00:00:00,3831,3842,Gangwon,Suwon Bluewings,1,0,1.83,0.61
+2018,2018-09-26 00:00:00,3839,3835,Sangju Sangmu,Pohang Steelers,1,2,1.57,1.23
+2018,2018-09-26 01:00:00,3836,3832,Ulsan,Jeju United,3,2,1.95,1.79
+2018,2018-09-26 02:00:00,3833,3840,FC Seoul,Incheon United,1,1,1.74,1.05
+2018,2018-09-26 02:00:00,3837,3838,Jeonbuk Motors,Jeonnam Dragons,1,0,2.39,0.66
+2018,2018-09-29 00:00:00,3842,3836,Suwon Bluewings,Ulsan,2,2,1.54,1.59
+2018,2018-09-29 02:00:00,3837,3831,Jeonbuk Motors,Gangwon,3,2,2.4,1.02
+2018,2018-09-29 02:00:00,3832,3838,Jeju United,Jeonnam Dragons,1,0,1.32,2.36
+2018,2018-09-30 00:00:00,3833,3839,FC Seoul,Sangju Sangmu,2,2,1.32,1.73
+2018,2018-09-30 02:00:00,3840,3847,Incheon United,Gyeongnam,2,2,3.12,2.04
+2018,2018-09-30 02:00:00,3835,3834,Pohang Steelers,Daegu,2,1,1.61,2.14
+2018,2018-10-06 00:00:00,3831,3835,Gangwon,Pohang Steelers,1,1,1.92,1.68
+2018,2018-10-06 00:00:00,3834,3840,Daegu,Incheon United,1,2,2.15,2.02
+2018,2018-10-06 02:00:00,3838,3833,Jeonnam Dragons,FC Seoul,1,0,1.39,1.67
+2018,2018-10-07 00:00:00,3839,3842,Sangju Sangmu,Suwon Bluewings,1,2,1.58,2.02
+2018,2018-10-07 00:00:00,3847,3832,Gyeongnam,Jeju United,0,1,2.01,1.56
+2018,2018-10-07 02:00:00,3836,3837,Ulsan,Jeonbuk Motors,2,2,1.65,1.03
+2018,2018-10-20 00:00:00,3834,3838,Daegu,Jeonnam Dragons,2,1,2.07,1.38
+2018,2018-10-20 00:00:00,3847,3839,Gyeongnam,Sangju Sangmu,2,1,1.12,1.77
+2018,2018-10-20 00:00:00,3836,3831,Ulsan,Gangwon,2,0,2.43,0.72
+2018,2018-10-20 00:00:00,3832,3833,Jeju United,FC Seoul,1,0,1.67,1.08
+2018,2018-10-20 00:00:00,3842,3835,Suwon Bluewings,Pohang Steelers,2,0,1.99,1.38
+2018,2018-10-20 00:00:00,3837,3840,Jeonbuk Motors,Incheon United,3,2,2.44,1.94
+2018,2018-10-27 00:00:00,3835,3832,Pohang Steelers,Jeju United,1,2,1.73,2.07
+2018,2018-10-27 02:00:00,3833,3831,FC Seoul,Gangwon,1,1,2.38,1.41
+2018,2018-10-28 00:00:00,3838,3839,Jeonnam Dragons,Sangju Sangmu,0,1,0.95,1.03
+2018,2018-10-28 00:00:00,3840,3834,Incheon United,Daegu,0,1,1.68,1.02
+2018,2018-10-28 02:00:00,3837,3842,Jeonbuk Motors,Suwon Bluewings,2,0,1.73,1.34
+2018,2018-10-28 02:00:00,3836,3847,Ulsan,Gyeongnam,1,0,1.37,1.33
+2018,2018-11-03 00:00:00,3832,3847,Jeju United,Gyeongnam,0,1,1.8,0.9
+2018,2018-11-03 02:00:00,3840,3839,Incheon United,Sangju Sangmu,2,1,1.91,1.69
+2018,2018-11-04 00:00:00,3834,3833,Daegu,FC Seoul,1,1,1.19,2.45
+2018,2018-11-04 00:00:00,3837,3836,Jeonbuk Motors,Ulsan,3,1,1.21,1.73
+2018,2018-11-04 01:00:00,3831,3838,Gangwon,Jeonnam Dragons,1,0,1.68,1.92
+2018,2018-11-04 01:00:00,3842,3835,Suwon Bluewings,Pohang Steelers,1,3,1.08,1.25
+2018,2018-11-09 23:00:00,3831,3840,Gangwon,Incheon United,2,3,2.65,2.02
+2018,2018-11-09 23:00:00,3842,3836,Suwon Bluewings,Ulsan,3,3,1.81,2.22
+2018,2018-11-10 01:00:00,3832,3837,Jeju United,Jeonbuk Motors,0,0,1.65,2.67
+2018,2018-11-10 01:00:00,3847,3835,Gyeongnam,Pohang Steelers,1,2,1.43,0.91
+2018,2018-11-10 23:00:00,3833,3838,FC Seoul,Jeonnam Dragons,3,2,2.04,1.42
+2018,2018-11-10 23:00:00,3834,3839,Daegu,Sangju Sangmu,0,0,1.71,0.68
+2018,2018-11-23 23:00:00,3833,3840,FC Seoul,Incheon United,0,1,1.75,1.12
+2018,2018-11-24 01:00:00,3839,3831,Sangju Sangmu,Gangwon,0,1,1.34,1.2
+2018,2018-11-24 01:00:00,3838,3834,Jeonnam Dragons,Daegu,1,2,1.44,2.2
+2018,2018-11-24 23:00:00,3847,3842,Gyeongnam,Suwon Bluewings,2,1,1.17,0.99
+2018,2018-11-24 23:00:00,3836,3832,Ulsan,Jeju United,0,1,1.71,0.99
+2018,2018-11-25 01:00:00,3835,3837,Pohang Steelers,Jeonbuk Motors,1,1,1.33,2.08
+2018,2018-11-30 23:00:00,3840,3838,Incheon United,Jeonnam Dragons,3,1,1.84,2.49
+2018,2018-11-30 23:00:00,3831,3834,Gangwon,Daegu,0,1,2.41,0.84
+2018,2018-11-30 23:00:00,3839,3833,Sangju Sangmu,FC Seoul,1,0,1.18,1.3
+2018,2018-12-01 23:00:00,3837,3847,Jeonbuk Motors,Gyeongnam,1,1,1.88,1.19
+2018,2018-12-01 23:00:00,3842,3832,Suwon Bluewings,Jeju United,0,2,2.24,1.41
+2018,2018-12-01 23:00:00,3835,3836,Pohang Steelers,Ulsan,1,3,1.97,1.55
+2019,2019-02-28 23:00:00,3837,3834,Jeonbuk Motors,Daegu,1,1,1.82,1.1
+2019,2019-03-01 01:00:00,3847,3844,Gyeongnam,Seongnam,2,1,1.8,1.22
+2019,2019-03-01 01:00:00,3836,3842,Ulsan,Suwon Bluewings,2,1,2.12,1.39
+2019,2019-03-01 23:00:00,3840,3832,Incheon United,Jeju United,1,1,1.63,2.38
+2019,2019-03-02 01:00:00,3839,3831,Sangju Sangmu,Gangwon,2,0,2.01,1.08
+2019,2019-03-02 23:00:00,3833,3835,FC Seoul,Pohang Steelers,2,0,2.39,0.56
+2019,2019-03-08 23:00:00,3834,3832,Daegu,Jeju United,2,0,1.89,1.73
+2019,2019-03-08 23:00:00,3840,3847,Incheon United,Gyeongnam,2,1,2.0,1.0
+2019,2019-03-09 01:00:00,3842,3837,Suwon Bluewings,Jeonbuk Motors,0,4,1.32,1.88
+2019,2019-03-09 23:00:00,3835,3839,Pohang Steelers,Sangju Sangmu,1,2,1.13,1.36
+2019,2019-03-09 23:00:00,3831,3836,Gangwon,Ulsan,0,0,1.9,1.98
+2019,2019-03-10 01:00:00,3844,3833,Seongnam,FC Seoul,0,1,1.5,0.99
+2019,2019-03-16 00:00:00,3839,3840,Sangju Sangmu,Incheon United,2,0,1.48,2.67
+2019,2019-03-16 02:00:00,3833,3832,FC Seoul,Jeju United,0,0,1.71,1.66
+2019,2019-03-16 02:00:00,3844,3842,Seongnam,Suwon Bluewings,2,1,1.86,1.24
+2019,2019-03-17 00:00:00,3837,3831,Jeonbuk Motors,Gangwon,0,1,1.47,1.62
+2019,2019-03-17 00:00:00,3834,3836,Daegu,Ulsan,1,1,1.54,1.09
+2019,2019-03-17 02:00:00,3835,3847,Pohang Steelers,Gyeongnam,4,1,1.97,1.31
+2019,2019-03-29 05:30:00,3836,3832,Ulsan,Jeju United,2,1,1.49,1.79
+2019,2019-03-30 00:00:00,3837,3835,Jeonbuk Motors,Pohang Steelers,2,0,2.56,0.9
+2019,2019-03-30 00:00:00,3833,3839,FC Seoul,Sangju Sangmu,2,0,1.33,1.78
+2019,2019-03-30 02:00:00,3847,3834,Gyeongnam,Daegu,2,1,1.84,1.37
+2019,2019-03-31 00:00:00,3831,3844,Gangwon,Seongnam,2,1,1.76,1.6
+2019,2019-03-31 02:00:00,3842,3840,Suwon Bluewings,Incheon United,3,1,2.44,1.55
+2019,2019-04-02 05:30:00,3836,3833,Ulsan,FC Seoul,2,1,1.23,1.55
+2019,2019-04-02 05:30:00,3847,3837,Gyeongnam,Jeonbuk Motors,3,3,2.07,1.82
+2019,2019-04-03 05:30:00,3835,3831,Pohang Steelers,Gangwon,1,0,2.11,1.75
+2019,2019-04-03 05:30:00,3842,3839,Suwon Bluewings,Sangju Sangmu,0,0,1.65,0.96
+2019,2019-04-03 05:30:00,3840,3834,Incheon United,Daegu,0,3,1.37,1.97
+2019,2019-04-03 05:30:00,3844,3832,Seongnam,Jeju United,1,1,1.4,1.63
+2019,2019-04-06 00:00:00,3834,3844,Daegu,Seongnam,1,1,1.62,1.0
+2019,2019-04-06 00:00:00,3833,3847,FC Seoul,Gyeongnam,2,1,1.41,1.37
+2019,2019-04-06 02:00:00,3839,3836,Sangju Sangmu,Ulsan,0,1,1.27,0.96
+2019,2019-04-06 02:00:00,3837,3840,Jeonbuk Motors,Incheon United,2,0,1.81,1.45
+2019,2019-04-07 00:00:00,3835,3832,Pohang Steelers,Jeju United,1,1,1.49,2.72
+2019,2019-04-07 00:00:00,3831,3842,Gangwon,Suwon Bluewings,0,2,1.29,1.68
+2019,2019-04-13 00:00:00,3832,3837,Jeju United,Jeonbuk Motors,0,1,1.67,1.53
+2019,2019-04-13 02:00:00,3847,3839,Gyeongnam,Sangju Sangmu,1,1,1.03,1.67
+2019,2019-04-13 02:00:00,3844,3835,Seongnam,Pohang Steelers,2,0,1.5,1.32
+2019,2019-04-14 00:00:00,3842,3834,Suwon Bluewings,Daegu,0,0,1.57,2.88
+2019,2019-04-14 02:00:00,3840,3836,Incheon United,Ulsan,0,3,1.35,1.38
+2019,2019-04-14 02:00:00,3831,3833,Gangwon,FC Seoul,1,2,1.78,0.95
+2019,2019-04-20 00:00:00,3834,3835,Daegu,Pohang Steelers,3,0,1.98,0.54
+2019,2019-04-20 02:00:00,3847,3842,Gyeongnam,Suwon Bluewings,3,3,1.41,1.71
+2019,2019-04-20 02:00:00,3839,3837,Sangju Sangmu,Jeonbuk Motors,0,3,1.14,1.22
+2019,2019-04-20 04:00:00,3836,3844,Ulsan,Seongnam,0,1,2.32,1.12
+2019,2019-04-21 00:00:00,3832,3831,Jeju United,Gangwon,2,4,3.39,1.51
+2019,2019-04-21 02:00:00,3833,3840,FC Seoul,Incheon United,0,0,1.69,1.56
+2019,2019-04-26 05:30:00,3835,3842,Pohang Steelers,Suwon Bluewings,1,0,1.87,1.96
+2019,2019-04-27 00:00:00,3832,3839,Jeju United,Sangju Sangmu,2,3,1.3,1.37
+2019,2019-04-27 02:00:00,3831,3834,Gangwon,Daegu,0,2,1.37,2.1
+2019,2019-04-27 04:00:00,3840,3844,Incheon United,Seongnam,0,0,1.12,1.19
+2019,2019-04-28 00:00:00,3837,3833,Jeonbuk Motors,FC Seoul,2,1,2.0,1.13
+2019,2019-04-28 02:00:00,3836,3847,Ulsan,Gyeongnam,2,0,1.16,1.55
+2019,2019-05-03 05:30:00,3834,3839,Daegu,Sangju Sangmu,1,0,1.12,1.09
+2019,2019-05-04 00:00:00,3835,3836,Pohang Steelers,Ulsan,2,1,1.37,2.06
+2019,2019-05-04 00:00:00,3832,3847,Jeju United,Gyeongnam,2,0,1.41,2.13
+2019,2019-05-04 02:00:00,3844,3837,Seongnam,Jeonbuk Motors,0,0,0.85,1.74
+2019,2019-05-05 02:00:00,3842,3833,Suwon Bluewings,FC Seoul,1,1,1.5,2.4
+2019,2019-05-05 02:00:00,3831,3840,Gangwon,Incheon United,1,0,1.92,2.14
+2019,2019-05-10 05:00:00,3839,3844,Sangju Sangmu,Seongnam,1,0,1.28,1.3
+2019,2019-05-11 03:00:00,3840,3835,Incheon United,Pohang Steelers,0,1,1.79,1.89
+2019,2019-05-11 05:00:00,3833,3834,FC Seoul,Daegu,2,1,1.46,1.88
+2019,2019-05-12 00:00:00,3832,3842,Jeju United,Suwon Bluewings,1,3,1.98,1.25
+2019,2019-05-12 03:00:00,3847,3831,Gyeongnam,Gangwon,0,2,1.07,2.79
+2019,2019-05-12 05:00:00,3836,3837,Ulsan,Jeonbuk Motors,2,1,1.44,2.06
+2019,2019-05-18 03:00:00,3842,3836,Suwon Bluewings,Ulsan,1,3,1.72,1.67
+2019,2019-05-18 05:00:00,3837,3832,Jeonbuk Motors,Jeju United,3,1,2.49,1.53
+2019,2019-05-19 00:00:00,3834,3840,Daegu,Incheon United,2,1,2.14,1.97
+2019,2019-05-19 01:00:00,3847,3835,Gyeongnam,Pohang Steelers,1,2,1.52,1.38
+2019,2019-05-19 03:00:00,3844,3831,Seongnam,Gangwon,1,2,1.43,2.33
+2019,2019-05-19 05:00:00,3839,3833,Sangju Sangmu,FC Seoul,1,3,1.45,1.21
+2019,2019-05-24 06:00:00,3840,3839,Incheon United,Sangju Sangmu,1,2,1.12,1.85
+2019,2019-05-25 03:00:00,3835,3833,Pohang Steelers,FC Seoul,0,0,1.72,1.92
+2019,2019-05-25 05:00:00,3831,3832,Gangwon,Jeju United,0,1,1.72,1.59
+2019,2019-05-25 05:00:00,3844,3836,Seongnam,Ulsan,1,4,1.86,1.9
+2019,2019-05-26 03:00:00,3834,3842,Daegu,Suwon Bluewings,0,0,1.28,1.55
+2019,2019-05-26 05:00:00,3837,3847,Jeonbuk Motors,Gyeongnam,4,1,2.23,1.11
+2019,2019-05-28 05:30:00,3832,3840,Jeju United,Incheon United,1,2,1.41,1.19
+2019,2019-05-28 05:30:00,3833,3844,FC Seoul,Seongnam,3,1,3.0,1.0
+2019,2019-05-29 05:00:00,3839,3847,Sangju Sangmu,Gyeongnam,1,1,1.04,1.34
+2019,2019-05-29 05:00:00,3831,3837,Gangwon,Jeonbuk Motors,2,3,2.0,3.0
+2019,2019-05-29 05:30:00,3836,3834,Ulsan,Daegu,0,0,1.55,1.82
+2019,2019-05-29 05:30:00,3842,3835,Suwon Bluewings,Pohang Steelers,3,0,1.52,1.06
+2019,2019-06-01 02:00:00,3832,3836,Jeju United,Ulsan,1,3,1.44,1.93
+2019,2019-06-01 05:00:00,3844,3840,Seongnam,Incheon United,0,0,2.06,0.98
+2019,2019-06-02 03:00:00,3837,3839,Jeonbuk Motors,Sangju Sangmu,2,0,1.96,1.57
+2019,2019-06-02 03:00:00,3847,3833,Gyeongnam,FC Seoul,1,2,1.62,1.33
+2019,2019-06-02 05:00:00,3835,3834,Pohang Steelers,Daegu,0,2,1.63,1.42
+2019,2019-06-02 05:00:00,3842,3831,Suwon Bluewings,Gangwon,1,1,1.56,1.69
+2019,2019-06-15 05:00:00,3836,3835,Ulsan,Pohang Steelers,1,0,1.58,1.51
+2019,2019-06-15 05:00:00,3840,3837,Incheon United,Jeonbuk Motors,0,1,0.0,1.0
+2019,2019-06-15 05:00:00,3844,3847,Seongnam,Gyeongnam,1,1,1.4,1.28
+2019,2019-06-15 05:30:00,3834,3831,Daegu,Gangwon,2,2,2.0,2.0
+2019,2019-06-16 05:00:00,3839,3832,Sangju Sangmu,Jeju United,4,2,1.23,1.84
+2019,2019-06-16 05:00:00,3833,3842,FC Seoul,Suwon Bluewings,4,2,1.78,1.99
+2019,2019-06-21 05:30:00,3832,3844,Jeju United,Seongnam,1,2,1.15,1.57
+2019,2019-06-22 05:00:00,3847,3840,Gyeongnam,Incheon United,1,1,1.0,1.0
+2019,2019-06-22 05:30:00,3834,3833,Daegu,FC Seoul,1,2,3.32,1.23
+2019,2019-06-23 05:00:00,3831,3835,Gangwon,Pohang Steelers,5,4,2.43,1.75
+2019,2019-06-23 05:00:00,3837,3842,Jeonbuk Motors,Suwon Bluewings,1,1,1.79,1.4
+2019,2019-06-28 05:30:00,3844,3839,Seongnam,Sangju Sangmu,1,0,0.93,1.43
+2019,2019-06-29 05:00:00,3842,3847,Suwon Bluewings,Gyeongnam,0,0,1.58,1.16
+2019,2019-06-29 05:00:00,3832,3834,Jeju United,Daegu,1,1,1.72,1.57
+2019,2019-06-30 05:00:00,3835,3837,Pohang Steelers,Jeonbuk Motors,1,1,1.77,1.89
+2019,2019-06-30 05:00:00,3840,3831,Incheon United,Gangwon,1,2,1.19,1.91
+2019,2019-06-30 05:00:00,3833,3836,FC Seoul,Ulsan,2,2,1.95,2.51
+2019,2019-07-06 05:00:00,3836,3840,Ulsan,Incheon United,1,0,2.24,1.37
+2019,2019-07-06 05:00:00,3839,3835,Sangju Sangmu,Pohang Steelers,1,1,0.71,1.6
+2019,2019-07-06 05:00:00,3833,3831,FC Seoul,Gangwon,2,2,1.03,1.72
+2019,2019-07-06 05:30:00,3834,3847,Daegu,Gyeongnam,1,1,2.13,1.61
+2019,2019-07-07 05:00:00,3837,3844,Jeonbuk Motors,Seongnam,3,1,1.44,0.86
+2019,2019-07-07 05:00:00,3842,3832,Suwon Bluewings,Jeju United,2,0,1.4,1.85
+2019,2019-07-09 05:00:00,3831,3839,Gangwon,Sangju Sangmu,4,0,1.54,2.33
+2019,2019-07-09 05:30:00,3847,3836,Gyeongnam,Ulsan,1,3,1.57,2.15
+2019,2019-07-10 05:30:00,3840,3842,Incheon United,Suwon Bluewings,2,3,1.97,1.47
+2019,2019-07-10 05:30:00,3834,3837,Daegu,Jeonbuk Motors,1,4,1.29,1.97
+2019,2019-07-10 05:30:00,3832,3833,Jeju United,FC Seoul,4,2,2.17,2.41
+2019,2019-07-10 05:30:00,3835,3844,Pohang Steelers,Seongnam,1,0,1.73,0.95
+2019,2019-07-12 05:00:00,3831,3847,Gangwon,Gyeongnam,2,1,1.93,0.87
+2019,2019-07-13 05:00:00,3832,3835,Jeju United,Pohang Steelers,1,1,1.74,1.55
+2019,2019-07-13 05:00:00,3840,3833,Incheon United,FC Seoul,0,2,1.28,1.2
+2019,2019-07-14 05:00:00,3837,3836,Jeonbuk Motors,Ulsan,1,1,2.16,1.43
+2019,2019-07-14 05:00:00,3839,3842,Sangju Sangmu,Suwon Bluewings,0,2,1.82,1.49
+2019,2019-07-14 05:00:00,3844,3834,Seongnam,Daegu,0,1,1.83,1.0
+2019,2019-07-20 05:00:00,3847,3832,Gyeongnam,Jeju United,2,2,1.75,1.95
+2019,2019-07-20 05:00:00,3835,3840,Pohang Steelers,Incheon United,1,2,1.82,1.83
+2019,2019-07-20 05:00:00,3833,3837,FC Seoul,Jeonbuk Motors,2,4,1.32,1.72
+2019,2019-07-21 05:00:00,3839,3834,Sangju Sangmu,Daegu,2,0,1.88,1.36
+2019,2019-07-21 05:00:00,3836,3831,Ulsan,Gangwon,2,1,1.31,2.23
+2019,2019-07-21 05:00:00,3842,3844,Suwon Bluewings,Seongnam,1,2,1.99,1.2
+2019,2019-07-24 05:30:00,3836,3839,Ulsan,Sangju Sangmu,2,2,1.51,0.98
+2019,2019-07-30 05:30:00,3836,3833,Ulsan,FC Seoul,3,1,1.48,1.18
+2019,2019-07-30 05:30:00,3834,3842,Daegu,Suwon Bluewings,0,2,2.63,1.33
+2019,2019-07-30 05:30:00,3840,3847,Incheon United,Gyeongnam,1,1,1.64,1.88
+2019,2019-07-30 05:30:00,3844,3839,Seongnam,Sangju Sangmu,1,0,1.0,0.0
+2019,2019-07-31 05:00:00,3837,3832,Jeonbuk Motors,Jeju United,2,2,2.27,1.62
+2019,2019-07-31 06:00:00,3831,3835,Gangwon,Pohang Steelers,2,1,1.49,1.91
+2019,2019-08-02 06:00:00,3833,3834,FC Seoul,Daegu,2,1,1.51,2.24
+2019,2019-08-03 05:30:00,3832,3836,Jeju United,Ulsan,0,5,1.9,2.04
+2019,2019-08-03 06:00:00,3839,3847,Sangju Sangmu,Gyeongnam,2,1,1.69,1.3
+2019,2019-08-04 06:00:00,3842,3835,Suwon Bluewings,Pohang Steelers,0,2,1.91,1.97
+2019,2019-08-04 06:00:00,3831,3837,Gangwon,Jeonbuk Motors,3,3,1.38,1.54
+2019,2019-08-04 06:00:00,3840,3844,Incheon United,Seongnam,0,1,2.53,1.61
+2019,2019-08-10 05:30:00,3847,3844,Gyeongnam,Seongnam,2,0,1.39,1.68
+2019,2019-08-10 05:30:00,3832,3839,Jeju United,Sangju Sangmu,1,4,1.86,1.6
+2019,2019-08-10 06:00:00,3842,3840,Suwon Bluewings,Incheon United,0,1,0.15,0.4
+2019,2019-08-11 05:30:00,3836,3834,Ulsan,Daegu,1,1,2.08,1.41
+2019,2019-08-11 06:00:00,3835,3837,Pohang Steelers,Jeonbuk Motors,1,2,2.12,2.22
+2019,2019-08-11 06:00:00,3833,3831,FC Seoul,Gangwon,0,0,1.25,1.43
+2019,2019-08-16 05:00:00,3837,3836,Jeonbuk Motors,Ulsan,3,0,2.49,1.03
+2019,2019-08-17 05:00:00,3844,3833,Seongnam,FC Seoul,1,0,1.78,1.52
+2019,2019-08-17 05:00:00,3831,3842,Gangwon,Suwon Bluewings,1,3,1.0,3.0
+2019,2019-08-17 05:30:00,3834,3847,Daegu,Gyeongnam,1,0,1.77,1.12
+2019,2019-08-18 05:00:00,3840,3832,Incheon United,Jeju United,0,0,2.17,2.12
+2019,2019-08-18 06:00:00,3839,3835,Sangju Sangmu,Pohang Steelers,2,1,0.94,2.03
+2019,2019-08-23 05:30:00,3847,3842,Gyeongnam,Suwon Bluewings,2,0,1.6,2.67
+2019,2019-08-24 05:00:00,3837,3844,Jeonbuk Motors,Seongnam,1,1,2.22,0.94
+2019,2019-08-24 05:00:00,3836,3839,Ulsan,Sangju Sangmu,5,1,2.1,1.18
+2019,2019-08-24 05:30:00,3834,3831,Daegu,Gangwon,3,1,1.1,2.84
+2019,2019-08-25 05:00:00,3835,3840,Pohang Steelers,Incheon United,5,3,2.36,1.56
+2019,2019-08-25 05:00:00,3832,3833,Jeju United,FC Seoul,1,1,2.02,1.24
+2019,2019-08-30 06:00:00,3842,3832,Suwon Bluewings,Jeju United,1,0,1.39,1.58
+2019,2019-08-31 05:00:00,3835,3844,Pohang Steelers,Seongnam,1,0,1.32,1.34
+2019,2019-09-01 05:00:00,3839,3834,Sangju Sangmu,Daegu,1,1,1.46,1.65
+2019,2019-09-01 05:00:00,3831,3847,Gangwon,Gyeongnam,2,0,2.28,0.72
+2019,2019-09-01 05:00:00,3840,3836,Incheon United,Ulsan,3,3,1.71,1.94
+2019,2019-09-01 05:00:00,3833,3837,FC Seoul,Jeonbuk Motors,0,2,0.86,1.73
+2019,2019-09-14 03:00:00,3847,3836,Gyeongnam,Ulsan,3,3,2.05,2.0
+2019,2019-09-14 05:00:00,3837,3839,Jeonbuk Motors,Sangju Sangmu,2,1,1.67,1.05
+2019,2019-09-14 05:00:00,3834,3835,Daegu,Pohang Steelers,0,0,1.55,1.1
+2019,2019-09-15 03:00:00,3833,3840,FC Seoul,Incheon United,3,1,2.19,1.06
+2019,2019-09-15 03:00:00,3831,3832,Gangwon,Jeju United,2,0,1.56,1.88
+2019,2019-09-15 05:00:00,3844,3842,Seongnam,Suwon Bluewings,0,0,1.34,1.33
+2019,2019-09-21 03:00:00,3835,3833,Pohang Steelers,FC Seoul,2,1,2.09,1.11
+2019,2019-09-21 03:00:00,3832,3844,Jeju United,Seongnam,3,0,1.67,1.36
+2019,2019-09-21 05:00:00,3842,3839,Suwon Bluewings,Sangju Sangmu,1,1,2.1,0.93
+2019,2019-09-22 03:00:00,3840,3834,Incheon United,Daegu,1,1,0.99,1.76
+2019,2019-09-24 05:30:00,3835,3832,Pohang Steelers,Jeju United,2,1,2.09,1.85
+2019,2019-09-25 05:00:00,3837,3834,Jeonbuk Motors,Daegu,0,2,2.7,1.46
+2019,2019-09-25 05:00:00,3839,3840,Sangju Sangmu,Incheon United,2,3,1.99,1.44
+2019,2019-09-25 05:30:00,3844,3831,Seongnam,Gangwon,1,0,1.58,1.33
+2019,2019-09-25 05:30:00,3842,3836,Suwon Bluewings,Ulsan,0,2,1.73,1.44
+2019,2019-09-25 05:30:00,3833,3847,FC Seoul,Gyeongnam,1,1,2.8,1.47
+2019,2019-09-28 00:00:00,3836,3844,Ulsan,Seongnam,1,0,1.34,2.14
+2019,2019-09-28 00:00:00,3834,3832,Daegu,Jeju United,2,2,2.15,0.69
+2019,2019-09-28 02:00:00,3837,3842,Jeonbuk Motors,Suwon Bluewings,2,0,1.26,1.03
+2019,2019-09-29 00:00:00,3831,3840,Gangwon,Incheon United,2,2,1.42,1.88
+2019,2019-09-29 01:00:00,3833,3839,FC Seoul,Sangju Sangmu,1,2,1.62,1.04
+2019,2019-09-29 02:00:00,3847,3835,Gyeongnam,Pohang Steelers,0,1,0.86,1.76
+2019,2019-10-02 05:30:00,3836,3831,Ulsan,Gangwon,2,0,1.33,2.32
+2019,2019-10-03 02:00:00,3847,3837,Gyeongnam,Jeonbuk Motors,1,1,1.2,1.9
+2019,2019-10-06 00:00:00,3844,3834,Seongnam,Daegu,1,2,1.06,2.1
+2019,2019-10-06 00:00:00,3840,3837,Incheon United,Jeonbuk Motors,0,0,1.29,2.02
+2019,2019-10-06 00:00:00,3842,3833,Suwon Bluewings,FC Seoul,1,2,1.44,1.09
+2019,2019-10-06 00:00:00,3832,3847,Jeju United,Gyeongnam,1,2,3.02,1.66
+2019,2019-10-06 00:00:00,3835,3836,Pohang Steelers,Ulsan,2,1,2.33,1.34
+2019,2019-10-06 00:00:00,3839,3831,Sangju Sangmu,Gangwon,2,1,2.04,1.24
+2019,2019-10-19 00:00:00,3842,3847,Suwon Bluewings,Gyeongnam,2,1,1.62,1.32
+2019,2019-10-19 02:00:00,3844,3840,Seongnam,Incheon United,0,1,2.43,0.56
+2019,2019-10-19 04:00:00,3839,3832,Sangju Sangmu,Jeju United,2,1,2.38,2.19
+2019,2019-10-20 00:00:00,3831,3833,Gangwon,FC Seoul,3,2,1.86,1.19
+2019,2019-10-20 02:00:00,3837,3835,Jeonbuk Motors,Pohang Steelers,3,0,2.13,1.48
+2019,2019-10-20 04:00:00,3834,3836,Daegu,Ulsan,1,2,1.0,2.0
+2019,2019-10-26 00:00:00,3835,3834,Pohang Steelers,Daegu,0,0,1.33,1.74
+2019,2019-10-26 02:00:00,3837,3833,Jeonbuk Motors,FC Seoul,1,1,2.52,1.14
+2019,2019-10-26 04:00:00,3836,3831,Ulsan,Gangwon,2,1,1.21,1.58
+2019,2019-10-27 00:00:00,3839,3844,Sangju Sangmu,Seongnam,0,1,1.01,1.68
+2019,2019-10-27 01:00:00,3847,3832,Gyeongnam,Jeju United,2,2,1.59,1.89
+2019,2019-10-27 02:00:00,3840,3842,Incheon United,Suwon Bluewings,1,1,1.56,1.81
+2019,2019-11-02 00:00:00,3842,3844,Suwon Bluewings,Seongnam,0,0,2.37,1.17
+2019,2019-11-02 02:00:00,3832,3840,Jeju United,Incheon United,2,0,2.24,1.57
+2019,2019-11-02 04:00:00,3847,3839,Gyeongnam,Sangju Sangmu,0,1,1.03,1.01
+2019,2019-11-03 00:00:00,3835,3831,Pohang Steelers,Gangwon,2,2,1.78,1.22
+2019,2019-11-03 01:00:00,3833,3836,FC Seoul,Ulsan,0,1,2.11,1.39
+2019,2019-11-03 03:00:00,3834,3837,Daegu,Jeonbuk Motors,0,2,1.55,1.37
+2019,2019-11-22 23:00:00,3833,3835,FC Seoul,Pohang Steelers,0,3,1.79,1.57
+2019,2019-11-22 23:00:00,3831,3834,Gangwon,Daegu,2,4,2.08,2.03
+2019,2019-11-23 00:00:00,3836,3837,Ulsan,Jeonbuk Motors,1,1,0.91,2.02
+2019,2019-11-23 23:00:00,3844,3847,Seongnam,Gyeongnam,1,2,1.59,1.45
+2019,2019-11-23 23:00:00,3840,3839,Incheon United,Sangju Sangmu,2,0,1.94,1.11
+2019,2019-11-24 01:00:00,3832,3842,Jeju United,Suwon Bluewings,2,4,1.58,2.53
+2019,2019-11-30 00:00:00,3847,3840,Gyeongnam,Incheon United,0,0,1.68,1.27
+2019,2019-11-30 00:00:00,3839,3842,Sangju Sangmu,Suwon Bluewings,4,1,2.56,2.14
+2019,2019-11-30 00:00:00,3844,3832,Seongnam,Jeju United,3,1,1.89,1.07
+2019,2019-12-01 00:00:00,3836,3835,Ulsan,Pohang Steelers,1,4,1.87,2.11
+2019,2019-12-01 00:00:00,3837,3831,Jeonbuk Motors,Gangwon,1,0,1.42,1.24
+2019,2019-12-01 00:00:00,3834,3833,Daegu,FC Seoul,0,0,1.19,1.53
+2020,2020-05-08 05:00:00,3837,3842,Jeonbuk Motors,Suwon Bluewings,1,0,2.11,0.92
+2020,2020-05-09 00:00:00,3836,3839,Ulsan,Sangju Sangmu,4,0,1.82,1.61
+2020,2020-05-09 02:30:00,3840,3834,Incheon United,Daegu,0,0,0.84,1.68
+2020,2020-05-09 05:00:00,3841,3844,Gwangju,Seongnam,0,2,1.61,1.19
+2020,2020-05-10 00:00:00,3835,3846,Pohang Steelers,Busan I'Park,2,0,1.53,1.19
+2020,2020-05-10 02:30:00,3831,3833,Gangwon,FC Seoul,3,1,1.45,1.06
+2020,2020-05-16 00:00:00,3839,3831,Sangju Sangmu,Gangwon,2,0,1.71,1.34
+2020,2020-05-16 02:30:00,3834,3835,Daegu,Pohang Steelers,1,1,1.86,1.57
+2020,2020-05-16 05:00:00,3846,3837,Busan I'Park,Jeonbuk Motors,1,2,1.33,2.28
+2020,2020-05-17 02:30:00,3842,3836,Suwon Bluewings,Ulsan,2,3,1.34,1.76
+2020,2020-05-17 05:00:00,3833,3841,FC Seoul,Gwangju,1,0,1.36,1.0
+2020,2020-05-17 05:00:00,3844,3840,Seongnam,Incheon United,0,0,1.35,0.92
+2020,2020-05-22 05:30:00,3835,3833,Pohang Steelers,FC Seoul,1,2,1.33,1.39
+2020,2020-05-23 02:30:00,3831,3844,Gangwon,Seongnam,1,1,1.69,2.33
+2020,2020-05-23 02:30:00,3842,3840,Suwon Bluewings,Incheon United,1,0,1.52,1.04
+2020,2020-05-23 05:00:00,3839,3841,Sangju Sangmu,Gwangju,1,0,1.34,0.78
+2020,2020-05-24 02:30:00,3837,3834,Jeonbuk Motors,Daegu,2,0,1.76,0.5
+2020,2020-05-24 05:00:00,3836,3846,Ulsan,Busan I'Park,1,1,1.95,1.14
+2020,2020-05-29 05:30:00,3834,3839,Daegu,Sangju Sangmu,1,1,1.53,0.93
+2020,2020-05-30 02:30:00,3831,3837,Gangwon,Jeonbuk Motors,1,0,1.09,1.47
+2020,2020-05-30 05:00:00,3841,3836,Gwangju,Ulsan,1,1,1.19,2.04
+2020,2020-05-30 05:00:00,3846,3842,Busan I'Park,Suwon Bluewings,0,0,1.3,2.08
+2020,2020-05-31 02:30:00,3833,3844,FC Seoul,Seongnam,0,1,1.46,1.19
+2020,2020-05-31 05:00:00,3840,3835,Incheon United,Pohang Steelers,1,4,1.19,2.01
+2020,2020-06-05 05:30:00,3840,3831,Incheon United,Gangwon,1,2,1.05,1.81
+2020,2020-06-06 02:30:00,3833,3837,FC Seoul,Jeonbuk Motors,1,4,1.04,2.23
+2020,2020-06-06 05:00:00,3835,3836,Pohang Steelers,Ulsan,0,4,1.33,1.54
+2020,2020-06-06 05:00:00,3846,3839,Busan I'Park,Sangju Sangmu,1,1,0.85,1.35
+2020,2020-06-07 05:00:00,3842,3841,Suwon Bluewings,Gwangju,0,1,2.01,1.31
+2020,2020-06-07 05:00:00,3844,3834,Seongnam,Daegu,1,2,0.95,2.11
+2020,2020-06-13 02:30:00,3836,3844,Ulsan,Seongnam,1,0,1.2,0.96
+2020,2020-06-13 05:00:00,3839,3835,Sangju Sangmu,Pohang Steelers,2,4,1.17,2.62
+2020,2020-06-13 05:00:00,3842,3831,Suwon Bluewings,Gangwon,2,2,1.06,1.54
+2020,2020-06-13 05:00:00,3837,3840,Jeonbuk Motors,Incheon United,1,0,2.24,1.24
+2020,2020-06-14 05:00:00,3841,3846,Gwangju,Busan I'Park,3,1,1.8,1.76
+2020,2020-06-14 05:00:00,3834,3833,Daegu,FC Seoul,6,0,1.85,1.5
+2020,2020-06-16 05:00:00,3831,3836,Gangwon,Ulsan,0,3,1.74,1.47
+2020,2020-06-16 05:30:00,3835,3837,Pohang Steelers,Jeonbuk Motors,1,2,0.94,1.17
+2020,2020-06-16 05:30:00,3844,3842,Seongnam,Suwon Bluewings,0,2,0.91,1.26
+2020,2020-06-17 04:00:00,3841,3840,Gwangju,Incheon United,2,1,1.32,1.96
+2020,2020-06-17 05:00:00,3839,3833,Sangju Sangmu,FC Seoul,1,0,1.42,0.86
+2020,2020-06-17 06:00:00,3846,3834,Busan I'Park,Daegu,2,2,1.42,1.57
+2020,2020-06-20 05:00:00,3835,3831,Pohang Steelers,Gangwon,2,0,1.4,1.01
+2020,2020-06-20 05:00:00,3844,3839,Seongnam,Sangju Sangmu,0,1,0.68,1.37
+2020,2020-06-20 05:00:00,3833,3836,FC Seoul,Ulsan,0,2,1.18,2.19
+2020,2020-06-21 04:00:00,3837,3841,Jeonbuk Motors,Gwangju,1,0,2.31,1.15
+2020,2020-06-21 04:00:00,3840,3846,Incheon United,Busan I'Park,0,1,1.26,1.21
+2020,2020-06-21 06:00:00,3834,3842,Daegu,Suwon Bluewings,3,1,1.83,1.46
+2020,2020-06-26 05:00:00,3841,3835,Gwangju,Pohang Steelers,0,2,1.86,1.66
+2020,2020-06-27 05:00:00,3833,3840,FC Seoul,Incheon United,1,0,1.79,0.88
+2020,2020-06-27 05:00:00,3846,3844,Busan I'Park,Seongnam,1,1,2.42,0.56
+2020,2020-06-27 06:00:00,3834,3831,Daegu,Gangwon,2,1,1.3,1.96
+2020,2020-06-28 04:00:00,3836,3837,Ulsan,Jeonbuk Motors,0,2,0.85,2.64
+2020,2020-06-28 05:00:00,3842,3839,Suwon Bluewings,Sangju Sangmu,0,1,1.53,1.33
+2020,2020-07-04 04:00:00,3836,3840,Ulsan,Incheon United,4,1,2.57,0.98
+2020,2020-07-04 05:00:00,3831,3846,Gangwon,Busan I'Park,2,4,1.78,1.6
+2020,2020-07-04 06:00:00,3842,3833,Suwon Bluewings,FC Seoul,3,3,1.79,1.93
+2020,2020-07-05 05:00:00,3839,3837,Sangju Sangmu,Jeonbuk Motors,1,0,1.47,1.46
+2020,2020-07-05 05:00:00,3844,3835,Seongnam,Pohang Steelers,0,4,0.74,1.13
+2020,2020-07-05 05:00:00,3841,3834,Gwangju,Daegu,2,4,0.94,2.19
+2020,2020-07-10 05:30:00,3846,3833,Busan I'Park,FC Seoul,2,0,1.69,1.76
+2020,2020-07-11 05:00:00,3837,3844,Jeonbuk Motors,Seongnam,2,2,2.69,0.95
+2020,2020-07-11 05:00:00,3835,3842,Pohang Steelers,Suwon Bluewings,1,1,1.12,1.3
+2020,2020-07-11 05:00:00,3840,3839,Incheon United,Sangju Sangmu,1,1,0.87,1.81
+2020,2020-07-12 05:00:00,3831,3841,Gangwon,Gwangju,4,1,1.49,1.16
+2020,2020-07-12 05:00:00,3834,3836,Daegu,Ulsan,1,3,1.19,1.88
+2020,2020-07-18 04:00:00,3846,3841,Busan I'Park,Gwangju,0,0,0.74,1.29
+2020,2020-07-18 05:00:00,3839,3834,Sangju Sangmu,Daegu,2,0,1.88,1.68
+2020,2020-07-18 06:00:00,3833,3835,FC Seoul,Pohang Steelers,1,3,1.28,2.13
+2020,2020-07-19 05:00:00,3836,3831,Ulsan,Gangwon,1,0,1.19,1.28
+2020,2020-07-19 05:00:00,3842,3844,Suwon Bluewings,Seongnam,0,1,0.87,1.93
+2020,2020-07-19 05:00:00,3840,3837,Incheon United,Jeonbuk Motors,1,1,1.0,1.0
+2020,2020-07-25 05:00:00,3839,3836,Sangju Sangmu,Ulsan,1,5,1.92,1.54
+2020,2020-07-25 05:00:00,3844,3831,Seongnam,Gangwon,0,0,1.47,0.85
+2020,2020-07-25 06:00:00,3841,3842,Gwangju,Suwon Bluewings,0,1,1.37,1.3
+2020,2020-07-26 05:00:00,3837,3833,Jeonbuk Motors,FC Seoul,3,0,2.14,1.18
+2020,2020-07-26 05:00:00,3835,3840,Pohang Steelers,Incheon United,1,1,1.48,1.25
+2020,2020-07-26 05:00:00,3834,3846,Daegu,Busan I'Park,3,0,1.66,1.02
+2020,2020-08-01 05:00:00,3837,3835,Jeonbuk Motors,Pohang Steelers,2,1,2.94,1.31
+2020,2020-08-01 05:00:00,3844,3833,Seongnam,FC Seoul,1,2,1.85,0.83
+2020,2020-08-01 06:00:00,3840,3841,Incheon United,Gwangju,1,3,1.93,1.58
+2020,2020-08-02 05:00:00,3831,3839,Gangwon,Sangju Sangmu,2,2,1.71,1.71
+2020,2020-08-02 05:00:00,3842,3834,Suwon Bluewings,Daegu,0,1,1.87,0.84
+2020,2020-08-02 05:00:00,3846,3836,Busan I'Park,Ulsan,1,2,1.26,0.91
+2020,2020-08-07 06:00:00,3833,3831,FC Seoul,Gangwon,2,0,1.62,1.86
+2020,2020-08-08 05:00:00,3836,3842,Ulsan,Suwon Bluewings,0,0,1.88,0.98
+2020,2020-08-08 05:00:00,3835,3841,Pohang Steelers,Gwangju,1,1,1.78,1.23
+2020,2020-08-08 06:00:00,3834,3837,Daegu,Jeonbuk Motors,0,2,1.22,1.74
+2020,2020-08-09 05:00:00,3839,3846,Sangju Sangmu,Busan I'Park,2,0,1.17,0.85
+2020,2020-08-09 05:00:00,3840,3844,Incheon United,Seongnam,0,2,1.74,0.99
+2020,2020-08-14 05:30:00,3844,3846,Seongnam,Busan I'Park,1,1,1.86,1.14
+2020,2020-08-15 05:00:00,3836,3835,Ulsan,Pohang Steelers,2,0,1.42,1.33
+2020,2020-08-15 05:00:00,3833,3839,FC Seoul,Sangju Sangmu,2,1,1.51,1.98
+2020,2020-08-15 05:00:00,3842,3837,Suwon Bluewings,Jeonbuk Motors,1,3,1.37,1.36
+2020,2020-08-16 05:00:00,3841,3831,Gwangju,Gangwon,2,2,1.53,1.37
+2020,2020-08-16 05:00:00,3834,3840,Daegu,Incheon United,0,1,2.56,0.96
+2020,2020-08-22 03:30:00,3840,3842,Incheon United,Suwon Bluewings,1,0,1.44,1.32
+2020,2020-08-22 05:00:00,3841,3833,Gwangju,FC Seoul,0,0,2.08,0.85
+2020,2020-08-22 05:00:00,3846,3835,Busan I'Park,Pohang Steelers,2,1,1.5,1.78
+2020,2020-08-22 06:00:00,3831,3834,Gangwon,Daegu,0,0,1.14,0.69
+2020,2020-08-23 04:00:00,3837,3839,Jeonbuk Motors,Sangju Sangmu,2,1,1.72,1.13
+2020,2020-08-23 06:00:00,3844,3836,Seongnam,Ulsan,1,2,1.31,1.55
+2020,2020-08-29 04:00:00,3839,3840,Sangju Sangmu,Incheon United,3,1,1.48,1.27
+2020,2020-08-29 06:00:00,3842,3846,Suwon Bluewings,Busan I'Park,3,1,2.57,1.04
+2020,2020-08-30 03:30:00,3836,3833,Ulsan,FC Seoul,3,0,1.31,0.8
+2020,2020-08-30 05:00:00,3837,3831,Jeonbuk Motors,Gangwon,1,2,1.68,1.81
+2020,2020-08-30 05:00:00,3835,3844,Pohang Steelers,Seongnam,2,1,1.65,0.87
+2020,2020-08-30 06:00:00,3834,3841,Daegu,Gwangju,4,6,2.41,1.65
+2020,2020-09-04 05:00:00,3839,3842,Sangju Sangmu,Suwon Bluewings,1,0,1.19,1.72
+2020,2020-09-05 03:30:00,3844,3837,Seongnam,Jeonbuk Motors,2,0,0.98,1.15
+2020,2020-09-05 05:00:00,3833,3846,FC Seoul,Busan I'Park,1,1,1.44,1.25
+2020,2020-09-05 06:00:00,3835,3834,Pohang Steelers,Daegu,3,2,2.17,1.53
+2020,2020-09-06 03:30:00,3831,3840,Gangwon,Incheon United,2,3,1.96,1.66
+2020,2020-09-06 05:00:00,3836,3841,Ulsan,Gwangju,1,1,2.26,1.01
+2020,2020-09-12 02:00:00,3841,3837,Gwangju,Jeonbuk Motors,3,3,2.17,1.77
+2020,2020-09-12 05:00:00,3836,3834,Ulsan,Daegu,1,1,1.27,2.27
+2020,2020-09-12 05:00:00,3839,3844,Sangju Sangmu,Seongnam,0,0,1.18,1.03
+2020,2020-09-13 03:30:00,3833,3842,FC Seoul,Suwon Bluewings,2,1,0.7,1.11
+2020,2020-09-13 05:00:00,3831,3835,Gangwon,Pohang Steelers,0,3,1.84,1.41
+2020,2020-09-13 05:00:00,3846,3840,Busan I'Park,Incheon United,0,0,1.56,1.05
+2020,2020-09-15 05:00:00,3837,3836,Jeonbuk Motors,Ulsan,2,1,1.52,2.01
+2020,2020-09-15 06:00:00,3841,3839,Gwangju,Sangju Sangmu,0,1,1.32,1.32
+2020,2020-09-16 04:00:00,3846,3831,Busan I'Park,Gangwon,1,2,1.21,2.63
+2020,2020-09-16 05:00:00,3842,3835,Suwon Bluewings,Pohang Steelers,0,0,1.51,0.94
+2020,2020-09-16 05:00:00,3840,3833,Incheon United,FC Seoul,1,0,0.94,1.36
+2020,2020-09-16 06:00:00,3834,3844,Daegu,Seongnam,3,2,1.84,1.67
+2020,2020-09-20 01:00:00,3831,3842,Gangwon,Suwon Bluewings,1,2,0.95,2.53
+2020,2020-09-20 01:00:00,3844,3841,Seongnam,Gwangju,0,2,2.54,1.68
+2020,2020-09-20 01:00:00,3833,3834,FC Seoul,Daegu,0,0,0.75,1.11
+2020,2020-09-20 01:00:00,3840,3836,Incheon United,Ulsan,0,1,0.01,0.28
+2020,2020-09-20 01:00:00,3835,3839,Pohang Steelers,Sangju Sangmu,4,3,1.8,2.95
+2020,2020-09-20 01:00:00,3837,3846,Jeonbuk Motors,Busan I'Park,2,0,1.75,1.34
+2020,2020-09-26 00:00:00,3842,3833,Suwon Bluewings,FC Seoul,3,1,1.67,1.01
+2020,2020-09-27 00:00:00,3844,3840,Seongnam,Incheon United,0,6,0.97,2.38
+2020,2020-09-27 00:00:00,3846,3831,Busan I'Park,Gangwon,0,2,0.73,1.38
+2020,2020-09-27 02:30:00,3839,3837,Sangju Sangmu,Jeonbuk Motors,0,1,0.57,1.18
+2020,2020-09-27 02:30:00,3834,3836,Daegu,Ulsan,2,2,1.74,1.25
+2020,2020-09-27 05:00:00,3835,3841,Pohang Steelers,Gwangju,5,3,1.99,0.9
+2020,2020-10-02 03:00:00,3836,3839,Ulsan,Sangju Sangmu,4,1,1.87,1.66
+2020,2020-10-03 02:30:00,3841,3834,Gwangju,Daegu,0,1,1.01,1.61
+2020,2020-10-03 05:00:00,3837,3835,Jeonbuk Motors,Pohang Steelers,0,1,2.27,1.13
+2020,2020-10-04 00:00:00,3831,3844,Gangwon,Seongnam,2,1,2.47,0.87
+2020,2020-10-04 02:30:00,3833,3846,FC Seoul,Busan I'Park,1,2,3.29,1.68
+2020,2020-10-04 05:00:00,3840,3842,Incheon United,Suwon Bluewings,0,1,1.1,1.44
+2020,2020-10-16 05:00:00,3831,3840,Gangwon,Incheon United,3,1,1.96,1.59
+2020,2020-10-17 00:00:00,3839,3834,Sangju Sangmu,Daegu,2,1,1.52,1.54
+2020,2020-10-17 02:30:00,3844,3833,Seongnam,FC Seoul,0,1,1.44,1.2
+2020,2020-10-18 00:00:00,3846,3842,Busan I'Park,Suwon Bluewings,0,0,1.04,1.38
+2020,2020-10-18 02:30:00,3837,3841,Jeonbuk Motors,Gwangju,4,1,2.32,0.95
+2020,2020-10-18 05:00:00,3835,3836,Pohang Steelers,Ulsan,4,0,2.67,1.65
+2020,2020-10-23 05:00:00,3842,3844,Suwon Bluewings,Seongnam,1,2,1.37,0.91
+2020,2020-10-24 00:00:00,3833,3831,FC Seoul,Gangwon,1,1,1.57,1.49
+2020,2020-10-24 02:30:00,3840,3846,Incheon United,Busan I'Park,2,1,1.94,1.6
+2020,2020-10-25 00:00:00,3834,3835,Daegu,Pohang Steelers,3,2,1.62,1.34
+2020,2020-10-25 00:00:00,3841,3839,Gwangju,Sangju Sangmu,0,1,1.43,1.76
+2020,2020-10-25 02:30:00,3836,3837,Ulsan,Jeonbuk Motors,0,1,1.12,1.0
+2020,2020-10-31 01:00:00,3833,3840,FC Seoul,Incheon United,0,1,2.31,2.06
+2020,2020-10-31 01:00:00,3831,3842,Gangwon,Suwon Bluewings,1,2,2.08,1.03
+2020,2020-10-31 01:00:00,3844,3846,Seongnam,Busan I'Park,2,1,2.03,1.16
+2020,2020-11-01 01:00:00,3835,3839,Pohang Steelers,Sangju Sangmu,3,1,2.03,1.41
+2020,2020-11-01 01:00:00,3836,3841,Ulsan,Gwangju,3,0,2.03,0.99
+2020,2020-11-01 01:00:00,3837,3834,Jeonbuk Motors,Daegu,2,0,2.11,1.37
+2021,2021-02-26 23:00:00,3837,3833,Jeonbuk Motors,FC Seoul,2,0,1.51,1.69
+2021,2021-02-27 01:30:00,3834,3843,Daegu,Suwon,1,1,1.32,1.18
+2021,2021-02-27 23:00:00,3835,3840,Pohang Steelers,Incheon United,2,1,1.39,0.55
+2021,2021-02-28 01:30:00,3842,3841,Suwon Bluewings,Gwangju,1,0,1.62,0.17
+2021,2021-02-28 23:00:00,3836,3831,Ulsan,Gangwon,5,0,1.95,1.05
+2021,2021-03-01 01:30:00,3844,3832,Seongnam,Jeju United,0,0,1.42,1.52
+2021,2021-03-05 23:00:00,3832,3837,Jeju United,Jeonbuk Motors,1,1,1.24,1.33
+2021,2021-03-06 01:30:00,3841,3836,Gwangju,Ulsan,0,1,1.88,2.12
+2021,2021-03-06 01:30:00,3840,3834,Incheon United,Daegu,2,1,1.33,1.29
+2021,2021-03-06 04:00:00,3831,3835,Gangwon,Pohang Steelers,1,3,1.22,1.91
+2021,2021-03-06 23:00:00,3842,3844,Suwon Bluewings,Seongnam,1,0,1.23,0.62
+2021,2021-03-07 01:30:00,3833,3843,FC Seoul,Suwon,3,0,1.52,0.87
+2021,2021-03-09 04:00:00,3836,3840,Ulsan,Incheon United,3,1,1.57,1.12
+2021,2021-03-09 04:00:00,3837,3831,Jeonbuk Motors,Gangwon,2,1,1.87,1.29
+2021,2021-03-09 04:30:00,3832,3835,Jeju United,Pohang Steelers,1,0,1.32,1.05
+2021,2021-03-10 04:00:00,3834,3841,Daegu,Gwangju,1,4,1.87,1.6
+2021,2021-03-10 04:00:00,3844,3833,Seongnam,FC Seoul,1,0,1.68,1.59
+2021,2021-03-10 04:30:00,3843,3842,Suwon,Suwon Bluewings,0,0,2.27,1.71
+2021,2021-03-12 23:00:00,3834,3832,Daegu,Jeju United,1,1,1.34,1.4
+2021,2021-03-12 23:00:00,3841,3837,Gwangju,Jeonbuk Motors,0,2,1.42,1.34
+2021,2021-03-13 01:30:00,3835,3836,Pohang Steelers,Ulsan,1,1,1.02,1.09
+2021,2021-03-13 04:00:00,3840,3833,Incheon United,FC Seoul,0,1,0.76,1.17
+2021,2021-03-13 23:00:00,3843,3844,Suwon,Seongnam,1,2,1.38,1.17
+2021,2021-03-14 01:30:00,3842,3831,Suwon Bluewings,Gangwon,1,1,0.81,1.24
+2021,2021-03-16 05:00:00,3837,3834,Jeonbuk Motors,Daegu,3,2,1.91,1.63
+2021,2021-03-16 05:30:00,3836,3832,Ulsan,Jeju United,0,0,1.3,1.32
+2021,2021-03-17 05:00:00,3831,3844,Gangwon,Seongnam,0,0,1.94,0.88
+2021,2021-03-17 05:00:00,3835,3842,Pohang Steelers,Suwon Bluewings,0,3,1.6,1.36
+2021,2021-03-17 05:30:00,3840,3843,Incheon United,Suwon,4,1,1.93,1.45
+2021,2021-03-17 05:30:00,3833,3841,FC Seoul,Gwangju,2,1,2.28,1.2
+2021,2021-03-20 00:00:00,3832,3841,Jeju United,Gwangju,1,1,1.54,0.85
+2021,2021-03-20 02:30:00,3837,3843,Jeonbuk Motors,Suwon,1,1,1.33,1.83
+2021,2021-03-21 00:00:00,3831,3840,Gangwon,Incheon United,2,0,1.36,1.02
+2021,2021-03-21 00:00:00,3844,3835,Seongnam,Pohang Steelers,2,1,1.97,1.47
+2021,2021-03-21 02:30:00,3842,3833,Suwon Bluewings,FC Seoul,1,2,1.57,1.41
+2021,2021-03-21 05:00:00,3834,3836,Daegu,Ulsan,2,1,1.47,2.02
+2021,2021-04-02 05:30:00,3835,3834,Pohang Steelers,Daegu,0,0,1.15,1.34
+2021,2021-04-03 00:00:00,3842,3837,Suwon Bluewings,Jeonbuk Motors,1,3,1.82,1.55
+2021,2021-04-03 02:30:00,3844,3836,Seongnam,Ulsan,0,1,0.52,0.91
+2021,2021-04-03 05:00:00,3833,3831,FC Seoul,Gangwon,0,1,0.99,0.83
+2021,2021-04-04 00:00:00,3843,3832,Suwon,Jeju United,2,1,1.04,1.6
+2021,2021-04-04 02:30:00,3841,3840,Gwangju,Incheon United,2,1,2.89,0.96
+2021,2021-04-06 05:00:00,3835,3837,Pohang Steelers,Jeonbuk Motors,1,3,1.57,1.35
+2021,2021-04-06 05:30:00,3834,3844,Daegu,Seongnam,0,0,1.65,1.54
+2021,2021-04-07 05:00:00,3836,3833,Ulsan,FC Seoul,3,2,2.94,1.35
+2021,2021-04-07 05:30:00,3840,3842,Incheon United,Suwon Bluewings,0,0,1.51,1.97
+2021,2021-04-07 05:30:00,3832,3831,Jeju United,Gangwon,1,1,1.9,0.9
+2021,2021-04-07 05:30:00,3841,3843,Gwangju,Suwon,2,0,1.86,1.31
+2021,2021-04-10 00:00:00,3831,3834,Gangwon,Daegu,3,0,1.99,1.47
+2021,2021-04-10 02:30:00,3833,3835,FC Seoul,Pohang Steelers,1,2,1.47,1.82
+2021,2021-04-10 05:00:00,3844,3841,Seongnam,Gwangju,2,0,1.38,1.15
+2021,2021-04-11 02:00:00,3832,3842,Jeju United,Suwon Bluewings,2,1,1.77,1.87
+2021,2021-04-11 02:30:00,3843,3836,Suwon,Ulsan,0,1,1.84,1.39
+2021,2021-04-11 05:00:00,3837,3840,Jeonbuk Motors,Incheon United,5,0,2.23,1.6
+2021,2021-04-17 00:00:00,3843,3831,Suwon,Gangwon,2,1,1.99,1.17
+2021,2021-04-17 02:30:00,3840,3832,Incheon United,Jeju United,0,3,0.82,2.3
+2021,2021-04-17 02:30:00,3833,3834,FC Seoul,Daegu,0,1,2.14,1.32
+2021,2021-04-17 05:00:00,3841,3835,Gwangju,Pohang Steelers,0,1,2.14,0.7
+2021,2021-04-18 00:00:00,3842,3836,Suwon Bluewings,Ulsan,3,0,1.68,1.45
+2021,2021-04-18 02:30:00,3837,3844,Jeonbuk Motors,Seongnam,1,0,1.59,0.98
+2021,2021-04-20 05:00:00,3831,3841,Gangwon,Gwangju,0,1,1.71,1.24
+2021,2021-04-20 05:30:00,3835,3843,Pohang Steelers,Suwon,1,0,1.44,1.34
+2021,2021-04-21 05:00:00,3836,3837,Ulsan,Jeonbuk Motors,0,0,0.95,0.92
+2021,2021-04-21 05:30:00,3834,3842,Daegu,Suwon Bluewings,1,0,1.33,0.76
+2021,2021-04-21 05:30:00,3844,3840,Seongnam,Incheon United,1,3,1.48,1.06
+2021,2021-04-21 05:30:00,3832,3833,Jeju United,FC Seoul,2,1,2.66,1.15
+2021,2021-04-24 00:00:00,3835,3832,Pohang Steelers,Jeju United,0,0,0.98,0.75
+2021,2021-04-24 02:30:00,3841,3834,Gwangju,Daegu,0,1,1.62,1.16
+2021,2021-04-24 05:00:00,3831,3837,Gangwon,Jeonbuk Motors,1,1,1.14,1.34
+2021,2021-04-25 00:00:00,3840,3836,Incheon United,Ulsan,0,0,1.04,1.39
+2021,2021-04-25 02:30:00,3843,3833,Suwon,FC Seoul,1,1,0.85,1.6
+2021,2021-04-25 05:00:00,3844,3842,Seongnam,Suwon Bluewings,0,1,1.14,0.86
+2021,2021-04-30 05:30:00,3833,3844,FC Seoul,Seongnam,2,2,1.41,0.98
+2021,2021-05-01 00:00:00,3843,3834,Suwon,Daegu,2,4,2.15,1.69
+2021,2021-05-01 02:30:00,3842,3835,Suwon Bluewings,Pohang Steelers,1,1,0.97,1.05
+2021,2021-05-01 05:00:00,3836,3841,Ulsan,Gwangju,2,0,2.0,0.0
+2021,2021-05-02 00:00:00,3837,3832,Jeonbuk Motors,Jeju United,1,1,1.65,1.87
+2021,2021-05-02 02:30:00,3840,3831,Incheon United,Gangwon,1,0,0.74,1.88
+2021,2021-05-08 00:00:00,3834,3840,Daegu,Incheon United,3,0,3.0,0.0
+2021,2021-05-08 00:00:00,3832,3843,Jeju United,Suwon,1,3,1.0,3.0
+2021,2021-05-08 02:30:00,3835,3831,Pohang Steelers,Gangwon,1,1,1.0,1.0
+2021,2021-05-09 02:30:00,3837,3842,Jeonbuk Motors,Suwon Bluewings,1,3,1.0,3.0
+2021,2021-05-11 05:30:00,3843,3841,Suwon,Gwangju,2,1,1.75,1.56
+2021,2021-05-11 05:30:00,3840,3835,Incheon United,Pohang Steelers,1,1,1.13,1.91
+2021,2021-05-12 05:00:00,3842,3832,Suwon Bluewings,Jeju United,3,2,1.2,1.43
+2021,2021-05-12 05:30:00,3831,3836,Gangwon,Ulsan,2,2,0.42,0.59
+2021,2021-05-15 02:30:00,3831,3843,Gangwon,Suwon,0,0,0.97,1.24
+2021,2021-05-15 05:00:00,3840,3841,Incheon United,Gwangju,2,1,1.6,1.55
+2021,2021-05-16 00:00:00,3832,3834,Jeju United,Daegu,1,2,1.52,1.61
+2021,2021-05-16 02:30:00,3836,3842,Ulsan,Suwon Bluewings,1,1,1.78,0.95
+2021,2021-05-18 05:30:00,3843,3835,Suwon,Pohang Steelers,3,4,2.1,1.47
+2021,2021-05-19 02:30:00,3841,3832,Gwangju,Jeju United,0,0,1.58,1.32
+2021,2021-05-19 05:00:00,3837,3836,Jeonbuk Motors,Ulsan,2,4,2.03,1.97
+2021,2021-05-19 05:00:00,3842,3834,Suwon Bluewings,Daegu,1,1,1.29,1.43
+2021,2021-05-21 05:30:00,3843,3840,Suwon,Incheon United,2,2,1.4,1.97
+2021,2021-05-22 00:00:00,3832,3844,Jeju United,Seongnam,2,2,1.67,1.03
+2021,2021-05-22 00:40:00,3836,3835,Ulsan,Pohang Steelers,1,0,1.15,1.63
+2021,2021-05-23 02:30:00,3841,3842,Gwangju,Suwon Bluewings,3,4,1.22,1.46
+2021,2021-05-23 05:00:00,3831,3833,Gangwon,FC Seoul,0,0,1.64,1.43
+2021,2021-05-23 05:00:00,3834,3837,Daegu,Jeonbuk Motors,1,0,1.52,1.42
+2021,2021-05-29 00:00:00,3840,3837,Incheon United,Jeonbuk Motors,1,1,0.56,0.31
+2021,2021-05-29 02:30:00,3832,3836,Jeju United,Ulsan,1,2,1.79,1.27
+2021,2021-05-29 05:00:00,3844,3843,Seongnam,Suwon,2,3,1.68,0.91
+2021,2021-05-29 05:00:00,3833,3842,FC Seoul,Suwon Bluewings,0,3,1.23,1.08
+2021,2021-05-30 02:30:00,3834,3831,Daegu,Gangwon,1,0,1.36,1.42
+2021,2021-05-30 05:00:00,3835,3841,Pohang Steelers,Gwangju,1,0,1.63,1.16
+2021,2021-06-06 02:00:00,3844,3837,Seongnam,Jeonbuk Motors,1,5,0.8,1.82
+2021,2021-06-06 02:30:00,3834,3833,Daegu,FC Seoul,1,1,1.73,1.33
+2021,2021-06-19 02:30:00,3841,3833,Gwangju,FC Seoul,1,1,1.92,0.81
+2021,2021-06-20 02:00:00,3836,3844,Ulsan,Seongnam,2,2,1.51,1.78
+2021,2021-06-26 02:00:00,3844,3831,Seongnam,Gangwon,1,2,1.84,1.12
+2021,2021-07-14 05:30:00,3833,3840,FC Seoul,Incheon United,0,1,1.34,1.38
+2021,2021-07-20 05:30:00,3842,3843,Suwon Bluewings,Suwon,1,2,1.01,2.05
+2021,2021-07-21 06:00:00,3841,3831,Gwangju,Gangwon,3,1,2.1,1.53
+2021,2021-07-23 05:30:00,3842,3840,Suwon Bluewings,Incheon United,1,2,1.64,1.31
+2021,2021-07-24 05:00:00,3835,3833,Pohang Steelers,FC Seoul,0,1,1.08,0.63
+2021,2021-07-25 05:00:00,3836,3843,Ulsan,Suwon,2,5,2.03,1.85
+2021,2021-07-25 06:00:00,3831,3832,Gangwon,Jeju United,2,2,2.54,1.93
+2021,2021-07-31 06:00:00,3833,3836,FC Seoul,Ulsan,0,0,0.8,1.48
+2021,2021-07-31 06:00:00,3832,3840,Jeju United,Incheon United,1,4,2.18,1.41
+2021,2021-08-01 06:00:00,3831,3842,Gangwon,Suwon Bluewings,3,0,1.65,1.03
+2021,2021-08-01 06:00:00,3841,3844,Gwangju,Seongnam,0,0,1.37,1.11
+2021,2021-08-01 06:00:00,3834,3835,Daegu,Pohang Steelers,1,1,1.15,1.64
+2021,2021-08-04 05:00:00,3836,3834,Ulsan,Daegu,2,1,1.99,0.96
+2021,2021-08-04 05:30:00,3835,3844,Pohang Steelers,Seongnam,1,0,1.48,1.04
+2021,2021-08-04 05:30:00,3843,3837,Suwon,Jeonbuk Motors,1,0,1.83,1.61
+2021,2021-08-07 05:00:00,3837,3834,Jeonbuk Motors,Daegu,2,1,1.3,1.27
+2021,2021-08-07 06:00:00,3836,3831,Ulsan,Gangwon,2,1,1.75,1.29
+2021,2021-08-07 06:00:00,3842,3832,Suwon Bluewings,Jeju United,0,0,1.86,1.09
+2021,2021-08-07 06:00:00,3844,3835,Seongnam,Pohang Steelers,1,0,0.74,1.16
+2021,2021-08-08 06:00:00,3833,3841,FC Seoul,Gwangju,1,0,1.16,0.84
+2021,2021-08-08 06:00:00,3840,3843,Incheon United,Suwon,0,0,1.36,1.78
+2021,2021-08-11 05:00:00,3837,3841,Jeonbuk Motors,Gwangju,3,0,1.95,0.9
+2021,2021-08-14 04:00:00,3831,3834,Gangwon,Daegu,2,0,0.79,0.79
+2021,2021-08-14 05:30:00,3832,3836,Jeju United,Ulsan,2,2,1.14,1.45
+2021,2021-08-14 06:00:00,3842,3844,Suwon Bluewings,Seongnam,1,2,1.11,1.86
+2021,2021-08-15 04:00:00,3837,3833,Jeonbuk Motors,FC Seoul,3,2,1.71,1.51
+2021,2021-08-15 05:00:00,3835,3843,Pohang Steelers,Suwon,3,1,1.5,2.13
+2021,2021-08-15 06:00:00,3841,3840,Gwangju,Incheon United,1,0,1.98,1.46
+2021,2021-08-18 05:00:00,3840,3844,Incheon United,Seongnam,1,0,1.0,1.7
+2021,2021-08-18 05:30:00,3833,3832,FC Seoul,Jeju United,0,1,1.58,1.26
+2021,2021-08-20 05:30:00,3834,3841,Daegu,Gwangju,1,2,1.38,0.8
+2021,2021-08-21 05:00:00,3844,3837,Seongnam,Jeonbuk Motors,0,0,1.19,1.51
+2021,2021-08-21 06:00:00,3843,3832,Suwon,Jeju United,1,0,1.28,1.34
+2021,2021-08-22 04:00:00,3833,3835,FC Seoul,Pohang Steelers,2,2,1.6,1.14
+2021,2021-08-22 05:30:00,3836,3842,Ulsan,Suwon Bluewings,3,1,1.54,1.54
+2021,2021-08-24 05:00:00,3841,3844,Gwangju,Seongnam,2,0,1.76,2.33
+2021,2021-08-25 05:00:00,3837,3835,Jeonbuk Motors,Pohang Steelers,2,0,1.25,1.14
+2021,2021-08-25 05:30:00,3840,3834,Incheon United,Daegu,2,0,1.3,2.16
+2021,2021-08-25 05:30:00,3833,3836,FC Seoul,Ulsan,1,2,2.73,1.59
+2021,2021-08-25 06:00:00,3842,3843,Suwon Bluewings,Suwon,0,3,1.23,1.78
+2021,2021-08-28 04:00:00,3835,3842,Pohang Steelers,Suwon Bluewings,0,0,1.16,1.33
+2021,2021-08-28 05:00:00,3834,3844,Daegu,Seongnam,3,1,1.43,1.42
+2021,2021-08-28 05:00:00,3837,3843,Jeonbuk Motors,Suwon,2,2,2.57,1.12
+2021,2021-08-29 04:00:00,3836,3840,Ulsan,Incheon United,3,2,2.07,1.32
+2021,2021-08-29 05:00:00,3832,3833,Jeju United,FC Seoul,1,0,0.92,1.28
+2021,2021-09-01 05:00:00,3837,3835,Jeonbuk Motors,Pohang Steelers,0,1,1.77,1.56
+2021,2021-09-04 05:00:00,3844,3834,Seongnam,Daegu,0,0,1.25,1.45
+2021,2021-09-05 05:00:00,3833,3837,FC Seoul,Jeonbuk Motors,3,4,1.04,1.36
+2021,2021-09-10 05:30:00,3836,3837,Ulsan,Jeonbuk Motors,0,0,1.88,1.07
+2021,2021-09-10 05:30:00,3835,3834,Pohang Steelers,Daegu,1,2,1.52,1.93
+2021,2021-09-11 02:30:00,3840,3832,Incheon United,Jeju United,1,2,0.91,1.72
+2021,2021-09-11 05:00:00,3842,3841,Suwon Bluewings,Gwangju,2,2,1.47,1.75
+2021,2021-09-12 02:30:00,3844,3833,Seongnam,FC Seoul,1,1,1.18,1.14
+2021,2021-09-12 05:00:00,3843,3831,Suwon,Gangwon,1,0,1.64,1.44
+2021,2021-09-18 00:20:00,3837,3842,Jeonbuk Motors,Suwon Bluewings,1,0,1.41,1.21
+2021,2021-09-18 02:30:00,3841,3832,Gwangju,Jeju United,1,1,1.33,1.89
+2021,2021-09-18 05:00:00,3834,3836,Daegu,Ulsan,2,1,2.38,0.99
+2021,2021-09-19 00:00:00,3840,3844,Incheon United,Seongnam,0,1,1.01,1.25
+2021,2021-09-19 02:30:00,3833,3843,FC Seoul,Suwon,2,1,1.51,1.79
+2021,2021-09-21 00:00:00,3842,3831,Suwon Bluewings,Gangwon,3,2,1.11,1.19
+2021,2021-09-21 02:30:00,3841,3837,Gwangju,Jeonbuk Motors,1,2,1.06,1.48
+2021,2021-09-21 05:00:00,3835,3836,Pohang Steelers,Ulsan,1,2,1.63,1.24
+2021,2021-09-22 00:00:00,3832,3834,Jeju United,Daegu,0,1,1.02,1.22
+2021,2021-09-22 02:30:00,3843,3844,Suwon,Seongnam,3,1,1.8,1.22
+2021,2021-09-22 05:00:00,3833,3840,FC Seoul,Incheon United,0,0,1.79,0.82
+2021,2021-09-25 00:00:00,3835,3832,Pohang Steelers,Jeju United,2,4,2.24,1.76
+2021,2021-09-25 02:30:00,3836,3841,Ulsan,Gwangju,1,0,2.33,0.89
+2021,2021-09-25 05:00:00,3837,3840,Jeonbuk Motors,Incheon United,2,0,1.73,1.31
+2021,2021-09-25 05:00:00,3834,3843,Daegu,Suwon,0,0,1.04,1.73
+2021,2021-09-26 01:00:00,3842,3833,Suwon Bluewings,FC Seoul,0,2,0.92,1.73
+2021,2021-09-26 02:30:00,3844,3831,Seongnam,Gangwon,2,0,1.07,1.02
+2021,2021-09-29 05:00:00,3831,3835,Gangwon,Pohang Steelers,1,0,1.5,1.72
+2021,2021-10-02 00:00:00,3831,3837,Gangwon,Jeonbuk Motors,0,1,1.49,1.68
+2021,2021-10-02 02:30:00,3843,3836,Suwon,Ulsan,0,3,1.54,1.33
+2021,2021-10-02 05:00:00,3840,3842,Incheon United,Suwon Bluewings,0,1,1.26,0.88
+2021,2021-10-03 00:00:00,3832,3844,Jeju United,Seongnam,2,1,1.7,0.78
+2021,2021-10-03 02:30:00,3841,3835,Gwangju,Pohang Steelers,2,3,1.98,1.47
+2021,2021-10-03 05:00:00,3833,3834,FC Seoul,Daegu,1,1,1.68,1.1
+2021,2021-10-06 05:00:00,3840,3831,Incheon United,Gangwon,0,1,0.64,1.56
+2021,2021-10-10 00:00:00,3831,3832,Gangwon,Jeju United,2,2,1.69,2.26
+2021,2021-10-17 00:00:00,3831,3841,Gangwon,Gwangju,2,1,2.01,1.11
+2021,2021-10-24 01:00:00,3831,3833,Gangwon,FC Seoul,1,4,1.49,1.97
+2021,2021-10-24 01:00:00,3843,3841,Suwon,Gwangju,1,3,1.99,1.37
+2021,2021-10-24 01:00:00,3835,3840,Pohang Steelers,Incheon United,0,1,1.41,1.22
+2021,2021-10-24 01:00:00,3834,3842,Daegu,Suwon Bluewings,0,2,2.21,1.0
+2021,2021-10-24 01:00:00,3844,3836,Seongnam,Ulsan,2,1,1.59,2.52
+2021,2021-10-24 01:00:00,3832,3837,Jeju United,Jeonbuk Motors,2,2,2.16,2.04
+2021,2021-10-30 00:00:00,3840,3833,Incheon United,FC Seoul,2,0,1.42,0.99
+2021,2021-10-30 02:30:00,3842,3837,Suwon Bluewings,Jeonbuk Motors,0,4,0.56,1.66
+2021,2021-10-30 05:00:00,3844,3835,Seongnam,Pohang Steelers,1,0,0.94,1.38
+2021,2021-10-31 00:00:00,3834,3832,Daegu,Jeju United,0,5,1.34,2.32
+2021,2021-10-31 02:30:00,3836,3843,Ulsan,Suwon,3,2,1.5,1.09
+2021,2021-10-31 05:00:00,3841,3831,Gwangju,Gangwon,2,2,1.16,1.58
+2021,2021-11-03 05:00:00,3835,3831,Pohang Steelers,Gangwon,4,0,1.63,1.06
+2021,2021-11-03 05:00:00,3841,3833,Gwangju,FC Seoul,3,4,1.77,1.26
+2021,2021-11-03 05:30:00,3844,3840,Seongnam,Incheon United,1,1,1.14,0.93
+2021,2021-11-06 00:00:00,3832,3842,Jeju United,Suwon Bluewings,2,0,1.55,1.19
+2021,2021-11-06 02:30:00,3843,3834,Suwon,Daegu,1,2,2.01,0.88
+2021,2021-11-06 05:00:00,3837,3836,Jeonbuk Motors,Ulsan,3,2,1.58,2.09
+2021,2021-11-07 00:00:00,3835,3841,Pohang Steelers,Gwangju,1,2,1.06,1.54
+2021,2021-11-07 01:30:00,3831,3840,Gangwon,Incheon United,1,1,1.84,1.56
+2021,2021-11-07 04:00:00,3833,3844,FC Seoul,Seongnam,3,0,0.94,1.04
+2021,2021-11-20 23:00:00,3843,3837,Suwon,Jeonbuk Motors,3,2,1.41,1.78
+2021,2021-11-21 01:30:00,3836,3832,Ulsan,Jeju United,3,1,2.19,1.54
+2021,2021-11-21 01:30:00,3834,3842,Daegu,Suwon Bluewings,2,1,0.96,1.4
+2021,2021-11-26 23:00:00,3832,3843,Jeju United,Suwon,1,0,1.65,1.03
+2021,2021-11-27 01:30:00,3844,3841,Seongnam,Gwangju,1,0,1.51,1.86
+2021,2021-11-27 23:00:00,3834,3837,Daegu,Jeonbuk Motors,0,2,1.34,2.37
+2021,2021-11-27 23:40:00,3842,3836,Suwon Bluewings,Ulsan,0,0,1.24,1.54
+2021,2021-11-28 01:30:00,3833,3831,FC Seoul,Gangwon,0,0,1.04,0.67
+2021,2021-11-28 01:30:00,3840,3835,Incheon United,Pohang Steelers,0,0,1.63,1.98
+2021,2021-12-04 00:00:00,3835,3833,Pohang Steelers,FC Seoul,1,2,0.93,1.91
+2021,2021-12-04 00:00:00,3831,3844,Gangwon,Seongnam,2,1,1.34,1.08
+2021,2021-12-04 00:00:00,3841,3840,Gwangju,Incheon United,1,1,1.76,1.34
+2021,2021-12-05 00:00:00,3837,3832,Jeonbuk Motors,Jeju United,2,0,1.09,0.61
+2021,2021-12-05 00:00:00,3836,3834,Ulsan,Daegu,2,0,2.13,1.24
+2021,2021-12-05 00:00:00,3843,3842,Suwon,Suwon Bluewings,2,0,1.19,1.64
+2022,2022-02-18 23:00:00,3837,3843,Jeonbuk Motors,Suwon,1,0,1.08,0.62
+2022,2022-02-19 01:30:00,3834,3833,Daegu,FC Seoul,0,2,1.07,1.57
+2022,2022-02-19 01:30:00,3840,3842,Incheon United,Suwon Bluewings,1,0,2.0,0.71
+2022,2022-02-19 23:00:00,3831,3844,Gangwon,Seongnam,2,0,1.29,1.87
+2022,2022-02-19 23:00:00,3832,3835,Jeju United,Pohang Steelers,0,3,1.16,0.99
+2022,2022-02-20 01:30:00,3836,3839,Ulsan,Sangju Sangmu,0,0,2.08,0.84
+2022,2022-02-25 23:00:00,3842,3843,Suwon Bluewings,Suwon,1,0,1.09,1.74
+2022,2022-02-25 23:00:00,3840,3833,Incheon United,FC Seoul,1,1,1.27,1.41
+2022,2022-02-26 01:30:00,3832,3831,Jeju United,Gangwon,0,0,1.88,0.85
+2022,2022-02-26 01:30:00,3844,3836,Seongnam,Ulsan,0,2,0.58,1.31
+2022,2022-02-26 23:00:00,3839,3835,Sangju Sangmu,Pohang Steelers,3,2,1.09,2.13
+2022,2022-02-27 01:30:00,3834,3837,Daegu,Jeonbuk Motors,1,1,1.38,1.68
+2022,2022-02-28 23:00:00,3842,3832,Suwon Bluewings,Jeju United,0,1,1.33,1.48
+2022,2022-02-28 23:00:00,3836,3843,Ulsan,Suwon,2,1,1.82,0.89
+2022,2022-03-01 01:30:00,3831,3840,Gangwon,Incheon United,0,1,1.23,1.55
+2022,2022-03-01 01:30:00,3844,3833,Seongnam,FC Seoul,0,0,0.8,1.9
+2022,2022-03-02 04:00:00,3837,3835,Jeonbuk Motors,Pohang Steelers,0,1,1.39,2.0
+2022,2022-03-02 04:30:00,3834,3839,Daegu,Sangju Sangmu,1,0,0.9,1.24
+2022,2022-03-04 23:00:00,3844,3842,Seongnam,Suwon Bluewings,2,2,0.73,0.87
+2022,2022-03-05 01:30:00,3831,3834,Gangwon,Daegu,2,0,1.31,1.5
+2022,2022-03-05 04:00:00,3840,3835,Incheon United,Pohang Steelers,0,1,0.85,1.34
+2022,2022-03-05 23:00:00,3839,3833,Sangju Sangmu,FC Seoul,2,0,1.45,1.83
+2022,2022-03-06 01:30:00,3837,3836,Jeonbuk Motors,Ulsan,0,1,1.17,1.1
+2022,2022-03-06 01:30:00,3832,3843,Jeju United,Suwon,0,0,1.38,0.86
+2022,2022-03-11 04:00:00,3834,3844,Daegu,Seongnam,3,1,1.72,1.27
+2022,2022-03-11 04:00:00,3836,3833,Ulsan,FC Seoul,2,1,1.67,1.57
+2022,2022-03-11 23:00:00,3832,3837,Jeju United,Jeonbuk Motors,2,0,1.02,1.1
+2022,2022-03-12 01:30:00,3842,3835,Suwon Bluewings,Pohang Steelers,1,1,0.99,1.41
+2022,2022-03-12 23:00:00,3840,3839,Incheon United,Sangju Sangmu,1,0,0.95,1.36
+2022,2022-03-13 01:30:00,3831,3843,Gangwon,Suwon,0,2,1.41,1.18
+2022,2022-03-19 00:00:00,3842,3831,Suwon Bluewings,Gangwon,2,2,1.61,1.57
+2022,2022-03-19 02:30:00,3833,3832,FC Seoul,Jeju United,1,2,1.02,1.54
+2022,2022-03-19 05:00:00,3837,3839,Jeonbuk Motors,Sangju Sangmu,1,1,1.99,1.41
+2022,2022-03-20 00:00:00,3843,3834,Suwon,Daegu,4,3,1.67,1.55
+2022,2022-03-20 05:00:00,3844,3840,Seongnam,Incheon United,0,1,1.23,0.8
+2022,2022-03-27 00:00:00,3836,3835,Ulsan,Pohang Steelers,2,0,1.51,1.18
+2022,2022-04-02 00:00:00,3840,3836,Incheon United,Ulsan,1,1,1.8,1.87
+2022,2022-04-02 00:00:00,3832,3834,Jeju United,Daegu,0,0,1.71,1.3
+2022,2022-04-02 02:30:00,3839,3842,Sangju Sangmu,Suwon Bluewings,1,1,1.66,1.41
+2022,2022-04-02 05:00:00,3831,3837,Gangwon,Jeonbuk Motors,1,2,1.98,0.94
+2022,2022-04-03 00:00:00,3843,3844,Suwon,Seongnam,3,4,1.56,1.91
+2022,2022-04-03 02:30:00,3835,3833,Pohang Steelers,FC Seoul,1,1,1.74,1.27
+2022,2022-04-05 05:00:00,3842,3837,Suwon Bluewings,Jeonbuk Motors,0,1,0.54,1.19
+2022,2022-04-05 05:30:00,3834,3840,Daegu,Incheon United,1,2,1.57,1.1
+2022,2022-04-05 05:30:00,3832,3836,Jeju United,Ulsan,1,2,2.26,0.92
+2022,2022-04-06 05:00:00,3844,3839,Seongnam,Sangju Sangmu,0,3,1.75,1.39
+2022,2022-04-06 05:30:00,3835,3843,Pohang Steelers,Suwon,2,0,2.46,1.02
+2022,2022-04-06 05:30:00,3833,3831,FC Seoul,Gangwon,2,2,2.05,1.49
+2022,2022-04-09 00:00:00,3844,3837,Seongnam,Jeonbuk Motors,0,4,1.78,1.36
+2022,2022-04-09 02:30:00,3836,3834,Ulsan,Daegu,3,1,2.04,1.16
+2022,2022-04-10 00:00:00,3831,3835,Gangwon,Pohang Steelers,1,1,1.0,0.91
+2022,2022-04-10 01:00:00,3843,3839,Suwon,Sangju Sangmu,3,2,1.23,1.25
+2022,2022-04-10 02:30:00,3840,3832,Incheon United,Jeju United,2,2,0.87,2.17
+2022,2022-04-10 05:00:00,3833,3842,FC Seoul,Suwon Bluewings,2,0,1.76,0.86
+2022,2022-05-05 00:00:00,3837,3833,Jeonbuk Motors,FC Seoul,1,1,1.2,1.31
+2022,2022-05-05 00:00:00,3844,3832,Seongnam,Jeju United,1,2,1.64,1.83
+2022,2022-05-05 02:30:00,3835,3834,Pohang Steelers,Daegu,1,1,1.55,1.0
+2022,2022-05-05 02:30:00,3842,3836,Suwon Bluewings,Ulsan,1,0,1.95,1.24
+2022,2022-05-05 05:00:00,3843,3840,Suwon,Incheon United,2,2,1.82,2.06
+2022,2022-05-05 05:00:00,3839,3831,Sangju Sangmu,Gangwon,1,0,1.26,1.16
+2022,2022-05-07 23:30:00,3831,3836,Gangwon,Ulsan,1,3,1.46,1.5
+2022,2022-05-08 00:00:00,3834,3842,Daegu,Suwon Bluewings,3,0,1.1,1.22
+2022,2022-05-08 02:30:00,3833,3843,FC Seoul,Suwon,3,1,1.91,0.87
+2022,2022-05-08 02:30:00,3840,3837,Incheon United,Jeonbuk Motors,0,1,1.56,1.69
+2022,2022-05-08 05:00:00,3832,3839,Jeju United,Sangju Sangmu,3,1,2.28,2.53
+2022,2022-05-08 05:00:00,3835,3844,Pohang Steelers,Seongnam,1,0,1.94,0.85
+2022,2022-05-14 02:30:00,3839,3834,Sangju Sangmu,Daegu,1,1,2.05,1.62
+2022,2022-05-14 05:00:00,3836,3840,Ulsan,Incheon United,2,2,2.04,0.71
+2022,2022-05-14 05:00:00,3842,3844,Suwon Bluewings,Seongnam,1,0,1.84,1.6
+2022,2022-05-15 00:20:00,3843,3832,Suwon,Jeju United,1,3,1.63,2.98
+2022,2022-05-15 02:30:00,3837,3831,Jeonbuk Motors,Gangwon,1,1,1.18,1.18
+2022,2022-05-15 05:00:00,3833,3835,FC Seoul,Pohang Steelers,1,0,2.02,0.89
+2022,2022-05-17 05:00:00,3842,3839,Suwon Bluewings,Sangju Sangmu,2,1,1.41,1.71
+2022,2022-05-17 05:30:00,3840,3834,Incheon United,Daegu,2,2,1.24,1.63
+2022,2022-05-18 05:00:00,3836,3832,Ulsan,Jeju United,1,0,2.29,1.06
+2022,2022-05-18 05:00:00,3835,3837,Pohang Steelers,Jeonbuk Motors,0,1,2.61,0.95
+2022,2022-05-18 05:30:00,3831,3833,Gangwon,FC Seoul,1,0,1.29,1.27
+2022,2022-05-18 05:30:00,3844,3843,Seongnam,Suwon,2,2,1.44,1.52
+2022,2022-05-21 02:30:00,3833,3844,FC Seoul,Seongnam,0,1,2.2,0.64
+2022,2022-05-21 04:00:00,3835,3840,Pohang Steelers,Incheon United,2,0,2.1,1.42
+2022,2022-05-21 05:00:00,3839,3836,Sangju Sangmu,Ulsan,0,2,1.69,1.13
+2022,2022-05-22 02:30:00,3834,3831,Daegu,Gangwon,3,0,0.89,1.1
+2022,2022-05-22 02:30:00,3832,3842,Jeju United,Suwon Bluewings,0,0,0.72,1.23
+2022,2022-05-22 05:00:00,3843,3837,Suwon,Jeonbuk Motors,0,1,1.53,1.33
+2022,2022-05-28 02:30:00,3833,3839,FC Seoul,Sangju Sangmu,2,2,1.94,1.01
+2022,2022-05-28 05:00:00,3837,3832,Jeonbuk Motors,Jeju United,0,2,1.17,0.98
+2022,2022-05-28 05:00:00,3843,3836,Suwon,Ulsan,1,2,1.49,1.31
+2022,2022-05-29 02:30:00,3840,3844,Incheon United,Seongnam,1,0,1.48,1.23
+2022,2022-05-29 05:00:00,3834,3835,Daegu,Pohang Steelers,2,2,2.24,1.38
+2022,2022-05-29 05:00:00,3831,3842,Gangwon,Suwon Bluewings,1,1,1.26,0.79
+2022,2022-06-17 05:00:00,3839,3843,Sangju Sangmu,Suwon,0,1,0.95,1.25
+2022,2022-06-17 05:30:00,3835,3831,Pohang Steelers,Gangwon,3,1,1.17,1.8
+2022,2022-06-18 04:00:00,3832,3840,Jeju United,Incheon United,2,1,2.3,1.22
+2022,2022-06-18 05:30:00,3844,3834,Seongnam,Daegu,1,1,1.21,1.54
+2022,2022-06-19 04:00:00,3836,3837,Ulsan,Jeonbuk Motors,1,3,2.31,1.48
+2022,2022-06-19 05:30:00,3842,3833,Suwon Bluewings,FC Seoul,0,1,1.1,0.79
+2022,2022-06-21 05:00:00,3839,3844,Sangju Sangmu,Seongnam,1,1,2.18,1.25
+2022,2022-06-21 05:30:00,3843,3835,Suwon,Pohang Steelers,2,1,1.07,0.9
+2022,2022-06-21 05:30:00,3834,3832,Daegu,Jeju United,1,0,1.47,1.53
+2022,2022-06-22 05:00:00,3837,3842,Jeonbuk Motors,Suwon Bluewings,2,1,2.14,1.63
+2022,2022-06-22 05:30:00,3833,3836,FC Seoul,Ulsan,1,2,0.95,2.17
+2022,2022-06-22 05:30:00,3840,3831,Incheon United,Gangwon,4,1,1.24,1.87
+2022,2022-06-25 04:00:00,3837,3834,Jeonbuk Motors,Daegu,1,1,1.31,1.02
+2022,2022-06-25 05:00:00,3843,3842,Suwon,Suwon Bluewings,3,0,1.66,1.33
+2022,2022-06-25 06:00:00,3833,3840,FC Seoul,Incheon United,1,1,2.06,1.56
+2022,2022-06-26 04:00:00,3836,3844,Ulsan,Seongnam,0,0,2.18,0.84
+2022,2022-06-26 05:00:00,3835,3839,Pohang Steelers,Sangju Sangmu,1,1,2.02,0.96
+2022,2022-06-26 05:30:00,3831,3832,Gangwon,Jeju United,4,2,1.29,1.99
+2022,2022-07-02 04:00:00,3832,3833,Jeju United,FC Seoul,2,2,1.47,2.43
+2022,2022-07-02 05:00:00,3835,3836,Pohang Steelers,Ulsan,2,0,1.03,1.49
+2022,2022-07-02 05:00:00,3839,3837,Sangju Sangmu,Jeonbuk Motors,1,2,2.27,2.22
+2022,2022-07-02 06:00:00,3844,3831,Seongnam,Gangwon,0,2,1.74,1.43
+2022,2022-07-03 05:00:00,3834,3843,Daegu,Suwon,0,0,1.93,1.14
+2022,2022-07-03 05:30:00,3842,3840,Suwon Bluewings,Incheon United,0,0,1.71,1.66
+2022,2022-07-05 05:00:00,3839,3832,Sangju Sangmu,Jeju United,4,0,1.91,2.19
+2022,2022-07-05 05:00:00,3844,3835,Seongnam,Pohang Steelers,1,4,2.21,1.79
+2022,2022-07-05 05:30:00,3836,3831,Ulsan,Gangwon,2,1,1.81,1.11
+2022,2022-07-06 05:00:00,3840,3843,Incheon United,Suwon,0,1,1.88,1.48
+2022,2022-07-06 05:00:00,3842,3834,Suwon Bluewings,Daegu,1,1,1.63,1.25
+2022,2022-07-06 05:30:00,3833,3837,FC Seoul,Jeonbuk Motors,0,1,1.57,1.58
+2022,2022-07-08 05:30:00,3832,3844,Jeju United,Seongnam,3,2,1.44,1.44
+2022,2022-07-08 05:30:00,3831,3839,Gangwon,Sangju Sangmu,3,2,1.71,2.06
+2022,2022-07-09 05:00:00,3837,3840,Jeonbuk Motors,Incheon United,2,2,2.2,1.79
+2022,2022-07-09 06:00:00,3834,3836,Daegu,Ulsan,1,1,1.24,1.73
+2022,2022-07-10 05:00:00,3843,3833,Suwon,FC Seoul,4,3,2.15,1.88
+2022,2022-07-10 05:00:00,3835,3842,Pohang Steelers,Suwon Bluewings,1,0,2.38,1.63
+2022,2022-07-16 04:00:00,3837,3844,Jeonbuk Motors,Seongnam,3,2,1.55,1.67
+2022,2022-07-16 04:00:00,3836,3842,Ulsan,Suwon Bluewings,2,1,2.41,0.85
+2022,2022-07-16 04:00:00,3839,3840,Sangju Sangmu,Incheon United,0,1,1.66,1.03
+2022,2022-07-16 05:00:00,3843,3831,Suwon,Gangwon,2,4,1.78,1.94
+2022,2022-07-16 06:00:00,3835,3832,Pohang Steelers,Jeju United,1,1,1.0,1.0
+2022,2022-07-16 06:00:00,3833,3834,FC Seoul,Daegu,2,1,2.42,0.84
+2022,2022-07-30 05:00:00,3836,3831,Ulsan,Gangwon,2,1,1.47,2.54
+2022,2022-07-30 05:00:00,3842,3839,Suwon Bluewings,Sangju Sangmu,0,0,1.81,1.3
+2022,2022-07-30 05:00:00,3837,3832,Jeonbuk Motors,Jeju United,1,0,0.97,1.36
+2022,2022-07-30 05:30:00,3835,3833,Pohang Steelers,FC Seoul,1,2,1.86,1.06
+2022,2022-07-30 06:00:00,3844,3840,Seongnam,Incheon United,3,1,2.51,1.07
+2022,2022-07-31 05:30:00,3843,3834,Suwon,Daegu,2,2,1.12,2.85
+2022,2022-08-02 05:00:00,3839,3835,Sangju Sangmu,Pohang Steelers,0,1,1.62,1.71
+2022,2022-08-02 05:30:00,3832,3844,Jeju United,Seongnam,1,2,2.31,1.66
+2022,2022-08-02 06:00:00,3836,3833,Ulsan,FC Seoul,1,1,1.93,0.65
+2022,2022-08-03 05:00:00,3840,3843,Incheon United,Suwon,1,1,2.02,1.55
+2022,2022-08-03 05:30:00,3831,3837,Gangwon,Jeonbuk Motors,2,1,1.49,1.35
+2022,2022-08-03 05:30:00,3834,3842,Daegu,Suwon Bluewings,1,2,1.66,1.49
+2022,2022-08-05 05:00:00,3844,3839,Seongnam,Sangju Sangmu,1,4,1.79,1.9
+2022,2022-08-05 05:30:00,3833,3832,FC Seoul,Jeju United,0,2,2.0,1.16
+2022,2022-08-06 05:00:00,3835,3831,Pohang Steelers,Gangwon,2,1,1.28,1.71
+2022,2022-08-06 05:30:00,3843,3842,Suwon,Suwon Bluewings,4,2,1.65,1.74
+2022,2022-08-07 05:00:00,3837,3836,Jeonbuk Motors,Ulsan,1,1,1.67,1.14
+2022,2022-08-07 05:30:00,3834,3840,Daegu,Incheon United,2,3,1.29,1.42
+2022,2022-08-10 05:00:00,3843,3837,Suwon,Jeonbuk Motors,0,1,1.43,2.16
+2022,2022-08-10 05:30:00,3831,3834,Gangwon,Daegu,1,0,1.13,1.68
+2022,2022-08-13 04:00:00,3836,3834,Ulsan,Daegu,4,0,2.65,1.62
+2022,2022-08-13 05:30:00,3840,3837,Incheon United,Jeonbuk Motors,3,1,1.82,1.77
+2022,2022-08-14 05:00:00,3832,3835,Jeju United,Pohang Steelers,5,0,1.23,0.43
+2022,2022-08-14 05:30:00,3842,3844,Suwon Bluewings,Seongnam,4,1,2.08,1.28
+2022,2022-08-15 04:00:00,3831,3843,Gangwon,Suwon,2,3,1.69,1.24
+2022,2022-08-15 05:00:00,3839,3833,Sangju Sangmu,FC Seoul,1,2,1.16,2.29
+2022,2022-08-20 04:00:00,3835,3840,Pohang Steelers,Incheon United,1,1,1.85,0.99
+2022,2022-08-20 06:00:00,3832,3842,Jeju United,Suwon Bluewings,1,2,2.08,1.29
+2022,2022-08-21 04:00:00,3833,3844,FC Seoul,Seongnam,2,0,2.22,1.06
+2022,2022-08-21 05:00:00,3839,3836,Sangju Sangmu,Ulsan,1,2,0.85,1.44
+2022,2022-08-27 04:00:00,3842,3831,Suwon Bluewings,Gangwon,2,3,2.04,1.13
+2022,2022-08-27 05:00:00,3832,3836,Jeju United,Ulsan,1,1,1.22,1.06
+2022,2022-08-27 06:00:00,3840,3833,Incheon United,FC Seoul,2,0,0.84,1.41
+2022,2022-08-28 05:00:00,3834,3839,Daegu,Sangju Sangmu,0,0,2.24,1.54
+2022,2022-08-28 05:00:00,3844,3843,Seongnam,Suwon,2,1,1.35,1.44
+2022,2022-08-29 05:00:00,3837,3835,Jeonbuk Motors,Pohang Steelers,2,2,0.93,2.35
+2022,2022-09-02 05:00:00,3843,3832,Suwon,Jeju United,2,2,1.63,1.79
+2022,2022-09-02 05:30:00,3840,3831,Incheon United,Gangwon,0,1,1.55,1.23
+2022,2022-09-03 02:30:00,3835,3834,Pohang Steelers,Daegu,0,0,0.0,0.0
+2022,2022-09-03 05:00:00,3839,3837,Sangju Sangmu,Jeonbuk Motors,0,0,0.0,0.0
+2022,2022-09-04 02:30:00,3833,3842,FC Seoul,Suwon Bluewings,0,0,0.0,0.0
+2022,2022-09-04 05:00:00,3844,3836,Seongnam,Ulsan,0,0,0.0,0.0
+2022,2022-09-06 05:00:00,3832,3840,Jeju United,Incheon United,0,0,0.0,0.0
+2022,2022-09-06 05:30:00,3831,3839,Gangwon,Sangju Sangmu,0,0,0.0,0.0
+2022,2022-09-06 05:30:00,3843,3835,Suwon,Pohang Steelers,0,0,0.0,0.0
+2022,2022-09-07 05:00:00,3837,3833,Jeonbuk Motors,FC Seoul,0,0,0.0,0.0
+2022,2022-09-07 05:30:00,3836,3842,Ulsan,Suwon Bluewings,0,0,0.0,0.0
+2022,2022-09-07 05:30:00,3834,3844,Daegu,Seongnam,0,0,0.0,0.0
+2022,2022-09-10 00:00:00,3839,3832,Sangju Sangmu,Jeju United,0,0,0.0,0.0
+2022,2022-09-10 00:00:00,3834,3837,Daegu,Jeonbuk Motors,0,0,0.0,0.0
+2022,2022-09-10 02:30:00,3844,3831,Seongnam,Gangwon,0,0,0.0,0.0
+2022,2022-09-10 05:00:00,3833,3843,FC Seoul,Suwon,0,0,0.0,0.0
+2022,2022-09-11 02:30:00,3836,3835,Ulsan,Pohang Steelers,0,0,0.0,0.0
+2022,2022-09-11 05:00:00,3842,3840,Suwon Bluewings,Incheon United,0,0,0.0,0.0
+2022,2022-09-13 05:00:00,3843,3839,Suwon,Sangju Sangmu,0,0,0.0,0.0
+2022,2022-09-13 05:30:00,3832,3834,Jeju United,Daegu,0,0,0.0,0.0
+2022,2022-09-13 05:30:00,3833,3831,FC Seoul,Gangwon,0,0,0.0,0.0
+2022,2022-09-14 05:00:00,3837,3844,Jeonbuk Motors,Seongnam,0,0,0.0,0.0
+2022,2022-09-14 05:00:00,3840,3836,Incheon United,Ulsan,0,0,0.0,0.0
+2022,2022-09-14 05:30:00,3835,3842,Pohang Steelers,Suwon Bluewings,0,0,0.0,0.0
+2022,2022-09-18 01:00:00,3844,3835,Seongnam,Pohang Steelers,0,0,0.0,0.0
+2022,2022-09-18 01:00:00,3842,3837,Suwon Bluewings,Jeonbuk Motors,0,0,0.0,0.0
+2022,2022-09-18 01:00:00,3831,3832,Gangwon,Jeju United,0,0,0.0,0.0
+2022,2022-09-18 01:00:00,3836,3843,Ulsan,Suwon,0,0,0.0,0.0
+2022,2022-09-18 01:00:00,3834,3833,Daegu,FC Seoul,0,0,0.0,0.0
+2022,2022-09-18 01:00:00,3839,3840,Sangju Sangmu,Incheon United,0,0,0.0,0.0

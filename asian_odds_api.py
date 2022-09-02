@@ -269,3 +269,26 @@ def get_inplay_best_pinnacle_lines(url_base, token):
 
 
     return (matches)
+
+
+def get_bet_history(start, end, name):
+    url, token = login()
+    response = requests.get(url + "/GetHistoryStatement?from=07/01/2022&to=08/31/2022&bookies=SIN,PIN,P88,ISN,3ET&shouldHideTransactionData=true",headers={"AOToken":token,"accept":"application/json"}).json()
+    dict = {"League":[],"Home":[],"Away":[],"AH":[],"Odds":[],"Stake":[],"Side":[],"Date":[],"Bookie":[],"Msg":[]}
+    for day in response["Result"]["BetHistoryStatementItems"]:
+        print (day)
+        r2 = requests.get(url + "/GetBetHistorySummary?date=" + day["DateDay"],headers={"AOToken":token,"accept":"application/json"}).json()
+        print (r2)
+        for bet in r2["Result"]["BetSummaries"]:
+            dict["League"].append(convert_league(bet["LeagueName"]))
+            dict["Home"].append(bet["HomeName"])
+            dict["Away"].append(bet["AwayName"])
+            dict["AH"].append(bet["HdpOrGoal"])
+            dict["Odds"].append(bet["Odds"])
+            dict["Stake"].append(bet["Stake"])
+            dict["Side"].append(bet["BetType"])
+            dict["Date"].append(day["DateDay"])
+            dict["Bookie"].append(bet["Bookie"])
+            dict["Msg"].append(bet["BetPlacementMessage"])
+    df = pd.DataFrame.from_dict(dict)
+    df.to_csv("./csv_data/asianodds_records" + name + ".csv", index = False)

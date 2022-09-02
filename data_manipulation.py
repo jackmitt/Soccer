@@ -4,6 +4,7 @@ import datetime
 from os.path import exists
 import os
 from fuzzywuzzy import fuzz
+from helpers import standardizeTeamName
 
 def preMatchAverages(league):
     stats = pd.read_csv("./csv_data/" + league + "/betting.csv", encoding = "ISO-8859-1")
@@ -73,6 +74,8 @@ def merge_betting_footy(league):
     footy = pd.read_csv("./csv_data/" + league + "/footystats.csv", encoding = "ISO-8859-1")
     for i in range(len(footy.index)):
         footy.at[i, "Date"] = datetime.date(int(footy.at[i, "Date"].split()[0].split("-")[0]), int(footy.at[i, "Date"].split()[0].split("-")[1]), int(footy.at[i, "Date"].split()[0].split("-")[2]))
+        footy.at[i, "Home"] = standardizeTeamName(footy.at[i, "Home"], league)
+        footy.at[i, "Away"] = standardizeTeamName(footy.at[i, "Away"], league)
     betting_teams = betting.Home.unique()
     footy_teams = footy.Home.unique()
     team_map = {}
@@ -83,18 +86,28 @@ def merge_betting_footy(league):
                 cur_best = fuzz.ratio(x, y)
                 team_map[x] = y
     print (team_map)
+    print (betting_teams)
+    print (footy_teams)
 
-    newcols = {"h_xg":[],"a_xg":[]}
+    newcols = {"h_xg":[],"a_xg":[],"Season":[]}
     match_inds = []
     for i in range(len(footy.index)):
         match_inds.append(i)
     for index, row in betting.iterrows():
+        found = False
         for i in match_inds:
             if (footy.at[i, "Home"] == team_map[row["Home"]] and footy.at[i, "Away"] == team_map[row["Away"]] and abs(row["Date"] - footy.at[i, "Date"]).days <= 5):
                 newcols["h_xg"].append(footy.at[i, "h_xg"])
                 newcols["a_xg"].append(footy.at[i, "a_xg"])
+                newcols["Season"].append(footy.at[i, "Season"])
                 match_inds.remove(i)
+                found = True
                 break
+        if (not found):
+            newcols["h_xg"].append(row["Home Score"])
+            newcols["a_xg"].append(row["Away Score"])
+            newcols["Season"].append(np.nan)
     betting["h_xg"] = newcols["h_xg"]
     betting["a_xg"] = newcols["a_xg"]
+    betting["Season"] = newcols["Season"]
     betting.to_csv("./csv_data/" + league + "/betting_xg.csv",index = False)

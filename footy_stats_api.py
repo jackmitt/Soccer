@@ -7,6 +7,7 @@ import time
 from helpers import standardizeTeamName
 from helpers import convert_league
 import pickle
+import os
 
 my_key = "4f020f4a19a2a1edd72fa163b83db44c63fbff959fb9c1ee34144db6a6a3f715"
 
@@ -21,26 +22,40 @@ def save_season_ids():
             pickle.dump(dict, f)
 
 def construct_csvs():
-    dict = {"Season":[],"Date":[],"h_id":[],"a_id":[],"Home":[],"Away":[],"h_goals":[],"a_goals":[],"h_xg":[],"a_xg":[]}
-    with open("./footy_stats_ids/England Premier League.pkl","rb") as inputFile:
-        season_ids = pickle.load(inputFile)
-    for key in season_ids:
-        response = requests.get("https://api.football-data-api.com/league-matches?key=" + my_key + "&season_id=" + str(season_ids[key])).json()
-        for match in response["data"]:
-            dict["Season"].append(key)
-            dict["Date"].append(datetime.datetime.fromtimestamp(match["date_unix"]))
-            dict["Home"].append(match["home_name"])
-            dict["Away"].append(match["away_name"])
-            dict["h_id"].append(match["homeID"])
-            dict["a_id"].append(match["awayID"])
-            dict["h_goals"].append(match["homeGoalCount"])
-            dict["a_goals"].append(match["awayGoalCount"])
-            if (match["team_a_xg"] == 0 and match["team_b_xg"] == 0):
-                dict["h_xg"].append(match["homeGoalCount"])
-                dict["a_xg"].append(match["awayGoalCount"])
+    for file in os.listdir("./footy_stats_ids/"):
+        dict = {"Season":[],"Date":[],"h_id":[],"a_id":[],"Home":[],"Away":[],"h_goals":[],"a_goals":[],"h_xg":[],"a_xg":[]}
+        with open("./footy_stats_ids/" + file,"rb") as inputFile:
+            season_ids = pickle.load(inputFile)
+        for key in season_ids:
+            response = requests.get("https://api.football-data-api.com/league-matches?key=" + my_key + "&season_id=" + str(season_ids[key])).json()
+            for match in response["data"]:
+                dict["Season"].append(key)
+                dict["Date"].append(datetime.datetime.fromtimestamp(match["date_unix"]))
+                dict["Home"].append(match["home_name"])
+                dict["Away"].append(match["away_name"])
+                dict["h_id"].append(match["homeID"])
+                dict["a_id"].append(match["awayID"])
+                dict["h_goals"].append(match["homeGoalCount"])
+                dict["a_goals"].append(match["awayGoalCount"])
+                if (match["team_a_xg"] == 0 and match["team_b_xg"] == 0):
+                    dict["h_xg"].append(match["homeGoalCount"])
+                    dict["a_xg"].append(match["awayGoalCount"])
+                else:
+                    dict["h_xg"].append(match["team_a_xg"])
+                    dict["a_xg"].append(match["team_b_xg"])
+        df = pd.DataFrame.from_dict(dict)
+        df = df.sort_values(by=["Date"], ignore_index = True)
+        if ("Japan" in file):
+            if ("1" in file):
+                folder = "Japan1"
             else:
-                dict["h_xg"].append(match["team_a_xg"])
-                dict["a_xg"].append(match["team_b_xg"])
-    df = pd.DataFrame.from_dict(dict)
-    df = df.sort_values(by=["Date"], ignore_index = True)
-    df.to_csv("./csv_data/England1/footystats.csv", index = False)
+                folder = "Japan2"
+        elif ("Sweden" in file):
+            folder = "Sweden2"
+        elif ("South Korea" in file):
+            folder = "Korea1"
+        else:
+            folder = file.split()[0] + "1"
+        df.to_csv("./csv_data/" + folder + "/footystats.csv", index = False)
+
+construct_csvs()

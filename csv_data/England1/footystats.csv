@@ -5748,7 +5748,7 @@ Season,Date,h_id,a_id,Home,Away,h_goals,a_goals,h_xg,a_xg
 2022,2022-08-31 13:30:00,93,211,Manchester City,Nottingham Forest,6,0,2.21,0.75
 2022,2022-08-31 13:45:00,153,92,West Ham United,Tottenham Hotspur,1,1,1.55,1.45
 2022,2022-08-31 14:00:00,151,157,Liverpool,Newcastle United,2,1,2.71,0.75
-2022,2022-09-01 14:00:00,108,149,Leicester City,Manchester United,0,0,0.0,0.0
+2022,2022-09-01 14:00:00,108,149,Leicester City,Manchester United,0,1,1.21,1.21
 2022,2022-09-03 06:30:00,144,151,Everton,Liverpool,0,0,0.0,0.0
 2022,2022-09-03 09:00:00,218,222,Brentford,Leeds United,0,0,0.0,0.0
 2022,2022-09-03 09:00:00,157,143,Newcastle United,Crystal Palace,0,0,0.0,0.0

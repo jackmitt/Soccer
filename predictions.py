@@ -15,6 +15,8 @@ from scipy.stats import norm
 import bayesianModelFcns as bmf
 import pickle
 from helpers import standardizeTeamName
+from os.path import exists
+import os
 
 
 def bayesian(league):
@@ -383,8 +385,14 @@ def bayesian_xg(league):
     f_thresh = 0.075         # A cap on team variable standard deviation to prevent blowup -- old: 0.075
     Δσ = 0.001               # The standard deviaton of the random walk variables -- old: 0.001
 
-    with open("./csv_data/" + league + "/last_prior.pkl","rb") as inputFile:
-        priors = pickle.load(inputFile)
+    resume_season = -1
+    for season in ["2006","2007","2008","2009","2010","2011","2012","2013","2014","2015","2016","2017","2018","2019","2020"]:
+        try:
+            with open("./csv_data/" + league + "/xg_run/last_prior_end_" + season + ".pkl","rb") as inputFile:
+                priors = pickle.load(inputFile)
+            resume_season = season
+        except:
+            pass
 
     train = pd.read_csv("./csv_data/" + league + "/betting_xg.csv", encoding = "ISO-8859-1")
     for i in range(len(train.index)):
@@ -393,7 +401,6 @@ def bayesian_xg(league):
         except:
             train.at[i, "Date"] = datetime.date(int(train.at[i, "Date"].split("-")[0]), int(train.at[i, "Date"].split("-")[1]), int(train.at[i, "Date"].split("-")[2]))
     train = train.sort_values(by=["Date"], ignore_index = True)
-    finalDict = {}
     train = train.rename(columns={"Home Score": "home_team_reg_score"})
     train = train.rename(columns={"Away Score": "away_team_reg_score"})
     for i in range(len(train.index)):
@@ -439,66 +446,80 @@ def bayesian_xg(league):
         gws.append(gwCount)
     train["gw"] = gws
 
+    splityet = False
+    xg_season_start = -1
+
     for index, row in train.iterrows():
-        if (index != 0 and abs(train.at[index,"Date"] - train.at[index-1,"Date"]).days > 40 and train.at[index,"Date"].year == 2012):
+        if (not splityet and train.at[index,"Season"].year == train.at[index,"Season"].year):
             splitIndex = index
+            splityet = True
+        if (row["h_xg"] != row["home_team_reg_score"] and xg_season_start == -1):
+            xg_season_start = row["Season"]
         gws.append(gwCount)
 
-    for col in train.columns:
-        finalDict[col] = []
-    for col in ["H_proj","A_proj","p_1","p_X","p_2","p_Open_home_cover","p_Close_home_cover","p_Open_over","p_Close_over"]:
-        finalDict[col] = []
+    if (not exists("./csv_data/" + league + "/xg_run/bayes_predictions_xg.csv")):
+        finalDict = {}
+        for col in train.columns:
+            finalDict[col] = []
+        for col in ["H_proj","A_proj","p_1","p_X","p_2","p_Open_home_cover","p_Close_home_cover","p_Open_over","p_Close_over"]:
+            finalDict[col] = []
 
 
-    num_teams = len(train.i_home.drop_duplicates())
-    num_team_pairs = len(train.i_pair.drop_duplicates())
+        num_teams = len(train.i_home.drop_duplicates())
+        num_team_pairs = len(train.i_pair.drop_duplicates())
 
-    warmUp = train.iloc[:splitIndex]
-    train = train.iloc[splitIndex:]
+        warmUp = train.iloc[:splitIndex]
+        train = train.iloc[splitIndex:]
 
-    home_team = aesara.shared(warmUp.i_home.values)
-    away_team = aesara.shared(warmUp.i_away.values)
-    team_pair = aesara.shared(warmUp.i_pair.values)
+        home_team = aesara.shared(warmUp.i_home.values)
+        away_team = aesara.shared(warmUp.i_away.values)
+        team_pair = aesara.shared(warmUp.i_pair.values)
 
-    observed_home_goals = warmUp.home_team_reg_score.values
-    observed_away_goals = warmUp.away_team_reg_score.values
+        observed_home_goals = warmUp.home_team_reg_score.values
+        observed_away_goals = warmUp.away_team_reg_score.values
 
-    with pm.Model() as model:
-        home = pm.Flat('home')
-        sd_offense = pm.HalfStudentT('sd_offense', nu=3, sigma=2.5)
-        sd_defense = pm.HalfStudentT('sd_defense', nu=3, sigma=2.5)
-        intercept = pm.Flat('intercept')
+        with pm.Model() as model:
+            home = pm.Flat('home')
+            sd_offense = pm.HalfStudentT('sd_offense', nu=3, sigma=2.5)
+            sd_defense = pm.HalfStudentT('sd_defense', nu=3, sigma=2.5)
+            intercept = pm.Flat('intercept')
 
-        offense_star = pm.Normal('offense_star', mu=0, sigma=sd_offense, shape=num_teams)
-        defense_star = pm.Normal('defense_star', mu=0, sigma=sd_defense, shape=num_teams)
-        offense = pm.Deterministic('offense', offense_star - tt.mean(offense_star))
-        defense = pm.Deterministic('defense', defense_star - tt.mean(defense_star))
-        home_theta = tt.exp(intercept + home + offense[home_team] - defense[away_team])
-        away_theta = tt.exp(intercept + offense[away_team] - defense[home_team])
+            offense_star = pm.Normal('offense_star', mu=0, sigma=sd_offense, shape=num_teams)
+            defense_star = pm.Normal('defense_star', mu=0, sigma=sd_defense, shape=num_teams)
+            offense = pm.Deterministic('offense', offense_star - tt.mean(offense_star))
+            defense = pm.Deterministic('defense', defense_star - tt.mean(defense_star))
+            home_theta = tt.exp(intercept + home + offense[home_team] - defense[away_team])
+            away_theta = tt.exp(intercept + offense[away_team] - defense[home_team])
 
 
-        home_goals = pm.Poisson('home_goals', mu=home_theta, observed=observed_home_goals)
-        away_goals = pm.Poisson('away_goals', mu=away_theta, observed=observed_away_goals)
+            home_goals = pm.Poisson('home_goals', mu=home_theta, observed=observed_home_goals)
+            away_goals = pm.Poisson('away_goals', mu=away_theta, observed=observed_away_goals)
 
-    with model:
-        trace = pm.sampling_jax.sample_numpyro_nuts(5000, tune=2000)
-        # #print (trace.posterior.stack(sample=["chain", "draw"]).sample)
-        # print (trace.posterior.mean(dim=["chain","draw"]))
-        # tracedict = {"home":[],"intercept":[],"offense":[],"defense":[]}
-        # #prints arrays of length 39
-        # # for a in trace.posterior["offense"]:
-        # #     print ("----------------------------")
-        # #     for b in a.data:
-        # #         print (b)
-        # for a in trace.posterior["offense"]:
-        #     print ("----------------------------")
-        #     print (len(a.data))
-        # #print (trace.to_dict())
-        priors = bmf.get_model_posteriors(trace, num_teams)
+        with model:
+            trace = pm.sampling_jax.sample_numpyro_nuts(5000, tune=2000)
+            # #print (trace.posterior.stack(sample=["chain", "draw"]).sample)
+            # print (trace.posterior.mean(dim=["chain","draw"]))
+            # tracedict = {"home":[],"intercept":[],"offense":[],"defense":[]}
+            # #prints arrays of length 39
+            # # for a in trace.posterior["offense"]:
+            # #     print ("----------------------------")
+            # #     for b in a.data:
+            # #         print (b)
+            # for a in trace.posterior["offense"]:
+            #     print ("----------------------------")
+            #     print (len(a.data))
+            # #print (trace.to_dict())
+            priors = bmf.get_model_posteriors(trace, num_teams)
 
-    oneIterComplete = False
-    startIndex = 0
-    new_teams = {}
+        oneIterComplete = False
+    else:
+        finalDict = pd.read_csv("./csv_data/" + league + "/xg_run/bayes_predictions_xg.csv", encoding = "ISO-8859-1").to_dict(orient="list")
+        for index in range(len(train.index)):
+            if (train.at[index,"Season"].year == resume_season):
+                splitIndex = index
+                break
+
+    startIndex = splitindex
     print(priors)
 
     for index, row in train.iterrows():
@@ -514,7 +535,7 @@ def bayesian_xg(league):
             away_team = aesara.shared(new_obs.i_away.values)
             team_pair = aesara.shared(new_obs.i_pair.values)
 
-            if (train.at[index,"Date"].year >= 2017):
+            if (train.at[index,"Season"].year >= int(xg_season_start)):
                 observed_home_goals = new_obs.h_xg.values
                 observed_away_goals = new_obs.a_xg.values
                 posteriors = bmf.model_update(home_team, observed_home_goals, away_team, observed_away_goals, priors, num_teams, factor, f_thresh, Δσ, xgUpdate = True)
@@ -533,7 +554,22 @@ def bayesian_xg(league):
         else:
             for col in ["H_proj","A_proj","p_1","p_X","p_2","p_Open_home_cover","p_Close_home_cover","p_Open_over","p_Close_over"]:
                 finalDict[col].append(np.nan)
-        tempDF = pd.DataFrame.from_dict(finalDict)
-        tempDF.to_csv("./csv_data/" + league + "/bayes_predictions_xg.csv", index = False)
-        with open("./csv_data/" + league + "/last_prior_xg.pkl", "wb") as f:
-            pickle.dump(priors, f)
+        if (index == len(train.index) - 1 or row["Season"] != train.at[index - 1,"Season"]):
+            if (not exists("./csv_data/" + league + "/xg_run")):
+                os.makedirs("./csv_data/" + league + "/xg_run")
+            tempDF = pd.DataFrame.from_dict(finalDict)
+            tempDF.to_csv("./csv_data/" + league + "/xg_run/bayes_predictions_xg.csv", index = False)
+            with open("./csv_data/" + league + "/xg_run/last_prior_end_" + train.at[index - 1,"Season"] + ".pkl", "wb") as f:
+                pickle.dump(priors, f)
+            break
+
+
+def reset_ram_run(*args, **kwargs):
+    with concurrent.futures.ProcessPoolExecutor(max_workers=1) as executor:
+        future = executor.submit(bayesian_xg, *args, **kwargs)
+        return future.result()
+
+leagues = ["Japan1","Japan2","Norway1","England1","Germany1","Portugal1","Slovenia1","Scotland1","Netherlands1","Croatia1","Korea1","Brazil1","Sweden2","Denmark1","Spain1"]
+for league in leagues:
+    while (not exists("./csv_data/" + league + "/xg_run/last_prior_end_2021.pkl")):
+        reset_ram_run(league)

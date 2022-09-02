@@ -137,7 +137,7 @@ def standardizeTeamName(name, league):
             return ("Suwon Samsung Bluewings")
         elif ("sangju sangmu" in lname or "gimcheon sangmu" in lname):
             return ("Gimcheon Sangmu")
-        elif ("ulsan hyundai" in lname):
+        elif ("ulsan hyundai" in lname or "ulsan" == lname):
             return ("Ulsan Hyundai FC")
         elif ("seongnam" in lname):
             return ("Seongnam FC")
@@ -153,6 +153,8 @@ def standardizeTeamName(name, league):
             return ("Gangwon FC")
         elif ("daegu" in lname):
             return ("Daegu FC")
+        elif ("gyeongnam" == lname):
+            return ("Gyeongnam FC")
         else:
             return (name)
     elif (league == "Norway1"):
@@ -190,7 +192,7 @@ def standardizeTeamName(name, league):
             return ("Honefoss BK")
         elif ("sogndal il" in lname):
             return ("Sogndal")
-        elif ("ik start" in lname):
+        elif ("ik start" in lname or "start" == lname):
             return ("Start Kristiansand")
         elif ("/glimt" in lname):
             return ("Bodo Glimt")
@@ -246,7 +248,7 @@ def standardizeTeamName(name, league):
             return ("Landskrona BoIS")
         elif ("jonkopings sodra" in lname):
             return ("Jonkopings Sodra IF")
-        elif ("osters if" in lname):
+        elif ("osters if" in lname or "Ã\x96ster" == name):
             return ("Osters IF")
         elif ("vasteras sk" in lname):
             return ("Vasteras SK FK")
@@ -337,8 +339,12 @@ def standardizeTeamName(name, league):
             return ("Ceara")
         elif ("paraná" in lname):
             return ("Parana PR")
-        elif ("centro sportivo alagoano" in lname):
+        elif ("centro sportivo alagoano" in lname or "csa" == lname):
             return ("Centro Sportivo Alagoano")
+        elif ("GrÃªmio" == name):
+            return ("Gremio (RS)")
+        elif ("AvaÃ\xad" == name):
+            return ("Avai FC SC")
         else:
             return (name)
     elif (league == "Brazil2"):
@@ -634,6 +640,12 @@ def standardizeTeamName(name, league):
             return ("Feyenoord")
         elif ("twente enschede" in lname):
             return ("FC Twente Enschede")
+        elif ("nec" == lname):
+            return ("NEC Nijmegen")
+        elif ("az" == lname):
+            return ("AZ Alkmaar")
+        elif ("psv" == lname):
+            return ("PSV Eindhoven")
     elif (league == "Netherlands2"):
         if ("excelsior rotterdam" in lname):
             return ("Excelsior SBV")
@@ -674,14 +686,16 @@ def standardizeTeamName(name, league):
             return ("Silkeborg")
         elif ("randers" == lname):
             return ("Randers FC")
-        elif ("copenhagen" == lname):
+        elif ("copenhagen" == lname or "KÃ¸benhavn" == name):
             return ("FC Copenhagen")
-        elif (" odense" in lname):
+        elif (" odense" in lname or "ob" == lname):
             return ("Odense BK")
         elif ("midtjylland" in lname):
             return ("Midtjylland")
         elif ("nordsjaelland" in lname):
             return ("Nordsjaelland")
+        elif ("agf" == lname):
+            return ("Aarhus AGF")
     elif (league == "Denmark2"):
         #cant find FC Hjörring equivalent
         if ("vejle boldklub" in lname):
@@ -817,6 +831,8 @@ def standardizeTeamName(name, league):
             return ("Benfica")
         elif ("vizela" in lname):
             return ("Vizela")
+        elif ("naval 1" in lname):
+            return ("Associacao Naval")
     elif (league == "Portugal2"):
         if ("desportivo aves" in lname):
             return ("Aves")
@@ -842,7 +858,7 @@ def standardizeTeamName(name, league):
         if ("pohronie" in lname):
             return ("Sokol Dolna Zdana")
     elif (league == "Slovenia1"):
-        if ("nk krsko" in lname):
+        if ("nk krsko" in lname or "KrÅ¡ko" == name):
             return ("Krsko Posavlje")
         elif ("nk bravo" in lname):
             return ("ASK Bravo Publikum")
@@ -873,6 +889,8 @@ def standardizeTeamName(name, league):
             return ("Elche")
         elif ("espanyol" == lname):
             return ("RCD Espanyol")
+        elif ("Deportivo AlavÃ©s" == name):
+            return ("Alaves")
     elif (league == "Spain2"):
         if ("villarreal cf" in lname):
             return ("Villarreal")
